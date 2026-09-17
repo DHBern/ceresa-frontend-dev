@@ -9,14 +9,8 @@ export const selectedTextNode: {
 });
 
 // sorting and grouping
-export const uiOvSortBy = $state({
-	documents: 'name',
-	register: 'name'
-});
-export const uiOvGroupByCat = $state({
-	documents: false,
-	register: false
-});
+export const registerSortBy = $state({value:'name'});
+export const registerGroupByCat = $state({value:false});
 
 // Register in Sidebar
 import { type TRegTypes } from '$lib/types/register/TRegister';

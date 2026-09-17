@@ -1,19 +1,21 @@
 <script
 	lang="ts"
 	generics="
-		T extends 'documents' | 'register'
+		T extends 'register'
 	"
 >
 	import { resolve } from '$app/paths';
 	import { goto } from '$app/navigation';
 	import Switch from '$lib/components/ui/Switch.svelte';
 
+	import { register as reg } from '$lib/data/register.json';
+
 	import { filterAndSortData } from '$lib/functions/ease_of_use/filterAndSortData';
 	import { normalizeChars } from '$lib/functions/ease_of_use/normalizeChars';
 	import { slugify } from '$lib/functions/ease_of_use/slugify';
-	import { uiOvSortBy, uiOvGroupByCat } from '$lib/globals/ui-states.svelte';
+	import { registerSortBy, registerGroupByCat } from '$lib/globals/ui-states.svelte';
 	import { TYPESWITHGROUPCONTROL, TYPESWITHSORTCONTROL } from '$lib/globals/constants.svelte';
-	import Shortcuts from '$lib/components/Shortcuts.svelte';
+	import Shortcuts from './Shortcuts.svelte';
 	import type {
 		TRegDict,
 		TRegGroupsMap,
@@ -21,38 +23,22 @@
 		TRegKeysFlat,
 		TRegTypes
 	} from '$lib/types/register/TRegister';
-	import type {
-		TDocDict,
-		TDocGroupsMap,
-		TDocKeys,
-		TDocTypes,
-		TDocuments
-	} from '$lib/types/documents/TDocuments';
 	import { invertScroll } from '$lib/functions/invertScroll.svelte';
+	import type { TEventsKeys } from '$lib/types/register/TEventsKeys';
 
-	type TProps = T extends 'documents'
-		? {
-				itemVariant: 'documents';
-				itemType: TDocTypes;
-				itemData: TDocuments['documents'][TDocTypes];
-				itemDict: TDocDict['dict_docs'][TDocTypes];
-				itemKey?: TDocKeys | null;
-			}
-		: {
-				itemVariant: 'register';
-				itemType: TRegTypes;
-				itemData: TRegister['register'][TRegTypes];
-				itemDict: TRegDict['dict_register'][TRegTypes];
-				itemKey?: TRegKeysFlat | null;
-			};
+	type TProps = {
+		regListEntries: TRegister['register'][TRegTypes];
+		regType: TRegTypes;
+		regDict: TRegDict['dict_register'][TRegTypes];
+		regKey?: TRegKeysFlat | null;
+	};
 
 	let {
-		itemVariant,
-		itemType,
-		itemData,
-		itemDict,
-		itemKey = null,
 		isMultiColumn,
+		regListEntries,
+		regType,
+		regDict,
+		regKey = null,
 		cheatPageHeightInRegSingleColView = ''
 	}: TProps & {
 		isMultiColumn: boolean;
@@ -60,32 +46,30 @@
 	} = $props();
 
 	// Booleans for sorting and grouping
-	let hasGroupControls = $derived(TYPESWITHGROUPCONTROL[itemVariant].includes(itemType));
-	let hasSortControls = $derived(TYPESWITHSORTCONTROL[itemVariant].includes(itemType));
+	let hasGroupControls = $derived(TYPESWITHGROUPCONTROL['register'].includes(regType));
+	let hasSortControls = $derived(TYPESWITHSORTCONTROL['register'].includes(regType));
 
 	// Defaults
-	let defaultSortBy = $derived(itemType === 'people' ? 'lastname' : 'name'); // must also set 'name' in ui.svelte.ts (//! Fix this)
-	let sortBy = $derived(hasSortControls ? uiOvSortBy[itemVariant] : defaultSortBy); // The actual sortBy state, which includes a fallback for regTypes without sorting options.
+	let defaultSortBy = $derived(regType === 'people' ? 'lastname' : 'name'); // must also set 'name' in ui.svelte.ts (//! Fix this)
+	let sortBy = $derived(hasSortControls ? registerSortBy.value : defaultSortBy); // The actual sortBy state, which includes a fallback for regTypes without sorting options.
 	$effect(() => {
-		uiOvSortBy[itemVariant] = uiOvSortBy[itemVariant] ? uiOvSortBy[itemVariant] : defaultSortBy; // If empty set to default
+		registerSortBy.value = registerSortBy.value ? registerSortBy.value : defaultSortBy; // If empty set to default
 	});
 
 	let allGroupKeys = $derived(
 		//! IMPROVE: the order inside the unordered object array may actually break.
-		itemVariant === 'documents'
-			? (Object.keys(itemDict.groups) as TDocGroupsMap[TDocTypes][])
-			: (Object.keys(itemDict.groups) as TRegGroupsMap[TRegTypes][])
+		Object.keys(regDict.groups) as TRegGroupsMap[TRegTypes][]
 	);
 
 	// Variables for autoCatLabels (Alphabet or Dates)
 	//! IMPROVE: this should be generalised as soon as more types receive sorting-options
 	let sortVariableKeyForShortcuts = $derived(
-		itemType === 'people' ? 'lastname' : itemType === 'events' ? sortBy : 'name'
+		regType === 'people' ? 'lastname' : regType === 'events' ? sortBy : 'name'
 	);
 	let autoCatLabels = $derived(
 		[
 			...new Set(
-				Object.values(itemData).map((el) => {
+				Object.values(regListEntries).map((el) => {
 					// Normalize autoCatLabels to group e.g. Ç with C and Ä with A
 					return normalizeChars(el[sortVariableKeyForShortcuts]?.[0]?.toUpperCase());
 				})
@@ -96,8 +80,8 @@
 	// Scroll to the specific item
 	let ovListScrollContainer: HTMLElement | undefined = $state();
 
-	function scrollToItem(itemKey: TRegKeysFlat | TDocKeys) {
-		const targetElement = document.getElementById(itemKey);
+	function scrollToItem(regKey: TRegKeysFlat) {
+		const targetElement = document.getElementById(regKey);
 		const offsetSortControls =
 			hasGroupControls && hasSortControls ? 92 : hasGroupControls || hasSortControls ? 60 : 0;
 		if (targetElement) {
@@ -109,7 +93,7 @@
 	}
 
 	$effect(() => {
-		if (itemKey) scrollToItem(itemKey);
+		if (regKey) scrollToItem(regKey);
 	});
 </script>
 
@@ -121,9 +105,9 @@
 		id={key}
 		class={[
 			'align-left block w-90 border-b px-5 py-3 text-left',
-			!isMultiColumn && key === itemKey && 'bg-dark-10 font-bold text-background-contrast'
+			!isMultiColumn && key === regKey && 'bg-dark-10 font-bold text-background-contrast'
 		]}
-		href={resolve(itemVariant === 'documents' ? `/${key}` : `/register/${key}`)}
+		href={resolve(`/register/${key}`)}
 	>
 		<span class="overflow-hidden whitespace-normal">
 			{name ? `${name}` : '...'}
@@ -171,11 +155,9 @@
 			<p>Sortierung:</p>
 			{#snippet sortButton(name: string, sortKey: string)}
 				<button
-					class={[
-						uiOvSortBy[itemVariant] === sortKey ? 'pointer-events-none font-bold' : 'underline'
-					]}
+					class={[registerSortBy.value === sortKey ? 'pointer-events-none font-bold' : 'underline']}
 					onclick={() => {
-						uiOvSortBy[itemVariant] = sortKey;
+						registerSortBy.value = sortKey;
 					}}>{name}</button
 				>
 			{/snippet}
@@ -192,7 +174,7 @@
 {#snippet groupControls()}
 	{#if hasGroupControls}
 		<div class={['flex flex-wrap items-center gap-2', isMultiColumn ? 'text-base' : 'text-xs']}>
-			<Switch bind:checked={uiOvGroupByCat[itemVariant]} height={24}
+			<Switch bind:checked={registerGroupByCat.value} height={24}
 				><span>Nach Kategorien gruppieren</span></Switch
 			>
 		</div>
@@ -211,24 +193,12 @@
 				{@render sortControls()}
 			</div>
 
-			<!-- TypeScript requires to split this conditional component call -->
-			{#if itemVariant === 'documents'}
-				<Shortcuts
-					itemVariant="documents"
-					dict={itemDict as TDocDict['dict_docs'][TDocTypes]}
-					{hasGroupControls}
-					{autoCatLabels}
-					allGroupKeys={allGroupKeys as TDocGroupsMap[TDocTypes][]}
-				/>
-			{:else if itemVariant === 'register'}
-				<Shortcuts
-					itemVariant="register"
-					dict={itemDict as TRegDict['dict_register'][TRegTypes]}
-					{hasGroupControls}
-					{autoCatLabels}
-					allGroupKeys={allGroupKeys as TRegGroupsMap[TRegTypes][]}
-				/>
-			{/if}
+			<Shortcuts
+				dict={regDict as TRegDict['dict_register'][TRegTypes]}
+				{hasGroupControls}
+				{autoCatLabels}
+				allGroupKeys={allGroupKeys as TRegGroupsMap[TRegTypes][]}
+			/>
 		</div>
 	{/if}
 
@@ -258,27 +228,23 @@
 			</div>
 		{/if}
 
-		{#if hasGroupControls && uiOvGroupByCat[itemVariant]}
+		{#if hasGroupControls && registerGroupByCat.value}
 			<!-- Grouped by categories -->
 			{#each allGroupKeys as groupKey (groupKey)}
 				{#if groupKey && groupKey !== '?'}
 					{@render groupTitle(
 						//! FIX hardcoded types!
-						(
-							itemDict.groups[groupKey as keyof typeof itemDict.groups] as Record<
-								'label_plural',
-								any
-							>
-						)?.label_plural || '?'
+						(regDict.groups[groupKey as keyof typeof regDict.groups] as Record<'label_plural', any>)
+							?.label_plural || '?'
 					)}
-					{#each filterAndSortData( itemData, sortBy, { filterKey: 'type', filtersIn: [groupKey] } ) as [key, item] (key)}
+					{#each filterAndSortData( regListEntries, sortBy, { filterKey: 'type', filtersIn: [groupKey] } ) as [key, item] (key)}
 						{@render regListItem(key, item.name)}
 					{/each}
 				{/if}
 			{/each}
-		{:else if itemType}
+		{:else if regType}
 			<!-- All other types -->
-			{@const sortedData = filterAndSortData(itemData, sortBy)}
+			{@const sortedData = filterAndSortData(regListEntries, sortBy)}
 			{#each sortedData as [key, item], i (key)}
 				{@const itemBefore = sortedData[i - 1]?.[1]}
 				{@const autoCatLabel =
