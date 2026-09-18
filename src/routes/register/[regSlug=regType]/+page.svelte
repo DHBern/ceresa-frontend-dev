@@ -11,12 +11,13 @@
 </script>
 
 <!-- Overview with Multi-Column List -->
-<div class="absolute top-45 left-0 w-full px-10">
+<div class="mt-30 w-full px-10">
 	<RegList
-		isMultiColumn={true}
+		isRegListView={true}
 		regListEntries={data.regListEntries}
 		regDict={dictReg[regType]}
 		regType={regSlug as TRegTypes}
 		regKey={null}
+		// filterKey={data.filterKey}
 	/>
 </div>

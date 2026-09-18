@@ -12,10 +12,10 @@
 {#snippet nav()}
 	<nav
 		class={[
-			'flex transition-all duration-200',
+			'flex w-full flex-wrap transition-all duration-200',
 			data.regView === 'regView1'
-				? 'mx-auto mt-40 w-2/3 max-w-200 flex-wrap items-center justify-center gap-4 p-2'
-				: 'ml-10 h-full w-full gap-2'
+				? 'mx-auto mt-40 w-2/3 max-w-200 items-center justify-center gap-4 p-2'
+				: 'gap-2 px-10'
 		]}
 	>
 		{#each regKeysForButtons as regKey (regKey)}
@@ -46,7 +46,7 @@
 		data.regView === 'regView1'
 			? 'h1 top-35 left-0 w-full text-center'
 			: data.regView === 'regView2'
-				? 'h1 top-35 left-0 w-1  pl-10 text-center whitespace-nowrap'
+				? 'h1 top-35 left-0 w-1 pl-10 text-center whitespace-nowrap'
 				: 'h4 top-38 left-0 w-1 pl-10 text-center whitespace-nowrap'
 	]}
 >
