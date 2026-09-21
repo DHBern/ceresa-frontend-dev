@@ -68,7 +68,7 @@
 	);
 
 	// Track the current number of columns based on viewport width
-	let nCols = $state(5);
+	let nCols = $state(1);
 
 	let elControlsOuter: HTMLElement | null = $state(null);
 	let headerHeight = 0;
