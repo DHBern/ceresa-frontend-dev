@@ -9,10 +9,8 @@ export const selectedTextNode: {
 });
 
 // sorting and grouping
-export const registerFilterBy = $state({value:''});
 export const registerSortBy = $state({value:'name'});
 export const registerGroupItems = $state({value:true});
-export const registerShowAll = $state({value:true});
 
 // Register in Sidebar
 import { type TRegTypes } from '$lib/types/register/TRegister';

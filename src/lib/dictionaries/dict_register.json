@@ -24,35 +24,35 @@
 				"docs": { "label": "Verknüpfte Dokumente" }
 			},
 			"groups": {
-				"Archäolog:in": {
+				"Archäolog_in": {
 					"label_singular": "Archäolog:in",
 					"label_plural": "Archäolog:innen"
 				},
-				"Autor:in": {
+				"Autor_in": {
 					"label_singular": "Autor:in",
 					"label_plural": "Autor:innen"
 				},
-				"Bekannte:r": {
+				"Bekannte_r": {
 					"label_singular": "Bekannte:r",
 					"label_plural": "Bekannte"
 				},
-				"Bergsteiger:in": {
+				"Bergsteiger_in": {
 					"label_singular": "Bergsteiger:in",
 					"label_plural": "Bergsteiger:innen"
 				},
-				"Biblische Figur": {
+				"Biblische_Figur": {
 					"label_singular": "Biblische Figur",
 					"label_plural": "Biblische Figuren"
 				},
-				"Familienangehörige:r": {
+				"Familienangehörige_r": {
 					"label_singular": "Familienangehörige:r",
 					"label_plural": "Familienangehörige"
 				},
-				"Fotograf:in": {
+				"Fotograf_in": {
 					"label_singular": "Fotograf:in",
 					"label_plural": "Fotograf:innen"
 				},
-				"Freund:in": {
+				"Freund_in": {
 					"label_singular": "Freund:in",
 					"label_plural": "Freund:innen"
 				},
@@ -60,31 +60,31 @@
 					"label_singular": "Gottheit",
 					"label_plural": "Gottheiten"
 				},
-				"Historische Person (ohne persönliche Bekanntschaft)": {
+				"Historische_Person_ohne_pers_bekanntschaft": {
 					"label_singular": "Historische Person (ohne persönliche Bekanntschaft)",
 					"label_plural": "Historische Personen (ohne persönliche Bekanntschaft)"
 				},
-				"Künstler:in": {
+				"Künstler_in": {
 					"label_singular": "Künstler:in",
 					"label_plural": "Künstler:innen"
 				},
-				"Mitarbeiter:in Medium": {
+				"Mitarbeiter_in_Medium": {
 					"label_singular": "Mitarbeiter:in Medium",
 					"label_plural": "Mitarbeiter:innen Medium"
 				},
-				"Musiker:in": {
+				"Musiker_in": {
 					"label_singular": "Musiker:in",
 					"label_plural": "Musiker:innen"
 				},
-				"rassistische Bezeichnung": {
+				"rassistische_Bezeichnung": {
 					"label_singular": "rassistische Bezeichnung",
 					"label_plural": "rassistische Bezeichnungen"
 				},
-				"Redakteur:in": {
+				"Redakteur_in": {
 					"label_singular": "Redakteur:in",
 					"label_plural": "Redakteur:innen"
 				},
-				"Regisseur:in": {
+				"Regisseur_in": {
 					"label_singular": "Regisseur:in",
 					"label_plural": "Regisseur:innen"
 				},
@@ -92,15 +92,15 @@
 					"label_singular": "Sagengestalt",
 					"label_plural": "Sagengestalten"
 				},
-				"Schauspieler:in": {
+				"Schauspieler_in": {
 					"label_singular": "Schauspieler:in",
 					"label_plural": "Schauspieler:innen"
 				},
-				"Schwarzenbach-Forscher:in": {
+				"Schwarzenbach-Forscher_in": {
 					"label_singular": "Schwarzenbach-Forscher:in",
 					"label_plural": "Schwarzenbach-Forscher:innen"
 				},
-				"Verleger:in": {
+				"Verleger_in": {
 					"label_singular": "Verleger:in",
 					"label_plural": "Verleger:innen"
 				}

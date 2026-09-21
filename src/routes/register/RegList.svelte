@@ -5,13 +5,7 @@
 
 	import { filterAndGroupData } from '$lib/functions/ease_of_use/filterAndSortData';
 	import { normalizeChars } from '$lib/functions/ease_of_use/normalizeChars';
-	import { slugify } from '$lib/functions/ease_of_use/slugify';
-	import {
-		registerSortBy,
-		registerShowAll,
-		registerFilterBy,
-		registerGroupItems
-	} from '$lib/globals/ui-states.svelte';
+	import { registerSortBy, registerGroupItems } from '$lib/globals/ui-states.svelte';
 	import { TYPESWITHGROUPCONTROL, TYPESWITHSORTCONTROL } from '$lib/globals/constants.svelte';
 	import type {
 		TRegDict,
@@ -21,7 +15,9 @@
 		TRegTypes
 	} from '$lib/types/register/TRegister';
 	import { onMount, tick } from 'svelte';
-	import { page } from '$app/state';
+
+	import { useSearchParams } from 'runed/kit';
+	import { getSchemaForRegType } from './schemas.js';
 
 	type TProps = {
 		regListEntries: TRegister['register'][TRegTypes];
@@ -56,30 +52,26 @@
 		Object.keys(regDict.groups) as TRegGroupsMap[TRegTypes][]
 	);
 
-	// Filters
-	let searchParamFilterKey = $derived(page.url.searchParams.get('filter'));
-	$inspect(searchParamFilterKey);
+	// Schema (updates with regType)
+	let { schema } = $derived(getSchemaForRegType(regType));
+	const params = $derived(useSearchParams(schema, { pushHistory: true, noScroll: true }));
 
+	// Filters
 	let filteredAndGroupedData = $derived(
 		filterAndGroupData(regListEntries, sortBy, {
 			filterKey: 'type',
-			filtersIn: registerFilterBy.value ? [registerFilterBy.value] : []
+			filtersIn: params.filter ? [params.filter] : []
 		})
 	);
 
 	// Track the current number of columns based on viewport width
 	let nCols = $state(1);
 
+	// Calculate and update scroll-margin-top of anchors relative to height of sticky controls
 	let elControlsOuter: HTMLElement | null = $state(null);
-	let headerHeight = 0;
-
-	// Function to calculate and update height
 	const updateHeaderHeight = () => {
 		if (elControlsOuter) {
-			headerHeight = elControlsOuter.offsetHeight;
-			console.log(`Header height updated to: ${headerHeight}px`);
-			// document.documentElement.style.scrollPaddingTop = `${headerHeight}px`;
-			document.body.style.setProperty('--header-height', `${headerHeight}px`);
+			document.body.style.setProperty('--header-height', `${elControlsOuter.offsetHeight}px`);
 		}
 	};
 
@@ -233,39 +225,24 @@
 				<div class="col-start-2 flex w-full flex-wrap justify-start gap-2">
 					<button
 						onclick={() => {
-							registerShowAll.value = true;
-							registerFilterBy.value = '';
-							goto(`?filter=all`, {
-								replaceState: true,
-								noScroll: true
-							});
+							params.reset();
 							tick();
 							window.scrollTo({ top: 0, behavior: 'auto' });
 						}}
-						class={[
-							'preset-btn-round --sm mr-0',
-							(!searchParamFilterKey || searchParamFilterKey === 'all') && '--active'
-						]}><p>Alle Kategorien</p></button
+						class={['preset-btn-round --sm mr-0', !params.filter && '--active']}
+						><p>Alle Kategorien</p></button
 					>
 					{#each allGroupKeys as groupKey (groupKey)}
 						<!-- //! Fix this any type -->
-						{@const groupLabel = (regDict.groups as any)[groupKey]?.label_plural}
-						{@const groupLabelSlug = slugify(groupLabel, { slash: true })}
+						{@const groupLabel = (regDict.groups as any)[groupKey]?.label_singular}
 						<button
 							onclick={() => {
-								registerShowAll.value = false;
-								registerFilterBy.value = groupKey;
-								goto(`?filter=${groupLabelSlug}`, {
-									replaceState: true,
-									noScroll: true
-								});
+								params.filter = groupKey;
 								tick();
 								window.scrollTo({ top: 0, behavior: 'auto' });
 							}}
-							class={[
-								'preset-btn-round --sm',
-								groupLabelSlug === searchParamFilterKey && '--active'
-							]}><p>{groupLabel}</p></button
+							class={['preset-btn-round --sm', groupKey === params.filter && '--active']}
+							><p>{groupLabel}</p></button
 						>
 					{/each}
 				</div>
@@ -342,7 +319,7 @@
 				<button
 					onclick={async () => {
 						if (isRegListView) {
-							await goto(`#${slugify(autoCatLabel, { slash: true })}`, {
+							await goto(`#${autoCatLabel}`, {
 								replaceState: true,
 								noScroll: true,
 								keepFocus: true
@@ -351,7 +328,7 @@
 						}
 					}}
 					aria-label="store in URL"
-					id={slugify(autoCatLabel, { slash: true })}
+					id={autoCatLabel}
 					class={[
 						'group align-left block min-h-25 border-b pt-10 text-left font-serif text-5xl font-bold',
 						!isRegListView && 'pointer-events-none'
