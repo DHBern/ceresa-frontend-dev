@@ -3,7 +3,7 @@
 	import { goto } from '$app/navigation';
 	import { Toggle, ToggleGroup } from 'bits-ui';
 
-	import { filterAndGroupData } from '$lib/functions/ease_of_use/filterAndSortData';
+	import { filterAndGroupData } from '$lib/functions/ease_of_use/filterAndGroupData.js';
 	import { normalizeChars } from '$lib/functions/ease_of_use/normalizeChars';
 	import { registerSortBy, registerGroupItems } from '$lib/globals/ui-states.svelte';
 	import { TYPESWITHGROUPCONTROL, TYPESWITHSORTCONTROL } from '$lib/globals/constants.svelte';

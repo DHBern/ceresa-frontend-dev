@@ -183,7 +183,7 @@
 				"gndNumber": "1081466073",
 				"dateBirth": "1903",
 				"dateDeath": "1999",
-				"type": ["people_cat_8", "cat6"],
+				"type": ["people_cat_8", "people_cat_6"],
 				"orgIds": null,
 				"note": null
 			},
@@ -339,7 +339,7 @@
 				"gndNumber": "1364717433",
 				"dateBirth": "1913",
 				"dateDeath": "1966",
-				"type": ["people_cat_8", "cat7"],
+				"type": ["people_cat_8", "people_cat_7"],
 				"orgIds": ["organisation_0043"],
 				"note": null
 			},
@@ -1095,7 +1095,7 @@
 				"gndNumber": "1361013338",
 				"dateBirth": "1908",
 				"dateDeath": "1938",
-				"type": ["people_cat_3", "cat4"],
+				"type": ["people_cat_3", "people_cat_4"],
 				"orgIds": ["organisation_0008"],
 				"note": "Laut smallform_0285, Schwarzenbachs erster Publikation zu Saladin, stellte dessen Bruder Peter im Mai 1937 den Kontakt zu \"Gog\" her. Laut <rs type=\"smallform\" key=\"smallform_0226\">Bei Studenten aus vier Ländern\"</rs> beherrschte er fliessend Deutsch. Offenbar hat er laut smallform_285 die Expedition mit Saldin selbst nicht, jedoch eine andere, eine deutsche Expedition begleitet (http://www.alpklubspb.ru/persona/harlampiev.htm). Über die Todesursachen 1938 ist nichts Genaueres bekannt (ev. hier weitere Informationen auf russisch: https://www.youtube.com/live/XafkoYx0Y_g)."
 			},
@@ -1755,7 +1755,7 @@
 				"gndNumber": "118577166",
 				"dateBirth": "1875",
 				"dateDeath": "1955",
-				"type": ["people_cat_2", "cat3"],
+				"type": ["people_cat_2", "people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -3439,7 +3439,7 @@
 				"gndNumber": "124604501",
 				"dateBirth": "1915",
 				"dateDeath": "1985",
-				"type": ["people_people_cat__10", "cat7"],
+				"type": ["people_people_cat__10", "people_cat_7"],
 				"orgIds": null,
 				"note": null
 			},
@@ -3463,7 +3463,7 @@
 				"gndNumber": "11945355X",
 				"dateBirth": "1893",
 				"dateDeath": "1975",
-				"type": ["people_cat_7", "cat3"],
+				"type": ["people_cat_7", "people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -4315,7 +4315,7 @@
 				"gndNumber": "118599011",
 				"dateBirth": "1898",
 				"dateDeath": "1963",
-				"type": ["people_cat_2", "cat3"],
+				"type": ["people_cat_2", "people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -4387,7 +4387,7 @@
 				"gndNumber": "118580752",
 				"dateBirth": "1908",
 				"dateDeath": "1982",
-				"type": ["people_cat_2", "cat3"],
+				"type": ["people_cat_2", "people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -6091,7 +6091,7 @@
 				"gndNumber": "119128721",
 				"dateBirth": "1902",
 				"dateDeath": "1989",
-				"type": ["people_cat_2", "cat3"],
+				"type": ["people_cat_2", "people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -8336,7 +8336,7 @@
 				"gndNumber": "118520873",
 				"dateBirth": "1896",
 				"dateDeath": "1983",
-				"type": ["people_people_cat__11", "cat7"],
+				"type": ["people_people_cat__11", "people_cat_7"],
 				"orgIds": null,
 				"note": null
 			},
@@ -8756,7 +8756,7 @@
 				"gndNumber": "118666983",
 				"dateBirth": "1913",
 				"dateDeath": "1954",
-				"type": ["people_cat_7", "cat3"],
+				"type": ["people_cat_7", "people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9068,7 +9068,7 @@
 				"gndNumber": "1089500645",
 				"dateBirth": "1906",
 				"dateDeath": "1986",
-				"type": ["people_cat_3", "cat4"],
+				"type": ["people_cat_3", "people_cat_4"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9080,7 +9080,7 @@
 				"gndNumber": "131553224",
 				"dateBirth": "1907",
 				"dateDeath": "1948",
-				"type": ["people_cat_3", "cat4"],
+				"type": ["people_cat_3", "people_cat_4"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9548,7 +9548,7 @@
 				"gndNumber": "13985312X",
 				"dateBirth": "1899",
 				"dateDeath": "1971",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9560,7 +9560,7 @@
 				"gndNumber": "123504562",
 				"dateBirth": "1908",
 				"dateDeath": "1995",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9572,7 +9572,7 @@
 				"gndNumber": "117128953",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["2"],
+				"type": ["people_cat_2"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9584,7 +9584,7 @@
 				"gndNumber": "https://swb.bsz-bw.de/DB=2.104/SET=2/TTL=1/CMD?SGE=&ACT=SRCHM&MATCFILTER=Y&MATCSET=Y&NOSCAN=Y&PARSE_MNEMONICS=N&PARSE_OPWORDS=N&PARSE_OLDSETS=N&IMPLAND=Y&NOABS=Y&ACT0=SRCHA&SHRTST=50&IKT0=1&TRM0=Weber%2C+Carl%20Maria%20von",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9596,7 +9596,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Habe AS eine \"Wiesen-Karte\" und einen Brief geschickt, wird im Zusammenhang mit Pasternek erwähnt 1930"
 			},
@@ -9608,7 +9608,7 @@
 				"gndNumber": "124089194",
 				"dateBirth": "1913",
 				"dateDeath": "1953",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9920,7 +9920,7 @@
 				"gndNumber": "118520814",
 				"dateBirth": "v. 106",
 				"dateDeath": "v. 43",
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9932,7 +9932,7 @@
 				"gndNumber": "118573624",
 				"dateBirth": "v. 59",
 				"dateDeath": "17",
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9944,7 +9944,7 @@
 				"gndNumber": "118605097",
 				"dateBirth": "v. 86",
 				"dateDeath": "v. 34",
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -9956,7 +9956,7 @@
 				"gndNumber": "118563386",
 				"dateBirth": "1724",
 				"dateDeath": "1803",
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10064,7 +10064,7 @@
 				"gndNumber": "1100282955",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10076,7 +10076,7 @@
 				"gndNumber": "1062267648",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10088,7 +10088,7 @@
 				"gndNumber": "http:s//d-nb.info/gnd/118653407",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["18"],
+				"type": ["people_cat_18"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10100,7 +10100,7 @@
 				"gndNumber": "1030581150",
 				"dateBirth": "1893",
 				"dateDeath": "1967",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10112,7 +10112,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Wird im Zusammenhang mit Feist und der Bekanntmachung von Morphium Konsum bei Mopsa Sternheim genannt,"
 			},
@@ -10124,7 +10124,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Wird im Zusammenhang mit Feist und der Bekanntmachung von Morphium Konsum bei Mopsa Sternheim genannt,"
 			},
@@ -10136,7 +10136,7 @@
 				"gndNumber": "1152047019",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10148,7 +10148,7 @@
 				"gndNumber": "1062459733",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10160,7 +10160,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10172,7 +10172,7 @@
 				"gndNumber": "1327648296",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10184,7 +10184,7 @@
 				"gndNumber": "116147237",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10220,7 +10220,7 @@
 				"gndNumber": "118634496",
 				"dateBirth": "1864",
 				"dateDeath": "1945",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10232,7 +10232,7 @@
 				"gndNumber": "118716522",
 				"dateBirth": "1866",
 				"dateDeath": "1942",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10244,7 +10244,7 @@
 				"gndNumber": "116838736",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10316,7 +10316,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": "1950",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Kein GND, Erwähnung mit ganzem Namen in RS40 (30. Dienstjahr 1937!), ab 1907 in Dienst der Schwarzenbachs. Anfänglich Kindermädchen."
 			},
@@ -10328,7 +10328,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": "1939",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Der Vorname der Mutter von Emmy Krüger ist noch nicht bekannt."
 			},
@@ -10352,7 +10352,7 @@
 				"gndNumber": "1387337157",
 				"dateBirth": "1842",
 				"dateDeath": "1919",
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10364,7 +10364,7 @@
 				"gndNumber": "1050587294",
 				"dateBirth": "1896",
 				"dateDeath": "1981",
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10388,7 +10388,7 @@
 				"gndNumber": "118782665",
 				"dateBirth": "1885",
 				"dateDeath": "1967",
-				"type": ["2"],
+				"type": ["people_cat_2"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10424,7 +10424,7 @@
 				"gndNumber": "125102720",
 				"dateBirth": "1892",
 				"dateDeath": "1948",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10448,7 +10448,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Ev. diese Person: https://pt.wikipedia.org/wiki/Alberto_Monteiro_de_Carvalho_e_Silva - muss noch mit Alexis geklärt werden, bevor GND-Eintrag erstellt werden kann."
 			},
@@ -10496,7 +10496,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Betreibt ein Restaurant (?) in der Clerina (heutige Jägerstube?). Ev. hat die Familie früher das Jägerhaus besessen."
 			},
@@ -10508,7 +10508,7 @@
 				"gndNumber": "106015850",
 				"dateBirth": "1896",
 				"dateDeath": "1981",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10520,7 +10520,7 @@
 				"gndNumber": "118789120",
 				"dateBirth": "1832",
 				"dateDeath": "1914",
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10532,7 +10532,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10544,7 +10544,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Freund von Klaus Mann 1931"
 			},
@@ -10556,7 +10556,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["8"],
+				"type": ["people_cat_8"],
 				"orgIds": null,
 				"note": "AS war in sie verliebt"
 			},
@@ -10568,7 +10568,7 @@
 				"gndNumber": "118543571",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10580,7 +10580,7 @@
 				"gndNumber": "118702866",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10592,7 +10592,7 @@
 				"gndNumber": "116187387",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["15"],
+				"type": ["people_cat_15"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10604,7 +10604,7 @@
 				"gndNumber": "117432830",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["8"],
+				"type": ["people_cat_8"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10640,7 +10640,7 @@
 				"gndNumber": "1017072558",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10652,7 +10652,7 @@
 				"gndNumber": "118707493",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0013"],
 				"note": null
 			},
@@ -10664,7 +10664,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "kein GND-Eintrag; Infos zur Person in Analysen und Erstdrucke S. 277."
 			},
@@ -10676,7 +10676,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "kein GND-Eintrag; wird in Artikel von AS erwähnt (NZZ 23-3.1941); gemäss Tobler nicht ermittelbar vgl. Analysen und Erstdrucke S. 277."
 			},
@@ -10688,7 +10688,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10700,7 +10700,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10760,7 +10760,7 @@
 				"gndNumber": "11925607X",
 				"dateBirth": "1895",
 				"dateDeath": "1956",
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0388"],
 				"note": null
 			},
@@ -10796,7 +10796,7 @@
 				"gndNumber": "118575775",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10808,7 +10808,7 @@
 				"gndNumber": "118714724",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["5"],
+				"type": ["people_cat_5"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10856,7 +10856,7 @@
 				"gndNumber": "118516175",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10868,7 +10868,7 @@
 				"gndNumber": "118506803",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10880,7 +10880,7 @@
 				"gndNumber": "118547798",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10904,7 +10904,7 @@
 				"gndNumber": "119265737",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10916,7 +10916,7 @@
 				"gndNumber": "13591647X",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10928,7 +10928,7 @@
 				"gndNumber": "118585533",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10940,7 +10940,7 @@
 				"gndNumber": "118537849",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10952,7 +10952,7 @@
 				"gndNumber": "118788558",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10964,7 +10964,7 @@
 				"gndNumber": "126436606",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["15"],
+				"type": ["people_cat_15"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10976,7 +10976,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -10988,7 +10988,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11000,7 +11000,7 @@
 				"gndNumber": "118700529",
 				"dateBirth": "1884",
 				"dateDeath": "1965",
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11012,7 +11012,7 @@
 				"gndNumber": "116348364",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11024,7 +11024,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Wird im Zusammenhang mit Hanna Kiel und eine Sportabzeichen genannt"
 			},
@@ -11036,7 +11036,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Wird im Zusammenhang mit Hanna Kiel und eine Sportabzeichen genannt"
 			},
@@ -11048,7 +11048,7 @@
 				"gndNumber": "118769529",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["9"],
+				"type": ["people_cat_9"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11060,7 +11060,7 @@
 				"gndNumber": "117564273",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11072,7 +11072,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11096,7 +11096,7 @@
 				"gndNumber": "1145383157",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11120,7 +11120,7 @@
 				"gndNumber": "118624822",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["2"],
+				"type": ["people_cat_2"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11132,7 +11132,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": "kein GND-Eintrag, https://en.wikipedia.org/wiki/Nicholas_Roosevelt_(inventor)"
 			},
@@ -11144,7 +11144,7 @@
 				"gndNumber": "118694278",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11156,7 +11156,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "kein GND-Eintrag, https://en.wikipedia.org/wiki/Frederick_Way_Jr."
 			},
@@ -11168,7 +11168,7 @@
 				"gndNumber": "118683284",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["2"],
+				"type": ["people_cat_2"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11192,7 +11192,7 @@
 				"gndNumber": "118591843",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11204,7 +11204,7 @@
 				"gndNumber": "118639226",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11216,7 +11216,7 @@
 				"gndNumber": "118973096",
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["2"],
+				"type": ["people_cat_2"],
 				"orgIds": null,
 				"note": "Spielt Violine in einem Quartett, Freund von Emmy Krüger, vgl. Notizen Alexis"
 			},
@@ -11228,7 +11228,7 @@
 				"gndNumber": null,
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11240,7 +11240,7 @@
 				"gndNumber": "117363839",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11252,7 +11252,7 @@
 				"gndNumber": "106486861",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["2"],
+				"type": ["people_cat_2"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11264,7 +11264,7 @@
 				"gndNumber": "11862136X",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["2"],
+				"type": ["people_cat_2"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11276,7 +11276,7 @@
 				"gndNumber": null,
 				"dateBirth": null,
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Agentin/Verbindungsperson, die eine Rolle in der Publikation der Spanien-Fotogreportagen mit Breslauer spielt. Ev. im Zusammenhang mit ZI"
 			},
@@ -11288,7 +11288,7 @@
 				"gndNumber": "1389513785",
 				"dateBirth": "1903",
 				"dateDeath": null,
-				"type": ["3"],
+				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11300,7 +11300,7 @@
 				"gndNumber": "116488980",
 				"dateBirth": "1894",
 				"dateDeath": "1974",
-				"type": ["16"],
+				"type": ["people_cat_16"],
 				"orgIds": null,
 				"note": null
 			},
@@ -11312,7 +11312,7 @@
 				"gndNumber": "118559796",
 				"dateBirth": "#ERROR!",
 				"dateDeath": null,
-				"type": ["10"],
+				"type": ["people_cat_10"],
 				"orgIds": null,
 				"note": null
 			}
