@@ -24,83 +24,83 @@
 				"docs": { "label": "Verknüpfte Dokumente" }
 			},
 			"groups": {
-				"Archäolog_in": {
+				"people_cat_1": {
 					"label_singular": "Archäolog:in",
 					"label_plural": "Archäolog:innen"
 				},
-				"Autor_in": {
+				"people_cat_2": {
 					"label_singular": "Autor:in",
 					"label_plural": "Autor:innen"
 				},
-				"Bekannte_r": {
+				"people_cat_3": {
 					"label_singular": "Bekannte:r",
 					"label_plural": "Bekannte"
 				},
-				"Bergsteiger_in": {
+				"people_cat_4": {
 					"label_singular": "Bergsteiger:in",
 					"label_plural": "Bergsteiger:innen"
 				},
-				"Biblische_Figur": {
+				"people_cat_5": {
 					"label_singular": "Biblische Figur",
 					"label_plural": "Biblische Figuren"
 				},
-				"Familienangehörige_r": {
+				"people_cat_6": {
 					"label_singular": "Familienangehörige:r",
 					"label_plural": "Familienangehörige"
 				},
-				"Fotograf_in": {
+				"people_cat_7": {
 					"label_singular": "Fotograf:in",
 					"label_plural": "Fotograf:innen"
 				},
-				"Freund_in": {
+				"people_cat_8": {
 					"label_singular": "Freund:in",
 					"label_plural": "Freund:innen"
 				},
-				"Gottheit": {
+				"people_cat_9": {
 					"label_singular": "Gottheit",
 					"label_plural": "Gottheiten"
 				},
-				"Historische_Person_ohne_pers_bekanntschaft": {
+				"people_cat_10": {
 					"label_singular": "Historische Person (ohne persönliche Bekanntschaft)",
 					"label_plural": "Historische Personen (ohne persönliche Bekanntschaft)"
 				},
-				"Künstler_in": {
+				"people_cat_11": {
 					"label_singular": "Künstler:in",
 					"label_plural": "Künstler:innen"
 				},
-				"Mitarbeiter_in_Medium": {
+				"people_cat_12": {
 					"label_singular": "Mitarbeiter:in Medium",
 					"label_plural": "Mitarbeiter:innen Medium"
 				},
-				"Musiker_in": {
+				"people_cat_13": {
 					"label_singular": "Musiker:in",
 					"label_plural": "Musiker:innen"
 				},
-				"rassistische_Bezeichnung": {
+				"people_cat_14": {
 					"label_singular": "rassistische Bezeichnung",
 					"label_plural": "rassistische Bezeichnungen"
 				},
-				"Redakteur_in": {
+				"people_cat_15": {
 					"label_singular": "Redakteur:in",
 					"label_plural": "Redakteur:innen"
 				},
-				"Regisseur_in": {
+				"people_cat_16": {
 					"label_singular": "Regisseur:in",
 					"label_plural": "Regisseur:innen"
 				},
-				"Sagengestalt": {
+				"people_cat_17": {
 					"label_singular": "Sagengestalt",
 					"label_plural": "Sagengestalten"
 				},
-				"Schauspieler_in": {
+				"people_cat_18": {
 					"label_singular": "Schauspieler:in",
 					"label_plural": "Schauspieler:innen"
 				},
-				"Schwarzenbach-Forscher_in": {
+				"people_cat_19": {
 					"label_singular": "Schwarzenbach-Forscher:in",
 					"label_plural": "Schwarzenbach-Forscher:innen"
 				},
-				"Verleger_in": {
+				"people_cat_20": {
 					"label_singular": "Verleger:in",
 					"label_plural": "Verleger:innen"
 				}
@@ -123,79 +123,79 @@
 				"docs": { "label": "Verknüpfte Dokumente" }
 			},
 			"groups": {
-				"Berg": {
+				"places_cat_1": {
 					"label_singular": "Berg",
 					"label_plural": "Berge"
 				},
-				"Bundesstaat oder Kanton": {
+				"places_cat_2": {
 					"label_singular": "Bundesstaat oder Kanton",
 					"label_plural": "Bundesstaaten oder Kantone"
 				},
-				"Gebirge": {
+				"places_cat_3": {
 					"label_singular": "Gebirge",
 					"label_plural": "Gebirge"
 				},
-				"Gebäude": {
+				"places_cat_4": {
 					"label_singular": "Gebäude",
 					"label_plural": "Gebäude"
 				},
-				"Gewässer": {
+				"places_cat_5": {
 					"label_singular": "Gewässer",
 					"label_plural": "Gewässer"
 				},
-				"Gletscher": {
+				"places_cat_6": {
 					"label_singular": "Gletscher",
 					"label_plural": "Gletscher"
 				},
-				"Höhle": {
+				"places_cat_7": {
 					"label_singular": "Höhle",
 					"label_plural": "Höhlen"
 				},
-				"Insel": {
+				"places_cat_8": {
 					"label_singular": "Insel",
 					"label_plural": "Inseln"
 				},
-				"Land": {
+				"places_cat_9": {
 					"label_singular": "Land",
 					"label_plural": "Länder"
 				},
-				"Militärische Anlage": {
+				"places_cat_10": {
 					"label_singular": "Militärische Anlage",
-					"label_plural": "Militärische Anlage"
+					"label_plural": "Militärische Anlagen"
 				},
-				"Monument": {
+				"places_cat_11": {
 					"label_singular": "Monument",
 					"label_plural": "Monumente"
 				},
-				"Park": {
+				"places_cat_12": {
 					"label_singular": "Park",
 					"label_plural": "Parks"
 				},
-				"Pass": {
+				"places_cat_13": {
 					"label_singular": "Pass",
 					"label_plural": "Pässe"
 				},
-				"Region": {
+				"places_cat_14": {
 					"label_singular": "Region",
 					"label_plural": "Regionen"
 				},
-				"Ruine/Ausgrabung": {
+				"places_cat_15": {
 					"label_singular": "Ruine/Ausgrabung",
 					"label_plural": "Ruinen/Ausgrabungen"
 				},
-				"Siedlung": {
+				"places_cat_16": {
 					"label_singular": "Siedlung",
 					"label_plural": "Siedlungen"
 				},
-				"Staudamm": {
+				"places_cat_17": {
 					"label_singular": "Staudamm",
 					"label_plural": "Staudämme"
 				},
-				"Strasse": {
+				"places_cat_18": {
 					"label_singular": "Strasse",
 					"label_plural": "Strassen"
 				},
-				"Wüste": {
+				"places_cat_19": {
 					"label_singular": "Wüste",
 					"label_plural": "Wüsten"
 				}
@@ -213,11 +213,11 @@
 				"docs": { "label": "Verknüpfte Dokumente" }
 			},
 			"groups": {
-				"event": {
+				"events_cat_1": {
 					"label_singular": "Event",
 					"label_plural": "Events"
 				},
-				"travel": {
+				"events_cat_2": {
 					"label_singular": "Reise",
 					"label_plural": "Reisen"
 				}
@@ -236,55 +236,55 @@
 				"docs": { "label": "Verknüpfte Dokumente" }
 			},
 			"groups": {
-				"Bar/Klub/Lokal": {
+				"orgs_cat_1": {
 					"label_singular": "Bar/Klub/Lokal",
 					"label_plural": "Bars/Klubs/Lokale"
 				},
-				"Hochschule": {
+				"orgs_cat_2": {
 					"label_singular": "Hochschule",
 					"label_plural": "Hochschulen"
 				},
-				"Hotel": {
+				"orgs_cat_3": {
 					"label_singular": "Hotel",
 					"label_plural": "Hotels"
 				},
-				"Klinik": {
+				"orgs_cat_4": {
 					"label_singular": "Klinik",
 					"label_plural": "Kliniken"
 				},
-				"Periodikum": {
+				"orgs_cat_5": {
 					"label_singular": "Periodikum",
 					"label_plural": "Periodika"
 				},
-				"Politische org": {
+				"orgs_cat_6": {
 					"label_singular": "Politische Organisation",
 					"label_plural": "Politische Organisationen"
 				},
-				"Religiöse org": {
+				"orgs_cat_7": {
 					"label_singular": "Religiöse Organisation",
 					"label_plural": "Religiöse Organisationen"
 				},
-				"Sammelband": {
+				"orgs_cat_8": {
 					"label_singular": "Sammelband",
 					"label_plural": "Sammelbände"
 				},
-				"Schule": {
+				"orgs_cat_9": {
 					"label_singular": "Schule",
 					"label_plural": "Schulen"
 				},
-				"Theater": {
+				"orgs_cat_10": {
 					"label_singular": "Theater",
 					"label_plural": "Theater"
 				},
-				"Verlag": {
+				"orgs_cat_11": {
 					"label_singular": "Verlag",
 					"label_plural": "Verlage"
 				},
-				"Wirtschaftliche org": {
+				"orgs_cat_12": {
 					"label_singular": "Wirtschaftliche Organisation",
 					"label_plural": "Wirtschaftliche Organisationen"
 				},
-				"Öffentliche Einrichtung": {
+				"orgs_cat_13": {
 					"label_singular": "Öffentliche Einrichtung",
 					"label_plural": "Öffentliche Einrichtungen"
 				}
