@@ -1,20 +1,23 @@
 /* --------------------------------
-To restrict CSS to view-modes use:
-
-- data-textflow='fluid'
-- data-textflow='paged'
-- data-fassung='DF'
-- data-fassung='LF'
-- data-dom='global_comment'
-- data-dom='containerAnnotations'
-
--------------------------------- */
+ * To restrict CSS to view-modes use:
+ *
+ * - data-textflow='fluid'
+ * - data-textflow='paged'
+ * - .mode-df
+ * - .mode-lf
+ *
+ * -------------------------------- */
 
 :root {
 	/* Fonts */
 	--font-text: 'EB Garamond', 'Georgia', 'Times New Roman', serif;
 	--font-head: 'EB Garamond', 'Georgia', serif;
 	--font-mono: 'Fira Code', 'Consolas', 'Courier New', monospace;
+
+	--text-subsup: 0.8em;
+	--text-sm: 100%;
+	--text-base: 120%;
+	--text-lg: 140%;
 
 	/* Colors */
 	--color-bg: #fdfcf9;
@@ -32,9 +35,8 @@ To restrict CSS to view-modes use:
 	/* Editorial colours */
 	--color-add: #2d8a2d;
 	--color-del: #b91c1c;
-	--color-hw: #1d6fa4;
-	--color-tw-add: #2d8a2d;
-	--color-tw-del: #b91c1c;
+	--color-hw: #3868c9;
+	--color-tw: #b138c9;
 	--color-subst-bg: #fffbe6;
 	--color-supplied-bg: #eeeeee;
 	--color-unclear-border: #92400e;
@@ -54,13 +56,18 @@ To restrict CSS to view-modes use:
 	--color-note-endnote-border: #0ea5e9;
 	--color-note-footnote-bg: #ede9fe;
 	--color-note-footnote-border: #7c3aed;
-	--color-note-figure-bg: #dcfce7;
+	--color-note-figure-bg: #02c346;
 	--color-note-figure-border: #16a34a;
 
 	--color-note-active: var(--color-dark-10);
 	--color-note-active-foreground: var(--color-background-contrast);
 	--color-footnote-circle: var(--color-dark-40);
+
+	/* Space */
+	--space-unit-v: 3em;
+	--space-unit-h: 0.6em;
 }
+
 .dark {
 	--color-note-active: var(--color-dark-40);
 	--color-note-active-foreground: var(--color-background-contrast);
@@ -81,7 +88,7 @@ tei-milestone {
 /* Divisions */
 tei-div {
 	display: block;
-	margin-top: 1.5rem;
+	/* margin-top: 1.5rem; */
 	margin-bottom: 1.5rem;
 }
 
@@ -89,34 +96,40 @@ tei-div {
 tei-head {
 	font-family: var(--font-head);
 	font-weight: normal;
-	font-size: 140%;
+	font-size: var(--text-lg);
 	margin-bottom: 1em;
 	display: block;
 	line-height: auto;
 }
+.mode-df {
+	tei-head {
+		&[rendition='#c'] {
+			text-align: center;
+		}
+		&[rendition='#right'] {
+			text-align: right;
+		}
+	}
+}
 
 /* Paragraphs */
 tei-p {
+	display: block;
 	font-family: var(--font-text);
-	font-size: 120%;
-	line-height: 1.7;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	font-size: var(--text-base);
+	line-height: 1.2;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
 	text-align: left;
-	hyphens: auto;
-	display: inline-block;
 }
 
-[data-dom='global_comment'] {
-	/* //! FIX: this is needed, as long as custom-elements are not propperly attached in the global_comment */
-	tei-p {
-		display: inline-block;
-	}
+.mode-lf tei-p {
+	hyphens: auto;
 }
 
 /* -------------------------------- */
 /* Page Breaks */
-[data-fassung='DF'] {
+.mode-df {
 	tei-pb {
 		display: block;
 		text-align: center;
@@ -127,94 +140,188 @@ tei-p {
 		padding-top: 0.4em;
 	}
 
-	tei-pb::before {
+	tei-pb[n]::before {
 		content: '[ p.\00a0' attr(n) ' ]';
 	}
 }
 
 /* -------------------------------- */
 /* Linebreaks and Hyphens */
-tei-lb:after {
-	content: '\a';
-	white-space: pre;
+.mode-df {
+	tei-lb::after {
+		content: '\a';
+		white-space: pre;
+	}
+	tei-p > tei-lb:first-child::after {
+		content: '';
+	}
 }
 
-[data-textflow='fluid'] {
-	tei-lb,
-	span[data-type='hyphen'] {
+.mode-lf {
+	tei-lb[break='no'] {
 		display: none;
 	}
 }
 
 /* -------------------------------- */
 /* Forme work */
-[data-fassung='LF'] {
-	tei-fw {
+.mode-lf {
+	tei-ab {
 		display: none;
 	}
 }
 
-[data-fassung='DF'] {
-	tei-fw {
+.mode-df {
+	tei-ab {
+		position: relative;
+		height: 1em;
 		display: block;
 		color: var(--color-muted);
-		font-size: 0.85em;
+		font-size: var(--text-sm);
 		font-style: italic;
 		margin: 0.5em 0;
+		padding: 0;
 
-		&[place='topleft'],
-		&[place='bottomleft'] {
-			text-align: left;
-		}
-		&[place='topcenter'],
-		&[place='bottomcenter'] {
-			text-align: center;
-		}
-		&[place='topright'],
-		&[place='bottomright'] {
-			text-align: right;
+		tei-fw {
+			position: absolute;
+			display: inline-block;
+			&[place='topleft'],
+			&[place='bottomleft'] {
+				left: 0;
+				text-align: left;
+			}
+			&[place='topcenter'],
+			&[place='bottomcenter'] {
+				left: 50%;
+				transform: translateX(-50%);
+				text-align: center;
+			}
+			&[place='topright'],
+			&[place='bottomright'] {
+				right: 0;
+				text-align: right;
+			}
 		}
 	}
 }
 
 /* -------------------------------- */
-/* Medium (handShift) */
+/* Space */
 
-[data-fassung='LF'] {
-	tei-handshift {
+.mode-lf {
+	tei-space[dim='horizontal'] {
+		display: inline-block;
+		width: calc(var(--space-unit-h, 1em));
+	}
+}
+
+.mode-df {
+	tei-space[dim='horizontal'] {
+		display: inline-block;
+
+		&[quantity='1'] {
+			width: calc(var(--space-unit-h, 1em) * 1);
+		}
+		&[quantity='2'] {
+			width: calc(var(--space-unit-h, 1em) * 2);
+		}
+		&[quantity='3'] {
+			width: calc(var(--space-unit-h, 1em) * 3);
+		}
+		&[quantity='4'] {
+			width: calc(var(--space-unit-h, 1em) * 4);
+		}
+		&[quantity='5'] {
+			width: calc(var(--space-unit-h, 1em) * 5);
+		}
+		&[quantity='6'] {
+			width: calc(var(--space-unit-h, 1em) * 6);
+		}
+		&[quantity='7'] {
+			width: calc(var(--space-unit-h, 1em) * 7);
+		}
+		&[quantity='8'] {
+			width: calc(var(--space-unit-h, 1em) * 8);
+		}
+		&[quantity='9'] {
+			width: calc(var(--space-unit-h, 1em) * 9);
+		}
+		&[quantity='10'] {
+			width: calc(var(--space-unit-h, 1em) * 10);
+		}
+		&[quantity='11'] {
+			width: calc(var(--space-unit-h, 1em) * 11);
+		}
+		&[quantity='12'] {
+			width: calc(var(--space-unit-h, 1em) * 12);
+		}
+		&[quantity='13'] {
+			width: calc(var(--space-unit-h, 1em) * 13);
+		}
+		&[quantity='14'] {
+			width: calc(var(--space-unit-h, 1em) * 14);
+		}
+		&[quantity='15'] {
+			width: calc(var(--space-unit-h, 1em) * 15);
+		}
+		&[quantity='16'] {
+			width: calc(var(--space-unit-h, 1em) * 16);
+		}
+		&[quantity='17'] {
+			width: calc(var(--space-unit-h, 1em) * 17);
+		}
+		&[quantity='18'] {
+			width: calc(var(--space-unit-h, 1em) * 18);
+		}
+		&[quantity='19'] {
+			width: calc(var(--space-unit-h, 1em) * 19);
+		}
+		&[quantity='20'] {
+			width: calc(var(--space-unit-h, 1em) * 20);
+		}
+	}
+
+	tei-space[dim='vertical'] {
+		display: block;
+		width: 100%;
+		content: '';
+		&[quantity='1'] {
+			height: calc(var(--space-unit-v, 1em) * 1);
+		}
+		&[quantity='2'] {
+			height: calc(var(--space-unit-v, 1em) * 2);
+		}
+		&[quantity='3'] {
+			height: calc(var(--space-unit-v, 1em) * 3);
+		}
+	}
+}
+
+/* -------------------------------- */
+/* Punctuation */
+.mode-df {
+	tei-pc {
+		color: var(--color-punctuation);
+	}
+}
+.mode-lf {
+	tei-pc {
 		display: none;
 	}
 }
-[data-fassung='DF'] {
-	tei-handshift {
-		display: inline;
-		color: var(--color-muted);
-		font-size: 0.8em;
-	}
-
-	tei-handshift::before {
-		content: '✍ ';
-	}
-}
 
 /* -------------------------------- */
-/* Foreign */
-
-[data-fassung='DF'] {
-	tei-foreign {
-		font-style: italic;
-		background: var(--color-foreign);
-		padding: 0 3px;
-		border-radius: 2px;
-	}
-
-	tei-foreign[xml\:lang]::after {
-		content: ' [' attr(xml\:lang) ']';
-		color: var(--color-muted);
-		font-size: 0.8em;
-		font-style: normal;
-	}
+/* Quotes */
+/* tei-quote::before {
+  content: "«";
 }
+tei-quote::after {
+  content: "»";
+}
+.mode-df tei-quote::before,
+.mode-df tei-quote::after {
+  color: var(--color-punctuation);
+} */
 
 /* -------------------------------- */
 /* Highlighting */
@@ -233,151 +340,155 @@ tei-hi[rendition~='#u'] {
 
 tei-hi[rendition~='#sub'] {
 	vertical-align: sub;
-	font-size: 0.8em;
+	font-size: var(--text-subsup);
 }
 
 tei-hi[rendition~='#sup'] {
 	vertical-align: super;
-	font-size: 0.8em;
+	font-size: var(--text-subsup);
 }
 
 tei-hi[rendition~='#g'] {
 	letter-spacing: 0.15em;
 }
 
-tei-hi[rendition~='#c'] {
-	display: block;
-	text-align: center;
-}
-
-tei-hi[rendition~='#r'] {
-	display: block;
-	text-align: right;
-}
-
 /* -------------------------------- */
-/* Punctuation */
-[data-fassung='DF'] {
-	tei-pc {
-		color: var(--color-punctuation);
+/* Foreign */
+
+.mode-df {
+	tei-foreign {
+		font-style: italic;
+		background: var(--color-foreign);
+		padding: 0 3px;
+		border-radius: 2px;
 	}
-}
 
-/* -------------------------------- */
-/* Space */
-[data-fassung='DF'] {
-	tei-space::before {
-		content: '□';
+	tei-foreign[xml\:lang]::after {
+		content: ' [' attr(xml\:lang) ']';
 		color: var(--color-muted);
+		font-size: 0.8em;
+		font-style: normal;
 	}
-}
-
-/* -------------------------------- */
-/* Quotes */
-tei-quote::before {
-	content: '«';
-}
-tei-quote::after {
-	content: '»';
-}
-[data-fassung='DF'] tei-quote::before,
-[data-fassung='DF'] tei-quote::after {
-	color: var(--color-punctuation);
 }
 
 /* -------------------------------- */
 /* (2) AUTHORIAL REVISIONS AND CORRECTIONS */
 /* -------------------------------- */
 
-/* Substitutions, Additions and Deletions */
-
-[data-fassung='DF'] {
-	/* inline */
-	tei-add[place='inline']:before {
-		content: '⌜';
+/* Hand */
+.mode-df {
+	[hand*='#hw'] {
+		color: var(--color-hw);
 	}
-	tei-add[place='inline']:after {
-		content: '⌟';
+	[hand*='#tw'] {
+		color: var(--color-tw);
 	}
 
-	/* margin */
-	tei-add[place='margin']:before {
-		content: '‹';
+	[hand*='#person'] {
+		color: var(--color-tw);
 	}
-	tei-add[place='margin']:after {
-		content: '›';
-	}
-	/* above */
-	tei-add[place='above'] {
-		vertical-align: super;
-	}
-	tei-add[place='above']:before {
-		content: '⌜';
-	}
-	tei-add[place='above']:after {
-		content: '⌝';
-	}
-	/* below */
-	tei-add[place='below'] {
-		vertical-align: sub;
-	}
-	tei-add[place='below']:before {
-		content: '⌞';
-	}
-	tei-add[place='below']:after {
-		content: '⌟';
-	}
-	/* substitution */
-	tei-del {
-		text-decoration: line-through;
-	}
-	tei-add[place='over']:before {
-		content: '{';
-	}
-	tei-add[place='over']:after {
-		content: '}';
+	tei-add[hand*='#person']::after,
+	tei-del[hand*='#person']::after,
+	tei-p[hand*='#person']::after {
+		content: '✍ hand: (' attr(hand) ')';
+		color: black;
+		font-size: 0.7em;
+		font-family: monospace;
 	}
 }
 
-[data-fassung='LF'] {
-	tei-subst {
+/* -------------------------------- */
+/* Medium (handShift) */
+
+.mode-df {
+	tei-handshift {
 		display: inline;
 	}
 
-	tei-del,
-	tei-subst > tei-del {
+	span[data-name='handShift'][data-hand*='#hw'] {
+		color: var(--color-hw);
+	}
+
+	span[data-name='handShift'][data-hand*='#tw'] {
+		color: var(--color-tw);
+	}
+	span[data-name='handShift'][data-hand*='#person']::before {
+		content: '✍ change of hand: (' attr(data-hand) ')';
+		color: black;
+		font-size: 0.7em;
+		font-family: monospace;
+	}
+}
+
+/* Additions and Deletions */
+.mode-df {
+	tei-add[place='above'] {
+		vertical-align: super;
+	}
+	tei-add[place='below'] {
+		vertical-align: sub;
+	}
+	tei-del {
+		text-decoration: line-through;
+	}
+}
+
+.mode-lf {
+	tei-add span.addition_wrapper {
 		display: none;
 	}
-
-	tei-add,
-	tei-subst > tei-add {
-		display: inline;
-		color: inherit;
+	tei-del {
+		display: none;
 	}
 }
 
 /* -------------------------------- */
 /* Metamarks */
-[data-fassung='LF'] {
-	tei-metamark {
+
+metamark {
+	display: inline;
+}
+
+/* Hide the explanation span entirely */
+.metamark-explanation-for-relocation {
+	display: none;
+}
+
+/* DF: Show original text and marker */
+.mode-df {
+	.metamark-relocated-text-at-original-position {
+		display: inline;
+	}
+	.metamark-marker-at-new-location {
+		display: inline-block;
+		color: #6d4aff;
+		font-weight: bold;
+		margin-left: 4px;
+	}
+	.metamark-marker-at-new-location::before {
+		content: '○ (' attr(id) ')';
+	}
+	.metamark-relocated-text-at-original-position::after {
+		content: '(' attr(id) ')';
+		color: #6d4aff;
+		font-weight: bold;
+		margin-left: 4px;
+	}
+	.metamark-relocated-text-at-new-location {
 		display: none;
 	}
 }
 
-[data-fassung='DF'] {
-	tei-metamark {
+/* LF: Hide original, show relocated text, hide marker */
+.mode-lf {
+	.metamark-relocated-text-at-original-position {
+		display: none;
+	}
+	.metamark-marker-at-new-location {
+		display: none;
+	}
+	.metamark-relocated-text-at-new-location {
 		display: inline;
-		color: var(--color-muted);
-		font-size: 0.85em;
-		font-style: italic;
-	}
-
-	tei-metamark::before {
-		content: '⟨';
-	}
-
-	tei-metamark::after {
-		content: '⟩';
 	}
 }
 
@@ -386,13 +497,13 @@ tei-quote::after {
 /* -------------------------------- */
 
 /* -------------------------------- */
-/* Editorial Supplements */
+/* Supplied */
 
-[data-fassung='LF'] {
-	tei-supplied {
-		color: var(--color-muted);
-	}
+tei-supplied {
+	color: var(--color-muted);
+}
 
+.mode-df {
 	tei-supplied::before {
 		content: '[';
 		color: var(--color-muted);
@@ -405,7 +516,7 @@ tei-quote::after {
 }
 
 /* -------------------------------- */
-/* Gaps */
+/* Gap */
 
 tei-gap {
 	color: var(--color-muted);
@@ -417,24 +528,24 @@ tei-gap::before {
 }
 
 tei-gap[reason]::before {
-	content: '[' attr(reason) ']';
+	content: '[' attr(reason) ': gap of ~' attr(quantity) ' characters]';
 }
 
 /* -------------------------------- */
 /* Unclear */
 
-[data-fassung='LF'] {
+.mode-lf {
 	tei-unclear {
 		color: var(--color-muted);
 	}
 }
-[data-fassung='DF'] {
+.mode-df {
 	tei-unclear {
 		border-bottom: 2px dotted var(--color-unclear-border);
 	}
 
 	tei-unclear::after {
-		content: ' [?]';
+		content: '[?]';
 		color: var(--color-muted);
 		font-size: 0.8em;
 	}
@@ -442,9 +553,7 @@ tei-gap[reason]::before {
 
 /* -------------------------------- */
 /* Choice */
-
-/* ── LF: show regularised readings, hide diplomatic originals */
-[data-fassung='LF'] {
+.mode-lf {
 	tei-choice > tei-sic,
 	tei-choice > tei-orig,
 	tei-choice > tei-abbr {
@@ -452,45 +561,40 @@ tei-gap[reason]::before {
 	}
 }
 
-/* ── DF: show striked diplomatic originals, frame regularised */
-
-/* TODO */
-[data-fassung='DF'] {
-	tei-choice > tei-sic,
-	tei-choice > tei-orig,
-	tei-choice > tei-abbr {
-		&::after {
-			content: '→';
-			color: var(--color-muted);
-			margin-left: 0.15em;
-			font-size: 0.85em;
-		}
-	}
-
+.mode-df {
 	tei-choice > tei-corr,
 	tei-choice > tei-reg,
 	tei-choice > tei-expan {
-		border-bottom: 4px dotted var(--color-corr);
+		display: none;
 	}
-
-	/* Colors */
-	tei-choice > tei-corr {
-		border-bottom: 4px dotted var(--color-corr);
-	}
-	tei-choice > tei-reg {
-		border-bottom: 4px dotted var(--color-reg);
-	}
-	tei-choice > tei-expan {
-		border-bottom: 4px dotted var(--color-expan);
+	tei-choice > tei-sic,
+	tei-choice > tei-orig,
+	tei-choice > tei-abbr {
+		color: var(--color-muted);
 	}
 	tei-choice > tei-sic {
-		border-bottom: 4px dotted var(--color-sic);
+		&::before {
+			content: '[';
+		}
+		&::after {
+			content: ']';
+		}
 	}
 	tei-choice > tei-orig {
-		border-bottom: 4px dotted var(--color-orig);
+		&::before {
+			content: '[';
+		}
+		&::after {
+			content: ']';
+		}
 	}
 	tei-choice > tei-abbr {
-		border-bottom: 4px dotted var(--color-abbr);
+		&::before {
+			content: '[';
+		}
+		&::after {
+			content: ']';
+		}
 	}
 }
 
@@ -520,7 +624,7 @@ span.note-mark.active {
 /* -------------------------------- */
 /* Footnotes */
 
-[data-fassung='LF'] {
+.mode-lf {
 	tei-text span.footnote {
 		cursor: pointer;
 		border: 1px solid var(--color-footnote-circle);
@@ -528,11 +632,6 @@ span.note-mark.active {
 		padding: 2px 7px;
 		border-radius: 100%;
 		font-size: 1.1rem;
-		/* prevent user-selection */
-		user-select: none;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
 	}
 
 	span.footnote:hover,
@@ -555,7 +654,7 @@ span.note-mark.active {
 	}
 }
 
-[data-fassung='DF'] {
+.mode-df {
 	tei-note {
 		display: none;
 	}
@@ -573,9 +672,7 @@ tei-anchor {
 /* -------------------------------- */
 /* Referencing Strings */
 
-[data-dom='global_comment'],
-[data-textflow='fluid'],
-[data-dom='containerAnnotations'] {
+[data-textflow='fluid'] {
 	/* Hover and Active */
 	tei-rs:hover,
 	tei-rs.active,
@@ -601,9 +698,9 @@ tei-anchor {
 		border-bottom-style: solid;
 		border-bottom-color: var(--color-background-contrast);
 
-		&[type='unpublished'],
-		&[type='published'],
-		&[type='posthum'],
+		&[type='smallform'],
+		&[type='longform'],
+		&[type='letter'],
 		&[type='image'] {
 			border-bottom-color: var(--color-rs-doc);
 		}
@@ -627,44 +724,6 @@ tei-anchor {
 			border-bottom-color: var(--color-rs-event);
 		}
 		&[type='keyword'] {
-			border-bottom-color: var(--color-rs-keyword);
-		}
-	}
-}
-
-[data-dom='global_comment'],
-[data-dom='containerAnnotations'] {
-	tei-rs {
-		cursor: pointer;
-		border-bottom-width: 1.5px;
-		border-bottom-style: solid;
-		border-bottom-color: var(--color-background-contrast);
-
-		&[type='unpublished']:hover,
-		&[type='published']:hover,
-		&[type='posthum']:hover {
-			border-bottom-color: var(--color-rs-doc);
-		}
-		&[type='person']:hover {
-			border-bottom-color: var(--color-rs-person);
-		}
-		&[type='place']:hover {
-			border-bottom-color: var(--color-rs-place);
-		}
-		&[type='org']:hover {
-			border-bottom-color: var(--color-rs-org);
-		}
-		&[type='work']:hover {
-			border-bottom-color: var(--color-rs-work);
-		}
-		&[type='bibl']:hover {
-			border-bottom-color: var(--color-rs-bibl);
-		}
-		&[type='event']:hover,
-		&[type='travel']:hover {
-			border-bottom-color: var(--color-rs-event);
-		}
-		&[type='keyword']:hover {
 			border-bottom-color: var(--color-rs-keyword);
 		}
 	}

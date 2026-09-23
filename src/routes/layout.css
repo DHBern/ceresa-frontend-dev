@@ -10,7 +10,7 @@
 @import '../../ceresastyle-presets.css';
 
 /* Edendum */
-@import '../lib/CETEIcean/CETEIcean.scss';
+@import '../lib/CETEIcean/styles.css';
 
 /* Dark Mode */
 @custom-variant dark (&:where(.dark, .dark *));
