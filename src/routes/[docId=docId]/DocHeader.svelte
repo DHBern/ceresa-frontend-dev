@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import type { TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
 	import type { TDocKeys } from '$lib/types/documents/TDocuments';
 	import type {
 		TResolvedLetters,
@@ -11,7 +10,6 @@
 	import { dict_register as dictReg } from '$lib/dictionaries/dict_register.json';
 	import { dict_docs as dictDocs } from '$lib/dictionaries/dict_docs.json';
 	import ResponsiveAccordion from './ResponsiveAccordion.svelte';
-	import ScrollArea from '$lib/components/ui/ScrollArea.svelte';
 	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import type { TResolvedRegister } from '$lib/functions/ease_of_use/resolveReg';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
@@ -29,7 +27,7 @@
 		crossRef: Partial<
 			Record<'citedDocuments' | 'linkedDocuments' | 'citedEntities' | 'linkedEntities', any>
 		>;
-		params: object;
+		params: any;
 	} = $props();
 
 	let globalComment = $derived.by(() => {
@@ -70,7 +68,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{cont && cont.item && 'name' in cont?.item ? cont.item?.name : ''}
+						{cont?.item?.name || ''}
 					</a>
 				{/each}
 			</div>

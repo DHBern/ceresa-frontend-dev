@@ -2,7 +2,7 @@
 	import { Accordion } from 'bits-ui';
 	import dict_register from '$lib/dictionaries/dict_register.json';
 	import { register as reg } from '$lib/data/register.json';
-	import type { TRegTypes } from '$lib/types/register/TRegister';
+	import type { TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
 	import { resolve } from '$app/paths';
 	import { openRegisters, selectedTextNode } from '$lib/globals/ui-states.svelte';
 	import {
@@ -15,6 +15,7 @@
 		TDocItemsLongforms,
 		TDocItemsSmallforms
 	} from '$lib/types/documents/TDocuments';
+	import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
 
 	const dictReg = dict_register.dict_register as Record<
 		string,
@@ -60,8 +61,9 @@
 				{#snippet child({ props, open })}
 					{#if open}
 						<div {...props} transition:slide={{ duration: 300 }}>
-							<div class="pb-[25px]">
+							<div class="pb-6.25">
 								{#each regEntries?.[regType] as regKey (regKey)}
+									{@const resolvedReg = resolveReg(reg, regKey as TRegKeysFlat)}
 									<div
 										role="button"
 										tabindex="0"
@@ -78,7 +80,7 @@
 											handleRegisterClick(regKey);
 										}}
 									>
-										<p class="text-lg">{reg[regType][regKey].name}</p>
+										<p class="text-lg">{resolvedReg?.item?.name}</p>
 										<a
 											class="flex h-9 w-9 items-center justify-center rounded-button group-hover:flex group-[data-active]:flex hover:bg-light-10"
 											href={resolve(`/register/${regKey as string}`)}

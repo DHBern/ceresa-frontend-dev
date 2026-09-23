@@ -8,7 +8,7 @@ export const load: LayoutServerLoad = ({ params }) => {
 
 	// What registerPage are we looking at?
 	const regView = !regSlug
-		? //register
+		? // /register
 			'regView1'
 		: regSlug && Object.keys(reg).includes(regSlug)
 			? // e.g. /register/[people]

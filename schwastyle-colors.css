@@ -27,7 +27,9 @@
 	--light-10: hsla(0 0% 96% / 0.1);
 	--light-04: hsla(0 0% 96% / 0.04);
 	--background-hover: var(--dark-04);
+	--background-hover-safe: hsla(0 0% 96%); /* //! change this */
 	--foreground-hover: var(--light-10);
+	--foreground-hover-safe: rgb(54, 54, 55); /* //! change this */
 	--spinner: var(--dark-70);
 	--warning: var(--color-red-500);
 	--accent: var(--color-primary-100);
@@ -92,7 +94,9 @@
 	--light-10: hsla(240 6% 10% / 0.1);
 	--light-04: hsla(240 6% 10% / 0.04);
 	--background-hover: var(--dark-04);
+	--background-hover-safe: rgb(54, 54, 55); /* //! change this */
 	--foreground-hover: var(--light-04);
+	--foreground-hover-safe: hsla(0 0% 96% / 1); /* //! change this */
 	--spinner: var(--color-dark-70);
 	--warning: var(--color-red-500);
 	--accent: var(--color-primary-600);
@@ -189,7 +193,9 @@
 	--color-light-40: var(--light-40);
 	--color-light-04: var(--light-04);
 	--color-background-hover: var(--background-hover);
+	--color-background-hover-safe: var(--background-hover-safe);
 	--color-foreground-hover: var(--foreground-hover);
+	--color-foreground-hover-safe: var(--foreground-hover-safe);
 	--color-spinner: var(--spinner);
 	--color-warning: var(--warning);
 	--color-accent: var(--accent);

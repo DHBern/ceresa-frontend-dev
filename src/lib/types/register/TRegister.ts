@@ -141,12 +141,7 @@ export type TRegTypes = keyof TRegister['register'];
 
 // Key Set
 export type TRegKeysFlat =
-	| TPeopleKeys
-	| TPlacesKeys
-	| TEventsKeys
-	| TOrgsKeys
-	| TBiblsKeys
-	| TKeywordsKeys;
+	TPeopleKeys | TPlacesKeys | TEventsKeys | TOrgsKeys | TBiblsKeys | TKeywordsKeys;
 
 export type TRegKeysMap = {
 	people: TPeopleKeys;
@@ -184,12 +179,7 @@ export type TRegAttrsMap = {
 
 // Group Set
 export type TRegGroupsFlat =
-	| TPeopleGroups
-	| TPlacesGroups
-	| TEventsGroups
-	| TOrgsGroups
-	| TBiblsGroups
-	| TKeywordsGroups;
+	TPeopleGroups | TPlacesGroups | TEventsGroups | TOrgsGroups | TBiblsGroups | TKeywordsGroups;
 
 export type TRegGroupsMap = {
 	people: TPeopleGroups;

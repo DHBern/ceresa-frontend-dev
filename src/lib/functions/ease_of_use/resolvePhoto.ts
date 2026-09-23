@@ -2,7 +2,7 @@
 // Resolver Function for Doc-Object (using simple heuristic)
 // ------------------------------------------------------------
 
-import type { TDocKeys, TDocTypes, TDocuments } from '$lib/types/documents/TDocuments';
+import type { TDocKeys, TDocTypes } from '$lib/types/documents/TDocuments';
 import type { TPhotosKeys } from '$lib/types/documents/TPhotosKeys';
 import type { TResolvedPhotos } from './resolveDoc';
 

@@ -53,7 +53,7 @@
 	let isSelectedValidSeq = $derived(params.seq && validSeqKeys.includes(params.seq) ? true : false);
 	let currentSeqType = $derived(isSelectedValidSeq ? findSeqTypeBySeqKey(params.seq) : null);
 	const seqCurrent = $derived(
-		isSelectedValidSeq ? seqMatching[currentSeqType]?.[params.seq] : null
+		isSelectedValidSeq ? seqMatching[currentSeqType || '']?.[params.seq] : null
 	);
 	const prevId = $derived(
 		isSelectedValidSeq
@@ -64,14 +64,6 @@
 	let hasOtherSequences = $derived(Object.keys(seqOther).length ? true : false);
 
 	// UI-State
-	// $inspect('validBOOL', validSeqKeys.includes(params.seq));
-	// $inspect('Params.seq', params.seq);
-	// $inspect('IsSelectedValidSeq', isSelectedValidSeq);
-	// $inspect('CurrentSeqType', currentSeqType);
-	// $inspect('seqCurrent', seqCurrent);
-	// $inspect('prevId', prevId);
-	// $inspect('nextId', nextId);
-
 	let isOpenOtherSeqPanel = $state(false);
 
 	// UI-Elements
@@ -90,7 +82,7 @@
 	let elSeqPanel: HTMLElement | undefined = $state(undefined);
 
 	// Functions
-	function filterVisible(array: TDocKeys[], seqToggle = sequenceToggle) {
+	function filterVisible(array: TDocKeys[] | null | undefined, seqToggle = sequenceToggle) {
 		if (!array) return [];
 		return array.filter((itemId) => checkVisible(itemId, seqToggle));
 	}
@@ -373,11 +365,11 @@
 					<a
 						class="hover:hyperlink"
 						href={resolve(
-							`/${seqAll[currentSeqType]?.[params.seq]?.url_seq_overview ? seqAll[currentSeqType]?.[params.seq]?.url_seq_overview : currentSeqType}` as any
+							`/${seqAll[currentSeqType || '']?.[params.seq]?.url_seq_overview ? seqAll[currentSeqType || '']?.[params.seq]?.url_seq_overview : currentSeqType}` as any
 						)}
 						target="_blank"
 						rel="noopener noreferrer"
-						>{@html seqAll[currentSeqType]?.[params.seq]?.preamble}
+						>{@html seqAll[currentSeqType || '']?.[params.seq]?.preamble}
 					</a>
 				</h6>
 			</div>
@@ -395,7 +387,7 @@
 			>
 				<div class={['flex flex-row items-center gap-2']}>
 					<i class="fa-solid fa-chevron-left"></i>
-					<p>{dictSeqTyped[currentSeqType]?.label_prev}</p>
+					<p>{dictSeqTyped[currentSeqType || '']?.label_prev}</p>
 				</div>
 			</a>
 
@@ -431,7 +423,7 @@
 				}}
 			>
 				<div class={['flex flex-row items-center gap-2']}>
-					<p>{dictSeqTyped[currentSeqType]?.label_next}</p>
+					<p>{dictSeqTyped[currentSeqType || '']?.label_next}</p>
 					<i class="fa-solid fa-chevron-right"></i>
 				</div>
 			</a>

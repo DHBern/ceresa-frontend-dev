@@ -92,9 +92,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 
 	// Resolve Documents to current document
 	const resolvedDoc = resolveDoc(allDocs, params.docId as TDocKeys) as
-		| TResolvedLetters
-		| TResolvedSmallforms
-		| TResolvedLongforms;
+		TResolvedLetters | TResolvedSmallforms | TResolvedLongforms;
 
 	// Resolve cross-register references
 	const crossRef: {

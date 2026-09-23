@@ -31,10 +31,7 @@ export type TResolvedPhotos = {
 };
 
 export type TResolvedDoc =
-	| TResolvedLetters
-	| TResolvedSmallforms
-	| TResolvedLongforms
-	| TResolvedPhotos;
+	TResolvedLetters | TResolvedSmallforms | TResolvedLongforms | TResolvedPhotos;
 
 export function resolveDoc(
 	object: Record<TDocTypes, any> | null,

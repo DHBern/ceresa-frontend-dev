@@ -17,45 +17,13 @@ import type { TKeywordsKeys } from '$lib/types/register/TKeywordsKeys';
 const allDocs = allDocsRaw as TDocuments['documents'];
 
 export const entries: EntryGenerator = () => {
-	// Extract first-order keys
-	const firstOrderKeyObjects = Object.keys(reg).map((firstKey) => {
-		return { regSlug: firstKey };
-	});
-
-	// Extract second-order keys
-	const secondOrderKeyObjects = Object.keys(reg).flatMap((firstKey) => {
+	const keys = Object.keys(reg).flatMap((firstKey) => {
 		return Object.keys(reg[firstKey as keyof typeof reg] || {}).map((secondKey) => {
 			return { regSlug: secondKey };
 		});
 	});
-
-	// Combine both first-order and second-order keys
-	return [...firstOrderKeyObjects, ...secondOrderKeyObjects];
+	return keys;
 };
-
-// Strip register entries to only the fields needed.
-function buildListEntries(regType: TRegTypes): TRegister['register'][TRegTypes] | object {
-	const full = reg[regType];
-	if (!full) return {};
-
-	type TPartialRegEntry = {
-		name?: string;
-		lastname?: string;
-		type?: string;
-		date?: TRegister['register']['events'][TEventsKeys]['date'];
-	};
-	const stripped: Partial<Record<TRegKeysFlat, TPartialRegEntry>> = {};
-
-	for (const [key, entry] of Object.entries(full)) {
-		stripped[key as TRegKeysFlat] = {
-			...(entry.name !== undefined && { name: entry.name }),
-			...(entry.lastname !== undefined && { lastname: entry.lastname }),
-			...(entry.type !== undefined && { type: entry.type }),
-			...(entry.date !== undefined && { date: entry.date })
-		};
-	}
-	return stripped;
-}
 
 // Resolve linked document IDs to minimal display data.
 function resolveLinkedDocs(
@@ -68,22 +36,29 @@ function resolveLinkedDocs(
 			docId: docId as string,
 			iiif_url: resolved?.item?.manuscript?.iiif_urls?.[0] ?? null,
 			title_full:
-				(('title_full' in resolved?.item?.metadata! && resolved?.item?.metadata?.title_full) ||
+				((resolved?.item?.metadata as { title_full?: string })?.title_full ||
 					resolved?.item?.name) ??
-				null, //! TODO
+				null,
 			pubDate:
-				(('pubDate' in resolved?.item?.metadata! && resolved?.item?.metadata?.pubDate) ||
-					resolved?.item?.metadata.date) ??
-				null //! TODO
+				((resolved?.item?.metadata as { pubDate?: string })?.pubDate ||
+					(resolved?.item?.metadata as { date?: { from: string | null; to: string | null } })?.date
+						?.from ||
+					resolved?.item?.name) ??
+				null
 		};
 	});
 }
 
+// Strip register entries to only the fields needed.
+export type TPartialRegEntry = {
+	name?: string;
+	lastname?: string;
+	type?: string;
+	date?: TRegister['register']['events'][TEventsKeys]['date'];
+};
+
 export const load: PageServerLoad = async ({ parent }) => {
 	const { regType, regSlug } = await parent();
-
-	// Stripped entries for List.svelte sidebar/multi-column view
-	const regTypeEntries = regType ? buildListEntries(regType) : {};
 
 	// Full attributes for the single item being viewed
 	const regTypeIndex = [
@@ -127,5 +102,25 @@ export const load: PageServerLoad = async ({ parent }) => {
 		crossRef.linkedDocs = resolveLinkedDocs(regAttributes.docs);
 	}
 
-	return { regTypeEntries, regAttributes, crossRef, regMapPreviewPath };
+	function createRegListEntries(regType: TRegTypes) {
+		if (!regType) return {};
+
+		const fullRegOfType = reg[regType];
+		if (!fullRegOfType) return {};
+
+		const allowedKeys: Array<keyof TPartialRegEntry> = ['name', 'lastname', 'type', 'date'];
+
+		return Object.fromEntries(
+			Object.entries(fullRegOfType).map(([key, entry]) => [
+				key,
+				Object.fromEntries(
+					allowedKeys.filter((k) => k in entry && entry[k] !== undefined).map((k) => [k, entry[k]])
+				) as TPartialRegEntry
+			])
+		) as Partial<Record<TRegKeysFlat, TPartialRegEntry>>;
+	}
+
+	const regListEntries = createRegListEntries(regType);
+
+	return { regListEntries, regAttributes, crossRef, regMapPreviewPath };
 };
