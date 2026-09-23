@@ -17,18 +17,13 @@
 		main1: {
 			nameShort: 'Texte & Fotos',
 			nameLong: 'Texte und Fotografien',
-			idsSub: ['smallforms', 'longforms', 'letters', 'photos']
-		},
-		main2: {
-			nameShort: 'Zugänge',
-			nameLong: 'Zugänge',
-			idsSub: ['map', 'timeline', 'network', 'topics']
+			idsSub: ['smallforms']
 		},
 		main3: { nameShort: 'Register', nameLong: 'Register', path: resolve('/register') },
 		main4: {
-			nameShort: 'Schwarzenbach',
-			nameLong: 'Über Schwarzenbach',
-			path: resolve('/schwarzenbach')
+			nameShort: 'Ceresa',
+			nameLong: 'Über Ceresa',
+			path: resolve('/ceresa')
 		},
 		main5: { nameShort: 'Projekt', nameLong: 'Über das Projekt', path: resolve('/project') }
 	};
@@ -39,48 +34,6 @@
 			description: 'Kleine Formen',
 			content: 'Artikel, Zeitungsartikel, Sonderbeilagen, Rezensionen und weitere Kleine Formen',
 			path: resolve('/smallforms')
-		},
-		longforms: {
-			name: 'Romane und Reportagebücher',
-			description: 'Romane und Reportagebücher',
-			content: 'Romane und Reportagebücher',
-			path: resolve('/longforms')
-		},
-		letters: {
-			name: 'Briefe',
-			description: 'Briefe',
-			content: 'Die erhaltene Korrespondenz von Schwarzenbach',
-			path: resolve('/correspondence')
-		},
-		photos: {
-			name: 'Fotografien',
-			description: 'Fotografien',
-			content: 'Fotografisches Werk von Schwarzenbach und Maillard',
-			path: resolve('/photos')
-		},
-		map: {
-			name: 'Karte',
-			description: '',
-			content: 'Reisen und Orte auf einer Karte',
-			path: resolve('/map')
-		},
-		timeline: {
-			name: 'Zeitstrahl',
-			description: '',
-			content: 'Allerlei Biografisches zu Schwarzenbach im historischen Kontext',
-			path: resolve('/timeline')
-		},
-		network: {
-			name: 'Netzwerk',
-			description: '',
-			content: 'Schwarzenbachs Netzwerk',
-			path: resolve('/network')
-		},
-		topics: {
-			name: 'Themen',
-			description: '',
-			content: 'Thematische Zugänge zu den Texten und Fotografien Schwarzenbachs',
-			path: resolve('/topics')
 		}
 	};
 
@@ -93,16 +46,13 @@
 
 	const dictNav = {
 		random_element_text: {
-			smallforms: 'Zufällige Smallform anzeigen',
-			longforms: 'Zufällige Longform anzeigen',
-			letters: 'Zufälligen Brief anzeigen',
-			photos: 'Zufällige Fotografie anzeigen'
+			smallforms: 'Zufällige Smallform anzeigen'
 		}
 	};
 
 	// UI States
 	let hoveredSubmenu: { key: keyof typeof subMenuInfo | undefined } = $state({
-		key: 'letters'
+		key: 'smallforms'
 	});
 
 	let isDocType = $derived(hoveredSubmenu.key && hoveredSubmenu.key in dictDoc ? true : false);
@@ -134,117 +84,6 @@
 				classes: 'max-w-40 max-h-40',
 				rotation: randomValue(15)
 			}
-		],
-		longforms: [
-			{
-				altText: 'Sample Longform',
-				targetURL: resolve('/longform_0001'),
-				imgURL:
-					'https://iiif.ub.unibe.ch/image/v3.0/f7a771e2-036b-4ee8-b2d8-08d8bbf8c9ad/full/200,/0/default.jpg',
-				classes: 'max-w-40 max-h-40',
-				rotation: randomValue(15)
-			},
-			{
-				altText: 'Sample Longform',
-				targetURL: resolve('/longform_0003'),
-				imgURL:
-					'https://iiif.ub.unibe.ch/image/v3.0/ed670c9a-b769-4b34-896d-1c5dd97e4c7e/full/200,/0/default.jpg',
-				classes: 'max-w-40 max-h-40',
-				rotation: -1 * randomValue(15)
-			},
-			{
-				altText: 'Sample Longform',
-				targetURL: resolve('/longform_0008'),
-				imgURL:
-					'https://iiif.ub.unibe.ch/image/v3.0/012daa33-5ac4-4460-9c2d-ec8291502499/full/200,/0/default.jpg',
-				classes: 'max-w-40 max-h-40',
-				rotation: randomValue(15)
-			}
-		],
-		letters: [
-			{
-				altText: 'Sample Letter',
-				targetURL: resolve('/letter_0001'),
-				imgURL:
-					'https://patrinum.ch/nanna/api/multimedia/image/v2/recid%3A587676-BCUL-PREVIEW-426354_0002.jpg/full/200,/0/default.jpg',
-				classes: 'max-w-40 max-h-40',
-				rotation: randomValue(15)
-			},
-			{
-				altText: 'Sample Letter',
-				targetURL: resolve('/letter_0004'),
-				imgURL:
-					'https://patrinum.ch/nanna/api/multimedia/image/v2/recid%3A587679-BCUL-PREVIEW-426357_0003.jpg/full/200,/0/default.jpg',
-				classes: 'max-w-40 max-h-40',
-				rotation: -1 * randomValue(15)
-			},
-			{
-				altText: 'Sample Letter',
-				targetURL: resolve('/letter_0012'),
-				imgURL:
-					'https://patrinum.ch/nanna/api/multimedia/image/v2/recid%3A587687-BCUL-PREVIEW-426365_0001.jpg/full/200,/0/default.jpg',
-				classes: 'max-w-40 max-h-40',
-				rotation: randomValue(15)
-			}
-		],
-		photos: [
-			{
-				altText: 'Sample Photo',
-				targetURL: resolve('/photo_0097'),
-				imgURL: 'https://www.e-manuscripta.ch/i3f/v21/2002037/full/200,/0/default.jpg',
-				classes: 'max-w-40 max-h-40',
-				rotation: randomValue(15)
-			},
-			{
-				altText: 'Sample Photo',
-				targetURL: resolve('/photo_1294'),
-				imgURL: 'https://www.e-manuscripta.ch/i3f/v21/1985083/full/200,/0/default.jpg',
-				classes: 'max-w-40 max-h-40',
-				rotation: -1 * randomValue(15)
-			},
-			{
-				altText: 'Sample Photo',
-				targetURL: resolve('/photo_4000'),
-				imgURL: 'https://www.e-manuscripta.ch/i3f/v21/1990657/full/200,/0/default.jpg',
-				classes: 'max-w-40 max-h-40',
-				rotation: randomValue(15)
-			}
-		],
-		map: [
-			{
-				altText: 'Sample Map',
-				targetURL: resolve('/map'),
-				imgURL: '/imgs/map-baltics.webp',
-				classes: 'max-w-180 max-h-80',
-				rotation: 0
-			}
-		],
-		timeline: [
-			{
-				altText: 'Sample Preview',
-				targetURL: resolve('/timeline'),
-				imgURL: '/imgs/timeline.webp',
-				classes: 'max-w-150 max-h-80',
-				rotation: randomValue(15)
-			}
-		],
-		network: [
-			{
-				altText: 'Sample Preview',
-				targetURL: resolve('/network'),
-				imgURL: '/imgs/network.webp',
-				classes: 'max-w-150 max-h-80',
-				rotation: randomValue(15)
-			}
-		],
-		topics: [
-			{
-				altText: 'Sample Preview',
-				targetURL: resolve('/topics'),
-				imgURL: '/imgs/topics.webp',
-				classes: 'max-w-150 max-h-80',
-				rotation: randomValue(15)
-			}
 		]
 	};
 
@@ -258,12 +97,7 @@
 				// img.onerror = () => console.warn(`Failed to load: ${imgURL}`);
 			});
 		}
-		const allImageUrls = [
-			...sampleDocuments.smallforms.map((item) => item.imgURL),
-			...sampleDocuments.longforms.map((item) => item.imgURL),
-			...sampleDocuments.letters.map((item) => item.imgURL),
-			...sampleDocuments.photos.map((item) => item.imgURL)
-		];
+		const allImageUrls = [...sampleDocuments.smallforms.map((item) => item.imgURL)];
 		preloadImages(allImageUrls);
 	});
 </script>
@@ -405,7 +239,9 @@
 	>
 		<!-- Lead for Home Button -->
 		<div class="flex items-center">
-			<a class="flex items-center py-2 font-bold whitespace-nowrap" href={resolve('/')}>DSE-AS</a>
+			<a class="flex items-center py-2 font-bold whitespace-nowrap" href={resolve('/')}
+				>Arcipelago Ceresa</a
+			>
 		</div>
 
 		<!-- Texte und Fotografien -->
@@ -414,15 +250,6 @@
 			{@render NavSub(
 				mainMenuInfo.main1.idsSub as ('smallforms' | 'longforms' | 'letters' | 'photos')[],
 				ContentPanelArea1
-			)}
-		</NavigationMenu.Item>
-
-		<!-- Zugänge -->
-		<NavigationMenu.Item value="zugaenge" openOnHover={false}>
-			{@render NavTrigger(mainMenuInfo.main2)}
-			{@render NavSub(
-				mainMenuInfo.main2.idsSub as ('map' | 'timeline' | 'network' | 'topics')[],
-				ContentPanelArea2
 			)}
 		</NavigationMenu.Item>
 
