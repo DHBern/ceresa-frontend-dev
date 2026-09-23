@@ -28,3 +28,6 @@ export const sequenceToggle = $state({
 	longforms: true,
 	photos: true
 });
+
+// UI
+export const isMobile = $state({value: false})

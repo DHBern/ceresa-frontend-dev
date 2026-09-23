@@ -171,7 +171,7 @@
 <!-- MetadataTable (by Type) -->
 {#if docType === 'people'}
 	{@const regAttrsTyped = regAttributes as Record<TRegAttrsPeople, any>}
-	<h1 class="h1 sticky top-0 z-90 w-full bg-background pb-10">
+	<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">
 		{regAttrsTyped.name}
 		{printBirthRange(regAttrsTyped.dateBirth, regAttrsTyped.dateDeath)}
 	</h1>
@@ -186,7 +186,7 @@
 	])}
 {:else if docType === 'places'}
 	{@const regAttrsTyped = regAttributes as Record<TRegAttrsPlaces, any>}
-	<h1 class="h1 sticky top-0 z-90 w-full bg-background pb-10">{regAttrsTyped.name}</h1>
+	<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">{regAttrsTyped.name}</h1>
 
 	{@render MetadataTable([
 		'type',
@@ -201,7 +201,7 @@
 	{@render MapPreview(regMapPreviewPath?.img_path)}
 {:else if docType === 'orgs'}
 	{@const regAttrsTyped = regAttributes as Record<TRegAttrsOrgs, any>}
-	<h1 class="h1 sticky top-0 z-90 w-full bg-background pb-10">{regAttrsTyped.name}</h1>
+	<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">{regAttrsTyped.name}</h1>
 	{@render MetadataTable([
 		'type',
 		regAttrsTyped.nameVariants.length && 'nameVariants',
@@ -210,16 +210,16 @@
 	])}
 {:else if docType === 'keywords'}
 	{@const regAttrsTyped = regAttributes as Record<TRegAttrsKeywords, any>}
-	<h1 class="h1 sticky top-0 z-90 w-full bg-background pb-10">{regAttrsTyped.name}</h1>
+	<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">{regAttrsTyped.name}</h1>
 	{@render MetadataTable(['type', regAttrsTyped.gndNumber && 'gndNumber', 'note'])}
 {:else if docType === 'events'}
 	{@const regAttrsTyped = regAttributes as Record<TRegAttrsEvents, any>}
-	<h1 class="h1 sticky top-0 z-90 w-full bg-background pb-10">{regAttrsTyped.name}</h1>
+	<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">{regAttrsTyped.name}</h1>
 	{@render MetadataTable([regAttrsTyped.date && 'date', 'note'])}
 	{@render MapPreview(regMapPreviewPath?.img_path)}
 {:else if docType === 'bibls'}
 	{@const regAttrsTyped = regAttributes as Record<TRegAttrsBibls, any>}
-	<h1 class="h1 sticky top-0 z-90 w-full bg-background pb-10">{regAttrsTyped.name}</h1>
+	<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">{regAttrsTyped.name}</h1>
 	{@render MetadataTable([
 		'type',
 		'authorIds',
@@ -232,19 +232,19 @@
 <!-- Linked documents -->
 {#if docType === 'people'}
 	<!-- //! These lists can later be toggled on/off depending on content -->
-	<h2 class="h4 sticky top-15 z-91 h-20 w-full bg-background py-5">
+	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">
 		Korrespondenz mit Annemarie Schwarzenbach
 	</h2>
 	{@render LinkedItemsContainer([])}
-	<h2 class="h4 sticky top-15 z-91 h-20 w-full bg-background py-5">Verknüpfte Dokumente</h2>
+	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">Verknüpfte Dokumente</h2>
 	{@render LinkedItemsContainer(crossRef.linkedDocs)}
-	<h2 class="h4 sticky top-15 z-91 h-20 w-full bg-background py-5">Verknüpfte Kommentare</h2>
+	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">Verknüpfte Kommentare</h2>
 	{@render LinkedItemsContainer([])}
 {:else}
-	<h2 class="h4 sticky top-15 z-91 h-20 w-full bg-background py-5">Verknüpfte Dokumente</h2>
+	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">Verknüpfte Dokumente</h2>
 	<div class="min-h-[40vh]">
 		{@render LinkedItemsContainer(crossRef.linkedDocs)}
 	</div>
-	<h2 class="h4 sticky top-15 z-91 h-20 w-full bg-background py-5">Verknüpfte Kommentare</h2>
+	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">Verknüpfte Kommentare</h2>
 	{@render LinkedItemsContainer([])}
 {/if}

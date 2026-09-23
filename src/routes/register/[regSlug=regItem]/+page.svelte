@@ -11,8 +11,8 @@
 	const regSlug = $derived(data.regSlug || null);
 </script>
 
-<div class="relative mt-24 grid h-full w-full grid-cols-1 gap-4 xl:grid-cols-[500px_auto]">
-	<div class="absolute hidden h-full xl:block">
+<div class="relative mt-18 grid h-full w-full grid-cols-1 gap-4 xl:grid-cols-[500px_auto]">
+	<div class="sticky top-0 hidden h-screen w-100 xl:block">
 		<RegList
 			isRegListView={false}
 			regListEntries={data.regListEntries}

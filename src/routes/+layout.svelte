@@ -2,17 +2,24 @@
 	import '@fortawesome/fontawesome-free/css/solid.min.css';
 	import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 	import './layout.css';
-
+	import { TAILWINDBREAKPOINTS } from '$lib/globals/constants.svelte';
 	import favicon from '$lib/assets/favicon.svg';
 	import Nav from './Nav.svelte';
+	import { onDestroy } from 'svelte';
 	import { asset } from '$app/paths';
 	import { ModeWatcher } from 'mode-watcher';
+	import { isMobile } from '$lib/globals/ui-states.svelte';
+
+	function checkWindowSize() {
+		isMobile.value = window.innerWidth < TAILWINDBREAKPOINTS.sm;
+	}
 
 	let { children } = $props();
 </script>
 
-<ModeWatcher defaultMode="dark" />
+<svelte:window on:resize={checkWindowSize} />
 
+<ModeWatcher defaultMode="dark" />
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <div class="flex flex-col">

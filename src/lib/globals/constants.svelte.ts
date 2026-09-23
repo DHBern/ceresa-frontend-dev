@@ -1,8 +1,14 @@
 export const TYPESWITHGROUPCONTROL = {
-	documents: ['letters', 'smallforms', 'longforms'],
-	register: ['events', 'orgs', 'people', 'places']
+	register: ['people', 'places', 'events', 'orgs']
 };
 export const TYPESWITHSORTCONTROL = {
-	documents: ['letters', 'smallforms', 'longforms'],
 	register: ['events']
+};
+
+export const TAILWINDBREAKPOINTS = {
+  sm: 640,
+  md: 768,
+  lg: 1024,
+  xl: 1280,
+  '2xl': 1536
 };

@@ -12,10 +12,10 @@
 {#snippet nav()}
 	<nav
 		class={[
-			'flex w-full flex-wrap transition-all duration-200',
+			'flex w-full transition-all duration-200',
 			data.regView === 'regView1'
-				? 'mx-auto mt-40 w-2/3 max-w-200 items-center justify-center gap-4 p-2'
-				: 'gap-2 px-10'
+				? 'mx-auto mt-40 w-2/3 max-w-200 flex-wrap items-center justify-center gap-4 p-2'
+				: 'gap-2 overflow-x-auto px-10 pb-2'
 		]}
 	>
 		{#each regKeysForButtons as regKey (regKey)}
@@ -47,7 +47,7 @@
 			? 'h1 top-35 left-0 w-full text-center'
 			: data.regView === 'regView2'
 				? 'h1 top-35 left-0 w-1 pl-10 text-center whitespace-nowrap'
-				: 'h4 top-38 left-0 w-1 pl-10 text-center whitespace-nowrap'
+				: 'h4 top-35 left-0 w-1 pl-10 text-center whitespace-nowrap transition-all duration-300 ease-in-out'
 	]}
 >
 	{data.regView === 'regView1' ? 'Register' : dictReg[data.regType as TRegTypes]?.register_name}

@@ -8,16 +8,21 @@
 
 	const regType = $derived(data.regType || null);
 	const regSlug = $derived(data.regSlug || null);
+
+	let hasScrolledDeep = $state(false);
+	function checkScrollPosition() {
+		hasScrolledDeep = window.scrollY > 400;
+	}
 </script>
 
-<!-- Overview with Multi-Column List -->
-<div class="mt-30 w-full px-10">
+<svelte:window on:scroll={checkScrollPosition} />
+<div class="mt-20 w-full px-10 lg:mt-25">
 	<RegList
+		{hasScrolledDeep}
 		isRegListView={true}
 		regListEntries={data.regListEntries}
 		regDict={dictReg[regType]}
 		regType={regSlug as TRegTypes}
 		regKey={null}
-		// filterKey={data.filterKey}
 	/>
 </div>

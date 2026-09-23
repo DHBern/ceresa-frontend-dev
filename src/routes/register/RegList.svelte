@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { goto } from '$app/navigation';
-	import { Toggle, ToggleGroup } from 'bits-ui';
+	import { RadioGroup, Toggle, ToggleGroup } from 'bits-ui';
 
 	import { filterAndGroupData } from '$lib/functions/ease_of_use/filterAndGroupData.js';
 	import { normalizeChars } from '$lib/functions/ease_of_use/normalizeChars';
@@ -14,10 +14,14 @@
 		TRegKeysFlat,
 		TRegTypes
 	} from '$lib/types/register/TRegister';
-	import { onMount, tick } from 'svelte';
+	import { onMount, tick, untrack } from 'svelte';
 
 	import { useSearchParams } from 'runed/kit';
 	import { getSchemaForRegType } from './schemas.js';
+
+	import { isMobile } from '$lib/globals/ui-states.svelte';
+	import DropdownRegFilters from './DropdownRegFilters.svelte';
+	import DropdownRegSorting from './DropdownRegSorting.svelte';
 
 	type TProps = {
 		regListEntries: TRegister['register'][TRegTypes];
@@ -27,12 +31,14 @@
 	};
 
 	let {
+		hasScrolledDeep = false,
 		isRegListView,
 		regListEntries,
 		regType,
 		regDict,
 		regKey = null
 	}: TProps & {
+		hasScrolledDeep: boolean;
 		isRegListView: boolean;
 	} = $props();
 
@@ -57,12 +63,25 @@
 	const params = $derived(useSearchParams(schema, { pushHistory: true, noScroll: true }));
 
 	// Filters
+	// let selectedFilter = $state('');
+	let selectedFilter = $state(params.filter ?? '');
 	let filteredAndGroupedData = $derived(
 		filterAndGroupData(regListEntries, sortBy, {
 			filterKey: 'type',
 			filtersIn: params.filter ? [params.filter] : []
 		})
 	);
+
+	// Reset params when filtereSelected === ''
+	$effect(() => {
+		const prevFilter = untrack(() => params.filter);
+		if (selectedFilter === prevFilter) return;
+		if (selectedFilter) {
+			params.filter = selectedFilter;
+		} else {
+			params.reset();
+		}
+	});
 
 	// Track the current number of columns based on viewport width
 	let nCols = $state(1);
@@ -148,11 +167,11 @@
 			...new Set(
 				Object.values(filteredAndGroupedData).map((el) => {
 					if (registerSortBy.value === 'name') {
-						return el[0][1]['name'] ? normalizeChars(el[0][1]['name'][0].toUpperCase()) : '-';
+						return el[0][1]['name'] ? normalizeChars(el[0][1]['name'][0].toUpperCase()) : '';
 					} else if (registerSortBy.value === 'date') {
 						return el[0][1]['date'] ? el[0][1]['date'][0] : '-';
 					} else {
-						return '-';
+						return '';
 					}
 				})
 			)
@@ -165,7 +184,7 @@
 	function scrollToItem(regKey: TRegKeysFlat) {
 		const targetElement = document.getElementById(regKey);
 		const offsetSortControls =
-			hasGroupControls && hasSortControls ? 92 : hasGroupControls || hasSortControls ? 60 : 0;
+			hasGroupControls && hasSortControls ? 100 : hasGroupControls || hasSortControls ? 80 : 0;
 		if (targetElement) {
 			elScrollContainer?.scrollTo({
 				top: targetElement.offsetTop - elScrollContainer.offsetTop - offsetSortControls,
@@ -181,127 +200,137 @@
 
 <!-- Snippet for Sorting Controls -->
 {#snippet sortControls()}
-	{#if hasSortControls}
-		<div class={['grid w-full grid-cols-[160px_auto] items-start gap-2']}>
-			<p class={['col-start-1 w-40 shrink-0 pt-1.25 text-sm font-bold']}>Sortieren:</p>
-
-			<ToggleGroup.Root type="single" bind:value={registerSortBy.value} class="col-start-2 w-full">
-				<!-- Sort Alphabetically -->
-				<ToggleGroup.Item
-					value="name"
-					class={[
-						'h-10 w-10 rounded-xl border p-1',
-						registerSortBy.value === 'name' ? 'bg-dark text-white' : 'text-black'
-					]}
-					><div class="flex items-start justify-center gap-0">
-						<i class="fa-solid fa-a -m-0.75 text-xs"></i><i class="fa-solid fa-b -m-0.75 text-xs"
-						></i><i class="fa-solid fa-c -m-0.75 text-xs"></i>
-					</div></ToggleGroup.Item
-				>
-				<!-- Sort by Date -->
-				<ToggleGroup.Item
-					value="date"
-					class={[
-						'h-10 w-10 rounded-xl border p-1',
-						registerSortBy.value === 'date' ? 'bg-dark text-white' : 'text-black'
-					]}><i class="fa-solid fa-calendar"></i></ToggleGroup.Item
-				>
-			</ToggleGroup.Root>
-		</div>
-	{/if}
+	<DropdownRegSorting
+		{regDict}
+		{regType}
+		bind:registerSortBy={registerSortBy.value}
+		bind:registerGroupItems={registerGroupItems.value}
+		contentProps={{
+			class:
+				'min-w-[var(--bits-dropdown-menu-anchor-width)] text-sm border bg-background max-h-[60vh] overflow-y-auto'
+		}}
+	/>
 {/snippet}
 
 <!-- Outer Controls -->
 {#if isRegListView}
 	<div
 		bind:this={elControlsOuter}
-		class="sticky top-0 mb-10 flex w-full flex-col flex-wrap items-start justify-start gap-x-10 gap-y-2 bg-background py-5 text-sm"
+		class="sticky top-0 flex w-full flex-col flex-wrap items-start justify-start gap-x-10 gap-y-7 bg-background py-5 text-sm"
 	>
-		<!-- Filters -->
-		{#if regDict && hasGroupControls}
-			<div class={['grid w-full grid-cols-[auto_1fr] items-start gap-2']}>
-				<p class={['col-start-1 w-40 shrink-0 pt-1.25 text-sm font-bold']}>Filtern:</p>
-
-				<div class="col-start-2 flex w-full flex-wrap justify-start gap-2">
-					<button
-						onclick={() => {
-							params.reset();
-							tick();
-							window.scrollTo({ top: 0, behavior: 'auto' });
-						}}
-						class={['preset-btn-round --sm mr-0', !params.filter && '--active']}
-						><p>Alle Kategorien</p></button
-					>
-					{#each allGroupKeys as groupKey (groupKey)}
-						<!-- //! Fix this any type -->
-						{@const groupLabel = (regDict.groups as any)[groupKey]?.label_singular}
-						<button
-							onclick={() => {
-								params.filter = groupKey;
-								tick();
-								window.scrollTo({ top: 0, behavior: 'auto' });
+		{#if (regDict && hasGroupControls) || hasSortControls}
+			<div class="flex flex-wrap gap-2">
+				<!-- Filters -->
+				{#if regDict && hasGroupControls}
+					{#if isMobile.value || hasScrolledDeep}
+						<DropdownRegFilters
+							{regDict}
+							{regType}
+							bind:selectedFilter
+							items={allGroupKeys}
+							contentProps={{
+								class:
+									'min-w-[var(--bits-dropdown-menu-anchor-width)] text-sm text-sm border bg-background max-h-[60vh] overflow-y-auto'
 							}}
-							class={['preset-btn-round --sm', groupKey === params.filter && '--active']}
-							><p>{groupLabel}</p></button
-						>
-					{/each}
-				</div>
-			</div>
-		{/if}
-
-		<!-- Sort Controls -->
-		<div class="flex gap-5">
-			{@render sortControls()}
-		</div>
-
-		<!-- Grouping Toggle -->
-		<div class={['grid w-full grid-cols-[160px_auto] items-center gap-2']}>
-			<p class={['w-40 shrink-0 self-start pt-1.25 text-sm font-bold']}>Gruppieren:</p>
-
-			<div class="grid w-full grid-cols-[60px_auto]">
-				<!-- Toggle -->
-				<Toggle.Root
-					bind:pressed={registerGroupItems.value}
-					aria-label="toggle grouping"
-					class={[
-						'col-start-1 my-auto h-10 w-10 shrink-0 rounded-xl border p-1',
-						registerGroupItems.value ? 'bg-dark text-white' : 'text-black'
-					]}
-				>
-					<i class="fa-solid fa-bars-staggered"></i>
-				</Toggle.Root>
-				<!-- Alphabet -->
-				{#if registerGroupItems.value}
-					<div class="col-start-2 flex w-full flex-wrap items-center gap-2">
-						{#each autoCatLabels as letter (letter)}
-							{#if letter}
+						/>
+					{:else}
+						<div class={['grid w-full grid-cols-[auto_1fr] items-start gap-2']}>
+							<!-- <p class={['col-start-1 w-40 shrink-0 pt-1.25 text-sm font-bold']}>Filtern:</p> -->
+							<div class="col-start-2 flex w-full flex-wrap justify-start gap-2">
 								<button
 									onclick={() => {
-										goto(`#${letter}`, { replaceState: true });
+										params.reset();
+										selectedFilter = '';
 										tick();
 										window.scrollTo({ top: 0, behavior: 'auto' });
 									}}
-									class="center flex w-8 items-center justify-center hover:font-bold"
-									><p>{letter}</p></button
+									class={['preset-btn-round --sm mr-0', !selectedFilter && '--active']}
+									><p>Alle Kategorien</p></button
 								>
-							{/if}
-						{/each}
-					</div>
+								{#each allGroupKeys as groupKey (groupKey)}
+									<!-- //! Fix this any type -->
+									{@const groupLabel = (regDict.groups as any)[groupKey]?.label_plural}
+									<button
+										onclick={() => {
+											params.filter = groupKey;
+											selectedFilter = groupKey;
+											tick();
+											window.scrollTo({ top: 0, behavior: 'auto' });
+										}}
+										class={['preset-btn-round --sm', groupKey === selectedFilter && '--active']}
+										><p>{groupLabel}</p></button
+									>
+								{/each}
+							</div>
+						</div>
+					{/if}
 				{/if}
+				<!-- Sort Controls -->
+				<div class="flex gap-5">
+					{#if hasSortControls}
+						{#if !isMobile.value && !hasScrolledDeep}
+							<div class={['grid w-full grid-cols-[auto_1fr] items-start gap-2']}>
+								<!-- <p class={['col-start-1 w-40 shrink-0 pt-1.25 text-sm font-bold']}>Gruppieren:</p> -->
+								<div class="col-start-2 flex w-full flex-wrap justify-start gap-2">
+									{@render sortControls()}
+								</div>
+							</div>
+						{:else}
+							{@render sortControls()}
+						{/if}
+					{/if}
+				</div>
 			</div>
-		</div>
+		{/if}
+		<!-- Alphabet -->
+		{#if registerGroupItems.value && !isMobile.value}
+			<div class="flex w-full flex-wrap items-center justify-start gap-2 text-base">
+				{#each autoCatLabels as letter (letter)}
+					{#if letter}
+						<button
+							onclick={() => {
+								goto(`#${letter}`, { replaceState: true });
+								tick();
+								window.scrollTo({ top: 0, behavior: 'auto' });
+							}}
+							class="center flex w-8 items-center justify-center hover:font-bold"
+							><p>{letter}</p></button
+						>
+					{/if}
+				{/each}
+			</div>
+		{/if}
 	</div>
 {/if}
 
 <!-- Scroll Container -->
 <div
 	bind:this={elScrollContainer}
-	class={['flex h-full flex-col overflow-y-auto', isRegListView ? 'w-full' : 'mb-10 ml-10 w-max']}
+	class={['flex h-full flex-col overflow-y-auto', isRegListView ? 'w-full' : 'mb-10 ml-10 w-full']}
 >
 	<!-- Controls (when inside scroll container) -->
 	{#if !isRegListView}
-		<div class={['flex w-full flex-col items-end justify-center gap-x-4 gap-y-2 pb-10']}>
-			{@render sortControls()}
+		<div
+			class={[
+				'sticky top-0 flex w-full flex-col items-start justify-center gap-x-4 gap-y-2 bg-background py-4 pr-2 text-sm'
+			]}
+		>
+			{#if hasSortControls}
+				{@render sortControls()}
+			{/if}
+			<div class="flex w-full items-center justify-between gap-4">
+				<!-- <p><strong>Filter:</strong></p> -->
+				<DropdownRegFilters
+					{regDict}
+					{regType}
+					bind:selectedFilter
+					items={allGroupKeys}
+					contentProps={{
+						class:
+							'min-w-[var(--bits-dropdown-menu-anchor-width)] text-sm border bg-background max-h-[60vh] overflow-y-auto'
+					}}
+				/>
+			</div>
 		</div>
 	{/if}
 
@@ -314,8 +343,8 @@
 					? firstItem?.date?.from?.slice(0, 4)
 					: normalizeChars(firstItem?.[sortBy]?.[0]?.toUpperCase())}
 
-			<!-- Header -->
 			{#if autoCatLabel}
+				<!-- Header -->
 				<button
 					onclick={async () => {
 						if (isRegListView) {
@@ -330,24 +359,22 @@
 					aria-label="store in URL"
 					id={autoCatLabel}
 					class={[
-						'group align-left block min-h-25 border-b pt-10 text-left font-serif text-5xl font-bold',
+						'group align-left mt-10 block min-h-25 border-b text-left font-serif text-5xl font-bold',
 						!isRegListView && 'pointer-events-none'
 					]}
 					style="scroll-margin-top: var(--header-height, 0)"
 				>
-					<div class="h-full">
-						<p class="inline-block">
-							{autoCatLabel}
-							{#if isRegListView}
-								<span class="hidden group-hover:inline-block">
-									<i class="fa-solid fa-link mx-2 text-xl"></i>
-								</span>
-							{/if}
-						</p>
-					</div>
+					<p class="inline-block h-full">
+						{autoCatLabel}
+						{#if isRegListView}
+							<span class="hidden group-hover:inline-block">
+								<i class="fa-solid fa-link mx-2 text-xl"></i>
+							</span>
+						{/if}
+					</p>
 				</button>
 
-				<!-- List -->
+				<!-- Block with Items -->
 				<div class={['grid gap-y-2', isRegListView && 'gap-x-10']} style={groupStyles[blockIdx]}>
 					{#each block as [key, item]}
 						<a
@@ -358,10 +385,12 @@
 								'block w-full px-2 py-2 hover:bg-dark-10',
 								!isRegListView && key === regKey && 'bg-dark-10 font-bold text-background-contrast'
 							]}
-							href={resolve(`/register/${key}`)}
+							href={selectedFilter
+								? resolve(`/register/${key}?filter=${encodeURIComponent(selectedFilter)}`)
+								: resolve(`/register/${key}`)}
 						>
 							<span class="overflow-hidden whitespace-normal">
-								{item.name ? `${item.name}` : '...'}
+								{item.name}
 							</span>
 						</a>
 					{/each}
@@ -372,7 +401,7 @@
 		<!-- Title -->
 		<div
 			class={[
-				'group align-left block h-full min-h-25 border-b pt-10 text-left font-serif text-5xl font-bold',
+				'group align-left mt-10 block h-full min-h-25 border-b text-left font-serif text-5xl font-bold',
 				!isRegListView && 'pointer-events-none'
 			]}
 		>

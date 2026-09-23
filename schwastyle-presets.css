@@ -63,7 +63,7 @@
 			@apply border text-lg;
 		}
 		&.--sm {
-			@apply border text-sm;
+			@apply border text-xs lg:text-sm;
 		}
 		&.--xs {
 			@apply border text-xs;
