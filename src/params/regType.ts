@@ -5,5 +5,5 @@ import { register as reg } from '$lib/data/register.json';
 const keys = Object.keys(reg) as Array<keyof typeof reg>;
 
 export const match: ParamMatcher = (param: string): param is (typeof keys)[number] => {
-	return keys.includes(param);
+	return keys.includes(param as any);
 };

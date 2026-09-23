@@ -302,10 +302,7 @@ export type TDocAttrsSmallforms = keyof TDocuments['documents']['smallforms'][TS
 export type TDocAttrsLongforms = keyof TDocuments['documents']['longforms'][TLongformsKeys];
 export type TDocAttrsPhotos = keyof TDocuments['documents']['photos'][TPhotosKeys];
 export type TDocAttrs =
-	| TDocAttrsLetters
-	| TDocAttrsSmallforms
-	| TDocAttrsLongforms
-	| TDocAttrsPhotos;
+	TDocAttrsLetters | TDocAttrsSmallforms | TDocAttrsLongforms | TDocAttrsPhotos;
 export type TDocAttrsMap = {
 	letters: TDocAttrsLetters;
 	smallforms: TDocAttrsSmallforms;
@@ -338,10 +335,7 @@ export type TDocItemsSmallforms = TDocuments['documents']['smallforms'][TSmallfo
 export type TDocItemsLongforms = TDocuments['documents']['longforms'][TLongformsKeys];
 export type TDocItemsPhotos = TDocuments['documents']['photos'][TPhotosKeys];
 export type TDocItems =
-	| TDocItemsLetters
-	| TDocItemsSmallforms
-	| TDocItemsLongforms
-	| TDocItemsPhotos;
+	TDocItemsLetters | TDocItemsSmallforms | TDocItemsLongforms | TDocItemsPhotos;
 export type TDocItemsMap = {
 	letters: TDocItemsLetters;
 	smallforms: TDocItemsSmallforms;
@@ -351,12 +345,7 @@ export type TDocItemsMap = {
 
 // Group Set
 export type TDocGroupsFlat =
-	| TLettersGroups
-	| TSmallformsGroups
-	| TLongformsGroups
-	| TPhotosGroups
-	| '?'
-	| '';
+	TLettersGroups | TSmallformsGroups | TLongformsGroups | TPhotosGroups | '?' | '';
 
 export type TDocGroupsMap = {
 	letters: TLettersGroups | '?' | '';

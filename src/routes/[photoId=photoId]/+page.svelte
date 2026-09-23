@@ -127,7 +127,7 @@
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									{cont && cont.item && 'name' in cont?.item ? cont.item?.name : ''}
+									{cont?.item?.name || ''}
 								</a>
 							{/each}
 						</div>

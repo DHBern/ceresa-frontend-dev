@@ -5,17 +5,14 @@
 	type Props = DropdownMenu.RootProps & {
 		regDict: TRegDict['dict_register'][TRegTypes];
 		items: string[];
-		regType: TRegTypes;
 		selectedFilter: string;
 		contentProps?: WithoutChild<DropdownMenu.ContentProps>;
 	};
 
 	let {
 		open = $bindable(false),
-		children,
 		regDict,
 		items,
-		regType,
 		selectedFilter = $bindable(),
 		contentProps,
 		...restProps
@@ -35,7 +32,7 @@
 		<DropdownMenu.Content side="bottom" align="start" sideOffset={2} {...contentProps}>
 			<DropdownMenu.RadioGroup bind:value={selectedFilter}>
 				<!-- <DropdownMenu.GroupHeading>Filtern nach</DropdownMenu.GroupHeading> -->
-				<DropdownMenu.RadioItem value={''}>
+				<DropdownMenu.RadioItem value="">
 					{#snippet children({ checked })}
 						<div
 							class={[
@@ -49,7 +46,7 @@
 						</div>
 					{/snippet}
 				</DropdownMenu.RadioItem>
-				{#each items as value}
+				{#each items as value (value)}
 					<DropdownMenu.RadioItem {value}>
 						{#snippet children({ checked })}
 							<div

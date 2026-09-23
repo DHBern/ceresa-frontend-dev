@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
-	import { updateSearchParams } from '$lib/functions/ease_of_use/updateSearchParams';
 	import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
 	import { documents as allDocsRaw } from '$lib/data/documents.json';
 	import type { TDocuments } from '$lib/types/documents/TDocuments';
@@ -54,7 +52,6 @@
 		params.page = newPage;
 		console.log('b', params.page, newPage);
 	}
-	$inspect('gallery inspect page', params.page);
 
 	$effect(() => {
 		scrollGalleryToPage(params.page);
@@ -149,7 +146,7 @@
 								<a
 									href={resolve(`/${tzgId}?${page.url.searchParams}`)}
 									class="group mx-2 flex flex-col items-center justify-between rounded-thumbbox px-3 py-3 hover:bg-hover"
-									onclick={(e) => {
+									onclick={() => {
 										handleSelectPage(item.page);
 									}}
 								>

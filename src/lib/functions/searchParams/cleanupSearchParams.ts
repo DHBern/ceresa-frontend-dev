@@ -1,4 +1,6 @@
-export function cleanupSearchParams(url, schema, validSeqKeys) {
+import type { ZodObject } from 'zod';
+
+export function cleanupSearchParams(url: URL, schema: ZodObject, validSeqKeys: string[]) {
 	const knownKeys = new Set(Object.keys(schema.shape));
 
 	let needsUpdate = false;

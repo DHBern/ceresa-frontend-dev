@@ -9,8 +9,8 @@ export const selectedTextNode: {
 });
 
 // sorting and grouping
-export const registerSortBy = $state({value:'name'});
-export const registerGroupItems = $state({value:true});
+export const registerSortBy = $state({ value: 'name' });
+export const registerGroupItems = $state({ value: true });
 
 // Register in Sidebar
 import { type TRegTypes } from '$lib/types/register/TRegister';
@@ -30,4 +30,4 @@ export const sequenceToggle = $state({
 });
 
 // UI
-export const isMobile = $state({value: false})
+export const isMobile = $state({ value: false });

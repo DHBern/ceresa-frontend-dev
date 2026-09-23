@@ -36,16 +36,26 @@ function resolveLinkedDocs(
 			docId: docId as string,
 			iiif_url: resolved?.item?.manuscript?.iiif_urls?.[0] ?? null,
 			title_full:
-				(('title_full' in resolved?.item?.metadata! && resolved?.item?.metadata?.title_full) ||
+				((resolved?.item?.metadata as { title_full?: string })?.title_full ||
 					resolved?.item?.name) ??
-				null, //! TODO
+				null,
 			pubDate:
-				(('pubDate' in resolved?.item?.metadata! && resolved?.item?.metadata?.pubDate) ||
-					resolved?.item?.metadata.date) ??
-				null //! TODO
+				((resolved?.item?.metadata as { pubDate?: string })?.pubDate ||
+					(resolved?.item?.metadata as { date?: { from: string | null; to: string | null } })?.date
+						?.from ||
+					resolved?.item?.name) ??
+				null
 		};
 	});
 }
+
+// Strip register entries to only the fields needed.
+export type TPartialRegEntry = {
+	name?: string;
+	lastname?: string;
+	type?: string;
+	date?: TRegister['register']['events'][TEventsKeys]['date'];
+};
 
 export const load: PageServerLoad = async ({ parent }) => {
 	const { regType, regSlug } = await parent();
@@ -91,23 +101,15 @@ export const load: PageServerLoad = async ({ parent }) => {
 		}
 		crossRef.linkedDocs = resolveLinkedDocs(regAttributes.docs);
 	}
-	
-	function createRegListEntries(regType: TRegTypes){
+
+	function createRegListEntries(regType: TRegTypes) {
 		if (!regType) return {};
-		
+
 		const fullRegOfType = reg[regType];
 		if (!fullRegOfType) return {};
-		
-		// Strip register entries to only the fields needed.
-		type TPartialRegEntry = {
-			name?: string;
-			lastname?: string;
-			type?: string;
-			date?: TRegister['register']['events'][TEventsKeys]['date'];
-		};
-		
+
 		const allowedKeys: Array<keyof TPartialRegEntry> = ['name', 'lastname', 'type', 'date'];
-		
+
 		return Object.fromEntries(
 			Object.entries(fullRegOfType).map(([key, entry]) => [
 				key,
@@ -116,9 +118,9 @@ export const load: PageServerLoad = async ({ parent }) => {
 				) as TPartialRegEntry
 			])
 		) as Partial<Record<TRegKeysFlat, TPartialRegEntry>>;
-	};
+	}
 
-	const regListEntries = createRegListEntries(regType)
-	
+	const regListEntries = createRegListEntries(regType);
+
 	return { regListEntries, regAttributes, crossRef, regMapPreviewPath };
 };

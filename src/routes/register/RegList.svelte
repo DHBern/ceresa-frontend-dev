@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { goto } from '$app/navigation';
-	import { RadioGroup, Toggle, ToggleGroup } from 'bits-ui';
 
 	import { filterAndGroupData } from '$lib/functions/ease_of_use/filterAndGroupData.js';
 	import { normalizeChars } from '$lib/functions/ease_of_use/normalizeChars';
@@ -10,7 +9,6 @@
 	import type {
 		TRegDict,
 		TRegGroupsMap,
-		TRegister,
 		TRegKeysFlat,
 		TRegTypes
 	} from '$lib/types/register/TRegister';
@@ -22,11 +20,14 @@
 	import { isMobile } from '$lib/globals/ui-states.svelte';
 	import DropdownRegFilters from './DropdownRegFilters.svelte';
 	import DropdownRegSorting from './DropdownRegSorting.svelte';
+	import type { TPartialRegEntry } from './[regSlug=regItem]/+page.server.js';
 
 	type TProps = {
-		regListEntries: TRegister['register'][TRegTypes];
-		regType: TRegTypes;
+		hasScrolledDeep?: boolean;
+		isRegListView: boolean;
+		regListEntries: Partial<Record<TRegKeysFlat, TPartialRegEntry>>;
 		regDict: TRegDict['dict_register'][TRegTypes];
+		regType: TRegTypes;
 		regKey?: TRegKeysFlat | null;
 	};
 
@@ -34,13 +35,10 @@
 		hasScrolledDeep = false,
 		isRegListView,
 		regListEntries,
-		regType,
 		regDict,
+		regType,
 		regKey = null
-	}: TProps & {
-		hasScrolledDeep: boolean;
-		isRegListView: boolean;
-	} = $props();
+	}: TProps = $props();
 
 	// Booleans for sorting and grouping
 	let hasGroupControls = $derived(TYPESWITHGROUPCONTROL['register'].includes(regType));
@@ -63,8 +61,7 @@
 	const params = $derived(useSearchParams(schema, { pushHistory: true, noScroll: true }));
 
 	// Filters
-	// let selectedFilter = $state('');
-	let selectedFilter = $state(params.filter ?? '');
+	let selectedFilter = $derived(params.filter ?? '');
 	let filteredAndGroupedData = $derived(
 		filterAndGroupData(regListEntries, sortBy, {
 			filterKey: 'type',
@@ -157,19 +154,15 @@
 		});
 	});
 
-	// Variables for autoCatLabels (Alphabet or Dates)
-	//! IMPROVE: this should be generalised as soon as more types receive sorting-options
-	let sortVariableKeyForShortcuts = $derived(
-		regType === 'people' ? 'lastname' : regType === 'events' ? sortBy : 'name'
-	);
-	let autoCatLabels = $derived(
+	// GroupLabels (i.e. A/B/C or dates)
+	let groupLabels = $derived(
 		[
 			...new Set(
 				Object.values(filteredAndGroupedData).map((el) => {
 					if (registerSortBy.value === 'name') {
-						return el[0][1]['name'] ? normalizeChars(el[0][1]['name'][0].toUpperCase()) : '';
+						return normalizeChars(el[0][1]['name']?.[0].toUpperCase()) || '';
 					} else if (registerSortBy.value === 'date') {
-						return el[0][1]['date'] ? el[0][1]['date'][0] : '-';
+						return el[0][1]['date']?.[0] || '';
 					} else {
 						return '';
 					}
@@ -201,8 +194,6 @@
 <!-- Snippet for Sorting Controls -->
 {#snippet sortControls()}
 	<DropdownRegSorting
-		{regDict}
-		{regType}
 		bind:registerSortBy={registerSortBy.value}
 		bind:registerGroupItems={registerGroupItems.value}
 		contentProps={{
@@ -216,7 +207,7 @@
 {#if isRegListView}
 	<div
 		bind:this={elControlsOuter}
-		class="sticky top-0 flex w-full flex-col flex-wrap items-start justify-start gap-x-10 gap-y-7 bg-background py-5 text-sm"
+		class="sticky top-0 flex w-full flex-col flex-wrap items-start justify-start gap-x-10 gap-y-7 bg-background py-7 text-sm"
 	>
 		{#if (regDict && hasGroupControls) || hasSortControls}
 			<div class="flex flex-wrap gap-2">
@@ -225,7 +216,6 @@
 					{#if isMobile.value || hasScrolledDeep}
 						<DropdownRegFilters
 							{regDict}
-							{regType}
 							bind:selectedFilter
 							items={allGroupKeys}
 							contentProps={{
@@ -285,7 +275,7 @@
 		<!-- Alphabet -->
 		{#if registerGroupItems.value && !isMobile.value}
 			<div class="flex w-full flex-wrap items-center justify-start gap-2 text-base">
-				{#each autoCatLabels as letter (letter)}
+				{#each groupLabels as letter (letter)}
 					{#if letter}
 						<button
 							onclick={() => {
@@ -306,7 +296,10 @@
 <!-- Scroll Container -->
 <div
 	bind:this={elScrollContainer}
-	class={['flex h-full flex-col overflow-y-auto', isRegListView ? 'w-full' : 'mb-10 ml-10 w-full']}
+	class={[
+		'flex h-full flex-col overflow-y-auto',
+		isRegListView ? 'w-full' : 'mt-30 mb-10 ml-10 w-full'
+	]}
 >
 	<!-- Controls (when inside scroll container) -->
 	{#if !isRegListView}
@@ -322,7 +315,6 @@
 				<!-- <p><strong>Filter:</strong></p> -->
 				<DropdownRegFilters
 					{regDict}
-					{regType}
 					bind:selectedFilter
 					items={allGroupKeys}
 					contentProps={{
@@ -336,7 +328,7 @@
 
 	<!-- Items -->
 	{#if registerGroupItems.value}
-		{#each filteredAndGroupedData as block, blockIdx}
+		{#each filteredAndGroupedData as block, blockIdx (block)}
 			{@const firstItem = block[0]?.[1]}
 			{@const autoCatLabel =
 				hasSortControls && sortBy === 'date'
@@ -376,7 +368,7 @@
 
 				<!-- Block with Items -->
 				<div class={['grid gap-y-2', isRegListView && 'gap-x-10']} style={groupStyles[blockIdx]}>
-					{#each block as [key, item]}
+					{#each block as [key, item] (key)}
 						<a
 							data-sveltekit-preload-data="tap"
 							data-sveltekit-preload-code="hover"
@@ -409,7 +401,7 @@
 		</div>
 		<!-- Flattened Grid (no Alphabetical Grouping) -->
 		<div class={['grid', isRegListView ? 'gap-x-2 gap-y-1' : 'gap-y-2']} style={groupStylesFlat}>
-			{#each filteredAndGroupedData.flat() as [key, item]}
+			{#each filteredAndGroupedData.flat() as [key, item] (key)}
 				<a
 					data-sveltekit-preload-data="tap"
 					data-sveltekit-preload-code="hover"

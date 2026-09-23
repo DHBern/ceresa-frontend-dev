@@ -4,7 +4,7 @@ import type { TEventsKeys } from '$lib/types/register/TEventsKeys';
 
 const keys_all = [
 	...Object.keys(reg.events).filter((key) => {
-		return reg.events[key as TEventsKeys].type === 'travel';
+		return reg.events[key as TEventsKeys].type.includes('travel');
 	})
 ];
 

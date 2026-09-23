@@ -1,7 +1,5 @@
 <script lang="ts">
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
-	import { goto } from '$app/navigation';
-	import { page } from '$app/state';
 	import CETEI from 'CETEIcean';
 	import { behaviors, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
 	import {

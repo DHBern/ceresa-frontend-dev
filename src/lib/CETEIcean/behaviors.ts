@@ -123,7 +123,9 @@ export function extractPage(ceteiSerialized: string, pageIndex: number): string 
 
 	const targetIndex = pageIndex - 1; // Convert 1-based to 0-based
 	if (targetIndex < 0 || targetIndex >= pageBreaks.length) {
-		console.warn(`Page index ${pageIndex} is out of range (1–${pageBreaks.length}). Returning full content.`);
+		console.warn(
+			`Page index ${pageIndex} is out of range (1–${pageBreaks.length}). Returning full content.`
+		);
 		return ceteiSerialized;
 	}
 
@@ -144,20 +146,20 @@ export function extractPage(ceteiSerialized: string, pageIndex: number): string 
 	// Helper: serialize an element's attributes to a string
 	function serializeAttrs(el: Element): string {
 		return Array.from(el.attributes)
-			.map(a => ` ${a.name}="${a.value.replace(/"/g, '&quot;')}"`)
+			.map((a) => ` ${a.name}="${a.value.replace(/"/g, '&quot;')}"`)
 			.join('');
 	}
 
 	// Build opening tags for ancestors
 	const openTags = ancestors
-		.map(el => `<${el.tagName.toLowerCase()}${serializeAttrs(el)}>`)
+		.map((el) => `<${el.tagName.toLowerCase()}${serializeAttrs(el)}>`)
 		.join('');
 
 	// Build closing tags for ancestors (reversed order)
 	const closeTags = ancestors
 		.slice()
 		.reverse()
-		.map(el => `</${el.tagName.toLowerCase()}>`)
+		.map((el) => `</${el.tagName.toLowerCase()}>`)
 		.join('');
 
 	// Collect all nodes between targetPb (exclusive) and nextPb (exclusive),

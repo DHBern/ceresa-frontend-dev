@@ -18,4 +18,4 @@ export type TPlacesGroups =
 	| 'places_cat_17'
 	| 'places_cat_18'
 	| 'places_cat_19'
-	| 'places_cat_20'
+	| 'places_cat_20';

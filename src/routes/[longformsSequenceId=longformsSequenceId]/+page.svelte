@@ -33,8 +33,6 @@
 
 	// Sequence shorthand
 	const seq = $derived(data.seqSlug ? data.sequences[data.seqSlug] : undefined);
-	const docs2 = $derived(data.docs2);
-	$inspect(docs2);
 </script>
 
 <!-- Series -->

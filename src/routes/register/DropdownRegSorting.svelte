@@ -1,11 +1,8 @@
 <script lang="ts">
 	import { DropdownMenu, type WithoutChild } from 'bits-ui';
-	import type { TRegDict, TRegTypes } from '$lib/types/register/TRegister';
 	import Switch from '$lib/components/ui/Switch.svelte';
 
 	type Props = DropdownMenu.RootProps & {
-		regDict: TRegDict['dict_register'][TRegTypes];
-		regType: TRegTypes;
 		registerSortBy: string;
 		registerGroupItems: boolean;
 		contentProps?: WithoutChild<DropdownMenu.ContentProps>;
@@ -13,9 +10,6 @@
 
 	let {
 		open = $bindable(false),
-		children,
-		regDict,
-		regType,
 		registerSortBy = $bindable(),
 		registerGroupItems = $bindable(),
 		contentProps,
@@ -70,8 +64,10 @@
 
 			<p class="my-2 h-0 border-t border-muted-foreground text-xs font-bold"></p>
 			<DropdownMenu.Group>
-				<div class="mb-2 flex w-max flex-row-reverse gap-5 px-3">
-					<Switch height={20} bind:checked={registerGroupItems}><p>Liste gruppieren</p></Switch>
+				<div class="mb-2 flex w-full flex-row-reverse justify-between px-3">
+					<Switch height={20} bind:checked={registerGroupItems} classesLabel="pr-10"
+						><p>Liste gruppieren</p></Switch
+					>
 				</div>
 			</DropdownMenu.Group>
 		</DropdownMenu.Content>

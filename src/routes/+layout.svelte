@@ -5,7 +5,6 @@
 	import { TAILWINDBREAKPOINTS } from '$lib/globals/constants.svelte';
 	import favicon from '$lib/assets/favicon.svg';
 	import Nav from './Nav.svelte';
-	import { onDestroy } from 'svelte';
 	import { asset } from '$app/paths';
 	import { ModeWatcher } from 'mode-watcher';
 	import { isMobile } from '$lib/globals/ui-states.svelte';

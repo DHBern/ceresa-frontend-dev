@@ -4,7 +4,7 @@ export type TPeopleGroups =
 	| 'people_cat_3'
 	| 'people_cat_4'
 	| 'people_cat_5'
-	| 'people_cat_6';
+	| 'people_cat_6'
 	| 'people_cat_7'
 	| 'people_cat_8'
 	| 'people_cat_9'
@@ -18,4 +18,4 @@ export type TPeopleGroups =
 	| 'people_cat_17'
 	| 'people_cat_18'
 	| 'people_cat_19'
-	| 'people_cat_20'
+	| 'people_cat_20';

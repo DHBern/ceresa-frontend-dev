@@ -10,8 +10,7 @@ export function filterAndGroupData(
 	data: Record<string, any>,
 	sortBy: string,
 	{ filterKey = '', filtersIn = [], filtersOut = [] }: TFilterAndSortOptions = {}
-): [string, typeof data][] {
-	
+): [string, typeof data][][] {
 	// 1. Define the sort comparison logic
 	let sortFunction: (a: [string, any], b: [string, any]) => number;
 
@@ -56,35 +55,31 @@ export function filterAndGroupData(
 			// For date, use the full 'from' value as the group key
 			return entry[sortBy]?.from ?? '';
 		} else {
-		// For others, use the first letter
-		const val = entry[sortBy];
-		if (!val) return '';
-		// Normalize before extracting first letter
-		return normalizeChars(String(val)).charAt(0).toUpperCase();
-	}
-};
+			// For others, use the first letter
+			const val = entry[sortBy];
+			if (!val) return '';
+			// Normalize before extracting first letter
+			return normalizeChars(String(val)).charAt(0).toUpperCase();
+		}
+	};
 
 	// 3. Filter and Sort first
 	const sortedEntries = Object.entries(data)
 		.map(([key, entry]) => [key, entry] as [string, typeof data])
 		.filter(([, entry]) =>
-			filtersIn?.length
-				? filtersIn.some((filter) => entry[filterKey]?.includes(filter))
-				: true
+			filtersIn?.length ? filtersIn.some((filter) => entry[filterKey]?.includes(filter)) : true
 		)
 		.filter(([, entry]) =>
-			filtersOut?.length
-				? !filtersOut.some((filter) => entry[filterKey]?.includes(filter))
-				: true
+			filtersOut?.length ? !filtersOut.some((filter) => entry[filterKey]?.includes(filter)) : true
 		)
 		.sort(sortFunction);
 
 	// 4. Group the sorted entries
-	const groupedResult: [string, typeof data][] = [];
+	const groupedResult: [string, typeof data][][] = [];
 	let currentGroup: [string, typeof data][] = [];
 	let currentKey: string | null = null;
 
-	for (const item of sortedEntries) {
+	sortedEntries.forEach((item) => {
 		const key = getGroupKey(item[1]);
 
 		// If this is the first item, or the key changed, start a new group
@@ -98,7 +93,7 @@ export function filterAndGroupData(
 			// Same group, push to current
 			currentGroup.push(item);
 		}
-	}
+	});
 
 	// Push the last remaining group
 	if (currentGroup.length > 0) {

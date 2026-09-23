@@ -236,15 +236,23 @@
 		Korrespondenz mit Annemarie Schwarzenbach
 	</h2>
 	{@render LinkedItemsContainer([])}
-	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">Verknüpfte Dokumente</h2>
+	<h2 class="h4 sticky top-20 z-91 h-10 w-full bg-background pt-1 pb-10 xl:pt-5 xl:pb-15">
+		Verknüpfte Dokumente
+	</h2>
 	{@render LinkedItemsContainer(crossRef.linkedDocs)}
-	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">Verknüpfte Kommentare</h2>
+	<h2 class="h4 sticky top-20 z-91 h-10 w-full bg-background pt-1 pb-10 xl:pt-5 xl:pb-15">
+		Verknüpfte Kommentare
+	</h2>
 	{@render LinkedItemsContainer([])}
 {:else}
-	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">Verknüpfte Dokumente</h2>
+	<h2 class="h4 sticky top-20 z-91 h-10 w-full bg-background pt-1 pb-10 xl:pt-5 xl:pb-15">
+		Verknüpfte Dokumente
+	</h2>
 	<div class="min-h-[40vh]">
 		{@render LinkedItemsContainer(crossRef.linkedDocs)}
 	</div>
-	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">Verknüpfte Kommentare</h2>
+	<h2 class="h4 sticky top-20 z-91 h-10 w-full bg-background pt-1 pb-10 xl:pt-5 xl:pb-15">
+		Verknüpfte Kommentare
+	</h2>
 	{@render LinkedItemsContainer([])}
 {/if}

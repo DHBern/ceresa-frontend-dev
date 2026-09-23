@@ -9,7 +9,7 @@ const REG_TYPE_SCHEMAS = {
 	events: z.object({ filter: z.enum(Object.keys(dictReg.events.groups) as any).default('') }),
 	orgs: z.object({ filter: z.enum(Object.keys(dictReg.orgs.groups) as any).default('') }),
 	bibls: z.object({ filter: z.enum(Object.keys(dictReg.bibls.groups) as any).default('') }),
-	keywords: z.object({ filter: z.enum(Object.keys(dictReg.keywords.groups) as any).default('') }),
+	keywords: z.object({ filter: z.enum(Object.keys(dictReg.keywords.groups) as any).default('') })
 } as const satisfies Record<TRegTypes, z.ZodObject<{ filter: z.ZodDefault<any> }>>;
 
 // Export type union for the filter value
@@ -19,6 +19,6 @@ export type FilterValue = z.infer<(typeof REG_TYPE_SCHEMAS)[TRegTypes]>['filter'
 export function getSchemaForRegType<T extends TRegTypes>(regType: T) {
 	return {
 		schema: REG_TYPE_SCHEMAS[regType],
-		type: regType,
+		type: regType
 	} as const;
 }
