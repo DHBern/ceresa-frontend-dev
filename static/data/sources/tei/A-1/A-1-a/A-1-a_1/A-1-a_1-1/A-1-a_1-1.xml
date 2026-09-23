@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-a_1-1" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-a_1-1#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Prefazione per Gli Altri</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-a/1-1</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="it"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-a/A-1-a_1/A-1-a_1-1/A-1-a_1-1_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_001.tif"
+               n="1"/>
+            <anchor xml:id="a1"/>
+            <head><add place="margin"><hi rendition="#u">PREFAZIONE PER "<rs type="work"
+                        key="work_0001" xml:id="r1">GLI ALTRI</rs>"</hi></add></head>
+            <p rendition="#right"><add place="margin"
+                     ><?oxy_comment_start author="luisepappe" timestamp="20260831T140758+0200" comment="encode as a note?"?><lb
+                     xml:id="p001_r_tl_2"/>(Scritta al tempo in cui <rs type="person"
+                     key="person_0017" xml:id="r2">Moravia</rs> voleva trovarmi <lb
+                     xml:id="p001_r_tl_3"/>un editore.) <?oxy_comment_end?><lb xml:id="p001_r_tl_4"
+                     /><hi rendition="#u"><rs type="place" key="place_0003" xml:id="r3">ROMA</rs>
+                     inverno 45/46</hi>
+               </add></p>
+            <note type="annotation" xml:id="n1" targetEnd="a1">Il titolo e l'intestazione in
+               questione sono aggiunti nel margine superiore in una fase successiva alla prima
+               stesura del documento, come si evince dal cambio di penna e di ductus</note>
+            <p><lb xml:id="p001_r_tl_5"/>Dò questo libr<del>o</del><add place="above">etto</add>
+               alla stampa, perché da quando <lb xml:id="p001_r_tl_6"/>ho compreso come ben poco la
+               letteratura <lb xml:id="p001_r_tl_7"/>italiana abbia abdicato dalla retorica <lb
+                  xml:id="p001_r_tl_8"/>malgrado la guerra, mi secca di tenerlo nel <lb
+                  xml:id="p001_r_tl_9"/>cassetto. </p>
+            <p><lb xml:id="p001_r_tl_10"/>Voglio dire che queste pagine, scritte anni fa, <lb
+                  xml:id="p001_r_tl_11"/>possono anche tener luogo di una polemica, <lb
+                  xml:id="p001_r_tl_12"/>mossa ai letterati – proprio perché <del>le</del> si <lb
+                  xml:id="p001_r_tl_13"/>può <del>rim</del><anchor xml:id="a2"/>
+               <choice><sic>loro</sic><corr/></choice>
+               <add place="margin">alle pagine</add> rimproverare <note type="annotation"
+                  xml:id="n2" targetEnd="a2">L'intervento correttorio dell'autrice è incompleto,
+                  dato che contestualmente all'aggiunta a margine non viene cassato "loro"</note>una
+               cosa che <lb xml:id="p001_r_tl_14"/>io per prima rimprovero loro. </p>
+            <p><lb xml:id="p001_r_tl_15"
+               /><?oxy_comment_start author="luisepappe" timestamp="20260831T170644+0200" comment="do we put a p-tag around these as well?"?>"<?oxy_comment_end?>Oggi
+               non è più permesso scrivere così<del>?</del><add place="over">.</add>" <lb
+                  xml:id="p001_r_tl_16"/>È strano che su questo punto ci troviamo <lb
+                  xml:id="p001_r_tl_17"/>d'accordo; ma partendo da basi ben diverse. <lb
+                  xml:id="p001_r_tl_18"/>Facile dire così in un paese dove la "parola" <lb
+                  xml:id="p001_r_tl_19"/>Surrealismo ha avviato parecchi esperimenti; <lb
+                  xml:id="p001_r_tl_20"/>ma dove il Surrealismo non è stato una <lb
+                  xml:id="p001_r_tl_21"/>esperienza. </p>
+            <p><lb xml:id="p001_r_tl_22"/>Non intendo affatto avviare una polemica sul <lb
+                  xml:id="p001_r_tl_23"/>surrealismo. Quel che mi preme, è la <lb
+                  xml:id="p001_r_tl_24"/>concordia che ci unisce tutti nella frase: <lb
+                  xml:id="p001_r_tl_25"/>"OGGI NON SI SCRIVE PIÙ COSÌ." <lb xml:id="p001_r_tl_26"
+               />Non si tratta di abiti che ci si tolgono – <lb xml:id="p001_r_tl_27"/>che si
+               cambiano con il passare di una <lb xml:id="p001_r_tl_28"/>moda. </p>
+            <p><lb xml:id="p001_r_tl_29"/>Si tratta dell'altra riva, quella che si raggiunge <lb
+                  xml:id="p001_r_tl_30"/>attraverso il ponte di <add place="above"
+               >un'</add>esperienza, e non di <lb xml:id="p001_r_tl_31"/>terra ferma su cui si
+               ricade immutati ed <lb xml:id="p001_r_tl_32"/>illesi dopo un allegro salto. </p>
+            <p><lb xml:id="p001_r_tl_33"/>Perciò, malgrado questo mio addio al presente <lb
+                  xml:id="p001_r_tl_34"/>libretto, non mi rincresce di darlo alla stampa, <lb
+                  xml:id="p001_r_tl_35"/>così com'è. Anche perché ha precorso, con <lb
+                  xml:id="p001_r_tl_36"/>strana precisione, nei suoi avvenimenti logici <lb
+                  xml:id="p001_r_tl_37"/>narrati, gli avvenimenti della mia vita <lb
+                  xml:id="p001_r_tl_38"
+               />pratica.<?oxy_comment_start author="luisepappe" timestamp="20260831T171356+0200" comment="how to indicate that the page break is also a paragraph break?"?></p><?oxy_comment_end?>
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_002.tif"
+               n="2"/>
+            <p>
+               <lb xml:id="p002_r_tl_1"/>Ancora
+                     <del><unclear><?oxy_comment_start author="luisepappe" timestamp="20260831T171458+0200" comment="what&apos;s wrong here?"?>sar<?oxy_comment_end?></unclear></del>
+               è in auge la forma minore della <lb xml:id="p002_r_tl_2"/>biografia del passato –
+               perché non troverebbe <lb xml:id="p002_r_tl_3"/>un posticino nel bosco dei <del>dei
+                  fogli stam</del><lb xml:id="p002_r_tl_4"/>della carta stampata anche una piccola e
+                  <lb xml:id="p002_r_tl_5"/>nervosa biografia d'un avvenire. </p>
+            <p><lb xml:id="p002_r_tl_6"/>Sorpassato anch'esso, oggi. E liberato il <lb
+                  xml:id="p002_r_tl_7"/>libretto da ogni valore personale, non ha <lb
+                  xml:id="p002_r_tl_8"/>nulla per difendersi. </p>
+            <p><lb xml:id="p002_r_tl_9"/>Almeno così la distruzione di un <lb xml:id="p002_r_tl_10"
+               />piccolo documento sarà completa. <lb xml:id="p002_r_tl_11"/>Da parte mia, che lo
+               perdo; da parte <lb xml:id="p002_r_tl_12"/>altrui che lo ucciderà facilmente. <lb
+                  xml:id="p002_r_tl_13"/>Non fosse questo punto: che da parte <lb
+                  xml:id="p002_r_tl_14"/>mia la <del><unclear>rinuncia</unclear></del> sua condanna
+               è un <lb xml:id="p002_r_tl_15"/>vantaggio. Da parte altrui non <lb
+                  xml:id="p002_r_tl_16"/>necessariamente. </p>
+            <p><lb xml:id="p002_r_tl_17"/>Appunto per lo spunto polemico... <lb
+                  xml:id="p002_r_tl_18"/>"OGGI NON SI SCRIVE PIÙ COSÌ". <lb xml:id="p002_r_tl_20"
+                  /><del>Ma voi avete scritto così, voi, ieri?</del>
+               <lb xml:id="p002_r_tl_21"/>Ma per voi, che differenza c'è fra quel che <lb
+                  xml:id="p002_r_tl_22"/><del>scriveste </del><del><add place="above"
+                  >voi</add></del><del>ieri,</del>
+               <del>ALICE CERESA</del><lb xml:id="p002_r_tl_23"/>scriveste voi ieri e quel che <lb
+                  xml:id="p002_r_tl_24"/>scrivete oggi? </p>
+            <ab rendition="#right">
+               <fw type="sig" place="bottomright">ALICE CERESA</fw>
+            </ab>
+            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_003.tif"
+               n="3"/>
+            <p>
+               <lb xml:id="p003_l"/>{{SKIP Non trascritto intenzionalmente (motive: copy of p.
+               1)}}</p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-08-26T08:51:26.919769148Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

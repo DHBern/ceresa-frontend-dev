@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_6-2" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_6-2_AC001#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Anima</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-b/6-2/AC001</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="it"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001/A-1-b_6-2_AC001_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_001.tif"/>
+            <p>
+               <lb xml:id="p001_l"/>{{SKIP Non trascritto intenzionalmente (motive: not to be edited )}}</p>
+            
+            
+            <div xml:id="A-1-b_6-2_AC001a">
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_002.tif"/>
+            <head><lb xml:id="p002_r_tl_1"/>ANIMA</head><ab>
+               <fw type="pageNum" place="topright">1</fw></ab>
+            <p>
+                  <lb xml:id="p002_r_tl_2"/>Secondo il dizionario, principio immateriale della vita
+                     negli<lb xml:id="p002_r_tl_3"/>esseri viventi; mentre, sempre secondo il
+                  dizionario, la <lb xml:id="p002_r_tl_4"/><ref>VITA</ref> risulta essere la forza
+                  attiva propria degli esseri <lb xml:id="p002_r_tl_5"/>animali e vegetali in virtù
+                  della quale, oltre che muoversi, <lb xml:id="p002_r_tl_6"/>nutrirsi, assimilare e
+                  quant'altro, sono anche <choice><sic>il</sic><corr>in</corr></choice> grado di <lb
+                     xml:id="p002_r_tl_7"/>riprodursi sotto forme sempre uguali.</p> <p> <lb
+                     xml:id="p002_r_tl_8"/>Fra anima e vita corre dunque un rapporto di reciproca
+                     dipen<del hand="#hw">d</del><pc>-</pc>
+                  <lb xml:id="p002_r_tl_9" break="no"/>denza il quale tuttavia non risulta
+                  indispensabile alla vita <lb xml:id="p002_r_tl_10"/>né animale né vegetale né
+                  altra, in quanto l'ANIMA è alloggia<pc>-</pc>
+                  <lb xml:id="p002_r_tl_11" break="no"/>ta esclusivamente nella specie umana,
+                  sottospecie della fa<pc>-</pc>
+                  <lb xml:id="p002_r_tl_12" break="no"/>miglia dei mammiferi, eppure non tutti i
+                  <choice><sic>mammiv<del>e<add hand="#tw" place="over">f</add></del>eri</sic><corr>mammiferi</corr></choice>
+                  dispongono <lb xml:id="p002_r_tl_13"/>di anima esattamente come non ne dispongono
+                  altri vertebrati, <lb xml:id="p002_r_tl_14"/>gli invertebrati, gli insetti, i
+                  microorganismi, i vegetali <lb xml:id="p002_r_tl_15"/>ecc.. Un cane, pur essendo
+                  mosso dal principio attivo della <lb xml:id="p002_r_tl_16"/>vita, può fare a meno
+                  del principio immateriale della stessa <lb xml:id="p002_r_tl_17"/>e pertanto non
+                  disporre di un'anima, così come non ne dispon<pc>-</pc>
+                  <lb xml:id="p002_r_tl_18" break="no"/>gono vermi, amebe o piante. Se ne deduce
+                  pertanto che l'ANIMA <lb xml:id="p002_r_tl_19"/>è un organismo non so<add
+                     place="inline" hand="#hw">l</add>tanto invisibile, inodore, asonoro,
+                     im<pc>-</pc>
+                  <lb xml:id="p002_r_tl_20" break="no"/>palpabile e insipido, ma anche razzista.</p><p>
+                     <lb
+                     xml:id="p002_r_tl_21"/>È non<choice><sic>idem</sic><corr>dimen</corr></choice>o
+                  studiata da apposite discipline e amministrata <lb xml:id="p002_r_tl_22"/>da
+                  specifiche istituzioni quali filosofie e psicologie da una <lb
+                     xml:id="p002_r_tl_23"/>parte, chie<choice><sic>de</sic><corr>se</corr></choice>
+                  e manicomi dall'altra, per non citare che le più <lb xml:id="p002_r_tl_24"
+                  />appariscenti; e partecipa per estensione a tutte le attività <lb
+                     xml:id="p002_r_tl_25"/>umane, dalla riproduzione della specie alla guerra,
+                  nonché a <lb xml:id="p002_r_tl_26"/>quelle più squisitamente sociali, dalla
+                  politica ai tribunali, <lb xml:id="p002_r_tl_27"/>senza che le sia concesso dire
+                  bah.</p><p> <lb xml:id="p002_r_tl_28"/>L'anima infatti, essendo immateriale, non può
+                     <del>nemmeno mordere</del>
+                  <lb xml:id="p002_r_tl_29"/>parlare e neanche <del>mordere</del> e tanto
+                  meno mordere. <lb xml:id="p002_r_tl_30"/><del hand="#hw"><del><del>Anche le donne
+                           hanno <del hand="#hw">evidentemente</del> dovuto vivere per millenni <lb
+                              xml:id="p002_r_tl_31"/>senza l'ANIMa, essendo questa <metamark
+                              xml:id="mm1">loro</metamark> stata <metamark target="#mm1"/>concessa
+                           soltanto <lb xml:id="p002_r_tl_32"/>nel per gentile concessione del
+                           Concilio</del></del></del></p></div>
+            
+            
+            
+            <div xml:id="A-1-b_6-2_AC001b">
+            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif"/>    <ab>
+               <fw place="topright" type="pageNum"><lb xml:id="p003_tr_3_tl_1"/>2</fw>
+            </ab>
+              
+               <head> <lb xml:id="p003_l"/>ANIMA</head>
+              
+            <p>
+                  <lb xml:id="p003_tr_3_tl_2"/>Secondo il dizionario, principio immateriale della
+                  vita negli esseri <lb xml:id="p003_tr_3_tl_3"/>viventi; mentre, sempre secondo il
+                  dizionario, la vita risulta esse<pc>-</pc>
+                  <lb xml:id="p003_tr_3_tl_4" break="no"/>re la forza attiva propria degli esseri
+                  animali e vegetali in virtù <lb xml:id="p003_tr_3_tl_5"/>della quale, oltre che
+                  muoversi, nutrirsi, assimilare ecc., sono an<pc>-</pc>
+                  <lb xml:id="p003_tr_3_tl_6" break="no"/>che in grado di riprodursi sotto forme
+                  sempre uguali.</p><p> <lb xml:id="p003_tr_3_tl_7"/>Fra anima e vita corre dunque un
+                  rapporto di reciproca dipendenza il <lb xml:id="p003_tr_3_tl_8"/>quale tuttavia
+                  non risulta indispensabile alla vita né animale né ve<pc>-</pc>
+                  <lb xml:id="p003_tr_3_tl_9" break="no"/>getale né altra, in quanto l'ANIMA è
+                  alloggiata esclusivamente nella <lb xml:id="p003_tr_3_tl_10"/>specie umana,
+                  sottospecie della famiglia dei mammiferi, eppure non <lb xml:id="p003_tr_3_tl_11"
+                  />tutti i mammiferi dispongono di anima, né ne dispongono altri verte<pc>-</pc>
+                  <lb xml:id="p003_tr_3_tl_12" break="no"/>brati, gli invertebrati, gli insetti, i
+                  microrganismi, i vegetali ecc<pc>-</pc><lb xml:id="p003_tr_3_tl_13" break="no"/>.
+                  Un cane, pur essendo mosso dal principio attivo della vita, può fa<pc>-</pc>
+                  <lb xml:id="p003_tr_3_tl_14" break="no"/>re a meno del principio immateriale della
+                  stessa e pertanto non dispor<pc>-</pc>
+                  <lb xml:id="p003_tr_3_tl_15" break="no"/>re di un'anima, così come non ne
+                  dispongono vermi, amebe o piante. Se <lb xml:id="p003_tr_3_tl_16"/>ne deduce
+                  pertanto che l'ANIMA è un organismo non soltanto invisibile, <lb
+                     xml:id="p003_tr_3_tl_17"/>inodore, asonoro, impalpabile e insipido, ma anche
+                  razzista.</p><p> <lb xml:id="p003_tr_3_tl_18"/>È nondimeno studiata da apposite
+                  discipline e amministrata da
+                     <choice><sic>apposi<pc>-</pc> </sic><corr/></choice><?oxy_comment_start author="eva" timestamp="20260918T092704+0200" comment="probabilmente sic/corr: apposi
+te: cassato da Ceresa"?><lb xml:id="p003_tr_3_tl_19" break="no"
+                        /><del>te<?oxy_comment_end?><add place="above" hand="#hw"
+                     >specifiche</add></del> istituzioni quali filosofie e psicologie da una parte,
+                  chiese e ma<pc>-</pc>
+                  <lb xml:id="p003_tr_3_tl_20" break="no"/>nicomi dall'altra, per non citare che le
+                  più note; e partecipa per <lb xml:id="p003_tr_3_tl_21"/>estensione a tutte le
+                  attività umane, dalla riproduzione alla guerra, <lb xml:id="p003_tr_3_tl_22"
+                  />nonché a quelle più squisitamente sociali, dalla politica ai tribuna<pc>-</pc>
+                  <lb xml:id="p003_tr_3_tl_23" break="no"/>li.</p><p> <lb xml:id="p003_tr_3_tl_24"
+                  />L'ANIMA, essendo immateriale, non può nemmeno mordere.</p>
+            </div>
+            <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_004.tif"/>   <p>
+               <lb xml:id="p004_l"/>{{SKIP Non trascritto intenzionalmente (motive: not to be edited )}}</p>
+            <pb xml:id="p005" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_005.tif"/>
+            <p>
+               <lb xml:id="p005_l"/>{{SKIP Non trascritto intenzionalmente (motive: not to be edited )}}</p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-09-01T15:37:13.228785373Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

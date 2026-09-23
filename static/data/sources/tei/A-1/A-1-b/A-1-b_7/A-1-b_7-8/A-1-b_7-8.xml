@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_7-8" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_7-8#">
+   <teiHeader>
+      <?oxy_comment_start author="eva" timestamp="20260918T095443+0200" comment="Quando non c&apos;è un titolo va inserito tra parentesi quadre"?>
+      <fileDesc>
+         <titleStmt>
+            <title>Eloise<?oxy_comment_end?></title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice
+                     Ceresa</repository>
+                  <idno type="ASL">A-1-b/7-8</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="it"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_7/A-1-b_7-8/A-1-b_7-8_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_001.tif"/>
+            <ab><fw type="pageNum" place="topright" hand="#hw"><lb xml:id="p001_l"/>1</fw></ab> 
+               <p>
+               <lb xml:id="p001_tr_2_tl_1"/>Eloisa non aveva mai avuto la vita facile proprio per
+               via del <lb xml:id="p001_tr_2_tl_2"/>proprio nome, o perlomeno così si era decisa con
+               il procedere <lb xml:id="p001_tr_2_tl_3"/>degli anni a ritenere. <lb
+                  xml:id="p001_tr_2_tl_4"/>Purtroppo quanto qui si dirà di lei sarà destinato a
+               presentarsi <lb xml:id="p001_tr_2_tl_5"/>sotto un complicato duplice aspetto a dir
+               poco, perché un conto <lb xml:id="p001_tr_2_tl_6"/>è quanto può, vuole e accetta di
+               dire lei stessa, e un altro <lb xml:id="p001_tr_2_tl_7"/>conto è quanto se ne vede e
+               ritiene di sapere qui dove è consen<pc>-</pc>
+               <lb xml:id="p001_tr_2_tl_8" break="no"/>tito procedere del tutto indipendentemente
+               dalle versioni dell' <lb xml:id="p001_tr_2_tl_9"/>interessata stessa, questo essendo
+               appunto il privilegio di chi <lb xml:id="p001_tr_2_tl_10"
+               /><choice><sic>ficicamente</sic><corr>fisicamente</corr></choice> racconta. <lb
+                  xml:id="p001_tr_2_tl_11"/>Si sa che effettivamente Eloisa ebbe problemi con il
+               proprio <lb xml:id="p001_tr_2_tl_12"/>nome digià in tenerissima età. Vigeva infatti
+               nella <del hand="#tw">famiglia</del><lb xml:id="p001_tr_2_tl_13"/>ascendenza materna
+               l'usanza di perpetuare eternamente una Eloisa <lb xml:id="p001_tr_2_tl_14"/>di madre
+               in figlia: e ciò pare, così si diceva, da sempre. Non <lb xml:id="p001_tr_2_tl_15"
+               />si sa per quale motivo una Eloisa doveva per esplicito accordo <lb
+                  xml:id="p001_tr_2_tl_16"/>con la propria madre, a sua volta impegnata a monte
+                  con<del hand="#tw">la</del> madri, <lb xml:id="p001_tr_2_tl_17"/>nonne, bisnonne
+               risalendo oltre ogni possibile immaginazione del <lb xml:id="p001_tr_2_tl_18"
+               />passato, battezzare una figlia <del hand="#tw">con il suo proprio nome</del> e
+               fosse <lb xml:id="p001_tr_2_tl_19"/>pure l'unica con il suo proprio nome pretendendo
+               per di più dalla <lb xml:id="p001_tr_2_tl_20"/>novella di fare a suo tempo
+               altrettanto; varie ipotesi sono <lb xml:id="p001_tr_2_tl_21"/>formulabili ma nessuna
+               è comprovabile risalendo oltre la seconda <lb xml:id="p001_tr_2_tl_22"/>generazione
+               su cui è qui possibile indagare e si è infatti inda<pc>-</pc>
+               <lb xml:id="p001_tr_2_tl_23" break="no"/>gato. La nonna non seppe a tutta prima dire
+               con precisione, ma <lb xml:id="p001_tr_2_tl_24"/>poi propese per la teoria del
+               rispetto filiale e di lì non più <lb xml:id="p001_tr_2_tl_25"/>si mosse; quanto alla
+               madre stessa e quindi figlia della nonna <lb xml:id="p001_tr_2_tl_26"/>rispettosa si
+               potrebbe fin da subito dire a occhio e croce che <lb xml:id="p001_tr_2_tl_27"/>si
+               vede poca traccia di un identico sentimento o atteggiamento <lb
+                  xml:id="p001_tr_2_tl_28"/>in quanto l'avito nome fu trasmesso non alla prima né
+               alla <del hand="#tw">second</del>
+               <lb xml:id="p001_tr_2_tl_29"/>seconda ma solo per finire alla terza e ultima figlia e
+               quindi <lb xml:id="p001_tr_2_tl_30"/>all'ultimissimo momento, per un ben tardivo
+               soprassalto semmai <lb xml:id="p001_tr_2_tl_31"/>di pietas filiale. Interrogata,
+               comunque, <del hand="#tw">disse</del> farfugliò di <lb xml:id="p001_tr_2_tl_32"
+               />mancanza di libertà nella scelta dei nomi per le creature nate <lb
+                  xml:id="p001_tr_2_tl_33"/>dalla sua unione con il marito, munito digià di una
+               lista di <lb xml:id="p001_tr_2_tl_34"/>preferenze dalle quali era stato accuratamente
+               escluso ogni nome <lb xml:id="p001_tr_2_tl_35"/>di famiglia e tanto per incominciare
+               quello della madre<del hand="#tw"> paterna</del></p>
+            
+            
+            
+            
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_002.tif"/> 
+            <ab><fw type="pageNum" place="topright" hand="#hw"><lb xml:id="p002_l"/>2</fw></ab> 
+            <p>
+               <lb xml:id="p002_tr_2_tl_1"/>dunque paterna, per cui le era sembrato comunque
+               corretto non <lb xml:id="p002_tr_2_tl_2"/>insistere con la propria, seppure lo avesse
+               voluto e non ne era <lb xml:id="p002_tr_2_tl_3"/>certa fare; <del hand="#tw">essa non
+                  avendo colto il proprio appellativo prosegu</del><lb xml:id="p002_tr_2_tl_4"
+               />proseguì spiegando più che altro a se stessa, nell'occasione, di <lb
+                  xml:id="p002_tr_2_tl_5"/>non avere mai amato particolarmente il nome in quanto
+               tale anche <lb xml:id="p002_tr_2_tl_6"/>perché troppo oberato dalla vecchiaia o per
+               meglio dire dalle <lb xml:id="p002_tr_2_tl_7"/>vecchiette sovrastanti la sua propria
+               infanzia e dalla poca <lb xml:id="p002_tr_2_tl_8"/>disponibilità sua personale ad
+               assomigliare o addirittura iden<pc>-</pc>
+               <lb xml:id="p002_tr_2_tl_9" break="no"/>tificarsi con la propria madre assoggettata a
+               una vita d'inferno <lb xml:id="p002_tr_2_tl_10"/>costellata di undici figli vivi e
+               tre morti prima di diventare <lb xml:id="p002_tr_2_tl_11"/>vedova; e concluse forse
+               veritieramente di avere tuttavia infine <lb xml:id="p002_tr_2_tl_12"/>provato però
+               una qualche consolazione nell'imporre dopo due <lb xml:id="p002_tr_2_tl_13"/>rinunce
+               l'usanza vigente nella propria famiglia anche a quella <lb xml:id="p002_tr_2_tl_14"
+               />nuova su di lei imperniata, non fosse che per opporsi alle pre<pc>-</pc>
+               <lb xml:id="p002_tr_2_tl_15" break="no"/>varicazioni maritali di cui aveva <del
+                  hand="#tw">scoper</del> nel frattempo potuto <lb xml:id="p002_tr_2_tl_16"
+               />scoprire l'infinita proliferazione anche<del hand="#tw"> oltre</del> e ben oltre la
+                  <lb xml:id="p002_tr_2_tl_17"/>semplice scelta dei nomi della prole. E anzi,
+               soggiunse a questo <lb xml:id="p002_tr_2_tl_18"/>punto, <del hand="#tw">le era</del>
+               aveva in questa tardiva affermazione di se stessa <lb xml:id="p002_tr_2_tl_19"
+               />veduta anche l'opportunità di contrastare un'altra usanza abba<pc>-</pc>
+               <lb xml:id="p002_tr_2_tl_20" break="no"/>stanza ingiusta nonché odiosa che
+               trasmetteva ai figli della <lb xml:id="p002_tr_2_tl_21"/>donna il cognome esclusivo
+               del marito nonché padre: per cui si <lb xml:id="p002_tr_2_tl_22"/>era convinta a
+               ritenere lodevole e addirittura obbligatoria <lb xml:id="p002_tr_2_tl_23"/>anche la
+               sua <del hand="#tw">eternizzazione</del> trasmissione e eternizzazione del <lb
+                  xml:id="p002_tr_2_tl_24"/>nome, sia pure non patronimio, di madre in figlia: così
+                  raggiun<pc>-</pc>
+               <lb xml:id="p002_tr_2_tl_25" break="no"/>gendo alla fine del proprio ragionamento una
+               ulteriore teoria <lb xml:id="p002_tr_2_tl_26"/>ipotizzabile, quella cioè di
+               attribuire l'usanza delle Eloise <lb xml:id="p002_tr_2_tl_27"/>a una specie di filone
+                  matriarcale<del hand="#hw">.</del> sopravvissuto chissà da <lb
+                  xml:id="p002_tr_2_tl_28"/>quando in questa per la verità innocua fattispecie. <lb
+                  xml:id="p002_tr_2_tl_29"/>Come che sia, la nostra <del hand="#tw">pis</del>
+               piccola Eloisa si ritrovò dunque <del hand="#hw">a</del>
+               <lb xml:id="p002_tr_2_tl_30"/>colpita di omonimia con la madre a sua volta omonima
+               con tutte <lb xml:id="p002_tr_2_tl_31"/>le madri presenti nella propria ascendenza:
+               ma evidentemente <lb xml:id="p002_tr_2_tl_32"/>al punto in cui siamo di quest'ultimo
+               particolare alla piccola <lb xml:id="p002_tr_2_tl_33"/>Eloisa importava assai poco,
+               almeno per il momento. <lb xml:id="p002_tr_2_tl_34"/>Pare invece che, appena in
+               condizione di rendersene conto, si <lb xml:id="p002_tr_2_tl_35"/>battè strenuamente
+               contro l'omonimia pura e semplice con la <lb xml:id="p002_tr_2_tl_36"/>madre. <lb
+                  xml:id="p002_tr_2_tl_37"/>Racconta la stessa Eloisa di essersi sentita
+               profondamente offesa <lb xml:id="p002_tr_2_tl_38"/>di non possedere come le sorelle
+               un nome proprio distintivo e <lb xml:id="p002_tr_2_tl_39"/>unico nella cerchia
+               familiare, e di potere fare risalire la <lb xml:id="p002_tr_2_tl_40"/>cognizione
+               dell'obbrobrio ai tempi dell'asilo infantile perlo<pc>-</pc>
+               <lb xml:id="p002_tr_2_tl_41" break="no"/>meno nella trafila dei propri ricordi.</p>
+            
+            
+            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_003.tif"/>
+            <ab>
+               
+           <fw type="pageNum" place="topright"><lb xml:id="p003_l"/>3</fw></ab>
+            <p>
+               <lb xml:id="p003_tr_2_tl_1"/>al quale fu costretta ad accedere all'età di tre anni
+               per via <lb xml:id="p003_tr_2_tl_2"/>delle proprie <del hand="#tw">inter</del>
+               intemperanze <del hand="#tw">nella cerchia familiare.</del>
+               <lb xml:id="p003_tr_2_tl_3"/>all'interno della cerchia familiare: ragione per la
+               quale <lb xml:id="p003_tr_2_tl_4"/>riteneva di avere avuto sentore dell'inconveniente
+               o sconvenienza <lb xml:id="p003_tr_2_tl_5"/>e di esservisi appunto ribellata anche
+               prima di quell'effettivo <lb xml:id="p003_tr_2_tl_6"/>primo ricordo rimastole
+                  impresso<del hand="#hw"> .</del> e di cui dunque poteva sentir<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_7" break="no"/>si certa. Indagando infatti presso i
+               congiunti e i rispettivi <lb xml:id="p003_tr_2_tl_8"/>congiunti ricordi si può
+               concordare senz'altro con lei. <lb xml:id="p003_tr_2_tl_9"/><del hand="#hw"
+                  >Tuttavia</del>
+               <del>n<add place="over">N</add></del>ella semplice realtà dei fatti allora presenti,
+               la pic<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_10" break="no"/>cola Eloisa pare che si ammalò. La cosa si
+               manifestò dunque tanto <lb xml:id="p003_tr_2_tl_11"/>per incominciare nel modo meno
+               spirituale e psicologico possibile <lb xml:id="p003_tr_2_tl_12"/>con una volgare
+               colite: alla quale si cercò di porre riparo molto <lb xml:id="p003_tr_2_tl_13"
+               />materialmente alla stessa stregua con gli accorgimenti e le cure <lb
+                  xml:id="p003_tr_2_tl_14"/>del caso, vale a dire diete e medicamenti. Ma la colite
+               di Eloisa <lb xml:id="p003_tr_2_tl_15"/>intignava, quando clamorosamente e quando
+               subdolamente, protraendosi <lb xml:id="p003_tr_2_tl_16"/>con effetti dimagranti e
+               ingiallenti nell'interessata stessa e ac<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_17" break="no"/>compagnata da non poche esternazioni di
+               malumore sempre riferibili <lb xml:id="p003_tr_2_tl_18"/>all'ammalata, se malumore si
+               vogliono chiamare<del hand="#tw">.</del> gli episodi di vera <lb
+                  xml:id="p003_tr_2_tl_19"/>e propria insopportabilità di cui Eloisa si rendeva
+               protagonista, <lb xml:id="p003_tr_2_tl_20"/>anche sotto questo aspetto imprevedibile
+               e virulenta talvolta, altre <lb xml:id="p003_tr_2_tl_21"/>volte quasi
+               irriconoscibilmente striscianti e smorzati ma provvisti <lb xml:id="p003_tr_2_tl_22"
+               />di sferzanti colpi di coda in finale. Non fu un periodo facile per <lb
+                  xml:id="p003_tr_2_tl_23"/>la famiglia e chissà probabilmente nemmeno per la
+                  sofferente<del hand="#hw">.</del> la <lb xml:id="p003_tr_2_tl_24"/>quale, invitata
+               a riguardarsi e a comunicare sull'istante ogni pos<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_25" break="no"/>sibile insorgente recrudescenza del proprio
+               male fisico, testarda<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_26" break="no"/>mente taceva e soltanto umoralmente
+               imperversava come unic<add place="over" hand="#hw">o</add> temibile <lb
+                  xml:id="p003_tr_2_tl_29"/><del hand="#tw">avviso di <add place="above" hand="#tw"
+                     >avvisaglia di nuove</add></del> incombenti o <del>insorgenti <add
+                     place="above" hand="#tw">prostranti</add>
+               </del>fisicissime calamità. La famiglia <lb xml:id="p003_tr_2_tl_31"/>imparò presto a
+               stare sull'attenti protraendo tale cauto e cautelante<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_32" break="no"/>atteggiamento anche durante gli intercalati
+               periodi di bonaccia<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_33" break="no"/>ovvero mansuetudine privi totalmente di una
+               qualsiasi sistematicità <lb xml:id="p003_tr_2_tl_34"/>talvolta brevi e talvolta <del
+                  hand="#tw">quasi</del> perduranti fino a fingere una qual<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_35" break="no"/>che miracolosa ma reale remissione del
+               doppio morbo: <del hand="#hw">a<add place="over" hand="#hw">m</add></del>a sempre
+                  in<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_36" break="no"/>vano, per un tempo che a tutti sembrò
+               lunghissimo ma che forse, nel <lb xml:id="p003_tr_2_tl_37"/>poi ricordarlo, tutto
+               sommato sarà durato sì e no sei mesi; senza <lb xml:id="p003_tr_2_tl_38"/>dubbio un
+               periodo assai breve se misurato alla durata di una vita, <lb xml:id="p003_tr_2_tl_39"
+               />ma pur sempre interminabile quando rapportato a una età di scarsi <lb
+                  xml:id="p003_tr_2_tl_43"/><del hand="#hw">tre<add place="over" hand="#hw"
+                     >diciamo</add></del> quattro anni, <add place="above" hand="#hw">alla</add>
+               quale infatti <del>era<add place="over" hand="#hw">corrispondeva</add></del> allora
+               la presenza su questa<pc>-</pc>
+               <lb xml:id="p003_tr_2_tl_44" break="no"/>terra della
+               pi<choice><sic>s</sic><corr>c</corr></choice>cola Eloisa.</p>
+            <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_004.tif"/>
+            <p>
+               <lb xml:id="p004_l"/>4
+               <lb xml:id="p004_r_tl_1"/>Si manifestarono inoltre nel contempo irregolari ma ricorrenti 
+               <lb xml:id="p004_r_tl_2"/>febbrette riconducibili per quanto durò alla malattia ma poi accam<pc>-</pc>
+               <lb xml:id="p004_r_tl_3" break="no"/>pate sole solette nel periodo susseguente alla guarigione non si sa 
+               <lb xml:id="p004_r_tl_4"/>perché, e anzi progressivamente crescenti, portando a spossatezze 
+               <lb xml:id="p004_r_tl_5"/>e nuovi dirompenti nervisismi quando non addirittura [cass_ds[prossimi]] 
+               <lb xml:id="p004_r_tl_6"/>parossismi; e iniziarono [cass_ds[nel contempo]] allora pure, fra una prostra<pc>-</pc>
+               <lb xml:id="p004_r_tl_7" break="no"/>zione e l'altra, dapprima caute e poi man mano volgarmente esplicite 
+               <lb xml:id="p004_r_tl_8"/>rivelazioni verbali del tarlo che rodeva la giovanissima anima: l'o<pc>-</pc>
+               <lb xml:id="p004_r_tl_9" break="no"/>monimia appunto, in seno alla ristretta cerchia familiare, di Eloisa 
+               <lb xml:id="p004_r_tl_10"/>con la madre e con la nonna, sebbene quest'ultima apparisse quasi in 
+               <lb xml:id="p004_r_tl_11"/>finale avendo dovuto la bambina faticosamente e petulantemente riusci<pc>-</pc>
+               <lb xml:id="p004_r_tl_12" break="no"/>re dapprima a scoprire gli arcani legami che univano i vari membri 
+               <lb xml:id="p004_r_tl_13"/>della famiglia dotandoli di ascendenze e discendenze corrette malgrado 
+               <lb xml:id="p004_r_tl_14"/>la confusione da ciò ingenerata fra madri chiamate anche nonne e 
+               <lb xml:id="p004_r_tl_15"/>figlie chiamate anche madri e infine figlie soltanto tali e, colmo 
+               <lb xml:id="p004_r_tl_16"/>di povertà in tanta profusione, già scippata del proprio distintivo 
+               <lb xml:id="p004_r_tl_17"/>e unico nome. Anche i complicati calcoli da ciò ingenerati per rag<pc>-</pc>
+               <lb xml:id="p004_r_tl_18" break="no"/>giungere quest'ultima conclusione, essendosi dovuti svolgere fra 
+               <lb xml:id="p004_r_tl_19"/>l'unicità di una nonna, così appellabile, e l'unicità di una madre 
+               <lb xml:id="p004_r_tl_20"/>pure così appellata, e la profusione invece di figlie comprendenti 
+               <lb xml:id="p004_r_tl_21"/>anche le sorelle della nostra purtuttavia ognuna delle quali munita 
+               <lb xml:id="p004_r_tl_23"/>di un inedito e unico nome proprio[sscr_ds[di battesimo]] di contro al proprio presente 
+               <lb xml:id="p004_r_tl_25"/>pluralmente, presero indubbiamente qualche tempo e molte ricerche e 
+               <lb xml:id="p004_r_tl_26"/>interrogazioni; tuttavia costituirono la riprova provata, per la 
+               <lb xml:id="p004_r_tl_27"/>bambina, di trovarsi in una situazione delle più originali e infe<pc>-</pc>
+               <lb xml:id="p004_r_tl_28" break="no"/>lici. Le investigazioni poi estese a chiunque le capitasse a tiro 
+               <lb xml:id="p004_r_tl_29"/>dentro la famiglia allargata a zii e cugini e ad ogni persona grande 
+               <lb xml:id="p004_r_tl_30"/>e piccola di cui ebbe l'opportunità di fare la conoscenza, ivi compre<pc>-</pc>
+               <lb xml:id="p004_r_tl_31" break="no"/>si negozianti, passanti e naturalmente compagni e compagne di giochi 
+               <lb xml:id="p004_r_tl_32"/>finirono per palesarle senza rimedio l'eccezionalità della propria 
+               <lb xml:id="p004_r_tl_33"/>condizione di derelitta perlomeno nel mondo per tutti gli altri nor<pc>-</pc>
+               <lb xml:id="p004_r_tl_34" break="no"/>male della distribuzione dei nomi di battesimo, ognuno disponendo 
+               <lb xml:id="p004_r_tl_35"/>appunto di un proprio, personalissimo e distinto e distintivo nome, 
+               <lb xml:id="p004_r_tl_36"/>salvo lei. 
+               <lb xml:id="p004_r_tl_37"/>Fu così che le assillanti e dio solo sa spesso petulanti interrogazio<pc>-</pc>
+               <lb xml:id="p004_r_tl_38" break="no"/>ni presero un giorno una brusca fine, insieme va notato alle febbri<pc>-</pc>
+               <lb xml:id="p004_r_tl_39" break="no"/>ciattole; e [cass_ds[in]] iniziò una terza fase di stranezze grosso modo rias<pc>-</pc>
+               <lb xml:id="p004_r_tl_40" break="no"/>sumibili in un reiterato e assiduamente coltivato mutismo.</p>
+            <pb xml:id="p005" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_005.tif"/>
+            <p>
+               <lb xml:id="p005_l"/>5
+               <lb xml:id="p005_r_tl_1"/>In[sscr_ds[per]] questa età evolutiva effettivamente non è facile l'interpre<pc>-</pc>
+               <lb xml:id="p005_r_tl_2" break="no"/>tazione di comportamenti e atteggiamenti, e tanto meno è pos<pc>-</pc>
+               <lb xml:id="p005_r_tl_3" break="no"/>sibile ottenere riprove o conferme[cass_ms[.]]/ di quanto si possa anche 
+               <lb xml:id="p005_r_tl_4"/>andare con una certa tranquillità deducendo; resta comunque qui 
+               <lb xml:id="p005_r_tl_5"/>il fatto che per la presente piccola Eloisa si presenta il[sscr_ds[dispone di un]] 
+               <lb xml:id="p005_r_tl_6"/>caso unico e particolare: [cass_ds[di]] potere rivoltare la situazione come 
+               <lb xml:id="p005_r_tl_7"/>un guanto e pertanto sapere con certezza e esattezza che cosa 
+               <lb xml:id="p005_r_tl_8"/>mai in effetti frullasse dietro e dentro quell'immusonito e in<pc>-</pc>
+               <lb xml:id="p005_r_tl_9" break="no"/>quietante silenzio o se si vuole ritegno dopo tanto fare e 
+               <lb xml:id="p005_r_tl_10"/>[cass_ds[o]] indagare e dire. Ed è qui appunto che conviene approfittare 
+               <lb xml:id="p005_r_tl_11"/>dell'opportunità così offerta per sapere qualcosa di più e di 
+               <lb xml:id="p005_r_tl_12"/>meglio di quel che furono a suo tempo le congetture esplicative 
+               <lb xml:id="p005_r_tl_13"/>altrui in proposito.[sscr_ms[,]], pur non potendone naturalmente del tutto 
+               <lb xml:id="p005_r_tl_14"/>prescindere non fosse che per una fedele visione d'insieme di 
+               <lb xml:id="p005_r_tl_15"/>quei tempi e di quei frangenti tenendo conto sia del dentro 
+               <lb xml:id="p005_r_tl_16"/>che del fuori ovverosia del procedere degli avvenimenti in 
+               <lb xml:id="p005_r_tl_17"/>proprio e della loro accoglienza nel mondo circostante: che 
+               <lb xml:id="p005_r_tl_18"/>sono come è noto due cose diverse anche se strettamente colle<pc>-</pc>
+               <lb xml:id="p005_r_tl_19" break="no"/>gate e interagenti, le une [cass_ds[sospingendo]] provocando e sospingendo 
+               <lb xml:id="p005_r_tl_20"/>le altre e viceversa.
+               <lb xml:id="p005_r_1_tl_1"/>[ms[La piccola Eloisa in effetti esaminava l'accaduto e 
+               <lb xml:id="p005_r_1_tl_2"/>studiava il da farsi. È vero che non sapeva procedere 
+               <lb xml:id="p005_r_1_tl_3"/>con molti strumenti per dominare la situazione o anche solo 
+               <lb xml:id="p005_r_1_tl_4"/>maneggiarla: però disponeva in proprio di [cass_ms[molte risorse]] 
+               <lb xml:id="p005_r_1_tl_5"/>non poche risorse, anche se lei stessa non lo sapeva 
+               <lb xml:id="p005_r_1_tl_6"/>e non le considerava tali. Perciò un poco navigava 
+               <lb xml:id="p005_r_1_tl_7"/>e un altro poco naufragava, conscia soprattutto della 
+               <lb xml:id="p005_r_1_tl_8"/>propria rarissima e anzi unica disgrazia. Ma intanti, 
+               <lb xml:id="p005_r_1_tl_9"/>pur stendando e arrabbattandosi, riusciva a fare i suoi 
+               <lb xml:id="p005_r_1_tl_10"/>progressi: non tanto per sbrogliare quello che per  
+               <lb xml:id="p005_r_1_tl_11"/>lei era un inestricabile groviglio ma senza dubbio 
+               <lb xml:id="p005_r_1_tl_12"/>[cass_ms[xxxxxxxx]] e anche in qualche modo più 
+               <lb xml:id="p005_r_1_tl_13"/>intelligentemente oer uscirne fuori possibilmente 
+               <lb xml:id="p005_r_1_tl_14"/>indenne: perché questo tutto sommato è pur sempre 
+               <lb xml:id="p005_r_1_tl_15"/>l'orientamento [cass_ms[più]] naturale delle risorse personali 
+               <lb xml:id="p005_r_1_tl_16"/>quale che sia e come che sia confermata la calamità  
+               <lb xml:id="p005_r_1_tl_19"/>[cass_ms[a di lei addensata. tutt'in xxx addensata]] [intsup_ms[giustamente o ingiustamente] 
+               <lb xml:id="p005_r_1_tl_20"/>capitata a qualcuno tra capo e collo.</p>
+            <pb xml:id="p006" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_006.tif"/>
+            <p>
+               <lb xml:id="p006_l"/>6
+               <lb xml:id="p006_r_1_tl_1"/>[ms[Così si vide a poco a poco Eloisa sviluppare le sue personali 
+               <lb xml:id="p006_r_1_tl_2"/>strategie fin nel mondo circostante seppure il suo proprio 
+               <lb xml:id="p006_r_1_tl_3"/>travaglio si svolgeva nel [cass_ms[segreto]] gran segreto. Non più 
+               <lb xml:id="p006_r_1_tl_4"/>interrogazioni e discussioni e intemperanze e querulità, 
+               <lb xml:id="p006_r_1_tl_5"/>ma azioni a quanto apperiva del tutto prive di capo e coda, 
+               <lb xml:id="p006_r_1_tl_6"/>poichè giungevano com'è ovvio di sorpresa. 
+               <lb xml:id="p006_r_1_tl_7"/>Tanto dei incomenciare Eloisa camiò nome, non una bensì 
+               <lb xml:id="p006_r_1_tl_8"/>numerose volte. E in questa fase per chi la circondava 
+               <lb xml:id="p006_r_1_tl_9"/>l'unica consolazione fu di vederla di nuovo di buon [cass_ms[xxx]] 
+               <lb xml:id="p006_r_1_tl_10"/>umore, perchè per il resto la cosa provocava non poche diffi<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_11" break="no"/>coltà a chi vi era del tutto ovviamente impreparato, senza 
+               <lb xml:id="p006_r_1_tl_12"/>contare gli inconvenienti [cass[dei successi vi xxxxx]] 
+               <lb xml:id="p006_r_1_tl_13"/>[cass[cambiamenti]] [cass[bruschi cambiamenti]] delle successive brusche 
+               <lb xml:id="p006_r_1_tl_14"/>sostituzioni, tant'è vero che si andava a letto con un 
+               <lb xml:id="p006_r_1_tl_15"/>nome appena imparato e tenuto a mente e ci si 
+               <lb xml:id="p006_r_1_tl_16"/>svegliava con un altro: perchè dopo la prima sorpresa 
+               <lb xml:id="p006_r_1_tl_17"/>si convenne infine all'unanimità di tollerare e anzi 
+               <lb xml:id="p006_r_1_tl_18"/>assecondare la stranezza[sscr_ms[il nuovo corso]], tutti memori dei guai 
+               <lb xml:id="p006_r_1_tl_20"/>precedenti per non parlare delle[sscr_ms[comprese] malattie [cass_ms[presenti]] 
+               <lb xml:id="p006_r_1_tl_22"/>manifestatesi nella strana [cass[bambina]] perchè poco 
+               <lb xml:id="p006_r_1_tl_23"/>spiegabile bambina. Benché a questo [cass[xxx]] punto nessuno 
+               <lb xml:id="p006_r_1_tl_24"/>in casa e fuori per la verità dubitava più della 
+               <lb xml:id="p006_r_1_tl_25"/>causa scatenante perlomeno di questa ultima stranezza, 
+               <lb xml:id="p006_r_1_tl_26"/>ognuno essendo in grado da solo di sommare uno più 
+               <lb xml:id="p006_r_1_tl_27"/>uno, va da sé che alrettanto nessuno vi si soffermò 
+               <lb xml:id="p006_r_1_tl_28"/>più di tanto ma si accontentò di registrare la nuova 
+               <lb xml:id="p006_r_1_tl_29"/>situazione perchè si sa bene che [cass[ognuno]] ognuno è pur 
+               <lb xml:id="p006_r_1_tl_30"/>sempre soprattutto indaffarato con [cass[la propria]] i propri 
+               <lb xml:id="p006_r_1_tl_31"/>convenienti e inconvenienti, perlomeno consciamente e 
+               <lb xml:id="p006_r_1_tl_32"/>deliberatamente. Si pensò anzi, con una certa soddi<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_33" break="no"/>sfazione, che la bambina fosse in fine guarita delle 
+               <lb xml:id="p006_r_1_tl_34"/>sue difficoltà di vita quali che fossero e incominciare 
+               <lb xml:id="p006_r_1_tl_35"/>a dare prova di una [cass[positiva]] senza dubbio positiva 
+               <lb xml:id="p006_r_1_tl_36"/>ricchezza di buon umore [cass[x]] e di fantasia, dopo tanta 
+               <lb xml:id="p006_r_1_tl_37"/>in tutti i sensi materiale e realistica [cass_ms[noiosità]] 
+               <lb xml:id="p006_r_1_tl_38"/>tristezza, [cass[e noiosità]] nefandezza e noiosità. 
+               <lb xml:id="p006_r_1_tl_39"/>Eloisa in questi frangenti effettivamente rifiorì e 
+               <lb xml:id="p006_r_1_tl_40"/>anzi rifiorì per la prima volta da 
+               <lb xml:id="p006_r_1_tl_41"/>quando era nata.</p>
+            <pb xml:id="p007" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_007.tif"/>
+            <p>
+               <lb xml:id="p007_r_tl_1"/>All'osservazione si può senza dubbio dire che il fatto puramente 
+               <lb xml:id="p007_r_tl_2"/>nominativo tuttavia si svelò quasi subito essere una faccenda 
+               <lb xml:id="p007_r_tl_3"/>molto più complicata e per così dire profonda: poiché non solo 
+               <lb xml:id="p007_r_tl_4"/>Eloisa assumeva un nome nuovo per quanto appunto effimero ma 
+               <lb xml:id="p007_r_tl_5"/>anche e soprattutto [cassato_ds[una diversa personalità]] di volta in volta 
+               <lb xml:id="p007_r_tl_6"/>una diversa personalità. Ovverosia di nome in nome cambiava atteg<pc>-</pc>
+               <lb xml:id="p007_r_tl_7" break="no"/>giamento, abitudini, comportamento, movenze, abbigliamento e na<pc>-</pc>
+               <lb xml:id="p007_r_tl_8" break="no"/>turalmente espressione [cassato_ms[.]] del volto[cassato_ms[.]] e financo linguistica. 
+               <lb xml:id="p007_r_tl_9"/>Sotto gli occhi generalmente e molto superficialmente divertiti 
+               <lb xml:id="p007_r_tl_10"/>degli intimi sfilavano così, una dopo l'altra e talvolta riprese 
+               <lb xml:id="p007_r_tl_11"/>[sscr[inattese]]  ma di tutto punto compiute figure infantili, quasi sempre 
+               <lb xml:id="p007_r_tl_12"/>femminili ma ogni tanto anche espliciti maschietti: una serie di 
+               <lb xml:id="p007_r_tl_13"/>recite monologanti, talvolta delicate e subdole e talaltra, [cassato_ds[second]] 
+               <lb xml:id="p007_r_tl_14"/>secondo certamente le personalità narrate, fortemente appoggiate 
+               <lb xml:id="p007_r_tl_15"/>quando non addirittura sguaiate, per cui non fu raro il caso di 
+               <lb xml:id="p007_r_tl_16"/>notevoli sollievi familiari a una qualcuna di queste cessazioni 
+               <lb xml:id="p007_r_tl_17"/>di ruolo. E anche, va detto, vi furono casi in cui questo o 
+               <lb xml:id="p007_r_tl_18"/>l'altro dei conviventi, evidentemente sempre uguali a se stessi 
+               <lb xml:id="p007_r_tl_19"/>cercasse di colmare di benevolenza anche eccessiva questa e 
+               <lb xml:id="p007_r_tl_20"/>quella macchietta al fine di farla perdurare il più a lungo pos<pc>-</pc>
+               <lb xml:id="p007_r_tl_21" break="no"/>sibile e magari miracolosamente per sempre per la grande soddi<pc>-</pc>
+               <lb xml:id="p007_r_tl_22" break="no"/>sfazione di tutti, o qualcun altro tentasse anche con le cattive 
+               <lb xml:id="p007_r_tl_23"/>maniere di scoraggiare l'ingresso in famiglia di certi personag<pc>-</pc>
+               <lb xml:id="p007_r_tl_24" break="no"/>gini particolarmente biasimevoli e del tutto estranei alla più o 
+               <lb xml:id="p007_r_tl_25"/>meno geneticamente garantita tipologia diciamo culturale della 
+               <lb xml:id="p007_r_tl_26"/>casa, o quale perlomeno si pensava dovesse essere. 
+               <lb xml:id="p007_r_tl_27"/>Ma in tutta evidenza, e questo è quel che conta, la piccola Eloisa 
+               <lb xml:id="p007_r_tl_28"/>si divertiva [cassato_ds[in fondo]] infine un mondo, sviluppando anche una stra<pc>-</pc>
+               <lb xml:id="p007_r_tl_29" break="no"/>ordinaria comunicabilità con il prossimo che cercava di rendere 
+               <lb xml:id="p007_r_tl_30"/>edotto senza possibilità di malintesi anche delle più recondite 
+               <lb xml:id="p007_r_tl_31"/>particolarità e sfumature delle varie impersonificazioni, [cassato_ds[ivi]] 
+               <lb xml:id="p007_r_tl_32"/>[cassato_ds[comprese ci confidenze]] a mettendo in atto anche una mania confiden<pc>-</pc>
+               <lb xml:id="p007_r_tl_33" break="no"/>ziale fra le più prolisse e persuasive e altamente fantasiose. 
+               <lb xml:id="p007_r_tl_34"/>Così si seguitò per lungo tempo e in ottima salute senza troppi 
+               <lb xml:id="p007_r_tl_35"/>inconvenienti, apprezzando soprattutto [cassato_ds[l'inse]] l'inesauribile vena 
+               <lb xml:id="p007_r_tl_36"/>di inventiva messa a giorno dall'insospettabile Eloisa, bruscamen<pc>-</pc>
+               <lb xml:id="p007_r_tl_37" break="no"/>te diventata persona grata sia ad adulti che bambini della cerchia 
+               <lb xml:id="p007_r_tl_38"/>familiare per via della movimentazione da essa introdotta con la 
+               <lb xml:id="p007_r_tl_39"/>sua nuova passione nella monotonia casalinga; in quei tempi 
+               <lb xml:id="p007_r_tl_40"/>privi di televisione per l'alleviamento delle tensioni sempre la<pc>-</pc>
+               <lb xml:id="p007_r_tl_41" break="no"/>tenti o manifeste fra le quattro pareti demestiche, l'inesauribile 
+               <lb xml:id="p007_r_tl_42"/>teatrino introdotto dalla piccola nella seriosità quotidiana era 
+               <lb xml:id="p007_r_tl_43"/>e fu da parte di tutti [sscr[per]] tutti, salvo rari casi di fragorosi rompimenti 
+               <lb xml:id="p007_r_tl_44"/>assolutamente benvenuta. 
+               <lb xml:id="p007_r_tl_45"/>Spirava dunque nella famiglia, per la prima volta dalla nascita 
+               <lb xml:id="p007_r_tl_46"/>di Eloisa e straordinariamente proprio per merito suo, una abba<pc>-</pc>
+               <lb xml:id="p007_r_tl_47" break="no"/>stanza tranquilla felicità. 
+               <lb xml:id="p007_r_tl_48"/>Senonché, e perché non fosse smentito probabilmente il fatale 
+               <lb xml:id="p007_r_tl_49"/>destino notorio della felicità, atta si a comparire ma non mai a 
+               <lb xml:id="p007_r_tl_50"/>perdurare oltre abbastanza risicati limiti, anche questo periodo 
+               <lb xml:id="p007_r_tl_51"/>[cass_ds[prese fine] appunto un bel giorno prese fine [sscr_ms[.]] [inrigo_ms[e non del tutto]] 
+               <lb xml:id="p007_r_tl_52"/>[intsup_ms[inopinatamente.]] 
+               <lb xml:id="p007_r_tl_56"/>
+               <lb xml:id="p007_r_tl_53"/>Si scoprì infatti, e poca importanza hanno le modalità di questa 
+               <lb xml:id="p007_r_tl_54"/>rivelazione, come Eloisa non avesse in effetti mai inventato 
+               <lb xml:id="p007_r_tl_55"/>nulla [sscr[nessuna]]di queste sue straordinarie impersonificazioni [sscr[personalità]] 
+               <lb xml:id="p007_r_tl_57"/>e impersonificazioni, avendole invece prese di peso incominciando 
+               <lb xml:id="p007_r_tl_58"/>dai nomi dalla pura e semplice vita circostante. Le ragazzine e 
+               <lb xml:id="p007_r_tl_59"/>i ragazzini introdotti in casa altro non erano che la fedele 
+               <lb xml:id="p007_r_tl_60"/>riproduzione di compagne e compagni dell'asilo infantile; dando</p>
+            <pb xml:id="p008" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_008.tif"/>
+            <p>
+               <lb xml:id="p008_l"/>8
+               <lb xml:id="p008_r_tl_1"/>prova è vero, a nostro avviso, di scarsa fantasia, ma rivelando 
+               <lb xml:id="p008_r_tl_2"/>purtuttavia un notevole talento teatrale: che poi del resto, nel 
+               <lb xml:id="p008_r_tl_3"/>corso della sua susseguente vita non l'abbandonò mai, sebbene 
+               <lb xml:id="p008_r_tl_4"/>manifestandosi in tutt'altro genere di esercizi. 
+               <lb xml:id="p008_r_tl_5"/>Per la famiglia invece fu qualcosa più e peggio di una semplice 
+               <lb xml:id="p008_r_tl_6"/>delusione, giungendo non solo a toglierle ogni credito personale 
+               <lb xml:id="p008_r_tl_7"/>essendosi essa [cass_ds[resa]] rivelata così priva di qualità in proprio, ma 
+               <lb xml:id="p008_r_tl_8"/>anche a negarle ogni altro possibile credito futuro per qualsiasi 
+               <lb xml:id="p008_r_tl_9"/>sua impresa o anche solo virtù latente o manifesta. Fu in altre 
+               <lb xml:id="p008_r_tl_10"/>parole e senza appello demonizzata una volta per tutte, [cass[anche pro-]] 
+               <lb xml:id="p008_r_tl_11"/>[cass_ds[babilmante]] e ciò tanto più severamente quanto più era stata ammi<pc>-</pc>
+               <lb xml:id="p008_r_tl_12" break="no"/>rata. Solo la nonna materna, dunque altra Eloisa a sua volta, vis<pc>-</pc>
+               <lb xml:id="p008_r_tl_13" break="no"/>se il tragico fallimento con vero e proprio dolore, male rassegnan<pc>-</pc>
+               <lb xml:id="p008_r_tl_14" break="no"/>dosi alla scomparsa del maggiore divertimento delle sue noiose 
+               <lb xml:id="p008_r_tl_15"/>giornate; per cui spesso e appartatamente induceva la piccola 
+               <lb xml:id="p008_r_tl_16"/>a riproporle questa o quella impersonificazione, pronta anche a 
+               <lb xml:id="p008_r_tl_17"/>pagare un biglietto d'ingresso per lo spettacolo, il che riusciva 
+               <lb xml:id="p008_r_tl_18"/>a riportare il sorriso sulla faccia della ormai schiva e imbron<pc>-</pc>
+               <lb xml:id="p008_r_tl_19" break="no"/>ciata attrice. Ma si capisce bene come ciò fosse nondimeno una 
+               <lb xml:id="p008_r_tl_20"/>ben magra consolazione per chi si era adusato a riscuotere ben 
+               <lb xml:id="p008_r_tl_21"/>altro [cass_ds[successe]] e più ampio successo. 
+               <lb xml:id="p008_r_tl_22"/>Colpita da ostracismo [cass_ds[assoluto]], sia a mezzo di brutali proibizioni 
+               <lb xml:id="p008_r_tl_23"/>a fare e strafare se non in assoluto proprio, sia subissata da 
+               <lb xml:id="p008_r_tl_24"/>beffe e cattivissime considerazioni sulla sua pochezza, Eloisa 
+               <lb xml:id="p008_r_tl_25"/>ricadde in profonde malinconie e lugubri macinazioni di impossi<pc>-</pc>
+               <lb xml:id="p008_r_tl_26" break="no"/>bili riscatti e sanguinose vendette, oberata più che mai e senza 
+               <lb xml:id="p008_r_tl_27"/>speranza dal proprio odiato nome.
+               <lb xml:id="p008_r_1_tl_1"/>Di lì a poco tuttavia venne a mancare la famosa nonna, falcidia<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_2" break="no"/>ta dalla tarda età, introducendo in Eloisa un tutt'altro corso 
+               <lb xml:id="p008_r_1_tl_3"/>di pensieri: c'era dunque ancora una pur debole speranza di 
+               <lb xml:id="p008_r_1_tl_4"/>riuscire con l'andare del tempo a diventare la sola e unica 
+               <lb xml:id="p008_r_1_tl_5"/>Eloisa disponibile a pieno titolo. Sarebbe bastato infatti che 
+               <lb xml:id="p008_r_1_tl_6"/>scomparisse di punto in bianco anche la madre. Va detto a onore 
+               <lb xml:id="p008_r_1_tl_7"/>del vero che la speculazione intorno a questa possibilità era 
+               <lb xml:id="p008_r_1_tl_8"/>penosa e altamente drammatica perché naturalmente la piccola 
+               <lb xml:id="p008_r_1_tl_9"/>Eloisa amava la grande Eloisa e il pensiero di doverne nel caso 
+               <lb xml:id="p008_r_1_tl_10"/>felice di sparizione fare a meno riusciva a piombare la figlia 
+               <lb xml:id="p008_r_1_tl_11"/>snaturata nella più nera disperazione. Ma era una possibilità 
+               <lb xml:id="p008_r_1_tl_12"/>da prendere in considerazione perché costituiva l'unica opportu<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_13" break="no"/>nità per sorgere infine a nuova in quanto piena vita. Mors tua<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_14" break="no"/>vita mea: mai proverbio fu illustrato meglio. E così a spizzichi 
+               <lb xml:id="p008_r_1_tl_15"/>e bocconi la piccola Eloisa dibatteva tutta sola uno dei [cass[gr]] 
+               <lb xml:id="p008_r_1_tl_16"/>più grossi problemi dell'umanità, vale a dire la scelta fra il 
+               <lb xml:id="p008_r_1_tl_17"/>bene e il male, addirittura su due piani contradditorii, il bene 
+               <lb xml:id="p008_r_1_tl_18"/>essendo una prima volta il male dell'altro piano, e il male ri<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_19" break="no"/>sultando trasformato in bene non appena confrontato con la secon 
+               <lb xml:id="p008_r_1_tl_20"/>da equazione: come appunto accade quando la morale entra in 
+               <lb xml:id="p008_r_1_tl_21"/>conflitto con l'interesse personale. 
+               <lb xml:id="p008_r_1_tl_22"/>E fu così che Eloisa, pur piangendo disperatamente, passava 
+               <lb xml:id="p008_r_1_tl_23"/>intere notti a pregare un intero rosario affinché la madre moris<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_24" break="no"/>se lì per lì, procurandosi poi incubi e insostenibili rimorsi e 
+               <lb xml:id="p008_r_1_tl_25"/>trovandosi pertanto costretta a ripregare un intero rosario suc<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_26" break="no"/>cessivo al fine di annullare il primo. Dimagrendo a vista d'oc<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_27" break="no"/>chio, ricadendo preda delle antiche malattie, addormentandosi 
+               <lb xml:id="p008_r_1_tl_28"/>sui banchi della scuola ai quali nel frattempo era passata, [cass_ms[Eloi]] 
+               <lb xml:id="p008_l_1"/>[cass_ms[sa]]</p>
+            <pb xml:id="p009" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_009.tif"/>
+            <p>
+               <lb xml:id="p009_r_tl_1"/>scoperta nell'insonnia delle sue notti ma non nella segreta 
+               <lb xml:id="p009_r_tl_2"/>occupazione delle stesse, e trattata pertanto con infusi vomite<pc>-</pc>
+               <lb xml:id="p009_r_tl_3" break="no"/>voli e monologhi di specialisti di vari generi di discipline, 
+               <lb xml:id="p009_r_tl_4"/>Eloisa non si sa come un certo giorno come per incanto guarì di 
+               <lb xml:id="p009_r_tl_5"/>tutti i suoi mali, o perlomeno appunto di questi qua di cui si 
+               <lb xml:id="p009_r_tl_6"/>sta parlando. Probabilmente sopravvenne soltanto e sull'orlo 
+               <lb xml:id="p009_r_tl_7"/>del baratro il risveglio del sano e inossidabile istinto di 
+               <lb xml:id="p009_r_tl_8"/>conservazione albergante anche nella giovane torturata: la quale 
+               <lb xml:id="p009_r_tl_9"/>come reduce da una lunga e grave malattia a un certo punto si 
+               <lb xml:id="p009_r_tl_10"/>risvegliò in una nuova e perfettamente normalizzata dimensione, 
+               <lb xml:id="p009_r_tl_11"/>dimentica addirittura degli inferni appena trascorsi. 
+               <lb xml:id="p009_r_tl_14"/>Cosiì perlomeno sembrò a lei e naturalmente anche agli altri 
+               <lb xml:id="p009_r_tl_15"/>sebbene comunque del tutto ignari. 
+               <lb xml:id="p009_r_tl_16"/>E questa volta Eloisa rifiorì sul serio o perlomeno cosi apparve.</p>
+            <pb xml:id="p010" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_010.tif"/>
+            <p>
+               <lb xml:id="p010_l"/>10
+               <lb xml:id="p010_r_1_tl_1"/>Di lì a alcuni anni Eloisa incappò in un'altra omonima, e questa 
+               <lb xml:id="p010_r_1_tl_2"/>volta non nel protetto e dopotutto tranquillo e risaputo mondo 
+               <lb xml:id="p010_r_1_tl_3"/>familiare bensì nelle vaste incognite di quello esterno. 
+               <lb xml:id="p010_r_1_tl_4"/>Mise subito a giorno una profonda antipatia e risentì la cosa 
+               <lb xml:id="p010_r_1_tl_5"/>come una vera e propria persecuzione. Al suo nome sembravano 
+               <lb xml:id="p010_r_1_tl_6"/>legate le più sgradevoli delle impersonificazioni, e per la 
+               <lb xml:id="p010_r_1_tl_7"/>seconda volta Eloisa ne fu affranta. 
+               <lb xml:id="p010_r_1_tl_8"/>Questa nuova calamità non la trascinava più con sé nell'odioso 
+               <lb xml:id="p010_r_1_tl_9"/>gorgo delle più umili attribuzioni domestiche delle donne di 
+               <lb xml:id="p010_r_1_tl_10"/>casa, bensì la lanciava in preda agli sconfinati appettiti della 
+               <lb xml:id="p010_r_1_tl_11"/>gente maschile, appettiti molto meno innocui e tutto sommato 
+               <lb xml:id="p010_r_1_tl_12"/>comprensibili seppure oltremodo meschini dei casalinghi soddisfa<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_13" break="no"/>cimenti culinari. Qui si entrava in pasto alle carnivore fauci 
+               <lb xml:id="p010_r_1_tl_14"/>acquattate nel sottobosco buio xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+               <lb xml:id="p010_r_1_tl_15"/>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+               <lb xml:id="p010_r_1_tl_16"/>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx di una giungla pericolosa. 
+               <lb xml:id="p010_r_1_tl_17"/>Eloisa non si capacitava e nuovamente recalcitrava, come sempre 
+               <lb xml:id="p010_r_1_tl_18"/>disordinatamente perché anche questa volta non aveva assoluta<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_19" break="no"/>mente l'età e le cognizioni necessarie per dominare la nuova 
+               <lb xml:id="p010_r_1_tl_20"/>sogghignante predestinazione, tracciata 
+               <lb xml:id="p010_r_1_tl_21"/>per filo e per segno, come scoprì, nelle vicende di una monaca 
+               <lb xml:id="p010_r_1_tl_22"/>sedotta. 
+               <lb xml:id="p010_r_1_tl_23"/>La nuova Eloisa, da prendere con le pinze, le fu spiattellata 
+               <lb xml:id="p010_r_1_tl_24"/>davanti nella scuola leggermente superiore e pertanto più colta 
+               <lb xml:id="p010_r_1_tl_25"/>a cui era, nell'andare di quei pochi anni intercorsi fra la 
+               <lb xml:id="p010_r_1_tl_26"/>prima e la seconda omonimia, acceduta. Si può senz'altro suppor<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_27" break="no"/>re che l'infame scherzo di evocare all'appello stesso del suo 
+               <lb xml:id="p010_r_1_tl_28"/>nome in classe quell'altra storica Eloisa come una ciliegina 
+               <lb xml:id="p010_r_1_tl_29"/>sulla torta non fosse ad altro imputabile che alla rarità nei 
+               <lb xml:id="p010_r_1_tl_30"/>dintorni di un nome di battesimo senz'altro arcaico ma non poi 
+               <lb xml:id="p010_r_1_tl_31"/>più di tanti altri a bene pensarci, soltanto molto poco diffuso; 
+               <lb xml:id="p010_r_1_tl_32"/>e nessuna particolare cattiveria può o deve essere attribuita a 
+               <lb xml:id="p010_r_1_tl_33"/>chi per primo riesumò la famosa madre badessa fiancheggiata dal 
+               <lb xml:id="p010_r_1_tl_34"/>suo amoroso al solo udire il nome della nostra: ma è pur vero 
+               <lb xml:id="p010_r_1_tl_35"/>che come tale fu da tutta la scolaresca, lei compresa, in<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_36" break="no"/>terpretata come poi appunto si potè vedere quando senza più si 
+               <lb xml:id="p010_r_1_tl_37"/>trasformò in scherno e vezzo largamente e subito di<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_38" break="no"/>vulgato. Così vanno le cose, deteriorandosi al solo guardarle un 
+               <lb xml:id="p010_r_1_tl_39"/>poco più da vicino. E Eloisa si trovò una volta di più servita 
+               <lb xml:id="p010_r_1_tl_40"/>nel più persecutorio dei modi, occorre pure riconoscerlo per 
+               <lb xml:id="p010_r_1_tl_41"/>quanto a malicuore. 
+               <lb xml:id="p010_r_1_tl_42"/>Questa volta Eloisa non ebbe assolutamente modo di correre ai 
+               <lb xml:id="p010_r_1_tl_43"/>ripari, non avrebbe saputo nemmeno da che parte incominciare, un 
+               <lb xml:id="p010_r_1_tl_44"/>poco perché ormai più pensosa e ragionevole forse di una piccola 
+               <lb xml:id="p010_r_1_tl_45"/>bambina, un poco perché si trovava, e ne era perfettamente  
+               <lb xml:id="p010_r_1_tl_46"/>conscia, a lottare contro i famosi mulini a vento con i quali 
+               <lb xml:id="p010_r_1_tl_47"/>presto o tardi ognuno a suo modo e secondo le sue circostanze è 
+               <lb xml:id="p010_r_1_tl_48"/>costretto a scornarsi. Per cui, se pure le vicende di Eloisa 
+               <lb xml:id="p010_r_1_tl_49"/>possono apparire del tutto comuni nella loro anatomia, tuttavia 
+               <lb xml:id="p010_r_1_tl_50"/>continuano pur sempre a distinguersi nella loro pochezza, per via 
+               <lb xml:id="p010_r_1_tl_51"/>della loro particolare valenza di tragedia vera e propria di 
+               <lb xml:id="p010_r_1_tl_52"/>identità sulla base di una futile questione anagrafica. E questo 
+               <lb xml:id="p010_r_1_tl_53"/>indubbiamente non succede a chiunque.</p>
+            <pb xml:id="p011" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_011.tif"/>
+            <p>
+               <lb xml:id="p011_r_tl_1"/>11
+               <lb xml:id="p011_r_1_tl_1"/>In quegli anni Eloisa avevA comunque già diversi se non molti problemi, 
+               <lb xml:id="p011_r_1_tl_2"/>visibili, questi, a occhio nudo. 
+               <lb xml:id="p011_r_1_tl_3"/>Era graVEmente peggiorata a scuola, non diventando l'ultima della 
+               <lb xml:id="p011_r_1_tl_4"/>classe soltanto perché c'era dopo di lei chi effettivamente poteva 
+               <lb xml:id="p011_r_1_tl_5"/>mostrare qualche giustificabile motivazione al poco rendimento con 
+               <lb xml:id="p011_r_1_tl_6"/>e facilmente rintracciabili predisposizioni alla manifesta 
+               <lb xml:id="p011_r_1_tl_7"/>o selle scuole elemen<pc>-</pc>
+               <lb xml:id="p011_r_1_tl_8" break="no"/>rvello o 
+               <lb xml:id="p011_r_1_tl_9"/>digià 
+               <lb xml:id="p011_r_1_tl_10"/>rif) 
+               <lb xml:id="p011_r_1_tl_11"/>MMA C CII 
+               <lb xml:id="p011_r_1_tl_12"/>tizione: mentre la nostra fin li 
+               <lb xml:id="p011_r_1_tl_13"/>SATERMRIANALEILIMEAIMEILIARIEYEMTEICAIAMIXXXXXXXIXXXIXXYXXXXX 
+               <lb xml:id="p011_l"/>
+               <lb xml:id="p011_r_1_tl_15"/>2i ortevg 
+               <lb xml:id="p011_r_1_tl_16"/>Si dedicava assiduamente a occupazioni frivole, quali la ginnasticà 
+               <lb xml:id="p011_r_1_tl_17"/>serale in gruppi di volontarie e volontari ad alto rendimento fisico 
+               <lb xml:id="p011_r_1_tl_18"/>mentre non si sarebbe proprio potuto dire che disponesse lei stessa 
+               <lb xml:id="p011_r_1_tl_19"/>di particolari doti sportive, per quanto e non senza grazia si sfor<pc>-</pc>
+               <lb xml:id="p011_r_1_tl_20" break="no"/>zasse; o ancora la costituzione e l'animazione di compagnie filo<pc>-</pc>
+               <lb xml:id="p011_r_1_tl_21" break="no"/>drammatiche di quartiere, rimaste del resto sempre ignote ai più, 
+               <lb xml:id="p011_r_1_tl_22"/>ma senz'altro sporadicamente apprezzate in occasione di ricorrenti 
+               <lb xml:id="p011_r_1_tl_23"/>celebrazioni scolastiche ufficiali per il resto grandemente noiose 
+               <lb xml:id="p011_r_1_tl_24"/>sia per le scolaresche che per i genitori ufficialmente convocati: 
+               <lb xml:id="p011_r_1_tl_25"/>e qui un, qualche successo lo riscuoteva, forse in virtù del lungoment 
+               <lb xml:id="p011_r_1_tl_26"/>allenamen teatral di cui come si sa già in passato aveva 
+               <lb xml:id="p011_r_1_tl_27"/>li questo genere, richiedenti però 
+               <lb xml:id="p011_l_2"/>
+               <lb xml:id="p011_l_3"/>
+               <lb xml:id="p011_r_1_tl_29"/>notevole dispendio di tempor<pc>-</pc>
+               <lb xml:id="p011_l_1" break="no"/>
+               <lb xml:id="p011_r_1_tl_30" break="no"/>e utili applicazionip: il che senza dubbiò una qualche complica<pc>-</pc>
+               <lb xml:id="p011_r_1_tl_31" break="no"/>zione comportava perché la sua massima aspirazione in realtà era 
+               <lb xml:id="p011_r_1_tl_32"/>la lettura alla quale nottetempo si dedicava accanitamente per sfuggire 
+               <lb xml:id="p011_r_1_tl_33"/>al proprio presente che considerava se non squallido però del tutto 
+               <lb xml:id="p011_r_1_tl_34"/>insoddisfacente. 
+               <lb xml:id="p011_r_1_tl_35"/>Rcci 
+               <lb xml:id="p011_r_1_tl_36"/>recalcitrava davanti alle vicende ealle 
+               <lb xml:id="p011_r_1_tl_37"/>SSA 
+               <lb xml:id="p011_r_1_tl_39"/>DCCCCSSNNIA 
+               <lb xml:id="p011_r_1_tl_40"/>NIAADMTTC1 
+               <lb xml:id="p011_r_1_tl_41"/>diui del resto, benche se ne capacitasse sebbene-a modesuo, poco 
+               <lb xml:id="p011_r_1_tl_42"/>e Rulla riusciva a capire 
+               <lb xml:id="p011_r_1_tl_43"/>XX)XXXXXXXXXXXXXXXXXXXXXX eando mene-aaeesttare, apanta. 
+               <lb xml:id="p011_r_1_tl_44"/>Mayquesto indubbiamente non avrebbe potuto bastare per costituire 
+               <lb xml:id="p011_r_1_tl_45"/>un serio problema, non fosse stato che in realtà essa grandemente 
+               <lb xml:id="p011_r_1_tl_46"/>recalcitrava davanti alle vicende e alle pretese del proprio e dell 
+               <lb xml:id="p011_r_1_tl_47"/>altrui sesso, di cui, sebbene se ne capacitasse perlomeno a modo 
+               <lb xml:id="p011_r_1_tl_48"/>suo, poco o nulla riusciva a capire e tanto menoaacettarapanto
+               <lb xml:id="p011_r_3_tl_1"/>sembra di intendere, ad accettare.
+               <lb xml:id="p011_r_2_tl_1"/>Intraprendeva perciò, e tutte quante sgranate lungo l'arco di una 
+               <lb xml:id="p011_r_2_tl_2"/>giornata, varie e diverse carriere, alle quali separatamente si dedi<pc>-</pc>
+               <lb xml:id="p011_r_2_tl_3" break="no"/>cava con trasporto e ampie immaginazioni proiettate in un favoloso 
+               <lb xml:id="p011_r_2_tl_4"/>futuro ogni volta poi con scoramento rimandante a un altro e un altro 
+               <lb xml:id="p011_r_2_tl_5"/>ancora, comportandosi tuttò sommato come un pippistrello accecato 
+               <lb xml:id="p011_r_2_tl_6"/>dalla luce fra pareti insormontabili, presa di volta in volta da 
+               <lb xml:id="p011_r_2_tl_7"/>inspiegabile sconforto, per fortuna di breve durata perché appunto 
+               <lb xml:id="p011_r_2_tl_8"/>scacciato dalla successiva immersione o emersione come poi si voglia.</p>
+            <pb xml:id="p012" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_012.tif"/>
+            <p>
+               <lb xml:id="p012_r_tl_1"/>12
+               <lb xml:id="p012_l"/>
+               <lb xml:id="p012_r_1_tl_3"/>In qualche modo, è da pensare, proprio qui si annidava 
+               <lb xml:id="p012_r_1_tl_1"/>l'originee andava pertanto ricercato l'inizio 
+               <lb xml:id="p012_r_1_tl_4"/>[non solo delle sue disperdenti e affaticanti attività, e pertanto 
+               <lb xml:id="p012_r_1_tl_5"/>anche il loro inizio e di riflesso la spiegazione dei suoi guai, 
+               <lb xml:id="p012_r_1_tl_6"/>ivi compresi quelli scolastici. 
+               <lb xml:id="p012_r_1_tl_7"/>Non è dunque strana né particolarmente incomprensibile la sua reazione 
+               <lb xml:id="p012_r_1_tl_8"/>apparentemente smodata di rigetto nei confronti della novella benché 
+               <lb xml:id="p012_l_1"/>antica Eloisa, null'altro invischiata se non appunto in una questione 
+               <lb xml:id="p012_l_2"/>di sesso benché a quanto si diceva e scriveva di alto profilo. 
+               <lb xml:id="p012_r_1_tl_11"/>Eloisa si era andata a informare perigliosamente negli elenchi della 
+               <lb xml:id="p012_r_1_tl_12"/>biblioteca scolastica dapprima e comunale poi, il rischio essendo 
+               <lb xml:id="p012_r_1_tl_13"/>rappresentato dal vigente divieto di frequentazione del reparto adulto 
+               <lb xml:id="p012_r_1_tl_14"/>da parte dei ragazzi; per cui dovette farsi rilasciare una tessera 
+               <lb xml:id="p012_r_1_tl_15"/>a nome della madre, poi fatta controfirmare in un momento di grande 
+               <lb xml:id="p012_r_1_tl_16"/>confusione domestica dalla inconsapevole genitrice, inaugurando del 
+               <lb xml:id="p012_r_1_tl_17"/>resto con ciò una serie di letture talvolta anche francamente triviale 
+               <lb xml:id="p012_r_1_tl_18"/>se non spinta, regolarmente assolte di nascosto dalla figlia; in 
+               <lb xml:id="p012_r_1_tl_19"/>un primo momento tuttavia le ricerche di Eloisa si concentrarono su 
+               <lb xml:id="p012_r_1_tl_20"/>un epistolario di grandissima noia fra la madre badessa e l'abate 
+               <lb xml:id="p012_r_1_tl_21"/>a lei collegata fin dal titolo, per di più steso in un complicato 
+               <lb xml:id="p012_r_1_tl_22"/>linguaggio arcaico provvisto come i testi scolasticivin piè di pagina 
+               <lb xml:id="p012_r_1_tl_23"/>; e non fosse stato per una dotta introduzione al volume, di ben 
+               <lb xml:id="p012_r_1_tl_24"/>poco la tredicenne si sarebbe potuta istruire circa la celebre omonima 
+               <lb xml:id="p012_r_1_tl_25"/>medievale. E anche dal non molto che riuscì a ricavare dall'affrettata 
+               <lb xml:id="p012_r_1_tl_26"/>consultazione l'antenata nominale le uscì più simpatica: anzi. Così 
+               <lb xml:id="p012_r_1_tl_27"/>che la nostra Eloisa dovette anzitutto fastidiosamente vergognarsi 
+               <lb xml:id="p012_r_1_tl_28"/>di portare dunque un nome peccaminoso, il che forse non l'avrebbe 
+               <lb xml:id="p012_r_1_tl_29"/>nemmeno troppo disturbata non fosse stata la qualità del peccato 
+               <lb xml:id="p012_r_1_tl_30"/>strettamente collegato con le sue personalissime ambasce adolescenziali 
+               <lb xml:id="p012_r_1_tl_31"/>circa il proprio e l'avverso sesso, purtroppo ambedue in preda a 
+               <lb xml:id="p012_r_1_tl_32"/>un difficile scandaglio e controllo di impulsi e comportamenti franca<pc>-</pc>
+               <lb xml:id="p012_r_1_tl_33" break="no"/>mente odiosi. 
+               <lb xml:id="p012_r_1_tl_34"/>Eloisa infatti trovava già per conto proprio a ridire circa la destina<pc>-</pc>
+               <lb xml:id="p012_r_1_tl_35" break="no"/>zione biologica in se stessa, tanto per incominciare; e poi di questo 
+               <lb xml:id="p012_r_1_tl_36"/>passo procedendo circa le sue implicazioni sociali: che, come è 
+               <lb xml:id="p012_r_1_tl_37"/>noto, sono infinite e permeanti ogni qualsivoglia passo di ogni qual<pc>-</pc>
+               <lb xml:id="p012_r_1_tl_38" break="no"/>sivoglia giornata e in ogni e qualsivoglia luogo. Eloisa insomma 
+               <lb xml:id="p012_r_1_tl_39"/>si ribellava in poche parole al mondo intero in quanto non riusciva 
+               <lb xml:id="p012_r_1_tl_40"/>a capacitarsi di nulla.</p>
+            <pb xml:id="p013" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_013.tif"/>
+            <p>
+               <lb xml:id="p013_r_tl_1"/>6èe189 
+               <lb xml:id="p013_r_tl_2"/>o Rcgrrdeiione 
+               <lb xml:id="p013_r_tl_3"/>Le Stranezze di Eloisa incomineiarona a manifestarsi i giovanissima, 
+               <lb xml:id="p013_r_tl_4"/>a sebbene in modo curieso. 
+               <lb xml:id="p013_r_tl_5"/>forseil gaso di sapere subito che Mella sua famiglia materna dtrro 
+               <lb xml:id="p013_r_tl_6"/>vigeva da tempo immemorabile l'usanza di battezzare una figlia con 
+               <lb xml:id="p013_r_tl_7"/>sasira poc 
+               <lb xml:id="p013_r_tl_8"/>il nome della madre, per cui le Eloise vi si susseguivanooegaieà 
+               <lb xml:id="p013_r_tl_9"/>salvo forse rarissimi casi di assenza di prole, o comunque prole fem<pc>-</pc>
+               <lb xml:id="p013_r_tl_10" break="no"/>minile, per una o l'altra di esse; ma si raccontava che si era allora 
+               <lb xml:id="p013_r_tl_11"/>provvedutoa ristabilire l'ordine con un piccolo scarto laterale, 
+               <lb xml:id="p013_r_tl_12"/>VAmico 
+               <lb xml:id="p013_r_tl_13"/>incaricando della bisogna una madre acquisita perssione maschile 
+               <lb xml:id="p013_r_tl_14"/>Selrasado2 
+               <lb xml:id="p013_r_tl_15"/>pur sempre rifepibilezalla discendenza diretta, per cui questi lievi 
+               <lb xml:id="p013_r_tl_16"/>disordini non avevano mai se non minimissimamente inquietato la tradi<pc>-</pc>
+               <lb xml:id="p013_r_tl_17" break="no"/>Cocavela 
+               <lb xml:id="p013_r_tl_18"/>zione, perseguita con nara pertinacia. Nella contingenza dell'attuale 
+               <lb xml:id="p013_r_tl_19"/>Eloisa, in casa erano presenti ben tre Eloise lei compresa, giusta<pc>-</pc>
+               <lb xml:id="p013_r_tl_20" break="no"/>mente situate una alle spalle dell'altra in quanto una madre e l'altra 
+               <lb xml:id="p013_r_tl_21"/>nonna della nostra. La cosa non sembrava disturbare nessuno salvo 
+               <lb xml:id="p013_r_tl_22"/>forsein rari momenti in cui a un richiamo accorrevano ben tre esempla<pc>-</pc>
+               <lb xml:id="p013_r_tl_23" break="no"/>ri; ma essendo due di essi provvisti anche di appellativi strettamente 
+               <lb xml:id="p013_r_tl_24"/>funzionali e assai più usati, non si pensò di ovviare magari con 
+               <lb xml:id="p013_r_tl_25"/>un nomignolo a un inconveniente che a nessuno sembrava tale. 
+               <lb xml:id="p013_r_tl_26"/>Se non, come ben tosto apparve, all'ultima arrivata. 
+               <lb xml:id="p013_r_tl_27"/>Rimangono celebri i tentativi intrapresi dalla nostra per uscire 
+               <lb xml:id="p013_r_tl_28"/>dal vicolo cieco di un'omonimia evidentemente per lei incomprensibile 
+               <lb xml:id="p013_r_tl_29"/>e perseguiti con testarda determinazione fin dal momento in cui incomin<pc>-</pc>
+               <lb xml:id="p013_r_tl_30" break="no"/>rocapont 
+               <lb xml:id="p013_r_tl_31"/>ciò a dominare l'uso del linguaggio. Si ricordano leutabili 
+               <lb xml:id="p013_r_tl_32"/>ottusità opposte dalla medesima alle spiegazioni circa geografia 
+               <lb xml:id="p013_r_tl_33"/>e geometria dei legami parentali, per cui risultò impossibile tranquil<pc>-</pc>
+               <lb xml:id="p013_r_tl_34" break="no"/>lizzare la piccola con la narrazione dell'usanza trasmessa di madre 
+               <lb xml:id="p013_r_tl_35"/>in figlia, o peggio ancora, nel nostro caso, di madre in madre: dove 
+               <lb xml:id="p013_r_tl_36"/>appare dopotutto non troppo peregrina la manifesta difficoltà di 
+               <lb xml:id="p013_r_tl_37"/>figlia e nipote a vederne la logica concatenazione; se non poi eviden<pc>-</pc>
+               <lb xml:id="p013_r_tl_38" break="no"/>temente con l'andare del tempo. Seguironoyintemperanze di proteste</p>
+            <pb xml:id="p014" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_014.tif"/>
+            <p>
+               <lb xml:id="p014_tr_2_tl_1"/>e explicite richieste affinchè madre e nonna rinunciassero a un nome 
+               <lb xml:id="p014_tr_2_tl_2"/>proprio ritenuto absolutamente superfluo per esse dall'ultima Eloisa, 
+               <lb xml:id="p014_tr_2_tl_3"/>paga di chiamarle appunto e rispettivamente madre e nonna. 
+               <lb xml:id="p014_tr_2_tl_4"/>Si raccontava anche di severissime interrogatorii cui furono da questa dalla nostra 
+               <lb xml:id="p014_tr_2_tl_5"/>maage 
+               <lb xml:id="p014_tr_2_tl_6"/>sottoposti bambini e adulti della cerchia delle conoscenze 
+               <lb xml:id="p014_tr_2_tl_7"/>me addirittura interpellati per strada, sui nomi delle rispettive 
+               <lb xml:id="p014_tr_2_tl_8"/>madri e figlie e nonne, e si deve regionevolmente desumere ehe non 
+               <lb xml:id="p014_tr_2_tl_9"/>incappò in nessun altro caso di omnimia familiare, poichè a questo 
+               <lb xml:id="p014_tr_2_tl_10"/>seons glatte immusouite 
+               <lb xml:id="p014_tr_2_tl_11"/>periodo ne segui uno di profonde e adontate meditazioni. Insomma, 
+               <lb xml:id="p014_tr_2_tl_12"/>era evidente che la piccola Eloisa, nel sopravvenuto silenzio, stentava 
+               <lb xml:id="p014_tr_2_tl_13"/>e si arrabbattava. 
+               <lb xml:id="p014_tr_2_tl_14"/>Grande fu la gioia familiare quando sopravvenne la terza face, Successiva, 
+               <lb xml:id="p014_tr_2_tl_15"/>contraddistinta da una ritrovata e perfino accessiva vivacità, Copotutto 
+               <lb xml:id="p014_tr_2_tl_16"/>in falt 
+               <lb xml:id="p014_tr_2_tl_17"/>naturale per quell'età. Pare infatti che Eloisa semplicemente si 
+               <lb xml:id="p014_tr_2_tl_18"/>spogliò del proprio nome per assumerne^ in talvolta rapide e talvolts 
+               <lb xml:id="p014_tr_2_tl_19"/>de nomidi cui l'uso 
+               <lb xml:id="p014_tr_2_tl_20"/>lente successioni (altri di fantasia), il cui uso pretendeva offrendo 
+               <lb xml:id="p014_tr_2_tl_21"/>nell'aspetto che<pc>-</pc>
+               <lb xml:id="p014_tr_2_tl_22" break="no"/>meque 
+               <lb xml:id="p014_tr_2_tl_23"/>in cambio anche diverse e spesso divertenti personalità, sia al'appa<pc>-</pc>
+               <lb xml:id="p014_tr_2_tl_24" break="no"/>nel comportamento 
+               <lb xml:id="p014_tr_2_tl_25"/>renza e comportamentali, vagando industintamente fra femminucce e 
+               <lb xml:id="p014_tr_2_tl_26"/>maschietti, a seconda dell'estro. Senonchè non si tardò poi a scoprire 
+               <lb xml:id="p014_tr_2_tl_27"/>che il teatrino nulla doveva all'immaginazione bensi reclutava i 
+               <lb xml:id="p014_tr_2_tl_28"/>suoi personaggi tali e quali per cosi dire la strada, configuran<pc>-</pc>
+               <lb xml:id="p014_tr_2_tl_29" break="no"/>dosi come un modesto e, a tutti così sembrò, riprovevole furto, cui 
+               <lb xml:id="p014_tr_2_tl_30"/>fu drasticamente messo fine. 
+               <lb xml:id="p014_tr_2_tl_31"/>per conto suo. 
+               <lb xml:id="p014_tr_2_tl_32"/>La stessa Eloisa, in anni più maturi, ricordava inoltre di avere 
+               <lb xml:id="p014_tr_2_tl_33"/>all'insaputa di tutti accolto la sopravvenuta morte della nonna con 
+               <lb xml:id="p014_tr_2_tl_34"/>Solli 
+               <lb xml:id="p014_tr_2_tl_35"/>vero e proprio tripudioi/e di essersi seriamente baloccata con l'ipo<pc>-</pc>
+               <lb xml:id="p014_tr_2_tl_36" break="no"/>affinchè 
+               <lb xml:id="p014_tr_2_tl_37"/>tesi di una uguale sparizione della madre perchè prendesse fine la 
+               <lb xml:id="p014_tr_2_tl_38"/>sgradevole situazione, trovandosi tuttavia in grande imbarazzo con 
+               <lb xml:id="p014_tr_2_tl_39"/>se stessa di fronte all'eventualità molto reale di perdere insieme 
+               <lb xml:id="p014_tr_2_tl_40"/>indispensabil 
+               <lb xml:id="p014_tr_2_tl_41"/>con la superflua Eloisa adulta anche la madre che invece amava tene<pc>-</pc>
+               <lb xml:id="p014_tr_2_tl_42" break="no"/>infine 
+               <lb xml:id="p014_tr_2_tl_43"/>ramente. Per cui si starazzò senza rincrescimenti dell'inurbana 
+               <lb xml:id="p014_tr_2_tl_44"/>congettura e, pare, nel contempo, anche definitivamente del rovellodi düamars 
+               <lb xml:id="p014_tr_2_tl_45"/>Eloisa.</p>
+            <pb xml:id="p015" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_015.tif"/>
+            <p>
+               <lb xml:id="p015_tr_2_tl_1"/>Assurta così, si suppone, a nuova vita, Eloisa non ebbe tuttavia 
+               <lb xml:id="p015_tr_2_tl_2"/>molto tempo per goderne poiché la colse fra capo e collo l'arrivo 
+               <lb xml:id="p015_tr_2_tl_3"/>di una terza [ms[,]] o quarta che fosse[ms[,]] Eloisa, benché letteraria ed evocata 
+               <lb xml:id="p015_tr_2_tl_4"/>nel già difficile periodo della pubertà da una scuola ormai addentratasi 
+               <lb xml:id="p015_tr_2_tl_5"/>nella cultura generale. Quest'ultima Eloisa, fra gli ammiccamenti 
+               <lb xml:id="p015_tr_2_tl_6"/>e gli sghignazzi de[cass.ms[u]]i  rudi compagni di classe[ms[,]] non si presentava da 
+               <lb xml:id="p015_tr_2_tl_7"/>sola, bensì inseparabilmente accompagnata da un assai più importante 
+               <lb xml:id="p015_tr_2_tl_9"/>amante [ms[,]] al[cass.ms[quale invero doveva la su di lei stinta]]  [sscr.ms[connubio con il quale doveva la propria]] notorietà. La nostra 
+               <lb xml:id="p015_tr_2_tl_11"/>Eloisa, già impreparata alla sua novella qualità di femmina  [intsup_ms[biologica]]su cui 
+               <lb xml:id="p015_tr_2_tl_12"/>le sembrava di avere ancora parecchio da ridire, allibi e corse, 
+               <lb xml:id="p015_tr_2_tl_13"/>in vari e anche oscuri modi infastidita, ad informarsi. 
+               <lb xml:id="p015_tr_2_tl_14"/>Così apprese, le voci enciclopediche essen[cass_ms[s]][insup.ms[d]]o quello che sono, trattarsi [ms[,]]  
+               <lb xml:id="p015_tr_2_tl_16"/>per questa nuova omonima, di una grande amorosa [ms[,]]  [cass.ms[e]] sedotta, [cass_ms[addirit-]][insup.ms[nientedimeno]] 
+               <lb xml:id="p015_tr_2_tl_18"/>[cass_ms[tura per opera di]][insup.ms[che da]]un religioso[cass_ms[,]] [insup.ms.soprarigo[e]] poi trucemente finita madre badessa: 
+               <lb xml:id="p015_tr_2_tl_20"/>e per un qualche motivo su cui ora e qui indagare [cass_ms[sarebbe superfluo.]][insup.ms[non è possibile]] 
+               <lb xml:id="p015_tr_2_tl_22"/>sprofondò [cass_ms[nella gabbia della vergogna.]][insup.ms[in una specie di disperazione.]][aggiunta in rigo manoscritta e poi cassata ms.[in una impotente colpevolezza]] 
+               <lb xml:id="p015_tr_2_tl_23"/>Non si sa quanto tempo durò questa nuova fase di sofferenza da omonimia[inrigo[;]]  
+               <lb xml:id="p015_tr_2_tl_24"/>[cass_ms[per la nostra]] ma sembra sia un fatto che l'abitudine a camminare 
+               <lb xml:id="p015_tr_2_tl_26"/>a testa bassa(ms.(,)) sopraggiunta precisamente in quei tempi (ms(,)) 
+               <lb xml:id="p015_tr_2_tl_27"/>si possa in verità attribuire all'esistenza di quella nuova Eloisa, 
+               <lb xml:id="p015_tr_2_tl_28"/>messasi subito appesa a mezz'aria alle sue spalle, di tutto punto 
+               <lb xml:id="p015_tr_2_tl_30"/>vestita da monaca [cass_ms[sebbene]][insup.ms[??????????poi eliminato con cassazione ms]] secondo criteri moderni per via della poca 
+               <lb xml:id="p015_tr_2_tl_31"/>cultura medievale della nostra, ad accompagnarla ormai così le sembra<pc>-</pc>
+               <lb xml:id="p015_tr_2_tl_32" break="no"/>va per il resto dei suoi giorni. Dalla nera (corr.ms.(r))(agg.ms.t))onaca spuntavano due 
+               <lb xml:id="p015_tr_2_tl_33"/>rosei piedini precisamente all'altezza della nuca di Eloisa, ovunque 
+               <lb xml:id="p015_tr_2_tl_34"/>andasse in quei difficili anni e qualsiasi cosa facesse; di modo 
+               <lb xml:id="p015_tr_2_tl_35"/>che, se si fosse voltata come invece ben si guardava dal fare, (corr.ms(si))(agg.ms.(li)) 
+               <lb xml:id="p015_tr_2_tl_37"/>avrebbe potuti senza ulteriori sforzi tranquillamente (cass.ms. e rabbiosamente) (insup.ms.cassato(tenacemente)) 
+               <lb xml:id="p015_tr_2_tl_38"/>addentare. 
+               <lb xml:id="p015_tr_2_tl_39"/>Alice Ceresa</p>
+            <pb xml:id="p016" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_016.tif"/>
+            <pb xml:id="p017" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_017.tif"/>
+            <pb xml:id="p018" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_018.tif"/>
+            <pb xml:id="p019" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_019.tif"/>
+            <pb xml:id="p020" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_020.tif"/>
+            <pb xml:id="p021" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_021.tif"/>
+            <pb xml:id="p022" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_022.tif"/>
+            <pb xml:id="p023" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_023.tif"/>
+            <pb xml:id="p024" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_024.tif"/>
+            <pb xml:id="p025" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_025.tif"/>
+            <pb xml:id="p026" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_026.tif"/>
+            <pb xml:id="p027" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_027.tif"/>
+            <pb xml:id="p028" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_028.tif"/>
+            <pb xml:id="p029" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_029.tif"/>
+            <pb xml:id="p030" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_030.tif"/>
+            <pb xml:id="p031" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_031.tif"/>
+            <pb xml:id="p032" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_032.tif"/>
+            <pb xml:id="p033" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_033.tif"/>
+            <pb xml:id="p034" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_034.tif"/>
+            <pb xml:id="p035" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_035.tif"/>
+            <pb xml:id="p036" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_036.tif"/>
+            <pb xml:id="p037" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_037.tif"/>
+            <pb xml:id="p038" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_038.tif"/>
+            <pb xml:id="p039" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_039.tif"/>
+            <pb xml:id="p040" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_040.tif"/>
+            <pb xml:id="p041" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_041.tif"/>
+            <pb xml:id="p042" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_042.tif"/>
+            <pb xml:id="p043" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_043.tif"/>
+            <pb xml:id="p044" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_044.tif"/>
+            <pb xml:id="p045" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_045.tif"/>
+            <pb xml:id="p046" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_046.tif"/>
+            <pb xml:id="p047" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_047.tif"/>
+            <pb xml:id="p048" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_048.tif"/>
+            <pb xml:id="p049" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_049.tif"/>
+            <pb xml:id="p050" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_050.tif"/>
+            <pb xml:id="p051" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_051.tif"/>
+            <pb xml:id="p052" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_052.tif"/>
+            <pb xml:id="p053" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_053.tif"/>
+            <pb xml:id="p054" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_054.tif"/>
+            <pb xml:id="p055" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_055.tif"/>
+            <pb xml:id="p056" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_056.tif"/>
+            <pb xml:id="p057" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_057.tif"/>
+            <pb xml:id="p058" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_058.tif"/>
+            <pb xml:id="p059" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_059.tif"/>
+            <p>
+               <lb xml:id="p059_tr_3_tl_1"/>cartina di tornasole, e sembrava, disapprovando. 
+               <lb xml:id="p059_tr_3_tl_2"/>Erano indubbiamente sensazioni sgradevoli 
+               <lb xml:id="p059_tr_3_tl_3"/>ma a quanto appariva inevitabili. Eloisa 
+               <lb xml:id="p059_tr_3_tl_4"/>sgomenta si torceva le mani. La curiosità 
+               <lb xml:id="p059_tr_3_tl_5"/>per il pene dentro e fuori i pantaloni (qui da inserire aggiunta a margine segnata con asterisco) era 
+               <lb xml:id="p059_tr_3_tl_6"/>una e anzi la prima di quste. La bdessa or<pc>-</pc>
+               <lb xml:id="p059_tr_3_tl_7" break="no"/>1i PrCava, o gorse no? Ina ccola dolosia nor<pc>-</pc>
+               <lb xml:id="p059_tr_3_tl_8" break="no"/>ola assente Collo gra diso priove ziono Ccra 
+               <lb xml:id="p059_tr_3_tl_9"/>aoneCbe Coto apalsj asi Coro por ailornale allo 
+               <lb xml:id="p059_tr_3_tl_10"/>Too ria ii di derenla drecedente rna ner alrla 
+               <lb xml:id="p059_tr_3_tl_11"/>Scello Can Stata Cnttato ih pos6o ele Celre 
+               <lb xml:id="p059_tr_3_tl_12"/>E 1alorlio alle sre sCalle La CnCerro somno 
+               <lb xml:id="p059_tr_3_tl_13"/>mrena mente Drrngooa 
+               <lb xml:id="p059_tr_3_tl_14"/>1e CCerle in Cor èRano in altie Dicrel agroc. 
+               <lb xml:id="p059_tr_3_tl_15"/>GDIARO DBRADIO DEIO MILDLERE RErRLO REREIto 
+               <lb xml:id="p059_tr_3_tl_16"/>Rl abio sosso ma in Cer Civorer Veale 
+               <lb xml:id="p059_tr_3_tl_17"/>Roa C. Rira Din Ccrilo Co raiiia 
+               <lb xml:id="p059_tr_3_tl_18"/>Du oriuila d. auorto u Re sirno clo Ca S prtali 
+               <lb xml:id="p059_tr_3_tl_19"/>Rena imn Vono edrica lo Cio orn frolie le 
+               <lb xml:id="p059_tr_3_tl_20"/>omndliio alevo o aDli Diocio di cio Canarri)) 
+               <lb xml:id="p059_tr_3_tl_21"/>na Cemite prenio a gare lirli nanon rai 
+               <lb xml:id="p059_tr_3_tl_22"/>Coioort Corta diioonana e orro occareio 
+               <lb xml:id="p059_tr_3_tl_23"/>Von Ce Rate Drando Vr rolar nal Vttoro rlacneo 
+               <lb xml:id="p059_tr_3_tl_24"/>C pina ddir e onebo rinicilo a meria goi<pc>-</pc>
+               <lb xml:id="p059_tr_3_tl_25" break="no"/>UORCO R UUO LE ORE RuorI ORER RII/E 
+               <lb xml:id="p059_tr_3_tl_26"/>OUDCGE DOEGRioD LORE DA REOR LICEI 
+               <lb xml:id="p059_tr_3_tl_27"/>CG UI GORNICER ER EOR RA RI</p>
+            <pb xml:id="p060" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_060.tif"/>
+            <p>
+               <lb xml:id="p060_tr_2_tl_1"/>Viondo dLerenla Coni iro Ila da Ral Ccro a 
+               <lb xml:id="p060_tr_2_tl_2"/>An ooitant: di gnando i Ghando to areoo 
+               <lb xml:id="p060_tr_2_tl_3"/>arnto lopprrtunita Co aoro fallo ancli co. 
+               <lb xml:id="p060_tr_2_tl_4"/>1 L6IMI 1VBb ORDICOnO MCCI Don 
+               <lb xml:id="p060_tr_2_tl_5"/>At Cient Caprte mcenia, RERICRRO I noeir 
+               <lb xml:id="p060_tr_2_tl_6"/>Ca tarrendor Cceleo m quelbicaer Von Pcca<pc>-</pc>
+               <lb xml:id="p060_tr_2_tl_7" break="no"/>RoCa Do Dro RRo Lorndio lo rodio Cir Coi 
+               <lb xml:id="p060_tr_2_tl_8"/>mo SOIaliono Ctar 2rorapila dlato ienmtia 
+               <lb xml:id="p060_tr_2_tl_9"/>Re Gio midiora CuiRo In EEEi a Ciro Co uramio 
+               <lb xml:id="p060_tr_2_tl_10"/>R GuoaliDo E urdiao Cor Cio VRia E io 
+               <lb xml:id="p060_tr_2_tl_11"/>GUR UCEREREI LOR DI DER OER C RORE 
+               <lb xml:id="p060_tr_2_tl_12"/>eelio s nen E dopotitto Ca Cuea ia Pracia 
+               <lb xml:id="p060_tr_2_tl_13"/>Cvcgro rasorrialnahla DA LETTO Canboelta, 
+               <lb xml:id="p060_tr_2_tl_14"/>chirSsa se 28r5lo, Ho Sposafo o ouuro, 
+               <lb xml:id="p060_tr_2_tl_15"/>a'acerrdo Sono gati) Cogii 
+               <lb xml:id="p060_tr_2_tl_16"/>RE UGO GEUR UER EIDRRAAI 
+               <lb xml:id="p060_tr_2_tl_17"/>COo AO GUO CER DRE ODR R CR RI 
+               <lb xml:id="p060_tr_2_tl_18"/>GRO ADUEO FRER LOIEDER CELR RE RETRAA 
+               <lb xml:id="p060_tr_2_tl_19"/>uo Ron dio luoilio in OORORDIOA PPET EGOVRoNAa 
+               <lb xml:id="p060_tr_2_tl_20"/>E DNI CGE CREDERO ODIOREOR O TOOE 
+               <lb xml:id="p060_tr_2_tl_21"/>odr an do Co Rrna alo Vodorra Forlia 
+               <lb xml:id="p060_tr_2_tl_22"/>1 gesso lia lendio dolbio ai aipali) 
+               <lb xml:id="p060_tr_2_tl_23"/>PRI mno Ra trili pono 9ulto doll occa<pc>-</pc>
+               <lb xml:id="p060_tr_2_tl_24" break="no"/>RR RElione dol mnondo 
+               <lb xml:id="p060_tr_2_tl_25"/>1er discorer dhie Diorti poarre aobve Veto<pc>-</pc>
+               <lb xml:id="p060_tr_2_tl_26" break="no"/>RmionCcobo A Rori Co Co oro Coro la 
+               <lb xml:id="p060_tr_2_tl_27"/>ao lonolo Eloro diralbor 2ot gruilie</p>
+            <pb xml:id="p061" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_061.tif"/>
+            <p>
+               <lb xml:id="p061_tr_2_tl_1"/>faccende del sesso (cancellazione ms(--in modo--)) riferendosi a un sesso 
+               <lb xml:id="p061_tr_2_tl_2"/>diverso di quello che vigeva nei discorsi di casa 
+               <lb xml:id="p061_tr_2_tl_3"/>fra le tre Eloise viventi. 
+               <lb xml:id="p061_tr_2_tl_4"/>Eloisa non riusciva bene a districarsi 
+               <lb xml:id="p061_tr_2_tl_5"/>fra le due cose. Sapeva soltanto e con pro<pc>-</pc>
+               <lb xml:id="p061_tr_2_tl_6" break="no"/>fonda infelicità che questo elemento 
+               <lb xml:id="p061_tr_2_tl_7"/>perverso della differenza dei sessi che 
+               <lb xml:id="p061_tr_2_tl_8"/>prima si presentava come una semplice 
+               <lb xml:id="p061_tr_2_tl_9"/>diversità anatomica senza alcuno spe<pc>-</pc>
+               <lb xml:id="p061_tr_2_tl_10" break="no"/>cifico valore ora era entrato nella vita 
+               <lb xml:id="p061_tr_2_tl_11"/>sua e altrui con la pesantezza dei suoi 
+               <lb xml:id="p061_tr_2_tl_12"/>significati di cui non sapeva circoscri<pc>-</pc>
+               <lb xml:id="p061_tr_2_tl_13" break="no"/>vere (cancell.ms(--nè--)) la portata (canc.ms(--e--)) nè assumere con un 
+               <lb xml:id="p061_tr_2_tl_14"/>minimo di comprensione la complessità. 
+               <lb xml:id="p061_tr_2_tl_15"/>La cosa era assurta a una importanza 
+               <lb xml:id="p061_tr_2_tl_16"/>assolutamente dominante mettendo in  
+               <lb xml:id="p061_tr_2_tl_17"/>disparte ogni precedente (canc.ms(--governo--)) quasi 
+               <lb xml:id="p061_tr_2_tl_18"/>governabile conformazione del mondo (aggiunta di una x sotto la o di mondo) 
+               <lb xml:id="p061_tr_2_tl_19"/>e pertanto anche del proprio. 
+               <lb xml:id="p061_tr_2_tl_20"/>La cosa ormai si reggeva sulla sua con<pc>-</pc>
+               <lb xml:id="p061_tr_2_tl_21" break="no"/>danna nei secoli e secoli ad appartenere 
+               <lb xml:id="p061_tr_2_tl_22"/>al genere femminile, vale a dire a un 
+               <lb xml:id="p061_tr_2_tl_23"/>genere solo, forse effettivamente parti<pc>-</pc>
+               <lb xml:id="p061_tr_2_tl_24" break="no"/>colare, impossibilitato per sempre a  
+               <lb xml:id="p061_tr_2_tl_25"/>rappresentare anche l'altro. La sua av<pc>-</pc>
+               <lb xml:id="p061_tr_2_tl_26" break="no"/>versione al proprio nome in quanto 
+               <lb xml:id="p061_tr_2_tl_27"/>appannaggio delle donne di casa e di</p>
+            <pb xml:id="p062" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_062.tif"/>
+            <p>
+               <lb xml:id="p062_tr_2_tl_1"/>esempi non flgidi in nessun senso di una 
+               <lb xml:id="p062_tr_2_tl_2"/>vita degna di essere vissuta ora assumeva 
+               <lb xml:id="p062_tr_2_tl_3"/>un valore assoluto, insanabile, (cancellazione ms.(--pensava impoverente--????)) 
+               <lb xml:id="p062_tr_2_tl_4"/>limitante, impoverente. Le si 
+               <lb xml:id="p062_tr_2_tl_5"/>apriva un abisso sotto i piedi. Essendo 
+               <lb xml:id="p062_tr_2_tl_6"/>ancora molto giovane, e forse solo per ora 
+               <lb xml:id="p062_tr_2_tl_7"/>impaurita, tuttavia Eloisa recalcitrava, ora 
+               <lb xml:id="p062_tr_2_tl_8"/>erso tutto e tutti così come prima recalci<pc>-</pc>
+               <lb xml:id="p062_tr_2_tl_9" break="no"/>trava contro un nome. La differenza fra 
+               <lb xml:id="p062_tr_2_tl_10"/>il prima o l'ora consisteva, così si osti<pc>-</pc>
+               <lb xml:id="p062_tr_2_tl_11" break="no"/>nava a pensare, nelle subdole mutazioni 
+               <lb xml:id="p062_tr_2_tl_12"/>dei corpi e delle anime adolescenti di cui 
+               <lb xml:id="p062_tr_2_tl_13"/>ambedue i generi erano caduti in preda. 
+               <lb xml:id="p062_tr_2_tl_14"/>Da lì (cancellazione ms.(--in--)) innanzi le Eloise si erano 
+               <lb xml:id="p062_tr_2_tl_15"/>distinte nelle due categorie di cui sopra, 
+               <lb xml:id="p062_tr_2_tl_16"/>le une indaffarate con gli aspetti pratici 
+               <lb xml:id="p062_tr_2_tl_17"/>più o meno della nuova suddivisione del 
+               <lb xml:id="p062_tr_2_tl_18"/>mondo, l'altra vittima illustre dei suoi 
+               <lb xml:id="p062_tr_2_tl_19"/>aspetti più intimi e inconfessabili, 
+               <lb xml:id="p062_tr_2_tl_20"/>struggenti e incompensabili. Così 
+               <lb xml:id="p062_tr_2_tl_21"/>perlomeno Eloisa vedeva e risentiva la 
+               <lb xml:id="p062_tr_2_tl_22"/>situazione, sia pure magari oscuramente 
+               <lb xml:id="p062_tr_2_tl_23"/>dato che come una annegando vi si 
+               <lb xml:id="p062_tr_2_tl_24"/>dibatteva, forse effettivamente sempli<pc>-</pc>
+               <lb xml:id="p062_tr_2_tl_25" break="no"/>ficando, ma a onore del (cancellazione ms.(--verso--)) vero forse 
+               <lb xml:id="p062_tr_2_tl_26"/>darebbe stato difficile alla sua età</p>
+            <pb xml:id="p063" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_063.tif"/>
+            <p>
+               <lb xml:id="p063_tr_2_tl_1"/>fare diversamente (aggiunge una linea ms., vedi facsimile) 
+               <lb xml:id="p063_tr_2_tl_2"/>Tanto per incominciare, disse Eloisa alla 
+               <lb xml:id="p063_tr_2_tl_3"/>madre badessa, contro le mie due Eloise di 
+               <lb xml:id="p063_tr_2_tl_4"/>casa io mi batto e da loro non voglio 
+               <lb xml:id="p063_tr_2_tl_5"/>imparare niente. (cancellazione ms(--??? tutto--)) Ma tu mi  
+               <lb xml:id="p063_tr_2_tl_6"/>devi aiutare là dove non capisco (cancellazione ms(--perchè--)) 
+               <lb xml:id="p063_tr_2_tl_7"/>nè la tua debolezza nè la mia. Se ne 
+               <lb xml:id="p063_tr_2_tl_8"/>potrebbe fare tranquillamente a meno, baste<pc>-</pc>
+               <lb xml:id="p063_tr_2_tl_9" break="no"/>rebbe evitare i contatti fisici con quest' 
+               <lb xml:id="p063_tr_2_tl_10"/>ottusa (?????) umanità turgida e offensiva. Anche 
+               <lb xml:id="p063_tr_2_tl_11"/>(cancellazione ms(--????--)) noi abbiamo un'anima, disse. La madre 
+               <lb xml:id="p063_tr_2_tl_12"/>badessa con sua grande sorpresa sbuffò, 
+               <lb xml:id="p063_tr_2_tl_13"/>quasi (cancellazione ms.(--questo????--)) sembrava in segno di dispre<pc>-</pc>
+               <lb xml:id="p063_tr_2_tl_14" break="no"/>gio. Lo so che l'abbiamo ottenuta da poco,  
+               <lb xml:id="p063_tr_2_tl_15"/>disse allora Eloisa e ai loro accapigliamenti 
+               <lb xml:id="p063_tr_2_tl_16"/>con l'altro sesso. Io ti parlo di quella che 
+               <lb xml:id="p063_tr_2_tl_17"/>abbiamo sempre avuto, e che avevi anche 
+               <lb xml:id="p063_tr_2_tl_18"/>tu. La madre badessa sospirò. Il potere 
+               <lb xml:id="p063_tr_2_tl_19"/>di persuasione dell'anima è grande, 
+               <lb xml:id="p063_tr_2_tl_20"/>rispose infine. (cancellazione ms.(--e risospirò--)) Eloisa si 
+               <lb xml:id="p063_tr_2_tl_21"/>adirò. Ma di che cosa parliamo, sbottò,  
+               <lb xml:id="p063_tr_2_tl_22"/>l'anima di cui parlo io è la mia, e vorrei 
+               <lb xml:id="p063_tr_2_tl_23"/>vedere che mi persuadesse contro i miei 
+               <lb xml:id="p063_tr_2_tl_24"/>propri interessi. Altro che persuadere, 
+               <lb xml:id="p063_tr_2_tl_25"/>è debole; come tu stai a dimostrare. 
+               <lb xml:id="p063_tr_2_tl_26"/>Ma perchè è debole, come si fa a farti (???????)</p>
+            <pb xml:id="p064" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_064.tif"/>
+            <p>
+               <lb xml:id="p064_tr_3_tl_1"/>ficarla, quella di cui parlo io? Tu non sai  
+               <lb xml:id="p064_tr_3_tl_2"/>di cosa parli, disse la madre badessa. Da 
+               <lb xml:id="p064_tr_3_tl_3"/>quando il mondo è mondo le cose vanno 
+               <lb xml:id="p064_tr_3_tl_4"/>sempre allo stesso modo. Le anime forse 
+               <lb xml:id="p064_tr_3_tl_5"/>soffrono da ambedue le parti. Ma perchè 
+               <lb xml:id="p064_tr_3_tl_6"/>perchè, chiedeva Eloisa, e dell'altra parte 
+               <lb xml:id="p064_tr_3_tl_7"/>non mi importa nulla. Ecco che ti ritrovi 
+               <lb xml:id="p064_tr_3_tl_8"/>degna discendente delle tue altre due Eloise, 
+               <lb xml:id="p064_tr_3_tl_9"/>per cui puoi anche smettere di parlare 
+               <lb xml:id="p064_tr_3_tl_10"/>con me, concluse con scherno la madre  
+               <lb xml:id="p064_tr_3_tl_11"/>badessa e si rinchiuse nel proprio seco<pc>-</pc>
+               <lb xml:id="p064_tr_3_tl_12" break="no"/>lare silenzio. Di lì a poco (cancellams(--si appisolò--)) 
+               <lb xml:id="p064_tr_3_tl_13"/>incominciò il suo primo grande discorso, 
+               <lb xml:id="p064_tr_3_tl_14"/>(aggiunta sovrascritta ms(--familiarmente--)) poi chiamato il discorso dell'anima.</p>
+            <pb xml:id="p065" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_065.tif"/>
+            <p>
+               <lb xml:id="p065_tr_2_tl_1"/>Talvolta e nemmeno tanto 
+               <lb xml:id="p065_tr_2_tl_2"/>raramente, Eloisa affronta 
+               <lb xml:id="p065_tr_2_tl_3"/>anche i problemi degli altri.</p>
+            <pb xml:id="p066" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_066.tif"/>
+            <p>
+               <lb xml:id="p066_tr_2_tl_1"/>La vecchia Eloisa non era mai andata a scuola. Le aveva inse<pc>-</pc>
+               <lb xml:id="p066_tr_2_tl_2" break="no"/>gnato a leggere e a scrivere suo padre, sindaco, cronista e in<pc>-</pc>
+               <lb xml:id="p066_tr_2_tl_3" break="no"/>segnante in un villaggio minuscolo di una decina di case. Il 
+               <lb xml:id="p066_tr_2_tl_4"/>padre assommava le sue cariche in un fienile ristrutturato al 
+               <lb xml:id="p066_tr_2_tl_5"/>limitare del podere, e solo all'(--cancella ds(--educaz--) e scrive proseguendo in rigo--) istruzione della figlia istruzione della figlia (--qui aveva scritto fiflia, ma corregge figlia, vedi facsimile--) 
+               <lb xml:id="p066_tr_2_tl_6"/>Eloisa, l'ultima nata, e alla sua passione di cronistoriografo 
+               <lb xml:id="p066_tr_2_tl_7"/>del minuscolo insediamento riservava la propria biblioteca, già 
+               <lb xml:id="p066_tr_2_tl_8"/>ereditata da nonno e padre, nel cuore della casa. (--cancella ds.(--in quegli--)) 
+               <lb xml:id="p066_tr_2_tl_9"/>(cancella ds.(--ultimi decenni dell'800--)) Agli altri figli i rudimenti del sapere 
+               <lb xml:id="p066_tr_2_tl_10"/>erano stati impartiti equamente insieme con gli altri ragazzi 
+               <lb xml:id="p066_tr_2_tl_11"/>dell'insediamento, così come a qualche sparuta ragazzina che 
+               <lb xml:id="p066_tr_2_tl_12"/>talvolta si presentava volontariamente e per breve tempo nella 
+               <lb xml:id="p066_tr_2_tl_13"/>frotta dei ragazzi. In quegli ultimi decenni del 1800 nelle 
+               <lb xml:id="p066_tr_2_tl_14"/>campagne non si insisteva sull'educazione (cancella ds.(--delle femmine--)) extra<pc>-</pc>
+               <lb xml:id="p066_tr_2_tl_15" break="no"/>familiare delle femmine, destinate al matrimonio e alla filiazio<pc>-</pc>
+               <lb xml:id="p066_tr_2_tl_16" break="no"/>ne. Anche a una sua propria sorella il padre aveva dedicato il 
+               <lb xml:id="p066_tr_2_tl_17"/>medesimo trattamento di favore, spedendola poi in collegio perch 
+               <lb xml:id="p066_tr_2_tl_18"/>a sua volta diventasse insegnante, dati i suoi alti meriti di 
+               <lb xml:id="p066_tr_2_tl_19"/>alunna. Nessuno dei figli invece aveva goduto di siffatto onore. 
+               <lb xml:id="p066_tr_2_tl_20"/>per totale mancanza di dedizione allo studio.</p>
+            <pb xml:id="p067" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_067.tif"/>
+            <p>
+               <lb xml:id="p067_tr_2_tl_1"/>SENSO COMUNE 
+               <lb xml:id="p067_tr_2_tl_2"/>Trovandosi Eloisa molto spesso in disaccordo con quanto il 
+               <lb xml:id="p067_tr_2_tl_3"/>senso comune andava sicumericamente affermando non diremmo in 
+               <lb xml:id="p067_tr_2_tl_4"/>generale perché la generalità le interessava assai poco nelle 
+               <lb xml:id="p067_tr_2_tl_5"/>sue manifestazioni di parte, in quanto parziali, ma proprio 
+               <lb xml:id="p067_tr_2_tl_6"/>parzialmente in quanto (cancella ds(--riguardanti--) e aggiunge ds.(--riguardava--)) i suoi propri fatti personali, 
+               <lb xml:id="p067_tr_2_tl_7"/>senz'altro e necessariamente e fino in fondo di sua diretta sa<pc>-</pc>
+               <lb xml:id="p067_tr_2_tl_8" break="no"/>pienza e conoscenza, decise un giorno di passare in sistematica 
+               <lb xml:id="p067_tr_2_tl_9"/>rassegna il famoso senso comune nella sua codificazione a quanto 
+               <lb xml:id="p067_tr_2_tl_10"/>pare più innocente ovverosia oggettiva, e cioè nel dizionario.</p>
+            <pb xml:id="p068" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_068.tif"/>
+            <p>
+               <lb xml:id="p068_tr_2_tl_1"/>come dopotutto era possibile 
+               <lb xml:id="p068_tr_2_tl_2"/>fare per quasi tutte le cose (--x--), 
+               <lb xml:id="p068_tr_2_tl_3"/>al fine di procedere nella 
+               <lb xml:id="p068_tr_2_tl_4"/>vita con una certa speditezza (?????) (--x--) 
+               <lb xml:id="p068_tr_2_tl_5"/>perlomeno di pensiero (--cancella intera frase e sovrascrive questo(--sia di pensiero che di movimento.--)) 
+               <lb xml:id="p068_tr_2_tl_6"/>Invece quest'anima che 
+               <lb xml:id="p068_tr_2_tl_7"/>poteva anche apparire 
+               <lb xml:id="p068_tr_2_tl_8"/>risaputa (--rivedi la parola--) (aggiunta manoscritta:(--però--) (--cancella le seguenti parole(--per la verità--) 
+               <lb xml:id="p068_tr_2_tl_9"/>risaputa (??)(aggiunta in interlinea superiore) non (cancella(--le--) e sovrascrive(--lo--)) era per 
+               <lb xml:id="p068_tr_2_tl_10"/>niente a (cancella(--meglio--) e sovrascrive (--ben--)) guardare. 
+               <lb xml:id="p068_tr_2_tl_11"/>Nè l'interrogatorio ottenne 
+               <lb xml:id="p068_tr_2_tl_12"/>una risposta dalla consul<pc>-</pc>
+               <lb xml:id="p068_tr_2_tl_13" break="no"/>tazione dei dizionari ai 
+               <lb xml:id="p068_tr_2_tl_14"/>quali perplessa ricorse 
+               <lb xml:id="p068_tr_2_tl_15"/>(cancella(--??--) un giorno volendo (--controlla facsimile, con una linea inserisce volendo a inizio frase--) 
+               <lb xml:id="p068_tr_2_tl_16"/>Eloisa per un qualche 
+               <lb xml:id="p068_tr_2_tl_17"/>suo motivo riflettere 
+               <lb xml:id="p068_tr_2_tl_18"/>sull'anima, si rese 
+               <lb xml:id="p068_tr_2_tl_19"/>conto di non saperne 
+               <lb xml:id="p068_tr_2_tl_20"/>(cancellazione manoscritta(--in realtà assolutamente--) e sovrascrive (--per la verità un bel--)) 
+               <lb xml:id="p068_tr_2_tl_21"/>nulla. 
+               <lb xml:id="p068_tr_2_tl_22"/>Le sarebbe piaciuto poterla 
+               <lb xml:id="p068_tr_2_tl_23"/>attribuire a una qualche 
+               <lb xml:id="p068_tr_2_tl_24"/>categoria (cancella(--risaputa--) e sovrascrive (--più o meno sicura--)) alla  
+               <lb xml:id="p068_tr_2_tl_25"/>potersi poi senza 
+               <lb xml:id="p068_tr_2_tl_26"/>ulteriori problemi riferire,</p>
+            <pb xml:id="p069" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_069.tif"/>
+            <p>
+               <lb xml:id="p069_tr_2_tl_1"/>Eloisa, più va avanti con gli anni, più si  
+               <lb xml:id="p069_tr_2_tl_2"/>convince che la sua rovina fu l'accesso 
+               <lb xml:id="p069_tr_2_tl_3"/>ahimè naturale alla maturità dei caratteri 
+               <lb xml:id="p069_tr_2_tl_4"/>secondari del sesso, e quindi, brevemente, del 
+               <lb xml:id="p069_tr_2_tl_5"/>sesso in quanto tale.</p>
+            <pb xml:id="p070" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_070.tif"/></div>
+      </body>
+   </text>
+   <!--Generated on 2026-09-03T14:28:08.653886543Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

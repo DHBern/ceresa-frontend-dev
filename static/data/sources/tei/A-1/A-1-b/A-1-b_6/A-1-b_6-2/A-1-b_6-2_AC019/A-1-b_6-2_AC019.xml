@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_6-2_AC019" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_6-2_AC019#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A-1-b_6-2_AC019</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-b/6-2/AC019</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC019/A-1-b_6-2_AC019_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_066.tif"/>
+            <p>
+               <lb xml:id="p001_l"/>1-1
+               <lb xml:id="p001_r_tl_1"/>GRAMMATICA 
+               <lb xml:id="p001_r_tl_2"/>Gli esseri umani comunicano tra di loro mediante le lingue, che 
+               <lb xml:id="p001_r_tl_3"/>sono l'insieme delle parole usate dai vari cittadini dei vari paesi 
+               <lb xml:id="p001_r_tl_4"/>per trasmettersi quando [del:pensano] sono in grado di pensare; le regole 
+               <lb xml:id="p001_r_tl_5"/>che soprassiedono all'uso di queste lingue sono dettate dalla G., che 
+               <lb xml:id="p001_r_tl_6"/>prescrive l'uso corretto delle varie concatenazioni affinchè dalle parole sorga 
+               <lb xml:id="p001_r_tl_7"/>un insieme di significati articolati. Le parole cioè non si possono usare 
+               <lb xml:id="p001_r_tl_8"/>liberaimente e secondo ispirazioni personali, [???] né a questo modo inter<pc>-</pc>
+               <lb xml:id="p001_r_tl_9" break="no"/>pretare; bensì esse [del:contengo] rappresentano frammenti concettuali prestabili<pc>-</pc>
+               <lb xml:id="p001_r_tl_10" break="no"/>ti e convenzionali che ai popoli vengono faticosamente insegnati nella prima 
+               <lb xml:id="p001_r_tl_11"/>infanzia, insieme con i rudimenti [del: grammaticali] appunto GRAMMATICALI 
+               <lb xml:id="p001_r_tl_12"/>che ne permettono l'estensiva e corretta combinazione significante [del:.] per 
+               <lb xml:id="p001_r_tl_13"/>le mille circostanze della vita e della morte. Le lingue trovano applicazione 
+               <lb xml:id="p001_r_tl_14"/>orale e applicazione scritta, ma la G. resta una e indivisibile per ambedue. 
+               <lb xml:id="p001_r_tl_15"/>In queste circostanze non è difficile immaginare quanta e quale applicazione 
+               <lb xml:id="p001_r_tl_16"/>e fatica possa essere costata ai popoli o perlomeno a qualcuno dei suoi 
+               <lb xml:id="p001_r_tl_17"/>cittadini l'elaborazione grammaticale delle lingue partendo tutto sommato 
+               <lb xml:id="p001_r_tl_18"/>soltanto dalla versificazione permessa in ogni dove a corde vocali e 
+               <lb xml:id="p001_r_tl_19"/>palati umanoidi nell'articolazione [del: orale] dei suoni [del: della specie] biolo<pc>-</pc>
+               <lb xml:id="p001_r_tl_20" break="no"/>gicamente concessa[sub: i] alla specie. Sembra infatti accertato che tutte le 
+               <lb xml:id="p001_r_tl_21"/>lingue abbiano [del: avuto] ottenuto la loro primiera codificazione gram<pc>-</pc>
+               <lb xml:id="p001_r_tl_22" break="no"/>maticale allo stato orale e siano poi state soltanto in un secondo 
+               <lb xml:id="p001_r_tl_23"/>tempo trasformate in scrittura avverosia scomposte in particelle e particole 
+               <lb xml:id="p001_r_tl_24"/>[del: xxx delle quali] tracciabili con mano a mezzo delle quali [del:ricom<pc>-</pc>
+               <lb xml:id="p001_r_tl_25" break="no"/>porre quei suoni] doveva poi essere possibile [del:la ricomposizione dei quali 
+               <lb xml:id="p001_r_tl_26"/>[del:suoni] con l'operazione ottica e mentale della lettura ricomporre rievocando 
+               <lb xml:id="p001_r_tl_27"/>quei suoni mediante i quali [del:la] gli individui della specie si comunicavano 
+               <lb xml:id="p001_r_tl_28"/>i loro messaggi orali. Naturalmente anche le varie grammatiche [agg.sup: sono] poi con 
+               <lb xml:id="p001_r_tl_29"/>questo mezzo della scrittura a loro volta [agg.sup: state] indelebilmente fissate in 
+               <lb xml:id="p001_r_tl_30"/>regole scritte, più inequivocabilmente trasferibili con potere coercitivo 
+               <lb xml:id="p001_r_tl_31"/>ai posteri di quanto avrebbe potuto farlo la semplice tradizione orale 
+               <lb xml:id="p001_r_tl_32"/>trasmessa di padre e madre in figli, superando [del: con grande] d'un balzo 
+               <lb xml:id="p001_r_tl_33"/>le stretta cerchia biologica per socializzazsi univocamente in [del: ambienti] 
+               <lb xml:id="p001_r_tl_34"/>più misti ambienti geografici, donde la differenziazione delle lingue 
+               <lb xml:id="p001_r_tl_35"/>iper popoli e non [del: xxx] per consanguunei, e, conseguentemente, 
+               <lb xml:id="p001_r_tl_36"/>le GRAMMATICHE per lingue [del: xxx per] ampiamente diffuse e non 
+               <lb xml:id="p001_r_tl_37"/>per individui. 
+               <lb xml:id="p001_r_tl_38"/>Sembra pertanto evidente che la G. possegga poteri normativi che 
+               <lb xml:id="p001_r_tl_39"/>ampiamente [del: superano la sfera personale] esulano dall'uso perso<pc>-</pc>
+               <lb xml:id="p001_r_tl_40" break="no"/>nale cui tuttavia a tutt'oggi sono affidate.</p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-07-31T15:10:08.120977648Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

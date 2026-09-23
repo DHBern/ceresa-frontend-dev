@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-5-a_13" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-5-a_13#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>ITALIAN TRANSLATION OF: Carson McCullers. Eine junge amerikanische
+               Schriftstellerin setzt sich durch.</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-5-a/13</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="it"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-5/A-5-a/A-5-a_13/A-5-a_13_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-a_13_001.tif"/>
+            <head><lb xml:id="p001_r_tl_1"/>Carson McCullers<lb xml:id="p001_r_tl_2"/>Una giovane
+               scrittrice americana si fa strada.</head>
+            <p><lb/>Al giorno d’oggi, Carson McCullers è sicuramente la giovane scrittrice americana
+               più letta e tradotta. Nata nello stato della Georgia nel 1917, tra i venti e i
+               ventisette anni ha scritto tre romanzi clamorosi: The Heart is a lonely Hunter,
+               Reflections in a Golden Eye e The Member of the Wedding. Tutti e tre sono stati
+               pubblicati in traduzione francese da Stock – l’ultimo, sotto il titolo Frankie
+               Addams, solo di recente – e hanno riscosso, si può dire in tutta sincerità,
+               un’accoglienza entusiastica in Francia. Questo nonostante la giovane autrice non si
+               presti alle discussioni, così popolari in Francia, sulla problematica della
+               letteratura romanzesca americana ed europea (ovvero le “recherches romanesques”). Dal
+               punto di vista biografico, non sappiamo molto di Carson McCullers; rare fotografie ci
+               mostrano il volto pallido, molto tragico e allo stesso tempo quasi infantile di
+               questa scrittrice di grande talento, che già nel suo primo libro ha dimostrato una
+               padronanza magistrale dello stile e dell’espressione, e dei cui libri si dice che
+               siano crudeli e degni di Faulkner. Senza cadere in tale “liquidazione” un po’
+               semplicistica della particolarità di Carson McCullers, non si può fare a meno di
+               riconoscervi una certa verità. In effetti, tutti e tre i romanzi sopra citati si
+               distinguono per il loro andamento spietatamente oggettivo e freddamente costruito; e
+               forse è questo che conferisce loro quell’apparenza di crudeltà, perché sarebbe
+               inutile cercarla nella scelta e nel trattamento del “contenuto”. Cocteau una volta
+               disse: “Lo stile è l’andatura dello scritto”; secondo questo principio, si potrebbe
+               dire che lo stile di Carson McCullers è crudele. E con questo il tema della crudeltà
+               sarebbe esaurito, così come il tema “Faulkner” in relazione alle opere di McCullers.
+               Tutti e tre i romanzi trattano infatti un unico tema, sempre elaborato in modo
+               diverso ma riconoscibile: il vagabondaggio, l’impulso inquieto e solitario del cuore
+               umano. Come dice in modo sconvolgente il titolo dell’opera prima: “il cuore è un
+               cacciatore solitario”. Così i personaggi del romanzo seguono quei sentieri
+               sotterranei, e le loro parole e le loro azioni non ne sono che il riflesso visibile
+               nella vita quotidiana. Mick, la giovane ragazza non ancora adulta, nelle lunghe sere
+               d’estate si aggira furtivamente lungo quelle case dalle cui finestre sente la musica,
+               alla ricerca di una melodia in cui poter ritrovare se stessa e l’espressione
+               dell’innominabile che la tormenta. Il ragazzo pallido e sordomuto, che è il vero
+               protagonista del libro, si perde completamente nelle spiegazioni, movimenti delle sue
+               mani, che ricomincia ancora e ancora, senza mai poter sapere se l’altro lo capisce,
+               davanti agli occhi assenti del suo amico, anch’egli sordomuto. E tutti gli altri, i
+               tanti personaggi multicolori del libro, gli stanno intorno e gli parlano, a lui che
+               non può rispondere, di ciò che riempie il loro cuore e la loro solitudine. È
+               sconvolgente pensare che una ragazza di ventidue anni abbia potuto inventare questa
+               storia di miseria umana e profonda solitudine. La giovane letteratura americana
+               sembrerebbe quindi scaturire da problemi diversi, più vicini a ciascuno di noi,
+               rispetto a quelli della generazione precedente.</p>
+            <p><lb/>Reflections in a Golden Eye sembra essere un’opera molto più “letteraria”; la
+               storia è raccontata in modo volutamente artificiale. I personaggi, trattati come
+               semplici comparse in una vera e propria “illuminazione psicoanalitica”, vengono
+               condotti con polso fermo al risultato di per sé banale di un omicidio. Ciò
+               nonostante, proprio questo libro “sofisticato” racchiude e comprende nei suoi tratti
+               essenziali tutta la potenza dell’arte narrativa di Carson McCullers. Riassuntivo e
+               rivelatore non solo dei mezzi e dei fini della sua autrice, ma anche e soprattutto di
+               un’epoca e delle sue principali realtà morali e psicologiche. Di The Member of the
+               Wedding è stato recentemente rappresentato a Manhattan un adattamento teatrale
+               scritto dall’autrice stessa. Si tratta degli anni dell’adolescenza, ingenui, sciocchi
+               e tristi. Con quanta cura, con quanto amore Carson McCullers descrive il mondo e
+               l’indole di Frankie Jasmine Addams, questa ragazza dodicenne troppo alta, i cui
+               desideri sono tanto più intensi quanto più vagano inutili e insensati in fantasie e
+               impossibilità.</p>
+            <p><lb/>In effetti, se Carson McCullers, i suoi libri e il suo modo di concepire la
+               scrittura e la vita rappresentano la “giovane America”, allora questa giovane America
+               ci commuove più intensamente di quella di ieri.</p>
+            <p><lb/>E forse il lettore svizzero sarà commosso dal fatto che l’edizione originale del
+               volume Reflections in a Golden Eye reca la dedica “To Annemarie
+               Clarac-Schwarzenbach”.</p>
+            <p rendition="#right"><hi rendition="#i">Ceresa</hi></p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-06-11T06:15:09.00572685Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

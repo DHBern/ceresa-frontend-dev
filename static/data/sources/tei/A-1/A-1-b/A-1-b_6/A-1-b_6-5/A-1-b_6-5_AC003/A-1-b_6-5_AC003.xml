@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_6-5" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_6-5_AC003#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Aborto</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-b/6-5/AC003</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="it"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003/A-1-b_6-5_AC003_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <div xml:id="A-1-b_6-5_AC003a">
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_003.tif"/><head>Aborto</head>
+            <p><fw type="pageNum" place="topleft">2</fw>
+               <fw type="catch" place="topright">A-</fw></p>
+            <p>
+                  <lb xml:id="p001_l_2"/>usasi indifferentemente sia per significare interruzione di
+                     <lb xml:id="p001_r_2_tl_2"/>gravidanza sia per significare mostruosità (il tale
+                  o <lb xml:id="p001_r_2_tl_3"/>la tale è un aborto). Correttissima è qui
+                  l'estensione dal <lb xml:id="p001_r_2_tl_4"/>senso stretto<del>al senso lato</del>
+                  (interruzione di gravidanza) <lb xml:id="p001_r_2_tl_5"/>al senso lato (mostro o
+                  mostruosità), l'azione di inter<pc>-</pc>
+                  <lb xml:id="p001_r_2_tl_6" break="no"/>ruzione di gravidanza essendo infatti
+                        considerata<del><gap reason="illegible" quantity="2"/></del><lb
+                     xml:id="p001_r_2_tl_7"/>una mostruosità, e mostro essendo considerato chi la
+                     <lb xml:id="p001_r_2_tl_8"/>intraprende. Effettivamente esiste anche una terza
+                     <lb xml:id="p001_r_2_tl_9"/>correttissima estensione, questa più che altro
+                  derivante, <lb xml:id="p001_r_2_tl_10"/>l'interruzione di
+                     gravidanza<del>risolvendosi infatti nella</del><lb xml:id="p001_r_2_tl_11"
+                  />potendosi assai spesso risolvere, specie se intrapresa dopo <lb
+                     xml:id="p001_r_2_tl_12"/>le prime sei o sette settimane, nella liberazione, da
+                     <lb xml:id="p001_r_2_tl_13"/>parte della gravida, di un conglomerato di cellule
+                     <lb xml:id="p001_r_2_tl_14"/>definibile, quanto all'aspetto, mostro o
+                  mostruoso. <lb xml:id="p001_r_2_tl_15"/>Strana potrebbe apparire a questa luce la
+                  protervia <lb xml:id="p001_r_2_tl_16"/>con cui chiesa cattolica e legislazione
+                  civile recla<pc>-</pc>
+                  <lb xml:id="p001_r_2_tl_17" break="no"/>mano tali mostri o mostruosità gli uni per
+                  il <lb xml:id="p001_r_2_tl_18"/>censimento delle anime, gli altri per quello<del>
+                     civile</del><lb xml:id="p001_r_2_tl_19"/>amministrativo, ostinandosi ad
+                  annoverarli fra <lb xml:id="p001_r_2_tl_20"/>la specie superiore che sarebbe
+                  l'umanità; non deve <lb xml:id="p001_r_2_tl_21"/>tuttavia trarre particolarmente
+                  in errore questa <lb xml:id="p001_r_2_tl_22"/>apparente protervia dell'una e
+                  dell'altra istituzione <lb xml:id="p001_r_2_tl_23"/>qui annoverate, i censimenti
+                  progredendo <add place="margin" hand="#hw">anzitutto e</add> notoria<pc>-</pc>
+                  <lb xml:id="p001_r_2_tl_24" break="no"/>mente su basi statistiche
+                           e<del><del><del>non</del></del></del> quindi nume<pc>-</pc>
+                  <lb xml:id="p001_r_2_tl_25" break="no"/>riche e non più selettive; e
+                  secondariamente <lb xml:id="p001_r_2_tl_27"/>non essendo essi legati né in alcun
+                  modo <lb xml:id="p001_r_2_tl_29"/>condizionati <del>dalla<add place="above"
+                        >nemmeno dalle</add></del> correttezze grammaticali <lb
+                     xml:id="p001_r_2_tl_31"/>di termini e significati sia pure <del><del><gap
+                           quantity="4" reason="illegible"/></del></del><lb xml:id="p001_r_2_tl_32"
+                           /><del><del><gap quantity="4" reason="illegible"/></del></del> di conio
+                  istituzionale e di uso <lb xml:id="p001_r_2_tl_33"/>volontariamente
+                           <del><del>p<gap reason="illegible" quantity="4"/></del></del>
+                  contemporaneamente <lb xml:id="p001_r_2_tl_34"/><del><del>p<gap reason="illegible"
+                           quantity="4"/></del></del>contraddittorio.</p>
+            </div>
+            
+            
+            <div xml:id="A-1-b_6-5_AC003b">
+               <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_009.tif"/>
+               <head>ABORTO (Liberalizzazione del)</head>
+               <p>
+                  <lb xml:id="p002_tr_3_tl_2"/>Attiene alla particolare prassi riproduttiva dei
+                  mammiferi la quale, <lb xml:id="p002_tr_3_tl_3"/>com'è noto, discende dalla
+                  copulazione di due diversi organismi bio<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_4" break="no"/>logici, uno femminile e l'altro maschile,
+                  o perlomeno così denomina<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_5" break="no"/>ti. Quali che siano le modalità di questa
+                  copulazione, l'embrione <lb xml:id="p002_tr_3_tl_6"/>mammifero si sviluppa
+                  uterinamente, vale a dire all'interno dell'or<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_7" break="no"/>gano fisiologico femminile attrezzato per
+                  questa bisogna, e l'organi<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_8" break="no"/>smo femminile ne detiene quindi la
+                  proprietà di fatto. L'interruzione <lb xml:id="p002_tr_3_tl_9"/>dello sviluppo
+                  dell'embrione viene appunto chiamato ABORTO.</p>
+               <p><lb xml:id="p002_tr_3_tl_10"/>Molti mammiferi dispongono di un naturale controllo
+                  delle nascite in <lb xml:id="p002_tr_3_tl_11"/>quanto la ricettività fisiologica
+                  femminile avviene ciclicamente a <lb xml:id="p002_tr_3_tl_12"/>intervalli
+                  notevolmente distanziati, e in quanto l'organismo biologi<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_13" break="no"/>co femminile esercita il richiamo del
+                  partner della copulazione sol<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_14" break="no"/>tanto nel periodo della ricettività. Nei
+                  mammiferi umani non esiste <lb xml:id="p002_tr_3_tl_15"/>invece alcun controllo
+                  naturale delle nascite e richiami e ricettivi<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_16" break="no"/>tà si esercitano indiscriminatamente,
+                  vale a dire sempre e ovunque. <lb xml:id="p002_tr_3_tl_17"/>Questo spiega perché
+                  debba intervenire una regolamentazione artifi<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_18" break="no"/>ciale della riproduttività umana,
+                  affinché non ogni copulazione ab<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_19" break="no"/>bia a determinare riproduzione provocando
+                  non soltanto sgradevolezze <lb xml:id="p002_tr_3_tl_20"/>varie ma anche la
+                  proliferazione incontrallata e incontrollabile del<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_21" break="no"/>la specie. </p>
+               <p><lb xml:id="p002_tr_3_tl_22"/>Come ogni regolamentazione esulante dalle leggi
+                  della natura, anche <lb xml:id="p002_tr_3_tl_23"/>quella della riproduttività
+                  umana riveste necessariamente un carat<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_24" break="no"/>tere amministrativo in quanto affidata
+                  alla legiferazione sociale. <lb xml:id="p002_tr_3_tl_25"/>Appare logicamente
+                  corretto che, trovandoci nella fattispecie di <lb xml:id="p002_tr_3_tl_26"/>fronte
+                  a una produzione, l'amministratività si sia esercitata sul <lb
+                     xml:id="p002_tr_3_tl_27"/>fornitore effettivo del prodotto, vale a dire
+                  sull'organismo biolo<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_28" break="no"/>gico femminile, nei riguardi del quale si
+                  è per semplicità risaliti <lb xml:id="p002_tr_3_tl_29"/>anche a monte ponendo
+                  limitazioni alla permissività della copulazio<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_30" break="no"/>ne femminile perlomeno nella prassi,
+                  nonché discesi a valle per <lb xml:id="p002_tr_3_tl_31"/>quanto appunto riguarda
+                  l'ABORTO. L'amministratività ha sempre bada<pc>-</pc>
+                  <lb xml:id="p002_tr_3_tl_32" break="no"/>to al sodo, non competendole compiti di
+                  maggiore sottigliezza.</p>
+               <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_010.tif"/>
+               <head>2 (aborto)</head>
+               <p>
+                  <lb xml:id="p003_r_tl_2"/>Così applicandosi a uno solo dei due contraenti della
+                  copulazione e <lb xml:id="p003_r_tl_3"/>privilegiando l'uno nei confronti
+                  dell'altro, lasciato di fatto to<pc>-</pc>
+                  <lb xml:id="p003_r_tl_4" break="no"/>talmente in disparte, la regolamentazione
+                  riproduttiva ha in realtà <lb xml:id="p003_r_tl_5"/>del tutto correttamente
+                  recepito lo stato di maggiore importanza ri<pc>-</pc>
+                  <lb xml:id="p003_r_tl_6" break="no"/>vestito nella questione dal produttore
+                  effettivo o detentore<del hand="#tw">del</del><lb xml:id="p003_r_tl_7"/>materiale
+                  unico del prodotto in causa. Difficilmente infatti avrebbe <lb
+                     xml:id="p003_r_tl_8"/>potuto esercitarsi sul concorrente emarginato, il ruolo
+                  di costui es<pc>-</pc>
+                  <lb xml:id="p003_r_tl_9" break="no"/>sendo puramente ausiliario e quindi
+                  trascurabile perlomeno in termini <lb xml:id="p003_r_tl_10"/>di economia di
+                  mercato.</p>
+               <p><lb xml:id="p003_r_tl_11"/>La circostanza tuttavia che regolamentazione e
+                  amministrazione siano <lb xml:id="p003_r_tl_12"/>state, contrariamente a ogni
+                  logica produttiva, assunte dal contraen<pc>-</pc>
+                  <lb xml:id="p003_r_tl_13" break="no"/>te ausiliario e quindi materialisticamente
+                        <del><gap reason="illegible" quantity="8"/><add place="above"
+                        >irrilevante</add></del> fa oggi l'og<pc>-</pc>
+                  <lb xml:id="p003_r_tl_14" break="no"/>getto di una vertenza sindacale avanzata dal
+                  contraente amministrato, <lb xml:id="p003_r_tl_15"/>vertenza nota con il timido e
+                  alquanto improprio nome di "liberaliz<pc>-</pc>
+                  <lb xml:id="p003_r_tl_16" break="no"/>zazione dell'ABORTO".</p>
+               <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_011.tif"/>
+               <p>
+                  <lb xml:id="p004_tr_2_tl_1"/>{{SKIP Non trascritto intenzionalmente (motive:
+                  )}}</p>
+               <pb xml:id="p005" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_012.tif"/>
+               <p> {{SKIP Non trascritto intenzionalmente (motive: )}}</p>
+            </div>
+            
+            <p>
+               <lb xml:id="p006_l"/>{{SKIP Non trascritto intenzionalmente (motive: not to be edited )}}</p>
+           
+            
+            <div xml:id="A-1-b_6-5_AC003c">
+            <pb xml:id="p008" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-1.tif"/><head>ABORTO</head>
+           
+            <p>
+                  <lb xml:id="p008_r_2_tl_1"/>Soltanto una mente malata può pensare che si tratti di
+                  un problema <lb xml:id="p008_r_2_tl_2"/>della collettività, legiferante o meno,
+                  tanto più che la riproduttività <lb xml:id="p008_r_2_tl_3"/>mammifera si<del><del>
+                           s<gap reason="illegible" quantity="4"/></del></del> svolge secondo un
+                  modello fantasticamente <lb xml:id="p008_r_2_tl_4"/>volgare e
+                     primitivo<del>,</del> che rappresenta forse la forma più elementare <lb
+                     xml:id="p008_r_2_tl_5"/>che questa complessa <del>o</del><del>perazione abbia
+                     potuto assumere</del>e coercitiva <lb xml:id="p008_r_2_tl_6"/>operazione abbia
+                  potuto assumere. Perfino la riproduttività ani<pc>-</pc>
+                  <lb xml:id="p008_r_2_tl_7" break="no"/>male assume <del>caratteri</del> caratteri
+                  indubbiamente più scelti e raf<pc>-</pc>
+                  <lb xml:id="p008_r_2_tl_8" break="no"/>finati, limitandola a un numero preciso e
+                  limitato di portate all'anno <lb xml:id="p008_r_2_tl_9"/>e premettendole quindi<del>
+                     <del><del>una </del></del></del>un obbligo alla ricezione e alla
+                     copula<pc>-</pc>
+                  <lb xml:id="p008_r_2_tl_10" break="no"/>zione sprovvisto <del>di connotati</del>
+                  di visibili connotati aggiuntivi oggi <lb xml:id="p008_r_2_tl_11"/>più che mai
+                  noti come pornografia e erotismo. </p> 
+               <p><lb xml:id="p008_r_2_tl_12"/>Posto che un individuo maschile è <del><del><gap
+                           reason="illegible" quantity="4"/></del></del>sempre il micidiale
+                  portatore <lb xml:id="p008_r_2_tl_13"/>di una possibile<del> gravi</del>
+                  gravidanza <del>per</del> per il femminile oggetto <lb xml:id="p008_r_2_tl_14"
+                  />dei suoi desideri e che un individuo femminile è sempre il
+                     <del>soggetto</del><lb xml:id="p008_r_2_tl_15"/>possibile soggetto di
+                  quest'ultima, non si riesce davvero a capire <lb xml:id="p008_r_2_tl_16"
+                     /><del>come abbia potuto accadere non soltanto che le attività sessuali <lb
+                        xml:id="p008_r_2_tl_17"/>abbiano ottenuto una magnificazione o una
+                     mercificazione tanto <lb xml:id="p008_r_2_tl_18"/>metafisicamente astratta
+                     dalle loro samplice destinazione <del><gap reason="illegible" quantity="2"
+                        /></del> ripro<pc>-</pc>
+                     <lb xml:id="p008_r_2_tl_19" break="no"/>duttiva, ma anche</del>
+               </p>
+                        <p><lb xml:id="p008_r_2_tl_20"/>come abbia potuto accadere non soltanto che
+                  le conseguenze delle <lb xml:id="p008_r_2_tl_21"/><add place="inline" hand="#hw"
+                     >attività sessuali</add>
+                  <del>tali attività</del> (tuttora del resto reputate poco morali se non a <lb
+                     xml:id="p008_r_2_tl_22"/>condizioni dettate da onorevoli leggi risalenti ai
+                  severi e dignitosi <lb xml:id="p008_r_2_tl_23"/>apparati burocratici) possono fare
+                  l'oggetto di <del>burocratiche<add place="above">religiose</add></del> e <lb
+                     xml:id="p008_r_2_tl_24"/>governative disposizioni, ma anche come tali attività
+                  abbiano <lb xml:id="p008_r_2_tl_25"/>potuto ottenere una magnificazione e una
+                  mercificazione tanto <lb xml:id="p008_r_2_tl_26"/>metafisicamente astratta dalla
+                  loro semplice destinazione ri<pc>-</pc>
+                  <lb xml:id="p008_r_2_tl_27" break="no"/>produttiva<del>,</del> e sanzionabile. </p>
+                           <p><lb
+                     xml:id="p008_r_2_tl_28"/>Si pensa tuttavia in questa <del>sede</del> sede che
+                  non <del>la ricettività femminile</del><lb xml:id="p008_r_2_tl_29"/><del>vada
+                     per</del> il controllo e la gestione della ricettività femminile vada <lb
+                     xml:id="p008_r_2_tl_30"/>sottoposta al vaglio della collettività, essa non
+                  disturbando nessuno <lb xml:id="p008_r_2_tl_31"/>e non portando a conseguenze di
+                  nessun genere se non a seguito <lb xml:id="p008_r_2_tl_32"/>della collaborazione
+                  dell'aborto maschile, per cui risulta perlo<pc>-</pc>
+                  <lb xml:id="p008_r_2_tl_33" break="no"/>meno arbitrario che non sia quest'ultima a
+                  sollevare le ire <lb xml:id="p008_r_2_tl_34"/>e le manie
+                  sanzionistiche<?oxy_comment_start author="eva" timestamp="20260918T095317+0200" comment="correzione editoriale del testo sic/corr o orig?"?>
+                  le<choice><sic>gg</sic><corr>g</corr></choice>iferanti<?oxy_comment_end?> della
+                              collettività. </p>
+                              <p><lb xml:id="p008_r_2_tl_35"/><del><gap reason="illegible"
+                        quantity="2"/></del>Erronee risultano pertanto anche le attuali richieste
+                     <lb xml:id="p008_r_2_tl_36"/>femminili per una abortività in gestione personale
+                  e riservata, <lb xml:id="p008_r_2_tl_37"/>perlomeno fintanto che una analoga
+                  assunzione in proprio <lb xml:id="p008_r_2_tl_38"/>delle conseguenze di atti
+                  personali non sia assunta anche <lb xml:id="p008_r_2_tl_39"/>dal secondo
+                  contraente della concezione, per esempio nel <lb xml:id="p008_r_2_tl_40"/>senso di
+                  non disperdere ai quattro venti quella che pure, in <lb xml:id="p008_r_2_tl_41"
+                     /><del>altro</del> altri contesti viene considerata un
+                           superprezioso<del><del><gap reason="illegible" quantity="4"
+                     /></del></del><lb xml:id="p008_r_2_tl_42"/>bene della categoria degli individui
+                  di sesso maschile. </p>
+                                 <p><lb xml:id="p008_r_2_tl_43"/>Grande e pertanto inspiegabile risulta allo
+                  stato attuale la <lb xml:id="p008_r_2_tl_44"/>confusione che regna su questo
+                     argomento<del>,</del> e che ne rende impossibile <lb xml:id="p008_r_2_tl_45"
+                  />una univoca definizione<del>,</del> in queste pagine. </p>  <p><note type="marginal">PORNOGRAFIA <lb xml:id="p008_r_1_tl_2"/>EROTISMO <lb
+                        xml:id="p008_r_1_tl_3"/>RIPRODUZIONE <lb xml:id="p008_r_1_tl_4"/>MASCHILE
+                        <lb xml:id="p008_r_1_tl_5"/>FEMMINILE <lb xml:id="p008_r_1_tl_6"/>SESSUALE
+                     (ATTIVITÀ)</note></p>
+            </div>
+            
+            <pb xml:id="p009" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-2.tif"/>
+            <p>
+               <lb xml:id="p009_tr_1_tl_1"/>{{SKIP Non trascritto intenzionalmente (motive: )}} 
+               <lb xml:id="p009_tr_1_tl_2"/>
+               <lb xml:id="p009_tr_2_tl_1"/>
+               <lb xml:id="p009_tr_2_tl_2"/>
+               <lb xml:id="p009_tr_2_tl_3"/></p>
+            <pb xml:id="p010" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_016.tif"/>
+            <p>
+               <lb xml:id="p010_tr_1_tl_1"/>
+               <lb xml:id="p010_tr_2_tl_1"/>
+               <lb xml:id="p010_tr_3_tl_1"/>{{SKIP Non trascritto intenzionalmente (motive: )}} 
+               <lb xml:id="p010_tr_3_tl_2"/>
+               <lb xml:id="p010_tr_3_tl_3"/></p>
+            <pb xml:id="p011" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_017.tif"/>
+            <p>
+               <lb xml:id="p011_tr_2_tl_1"/>{{SKIP Non trascritto intenzionalmente (motive: )}}
+               <lb xml:id="p011_tr_3_tl_1"/>
+               <lb xml:id="p011_tr_3_tl_2"/>
+               <lb xml:id="p011_tr_3_tl_3"/>
+               <lb xml:id="p011_tr_3_tl_4"/>
+               <lb xml:id="p011_tr_3_tl_5"/>
+               <lb xml:id="p011_tr_3_tl_6"/>
+               <lb xml:id="p011_tr_3_tl_7"/>
+               <lb xml:id="p011_tr_3_tl_8"/>
+               <lb xml:id="p011_tr_3_tl_9"/>
+               <lb xml:id="p011_tr_3_tl_10"/>
+               <lb xml:id="p011_tr_3_tl_11"/>
+               <lb xml:id="p011_tr_3_tl_12"/>
+               <lb xml:id="p011_tr_3_tl_13"/>
+               <lb xml:id="p011_tr_3_tl_14"/>
+               <lb xml:id="p011_tr_3_tl_15"/>
+               <lb xml:id="p011_tr_3_tl_16"/>
+               <lb xml:id="p011_tr_3_tl_17"/>
+               <lb xml:id="p011_tr_3_tl_18"/>
+               <lb xml:id="p011_tr_3_tl_19"/>
+               <lb xml:id="p011_tr_3_tl_20"/>
+               <lb xml:id="p011_tr_3_tl_21"/>
+               <lb xml:id="p011_tr_3_tl_22"/>
+               <lb xml:id="p011_tr_3_tl_23"/>
+               <lb xml:id="p011_tr_3_tl_24"/>
+               <lb xml:id="p011_tr_3_tl_25"/>
+               <lb xml:id="p011_tr_3_tl_26"/>
+               <lb xml:id="p011_tr_3_tl_27"/>
+               <lb xml:id="p011_tr_3_tl_28"/>
+               <lb xml:id="p011_tr_3_tl_29"/>
+               <lb xml:id="p011_tr_3_tl_30"/>
+               <lb xml:id="p011_tr_3_tl_31"/>
+               <lb xml:id="p011_tr_3_tl_32"/>
+               <lb xml:id="p011_tr_1_tl_1"/>aaa 
+               <lb xml:id="p011_tr_1_tl_2"/>=F</p>
+            <pb xml:id="p012" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_018.tif"/>
+            <p>
+               <lb xml:id="p012_tr_1_tl_1"/>
+               <lb xml:id="p012_tr_2_tl_1"/>{{SKIP Non trascritto intenzionalmente (motive: )}} 
+               <lb xml:id="p012_tr_2_tl_2"/>
+               <lb xml:id="p012_tr_2_tl_3"/>
+               <lb xml:id="p012_tr_2_tl_4"/>
+               <lb xml:id="p012_tr_2_tl_5"/>
+               <lb xml:id="p012_tr_2_tl_6"/>
+               <lb xml:id="p012_tr_2_tl_7"/>
+               <lb xml:id="p012_tr_2_tl_8"/>
+               <lb xml:id="p012_tr_2_tl_9"/>
+               <lb xml:id="p012_tr_2_tl_10"/>
+               <lb xml:id="p012_tr_2_tl_11"/>
+               <lb xml:id="p012_tr_2_tl_12"/>
+               <lb xml:id="p012_tr_2_tl_13"/>
+               <lb xml:id="p012_tr_2_tl_14"/>
+               <lb xml:id="p012_tr_2_tl_15"/>
+               <lb xml:id="p012_tr_2_tl_16"/>
+               <lb xml:id="p012_tr_2_tl_17"/></p>
+            <pb xml:id="p013" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_019.tif"/>
+            <p>
+               <lb xml:id="p013_tr_1_tl_1"/>{{SKIP Non trascritto intenzionalmente (motive: )}} 
+               <lb xml:id="p013_tr_1_tl_2"/>
+               <lb xml:id="p013_tr_1_tl_3"/>
+               <lb xml:id="p013_tr_2_tl_1"/>
+               <lb xml:id="p013_tr_2_tl_2"/>
+               <lb xml:id="p013_tr_2_tl_3"/>
+               <lb xml:id="p013_tr_2_tl_4"/>
+               <lb xml:id="p013_tr_2_tl_5"/>
+               <lb xml:id="p013_tr_2_tl_6"/>
+               <lb xml:id="p013_tr_2_tl_7"/>
+               <lb xml:id="p013_tr_2_tl_8"/>
+               <lb xml:id="p013_tr_2_tl_9"/>
+               <lb xml:id="p013_tr_2_tl_10"/>
+               <lb xml:id="p013_tr_2_tl_11"/>
+               <lb xml:id="p013_tr_2_tl_12"/>
+               <lb xml:id="p013_tr_2_tl_13"/>
+               <lb xml:id="p013_tr_2_tl_14"/>
+               <lb xml:id="p013_tr_2_tl_15"/>
+               <lb xml:id="p013_tr_2_tl_16"/>
+               <lb xml:id="p013_tr_2_tl_17"/>
+               <lb xml:id="p013_tr_2_tl_18"/>
+               <lb xml:id="p013_tr_2_tl_19"/>
+               <lb xml:id="p013_tr_2_tl_20"/>
+               <lb xml:id="p013_tr_2_tl_21"/>
+               <lb xml:id="p013_tr_2_tl_22"/>
+               <lb xml:id="p013_tr_2_tl_23"/>
+               <lb xml:id="p013_tr_2_tl_24"/>
+               <lb xml:id="p013_tr_2_tl_25"/>
+               <lb xml:id="p013_tr_2_tl_26"/>
+               <lb xml:id="p013_tr_2_tl_27"/>
+               <lb xml:id="p013_tr_2_tl_28"/>
+               <lb xml:id="p013_tr_2_tl_29"/>
+               <lb xml:id="p013_tr_2_tl_30"/>
+               <lb xml:id="p013_tr_2_tl_31"/>
+               <lb xml:id="p013_tr_2_tl_32"/>
+               <lb xml:id="p013_tr_2_tl_33"/>
+               <lb xml:id="p013_tr_2_tl_34"/>
+               <lb xml:id="p013_tr_2_tl_35"/>
+               <lb xml:id="p013_tr_2_tl_36"/>
+               <lb xml:id="p013_tr_2_tl_37"/>
+               <lb xml:id="p013_tr_2_tl_38"/>
+               <lb xml:id="p013_tr_2_tl_39"/>
+               <lb xml:id="p013_tr_2_tl_40"/>
+               <lb xml:id="p013_tr_2_tl_41"/>
+               <lb xml:id="p013_tr_2_tl_42"/></p>
+            <pb xml:id="p014" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_020.tif"/>
+            <p>
+               <lb xml:id="p014_r_tl_1"/>{{SKIP Non trascritto intenzionalmente (motive: )}} 
+               <lb xml:id="p014_r_tl_2"/>
+               <lb xml:id="p014_r_tl_3"/>
+               <lb xml:id="p014_r_tl_4"/>
+               <lb xml:id="p014_r_tl_5"/>
+               <lb xml:id="p014_r_tl_6"/>
+               <lb xml:id="p014_r_tl_7"/>
+               <lb xml:id="p014_r_tl_8"/>
+               <lb xml:id="p014_r_tl_9"/>
+               <lb xml:id="p014_r_tl_10"/>
+               <lb xml:id="p014_r_tl_11"/>
+               <lb xml:id="p014_r_tl_12"/>
+               <lb xml:id="p014_r_tl_13"/>
+               <lb xml:id="p014_r_tl_14"/>
+               <lb xml:id="p014_r_tl_15"/>
+               <lb xml:id="p014_r_tl_16"/>
+               <lb xml:id="p014_r_tl_17"/>
+               <lb xml:id="p014_r_tl_18"/>
+               <lb xml:id="p014_r_tl_19"/>
+               <lb xml:id="p014_r_tl_20"/>
+               <lb xml:id="p014_r_tl_21"/>
+               <lb xml:id="p014_r_tl_22"/>
+               <lb xml:id="p014_r_tl_23"/>
+               <lb xml:id="p014_r_tl_24"/>
+               <lb xml:id="p014_r_tl_25"/>
+               <lb xml:id="p014_r_tl_26"/>
+               <lb xml:id="p014_r_tl_27"/>
+               <lb xml:id="p014_r_tl_28"/>
+               <lb xml:id="p014_r_tl_29"/>
+               <lb xml:id="p014_r_tl_30"/>
+               <lb xml:id="p014_r_tl_31"/>
+               <lb xml:id="p014_r_tl_32"/>
+               <lb xml:id="p014_r_tl_33"/>
+               <lb xml:id="p014_r_tl_34"/>
+               <lb xml:id="p014_r_tl_35"/>
+               <lb xml:id="p014_r_tl_36"/>
+               <lb xml:id="p014_r_tl_37"/>
+               <lb xml:id="p014_r_tl_38"/>
+               <lb xml:id="p014_r_tl_39"/>
+               <lb xml:id="p014_r_tl_40"/>
+               <lb xml:id="p014_r_tl_41"/>
+               <lb xml:id="p014_r_tl_42"/>
+               <lb xml:id="p014_r_tl_43"/>
+               <lb xml:id="p014_r_tl_44"/>
+               <lb xml:id="p014_r_tl_45"/>
+               <lb xml:id="p014_r_tl_46"/>
+               <lb xml:id="p014_r_tl_47"/>
+               <lb xml:id="p014_r_tl_48"/>
+               <lb xml:id="p014_r_tl_49"/></p>
+            <pb xml:id="p015" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_021.tif"/>
+            <p>
+               <lb xml:id="p015_r_tl_1"/>{{SKIP Non trascritto intenzionalmente (motive: )}} 
+               <lb xml:id="p015_r_tl_2"/>
+               <lb xml:id="p015_r_tl_3"/>
+               <lb xml:id="p015_r_tl_4"/>
+               <lb xml:id="p015_r_tl_5"/>
+               <lb xml:id="p015_r_tl_6"/>
+               <lb xml:id="p015_r_tl_7"/>
+               <lb xml:id="p015_r_tl_8"/>
+               <lb xml:id="p015_r_tl_9"/>
+               <lb xml:id="p015_r_tl_10"/>
+               <lb xml:id="p015_r_tl_11"/>
+               <lb xml:id="p015_r_tl_12"/>
+               <lb xml:id="p015_r_tl_13"/>
+               <lb xml:id="p015_r_tl_14"/>
+               <lb xml:id="p015_r_tl_15"/>
+               <lb xml:id="p015_r_tl_16"/>
+               <lb xml:id="p015_r_tl_17"/>
+               <lb xml:id="p015_r_tl_18"/>
+               <lb xml:id="p015_r_tl_19"/>
+               <lb xml:id="p015_r_tl_20"/>
+               <lb xml:id="p015_r_tl_21"/>.</p>
+            <pb xml:id="p016" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_022.tif"/>
+            <p>
+               <lb xml:id="p016_tr_1_tl_1"/>
+               <lb xml:id="p016_tr_1_tl_2"/>
+               <lb xml:id="p016_tr_2_tl_1"/>{{SKIP Non trascritto intenzionalmente (motive: )}} 
+               <lb xml:id="p016_tr_2_tl_2"/>
+               <lb xml:id="p016_tr_2_tl_3"/>
+               <lb xml:id="p016_tr_2_tl_4"/>
+               <lb xml:id="p016_tr_2_tl_5"/>
+               <lb xml:id="p016_tr_2_tl_6"/>
+               <lb xml:id="p016_tr_2_tl_7"/>
+               <lb xml:id="p016_tr_2_tl_8"/>
+               <lb xml:id="p016_tr_2_tl_9"/>
+               <lb xml:id="p016_tr_2_tl_10"/>
+               <lb xml:id="p016_tr_2_tl_11"/>
+               <lb xml:id="p016_tr_2_tl_12"/>
+               <lb xml:id="p016_tr_2_tl_13"/>
+               <lb xml:id="p016_tr_2_tl_14"/>
+               <lb xml:id="p016_tr_2_tl_15"/>
+               <lb xml:id="p016_tr_2_tl_16"/>
+               <lb xml:id="p016_tr_2_tl_17"/>
+               <lb xml:id="p016_tr_2_tl_18"/>
+               <lb xml:id="p016_tr_2_tl_19"/>
+               <lb xml:id="p016_tr_2_tl_20"/>
+               <lb xml:id="p016_tr_2_tl_21"/>
+               <lb xml:id="p016_tr_2_tl_22"/>
+               <lb xml:id="p016_tr_2_tl_23"/>
+               <lb xml:id="p016_tr_2_tl_24"/>
+               <lb xml:id="p016_tr_2_tl_25"/>
+               <lb xml:id="p016_tr_2_tl_26"/>
+               <lb xml:id="p016_tr_2_tl_27"/>
+               <lb xml:id="p016_tr_2_tl_28"/>
+               <lb xml:id="p016_tr_2_tl_29"/>
+               <lb xml:id="p016_tr_2_tl_30"/>
+               <lb xml:id="p016_tr_2_tl_31"/>
+               <lb xml:id="p016_tr_2_tl_32"/>
+               <lb xml:id="p016_tr_2_tl_33"/>
+               <lb xml:id="p016_tr_2_tl_34"/>
+               <lb xml:id="p016_tr_2_tl_35"/>
+               <lb xml:id="p016_tr_2_tl_36"/>
+               <lb xml:id="p016_tr_2_tl_37"/>
+               <lb xml:id="p016_tr_2_tl_38"/>
+               <lb xml:id="p016_tr_2_tl_39"/>
+               <lb xml:id="p016_tr_2_tl_40"/>
+               <lb xml:id="p016_tr_2_tl_41"/>
+               <lb xml:id="p016_tr_2_tl_42"/>
+               <lb xml:id="p016_tr_2_tl_43"/>
+               <lb xml:id="p016_tr_2_tl_44"/>
+               <lb xml:id="p016_tr_2_tl_45"/>
+               <lb xml:id="p016_tr_2_tl_46"/>
+               <lb xml:id="p016_tr_2_tl_47"/>
+               <lb xml:id="p016_tr_2_tl_48"/>
+               <lb xml:id="p016_tr_2_tl_49"/>
+               <lb xml:id="p016_tr_2_tl_50"/>
+               <lb xml:id="p016_tr_2_tl_51"/>
+               <lb xml:id="p016_tr_2_tl_52"/>
+               <lb xml:id="p016_tr_2_tl_53"/></p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-09-03T15:12:48.351010935Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

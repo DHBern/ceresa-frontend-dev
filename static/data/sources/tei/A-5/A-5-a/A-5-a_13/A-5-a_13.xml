@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-5-a_13" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-5-a_13#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Carson McCullers. Eine junge amerikanische Schriftstellerin setzt sich
+               durch.</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-5-a/13</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="de"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-5/A-5-a/A-5-a_13/A-5-a_13_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-a_13_001.tif"/>
+            <head><lb xml:id="p001_r_tl_1"/><rs type="person" key="person_0008" xml:id="r1">Carson <choice>
+                     <sic>McCuller</sic>
+                     <corr>McCullers</corr>
+                  </choice></rs><lb xml:id="p001_r_tl_2"/>Eine junge amerikanische Schriftstellerin
+               setzt sich durch. </head>
+            <p><lb/><rs type="person" key="person_0008" xml:id="r10">Carson McCullers</rs> ist heute
+                  bestimmt<lb xml:id="p001_r_4_tl_2"/>die meistgelesene und meistübersetzte <lb
+                  xml:id="p001_r_4_tl_3"/>junge amerikanische Schriftstellerin. Im <lb
+                  xml:id="p001_r_4_tl_4"/>Staate <rs type="place" key="place_0006" xml:id="r2"
+                  >Georgia</rs> im Jahre 1917 geboren, <lb xml:id="p001_r_4_tl_5"/>schrieb sie
+               zwischen zwanzig und sieben<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_6" break="no"/>undzwanzig Jahren drei
+                  aufsehenerregen<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_7" break="no"/>de Romane: <pc>"</pc><rs type="work"
+                  key="work_0004" xml:id="r3">The Heart is a <choice>
+                     <orig>l</orig>
+                     <reg>L</reg>
+                  </choice>onely Hun<pc>-</pc>
+                  <lb xml:id="p001_r_4_tl_8" break="no"/>ter</rs><pc>"</pc>, <pc>"</pc><rs
+                  type="work" key="work_0005" xml:id="r4">Reflections in a <choice>
+                     <orig>g</orig>
+                     <reg>G</reg>
+                  </choice>olden Eye</rs><pc>"</pc> und <lb xml:id="p001_r_4_tl_9"
+                  /><pc>"</pc><rs type="work" key="work_0006" xml:id="r5">The Member of the
+                  Wedding</rs><pc>"</pc>. Alle drei <lb xml:id="p001_r_4_tl_10"/>erschienen in der
+               französischen <choice><orig>Ue</orig><reg>Ü</reg></choice>ber<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_11" break="no"/>setzung bei <rs type="org" key="org_0005"
+                  xml:id="r6">Stock</rs> – und der letzte, unter <lb xml:id="p001_r_4_tl_12"/>dem
+                  Titel <pc>"</pc><rs type="work" key="work_0006" xml:id="r8">Frankie
+                  Addams</rs><pc>"</pc>, erst kürz<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_13" break="no"/>lich und fanden, man kann den Aus<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_14" break="no"/>druck wahrheitsgetreu benutzen, in <lb
+                  xml:id="p001_r_4_tl_15"/><rs type="place" key="place_0005" xml:id="r9"
+                  >Frankreich</rs> eine begeisterte Aufnahme. <lb xml:id="p001_r_4_tl_16"/>Dies,
+               trotzdem die junge Autorin sich <lb xml:id="p001_r_4_tl_17"/>kaum zu den in <rs
+                  type="place" key="place_0005" xml:id="r11">Frankreich</rs> so beliebten <lb
+                  xml:id="p001_r_4_tl_18"/>Auseinandersetzungen über die Problema<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_19" break="no"/>tik amerikanischer und europäischer
+                  Ro<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_20" break="no"/>man-Literatur (sprich "recherches
+                  roma<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_21" break="no"/>nesques") verwerten lässt. Wir wissen, <lb
+                  xml:id="p001_r_4_tl_22"/>biographisch gesprochen, nicht viel von <lb
+                  xml:id="p001_r_4_tl_23"/><rs type="person" key="person_0008" xml:id="r12">Carson
+                  McCullers</rs>; rare Photographien <lb xml:id="p001_r_4_tl_24"/>zeigen uns das
+               blasse, sehr tragische und <lb xml:id="p001_r_4_tl_25"/>anderseits fast kindliche
+               Gesicht dieser <lb xml:id="p001_r_4_tl_26"/>überaus begabten Schriftstellerin, die
+                  be<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_27" break="no"/>reits ihr erstes Buch in meisterhafter
+                  Be<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_28" break="no"/>herrschung von Stil und Ausdruck <lb
+                  xml:id="p001_r_4_tl_29"/>schrieb, und von deren Büchern man sagt, <lb
+                  xml:id="p001_r_4_tl_30"/>sie seien grausam und eines <rs type="person"
+                  key="person_0012" xml:id="r13">Faulkners</rs>
+               <lb xml:id="p001_r_4_tl_31"/>würdig. Ohne sich in eine solche etwas <lb
+                  xml:id="p001_r_4_tl_32"/>simplistische "Abfertigung" der Sonder<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_33" break="no"/>lichkeit <rs type="person" key="person_0008"
+                  xml:id="r14">Carson McCullers</rs> zu verirren, <lb xml:id="p001_r_4_tl_34"/>kann
+               man doch nicht umhin, eine gewisse <lb xml:id="p001_r_4_tl_35"/>Wahrheit darin zu
+               erkennen. Tatsächlich <lb xml:id="p001_r_4_tl_36"/>zeichnen sich alle drei oben
+               erwähnten <lb xml:id="p001_r_4_tl_37"/>Romane durch ihren erbarmungslos ob<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_38" break="no"/>jektiven und kalt aufgebauten Gang aus; <lb
+                  xml:id="p001_r_4_tl_39"/>und vielleicht gibt er ihnen jenen An<pc>-</pc>
+               <lb xml:id="p001_r_4_tl_40" break="no"/>schein von Grausamkeit – denn umsonst <lb
+                  xml:id="p001_r_4_tl_41"/>würde man sie, die Grausamkeit, in der <lb
+                  xml:id="p001_r_4_tl_42"/>Auswahl und der Behandlung des "In<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_1" break="no"/>halts" suchen. <rs type="person"
+                  key="person_0011" xml:id="r15">Cocteau</rs> sagte einmal: "<quote>Der <lb
+                     xml:id="p001_r_2_tl_2"/>Stil, ist die Gangart des Geschriebenen</quote>"; <lb
+                  xml:id="p001_r_2_tl_3"/>demnach also wäre zu sagen, Carson <choice>
+                  <sic>Mc <lb xml:id="p001_r_2_tl_4"/>Cullers</sic>
+                  <corr>McCullers</corr>
+               </choice> Stil sei grausam. Und somit wäre <lb
+                  xml:id="p001_r_2_tl_5"/>das Thema der Grausamkeit erschöpft, <lb
+                  xml:id="p001_r_2_tl_6"/>wie auch das Thema "<rs type="person" key="person_0012"
+                  xml:id="r16">Faulkner</rs>" in bezug <lb xml:id="p001_r_2_tl_7"/>auf <rs
+                  type="person" key="person_0008" xml:id="r17">McCullers</rs> Werke. Behandeln sie
+                  <lb xml:id="p001_r_2_tl_8"/>doch alle drei, die Romane, ein ein<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_9" break="no"/>ziges und stets anders bearbeitetes aber <lb
+                  xml:id="p001_r_2_tl_10"/>wiederzuerkennendes Thema: das Irren, <lb
+                  xml:id="p001_r_2_tl_11"/>das unruhige, einsame Drängen des <lb
+                  xml:id="p001_r_2_tl_12"/>menschlichen Herzens. So wie es der Titel <lb
+                  xml:id="p001_r_2_tl_13"/>des Erstlingswerkes auf eine erschüttern<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_14" break="no"/>de Art sagt: "Das Herz ist ein einsamer <lb
+                  xml:id="p001_r_2_tl_15"/>Jäger." So folgen die Romanfiguren jenen <lb
+                  xml:id="p001_r_2_tl_16"/>unterirdischen Pfaden, und ihre Worte, <lb
+                  xml:id="p001_r_2_tl_17"/>und ihre Taten alle sind nur der im täg<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_18" break="no"/>lichen Leben davon sichtbare Wider<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_19" break="no"/>schein. Mick, das junge noch nicht
+                  aus<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_20" break="no"/>gewachsene Mädchen, schleicht sich in <lb
+                  xml:id="p001_r_2_tl_21"/>den langen Sommerabenden jenen Häu<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_22" break="no"/>sern entang, aus deren Fenster es Musik <lb
+                  xml:id="p001_r_2_tl_23"/>ertönen hört, auf der Suche nach einer <lb
+                  xml:id="p001_r_2_tl_24"/>Melodie, in der es sich selbst finden könn<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_25" break="no"/>te und die das Namenlose ausdrückt, das <lb
+                  xml:id="p001_r_2_tl_26"/>es bedrängt. Der blasse, taubstumme Bur<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_27" break="no"/>sche, der eigentlich im Mittelpunkt des <lb
+                  xml:id="p001_r_2_tl_28"/>Buches steht, vergibt sich vollkommen in <lb
+                  xml:id="p001_r_2_tl_29"/>den Erklärungen, Bewegungen seiner <lb
+                  xml:id="p001_r_2_tl_30"/>Hände, die er immer und immer wieder, <lb
+                  xml:id="p001_r_2_tl_31"/>ohne je erfahren zu können, ob der an<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_32" break="no"/>dere ihn versteht, vor den abwesenden <lb
+                  xml:id="p001_r_2_tl_33"/>Augen seines ebenfalls taubstummen <lb
+                  xml:id="p001_r_2_tl_34"/>Freundes beginnt. Und alle anderen, die <lb
+                  xml:id="p001_r_2_tl_35"/>vielen bunten Figuren des Buches, stehen <lb
+                  xml:id="p001_r_2_tl_36"/>um ihn herum und sprechen zu ihm, der <lb
+                  xml:id="p001_r_2_tl_37"/>nicht Antwort geben kann, von dem was <lb
+                  xml:id="p001_r_2_tl_38"/>ihr Herz und ihre Einsamkeit erfüllt. Es <lb
+                  xml:id="p001_r_2_tl_39"/>ist an sich erschütternd zu denken, dass <lb
+                  xml:id="p001_r_2_tl_40"/>ein zweiundzwanzigjähriges Mädchen <lb
+                  xml:id="p001_r_2_tl_41"/>diese von menschlichem Elend und tief<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_42" break="no"/>ster Einsamkeit lebende Geschichte
+                  er<pc>-</pc>
+               <lb xml:id="p001_r_2_tl_43" break="no"/>finden konnte. Demnach schiene die
+                  jun<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_1" break="no"/>ge amerikanische Literatur anderen, uns <lb
+                  xml:id="p001_r_1_tl_2"/>allen näheren Problemen zu entspringen, <lb
+                  xml:id="p001_r_1_tl_3"/>als die der ihr vorhergehenden Genera<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_4" break="no"/>tion. </p>
+            <p><lb xml:id="p001_r_1_tl_6"/><pc>"</pc><rs type="work" key="work_0005" xml:id="r19"
+                  >Reflections in a Golden Eye</rs><pc>"</pc> scheint <lb xml:id="p001_r_1_tl_5"
+               />ein viel mehr "literarisches" Werk zu <lb xml:id="p001_r_1_tl_7"/>sein; die
+               Geschichte ist auf eine absicht<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_8" break="no"/>lich künstliche Art erzählt. Die Personen, <lb
+                  xml:id="p001_r_1_tl_10"/>in einer wahrhaftig "psychoanalitischen <lb
+                  xml:id="p001_r_1_tl_9"/>Beleuchtung" als reine Komparsen be<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_11" break="no"/>handelt, werden mit fester Hand zu dem <lb
+                  xml:id="p001_r_1_tl_12"/>an sich banalen Ergebnis eines Mordfalles <lb
+                  xml:id="p001_r_1_tl_13"/>geführt. Trotzdem enthält und umfasst <lb
+                  xml:id="p001_r_1_tl_14"/>gerade dieses "ausgeklügelte" Buch in <lb
+                  xml:id="p001_r_1_tl_15"/>seinen wichtigsten Zügen die ganze Macht <lb
+                  xml:id="p001_r_1_tl_16"/>von Carson McCullers Erzählungskunst. <lb
+                  xml:id="p001_r_1_tl_17"/>Zusammenfassend und aufschlussgeben <lb
+                  xml:id="p001_r_1_tl_18"/>nicht nur über die Mittel und Zwecke sei<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_19" break="no"/>ner Autorin, sondern auch und haupt<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_20" break="no"/>sächlich über eine Zeit und ihre
+                  wichtig<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_21" break="no"/>sten moralischen und psychologischen <lb
+                  xml:id="p001_r_1_tl_22"/>Gegebenheiten. Von <pc>"</pc><rs type="work"
+                  key="work_0006" xml:id="r20">The Member of the <lb xml:id="p001_r_1_tl_23"
+                  />Wedding</rs><pc>"</pc> wurde kürzlich in Manhattan <lb xml:id="p001_r_1_tl_24"
+                  /><rs type="work" key="work_0007" xml:id="r21">eine von der Autorin selbst
+                  verfasste <lb xml:id="p001_r_1_tl_25"/>Bühnenbearbeitung</rs> gegeben. Es geht
+               hier <lb xml:id="p001_r_1_tl_26"/>um die weltfremde, törichte, traurige <lb
+                  xml:id="p001_r_1_tl_27"/>Backfischjahrezeit. Mit welcher Sorgfalt, <lb
+                  xml:id="p001_r_1_tl_28"/>mit welcher Liebe zeichnet Carson <choice>
+                  <sic>Mc<lb xml:id="p001_r_1_tl_29"/>Cullers</sic>
+                  <corr>McCullers</corr>
+               </choice> die Welt und das Wesen der <lb xml:id="p001_r_1_tl_30"
+               />Frankie Jasmine Addams, dieses zu hoch <lb xml:id="p001_r_1_tl_31"/>gewachsenen
+               zwölfjährigen Mädchens <lb xml:id="p001_r_1_tl_32"/>dessen Sehnsüchte um so inniger
+               sind <lb xml:id="p001_r_1_tl_33"/>als sie zwecklos, sinnlos in Phantasiege<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_40" break="no"/>bilden und Unmöglichem herumirren. </p>
+            <p><lb xml:id="p001_r_1_tl_35"/>Tatsächlich, wenn <rs type="person" key="person_0008"
+                  xml:id="r25">Carson <choice>
+                     <sic>Mc Cullers</sic>
+                     <corr>McCullers</corr>
+                  </choice></rs><lb xml:id="p001_r_1_tl_36"/>ihre Bücher und ihre
+               Art, Schreiben und <lb xml:id="p001_r_1_tl_37"/>Leben aufzufassen, das "junge <rs
+                  type="place" key="place_0008" xml:id="r23">Amerika</rs>" <lb
+                  xml:id="p001_r_1_tl_38"/>vertreten, dann berührt uns dieses junge <lb
+                  xml:id="p001_r_1_tl_39"/><rs type="place" key="place_0008" xml:id="r24"
+                  >Amerika</rs> eindringlicher, als das von ge<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_40" break="no"/>stern. </p>
+            <p><lb xml:id="p001_r_1_tl_41"/>Und den Schweizer Leser mag es be<pc>-</pc>
+               <lb xml:id="p001_r_1_tl_42" break="no"/>rühren, dass die Originalfassung des <lb
+                  xml:id="p001_r_1_tl_43"/>Bandes <pc>"</pc><rs type="work" key="work_0005"
+                  xml:id="r26">Reflections in a <choice>
+                     <orig>g</orig>
+                     <reg>G</reg>
+                  </choice>olden Eye</rs><pc>"</pc> die <lb
+                  xml:id="p001_r_1_tl_44"/>Widmung trägt: "To Annemarie Clarac-<lb/>Schwarzenbach." </p>
+            <p rendition="#right"><hi rendition="#i">Ceresa</hi></p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-06-11T06:15:09.00572685Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

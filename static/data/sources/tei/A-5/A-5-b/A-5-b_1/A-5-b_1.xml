@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-5-b_1" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-5-b_1#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vittorini et la nouvelle prose italienne</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-5-b/1</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-5/A-5-b/A-5-b_1/A-5-b_1_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_001.tif" n="1"/>
+            <ab>
+               <fw type="pageNum" place="topright">1.</fw>
+            </ab>
+            <head><lb xml:id="p001_r_tl_1"/><rs type="person" key="person_0020" xml:id="r1"
+                  >VITTORINI</rs> ET LA NOUVELLE PROSE ITALIENNE. </head>
+            <p><lb xml:id="p001_r_tl_2"/>La première chose de <rs type="person" key="person_0020"
+                  xml:id="r2">Vittorini</rs> que j'ai<add place="inline" hand="#hw">e</add> lu<add
+                  place="inline" hand="#hw">e</add>
+               <del hand="#hw">a été</del>
+               <add place="above" hand="#hw">est</add> un morceau intitulé: <lb xml:id="p001_r_tl_4"
+                  /><pc>"</pc><?oxy_comment_start author="luisepappe" timestamp="20260902T170508+0200" comment="Work_0012 isn&apos;t indicated in the work list..."?>A
+               solo, la radio<?oxy_comment_end?><pc>"</pc>, paru dans un numéro maintenant déjà <del
+                  hand="#hw">vieux</del>
+               <add place="above" hand="#hw">ancien</add> du <pc>"</pc><rs type="work"
+                  key="work_0008" xml:id="r15">Teso<pc>-</pc>
+                  <lb xml:id="p001_r_tl_5" break="no"/>retto</rs><pc>"</pc>. Dans le même almanach
+                  littéraire<add place="inline" hand="#hw">,</add> j'ai trouvé une prose de <rs
+                  type="person" key="person_0018" xml:id="r3">Cesare <lb xml:id="p001_r_tl_7"
+                  />Pavese</rs>, <pc>"</pc><rs type="work" key="work_0010" xml:id="r5">Il prato dei
+                  morti</rs><pc>"</pc>. <del hand="#hw">Ce n'était pas,</del>
+               <del hand="#hw">celui</del>
+               <add place="above" hand="#hw">Le Vittorini</add> du <pc>"</pc><rs type="work"
+                  key="work_0008" xml:id="r16">Tesoretto</rs><pc>"</pc>
+               <del hand="#hw">, le</del><lb xml:id="p001_r_tl_9"/><add place="above" hand="#hw"
+                  >n'était pas encore le</add>
+               <rs type="person" key="person_0020" xml:id="r17">Vittorini</rs>
+               <add place="above" hand="#hw">le</add> plus prononcé, <del hand="#hw">et</del>
+               <add place="above" hand="#hw">ni</add>
+               <del hand="#hw">ce n'était pas,</del> le <rs type="person" key="person_0018"
+                  xml:id="r18">Pavese</rs> du petit conte<choice><sic><del hand="#hw"><add place="inline" hand="#hw">,</add></del></sic><corr>,</corr></choice>
+               <lb xml:id="p001_r_tl_10"/>celui qui <del hand="#hw">me</del> se révéla <add
+                  hand="#hw" place="above">à moi</add> plus tard, à la lecture des <pc>"</pc><rs
+                  type="work" key="work_0009" xml:id="r6">Paesi tuoi</rs><pc>"</pc>. Je ne <lb
+                  xml:id="p001_r_tl_11"/>crois pas qu'il soit possible  de rapprocher <rs
+                  type="person" key="person_0020" xml:id="r19">Vittorini</rs> et <rs type="person"
+                  key="person_0018" xml:id="r20">Pavese</rs> autrement <lb xml:id="p001_r_tl_12"
+               />que de cette façon directe, <add place="above" hand="#hw">de</add> cette facon de
+               lecteur; la Critique sui<pc>-</pc>
+               <lb xml:id="p001_r_tl_13" break="no"/>vrait, sûrement, d'autres chemins. </p>
+            <p><lb xml:id="p001_r_tl_15"/><del hand="#hw">Si</del><add place="above" hand="#hw"
+                  >Quand</add> je dis que j'ai découvert <rs type="person" key="person_0020"
+                  xml:id="r21">Vittorini</rs> et <rs type="person" key="person_0018" xml:id="r22"
+                  >Pavese</rs> en même temps, ce n'est <lb xml:id="p001_r_tl_17"/>pas d'eux que je
+               me souciais, <del hand="#hw">c'était</del>
+               <add place="above" hand="#hw">mais</add> de leur façon de raconter, et, donc, <lb
+                  xml:id="p001_r_tl_18"/>de leu<choice><sic>t</sic><corr>r</corr></choice> façon
+                  d'écrir<del>r</del><add place="over">e</add>.</p>
+            <p><lb xml:id="p001_r_tl_19"/>Il n'existent plus de romanciers en <rs type="place"
+                  key="place_0009" xml:id="r7">ltalie</rs>, mais en meme temps il <anchor
+                  xml:id="a2"/>semble<note type="annotation" xml:id="n2" targetEnd="a2">L'autrice
+                  cassa il testo e, successivamente, ripristina la lezione originale mediante una
+                  linea tratteggiata.</note>
+               <lb xml:id="p001_r_tl_20"/>fort <del>pp</del>
+               <add place="above" hand="#hw">im</add>probable qu'aucun des écrivains modernes
+               italiens n'ait pas <lb xml:id="p001_r_tl_21"/>essayé au moins une fois d'écrire un
+               roman, <del>pa</del> n'ait pas fait au moins <lb xml:id="p001_r_tl_23"/>un projet de
+               roman. Cela se voit, sinon à leurs chapitres de prose, <add place="above" hand="#hw"
+                  >du moins</add> aux <lb xml:id="p001_r_tl_24"/>sujets qu'ils ont choisis pour
+               leurs nouvelles. Et <add place="above" hand="#hw">il</add>
+               <del hand="#hw">c'</del>est peut-être <lb xml:id="p001_r_tl_26"/>inutile de
+                  s'arrête<del>s</del><add place="over">r</add> sur le fait que <del hand="#hw"
+                     >cha<add place="inline" hand="#hw">q</add>ue</del>
+               <add place="above" hand="#hw">tout</add> jeune auteur italien a<del hand="#hw"
+                  >it</del>
+               <lb xml:id="p001_r_tl_27"/>écrit, en forme de <del>bio</del> biographie ou bien en
+               forme de conte, <del>d</del><add place="over">s</add>es sou<pc>-</pc>
+               <lb xml:id="p001_r_tl_28" break="no"/>venirs d'enfance – influence de <rs
+                  type="person" key="person_0019" xml:id="r8">Proust</rs>? –<del>,</del><add
+                  place="over" hand="#hw">;</add> mais il faut <del>plû</del> plutôt <lb
+                  xml:id="p001_r_tl_30"/>donner de l'importance <del hand="#hw">au</del>
+               <add place="above" hand="#hw">à cet autre</add> fait que le jeune auteur italien est
+               toujours <lb xml:id="p001_r_tl_31"/>un poète, même s'il écrit en prose. </p>
+            <p><lb xml:id="p001_r_tl_32"/>Ma découverte, en lisant <rs type="person"
+                  key="person_0020" xml:id="r23">Vittorini</rs> et <rs type="person"
+                  key="person_0018" xml:id="r24">Pavese</rs>, s'est arrêtée là. Et si<add
+                  place="inline" hand="#hw">,</add>
+               <lb xml:id="p001_r_tl_33"/>plus tard, <del hand="#hw">en</del> lisant <pc>"</pc><rs
+                  type="work" key="work_0011" xml:id="r9">Conversazione in Sicilia</rs><pc>"</pc> et
+                  <pc>"</pc><rs type="work" key="work_0009" xml:id="r25">Paesi tuoi</rs><pc>"</pc>,
+               j'ai <lb xml:id="p001_r_tl_34"/>dû m'appercevoir qu'il fallait<del hand="#hw"
+                  >faire</del>
+               <choice><sic><add place="above" hand="#hw">o[?]</add></sic><corr/></choice>, à propos
+               de ces deux écrivains, <lb xml:id="p001_r_tl_37"/><del hand="#hw">d'autres
+                  considérations</del>
+               <choice><sic>et</sic><corr/></choice>
+               <add place="above" hand="#hw">faire valoir d'autres points de vue et</add> d'autres
+                  <del hand="#hw">différences</del><add place="above" hand="#hw">distinctions</add>,
+               je n'ai <del hand="#hw">pas</del>
+               <del>s</del><add place="over" hand="#hw">p</add>u me dé<pc>-</pc>
+               <lb xml:id="p001_r_tl_40" break="no"/>cider à attribuer plus d'importance à<del
+                  hand="#hw">leur</del>
+               <add hand="#hw" place="above">ce qu'ils ont de</add> differen<del>ce</del><add
+                  place="over" hand="#hw">t</add> qu'à <del hand="#hw">leur côté</del><add
+                  hand="#hw" place="above">ce qu'ils ont de</add>
+               <lb xml:id="p001_r_tl_41"/>commun: <del hand="#hw">celui de</del> leur façon
+               d'écrire, <del><del hand="#hw">celui de</del></del> leur <del>f<del>a</del>on</del>
+               façon de <lb xml:id="p001_r_tl_42"/>s'exprimer.</p>
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_002.tif" n="2"/>
+            <ab>
+               <fw type="pageNum" place="topright">2.</fw>
+            </ab>
+            <p><lb xml:id="p002_r_tl_3"/>Cela, parce que il y a déjà les critiques <del>qui</del>
+               <add place="above" hand="#hw">dont c'est le métier de</add> s'occupe<del>n</del><del
+                  hand="#hw">t</del><add place="over" hand="#hw">r</add> des différences <add
+                  place="above">entre écrivains</add>. <lb xml:id="p002_r_tl_5"/><del hand="#hw">Au
+                  côte</del>
+               <add hand="#hw" place="above">Seront[?] à ce qu'ils ont de</add> commun,
+                  <del>parcontre</del>
+               <add place="above" hand="#hw">ceux qui s'y intéressent, ce sont</add><choice><sic>,</sic><corr/></choice>
+               <del hand="#hw">s'intéressent</del> plutôt les lecteurs et les <lb
+                  xml:id="p002_r_tl_7"/>écrivains<del hand="#hw"><add place="above" hand="#hw"> qui
+                     s'y intéressent.</add></del>. <anchor xml:id="a4"/>Je <del>ui</del>suis,<note
+                  type="annotation" xml:id="n4" targetEnd="a4">L'autrice cassa il testo e,
+                  successivamente, ripristina la lezione originale mediante una linea
+                  tratteggiata.</note>
+               <choice><sic><unclear>Et</unclear></sic><corr/></choice> comme vous, de <anchor
+                  xml:id="a3"/>ces derniers<note type="annotation" xml:id="n3" targetEnd="a3"
+                  >L'autrice cassa il testo e, successivamente, ripristina la lezione originale
+                  mediante una linea tratteggiata.</note>. </p>
+            <p><lb xml:id="p002_r_tl_8"/>Or, pour comprendre cette nouvelle prose italienne et son
+               pourquoi, <del hand="#hw"><add place="above" hand="#hw">il</add></del>
+               <del hand="#hw">m'</del><choice><sic>a</sic><corr/></choice>
+               <lb xml:id="p002_r_tl_9"/><metamark target="#mm1"><add place="inline" hand="#hw"
+                     >m'a</add> éte beaucoup plus utile</metamark> l'"incompréhensible" explication
+               d'un jeune <lb xml:id="p002_r_tl_10"/>écrivain italien <metamark xml:id="mm1"
+               > </metamark>que de longues théories academiques. Il me disait que <lb
+                  xml:id="p002_r_tl_11"/>ce qui liait les écrivains de cette nouvelle prose et les
+               distinguait <lb xml:id="p002_r_tl_13"/>des autres<add place="inline" hand="#hw"
+                  >,</add>
+               <add place="above" hand="#hw">c'</add>était, <del hand="#hw">avant qu'une raison à
+                  analiser</del>
+               <add place="above" hand="#hw">bien plus qu'un motif analysable</add> selon les règles
+               de <lb xml:id="p002_r_tl_14"/>l'esthétique, une raison de <del hand="#hw"
+                  >production.</del>
+               <add place="inline" hand="#hw">"producteurs". </add></p>
+            <p><lb xml:id="p002_r_tl_15"/>"Les autres écrivent de la tête à la feuille de papier
+               qu'ils ont sur <lb xml:id="p002_r_tl_16"/>la table; ils ont donc, en un certain sens,
+               une relation de perspective <lb xml:id="p002_r_tl_17"/>avec ce qu'ils écrivent. Les
+               nouveaux, par<add place="inline" hand="#hw"> </add>contre, écrivent en ligne <lb
+                  xml:id="p002_r_tl_19"/>horizontale<del>,</del><add place="over" hand="#hw">;</add>
+               <del hand="#hw">c'est<add place="inline" hand="#hw">-</add>à<add place="inline"
+                     hand="#hw">-</add>dire</del>
+               <add place="above" hand="#hw">autrement dit,</add>
+               <del hand="#hw">qu'</del>
+               <add place="above" hand="#hw"><del hand="#hw"
+                     ><?oxy_comment_start author="luisepappe" timestamp="20260902T172511+0200" comment="this &quot;que&quot; isn&apos;t deleted in the preview..."?>que,</del><?oxy_comment_end?>
+                  d'eux-mêmes</add> à la feuille de papier qu'ils ont devant <add place="inline"
+                  hand="#hw">soi,</add>
+               <lb xml:id="p002_r_tl_21"/>passe en ligne directe ce qu'il y a <add place="above"
+                  hand="#hw">en eux</add> dans un "centre"<add place="inline" hand="#hw">.</add>
+               <del hand="#hw">de <add place="above" hand="#hw"><gap reason="illegible"/></add>
+                  nous.</del> Cela <lb xml:id="p002_r_tl_22"/>coule presque dans l'encre, ce n'est
+               pas "dicté" d'en haut, de la tête, <lb xml:id="p002_r_tl_23"/>à la plume." </p>
+            <p><lb xml:id="p002_r_tl_24"/>La "prosa d'arte", le "chapitre", a été l'unique manière
+               d'expression <lb xml:id="p002_r_tl_26"/>des écrivains italiens <del hand="#hw"
+                  >des</del>
+               <add place="above" hand="#hw">de ces</add> dernières dizaines d'années – mais c'est
+                  <lb xml:id="p002_r_tl_27"/>justement là <del hand="#hw">dedans</del> qu'il faut
+               faire une différence; car il y a eu la <lb xml:id="p002_r_tl_28"/>"prosa d'arte" d'un
+                  <rs type="person" key="person_0021" xml:id="r10">Cecchi</rs>, d'un <rs
+                  type="person" key="person_0022" xml:id="r11">Bontempelli</rs>, et il y a eu la
+               "prosa <lb xml:id="p002_r_tl_29"/>d'arte" des plus jeunes, celle justement d'un
+               Vittorini qui, dans sa <lb xml:id="p002_r_tl_31"/><pc>"</pc><rs type="work"
+                  key="work_0011" xml:id="r26">Conversazione in Sicilia</rs><pc>"</pc>, s'est <del
+                  hand="#hw">mis</del>
+               <add place="above" hand="#hw">placé</add> sur la ligne la plus pure et la <lb
+                  xml:id="p002_r_tl_32"/>plus directe de cette "écriture horizontale", de façon
+               qu'elle paraissait <lb xml:id="p002_r_tl_33"/>être toute a lui<add place="inline"
+                  hand="#hw">,</add> et seulement à lui dans cette possession parfaite. <lb
+                  xml:id="p002_r_tl_35"/>Je n'oublie pas la <del>manchette</del>
+               <add place="above" hand="#hw">bande</add> rouge <del hand="#hw">qui fermait</del>
+               <add place="above" hand="#hw">sur</add> le livre <choice><sic>en</sic><corr/></choice>
+               <del hand="#hw">vitrine</del>
+               <add place="above" hand="#hw">à l'étalage</add>, avec <lb xml:id="p002_r_tl_37"/><del
+                  hand="#hw">l'écrite</del>
+               <add place="above" hand="#hw"><add place="inline" hand="#hw">cette</add><?oxy_comment_start author="luisepappe" timestamp="20260902T172644+0200" comment="this &quot;l&apos;&quot; isn&apos;t deleted in the preview"?>
+                  <del hand="#hw">l'<?oxy_comment_end?></del>inscription</add>: "La troisième
+               édition d'un roman que la critique a défini <lb xml:id="p002_r_tl_38"/>un tournant
+               dans la littérature narrative italienne."</p>
+            <p><lb xml:id="p002_r_tl_41"/>On pourrait <del hand="#hw">contester</del>
+               <add place="above" hand="#hw">discuter</add> cette <del hand="#hw">écrite</del>
+               <add place="above" hand="#hw">formule</add>, et <anchor xml:id="a5"/>contester<note
+                  type="annotation" xml:id="n5" targetEnd="a5">L'autrice cassa il testo e,
+                  successivamente, ripristina la lezione originale mediante una linea
+                  tratteggiata.</note> au livre de <rs type="person" key="person_0020" xml:id="r27"
+                  >Vittorini</rs>
+               <lb xml:id="p002_r_tl_43"/><del hand="#hw">l'attribut</del>
+               <add place="above" hand="#hw">la qualité</add> de "roman". Mais une chose est
+               certaine: <del hand="#hw">que</del>
+               <del>s</del><add place="over" hand="#hw">S</add>i le roman<add place="inline"
+                  hand="#hw">,</add></p>
+            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_003.tif" n="3"/>
+            <ab>
+               <fw type="pageNum" place="topright">3.</fw>
+            </ab>
+            <p>
+               <lb xml:id="p003_r_tl_1"/>en Italie, n'existait plus depuis longtemps, si la "prosa
+               d'arte" <lb xml:id="p003_r_tl_3"/>était l'unique forme d'expression des écrivains –
+                  <del hand="#hw">devenus,</del>
+               <add place="above" hand="#hw">de</add>
+               <add place="above" hand="#hw"><gap reason="illegible" quantity="6"/></add>par des <lb
+                  xml:id="p003_r_tl_6"/>néc<del hand="#hw">é</del><add place="over" hand="#hw"
+                  >e</add>ssités peut-être plus urgentes que <del hand="#hw">celles
+                  </del><del>causées du man</del><del hand="#hw"> naissant</del>
+               <add place="above" hand="#hw">toutes celles qui pouvaient découler de</add><lb
+                  xml:id="p003_r_tl_8"/><del hand="#hw">du manque</del>
+               <add place="above" hand="#hw">l'absence</add> d'une société bourgeoise <del
+                  hand="#hw">qui p<del>u</del><add place="over" hand="#hw">û</add>t</del>
+                  favor<del>iser</del><add place="over" hand="#hw">able</add>
+               <add place="above" hand="#hw">à</add> l'éclosion du <lb xml:id="p003_r_tl_9"/>"roman"
+                  d<del>o</del><add place="over">i</add>sons "classique" –, il n'y avait qu'une
+               manière de sortir <lb xml:id="p003_r_tl_11"/><?oxy_comment_start author="luisepappe" timestamp="20260901T215708+0200" comment="C&apos;è una croce nel margine -&gt; la visualizziamo in qualche modo?"?>d<?oxy_comment_end?><choice><sic>u</sic><corr>e</corr></choice>
+               <del hand="#hw">champ clos</del>
+               <add place="above" hand="#hw"><del hand="#hw">de l'enclos </del>l'étroit enclos</add>
+               de cette <add place="above" hand="#hw">première</add> "prosa d'arte" cérebrale<add
+                  place="inline" hand="#hw">.</add>
+               <del hand="#hw">qu'a été la première, </del><lb xml:id="p003_r_tl_13"/><del
+                  hand="#hw">c'est à dire qu'il n'y avait <del>qu'une</del> que</del>
+               <add place="above" hand="#hw">La seule issue, <del hand="#hw">c'était</del><add
+                     place="over" hand="#hw">en effet</add>, c'était</add> cette '"écriture
+               horizontale" <lb xml:id="p003_r_tl_15"/><del>qui put</del> permett<del>re</del><add
+                  place="over" hand="#hw">ant</add> à un écrivain d'exprimer son <del hand="#hw"
+                  >monde</del>
+               <add place="above" hand="#hw">univers</add> d'une façon vi<pc>-</pc>
+               <lb xml:id="p003_r_tl_17" break="no"/>vante, <del hand="#hw">bien</del>
+               <add place="above" hand="#hw">tout</add>
+               <choice><sic>qu'</sic><corr/></choice>en restant lié, par des forces majeures, à la
+               forme de <lb xml:id="p003_r_tl_18"/>la "prosa d'arte". Et ces "forces majeures" nous
+               les définirons <del>pet</del>
+               <lb xml:id="p003_r_tl_22"/>peut-être <add place="above" hand="#hw">avec <del
+                     hand="#hw">le</del></add> le plus <del hand="#hw">clairement</del>
+               <add place="above" hand="#hw">de clarté</add> et <del hand="#hw">précisement</del>
+               <add place="above" hand="#hw">de précision possibles</add> en disant que l'<rs
+                  type="place" key="place_0009" xml:id="r28"><del>i</del><add place="over"
+                  >I</add>talie</rs> n'a <lb xml:id="p003_r_tl_23"/>plus eu d<del>es</del><add
+                  place="over" hand="#hw">'</add><del> </del>écrivains-romanciers, mais
+                  t<del>p</del><add place="over">o</add>ut simplement des écrivains<pc>-</pc>
+               <lb xml:id="p003_r_tl_24" break="no"/>poètes. </p>
+            <p><lb xml:id="p003_r_tl_25"/>Cette espèce de "pros<del>e</del><add place="over">a</add>
+               narrativa", que nous appellerons la prose de <lb xml:id="p003_r_tl_26"/><rs
+                  type="person" key="person_0020" xml:id="r29">Vittorini</rs>, pour la distinguer de
+               la "prosa d'arte" des "chapitres" <add place="inline" hand="#hw">, – ceux</add><lb
+                  xml:id="p003_r_tl_29"/><del hand="#hw">justement</del>
+               <add place="above" hand="#hw">précisément</add> d'un <rs type="person"
+                  key="person_0021" xml:id="r30">Cecchi</rs> ou d'un <rs type="person"
+                  key="person_0023" xml:id="r12">Bilenchi</rs>
+               <add place="above" hand="#hw">–</add><del hand="#hw">–</del><add place="inline"
+                  hand="#hw">,</add>
+               <del hand="#hw"><add place="above" hand="#hw">cette "prosa</add></del>
+               <del hand="#hw">qui est une</del>
+               <add place="above" hand="#hw">de cette</add> prose cérébrale <lb
+                  xml:id="p003_r_tl_30"/><del hand="#hw">et</del>
+               <add place="above" hand="#hw">qui</add> pouvait n'avoir <del>qu-</del> qu'un monde
+               tout à fait personnel et intellectuel <lb xml:id="p003_r_tl_31"/>à exprimer<choice><sic>,</sic><corr/></choice>
+               <del hand="#hw">tandis que pas la "prose horizontale"</del> –, corr<del>é</del><add
+                  place="over" hand="#hw">e</add>spond au <lb xml:id="p003_r_tl_32"/>mode
+               d'expression le plus efficace et le plus direct du monde que <lb
+                  xml:id="p003_r_tl_33"/>l'écrivain lié à la vie et aux évènements de cette vie, a à
+               exprimer. <lb xml:id="p003_r_tl_34"/>C'est un monde qui effectivement se trouve dans
+               un "centre" de nous, <lb xml:id="p003_r_tl_35"/>comme disait le jeune <add hand="#hw"
+                  place="inline">"</add>incompréhensible<add place="inline" hand="#hw">"</add>, ce
+               n'est pas un monde intellec<pc>-</pc>
+               <lb xml:id="p003_r_tl_36" break="no"/>tuel. Et en l'exprimant en ligne directe, en
+               ligne horizontale par <lb xml:id="p003_r_tl_39"/><del hand="#hw">respect</del>
+               <add place="above" hand="#hw"><unclear>rapport</unclear></add> à la feuille de papier
+               qu'il a devant <add place="above" hand="#hw">soi</add>, ce monde même et <del
+                  hand="#hw">pas</del>
+               <add place="above" hand="#hw">non</add> la <lb xml:id="p003_r_tl_40"/>tête dicte à
+               l'ecrivain la forme sévère et non librement choisie de <del>l</del><add place="over"
+                  hand="#hw">s</add>a <lb xml:id="p003_r_tl_42"/>prose<add place="inline" hand="#hw"
+                  >,</add>
+               <add place="above" hand="#hw">celle</add> dont justement nous parlons<del hand="#hw"
+                  >.</del>
+               <add place="inline" hand="#hw">ici.</add></p>
+            <p><lb xml:id="p003_r_tl_43"/>Son monde ne peut se réaliser, dans cette
+                  <del>narrative</del> "prosa narrativa" <lb xml:id="p003_r_tl_44"/><del>f</del><add
+                  place="over">d</add>irecte et ennemie du roman d'invention, que dans l'écriture
+                  horizonta<pc>-</pc>
+               <lb xml:id="p003_r_tl_45" break="no"/>le.</p>
+            <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_004.tif" n="4"/>
+            <ab>
+               <fw type="pageNum" place="topright">4.</fw>
+            </ab>
+            <p><lb xml:id="p004_r_tl_1"/>Et maintenant, voilà l'importante différence entre la
+               "prosa d'arte" <lb xml:id="p004_r_tl_2"/>cérébrale et celle d'un <rs type="person"
+                  key="person_0020" xml:id="r31">Vittorini</rs>: c'est une différence
+                  d<del>u</del><add place="over" hand="#hw">e</add> monde à <lb xml:id="p004_r_tl_3"
+               />exprimer. Et la preuve la plus simple de ce fait théorique est donnée, <lb
+                  xml:id="p004_r_tl_5"/><del hand="#hw">si voulez l'accepter</del>
+               <add place="above" hand="#hw">à mon avis</add>, par <rs type="person"
+                  key="person_0020" xml:id="r32">Vittorini</rs> même, <del>w</del><add place="over"
+                  >q</add>ui avait des préoccupation<add place="inline" hand="#hw">s</add>
+               <lb xml:id="p004_r_tl_6"/>humaines<add place="inline" hand="#hw">,</add>
+               <del hand="#hw">et</del> liées à ce qui se passait dans le monde<add place="inline"
+                  hand="#hw">,</add> avant d'en avoir de <lb xml:id="p004_r_tl_7"/>littéraires.
+                  C'est<add place="inline" hand="#hw">-</add>à<add place="inline">-</add>dire que
+               son monde à lui, qui lui dictait sa forme <lb xml:id="p004_r_tl_9"/>d'expression,
+               était un monde humain<add place="inline" hand="#hw">,</add> et <add place="above"
+                  hand="#hw">non</add> pas le monde d'une élite qui se <lb xml:id="p004_r_tl_11"
+               />soucie de <del hand="#hw">sa façon</del>
+               <add place="above" hand="#hw">son mode</add> d'expression. </p>
+            <p><lb xml:id="p004_r_tl_12"/>Si donc cette écriture est la nouvelle prose italienne,
+               elle est la prose <lb xml:id="p004_r_tl_14"/>non de <rs type="person"
+                  key="person_0020" xml:id="r33">Vittorini</rs>, mais celle <del hand="#hw">qu'il
+                  possède, lui, le mieux.</del>
+               <add place="above" hand="#hw">que lui, <rs type="person" key="person_0020"
+                     xml:id="r34">Vittorini</rs>, se trouve le mieux posséder.</add> Ce n'est ni <lb
+                  xml:id="p004_r_tl_16"/>par imitation ni par mode qu'elle <del hand="#hw">soit
+                  aussi</del>
+               <add place="above" hand="#hw">est en même temps</add> la prose des jeunes écrivains
+                  <lb xml:id="p004_r_tl_17"/>italiens<del>,</del><add place="over">.</add>
+            </p>
+            <p><lb xml:id="p004_r_tl_18"/>Avant qu'il y ait une "letteratura na<del>t</del><add
+                  place="over">r</add>rativa" uniforme, il y a un <del hand="#hw">déter<pc>-</pc>
+                  <lb xml:id="p004_r_tl_20" break="no"/>miné</del> monde <add place="above"
+                  hand="#hw">déterminé</add> à exprimer<add place="inline" hand="#hw">,</add>
+               <del hand="#hw">qui est</del> commun à la génération. C'est ce monde<del> à</del><add
+                  place="inline" hand="#hw">-là</add>
+               <lb xml:id="p004_r_tl_21"/><del hand="#hw">exprimer</del> qui demande aujourd'hui <hi
+                  rendition="#u">à être exprimé<del hand="#hw">e</del>
+                  directement</hi><del>,</del><add place="over" hand="#hw">;</add> c'est lui <lb
+                  xml:id="p004_r_tl_24"/>qui dicte la forme et <del hand="#hw">la façon</del>
+               <add place="above" hand="#hw">le mode</add> d'expression. C'est lui qui, en <del
+                  hand="#hw">se portant</del>
+               <add place="above" hand="#hw">passant</add>
+               <lb xml:id="p004_r_tl_25"/><del>en</del>
+               <del hand="#hw">en ligne</del> horizontale<add place="above" hand="#hw">ment</add> de
+               l'écrivain à la feuille de papier, <del hand="#hw">force les</del>
+               <lb xml:id="p004_l_1"/><del hand="#hw"><add place="inline" hand="#hw"
+                  >informe</add></del>
+               <del hand="#hw"><add place="above" hand="#hw"> les</add></del>
+               <add place="below" hand="#hw">imprime aux</add> phrases mêmes <del hand="#hw"
+                  >dans</del>
+               <del hand="#hw"><add place="above" hand="#hw">selon</add></del> une cadence<add
+                  place="inline" hand="#hw">,</add>
+               <del hand="#hw">qui a</del> une couleur d'ambience et <del hand="#hw">dans une</del>
+               <add place="above" hand="#hw">les formes d'une </add><lb xml:id="p004_r_tl_30"
+               />langue qui obéit aux lois sévères d'une vraie <del hand="#hw">et</del>
+               <metamark target="#mm2">propre</metamark> poétique <metamark xml:id="mm2"/><del
+                  hand="#hw">de</del>
+               <add place="above" hand="#hw">à</add> la <lb xml:id="p004_r_tl_31"/>prose. </p>
+            <p><lb xml:id="p004_r_tl_32"/>C'est une "prosa narrativa", si vous voulez, d'inspiration
+               et non de <lb xml:id="p004_r_tl_33"/>choix libre. </p>
+            <p><lb/>Tout cela est contraire au roman d'invention, à l'intrigue conduite sous <lb
+                  xml:id="p004_r_tl_36"/>la dictée et la surveillance du cerveau, et <del hand="#hw"
+                  >elle</del>
+               <add place="above" hand="#hw"><unclear>celà</unclear> même
+                  <unclear>peu</unclear></add> est contraire aussi à <lb xml:id="p004_r_tl_38"
+               />l'écriture <del hand="#hw">de</del>
+               <add place="above" hand="#hw">en</add> p<del>r</del><add place="over"
+               >e</add>rspective de la "pros<del>e</del><add place="over">a</add> d'arte" cérébrale.
+               Et les quel<add place="inline" hand="#hw">q</add>ues <lb xml:id="p004_r_tl_39"
+               />nouvelles de cette prose d'art cérébrale, écrites avec la joie <del hand="#hw">de
+                     l'in<pc>-</pc>
+                  <lb xml:id="p004_r_tl_42" break="no"/>vention de</del>
+               <add place="above" hand="#hw">d'inventer une</add>
+               <del hand="#hw">l'</del>intrigue, <del hand="#hw">de la <anchor xml:id="a1"
+                  />"</del><choice><sic>cré</sic><corr/></choice><del>a</del><add place="over"
+                  hand="#hw"
+                  ><choice><sic>r</sic><corr/></choice></add><choice><sic>t</sic><corr/></choice><del
+                  hand="#hw">ion</del><choice><sic>"</sic><corr/></choice><note type="annotation"
+                  xml:id="n1" targetEnd="a1">L'autrice inizia l'intervento correttorio
+                  soprascrivendo il lemma "création". L'intervento rimane incompleto ed è proseguito
+                  nell'interlinea superiore.</note>
+               <add place="above" hand="#hw">de "créer"</add>
+               <del hand="#hw">d'</del><del hand="#hw">un monde réel de la société,</del>
+               <add place="above" hand="#hw">un monde social pseudo-réel,</add>
+               <lb xml:id="p004_r_tl_43"/>nous ont démontré qu'elles ne pouvaient pas aboutir au
+               roman. </p>
+            <p><lb xml:id="p004_r_tl_44"/>Mais l'autre prose, celle de <rs type="person"
+                  key="person_0020" xml:id="r35">Vittorini</rs>, <del hand="#hw">elle</del> pourra
+               peut-être y aboutir,</p>
+            <pb xml:id="p005" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_005.tif" n="5"/>
+            <ab>
+               <fw type="pageNum" place="topright">5.</fw>
+            </ab>
+            <p>
+               <lb xml:id="p005_r_tl_1"/>même s'il ne dev<del hand="#hw">r</del>ait pas s'agir du
+               roman selon les règles classiques, <lb xml:id="p005_r_tl_2"/>– mais qu'en
+               savons<?oxy_comment_start author="luisepappe" timestamp="20260902T173609+0200" comment="this should be a non-breakable hyphen"?>-<?oxy_comment_end?>nous?
+               En tout cas, elle a sûrement <del hand="#hw">une</del>
+               <add place="above" hand="#hw">des</add> possibilité<add place="inline" hand="#hw"
+                  >s</add>
+               <lb xml:id="p005_r_tl_5"/><del hand="#hw">d'issue,</del>
+               <add place="above" hand="#hw">d'aboutir</add> que l'autre n'a jamais
+                  eu<del>,</del><add place="over" hand="#hw">es</add><add place="inline" hand="#hw"
+                  >,</add>
+               <del hand="#hw">et c'est parce que</del>
+               <add place="above" hand="#hw">car</add> le monde <add place="above" hand="#hw">d'où
+                  elle est issue, monde</add> intérieur <lb xml:id="p005_r_tl_6"/>de
+                  l'<del>e</del><add place="over" hand="#hw">é</add>crivain<del hand="#hw">, qui la
+                  conditionnait, était</del>
+               <add place="above" hand="#hw">est</add> un monde <del hand="#hw">qui naissait</del>
+               <add place="above" hand="#hw">né</add> de préoc<pc>-</pc>
+               <lb xml:id="p005_r_tl_7" break="no"/>cupations plus grandes<add place="inline"
+                  hand="#hw">,</add>
+               <del hand="#hw">et</del> plus vastes et plus générales. </p>
+            <p><lb xml:id="p005_r_tl_10"/>Et <add place="above" hand="#hw">il est</add> une chose
+                  <add place="above" hand="#hw">que</add> nous <del hand="#hw">la</del> savons tous,
+                  <add place="above" hand="#hw">nous</add> qui avons lu les livres italiens, les <lb
+                  xml:id="p005_r_tl_11"/>derniers et les avant-derniers: que c'était un monde
+                  d'angoisse<add place="inline" hand="#hw">,</add>
+               <del hand="#hw">et</del> de <lb xml:id="p005_r_tl_12"/>lutte et de pressentiments. Un
+               monde serieux et humain. Un monde de <lb xml:id="p005_r_tl_13"/>questions et de
+               voyages <add place="above" hand="#hw">à</add> travers les plaines noires<add
+                  place="inline" hand="#hw">,</add> à la recherche de <lb xml:id="p005_r_tl_14"
+               />réponses. </p>
+            <ab rendition="#right">
+               <fw type="sig" place="bottomright">Alice Ceresa. </fw>
+            </ab>
+            <ab rendition="#right" hand="#hw">
+               <fw type="sig" place="bottomright"
+                  ><?oxy_comment_start author="luisepappe" timestamp="20260917T205321+0200" comment="this is not a signature, but a date, how can I indicate this?"?>Zurigo<?oxy_comment_end?>,
+                  1943</fw>
+            </ab>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-08-26T12:31:00.835693876Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>
