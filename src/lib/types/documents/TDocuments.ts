@@ -81,6 +81,10 @@ export type TDocuments = {
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
 				};
+				tei: {
+					path: string;
+					filename: string;
+				};
 				manuscript: {
 					rendition?: TRendition | null;
 					iiif_urls: string[];
@@ -121,6 +125,10 @@ export type TDocuments = {
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
 				};
+				tei: {
+					path: string;
+					filename: string;
+				};
 				manuscript: {
 					rendition?: TRendition | null;
 					iiif_urls: string[];
@@ -160,6 +168,10 @@ export type TDocuments = {
 				};
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
+				};
+				tei: {
+					path: string;
+					filename: string;
 				};
 				manuscript: {
 					rendition?: TRendition | null;

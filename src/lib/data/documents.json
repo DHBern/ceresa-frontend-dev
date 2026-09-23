@@ -47,6 +47,10 @@
 					"editorial_comments_1": null,
 					"editorial_comments_2": null
 				},
+				"tei": {
+					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-1",
+					"filename": "A-1-a_1-1.xml"
+				},
 				"manuscript": {
 					"rendition": null,
 					"iiif_urls": []
@@ -112,6 +116,10 @@
 					}
 				},
 				"editorialNotes": {},
+				"tei": {
+					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-1",
+					"filename": "A-1-a_1-1.xml"
+				},
 				"manuscript": {
 					"iiif_urls": []
 				},
@@ -154,6 +162,10 @@
 					"linkedDocuments": {},
 					"citedEntities": {},
 					"linkedEntities": {}
+				},
+				"tei": {
+					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-1",
+					"filename": "A-1-a_1-1.xml"
 				},
 				"manuscript": {
 					"iiif_urls": ["https://iiif.ub.unibe.ch/image/v3/schwarzenbach/published_0001_0006.tif"]

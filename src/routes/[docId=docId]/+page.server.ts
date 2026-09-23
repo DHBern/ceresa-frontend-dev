@@ -37,6 +37,18 @@ export const entries: EntryGenerator = () => {
 };
 
 export const load: PageServerLoad = async ({ params, fetch }) => {
+	// Resolve Documents to current document
+	const resolvedDoc = resolveDoc(allDocs, params.docId as TDocKeys) as
+		TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
+
+	// Resolve cross-register references
+	const crossRef: {
+		linkedEntities?: TCrossRefEntitiesExtended;
+		citedEntities?: TCrossRefEntitiesExtended;
+		linkedDocuments?: TCrossRefDocumentsExtended;
+		citedDocuments?: TCrossRefDocumentsExtended;
+	} = {};
+
 	// CETEI Data
 	async function loadText(params: { docId: string }): Promise<ProcessedTEI> {
 		const defaultBody = {
@@ -56,7 +68,9 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 
 		try {
 			// (1) Fetch xml data
-			const res = await fetch(asset(`/data/texts/text-${params.docId}.xml`));
+			const res = await fetch(
+				asset(`/data/sources/tei/${resolvedDoc.item?.tei.path}/${resolvedDoc.item?.tei.filename}`)
+			);
 			// Throw 404 if XML not found
 			if (!res.ok) {
 				if (res.status === 404) {
@@ -89,18 +103,6 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 		}
 	}
 	const ceteiData = await loadText(params);
-
-	// Resolve Documents to current document
-	const resolvedDoc = resolveDoc(allDocs, params.docId as TDocKeys) as
-		TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
-
-	// Resolve cross-register references
-	const crossRef: {
-		linkedEntities?: TCrossRefEntitiesExtended;
-		citedEntities?: TCrossRefEntitiesExtended;
-		linkedDocuments?: TCrossRefDocumentsExtended;
-		citedDocuments?: TCrossRefDocumentsExtended;
-	} = {};
 
 	if (resolvedDoc?.item) {
 		// linkedEntities
