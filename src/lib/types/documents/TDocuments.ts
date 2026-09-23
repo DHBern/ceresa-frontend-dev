@@ -82,6 +82,7 @@ export type TDocuments = {
 					contentNotes?: TContentNotes[];
 				};
 				tei: {
+					id?: string;
 					path: string;
 					filename: string;
 				};

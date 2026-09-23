@@ -9,9 +9,9 @@
 		"textstufen": {
 			"textstufen_unpublished_0006": {
 				"url_seq_overview": null,
-				"name": "S0006",
-				"preamble": "Textstufen Gruppe S0006",
-				"docs": ["unpublished_0006", "unpublished_0007"]
+				"name": "TEST",
+				"preamble": "Textstufen Gruppe TEST",
+				"docs": []
 			}
 		},
 		"posthum": {
@@ -20,50 +20,21 @@
 				"url_seq_overview": "/posthum_all",
 				"name": "All Posthumous Works",
 				"preamble": "All Posthumous Works",
-				"docs": [
-					"posthum_0001",
-					"posthum_0002"
-				]
+				"docs": ["posthum_0001", "posthum_0002"]
 			},
 			"posthum_manuscripts": {
 				"type": "posthum",
 				"url_seq_overview": "/posthum_manuscripts",
 				"name": "Manuskripte",
 				"preamble": "Manuskripte",
-				"docs": ["posthum_0030", "posthum_0070"]
+				"docs": []
 			},
 			"posthum_typoscripts": {
 				"type": "posthum",
 				"url_seq_overview": "/posthum_typoscripts",
 				"name": "Typoskripte",
 				"preamble": "Typoskripte",
-				"docs": ["posthum_0005", "posthum_0006"]
-			}
-		},
-		"published": {
-			"published_all": {
-				"type": "special",
-				"url_seq_overview": "/published_all",
-				"name": "Alle Published Works",
-				"preamble": "Alle Published Works",
-				"docs": [
-					"published_0001",
-					"published_0003"
-				]
-			},
-			"published_manuscripts": {
-				"type": "published",
-				"url_seq_overview": "/published_manuscripts",
-				"name": "Manuskripte",
-				"preamble": "Manuskripte",
-				"docs": ["published_0030", "published_0070"]
-			},
-			"published_typoscripts": {
-				"type": "published",
-				"url_seq_overview": "/published_typoscripts",
-				"name": "Typoskripte",
-				"preamble": "Typoskripte",
-				"docs": ["published_0005", "published_0006"]
+				"docs": []
 			}
 		},
 		"unpublished": {
@@ -72,26 +43,44 @@
 				"url_seq_overview": "/unpublished_all",
 				"name": "All Unpublished Works",
 				"preamble": "All Unpublished Works",
-				"docs": [
-					"unpublished_0231",
-					"unpublished_0001",
-					"unpublished_0002",
-					"unpublished_0003"
-				]
+				"docs": ["unpublished_0001", "unpublished_0002", "unpublished_0003", "unpublished_0004"]
 			},
 			"unpublished_manuscripts": {
 				"type": "unpublished",
 				"url_seq_overview": "/unpublished_manuscripts",
 				"name": "Manuskripte",
 				"preamble": "Manuskripte",
-				"docs": ["unpublished_0030", "unpublished_0070"]
+				"docs": []
 			},
 			"unpublished_typoscripts": {
 				"type": "unpublished",
 				"url_seq_overview": "/unpublished_typoscripts",
 				"name": "Typoskripte",
 				"preamble": "Typoskripte",
-				"docs": ["unpublished_0005", "unpublished_0006"]
+				"docs": []
+			}
+		},
+		"published": {
+			"published_all": {
+				"type": "special",
+				"url_seq_overview": "/published_all",
+				"name": "Alle Published Works",
+				"preamble": "Alle Published Works",
+				"docs": ["published_0001", "published_0002"]
+			},
+			"published_manuscripts": {
+				"type": "published",
+				"url_seq_overview": "/published_manuscripts",
+				"name": "Manuskripte",
+				"preamble": "Manuskripte",
+				"docs": []
+			},
+			"published_typoscripts": {
+				"type": "published",
+				"url_seq_overview": "/published_typoscripts",
+				"name": "Typoskripte",
+				"preamble": "Typoskripte",
+				"docs": []
 			}
 		}
 	}

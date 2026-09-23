@@ -40,7 +40,6 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 	// Resolve Documents to current document
 	const resolvedDoc = resolveDoc(allDocs, params.docId as TDocKeys) as
 		TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
-
 	// Resolve cross-register references
 	const crossRef: {
 		linkedEntities?: TCrossRefEntitiesExtended;

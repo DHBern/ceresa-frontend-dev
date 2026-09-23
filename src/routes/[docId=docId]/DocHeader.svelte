@@ -110,18 +110,10 @@
 {#if resDoc?.item}
 	<div class="w-full px-10">
 		<h1 class="h1 text-center">
-			{#if resDoc.docType === 'posthum'}
-				<span>{resDoc.item.name}</span>
-			{:else}
-				<span>{resDoc.item.metadata.title_full}</span>
-			{/if}
+			<span>{resDoc.item.name}</span>
 		</h1>
 		<h3 class="h3 mt-2 text-center">
-			{#if resDoc.docType === 'posthum'}
-				<span>{printDateRange(resDoc.item.date.from, resDoc.item.date.to)}</span>
-			{:else if resDoc.docType === 'unpublished'}
-				Publiziert in {resDoc.item.metadata.pubPlace}
-			{/if}
+			<span>{printDateRange(resDoc.item.date.from, resDoc.item.date.to)}</span>
 		</h3>
 		<!-- Global Comment -->
 		<ResponsiveAccordion titleOverview="Überblickskommentar" titleMeta="Metadaten">

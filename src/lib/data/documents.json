@@ -8,33 +8,24 @@
 	"documents": {
 		"posthum": {
 			"posthum_0001": {
-				"name": "Posthum 0001",
+				"slug": "posthum_0001",
+				"name": "Anima (Piccolo dizionario)",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
 				"metadata": {
-					"types": null,
-					"date": {
-						"from": "1931-05-09",
-						"to": "1931-05-09"
-					},
-					"date_stamp": null,
-					"people_sending": ["person_0082"],
-					"people_addressed": ["person_0006"],
-					"people_addressfield": null,
-					"place_of_sender": null,
-					"place_of_recepient": null,
-					"content_and_medium": "1 carte postalePapier",
-					"language": null,
-					"attachments": null,
-					"archive": {
-						"repository": "Bibliothèque cantonale et universitaire - Lausanne",
-						"repo_url": "https://patrinum.ch/record/587676?ln=en#bfe_isadg_full",
-						"shelfmark": "PTN-587676",
-						"folder_name": null,
-						"ref_code_fonds": "Collection des pièces isolées, IS 5502/1",
-						"rights": "Domaine public",
-						"archival_history": null,
-						"published_in": [],
-						"cited_in": []
-					}
+					"title": "Anima (Piccolo dizionario)",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"textstufen_edited": [],
+					"textzeugen_nonedited": [],
+					"archive": "",
+					"archiveCollation": "",
+					"pubSecondary": "",
+					"note": ""
 				},
 				"crossReferences": {
 					"citedDocuments": {},
@@ -42,87 +33,65 @@
 					"citedEntities": {},
 					"linkedEntities": {}
 				},
-				"editorialNotes": {
-					"contentNotes": [],
-					"editorial_comments_1": null,
-					"editorial_comments_2": null
-				},
 				"tei": {
-					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-1",
-					"filename": "A-1-a_1-1.xml"
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
 				},
 				"manuscript": {
-					"rendition": null,
-					"iiif_urls": []
+					"iiif_urls": [
+						"https://iiif.ub.unibe.ch/image/v3.0/786276b3-474f-4ddc-9aba-ac35dab8d2b2",
+						"https://iiif.ub.unibe.ch/image/v3.0/eb3b9809-95b1-4973-b94f-9ac7591c3bc9",
+						"https://iiif.ub.unibe.ch/image/v3.0/51874e69-b7ba-4490-a793-627fa4f79c25"
+					]
+				},
+				"editorialNotes": {},
+				"numPages": null,
+				"pageLimits": {
+					"text": [null, null]
+				},
+				"edition": {
+					"fullyEdited": false
 				}
-			}
-		},
-		"unpublished": {
-			"unpublished_0231": {
-				"slug": "unpublished_0231",
-				"name": "Baltisches Tagebuch IV: Kleine Begegnungen in Danzig, 1937-09-04",
+			},
+			"posthum_0002": {
+				"slug": "posthum_0002",
+				"name": "Aborto (Piccolo dizionario)",
 				"date": {
-					"from": "1937-09-04",
-					"to": "1937-09-04"
+					"from": "2000-01-04",
+					"to": "2000-01-05"
 				},
 				"type": "",
 				"metadata": {
-					"title": "Baltisches Tagebuch IV: Kleine Begegnungen in Danzig, 1937-09-04",
-					"title_full": "Baltisches Tagebuch IV: Kleine Begegnungen in Danzig",
-					"pubDate": "4.9.1937",
-					"pubPlace": "Luzerner Tagblatt ",
-					"Publikationsails (ggfls. um Rubrik ergänzen)": "Nr. 208, S. 9f.",
-					"textstufen_edited": ["unpublished_0230", "unpublished_0006"],
-					"textzeugen_nonedited": ["unpublished_0230"],
+					"title": "Aborto (Piccolo dizionario)",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"textstufen_edited": [],
+					"textzeugen_nonedited": [],
 					"archive": "",
-					"archiveCollation": "\"N: Auf der Schattenseite, S. 112-115",
-					"pubSecondary": " Insel Europa. Ü (poln.) u.d.T. ,,Kr6tkie spotkania w Gdansku\"\". Annemarie Schwarzenbach. Podroz bez celu [Reise ohne Ziel]. Krakow: Zadra/Pro Helvetia, 2002, S. 26-28. Ü (poln.) u.d.T. ,,Kr6tkie spotkania w Gdansku\"\": wysokie obcasy. Gazeta 23.11.2002, Nr. 47, S. 35, 37.\"",
+					"archiveCollation": "",
+					"pubSecondary": "",
 					"note": ""
 				},
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
-					"citedEntities": {
-						"people": ["person_0160", "person_0619"],
-						"places": [
-							"place_0010",
-							"place_0017",
-							"place_0059",
-							"place_0855",
-							"place_0856",
-							"place_0857"
-						],
-						"orgs": [
-							"organisation_0002",
-							"organisation_0199",
-							"organisation_0260",
-							"organisation_0261",
-							"organisation_0198"
-						],
-						"bibls": ["UM3L78NJ"],
-						"keywords": []
-					},
-					"linkedEntities": {
-						"places": ["place_0017"],
-						"events": ["travel_0015"],
-						"keywords": [
-							"4076374-2",
-							"4016494-9",
-							"4149920-7",
-							"4049275-8",
-							"4060491-3",
-							"4002333-3"
-						]
-					}
+					"citedEntities": {},
+					"linkedEntities": {}
 				},
-				"editorialNotes": {},
 				"tei": {
-					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-1",
-					"filename": "A-1-a_1-1.xml"
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
+					"filename": "A-1-b_6-5_AC003.xml"
 				},
 				"manuscript": {
-					"iiif_urls": []
+					"iiif_urls": [
+						"https://iiif.ub.unibe.ch/image/v3.0/786276b3-474f-4ddc-9aba-ac35dab8d2b2",
+						"https://iiif.ub.unibe.ch/image/v3.0/eb3b9809-95b1-4973-b94f-9ac7591c3bc9",
+						"https://iiif.ub.unibe.ch/image/v3.0/51874e69-b7ba-4490-a793-627fa4f79c25"
+					]
 				},
+				"editorialNotes": {},
 				"numPages": null,
 				"pageLimits": {
 					"text": [null, null]
@@ -132,26 +101,64 @@
 				}
 			}
 		},
-		"published": {
-			"published_0001": {
-				"slug": "Published 0001",
-				"name": "Beiträge zur Geschichte des Oberengadins",
+		"unpublished": {
+			"unpublished_0001": {
+				"slug": "unpublished_0001",
+				"name": "Eloisa",
 				"date": {
-					"from": "9999-01-01",
-					"to": "9999-12-31"
+					"from": "2000-01-04",
+					"to": "2000-01-05"
 				},
-				"type": "Published",
+				"type": "",
 				"metadata": {
-					"title": "Beiträge zur Geschichte des Oberengadins",
-					"pubDate": "9999-01-01",
-					"title_full": "Beiträge zur Geschichte des Oberengadins",
-					"pubPlace": "Some place",
-					"pubDetails": "",
+					"title": "Eloisa",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
 					"textstufen_edited": [],
 					"textzeugen_nonedited": [],
-					"unpublished": [],
-					"published": [],
-					"posthum": [],
+					"archive": "",
+					"archiveCollation": "",
+					"pubSecondary": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"tei": {
+					"path": "A-1/A-1-b/A-1-b_7/A-1-b_7-8",
+					"filename": "A-1-b_7-8.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				},
+				"editorialNotes": {},
+				"numPages": null,
+				"pageLimits": {
+					"text": [null, null]
+				},
+				"edition": {
+					"fullyEdited": false
+				}
+			},
+			"unpublished_0002": {
+				"slug": "unpublished_0002",
+				"name": "Prefazione per “Gli altri”",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Gli altri, prima parte",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"textstufen_edited": [],
+					"textzeugen_nonedited": [],
 					"archive": "",
 					"archiveCollation": "",
 					"pubSecondary": "",
@@ -168,10 +175,183 @@
 					"filename": "A-1-a_1-1.xml"
 				},
 				"manuscript": {
-					"iiif_urls": ["https://iiif.ub.unibe.ch/image/v3/schwarzenbach/published_0001_0006.tif"]
+					"iiif_urls": []
 				},
 				"editorialNotes": {},
 				"numPages": null,
+				"pageLimits": {
+					"text": [null, null]
+				},
+				"edition": {
+					"fullyEdited": false
+				}
+			},
+			"unpublished_0003": {
+				"slug": "unpublished_0003",
+				"name": "Vittorini et la nouvelle prose italienne",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Vittorini et la nouvelle prose italienne",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"textstufen_edited": [],
+					"textzeugen_nonedited": [],
+					"archive": "",
+					"archiveCollation": "",
+					"pubSecondary": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"tei": {
+					"path": "A-5/A-5-b/A-5-b_1",
+					"filename": "A-5-b_1.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				},
+				"editorialNotes": {},
+				"numPages": null,
+				"pageLimits": {
+					"text": [null, null]
+				},
+				"edition": {
+					"fullyEdited": false
+				}
+			},
+			"unpublished_0004": {
+				"slug": "unpublished_0004",
+				"name": "La strega",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "La strega",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"textstufen_edited": [],
+					"textzeugen_nonedited": [],
+					"archive": "",
+					"archiveCollation": "",
+					"pubSecondary": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"tei": {
+					"path": "A-1/A-1-b/A-1-b_1/A-1-b_1-2",
+					"filename": "A-1-b_1-2.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				},
+				"editorialNotes": {},
+				"numPages": null,
+				"pageLimits": {
+					"text": [null, null]
+				},
+				"edition": {
+					"fullyEdited": false
+				}
+			}
+		},
+		"published": {
+			"published_0001": {
+				"slug": "published_0001",
+				"name": "Carson McCullers. Eine junge amerikanische Schriftstellerin setzt sich durch",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Carson McCullers. Eine junge amerikanische Schriftstellerin setzt sich durch",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"textstufen_edited": [],
+					"textzeugen_nonedited": [],
+					"archive": "",
+					"archiveCollation": "",
+					"pubSecondary": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"tei": {
+					"path": "A-5/A-5-a/A-5-a_13",
+					"filename": "A-5-a_13.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				},
+				"editorialNotes": {},
+				"numPages": null,
+				"pageLimits": {
+					"text": [null, null]
+				},
+				"edition": {
+					"fullyEdited": false
+				}
+			},
+			"published_0002": {
+				"slug": "published_0002",
+				"name": "Gli altri, prima parte",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Gli altri, prima parte",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"textstufen_edited": [],
+					"textzeugen_nonedited": [],
+					"archive": "",
+					"archiveCollation": "",
+					"pubSecondary": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"tei": {
+					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-4",
+					"filename": "A-1-a_1-4.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				},
+				"editorialNotes": {},
+				"numPages": null,
+				"pageLimits": {
+					"text": [null, null]
+				},
 				"edition": {
 					"fullyEdited": false
 				}
