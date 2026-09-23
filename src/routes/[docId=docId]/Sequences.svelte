@@ -88,10 +88,9 @@
 	}
 	function checkVisible(itemId: TDocKeys, seqToggle = sequenceToggle) {
 		return (
-			(seqToggle.letters && itemId.includes('letter')) ||
-			(seqToggle.smallforms && itemId.includes('smallform')) ||
-			(seqToggle.longforms && itemId.includes('longform')) ||
-			(seqToggle.photos && itemId.includes('photo'))
+			(seqToggle.posthum && itemId.includes('posthum')) ||
+			(seqToggle.unpublished && itemId.includes('unpublished')) ||
+			(seqToggle.published && itemId.includes('published'))
 		);
 	}
 
@@ -237,44 +236,27 @@
 				isCurrent ? 'gap-6 px-3' : 'gap-3 px-3'
 			]}
 		>
-			{#if resType === 'photos'}
-				<IIIF_Thumb
-					url={resDoc?.faksimile?.iiif_image_emanuscripta}
-					iiif_imageAPI_width={200}
-					blur={resDoc?.manuscript?.rendition?.blur ? true : false}
-					classesContainer="w-max"
-					//! FIX grayscale-0 (not working)
-					classes={`min-h-2 mx-2 my-1 flex justify-center items-center group-hover:grayscale-0!
+			<IIIF_Thumb
+				url={resDoc?.manuscript?.iiif_urls[0]}
+				iiif_imageAPI_width={200}
+				classesContainer=""
+				classes={`min-h-2  mx-2 my-1 flex justify-center items-center group-hover:grayscale-0!
 						${isCurrent ? 'grayscale-0!' : ''}
 						`}
-					imgClasses={` ${isCurrent ? 'max-h-32 max-w-40' : 'max-h-20 max-w-30'}`}
-				/>
-				<div class={['flex w-max grow flex-col', isCurrent ? 'max-w-60' : 'max-w-40']}>
+				imgClasses={` ${isCurrent ? 'max-h-32 max-w-40' : 'max-h-20 max-w-30'}`}
+				// classes="max-h-20 max-w-20 group-hover:grayscale-0!"
+			/>
+			<div class={['flex w-max grow flex-col', isCurrent ? 'max-w-60' : 'max-w-40']}>
+				{#if resType === 'posthum'}
+					<span class="line-clamp-2"
+						>{printDateRange(resDoc?.metadata.date.from, resDoc?.metadata.date.to)}</span
+					>
 					<span class="line-clamp-2">{resDoc?.name}</span>
-				</div>
-			{:else}
-				<IIIF_Thumb
-					url={resDoc?.manuscript?.iiif_urls[0]}
-					iiif_imageAPI_width={200}
-					classesContainer=""
-					classes={`min-h-2  mx-2 my-1 flex justify-center items-center group-hover:grayscale-0!
-						${isCurrent ? 'grayscale-0!' : ''}
-						`}
-					imgClasses={` ${isCurrent ? 'max-h-32 max-w-40' : 'max-h-20 max-w-30'}`}
-					// classes="max-h-20 max-w-20 group-hover:grayscale-0!"
-				/>
-				<div class={['flex w-max grow flex-col', isCurrent ? 'max-w-60' : 'max-w-40']}>
-					{#if resType === 'letters'}
-						<span class="line-clamp-2"
-							>{printDateRange(resDoc?.metadata.date.from, resDoc?.metadata.date.to)}</span
-						>
-						<span class="line-clamp-2">{resDoc?.name}</span>
-					{:else}
-						<span class="line-clamp-2">{resDoc?.metadata?.title_full}</span>
-						<span class="line-clamp-1">{resDoc?.metadata?.pubDate}</span>
-					{/if}
-				</div>
-			{/if}
+				{:else}
+					<span class="line-clamp-2">{resDoc?.metadata?.title_full}</span>
+					<span class="line-clamp-1">{resDoc?.metadata?.pubDate}</span>
+				{/if}
+			</div>
 		</div>
 	</a>
 {/snippet}
@@ -449,17 +431,14 @@
 		<!-- Sequence Toggles (Switches) -->
 		<!-- {#if isSelectedValidSeq} -->
 		<div class="mb-6 flex w-full flex-wrap items-center justify-center gap-3">
-			<Checkbox bind:checked={sequenceToggle.letters} classesLabel="text-base"
-				>{dict_docs.letters.label_plural}</Checkbox
+			<Checkbox bind:checked={sequenceToggle.posthum} classesLabel="text-base"
+				>{dict_docs.posthum.label_plural}</Checkbox
 			>
-			<Checkbox bind:checked={sequenceToggle.smallforms} classesLabel="text-base"
-				>{dict_docs.smallforms.label_plural}</Checkbox
+			<Checkbox bind:checked={sequenceToggle.unpublished} classesLabel="text-base"
+				>{dict_docs.unpublished.label_plural}</Checkbox
 			>
-			<Checkbox bind:checked={sequenceToggle.longforms} classesLabel="text-base"
-				>{dict_docs.longforms.label_plural}</Checkbox
-			>
-			<Checkbox bind:checked={sequenceToggle.photos} classesLabel="text-base"
-				>{dict_docs.photos.label_plural}</Checkbox
+			<Checkbox bind:checked={sequenceToggle.published} classesLabel="text-base"
+				>{dict_docs.published.label_plural}</Checkbox
 			>
 		</div>
 		<!-- {/if} -->
@@ -482,29 +461,20 @@
 		)}
 			{@const itemsBeforeIds = (seqMatching[seqType]?.[seqKey]?.docsBefore as TDocKeys[]) || []}
 			{@const itemsAfterIds = (seqMatching[seqType]?.[seqKey]?.docsAfter as TDocKeys[]) || []}
-			{@const nLetters = filterVisible([docId, ...itemsBeforeIds, ...itemsAfterIds], {
-				letters: true,
-				smallforms: false,
-				longforms: false,
-				photos: false
+			{@const nPosthum = filterVisible([docId, ...itemsBeforeIds, ...itemsAfterIds], {
+				posthum: true,
+				unpublished: false,
+				published: false
 			}).length}
-			{@const nSmallforms = filterVisible([docId, ...itemsBeforeIds, ...itemsAfterIds], {
-				letters: false,
-				smallforms: true,
-				longforms: false,
-				photos: false
+			{@const nUnpublished = filterVisible([docId, ...itemsBeforeIds, ...itemsAfterIds], {
+				posthum: false,
+				unpublished: true,
+				published: false
 			}).length}
-			{@const nLongforms = filterVisible([docId, ...itemsBeforeIds, ...itemsAfterIds], {
-				letters: false,
-				smallforms: false,
-				longforms: true,
-				photos: false
-			}).length}
-			{@const nPhotos = filterVisible([docId, ...itemsBeforeIds, ...itemsAfterIds], {
-				letters: false,
-				smallforms: false,
-				longforms: false,
-				photos: true
+			{@const nPublished = filterVisible([docId, ...itemsBeforeIds, ...itemsAfterIds], {
+				posthum: false,
+				unpublished: false,
+				published: true
 			}).length}
 			{#snippet docCountPart(
 				count: number,
@@ -532,28 +502,22 @@
 			{/snippet}
 			<div class={['inline-block w-full flex-col items-start py-1 text-dark-70', classes]}>
 				{@render docCountPart(
-					nLetters,
-					dict_docs.letters,
-					sequenceToggle.letters,
+					nPosthum,
+					dict_docs.posthum,
+					sequenceToggle.posthum,
 					true,
-					nSmallforms + nLongforms + nPhotos === 0
+					nUnpublished + nPublished === 0
 				)}{@render docCountPart(
-					nSmallforms,
-					dict_docs.smallforms,
-					sequenceToggle.smallforms,
-					nLetters === 0,
-					nLongforms + nPhotos === 0
+					nUnpublished,
+					dict_docs.unpublished,
+					sequenceToggle.unpublished,
+					nPosthum === 0,
+					nPublished === 0
 				)}{@render docCountPart(
-					nLongforms,
-					dict_docs.longforms,
-					sequenceToggle.longforms,
-					nLetters + nSmallforms === 0,
-					nPhotos === 0
-				)}{@render docCountPart(
-					nPhotos,
-					dict_docs.photos,
-					sequenceToggle.photos,
-					nLetters + nSmallforms + nLongforms === 0,
+					nPublished,
+					dict_docs.published,
+					sequenceToggle.published,
+					nPosthum + nUnpublished === 0,
 					true
 				)}
 			</div>

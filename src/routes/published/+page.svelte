@@ -1,19 +1,19 @@
 <script lang="ts">
 	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
-	import type { TSeqSmallformsKeys } from '$lib/types/TSequences';
+	import type { TSeqUnpublishedKeys } from '$lib/types/TSequences';
 	import { resolve } from '$app/paths';
 	import { dict_docs as dictDoc } from '$lib/dictionaries/dict_docs.json';
 	import DocumentsNav from '$lib/components/DocumentsNav.svelte';
 
-	let seqData = $derived(seqAll.smallforms);
+	let seqData = $derived(seqAll.unpublished);
 </script>
 
 <!-- Series -->
-{#snippet keyList(keys: TSeqSmallformsKeys[])}
+{#snippet keyList(keys: TSeqUnpublishedKeys[])}
 	<div class={['preset-btn-list items-center justify-center', '--spacing-sm']}>
 		{#each keys as key (key)}
 			<a class="preset-btn-round --normal" href={resolve(`/${key}` as any)}
-				>{seqData[key as TSeqSmallformsKeys].name}</a
+				>{seqData[key as TSeqUnpublishedKeys].name}</a
 			>
 		{/each}
 	</div>
@@ -21,7 +21,7 @@
 
 <div class={['z-100 mx-auto flex max-w-300 flex-col gap-10 bg-background px-10']}>
 	<!-- Navigation -->
-	<DocumentsNav docType="smallforms" />
+	<DocumentsNav docType="published" />
 	<div class={['flex gap-10 py-5']}>
 		<!-- Published -->
 		<div class="flex flex-col gap-7">
@@ -37,7 +37,7 @@
 				{@render keyList(
 					Object.keys(seqData).filter((key) => {
 						return (key as string) === 'published_all';
-					}) as TSeqSmallformsKeys[]
+					}) as TSeqUnpublishedKeys[]
 				)}
 			</div>
 		</div>

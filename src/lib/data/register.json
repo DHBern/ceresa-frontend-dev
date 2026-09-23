@@ -1097,7 +1097,7 @@
 				"dateDeath": "1938",
 				"type": ["people_cat_3", "people_cat_4"],
 				"orgIds": ["organisation_0008"],
-				"note": "Laut smallform_0285, Schwarzenbachs erster Publikation zu Saladin, stellte dessen Bruder Peter im Mai 1937 den Kontakt zu \"Gog\" her. Laut <rs type=\"smallform\" key=\"smallform_0226\">Bei Studenten aus vier Ländern\"</rs> beherrschte er fliessend Deutsch. Offenbar hat er laut smallform_285 die Expedition mit Saldin selbst nicht, jedoch eine andere, eine deutsche Expedition begleitet (http://www.alpklubspb.ru/persona/harlampiev.htm). Über die Todesursachen 1938 ist nichts Genaueres bekannt (ev. hier weitere Informationen auf russisch: https://www.youtube.com/live/XafkoYx0Y_g)."
+				"note": "Laut unpublished_0285, Schwarzenbachs erster Publikation zu Saladin, stellte dessen Bruder Peter im Mai 1937 den Kontakt zu \"Gog\" her. Laut <rs type=\"unpublished\" key=\"unpublished_0226\">Bei Studenten aus vier Ländern\"</rs> beherrschte er fliessend Deutsch. Offenbar hat er laut unpublished_285 die Expedition mit Saldin selbst nicht, jedoch eine andere, eine deutsche Expedition begleitet (http://www.alpklubspb.ru/persona/harlampiev.htm). Über die Todesursachen 1938 ist nichts Genaueres bekannt (ev. hier weitere Informationen auf russisch: https://www.youtube.com/live/XafkoYx0Y_g)."
 			},
 			"person_0102": {
 				"name": "Alamae, Jan",
@@ -1601,7 +1601,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0033"],
-				"note": "Über Vren Högger, die eine Replik auf Schwarzenbachs Wandervogel-Artikel \"Zur Mädchenfrage\" (smallform_0002) verfasst hat, sind keine weiteren Informationen bekannt. Aufgrund des Inhalts ihrer Replik lässt sich auf eine persönlich Bekanntschaft mit Schwarzenbach im Rahmen der Wandervogel-Bewegung schliessen."
+				"note": "Über Vren Högger, die eine Replik auf Schwarzenbachs Wandervogel-Artikel \"Zur Mädchenfrage\" (unpublished_0002) verfasst hat, sind keine weiteren Informationen bekannt. Aufgrund des Inhalts ihrer Replik lässt sich auf eine persönlich Bekanntschaft mit Schwarzenbach im Rahmen der Wandervogel-Bewegung schliessen."
 			},
 			"person_0144": {
 				"name": "König von Schweden, Gustav V.",
@@ -1806,7 +1806,7 @@
 				"type": ["people_cat_10"],
 				"orgIds": ["organisation_0002"],
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"person_0161": {
 				"name": "al-Mansūr, Abū Dschaʿfar al-Mansūr",
@@ -2121,7 +2121,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_17"],
 				"orgIds": null,
-				"note": "Ev. Anspielung auf diese Sagengestalt in Schwarzenbachs Figur \"Gavan\", smallform_003"
+				"note": "Ev. Anspielung auf diese Sagengestalt in Schwarzenbachs Figur \"Gavan\", unpublished_003"
 			},
 			"person_0187": {
 				"name": "Wagner, Richard",
@@ -6537,7 +6537,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0272 und smallform_0246"
+				"note": "unpublished_0272 und unpublished_0246"
 			},
 			"person_0555": {
 				"name": "Carrol, Mary",
@@ -6549,7 +6549,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0272 und smallform_0246"
+				"note": "unpublished_0272 und unpublished_0246"
 			},
 			"person_0556": {
 				"name": "Tefferteller, Ralph",
@@ -6561,7 +6561,7 @@
 				"dateDeath": "1988",
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0245 und smallform_0246"
+				"note": "unpublished_0245 und unpublished_0246"
 			},
 			"person_0557": {
 				"name": "Jones, John Henry",
@@ -6573,7 +6573,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0246"
+				"note": "unpublished_0246"
 			},
 			"person_0558": {
 				"name": "Ruby",
@@ -6585,7 +6585,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0246"
+				"note": "unpublished_0246"
 			},
 			"person_0559": {
 				"name": "Spright",
@@ -6597,7 +6597,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0246"
+				"note": "unpublished_0246"
 			},
 			"person_0560": {
 				"name": "Hoboken (Kuh)",
@@ -6609,7 +6609,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0246"
+				"note": "unpublished_0246"
 			},
 			"person_0561": {
 				"name": "Anny",
@@ -6621,7 +6621,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0246"
+				"note": "unpublished_0246"
 			},
 			"person_0562": {
 				"name": "Marlow, Bob",
@@ -6633,7 +6633,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0246"
+				"note": "unpublished_0246"
 			},
 			"person_0563": {
 				"name": "Tick",
@@ -6645,7 +6645,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": ["organisation_0089"],
-				"note": "smallform_0246"
+				"note": "unpublished_0246"
 			},
 			"person_0564": {
 				"name": "Lawrence , Thomas Edward",
@@ -6765,7 +6765,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "smallform_0267"
+				"note": "unpublished_0267"
 			},
 			"person_0574": {
 				"name": "Sutton, Frank",
@@ -6777,7 +6777,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "smallform_0267"
+				"note": "unpublished_0267"
 			},
 			"person_0575": {
 				"name": "Mannings",
@@ -6789,7 +6789,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "smallform_0267"
+				"note": "unpublished_0267"
 			},
 			"person_0576": {
 				"name": "Strickland",
@@ -6801,7 +6801,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "smallform_0267"
+				"note": "unpublished_0267"
 			},
 			"person_0577": {
 				"name": "Boney, John Floyd",
@@ -6813,7 +6813,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "smallform_0267"
+				"note": "unpublished_0267"
 			},
 			"person_0578": {
 				"name": "Jacobs",
@@ -6825,7 +6825,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "smallform_0267; auch Fotografien"
+				"note": "unpublished_0267; auch Fotografien"
 			},
 			"person_0579": {
 				"name": "Zweig, Stefan",
@@ -6897,7 +6897,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": null,
-				"note": "smallform_0175; kein GND-Eintrag bzw. nur Nachname des Pächters bekannt"
+				"note": "unpublished_0175; kein GND-Eintrag bzw. nur Nachname des Pächters bekannt"
 			},
 			"person_0585": {
 				"name": "Jefferson, Thomas",
@@ -7294,7 +7294,7 @@
 				"type": ["people_cat_3"],
 				"orgIds": null,
 				"note": "Kein GND-Eintrag, Zufallsbekannte in Danzig (taucht ev. nur einmal auf).",
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"person_0620": {
 				"name": "Feist/Faist, Hans",
@@ -7498,7 +7498,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274"
+				"note": "kein GND-Eintrag; unpublished_0274"
 			},
 			"person_0637": {
 				"name": "Bates, Ruby",
@@ -7510,7 +7510,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274"
+				"note": "kein GND-Eintrag; unpublished_0274"
 			},
 			"person_0638": {
 				"name": "Carter, Lester",
@@ -7522,7 +7522,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274"
+				"note": "kein GND-Eintrag; unpublished_0274"
 			},
 			"person_0639": {
 				"name": "Norris, Clarence",
@@ -7534,7 +7534,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274; Scottsboro Boys"
+				"note": "kein GND-Eintrag; unpublished_0274; Scottsboro Boys"
 			},
 			"person_0640": {
 				"name": "Powell, Ozie",
@@ -7546,7 +7546,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274; Scottsboro Boys"
+				"note": "kein GND-Eintrag; unpublished_0274; Scottsboro Boys"
 			},
 			"person_0641": {
 				"name": "Roberson, Willie",
@@ -7558,7 +7558,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274; Scottsboro Boys"
+				"note": "kein GND-Eintrag; unpublished_0274; Scottsboro Boys"
 			},
 			"person_0642": {
 				"name": "Williams, Eugene",
@@ -7570,7 +7570,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274; Scottsboro Boys"
+				"note": "kein GND-Eintrag; unpublished_0274; Scottsboro Boys"
 			},
 			"person_0643": {
 				"name": "Montgomery, Olen",
@@ -7582,7 +7582,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274; Scottsboro Boys"
+				"note": "kein GND-Eintrag; unpublished_0274; Scottsboro Boys"
 			},
 			"person_0644": {
 				"name": "Wright, Andy",
@@ -7594,7 +7594,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274; Scottsboro Boys"
+				"note": "kein GND-Eintrag; unpublished_0274; Scottsboro Boys"
 			},
 			"person_0645": {
 				"name": "Wright, Roy",
@@ -7606,7 +7606,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274; Scottsboro Boys"
+				"note": "kein GND-Eintrag; unpublished_0274; Scottsboro Boys"
 			},
 			"person_0646": {
 				"name": "Weems, Charlie",
@@ -7618,7 +7618,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_10"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0274; Scottsboro Boys"
+				"note": "kein GND-Eintrag; unpublished_0274; Scottsboro Boys"
 			},
 			"person_0647": {
 				"name": "Patterson, Haywood",
@@ -7678,7 +7678,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0303"
+				"note": "kein GND-Eintrag; unpublished_0303"
 			},
 			"person_0652": {
 				"name": "Marx, Karl",
@@ -8038,7 +8038,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_16"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0283"
+				"note": "kein GND-Eintrag; unpublished_0283"
 			},
 			"person_0682": {
 				"name": "Zuppinger, Mabel",
@@ -8110,7 +8110,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0432"
+				"note": "kein GND-Eintrag; unpublished_0432"
 			},
 			"person_0688": {
 				"name": "Pétain, Philippe",
@@ -8314,7 +8314,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "AS nennt ihn ihren 'Araberfreund', der ihr aus Batavia (Jakarta) 1934 täglich Briefe schreibe, vgl. letter_0275 - ev. der 'Kurdenprinz', der nach der ersten Persienreise um ihre Hand anghalten hat?"
+				"note": "AS nennt ihn ihren 'Araberfreund', der ihr aus Batavia (Jakarta) 1934 täglich Briefe schreibe, vgl. posthum_0275 - ev. der 'Kurdenprinz', der nach der ersten Persienreise um ihre Hand anghalten hat?"
 			},
 			"person_0705": {
 				"name": "Martin, Clara",
@@ -8578,7 +8578,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0211"
+				"note": "kein GND-Eintrag; unpublished_0211"
 			},
 			"person_0727": {
 				"name": "Ms. Held",
@@ -8590,7 +8590,7 @@
 				"dateDeath": null,
 				"type": ["people_cat_3"],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; smallform_0211"
+				"note": "kein GND-Eintrag; unpublished_0211"
 			},
 			"person_0728": {
 				"name": "Ivens, Joris",
@@ -9706,7 +9706,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "Unklare Person in letter_431, bei Alexis nachfragen"
+				"note": "Unklare Person in posthum_431, bei Alexis nachfragen"
 			},
 			"person_0821": {
 				"name": "?, Anna",
@@ -9718,7 +9718,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "Unklare Person in letter_431, bei Alexis nachfragen. Ev. Dienstbotin."
+				"note": "Unklare Person in posthum_431, bei Alexis nachfragen. Ev. Dienstbotin."
 			},
 			"person_0822": {
 				"name": "?, Babette",
@@ -9730,7 +9730,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "Unklare Person in letter_431, bei Alexis nachfragen"
+				"note": "Unklare Person in posthum_431, bei Alexis nachfragen"
 			},
 			"person_0823": {
 				"name": "Schwizer, ?",
@@ -9742,7 +9742,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "Unklare Person in letter_431, bei Alexis nachfragen"
+				"note": "Unklare Person in posthum_431, bei Alexis nachfragen"
 			},
 			"person_0824": {
 				"name": "Straub, ?",
@@ -9754,7 +9754,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "Unklare Person in letter_433, bei Alexis nachfragen. Ev. Dienst- oder Lehperson."
+				"note": "Unklare Person in posthum_433, bei Alexis nachfragen. Ev. Dienst- oder Lehperson."
 			},
 			"person_0825": {
 				"name": "Schuegraf, Karl",
@@ -11182,7 +11182,7 @@
 				"dateDeath": null,
 				"type": [],
 				"orgIds": null,
-				"note": "kein GND-Eintrag; Panda an der New Yorker Weltausstellung smallform_0419"
+				"note": "kein GND-Eintrag; Panda an der New Yorker Weltausstellung unpublished_0419"
 			},
 			"person_0944": {
 				"name": "Pascal, Blaise",
@@ -11417,7 +11417,7 @@
 				"coords": null,
 				"country": "DE",
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"place_0011": {
 				"name": "Bern",
@@ -11488,7 +11488,7 @@
 				"coords": null,
 				"country": null,
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"place_0018": {
 				"name": "Darmstadt",
@@ -11909,7 +11909,7 @@
 				"coords": null,
 				"country": null,
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"place_0060": {
 				"name": "Philadelphia",
@@ -19780,7 +19780,7 @@
 				"coords": [54.40723, 18.55363],
 				"country": null,
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"place_0856": {
 				"name": "Zoppot",
@@ -19791,7 +19791,7 @@
 				"coords": [54.4418, 18.56003],
 				"country": null,
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"place_0857": {
 				"name": "Dresden",
@@ -19802,7 +19802,7 @@
 				"coords": [51.05089, 13.73832],
 				"country": null,
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"place_0858": {
 				"name": "Westerplatte",
@@ -21583,7 +21583,7 @@
 					"from": "1931",
 					"to": "1931"
 				},
-				"docs": ["smallform_0028"]
+				"docs": ["unpublished_0028"]
 			},
 			"travel_0003": {
 				"type": ["events_cat_2"],
@@ -21602,7 +21602,7 @@
 					"from": "1932-07",
 					"to": "1932-08"
 				},
-				"docs": ["letter_0004", "letter_0340"]
+				"docs": ["posthum_0004", "posthum_0340"]
 			},
 			"travel_0005": {
 				"type": ["events_cat_2"],
@@ -21612,7 +21612,7 @@
 					"from": "1933",
 					"to": "1933"
 				},
-				"docs": ["letter_0012", "letter_0298", "letter_0335"]
+				"docs": ["posthum_0012", "posthum_0298", "posthum_0335"]
 			},
 			"travel_0006": {
 				"type": ["events_cat_2"],
@@ -21622,7 +21622,7 @@
 					"from": "1933",
 					"to": "1933"
 				},
-				"docs": ["letter_0014"]
+				"docs": ["posthum_0014"]
 			},
 			"travel_0007": {
 				"type": ["events_cat_2"],
@@ -21633,38 +21633,38 @@
 					"to": "1934"
 				},
 				"docs": [
-					"smallform_0052",
-					"smallform_0055",
-					"smallform_0072",
-					"smallform_0084",
-					"smallform_0087",
-					"smallform_0090",
-					"smallform_0115",
-					"smallform_0146",
-					"smallform_0148",
-					"smallform_0150",
-					"smallform_0154",
-					"smallform_0167",
-					"smallform_0171",
-					"smallform_0193",
-					"smallform_0302",
-					"letter_0020",
-					"letter_0022",
-					"letter_0023",
-					"letter_0024",
-					"letter_0025",
-					"letter_0026",
-					"letter_0027",
-					"letter_0028",
-					"letter_0070",
-					"letter_0071",
-					"letter_0243",
-					"letter_0248",
-					"letter_0252",
-					"letter_0260",
-					"letter_0276",
-					"letter_0277",
-					"letter_0281"
+					"unpublished_0052",
+					"unpublished_0055",
+					"unpublished_0072",
+					"unpublished_0084",
+					"unpublished_0087",
+					"unpublished_0090",
+					"unpublished_0115",
+					"unpublished_0146",
+					"unpublished_0148",
+					"unpublished_0150",
+					"unpublished_0154",
+					"unpublished_0167",
+					"unpublished_0171",
+					"unpublished_0193",
+					"unpublished_0302",
+					"posthum_0020",
+					"posthum_0022",
+					"posthum_0023",
+					"posthum_0024",
+					"posthum_0025",
+					"posthum_0026",
+					"posthum_0027",
+					"posthum_0028",
+					"posthum_0070",
+					"posthum_0071",
+					"posthum_0243",
+					"posthum_0248",
+					"posthum_0252",
+					"posthum_0260",
+					"posthum_0276",
+					"posthum_0277",
+					"posthum_0281"
 				]
 			},
 			"travel_0008": {
@@ -21675,7 +21675,7 @@
 					"from": "1934",
 					"to": "1934"
 				},
-				"docs": ["letter_0036", "letter_0037", "letter_0272", "letter_0274"]
+				"docs": ["posthum_0036", "posthum_0037", "posthum_0272", "posthum_0274"]
 			},
 			"travel_0009": {
 				"type": ["events_cat_2"],
@@ -21686,20 +21686,20 @@
 					"to": "1935"
 				},
 				"docs": [
-					"smallform_0130",
-					"smallform_0147",
-					"smallform_0149",
-					"smallform_0150",
-					"smallform_0302",
-					"letter_0035",
-					"letter_0039",
-					"letter_0040",
-					"letter_0041",
-					"letter_0042",
-					"letter_0043",
-					"letter_0073",
-					"letter_0249",
-					"letter_0407"
+					"unpublished_0130",
+					"unpublished_0147",
+					"unpublished_0149",
+					"unpublished_0150",
+					"unpublished_0302",
+					"posthum_0035",
+					"posthum_0039",
+					"posthum_0040",
+					"posthum_0041",
+					"posthum_0042",
+					"posthum_0043",
+					"posthum_0073",
+					"posthum_0249",
+					"posthum_0407"
 				]
 			},
 			"travel_0010": {
@@ -21720,34 +21720,34 @@
 					"to": "1935"
 				},
 				"docs": [
-					"smallform_0115",
-					"smallform_0151",
-					"smallform_0152",
-					"smallform_0155",
-					"smallform_0157",
-					"smallform_0158",
-					"smallform_0160",
-					"smallform_0161",
-					"smallform_0164",
-					"smallform_0165",
-					"smallform_0166",
-					"smallform_0168",
-					"smallform_0169",
-					"smallform_0170",
-					"smallform_0172",
-					"smallform_0189",
-					"smallform_0193",
-					"letter_0053",
-					"letter_0054",
-					"letter_0075",
-					"letter_0076",
-					"letter_0254",
-					"letter_0255",
-					"letter_0263",
-					"letter_0265",
-					"letter_0270",
-					"letter_0271",
-					"letter_0390"
+					"unpublished_0115",
+					"unpublished_0151",
+					"unpublished_0152",
+					"unpublished_0155",
+					"unpublished_0157",
+					"unpublished_0158",
+					"unpublished_0160",
+					"unpublished_0161",
+					"unpublished_0164",
+					"unpublished_0165",
+					"unpublished_0166",
+					"unpublished_0168",
+					"unpublished_0169",
+					"unpublished_0170",
+					"unpublished_0172",
+					"unpublished_0189",
+					"unpublished_0193",
+					"posthum_0053",
+					"posthum_0054",
+					"posthum_0075",
+					"posthum_0076",
+					"posthum_0254",
+					"posthum_0255",
+					"posthum_0263",
+					"posthum_0265",
+					"posthum_0270",
+					"posthum_0271",
+					"posthum_0390"
 				]
 			},
 			"travel_0012": {
@@ -21767,7 +21767,7 @@
 					"from": "1936",
 					"to": "1936"
 				},
-				"docs": ["smallform_0173", "smallform_0174", "letter_0078"]
+				"docs": ["unpublished_0173", "unpublished_0174", "posthum_0078"]
 			},
 			"travel_0014": {
 				"type": ["events_cat_2"],
@@ -21778,35 +21778,35 @@
 					"to": "1937-02-24"
 				},
 				"docs": [
-					"smallform_0175",
-					"smallform_0176",
-					"smallform_0177",
-					"smallform_0178",
-					"smallform_0185",
-					"smallform_0186",
-					"smallform_0187",
-					"smallform_0188",
-					"smallform_0190",
-					"smallform_0191",
-					"smallform_0195",
-					"smallform_0197",
-					"smallform_0199",
-					"smallform_0201",
-					"smallform_0205",
-					"smallform_0206",
-					"smallform_0207",
-					"smallform_0210",
-					"smallform_0211",
-					"smallform_0212",
-					"letter_0080",
-					"letter_0081",
-					"letter_0284",
-					"letter_0292",
-					"letter_0293",
-					"letter_0296",
-					"letter_0370",
-					"letter_0381",
-					"letter_0388"
+					"unpublished_0175",
+					"unpublished_0176",
+					"unpublished_0177",
+					"unpublished_0178",
+					"unpublished_0185",
+					"unpublished_0186",
+					"unpublished_0187",
+					"unpublished_0188",
+					"unpublished_0190",
+					"unpublished_0191",
+					"unpublished_0195",
+					"unpublished_0197",
+					"unpublished_0199",
+					"unpublished_0201",
+					"unpublished_0205",
+					"unpublished_0206",
+					"unpublished_0207",
+					"unpublished_0210",
+					"unpublished_0211",
+					"unpublished_0212",
+					"posthum_0080",
+					"posthum_0081",
+					"posthum_0284",
+					"posthum_0292",
+					"posthum_0293",
+					"posthum_0296",
+					"posthum_0370",
+					"posthum_0381",
+					"posthum_0388"
 				]
 			},
 			"travel_0015": {
@@ -21818,16 +21818,16 @@
 					"to": "1937-07"
 				},
 				"docs": [
-					"smallform_0223",
-					"smallform_0224",
-					"smallform_0225",
-					"smallform_0226",
-					"smallform_0227",
-					"smallform_0229",
-					"smallform_0231",
-					"smallform_0232",
-					"smallform_0233",
-					"smallform_0270"
+					"unpublished_0223",
+					"unpublished_0224",
+					"unpublished_0225",
+					"unpublished_0226",
+					"unpublished_0227",
+					"unpublished_0229",
+					"unpublished_0231",
+					"unpublished_0232",
+					"unpublished_0233",
+					"unpublished_0270"
 				]
 			},
 			"travel_0016": {
@@ -21839,37 +21839,37 @@
 					"to": "1938-02-12"
 				},
 				"docs": [
-					"smallform_0242",
-					"smallform_0243",
-					"smallform_0244",
-					"smallform_0245",
-					"smallform_0246",
-					"smallform_0248",
-					"smallform_0265",
-					"smallform_0266",
-					"smallform_0267",
-					"smallform_0271",
-					"smallform_0272",
-					"smallform_0274",
-					"smallform_0279",
-					"smallform_0280",
-					"smallform_0281",
-					"smallform_0282",
-					"smallform_0283",
-					"smallform_0284",
-					"smallform_0302",
-					"smallform_0303",
-					"letter_0083",
-					"letter_0084",
-					"letter_0086",
-					"letter_0119",
-					"letter_0256",
-					"letter_0257",
-					"letter_0294",
-					"letter_0355",
-					"letter_0357",
-					"letter_0361",
-					"letter_0365"
+					"unpublished_0242",
+					"unpublished_0243",
+					"unpublished_0244",
+					"unpublished_0245",
+					"unpublished_0246",
+					"unpublished_0248",
+					"unpublished_0265",
+					"unpublished_0266",
+					"unpublished_0267",
+					"unpublished_0271",
+					"unpublished_0272",
+					"unpublished_0274",
+					"unpublished_0279",
+					"unpublished_0280",
+					"unpublished_0281",
+					"unpublished_0282",
+					"unpublished_0283",
+					"unpublished_0284",
+					"unpublished_0302",
+					"unpublished_0303",
+					"posthum_0083",
+					"posthum_0084",
+					"posthum_0086",
+					"posthum_0119",
+					"posthum_0256",
+					"posthum_0257",
+					"posthum_0294",
+					"posthum_0355",
+					"posthum_0357",
+					"posthum_0361",
+					"posthum_0365"
 				]
 			},
 			"travel_0017": {
@@ -21880,7 +21880,7 @@
 					"from": "1938-03-20",
 					"to": "1938-03-21"
 				},
-				"docs": ["smallform_0276"]
+				"docs": ["unpublished_0276"]
 			},
 			"travel_0018": {
 				"type": ["events_cat_2"],
@@ -21900,12 +21900,12 @@
 					"to": "1940"
 				},
 				"docs": [
-					"smallform_0310",
-					"smallform_0321",
-					"smallform_0399",
-					"smallform_0420",
-					"smallform_0471",
-					"letter_0261"
+					"unpublished_0310",
+					"unpublished_0321",
+					"unpublished_0399",
+					"unpublished_0420",
+					"unpublished_0471",
+					"posthum_0261"
 				]
 			},
 			"travel_0020": {
@@ -21917,44 +21917,44 @@
 					"to": "1941"
 				},
 				"docs": [
-					"smallform_0413",
-					"smallform_0414",
-					"smallform_0416",
-					"smallform_0417",
-					"smallform_0419",
-					"smallform_0420",
-					"smallform_0421",
-					"smallform_0423",
-					"smallform_0426",
-					"smallform_0431",
-					"smallform_0432",
-					"smallform_0435",
-					"smallform_0436",
-					"smallform_0437",
-					"smallform_0438",
-					"smallform_0463",
-					"smallform_0465",
-					"smallform_0467",
-					"smallform_0469",
-					"smallform_0470",
-					"smallform_0471",
-					"smallform_0474",
-					"smallform_0480",
-					"smallform_0484",
-					"smallform_0485",
-					"smallform_0488",
-					"smallform_0494",
-					"letter_0113",
-					"letter_0121",
-					"letter_0241",
-					"letter_0242",
-					"letter_0262",
-					"letter_0264",
-					"letter_0266",
-					"letter_0351",
-					"letter_0360",
-					"letter_0367",
-					"letter_0369"
+					"unpublished_0413",
+					"unpublished_0414",
+					"unpublished_0416",
+					"unpublished_0417",
+					"unpublished_0419",
+					"unpublished_0420",
+					"unpublished_0421",
+					"unpublished_0423",
+					"unpublished_0426",
+					"unpublished_0431",
+					"unpublished_0432",
+					"unpublished_0435",
+					"unpublished_0436",
+					"unpublished_0437",
+					"unpublished_0438",
+					"unpublished_0463",
+					"unpublished_0465",
+					"unpublished_0467",
+					"unpublished_0469",
+					"unpublished_0470",
+					"unpublished_0471",
+					"unpublished_0474",
+					"unpublished_0480",
+					"unpublished_0484",
+					"unpublished_0485",
+					"unpublished_0488",
+					"unpublished_0494",
+					"posthum_0113",
+					"posthum_0121",
+					"posthum_0241",
+					"posthum_0242",
+					"posthum_0262",
+					"posthum_0264",
+					"posthum_0266",
+					"posthum_0351",
+					"posthum_0360",
+					"posthum_0367",
+					"posthum_0369"
 				]
 			},
 			"travel_0021": {
@@ -21965,7 +21965,7 @@
 					"from": "1941",
 					"to": "1942"
 				},
-				"docs": ["smallform_0529", "letter_0186"]
+				"docs": ["unpublished_0529", "posthum_0186"]
 			},
 			"travel_0022": {
 				"type": ["events_cat_2"],
@@ -21993,7 +21993,7 @@
 					"from": "1941",
 					"to": "1941"
 				},
-				"docs": ["smallform_0471", "letter_0113", "letter_0351"]
+				"docs": ["unpublished_0471", "posthum_0113", "posthum_0351"]
 			},
 			"travel_0025": {
 				"type": ["events_cat_2"],
@@ -22003,7 +22003,7 @@
 					"from": "1942",
 					"to": "1942"
 				},
-				"docs": ["letter_0401", "letter_0426", "letter_0428", "letter_0430"]
+				"docs": ["posthum_0401", "posthum_0426", "posthum_0428", "posthum_0430"]
 			},
 			"event_0001": {
 				"type": ["events_cat_1"],
@@ -22022,7 +22022,7 @@
 					"from": "1931",
 					"to": "1933"
 				},
-				"docs": ["letter_0003", "letter_0005", "letter_0127", "letter_0253", "letter_0338"]
+				"docs": ["posthum_0003", "posthum_0005", "posthum_0127", "posthum_0253", "posthum_0338"]
 			},
 			"event_0003": {
 				"type": ["events_cat_1"],
@@ -22033,22 +22033,22 @@
 					"to": "1942"
 				},
 				"docs": [
-					"letter_0079",
-					"letter_0080",
-					"letter_0084",
-					"letter_0087",
-					"letter_0119",
-					"letter_0247",
-					"letter_0257",
-					"letter_0292",
-					"letter_0293",
-					"letter_0294",
-					"letter_0295",
-					"letter_0339",
-					"letter_0355",
-					"letter_0377",
-					"letter_0381",
-					"letter_0422"
+					"posthum_0079",
+					"posthum_0080",
+					"posthum_0084",
+					"posthum_0087",
+					"posthum_0119",
+					"posthum_0247",
+					"posthum_0257",
+					"posthum_0292",
+					"posthum_0293",
+					"posthum_0294",
+					"posthum_0295",
+					"posthum_0339",
+					"posthum_0355",
+					"posthum_0377",
+					"posthum_0381",
+					"posthum_0422"
 				]
 			},
 			"event_0004": {
@@ -22059,7 +22059,7 @@
 					"from": "1935-01",
 					"to": "1935-03"
 				},
-				"docs": ["letter_0278", "letter_0402", "letter_0442", "letter_0443"]
+				"docs": ["posthum_0278", "posthum_0402", "posthum_0442", "posthum_0443"]
 			},
 			"event_0005": {
 				"type": ["events_cat_1"],
@@ -22069,7 +22069,7 @@
 					"from": null,
 					"to": null
 				},
-				"docs": ["letter_0056", "letter_0258", "letter_0267", "letter_0268"]
+				"docs": ["posthum_0056", "posthum_0258", "posthum_0267", "posthum_0268"]
 			},
 			"event_0006": {
 				"type": ["events_cat_1"],
@@ -22079,7 +22079,7 @@
 					"from": "1938-03",
 					"to": "1938-05"
 				},
-				"docs": ["letter_0085", "letter_0279", "letter_0280", "letter_0377"]
+				"docs": ["posthum_0085", "posthum_0279", "posthum_0280", "posthum_0377"]
 			},
 			"event_0007": {
 				"type": ["events_cat_1"],
@@ -22089,7 +22089,7 @@
 					"from": "1938-07",
 					"to": "1938-08"
 				},
-				"docs": ["letter_0282", "letter_0476"]
+				"docs": ["posthum_0282", "posthum_0476"]
 			},
 			"event_0008": {
 				"type": ["events_cat_1"],
@@ -22099,7 +22099,7 @@
 					"from": null,
 					"to": null
 				},
-				"docs": ["letter_0404"]
+				"docs": ["posthum_0404"]
 			},
 			"event_0009": {
 				"type": ["events_cat_1"],
@@ -22109,7 +22109,7 @@
 					"from": null,
 					"to": null
 				},
-				"docs": ["smallform_0485", "letter_0266"]
+				"docs": ["unpublished_0485", "posthum_0266"]
 			},
 			"event_0010": {
 				"type": ["events_cat_1"],
@@ -22119,7 +22119,7 @@
 					"from": "1938-10",
 					"to": "1939-01"
 				},
-				"docs": ["letter_0058", "letter_0086", "letter_0244"]
+				"docs": ["posthum_0058", "posthum_0086", "posthum_0244"]
 			}
 		},
 		"orgs": {
@@ -22136,7 +22136,7 @@
 				"gndNumber": "1012979-0",
 				"type": ["orgs_cat_6"],
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"organisation_0003": {
 				"name": "ABC (Zürich)",
@@ -23517,7 +23517,7 @@
 				"gndNumber": "31334-8",
 				"type": ["orgs_cat_6"],
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"organisation_0199": {
 				"name": "SA (Sturmabteilung der NSDAP)",
@@ -23525,7 +23525,7 @@
 				"gndNumber": "63215-6",
 				"type": ["orgs_cat_6"],
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"organisation_0200": {
 				"name": "Bureau International du Travail",
@@ -23665,7 +23665,7 @@
 				"nameVariants": ["Isabella-Grube"],
 				"gndNumber": null,
 				"type": ["orgs_cat_12"],
-				"note": "siehe smallform_0201 und letter_0296"
+				"note": "siehe unpublished_0201 und posthum_0296"
 			},
 			"organisation_0220": {
 				"name": "Lenos-Verlag",
@@ -23953,7 +23953,7 @@
 				"gndNumber": "31336-1",
 				"type": ["orgs_cat_6"],
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"organisation_0261": {
 				"name": "NS-Frauenschaft",
@@ -23961,7 +23961,7 @@
 				"gndNumber": "112157-1",
 				"type": ["orgs_cat_6"],
 				"note": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"organisation_0262": {
 				"name": "OTRACO",
@@ -24290,7 +24290,7 @@
 				"nameVariants": [],
 				"gndNumber": null,
 				"type": ["orgs_cat_3"],
-				"note": "kein GND-Eintrag; smallform_0205"
+				"note": "kein GND-Eintrag; unpublished_0205"
 			},
 			"organisation_0309": {
 				"name": "Pennsylvania Museum of Art Philadelphia",
@@ -24570,7 +24570,7 @@
 				"nameVariants": [],
 				"gndNumber": null,
 				"type": ["orgs_cat_6"],
-				"note": "kein GND-Eintrag (nicht ganz klar, ob damit die Botschaft gemeint ist) siehe Brief an Breslauer letter_0080"
+				"note": "kein GND-Eintrag (nicht ganz klar, ob damit die Botschaft gemeint ist) siehe Brief an Breslauer posthum_0080"
 			},
 			"organisation_0349": {
 				"name": "Ameisenverein Sektion Zürich",
@@ -25223,35 +25223,35 @@
 				"type": [],
 				"authorIds": null,
 				"pubDate": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"VKTJ5RJ7": {
 				"name": "Ferien vom Ich",
 				"type": [],
 				"authorIds": ["person_0002"],
 				"pubDate": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"6FW9GPED": {
 				"name": "Verfilmung",
 				"type": [],
 				"authorIds": null,
 				"pubDate": null,
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"5JXX7VPC": {
 				"name": "Markert 1935",
 				"type": [],
 				"authorIds": null,
 				"pubDate": "1935",
-				"docs": ["smallform_0231"]
+				"docs": ["unpublished_0231"]
 			},
 			"5LE9JAW8": {
 				"name": "Afrikanische Schriften (2012)",
 				"type": ["book"],
 				"authorIds": ["person_0082"],
 				"pubDate": null,
-				"docs": ["smallform_0529"]
+				"docs": ["unpublished_0529"]
 			}
 		},
 		"keywords": {
@@ -25259,30 +25259,30 @@
 				"name": "Aberglaube",
 				"type": [],
 				"gndNumber": "4000096-5",
-				"docs": ["smallform_0130", "smallform_0166"]
+				"docs": ["unpublished_0130", "unpublished_0166"]
 			},
 			"4141014-2": {
 				"name": "Abenteuer",
 				"type": [],
 				"gndNumber": "4141014-2",
-				"docs": ["smallform_0015", "smallform_0090", "smallform_0463"]
+				"docs": ["unpublished_0015", "unpublished_0090", "unpublished_0463"]
 			},
 			"4137441-1": {
 				"name": "Abstinenz",
 				"type": [],
 				"gndNumber": "4137441-1",
-				"docs": ["smallform_0019"]
+				"docs": ["unpublished_0019"]
 			},
 			"4201448-7": {
 				"name": "American dream",
 				"type": [],
 				"gndNumber": "4201448-7",
 				"docs": [
-					"smallform_0243",
-					"smallform_0244",
-					"smallform_0279",
-					"smallform_0435",
-					"smallform_0463"
+					"unpublished_0243",
+					"unpublished_0244",
+					"unpublished_0279",
+					"unpublished_0435",
+					"unpublished_0463"
 				]
 			},
 			"7504355-5": {
@@ -25290,37 +25290,37 @@
 				"type": [],
 				"gndNumber": "7504355-5",
 				"docs": [
-					"smallform_0107",
-					"smallform_0420",
-					"smallform_0432",
-					"smallform_0436",
-					"smallform_0437",
-					"smallform_0463"
+					"unpublished_0107",
+					"unpublished_0420",
+					"unpublished_0432",
+					"unpublished_0436",
+					"unpublished_0437",
+					"unpublished_0463"
 				]
 			},
 			"4002053-8": {
 				"name": "Angst (existenzielle Angst)",
 				"type": [],
 				"gndNumber": "4002053-8",
-				"docs": ["letter_0233", "letter_0280"]
+				"docs": ["posthum_0233", "posthum_0280"]
 			},
 			"4122803-0": {
 				"name": "Antifaschismus",
 				"type": [],
 				"gndNumber": "4122803-0",
 				"docs": [
-					"smallform_0469",
-					"letter_0029",
-					"letter_0121",
-					"letter_0241",
-					"letter_0253",
-					"letter_0266",
-					"letter_0279",
-					"letter_0283",
-					"letter_0287",
-					"letter_0294",
-					"letter_0335",
-					"letter_0420"
+					"unpublished_0469",
+					"posthum_0029",
+					"posthum_0121",
+					"posthum_0241",
+					"posthum_0253",
+					"posthum_0266",
+					"posthum_0279",
+					"posthum_0283",
+					"posthum_0287",
+					"posthum_0294",
+					"posthum_0335",
+					"posthum_0420"
 				]
 			},
 			"4068754-5": {
@@ -25328,12 +25328,12 @@
 				"type": [],
 				"gndNumber": "4068754-5",
 				"docs": [
-					"smallform_0096",
-					"smallform_0152",
-					"smallform_0154",
-					"smallform_0155",
-					"smallform_0168",
-					"smallform_0189"
+					"unpublished_0096",
+					"unpublished_0152",
+					"unpublished_0154",
+					"unpublished_0155",
+					"unpublished_0168",
+					"unpublished_0189"
 				]
 			},
 			"4002333-3": {
@@ -25341,16 +25341,16 @@
 				"type": [],
 				"gndNumber": "4002333-3",
 				"docs": [
-					"smallform_0226",
-					"smallform_0227",
-					"smallform_0276",
-					"letter_0242",
-					"letter_0250",
-					"letter_0281",
-					"letter_0288",
-					"letter_0339",
-					"letter_0407",
-					"letter_0417"
+					"unpublished_0226",
+					"unpublished_0227",
+					"unpublished_0276",
+					"posthum_0242",
+					"posthum_0250",
+					"posthum_0281",
+					"posthum_0288",
+					"posthum_0339",
+					"posthum_0407",
+					"posthum_0417"
 				]
 			},
 			"4142675-7": {
@@ -25368,11 +25368,11 @@
 				"type": [],
 				"gndNumber": "4205756-5",
 				"docs": [
-					"smallform_0178",
-					"smallform_0205",
-					"smallform_0211",
-					"smallform_0267",
-					"smallform_0284"
+					"unpublished_0178",
+					"unpublished_0205",
+					"unpublished_0211",
+					"unpublished_0267",
+					"unpublished_0284"
 				]
 			},
 			"4279705-6": {
@@ -25384,29 +25384,29 @@
 				"name": "Arbeitslager",
 				"type": [],
 				"gndNumber": "4002716-8",
-				"docs": ["smallform_0242"]
+				"docs": ["unpublished_0242"]
 			},
 			"4002730-2": {
 				"name": "Arbeitslosigkeit",
 				"type": [],
 				"gndNumber": "4002730-2",
 				"docs": [
-					"smallform_0176",
-					"smallform_0185",
-					"smallform_0186",
-					"smallform_0187",
-					"smallform_0195",
-					"smallform_0201",
-					"smallform_0205",
-					"smallform_0210",
-					"smallform_0212",
-					"smallform_0244",
-					"smallform_0245",
-					"smallform_0267",
-					"smallform_0279",
-					"smallform_0280",
-					"smallform_0283",
-					"smallform_0284"
+					"unpublished_0176",
+					"unpublished_0185",
+					"unpublished_0186",
+					"unpublished_0187",
+					"unpublished_0195",
+					"unpublished_0201",
+					"unpublished_0205",
+					"unpublished_0210",
+					"unpublished_0212",
+					"unpublished_0244",
+					"unpublished_0245",
+					"unpublished_0267",
+					"unpublished_0279",
+					"unpublished_0280",
+					"unpublished_0283",
+					"unpublished_0284"
 				]
 			},
 			"4002827-6": {
@@ -25414,22 +25414,22 @@
 				"type": [],
 				"gndNumber": "4002827-6",
 				"docs": [
-					"smallform_0096",
-					"smallform_0150",
-					"smallform_0155",
-					"letter_0023",
-					"letter_0024",
-					"letter_0026",
-					"letter_0029",
-					"letter_0068",
-					"letter_0334"
+					"unpublished_0096",
+					"unpublished_0150",
+					"unpublished_0155",
+					"posthum_0023",
+					"posthum_0024",
+					"posthum_0026",
+					"posthum_0029",
+					"posthum_0068",
+					"posthum_0334"
 				]
 			},
 			"4002851-3": {
 				"name": "Architektur",
 				"type": [],
 				"gndNumber": "4002851-3",
-				"docs": ["smallform_0090", "smallform_0197", "smallform_0243"]
+				"docs": ["unpublished_0090", "unpublished_0197", "unpublished_0243"]
 			},
 			"7502947-9": {
 				"name": "Moderne Architektur",
@@ -25440,52 +25440,52 @@
 				"name": "Aristokratie",
 				"type": [],
 				"gndNumber": "4130286-2",
-				"docs": ["smallform_0617"]
+				"docs": ["unpublished_0617"]
 			},
 			"4002963-3": {
 				"name": "Armut",
 				"type": [],
 				"gndNumber": "4002963-3",
 				"docs": [
-					"smallform_0123",
-					"smallform_0178",
-					"smallform_0187",
-					"smallform_0195",
-					"smallform_0201",
-					"smallform_0206",
-					"smallform_0208",
-					"smallform_0210",
-					"smallform_0211",
-					"smallform_0212",
-					"smallform_0243",
-					"smallform_0244",
-					"smallform_0245",
-					"smallform_0246",
-					"smallform_0248",
-					"smallform_0265",
-					"smallform_0266",
-					"smallform_0267",
-					"smallform_0274",
-					"smallform_0282",
-					"smallform_0284",
-					"smallform_0303",
-					"smallform_0421",
-					"smallform_0437",
-					"smallform_0470",
-					"letter_0256"
+					"unpublished_0123",
+					"unpublished_0178",
+					"unpublished_0187",
+					"unpublished_0195",
+					"unpublished_0201",
+					"unpublished_0206",
+					"unpublished_0208",
+					"unpublished_0210",
+					"unpublished_0211",
+					"unpublished_0212",
+					"unpublished_0243",
+					"unpublished_0244",
+					"unpublished_0245",
+					"unpublished_0246",
+					"unpublished_0248",
+					"unpublished_0265",
+					"unpublished_0266",
+					"unpublished_0267",
+					"unpublished_0274",
+					"unpublished_0282",
+					"unpublished_0284",
+					"unpublished_0303",
+					"unpublished_0421",
+					"unpublished_0437",
+					"unpublished_0470",
+					"posthum_0256"
 				]
 			},
 			"4085933-2": {
 				"name": "Armenier",
 				"type": [],
 				"gndNumber": "4085933-2",
-				"docs": ["smallform_0157"]
+				"docs": ["unpublished_0157"]
 			},
 			"4112603-8": {
 				"name": "Artusroman",
 				"type": [],
 				"gndNumber": "4112603-8",
-				"docs": ["smallform_0003"]
+				"docs": ["unpublished_0003"]
 			},
 			"4143260-5": {
 				"name": "Asyl",
@@ -25497,107 +25497,107 @@
 				"type": [],
 				"gndNumber": "4000626-8",
 				"docs": [
-					"smallform_0011",
-					"smallform_0012",
-					"smallform_0013",
-					"smallform_0014",
-					"smallform_0015",
-					"smallform_0016",
-					"smallform_0017",
-					"smallform_0019",
-					"smallform_0022",
-					"smallform_0023",
-					"smallform_0027",
-					"smallform_0029",
-					"smallform_0034",
-					"smallform_0035",
-					"smallform_0038",
-					"smallform_0107",
-					"smallform_0168",
-					"letter_0126"
+					"unpublished_0011",
+					"unpublished_0012",
+					"unpublished_0013",
+					"unpublished_0014",
+					"unpublished_0015",
+					"unpublished_0016",
+					"unpublished_0017",
+					"unpublished_0019",
+					"unpublished_0022",
+					"unpublished_0023",
+					"unpublished_0027",
+					"unpublished_0029",
+					"unpublished_0034",
+					"unpublished_0035",
+					"unpublished_0038",
+					"unpublished_0107",
+					"unpublished_0168",
+					"posthum_0126"
 				]
 			},
 			"4143278-2": {
 				"name": "Asketik",
 				"type": [],
 				"gndNumber": "4143278-2",
-				"docs": ["letter_0052"]
+				"docs": ["posthum_0052"]
 			},
 			"4129464-6": {
 				"name": "Ausgrabung",
 				"type": [],
 				"gndNumber": "4129464-6",
-				"docs": ["smallform_0150", "letter_0023", "letter_0024", "letter_0026", "letter_0029"]
+				"docs": ["unpublished_0150", "posthum_0023", "posthum_0024", "posthum_0026", "posthum_0029"]
 			},
 			"4076001-7": {
 				"name": "Auto",
 				"type": [],
 				"gndNumber": "4076001-7",
 				"docs": [
-					"smallform_0084",
-					"smallform_0165",
-					"smallform_0177",
-					"smallform_0178",
-					"smallform_0188",
-					"smallform_0197",
-					"smallform_0199",
-					"smallform_0205",
-					"smallform_0212",
-					"smallform_0243",
-					"smallform_0244",
-					"smallform_0266",
-					"smallform_0267",
-					"smallform_0276",
-					"smallform_0413",
-					"smallform_0485",
-					"smallform_0529",
-					"smallform_0611",
-					"letter_0065",
-					"letter_0066",
-					"letter_0080",
-					"letter_0235",
-					"letter_0286",
-					"letter_0390"
+					"unpublished_0084",
+					"unpublished_0165",
+					"unpublished_0177",
+					"unpublished_0178",
+					"unpublished_0188",
+					"unpublished_0197",
+					"unpublished_0199",
+					"unpublished_0205",
+					"unpublished_0212",
+					"unpublished_0243",
+					"unpublished_0244",
+					"unpublished_0266",
+					"unpublished_0267",
+					"unpublished_0276",
+					"unpublished_0413",
+					"unpublished_0485",
+					"unpublished_0529",
+					"unpublished_0611",
+					"posthum_0065",
+					"posthum_0066",
+					"posthum_0080",
+					"posthum_0235",
+					"posthum_0286",
+					"posthum_0390"
 				]
 			},
 			"4003516-5": {
 				"name": "Aufforstung",
 				"type": [],
 				"gndNumber": "4003516-5",
-				"docs": ["smallform_0191", "smallform_0281"]
+				"docs": ["unpublished_0191", "unpublished_0281"]
 			},
 			"4003677-7": {
 				"name": "Ausbeutung",
 				"type": [],
 				"gndNumber": "4003677-7",
 				"docs": [
-					"smallform_0186",
-					"smallform_0191",
-					"smallform_0246",
-					"smallform_0266",
-					"smallform_0274",
-					"smallform_0303",
-					"smallform_0470"
+					"unpublished_0186",
+					"unpublished_0191",
+					"unpublished_0246",
+					"unpublished_0266",
+					"unpublished_0274",
+					"unpublished_0303",
+					"unpublished_0470"
 				]
 			},
 			"4003846-4": {
 				"name": "Aussenpolitik",
 				"type": [],
 				"gndNumber": "4003846-4",
-				"docs": ["smallform_0435", "smallform_0438", "smallform_0469", "letter_0121"]
+				"docs": ["unpublished_0435", "unpublished_0438", "unpublished_0469", "posthum_0121"]
 			},
 			"4004973-5": {
 				"name": "Baudenkmal",
 				"type": [],
 				"gndNumber": "4004973-5",
 				"docs": [
-					"smallform_0096",
-					"smallform_0115",
-					"smallform_0146",
-					"smallform_0150",
-					"smallform_0154",
-					"smallform_0155",
-					"smallform_0617"
+					"unpublished_0096",
+					"unpublished_0115",
+					"unpublished_0146",
+					"unpublished_0150",
+					"unpublished_0154",
+					"unpublished_0155",
+					"unpublished_0617"
 				]
 			},
 			"4216372-9": {
@@ -25605,14 +25605,14 @@
 				"type": [],
 				"gndNumber": "4216372-9",
 				"docs": [
-					"smallform_0148",
-					"smallform_0151",
-					"smallform_0155",
-					"smallform_0165",
-					"smallform_0168",
-					"smallform_0171",
-					"smallform_0189",
-					"smallform_0321"
+					"unpublished_0148",
+					"unpublished_0151",
+					"unpublished_0155",
+					"unpublished_0165",
+					"unpublished_0168",
+					"unpublished_0171",
+					"unpublished_0189",
+					"unpublished_0321"
 				]
 			},
 			"4144619-7": {
@@ -25620,53 +25620,53 @@
 				"type": [],
 				"gndNumber": "4144619-7",
 				"docs": [
-					"smallform_0029",
-					"smallform_0130",
-					"smallform_0160",
-					"smallform_0169",
-					"smallform_0170",
-					"smallform_0172",
-					"smallform_0207",
-					"smallform_0611",
-					"smallform_0613",
-					"smallform_0614",
-					"smallform_0615",
-					"letter_0331"
+					"unpublished_0029",
+					"unpublished_0130",
+					"unpublished_0160",
+					"unpublished_0169",
+					"unpublished_0170",
+					"unpublished_0172",
+					"unpublished_0207",
+					"unpublished_0611",
+					"unpublished_0613",
+					"unpublished_0614",
+					"unpublished_0615",
+					"posthum_0331"
 				]
 			},
 			"4005694-6": {
 				"name": "Bergsteigen",
 				"type": [],
 				"gndNumber": "4005694-6",
-				"docs": ["smallform_0614", "smallform_0615", "letter_0283"]
+				"docs": ["unpublished_0614", "unpublished_0615", "posthum_0283"]
 			},
 			"4191412-0": {
 				"name": "Berühmte Persönlichkeit",
 				"type": [],
 				"gndNumber": "4191412-0",
 				"docs": [
-					"smallform_0028",
-					"smallform_0189",
-					"smallform_0197",
-					"smallform_0209",
-					"smallform_0494",
-					"smallform_0615",
-					"letter_0067",
-					"letter_0230",
-					"letter_0332"
+					"unpublished_0028",
+					"unpublished_0189",
+					"unpublished_0197",
+					"unpublished_0209",
+					"unpublished_0494",
+					"unpublished_0615",
+					"posthum_0067",
+					"posthum_0230",
+					"posthum_0332"
 				]
 			},
 			"4786807-7": {
 				"name": "Beschleunigung",
 				"type": [],
 				"gndNumber": "4786807-7",
-				"docs": ["smallform_0177"]
+				"docs": ["unpublished_0177"]
 			},
 			"4204578-2": {
 				"name": "Bestattungsritus",
 				"type": [],
 				"gndNumber": "4204578-2",
-				"docs": ["smallform_0146", "smallform_0147"]
+				"docs": ["unpublished_0146", "unpublished_0147"]
 			},
 			"4006077-9": {
 				"name": "Bestseller",
@@ -25678,12 +25678,12 @@
 				"type": [],
 				"gndNumber": "4006650-2",
 				"docs": [
-					"smallform_0131",
-					"smallform_0246",
-					"smallform_0270",
-					"smallform_0272",
-					"smallform_0282",
-					"smallform_0488"
+					"unpublished_0131",
+					"unpublished_0246",
+					"unpublished_0270",
+					"unpublished_0272",
+					"unpublished_0282",
+					"unpublished_0488"
 				]
 			},
 			"1149977590": {
@@ -25695,7 +25695,7 @@
 				"name": "Blinder Passagier",
 				"type": [],
 				"gndNumber": "4334973-0",
-				"docs": ["smallform_0242"]
+				"docs": ["unpublished_0242"]
 			},
 			"4007502-3": {
 				"name": "Börse",
@@ -25706,27 +25706,27 @@
 				"name": "Bürokratie",
 				"type": [],
 				"gndNumber": "4008822-4",
-				"docs": ["smallform_0242"]
+				"docs": ["unpublished_0242"]
 			},
 			"4069722-8": {
 				"name": "Bürgertum",
 				"type": [],
 				"gndNumber": "4069722-8",
-				"docs": ["smallform_0019", "smallform_0027"]
+				"docs": ["unpublished_0019", "unpublished_0027"]
 			},
 			"4010074-1": {
 				"name": "Christentum",
 				"type": [],
 				"gndNumber": "4010074-1",
 				"docs": [
-					"smallform_0115",
-					"smallform_0147",
-					"smallform_0158",
-					"smallform_0161",
-					"smallform_0166",
-					"smallform_0174",
-					"smallform_0208",
-					"smallform_0209"
+					"unpublished_0115",
+					"unpublished_0147",
+					"unpublished_0158",
+					"unpublished_0161",
+					"unpublished_0166",
+					"unpublished_0174",
+					"unpublished_0208",
+					"unpublished_0209"
 				]
 			},
 			"4132275-7": {
@@ -25739,64 +25739,64 @@
 				"type": [],
 				"gndNumber": "4011413-2",
 				"docs": [
-					"smallform_0027",
-					"smallform_0175",
-					"smallform_0185",
-					"smallform_0187",
-					"smallform_0190",
-					"smallform_0207",
-					"smallform_0210",
-					"smallform_0242",
-					"smallform_0279",
-					"smallform_0284",
-					"smallform_0417",
-					"smallform_0419",
-					"smallform_0420",
-					"smallform_0426",
-					"smallform_0432",
-					"smallform_0435",
-					"smallform_0438",
-					"smallform_0465",
-					"smallform_0469",
-					"letter_0058",
-					"letter_0121",
-					"letter_0241",
-					"letter_0360"
+					"unpublished_0027",
+					"unpublished_0175",
+					"unpublished_0185",
+					"unpublished_0187",
+					"unpublished_0190",
+					"unpublished_0207",
+					"unpublished_0210",
+					"unpublished_0242",
+					"unpublished_0279",
+					"unpublished_0284",
+					"unpublished_0417",
+					"unpublished_0419",
+					"unpublished_0420",
+					"unpublished_0426",
+					"unpublished_0432",
+					"unpublished_0435",
+					"unpublished_0438",
+					"unpublished_0465",
+					"unpublished_0469",
+					"posthum_0058",
+					"posthum_0121",
+					"posthum_0241",
+					"posthum_0360"
 				]
 			},
 			"4011453-3": {
 				"name": "Denkmal",
 				"type": [],
 				"gndNumber": "4011453-3",
-				"docs": ["smallform_0188", "smallform_0280"]
+				"docs": ["unpublished_0188", "unpublished_0280"]
 			},
 			"4011474-0": {
 				"name": "Depression",
 				"type": [],
 				"gndNumber": "4011474-0",
-				"docs": ["letter_0058", "letter_0086"]
+				"docs": ["posthum_0058", "posthum_0086"]
 			},
 			"4149920-7": {
 				"name": "Diktatur",
 				"type": [],
 				"gndNumber": "4149920-7",
 				"docs": [
-					"smallform_0027",
-					"smallform_0123",
-					"smallform_0185",
-					"smallform_0190",
-					"smallform_0276",
-					"smallform_0426",
-					"smallform_0432",
-					"smallform_0465",
-					"smallform_0484"
+					"unpublished_0027",
+					"unpublished_0123",
+					"unpublished_0185",
+					"unpublished_0190",
+					"unpublished_0276",
+					"unpublished_0426",
+					"unpublished_0432",
+					"unpublished_0465",
+					"unpublished_0484"
 				]
 			},
 			"1028576870": {
 				"name": "Distanz",
 				"type": [],
 				"gndNumber": "1028576870",
-				"docs": ["smallform_0087", "smallform_0090", "smallform_0421"]
+				"docs": ["unpublished_0087", "unpublished_0090", "unpublished_0421"]
 			},
 			"4012653-5": {
 				"name": "Dokumentarfilm",
@@ -25807,150 +25807,150 @@
 				"name": "Dollar",
 				"type": [],
 				"gndNumber": "4745694-2",
-				"docs": ["smallform_0212"]
+				"docs": ["unpublished_0212"]
 			},
 			"4198658-1": {
 				"name": "Drogenkonsum",
 				"type": [],
 				"gndNumber": "4198658-1",
 				"docs": [
-					"smallform_0188",
-					"letter_0058",
-					"letter_0086",
-					"letter_0243",
-					"letter_0258",
-					"letter_0262",
-					"letter_0267",
-					"letter_0268",
-					"letter_0273",
-					"letter_0276",
-					"letter_0279",
-					"letter_0280",
-					"letter_0286",
-					"letter_0290",
-					"letter_0291",
-					"letter_0294",
-					"letter_0424",
-					"letter_0443"
+					"unpublished_0188",
+					"posthum_0058",
+					"posthum_0086",
+					"posthum_0243",
+					"posthum_0258",
+					"posthum_0262",
+					"posthum_0267",
+					"posthum_0268",
+					"posthum_0273",
+					"posthum_0276",
+					"posthum_0279",
+					"posthum_0280",
+					"posthum_0286",
+					"posthum_0290",
+					"posthum_0291",
+					"posthum_0294",
+					"posthum_0424",
+					"posthum_0443"
 				]
 			},
 			"4122122-9": {
 				"name": "Drogenentzug",
 				"type": [],
 				"gndNumber": "4122122-9",
-				"docs": ["letter_0058", "letter_0085", "letter_0258", "letter_0424", "letter_0443"]
+				"docs": ["posthum_0058", "posthum_0085", "posthum_0258", "posthum_0424", "posthum_0443"]
 			},
 			"4309343-7": {
 				"name": "Dschungel",
 				"type": [],
 				"gndNumber": "4309343-7",
-				"docs": ["smallform_0130", "smallform_0529"]
+				"docs": ["unpublished_0130", "unpublished_0529"]
 			},
 			"4150868-3": {
 				"name": "Dunkelheit",
 				"type": [],
 				"gndNumber": "4150868-3",
-				"docs": ["smallform_0244", "letter_0297"]
+				"docs": ["unpublished_0244", "posthum_0297"]
 			},
 			"4013630-9": {
 				"name": "Ehe",
 				"type": [],
 				"gndNumber": "4013630-9",
-				"docs": ["letter_0429"]
+				"docs": ["posthum_0429"]
 			},
 			"4013960-8": {
 				"name": "Einwanderung",
 				"type": [],
 				"gndNumber": "4013960-8",
 				"docs": [
-					"smallform_0205",
-					"smallform_0242",
-					"smallform_0245",
-					"smallform_0279",
-					"smallform_0494"
+					"unpublished_0205",
+					"unpublished_0242",
+					"unpublished_0245",
+					"unpublished_0279",
+					"unpublished_0494"
 				]
 			},
 			"4333082-4": {
 				"name": "Entfernung",
 				"type": [],
 				"gndNumber": "4333082-4",
-				"docs": ["smallform_0084", "smallform_0414", "smallform_0480"]
+				"docs": ["unpublished_0084", "unpublished_0414", "unpublished_0480"]
 			},
 			"4014748-4": {
 				"name": "Engel",
 				"type": [],
 				"gndNumber": "4014748-4",
-				"docs": ["smallform_0033", "smallform_0107"]
+				"docs": ["unpublished_0033", "unpublished_0107"]
 			},
 			"4015332-0": {
 				"name": "Ernährung",
 				"type": [],
 				"gndNumber": "4015332-0",
 				"docs": [
-					"smallform_0028",
-					"smallform_0177",
-					"smallform_0195",
-					"smallform_0248",
-					"smallform_0303",
-					"smallform_0612",
-					"letter_0078",
-					"letter_0431"
+					"unpublished_0028",
+					"unpublished_0177",
+					"unpublished_0195",
+					"unpublished_0248",
+					"unpublished_0303",
+					"unpublished_0612",
+					"posthum_0078",
+					"posthum_0431"
 				]
 			},
 			"4079163-4": {
 				"name": "Erster Weltkrieg",
 				"type": [],
 				"gndNumber": "4079163-4",
-				"docs": ["smallform_0030", "smallform_0158", "smallform_0474", "letter_0403", "letter_0406"]
+				"docs": ["unpublished_0030", "unpublished_0158", "unpublished_0474", "posthum_0403", "posthum_0406"]
 			},
 			"4015959-0": {
 				"name": "Exil",
 				"type": [],
 				"gndNumber": "4015959-0",
 				"docs": [
-					"smallform_0173",
-					"smallform_0197",
-					"smallform_0494",
-					"letter_0067",
-					"letter_0081",
-					"letter_0241",
-					"letter_0243",
-					"letter_0253",
-					"letter_0254",
-					"letter_0255",
-					"letter_0262",
-					"letter_0264",
-					"letter_0280",
-					"letter_0283",
-					"letter_0284",
-					"letter_0286",
-					"letter_0287",
-					"letter_0290",
-					"letter_0291",
-					"letter_0295",
-					"letter_0298",
-					"letter_0336",
-					"letter_0339",
-					"letter_0420"
+					"unpublished_0173",
+					"unpublished_0197",
+					"unpublished_0494",
+					"posthum_0067",
+					"posthum_0081",
+					"posthum_0241",
+					"posthum_0243",
+					"posthum_0253",
+					"posthum_0254",
+					"posthum_0255",
+					"posthum_0262",
+					"posthum_0264",
+					"posthum_0280",
+					"posthum_0283",
+					"posthum_0284",
+					"posthum_0286",
+					"posthum_0287",
+					"posthum_0290",
+					"posthum_0291",
+					"posthum_0295",
+					"posthum_0298",
+					"posthum_0336",
+					"posthum_0339",
+					"posthum_0420"
 				]
 			},
 			"4015972-3": {
 				"name": "Existenzphilosophie",
 				"type": [],
 				"gndNumber": "4015972-3",
-				"docs": ["smallform_0321"]
+				"docs": ["unpublished_0321"]
 			},
 			"4727032-9": {
 				"name": "Existenzkampf",
 				"type": [],
 				"gndNumber": "4727032-9",
-				"docs": ["smallform_0191", "smallform_0201", "smallform_0284"]
+				"docs": ["unpublished_0191", "unpublished_0201", "unpublished_0284"]
 			},
 			"4015993-0": {
 				"name": "Exotismus",
 				"type": [],
 				"gndNumber": "4015993-0",
-				"docs": ["smallform_0130"]
+				"docs": ["unpublished_0130"]
 			},
 			"4153349-5": {
 				"name": "Expeditionsbergsteigen",
@@ -25961,81 +25961,81 @@
 				"name": "Expressionismus",
 				"type": [],
 				"gndNumber": "4016044-0",
-				"docs": ["smallform_0030"]
+				"docs": ["unpublished_0030"]
 			},
 			"4113480-1": {
 				"name": "Europa",
 				"type": [],
 				"gndNumber": "4113480-1",
 				"docs": [
-					"smallform_0173",
-					"smallform_0177",
-					"smallform_0207",
-					"smallform_0225",
-					"smallform_0228",
-					"smallform_0232",
-					"smallform_0413",
-					"smallform_0414",
-					"smallform_0421",
-					"smallform_0426",
-					"smallform_0469",
-					"smallform_0471",
-					"smallform_0474",
-					"smallform_0480",
-					"letter_0121",
-					"letter_0241",
-					"letter_0242",
-					"letter_0262",
-					"letter_0266"
+					"unpublished_0173",
+					"unpublished_0177",
+					"unpublished_0207",
+					"unpublished_0225",
+					"unpublished_0228",
+					"unpublished_0232",
+					"unpublished_0413",
+					"unpublished_0414",
+					"unpublished_0421",
+					"unpublished_0426",
+					"unpublished_0469",
+					"unpublished_0471",
+					"unpublished_0474",
+					"unpublished_0480",
+					"posthum_0121",
+					"posthum_0241",
+					"posthum_0242",
+					"posthum_0262",
+					"posthum_0266"
 				]
 			},
 			"4200132-8": {
 				"name": "Eurozentrismus",
 				"type": [],
 				"gndNumber": "4200132-8",
-				"docs": ["smallform_0052", "smallform_0055", "smallform_0421", "letter_0054"]
+				"docs": ["unpublished_0052", "unpublished_0055", "unpublished_0421", "posthum_0054"]
 			},
 			"4217343-7": {
 				"name": "Fabrikgebäude",
 				"type": [],
 				"gndNumber": "4217343-7",
-				"docs": ["smallform_0201", "smallform_0206"]
+				"docs": ["unpublished_0201", "unpublished_0206"]
 			},
 			"4153665-4": {
 				"name": "Familienroman",
 				"type": [],
 				"gndNumber": "4153665-4",
-				"docs": ["smallform_0107"]
+				"docs": ["unpublished_0107"]
 			},
 			"4016494-9": {
 				"name": "Faschismus",
 				"type": [],
 				"gndNumber": "4016494-9",
 				"docs": [
-					"smallform_0123",
-					"smallform_0185",
-					"smallform_0223",
-					"smallform_0226",
-					"smallform_0276",
-					"smallform_0426",
-					"smallform_0469",
-					"smallform_0617",
-					"letter_0022",
-					"letter_0052",
-					"letter_0058",
-					"letter_0072",
-					"letter_0086",
-					"letter_0241",
-					"letter_0250",
-					"letter_0253",
-					"letter_0272",
-					"letter_0274",
-					"letter_0277",
-					"letter_0279",
-					"letter_0287",
-					"letter_0292",
-					"letter_0407",
-					"letter_0420"
+					"unpublished_0123",
+					"unpublished_0185",
+					"unpublished_0223",
+					"unpublished_0226",
+					"unpublished_0276",
+					"unpublished_0426",
+					"unpublished_0469",
+					"unpublished_0617",
+					"posthum_0022",
+					"posthum_0052",
+					"posthum_0058",
+					"posthum_0072",
+					"posthum_0086",
+					"posthum_0241",
+					"posthum_0250",
+					"posthum_0253",
+					"posthum_0272",
+					"posthum_0274",
+					"posthum_0277",
+					"posthum_0279",
+					"posthum_0287",
+					"posthum_0292",
+					"posthum_0407",
+					"posthum_0420"
 				]
 			},
 			"4222126-2": {
@@ -26053,98 +26053,98 @@
 				"type": [],
 				"gndNumber": "4017102-4",
 				"docs": [
-					"smallform_0033",
-					"smallform_0034",
-					"smallform_0035",
-					"smallform_0038",
-					"smallform_0283",
-					"smallform_0484",
-					"letter_0067",
-					"letter_0210",
-					"letter_0334",
-					"letter_0338",
-					"letter_0346",
-					"letter_0347"
+					"unpublished_0033",
+					"unpublished_0034",
+					"unpublished_0035",
+					"unpublished_0038",
+					"unpublished_0283",
+					"unpublished_0484",
+					"posthum_0067",
+					"posthum_0210",
+					"posthum_0334",
+					"posthum_0338",
+					"posthum_0346",
+					"posthum_0347"
 				]
 			},
 			"4017310-0": {
 				"name": "Fischerei",
 				"type": [],
 				"gndNumber": "4017310-0",
-				"docs": ["smallform_0130", "smallform_0169", "smallform_0421", "smallform_0423"]
+				"docs": ["unpublished_0130", "unpublished_0169", "unpublished_0421", "unpublished_0423"]
 			},
 			"4017604-6": {
 				"name": "Flüchtling",
 				"type": [],
 				"gndNumber": "4017604-6",
-				"docs": ["smallform_0227", "smallform_0471", "smallform_0494", "letter_0351"]
+				"docs": ["unpublished_0227", "unpublished_0471", "unpublished_0494", "posthum_0351"]
 			},
 			"4154675-1": {
 				"name": "Flucht",
 				"type": [],
 				"gndNumber": "4154675-1",
-				"docs": ["smallform_0157", "smallform_0199", "smallform_0242", "letter_0086"]
+				"docs": ["unpublished_0157", "unpublished_0199", "unpublished_0242", "posthum_0086"]
 			},
 			"4017672-1": {
 				"name": "Flugzeug",
 				"type": [],
 				"gndNumber": "4017672-1",
-				"docs": ["smallform_0084"]
+				"docs": ["unpublished_0084"]
 			},
 			"4131972-2": {
 				"name": "Fluss",
 				"type": [],
 				"gndNumber": "4131972-2",
 				"docs": [
-					"smallform_0165",
-					"smallform_0244",
-					"smallform_0283",
-					"smallform_0463",
-					"letter_0357"
+					"unpublished_0165",
+					"unpublished_0244",
+					"unpublished_0283",
+					"unpublished_0463",
+					"posthum_0357"
 				]
 			},
 			"4017985-0": {
 				"name": "Fortschritt",
 				"type": [],
 				"gndNumber": "4017985-0",
-				"docs": ["smallform_0055", "smallform_0087", "smallform_0185"]
+				"docs": ["unpublished_0055", "unpublished_0087", "unpublished_0185"]
 			},
 			"4045895-7": {
 				"name": "Fotografie",
 				"type": [],
 				"gndNumber": "4045895-7",
 				"docs": [
-					"smallform_0201",
-					"smallform_0206",
-					"smallform_0224",
-					"smallform_0244",
-					"smallform_0248",
-					"smallform_0266",
-					"smallform_0274",
-					"smallform_0302",
-					"letter_0064",
-					"letter_0065",
-					"letter_0066",
-					"letter_0067",
-					"letter_0070",
-					"letter_0072",
-					"letter_0073",
-					"letter_0074",
-					"letter_0080",
-					"letter_0081",
-					"letter_0082",
-					"letter_0083",
-					"letter_0084",
-					"letter_0085",
-					"letter_0087",
-					"letter_0351",
-					"letter_0355",
-					"letter_0357",
-					"letter_0361",
-					"letter_0365",
-					"letter_0370",
-					"letter_0381",
-					"letter_0388"
+					"unpublished_0201",
+					"unpublished_0206",
+					"unpublished_0224",
+					"unpublished_0244",
+					"unpublished_0248",
+					"unpublished_0266",
+					"unpublished_0274",
+					"unpublished_0302",
+					"posthum_0064",
+					"posthum_0065",
+					"posthum_0066",
+					"posthum_0067",
+					"posthum_0070",
+					"posthum_0072",
+					"posthum_0073",
+					"posthum_0074",
+					"posthum_0080",
+					"posthum_0081",
+					"posthum_0082",
+					"posthum_0083",
+					"posthum_0084",
+					"posthum_0085",
+					"posthum_0087",
+					"posthum_0351",
+					"posthum_0355",
+					"posthum_0357",
+					"posthum_0361",
+					"posthum_0365",
+					"posthum_0370",
+					"posthum_0381",
+					"posthum_0388"
 				]
 			},
 			"7507676-7": {
@@ -26152,14 +26152,14 @@
 				"type": [],
 				"gndNumber": "7507676-7",
 				"docs": [
-					"smallform_0002",
-					"smallform_0028",
-					"smallform_0171",
-					"smallform_0189",
-					"smallform_0302",
-					"smallform_0469",
-					"smallform_0488",
-					"letter_0355"
+					"unpublished_0002",
+					"unpublished_0028",
+					"unpublished_0171",
+					"unpublished_0189",
+					"unpublished_0302",
+					"unpublished_0469",
+					"unpublished_0488",
+					"posthum_0355"
 				]
 			},
 			"4018326-9": {
@@ -26167,15 +26167,15 @@
 				"type": [],
 				"gndNumber": "4018326-9",
 				"docs": [
-					"smallform_0027",
-					"smallform_0084",
-					"smallform_0175",
-					"smallform_0176",
-					"smallform_0186",
-					"smallform_0242",
-					"letter_0241",
-					"letter_0294",
-					"letter_0360"
+					"unpublished_0027",
+					"unpublished_0084",
+					"unpublished_0175",
+					"unpublished_0176",
+					"unpublished_0186",
+					"unpublished_0242",
+					"posthum_0241",
+					"posthum_0294",
+					"posthum_0360"
 				]
 			},
 			"4247924-1": {
@@ -26183,61 +26183,61 @@
 				"type": [],
 				"gndNumber": "4247924-1",
 				"docs": [
-					"smallform_0177",
-					"smallform_0188",
-					"smallform_0283",
-					"smallform_0611",
-					"smallform_0616"
+					"unpublished_0177",
+					"unpublished_0188",
+					"unpublished_0283",
+					"unpublished_0611",
+					"unpublished_0616"
 				]
 			},
 			"4253929-8": {
 				"name": "Fremdenlegion",
 				"type": [],
 				"gndNumber": "4253929-8",
-				"docs": ["smallform_0151"]
+				"docs": ["unpublished_0151"]
 			},
 			"4018421-3": {
 				"name": "Fremdheit",
 				"type": [],
 				"gndNumber": "4018421-3",
-				"docs": ["smallform_0151", "smallform_0197", "smallform_0205", "smallform_0303"]
+				"docs": ["unpublished_0151", "unpublished_0197", "unpublished_0205", "unpublished_0303"]
 			},
 			"4018424-9": {
 				"name": "Fremdsprache",
 				"type": [],
 				"gndNumber": "4018424-9",
-				"docs": ["smallform_0197"]
+				"docs": ["unpublished_0197"]
 			},
 			"4018480-8": {
 				"name": "Freundschaft",
 				"type": [],
 				"gndNumber": "4018480-8",
 				"docs": [
-					"smallform_0001",
-					"smallform_0003",
-					"smallform_0004",
-					"smallform_0013",
-					"smallform_0015",
-					"smallform_0016",
-					"smallform_0131",
-					"letter_0076",
-					"letter_0238",
-					"letter_0264",
-					"letter_0293",
-					"letter_0294",
-					"letter_0296",
-					"letter_0328",
-					"letter_0402",
-					"letter_0407",
-					"letter_0411",
-					"letter_0442"
+					"unpublished_0001",
+					"unpublished_0003",
+					"unpublished_0004",
+					"unpublished_0013",
+					"unpublished_0015",
+					"unpublished_0016",
+					"unpublished_0131",
+					"posthum_0076",
+					"posthum_0238",
+					"posthum_0264",
+					"posthum_0293",
+					"posthum_0294",
+					"posthum_0296",
+					"posthum_0328",
+					"posthum_0402",
+					"posthum_0407",
+					"posthum_0411",
+					"posthum_0442"
 				]
 			},
 			"4135563-5": {
 				"name": "Friede",
 				"type": [],
 				"gndNumber": "4135563-5",
-				"docs": ["smallform_0423"]
+				"docs": ["unpublished_0423"]
 			},
 			"4018537-0": {
 				"name": "Friedhof",
@@ -26248,7 +26248,7 @@
 				"name": "Furcht",
 				"type": [],
 				"gndNumber": "4018944-2",
-				"docs": ["smallform_0414"]
+				"docs": ["unpublished_0414"]
 			},
 			"4019286-6": {
 				"name": "Garten",
@@ -26260,24 +26260,24 @@
 				"type": [],
 				"gndNumber": "4137693-6",
 				"docs": [
-					"smallform_0207",
-					"smallform_0245",
-					"smallform_0246",
-					"smallform_0266",
-					"letter_0256"
+					"unpublished_0207",
+					"unpublished_0245",
+					"unpublished_0246",
+					"unpublished_0266",
+					"posthum_0256"
 				]
 			},
 			"4274032-0": {
 				"name": "Gefangenschaft",
 				"type": [],
 				"gndNumber": "4274032-0",
-				"docs": ["smallform_0419", "smallform_0485"]
+				"docs": ["unpublished_0419", "unpublished_0485"]
 			},
 			"4071628-4": {
 				"name": "Gefängnis",
 				"type": [],
 				"gndNumber": "4071628-4",
-				"docs": ["smallform_0272", "smallform_0274", "smallform_0284", "letter_0266"]
+				"docs": ["unpublished_0272", "unpublished_0274", "unpublished_0284", "posthum_0266"]
 			},
 			"4156282-3": {
 				"name": "Gegensatz",
@@ -26288,51 +26288,51 @@
 				"name": "Geistige Landesverteidigung",
 				"type": [],
 				"gndNumber": "1244179744",
-				"docs": ["smallform_0276", "letter_0121", "letter_0355"]
+				"docs": ["unpublished_0276", "posthum_0121", "posthum_0355"]
 			},
 			"4156416-9": {
 				"name": "Geld",
 				"type": [],
 				"gndNumber": "4156416-9",
 				"docs": [
-					"smallform_0177",
-					"smallform_0225",
-					"smallform_0232",
-					"letter_0056",
-					"letter_0242",
-					"letter_0254",
-					"letter_0255",
-					"letter_0256",
-					"letter_0257",
-					"letter_0262",
-					"letter_0265",
-					"letter_0283",
-					"letter_0292",
-					"letter_0295",
-					"letter_0296",
-					"letter_0334",
-					"letter_0335",
-					"letter_0336",
-					"letter_0338",
-					"letter_0346",
-					"letter_0347",
-					"letter_0348",
-					"letter_0367",
-					"letter_0381",
-					"letter_0420"
+					"unpublished_0177",
+					"unpublished_0225",
+					"unpublished_0232",
+					"posthum_0056",
+					"posthum_0242",
+					"posthum_0254",
+					"posthum_0255",
+					"posthum_0256",
+					"posthum_0257",
+					"posthum_0262",
+					"posthum_0265",
+					"posthum_0283",
+					"posthum_0292",
+					"posthum_0295",
+					"posthum_0296",
+					"posthum_0334",
+					"posthum_0335",
+					"posthum_0336",
+					"posthum_0338",
+					"posthum_0346",
+					"posthum_0347",
+					"posthum_0348",
+					"posthum_0367",
+					"posthum_0381",
+					"posthum_0420"
 				]
 			},
 			"4020015-2": {
 				"name": "Gemeinschaft",
 				"type": [],
 				"gndNumber": "4020015-2",
-				"docs": ["smallform_0001", "letter_0257"]
+				"docs": ["unpublished_0001", "posthum_0257"]
 			},
 			"4271334-1": {
 				"name": "Germanophobie",
 				"type": [],
 				"gndNumber": "4271334-1",
-				"docs": ["smallform_0224"]
+				"docs": ["unpublished_0224"]
 			},
 			"4135260-9": {
 				"name": "Genussmittel",
@@ -26343,84 +26343,84 @@
 				"name": "Gerichtverhandlung",
 				"type": [],
 				"gndNumber": "4020356-6",
-				"docs": ["smallform_0246", "smallform_0272", "smallform_0274"]
+				"docs": ["unpublished_0246", "unpublished_0272", "unpublished_0274"]
 			},
 			"4341334-1": {
 				"name": "Getreidewirtschaft",
 				"type": [],
 				"gndNumber": "4341334-1",
-				"docs": ["smallform_0191", "smallform_0281", "smallform_0470"]
+				"docs": ["unpublished_0191", "unpublished_0281", "unpublished_0470"]
 			},
 			"4020517-4": {
 				"name": "Geschichte",
 				"type": [],
 				"gndNumber": "4020517-4",
 				"docs": [
-					"smallform_0030",
-					"smallform_0096",
-					"smallform_0115",
-					"smallform_0148",
-					"smallform_0150",
-					"smallform_0152",
-					"smallform_0154",
-					"smallform_0155",
-					"smallform_0158",
-					"smallform_0160",
-					"smallform_0161",
-					"smallform_0164",
-					"smallform_0166",
-					"smallform_0167",
-					"smallform_0169",
-					"smallform_0174",
-					"smallform_0189",
-					"smallform_0224",
-					"smallform_0229",
-					"smallform_0614",
-					"letter_0331"
+					"unpublished_0030",
+					"unpublished_0096",
+					"unpublished_0115",
+					"unpublished_0148",
+					"unpublished_0150",
+					"unpublished_0152",
+					"unpublished_0154",
+					"unpublished_0155",
+					"unpublished_0158",
+					"unpublished_0160",
+					"unpublished_0161",
+					"unpublished_0164",
+					"unpublished_0166",
+					"unpublished_0167",
+					"unpublished_0169",
+					"unpublished_0174",
+					"unpublished_0189",
+					"unpublished_0224",
+					"unpublished_0229",
+					"unpublished_0614",
+					"posthum_0331"
 				]
 			},
 			"4157065-0": {
 				"name": "Gesellschaftsroman",
 				"type": [],
 				"gndNumber": "4157065-0",
-				"docs": ["smallform_0107"]
+				"docs": ["unpublished_0107"]
 			},
 			"4156741-9": {
 				"name": "Geopolitik",
 				"type": [],
 				"gndNumber": "4156741-9",
-				"docs": ["smallform_0426", "smallform_0474"]
+				"docs": ["unpublished_0426", "unpublished_0474"]
 			},
 			"4020872-2": {
 				"name": "Gewerkschaft",
 				"type": [],
 				"gndNumber": "4020872-2",
 				"docs": [
-					"smallform_0206",
-					"smallform_0210",
-					"smallform_0211",
-					"smallform_0246",
-					"smallform_0248",
-					"smallform_0266",
-					"smallform_0267",
-					"smallform_0272",
-					"smallform_0303",
-					"smallform_0436",
-					"smallform_0467",
-					"letter_0296"
+					"unpublished_0206",
+					"unpublished_0210",
+					"unpublished_0211",
+					"unpublished_0246",
+					"unpublished_0248",
+					"unpublished_0266",
+					"unpublished_0267",
+					"unpublished_0272",
+					"unpublished_0303",
+					"unpublished_0436",
+					"unpublished_0467",
+					"posthum_0296"
 				]
 			},
 			"4557997-0": {
 				"name": "Globalisierung",
 				"type": [],
 				"gndNumber": "4557997-0",
-				"docs": ["smallform_0480"]
+				"docs": ["unpublished_0480"]
 			},
 			"4021569-6": {
 				"name": "Golfsport",
 				"type": [],
 				"gndNumber": "4021569-6",
-				"docs": ["smallform_0616", "smallform_0617"]
+				"docs": ["unpublished_0616", "unpublished_0617"]
 			},
 			"4022149-0": {
 				"name": "Grossbetrieb",
@@ -26432,22 +26432,22 @@
 				"type": [],
 				"gndNumber": "4022233-0",
 				"docs": [
-					"smallform_0154",
-					"smallform_0188",
-					"smallform_0199",
-					"smallform_0207",
-					"smallform_0210",
-					"smallform_0212",
-					"smallform_0420",
-					"smallform_0485",
-					"letter_0072"
+					"unpublished_0154",
+					"unpublished_0188",
+					"unpublished_0199",
+					"unpublished_0207",
+					"unpublished_0210",
+					"unpublished_0212",
+					"unpublished_0420",
+					"unpublished_0485",
+					"posthum_0072"
 				]
 			},
 			"4023222-0": {
 				"name": "Handel",
 				"type": [],
 				"gndNumber": "4023222-0",
-				"docs": ["smallform_0130", "smallform_0463"]
+				"docs": ["unpublished_0130", "unpublished_0463"]
 			},
 			"4023299-2": {
 				"name": "Handwerk",
@@ -26463,7 +26463,7 @@
 				"name": "Heimat",
 				"type": [],
 				"gndNumber": "4122192-8",
-				"docs": ["smallform_0414", "smallform_0471", "letter_0241", "letter_0293", "letter_0430"]
+				"docs": ["unpublished_0414", "unpublished_0471", "posthum_0241", "posthum_0293", "posthum_0430"]
 			},
 			"4231285-1": {
 				"name": "Heimatlosigkeit",
@@ -26474,7 +26474,7 @@
 				"name": "Hochzeit",
 				"type": [],
 				"gndNumber": "4025292-9",
-				"docs": ["letter_0410", "letter_0432"]
+				"docs": ["posthum_0410", "posthum_0432"]
 			},
 			"4383351-2": {
 				"name": "Hoffnung",
@@ -26485,31 +26485,31 @@
 				"name": "Hoffnungslosigkeit",
 				"type": [],
 				"gndNumber": "4160405-2",
-				"docs": ["smallform_0420"]
+				"docs": ["unpublished_0420"]
 			},
 			"4025798-8": {
 				"name": "Homosexualität",
 				"type": [],
 				"gndNumber": "4025798-8",
-				"docs": ["smallform_0013"]
+				"docs": ["unpublished_0013"]
 			},
 			"4160816-1": {
 				"name": "Hungersnot",
 				"type": [],
 				"gndNumber": "4160816-1",
-				"docs": ["smallform_0178"]
+				"docs": ["unpublished_0178"]
 			},
 			"4026331-9": {
 				"name": "Hygiene",
 				"type": [],
 				"gndNumber": "4026331-9",
-				"docs": ["smallform_0178"]
+				"docs": ["unpublished_0178"]
 			},
 			"4026496-8": {
 				"name": "Idylle",
 				"type": [],
 				"gndNumber": "4026496-8",
-				"docs": ["smallform_0421", "smallform_0423"]
+				"docs": ["unpublished_0421", "unpublished_0423"]
 			},
 			"4026651-5": {
 				"name": "Imperialismus",
@@ -26525,26 +26525,26 @@
 				"name": "Indigenes Volk",
 				"type": [],
 				"gndNumber": "4187207-1",
-				"docs": ["smallform_0187"]
+				"docs": ["unpublished_0187"]
 			},
 			"4131852-3": {
 				"name": "Individualismus",
 				"type": [],
 				"gndNumber": "4131852-3",
-				"docs": ["smallform_0175", "smallform_0176", "smallform_0177"]
+				"docs": ["unpublished_0175", "unpublished_0176", "unpublished_0177"]
 			},
 			"4026776-3": {
 				"name": "Industrialisierung",
 				"type": [],
 				"gndNumber": "4026776-3",
 				"docs": [
-					"smallform_0243",
-					"smallform_0274",
-					"smallform_0279",
-					"smallform_0280",
-					"smallform_0281",
-					"smallform_0303",
-					"letter_0256"
+					"unpublished_0243",
+					"unpublished_0274",
+					"unpublished_0279",
+					"unpublished_0280",
+					"unpublished_0281",
+					"unpublished_0303",
+					"posthum_0256"
 				]
 			},
 			"4026779-9": {
@@ -26552,85 +26552,85 @@
 				"type": [],
 				"gndNumber": "4026779-9",
 				"docs": [
-					"smallform_0201",
-					"smallform_0205",
-					"smallform_0206",
-					"smallform_0210",
-					"smallform_0211",
-					"smallform_0212",
-					"smallform_0244",
-					"smallform_0246",
-					"smallform_0267",
-					"smallform_0272",
-					"smallform_0284",
-					"letter_0296"
+					"unpublished_0201",
+					"unpublished_0205",
+					"unpublished_0206",
+					"unpublished_0210",
+					"unpublished_0211",
+					"unpublished_0212",
+					"unpublished_0244",
+					"unpublished_0246",
+					"unpublished_0267",
+					"unpublished_0272",
+					"unpublished_0284",
+					"posthum_0296"
 				]
 			},
 			"4026944-9": {
 				"name": "Infrastruktur",
 				"type": [],
 				"gndNumber": "4026944-9",
-				"docs": ["smallform_0087", "smallform_0177", "smallform_0188", "smallform_0282"]
+				"docs": ["unpublished_0087", "unpublished_0177", "unpublished_0188", "unpublished_0282"]
 			},
 			"4128227-9": {
 				"name": "Insel",
 				"type": [],
 				"gndNumber": "4128227-9",
-				"docs": ["smallform_0173", "smallform_0423"]
+				"docs": ["unpublished_0173", "unpublished_0423"]
 			},
 			"4605581-2": {
 				"name": "Intermedialität",
 				"type": [],
 				"gndNumber": "4605581-2",
 				"docs": [
-					"smallform_0033",
-					"smallform_0034",
-					"smallform_0201",
-					"smallform_0205",
-					"smallform_0206",
-					"smallform_0224",
-					"smallform_0266",
-					"smallform_0274",
-					"smallform_0282",
-					"smallform_0283",
-					"smallform_0284",
-					"smallform_0302",
-					"smallform_0414",
-					"smallform_0417",
-					"smallform_0465",
-					"smallform_0469",
-					"letter_0064",
-					"letter_0066",
-					"letter_0080",
-					"letter_0081",
-					"letter_0083",
-					"letter_0084",
-					"letter_0119",
-					"letter_0337",
-					"letter_0355",
-					"letter_0361",
-					"letter_0365",
-					"letter_0388",
-					"letter_0400"
+					"unpublished_0033",
+					"unpublished_0034",
+					"unpublished_0201",
+					"unpublished_0205",
+					"unpublished_0206",
+					"unpublished_0224",
+					"unpublished_0266",
+					"unpublished_0274",
+					"unpublished_0282",
+					"unpublished_0283",
+					"unpublished_0284",
+					"unpublished_0302",
+					"unpublished_0414",
+					"unpublished_0417",
+					"unpublished_0465",
+					"unpublished_0469",
+					"posthum_0064",
+					"posthum_0066",
+					"posthum_0080",
+					"posthum_0081",
+					"posthum_0083",
+					"posthum_0084",
+					"posthum_0119",
+					"posthum_0337",
+					"posthum_0355",
+					"posthum_0361",
+					"posthum_0365",
+					"posthum_0388",
+					"posthum_0400"
 				]
 			},
 			"4027316-7": {
 				"name": "Internat",
 				"type": [],
 				"gndNumber": "4027316-7",
-				"docs": ["smallform_0013", "smallform_0131"]
+				"docs": ["unpublished_0013", "unpublished_0131"]
 			},
 			"4027743-4": {
 				"name": "Islam",
 				"type": [],
 				"gndNumber": "4027743-4",
-				"docs": ["smallform_0160", "smallform_0166", "smallform_0174"]
+				"docs": ["unpublished_0160", "unpublished_0166", "unpublished_0174"]
 			},
 			"4162512-2": {
 				"name": "Isolationismus",
 				"type": [],
 				"gndNumber": "4162512-2",
-				"docs": ["smallform_0417", "smallform_0435", "smallform_0438", "smallform_0484"]
+				"docs": ["unpublished_0417", "unpublished_0435", "unpublished_0438", "unpublished_0484"]
 			},
 			"4027999-6": {
 				"name": "Jahreszeit",
@@ -26642,45 +26642,45 @@
 				"type": [],
 				"gndNumber": "4028779-8",
 				"docs": [
-					"smallform_0302",
-					"smallform_0417",
-					"smallform_0419",
-					"smallform_0426",
-					"smallform_0432",
-					"smallform_0438",
-					"smallform_0465",
-					"smallform_0469",
-					"smallform_0471",
-					"letter_0058",
-					"letter_0080",
-					"letter_0081",
-					"letter_0083",
-					"letter_0084",
-					"letter_0113",
-					"letter_0119",
-					"letter_0121",
-					"letter_0247",
-					"letter_0256",
-					"letter_0277",
-					"letter_0282",
-					"letter_0294",
-					"letter_0295",
-					"letter_0298",
-					"letter_0333",
-					"letter_0351",
-					"letter_0355",
-					"letter_0357",
-					"letter_0360",
-					"letter_0361",
-					"letter_0365",
-					"letter_0367",
-					"letter_0369",
-					"letter_0370",
-					"letter_0377",
-					"letter_0381",
-					"letter_0388",
-					"letter_0430",
-					"letter_0476"
+					"unpublished_0302",
+					"unpublished_0417",
+					"unpublished_0419",
+					"unpublished_0426",
+					"unpublished_0432",
+					"unpublished_0438",
+					"unpublished_0465",
+					"unpublished_0469",
+					"unpublished_0471",
+					"posthum_0058",
+					"posthum_0080",
+					"posthum_0081",
+					"posthum_0083",
+					"posthum_0084",
+					"posthum_0113",
+					"posthum_0119",
+					"posthum_0121",
+					"posthum_0247",
+					"posthum_0256",
+					"posthum_0277",
+					"posthum_0282",
+					"posthum_0294",
+					"posthum_0295",
+					"posthum_0298",
+					"posthum_0333",
+					"posthum_0351",
+					"posthum_0355",
+					"posthum_0357",
+					"posthum_0360",
+					"posthum_0361",
+					"posthum_0365",
+					"posthum_0367",
+					"posthum_0369",
+					"posthum_0370",
+					"posthum_0377",
+					"posthum_0381",
+					"posthum_0388",
+					"posthum_0430",
+					"posthum_0476"
 				]
 			},
 			"4114087-4": {
@@ -26692,33 +26692,33 @@
 				"name": "Justiz",
 				"type": [],
 				"gndNumber": "4201466-9",
-				"docs": ["smallform_0437"]
+				"docs": ["unpublished_0437"]
 			},
 			"4028859-6": {
 				"name": "Jugend",
 				"type": [],
 				"gndNumber": "4028859-6",
 				"docs": [
-					"smallform_0001",
-					"smallform_0002",
-					"smallform_0003",
-					"smallform_0004",
-					"smallform_0011",
-					"smallform_0012",
-					"smallform_0013",
-					"smallform_0019",
-					"smallform_0022",
-					"smallform_0023",
-					"smallform_0028",
-					"smallform_0175",
-					"smallform_0176",
-					"smallform_0186",
-					"smallform_0197",
-					"smallform_0207",
-					"smallform_0210",
-					"smallform_0279",
-					"letter_0295",
-					"letter_0298"
+					"unpublished_0001",
+					"unpublished_0002",
+					"unpublished_0003",
+					"unpublished_0004",
+					"unpublished_0011",
+					"unpublished_0012",
+					"unpublished_0013",
+					"unpublished_0019",
+					"unpublished_0022",
+					"unpublished_0023",
+					"unpublished_0028",
+					"unpublished_0175",
+					"unpublished_0176",
+					"unpublished_0186",
+					"unpublished_0197",
+					"unpublished_0207",
+					"unpublished_0210",
+					"unpublished_0279",
+					"posthum_0295",
+					"posthum_0298"
 				]
 			},
 			"4028871-7": {
@@ -26726,14 +26726,14 @@
 				"type": [],
 				"gndNumber": "4028871-7",
 				"docs": [
-					"smallform_0001",
-					"smallform_0002",
-					"smallform_0003",
-					"smallform_0004",
-					"smallform_0019",
-					"smallform_0021",
-					"smallform_0207",
-					"letter_0407"
+					"unpublished_0001",
+					"unpublished_0002",
+					"unpublished_0003",
+					"unpublished_0004",
+					"unpublished_0019",
+					"unpublished_0021",
+					"unpublished_0207",
+					"posthum_0407"
 				]
 			},
 			"4029577-1": {
@@ -26741,15 +26741,15 @@
 				"type": [],
 				"gndNumber": "4029577-1",
 				"docs": [
-					"smallform_0176",
-					"smallform_0185",
-					"smallform_0190",
-					"smallform_0206",
-					"smallform_0243",
-					"smallform_0248",
-					"smallform_0265",
-					"smallform_0279",
-					"smallform_0470"
+					"unpublished_0176",
+					"unpublished_0185",
+					"unpublished_0190",
+					"unpublished_0206",
+					"unpublished_0243",
+					"unpublished_0248",
+					"unpublished_0265",
+					"unpublished_0279",
+					"unpublished_0470"
 				]
 			},
 			"4418991-6": {
@@ -26761,13 +26761,13 @@
 				"name": "Kindheit",
 				"type": [],
 				"gndNumber": "4030550-8",
-				"docs": ["smallform_0015", "smallform_0016"]
+				"docs": ["unpublished_0015", "unpublished_0016"]
 			},
 			"4128152-4": {
 				"name": "Kinderarbeit",
 				"type": [],
 				"gndNumber": "4128152-4",
-				"docs": ["smallform_0195", "smallform_0267", "smallform_0274", "smallform_0303"]
+				"docs": ["unpublished_0195", "unpublished_0267", "unpublished_0274", "unpublished_0303"]
 			},
 			"4031011-5": {
 				"name": "Kleidung",
@@ -26778,13 +26778,13 @@
 				"name": "Kleinbauer",
 				"type": [],
 				"gndNumber": "4123525-3",
-				"docs": ["smallform_0187", "smallform_0191"]
+				"docs": ["unpublished_0187", "unpublished_0191"]
 			},
 			"4031110-7": {
 				"name": "Kleinstadt",
 				"type": [],
 				"gndNumber": "4031110-7",
-				"docs": ["smallform_0224", "smallform_0228", "smallform_0612", "smallform_0614"]
+				"docs": ["unpublished_0224", "unpublished_0228", "unpublished_0612", "unpublished_0614"]
 			},
 			"4031170-3": {
 				"name": "Klima",
@@ -26795,31 +26795,31 @@
 				"name": "Klassenbewusstsein",
 				"type": [],
 				"gndNumber": "4164015-9",
-				"docs": ["smallform_0280"]
+				"docs": ["unpublished_0280"]
 			},
 			"4130866-9": {
 				"name": "Klassenkampf",
 				"type": [],
 				"gndNumber": "4130866-9",
-				"docs": ["smallform_0201", "smallform_0206", "smallform_0280"]
+				"docs": ["unpublished_0201", "unpublished_0206", "unpublished_0280"]
 			},
 			"4164683-6": {
 				"name": "Kollektivismus",
 				"type": [],
 				"gndNumber": "4164683-6",
-				"docs": ["smallform_0201"]
+				"docs": ["unpublished_0201"]
 			},
 			"4073624-6": {
 				"name": "Kolonialismus",
 				"type": [],
 				"gndNumber": "4073624-6",
 				"docs": [
-					"smallform_0151",
-					"smallform_0210",
-					"smallform_0243",
-					"smallform_0271",
-					"smallform_0529",
-					"letter_0338"
+					"unpublished_0151",
+					"unpublished_0210",
+					"unpublished_0243",
+					"unpublished_0271",
+					"unpublished_0529",
+					"posthum_0338"
 				]
 			},
 			"4031892-8": {
@@ -26827,31 +26827,31 @@
 				"type": [],
 				"gndNumber": "4031892-8",
 				"docs": [
-					"smallform_0023",
-					"smallform_0190",
-					"smallform_0226",
-					"smallform_0245",
-					"smallform_0248",
-					"letter_0040",
-					"letter_0245",
-					"letter_0253",
-					"letter_0283",
-					"letter_0288",
-					"letter_0292",
-					"letter_0407"
+					"unpublished_0023",
+					"unpublished_0190",
+					"unpublished_0226",
+					"unpublished_0245",
+					"unpublished_0248",
+					"posthum_0040",
+					"posthum_0245",
+					"posthum_0253",
+					"posthum_0283",
+					"posthum_0288",
+					"posthum_0292",
+					"posthum_0407"
 				]
 			},
 			"4031952-0": {
 				"name": "Komödie",
 				"type": [],
 				"gndNumber": "4031952-0",
-				"docs": ["smallform_0484"]
+				"docs": ["unpublished_0484"]
 			},
 			"4032187-3": {
 				"name": "Konservatismus",
 				"type": [],
 				"gndNumber": "4032187-3",
-				"docs": ["smallform_0014", "smallform_0175"]
+				"docs": ["unpublished_0014", "unpublished_0175"]
 			},
 			"4313630-8": {
 				"name": "Korrespondent",
@@ -26868,28 +26868,28 @@
 				"type": [],
 				"gndNumber": "4032844-2",
 				"docs": [
-					"smallform_0130",
-					"smallform_0248",
-					"smallform_0274",
-					"letter_0056",
-					"letter_0058",
-					"letter_0081",
-					"letter_0082",
-					"letter_0086",
-					"letter_0127",
-					"letter_0217",
-					"letter_0261",
-					"letter_0262",
-					"letter_0279",
-					"letter_0282",
-					"letter_0294",
-					"letter_0343",
-					"letter_0370",
-					"letter_0377",
-					"letter_0402",
-					"letter_0404",
-					"letter_0411",
-					"letter_0476"
+					"unpublished_0130",
+					"unpublished_0248",
+					"unpublished_0274",
+					"posthum_0056",
+					"posthum_0058",
+					"posthum_0081",
+					"posthum_0082",
+					"posthum_0086",
+					"posthum_0127",
+					"posthum_0217",
+					"posthum_0261",
+					"posthum_0262",
+					"posthum_0279",
+					"posthum_0282",
+					"posthum_0294",
+					"posthum_0343",
+					"posthum_0370",
+					"posthum_0377",
+					"posthum_0402",
+					"posthum_0404",
+					"posthum_0411",
+					"posthum_0476"
 				]
 			},
 			"4033114-3": {
@@ -26897,26 +26897,26 @@
 				"type": [],
 				"gndNumber": "4033114-3",
 				"docs": [
-					"smallform_0123",
-					"smallform_0148",
-					"smallform_0157",
-					"smallform_0160",
-					"smallform_0276",
-					"letter_0058",
-					"letter_0075",
-					"letter_0261",
-					"letter_0339",
-					"letter_0355",
-					"letter_0403",
-					"letter_0406",
-					"letter_0476"
+					"unpublished_0123",
+					"unpublished_0148",
+					"unpublished_0157",
+					"unpublished_0160",
+					"unpublished_0276",
+					"posthum_0058",
+					"posthum_0075",
+					"posthum_0261",
+					"posthum_0339",
+					"posthum_0355",
+					"posthum_0403",
+					"posthum_0406",
+					"posthum_0476"
 				]
 			},
 			"4165684-2": {
 				"name": "Kriegseintritt",
 				"type": [],
 				"gndNumber": "4165684-2",
-				"docs": ["smallform_0417"]
+				"docs": ["unpublished_0417"]
 			},
 			"4033131-3": {
 				"name": "Kriegsgefangenschaft",
@@ -26927,25 +26927,25 @@
 				"name": "Kriminalität",
 				"type": [],
 				"gndNumber": "4033178-7",
-				"docs": ["smallform_0437"]
+				"docs": ["unpublished_0437"]
 			},
 			"4125698-0": {
 				"name": "Kultur",
 				"type": [],
 				"gndNumber": "4125698-0",
-				"docs": ["smallform_0087", "smallform_0188", "smallform_0283", "smallform_0436"]
+				"docs": ["unpublished_0087", "unpublished_0188", "unpublished_0283", "unpublished_0436"]
 			},
 			"4114333-4": {
 				"name": "Kunst",
 				"type": [],
 				"gndNumber": "4114333-4",
 				"docs": [
-					"smallform_0027",
-					"smallform_0484",
-					"letter_0332",
-					"letter_0333",
-					"letter_0339",
-					"letter_0344"
+					"unpublished_0027",
+					"unpublished_0484",
+					"posthum_0332",
+					"posthum_0333",
+					"posthum_0339",
+					"posthum_0344"
 				]
 			},
 			"4034402-2": {
@@ -26953,38 +26953,38 @@
 				"type": [],
 				"gndNumber": "4034402-2",
 				"docs": [
-					"smallform_0052",
-					"smallform_0055",
-					"smallform_0096",
-					"smallform_0123",
-					"smallform_0130",
-					"smallform_0172",
-					"smallform_0175",
-					"smallform_0176",
-					"smallform_0178",
-					"smallform_0187",
-					"smallform_0191",
-					"smallform_0195",
-					"smallform_0205",
-					"smallform_0207",
-					"smallform_0223",
-					"smallform_0224",
-					"smallform_0245",
-					"smallform_0246",
-					"smallform_0248",
-					"smallform_0265",
-					"smallform_0266",
-					"smallform_0267",
-					"smallform_0271",
-					"smallform_0274",
-					"smallform_0279",
-					"smallform_0280",
-					"smallform_0281",
-					"smallform_0282",
-					"smallform_0284",
-					"smallform_0303",
-					"smallform_0470",
-					"smallform_0529"
+					"unpublished_0052",
+					"unpublished_0055",
+					"unpublished_0096",
+					"unpublished_0123",
+					"unpublished_0130",
+					"unpublished_0172",
+					"unpublished_0175",
+					"unpublished_0176",
+					"unpublished_0178",
+					"unpublished_0187",
+					"unpublished_0191",
+					"unpublished_0195",
+					"unpublished_0205",
+					"unpublished_0207",
+					"unpublished_0223",
+					"unpublished_0224",
+					"unpublished_0245",
+					"unpublished_0246",
+					"unpublished_0248",
+					"unpublished_0265",
+					"unpublished_0266",
+					"unpublished_0267",
+					"unpublished_0271",
+					"unpublished_0274",
+					"unpublished_0279",
+					"unpublished_0280",
+					"unpublished_0281",
+					"unpublished_0282",
+					"unpublished_0284",
+					"unpublished_0303",
+					"unpublished_0470",
+					"unpublished_0529"
 				]
 			},
 			"4166649-5": {
@@ -26992,63 +26992,63 @@
 				"type": [],
 				"gndNumber": "4166649-5",
 				"docs": [
-					"smallform_0186",
-					"smallform_0199",
-					"smallform_0245",
-					"smallform_0279",
-					"smallform_0281"
+					"unpublished_0186",
+					"unpublished_0199",
+					"unpublished_0245",
+					"unpublished_0279",
+					"unpublished_0281"
 				]
 			},
 			"4134319-0": {
 				"name": "Lebensstandard",
 				"type": [],
 				"gndNumber": "4134319-0",
-				"docs": ["smallform_0178", "smallform_0187"]
+				"docs": ["unpublished_0178", "unpublished_0187"]
 			},
 			"4035296-1": {
 				"name": "Lektüre",
 				"type": [],
 				"gndNumber": "4035296-1",
-				"docs": ["letter_0290", "letter_0297"]
+				"docs": ["posthum_0290", "posthum_0297"]
 			},
 			"4035646-2": {
 				"name": "Liebe",
 				"type": [],
 				"gndNumber": "4035646-2",
 				"docs": [
-					"smallform_0001",
-					"smallform_0003",
-					"smallform_0022",
-					"smallform_0131",
-					"smallform_0171",
-					"letter_0241",
-					"letter_0257",
-					"letter_0294"
+					"unpublished_0001",
+					"unpublished_0003",
+					"unpublished_0022",
+					"unpublished_0131",
+					"unpublished_0171",
+					"posthum_0241",
+					"posthum_0257",
+					"posthum_0294"
 				]
 			},
 			"4202427-4": {
 				"name": "Licht",
 				"type": [],
 				"gndNumber": "4202427-4",
-				"docs": ["smallform_0084", "smallform_0244"]
+				"docs": ["unpublished_0084", "unpublished_0244"]
 			},
 			"4167873-4": {
 				"name": "Literaturgeschichte (Disziplin)",
 				"type": [],
 				"gndNumber": "4167873-4",
-				"docs": ["smallform_0030", "letter_0423"]
+				"docs": ["unpublished_0030", "posthum_0423"]
 			},
 			"4168383-3": {
 				"name": "Lynchjustiz",
 				"type": [],
 				"gndNumber": "4168383-3",
-				"docs": ["smallform_0248", "smallform_0274", "smallform_0284", "smallform_0303"]
+				"docs": ["unpublished_0248", "unpublished_0274", "unpublished_0284", "unpublished_0303"]
 			},
 			"4036774-5": {
 				"name": "Lyrik",
 				"type": [],
 				"gndNumber": "4036774-5",
-				"docs": ["smallform_0030", "letter_0244", "letter_0247"]
+				"docs": ["unpublished_0030", "posthum_0244", "posthum_0247"]
 			},
 			"4198902-8": {
 				"name": "Maschine",
@@ -27059,33 +27059,33 @@
 				"name": "Melancholie",
 				"type": [],
 				"gndNumber": "4038515-2",
-				"docs": ["smallform_0485"]
+				"docs": ["unpublished_0485"]
 			},
 			"4074725-6": {
 				"name": "Menschenrechte",
 				"type": [],
 				"gndNumber": "4074725-6",
-				"docs": ["smallform_0211"]
+				"docs": ["unpublished_0211"]
 			},
 			"4039305-7": {
 				"name": "Militär",
 				"type": [],
 				"gndNumber": "4039305-7",
 				"docs": [
-					"smallform_0030",
-					"smallform_0276",
-					"smallform_0474",
-					"smallform_0485",
-					"smallform_0488",
-					"letter_0406",
-					"letter_0431"
+					"unpublished_0030",
+					"unpublished_0276",
+					"unpublished_0474",
+					"unpublished_0485",
+					"unpublished_0488",
+					"posthum_0406",
+					"posthum_0431"
 				]
 			},
 			"4063255-6": {
 				"name": "Militärausgaben",
 				"type": [],
 				"gndNumber": "4063255-6",
-				"docs": ["smallform_0417"]
+				"docs": ["unpublished_0417"]
 			},
 			"4726796-3": {
 				"name": "Misstrauen",
@@ -27096,25 +27096,25 @@
 				"name": "Mittelalter",
 				"type": [],
 				"gndNumber": "4129108-6",
-				"docs": ["smallform_0003", "smallform_0166"]
+				"docs": ["unpublished_0003", "unpublished_0166"]
 			},
 			"4039501-7": {
 				"name": "Minnesang",
 				"type": [],
 				"gndNumber": "4039501-7",
-				"docs": ["smallform_0003"]
+				"docs": ["unpublished_0003"]
 			},
 			"4170285-2": {
 				"name": "Mobilmachung",
 				"type": [],
 				"gndNumber": "4170285-2",
-				"docs": ["letter_0121"]
+				"docs": ["posthum_0121"]
 			},
 			"4039792-0": {
 				"name": "Mode",
 				"type": [],
 				"gndNumber": "4039792-0",
-				"docs": ["smallform_0028", "smallform_0616"]
+				"docs": ["unpublished_0028", "unpublished_0616"]
 			},
 			"4170344-3": {
 				"name": "Möglichkeit",
@@ -27126,53 +27126,53 @@
 				"type": [],
 				"gndNumber": "4120755-5",
 				"docs": [
-					"smallform_0052",
-					"smallform_0148",
-					"smallform_0164",
-					"smallform_0168",
-					"smallform_0170",
-					"smallform_0172",
-					"smallform_0227",
-					"smallform_0229",
-					"smallform_0321"
+					"unpublished_0052",
+					"unpublished_0148",
+					"unpublished_0164",
+					"unpublished_0168",
+					"unpublished_0170",
+					"unpublished_0172",
+					"unpublished_0227",
+					"unpublished_0229",
+					"unpublished_0321"
 				]
 			},
 			"4137447-2": {
 				"name": "Monokultur",
 				"type": [],
 				"gndNumber": "4137447-2",
-				"docs": ["smallform_0191", "smallform_0195", "smallform_0248"]
+				"docs": ["unpublished_0191", "unpublished_0195", "unpublished_0248"]
 			},
 			"4040222-8": {
 				"name": "Moral",
 				"type": [],
 				"gndNumber": "4040222-8",
-				"docs": ["smallform_0021", "smallform_0131", "letter_0443"]
+				"docs": ["unpublished_0021", "unpublished_0131", "posthum_0443"]
 			},
 			"4214151-5": {
 				"name": "Multikulturelle Gesellschaft",
 				"type": [],
 				"gndNumber": "4214151-5",
-				"docs": ["smallform_0187", "smallform_0212", "smallform_0283"]
+				"docs": ["unpublished_0187", "unpublished_0212", "unpublished_0283"]
 			},
 			"4040802-4": {
 				"name": "Musik",
 				"type": [],
 				"gndNumber": "4040802-4",
-				"docs": ["letter_0238", "letter_0281", "letter_0415", "letter_0417", "letter_0423"]
+				"docs": ["posthum_0238", "posthum_0281", "posthum_0415", "posthum_0417", "posthum_0423"]
 			},
 			"7502323-4": {
 				"name": "Mutter-Tochter-Beziehung",
 				"type": [],
 				"gndNumber": "7502323-4",
 				"docs": [
-					"smallform_0131",
-					"letter_0294",
-					"letter_0402",
-					"letter_0418",
-					"letter_0424",
-					"letter_0430",
-					"letter_0442"
+					"unpublished_0131",
+					"posthum_0294",
+					"posthum_0402",
+					"posthum_0418",
+					"posthum_0424",
+					"posthum_0430",
+					"posthum_0442"
 				]
 			},
 			"4041300-7": {
@@ -27180,20 +27180,20 @@
 				"type": [],
 				"gndNumber": "4041300-7",
 				"docs": [
-					"smallform_0164",
-					"smallform_0209",
-					"smallform_0224",
-					"smallform_0225",
-					"smallform_0226",
-					"smallform_0227",
-					"smallform_0228",
-					"smallform_0229",
-					"smallform_0232",
-					"smallform_0270",
-					"letter_0003",
-					"letter_0023",
-					"letter_0253",
-					"letter_0407"
+					"unpublished_0164",
+					"unpublished_0209",
+					"unpublished_0224",
+					"unpublished_0225",
+					"unpublished_0226",
+					"unpublished_0227",
+					"unpublished_0228",
+					"unpublished_0229",
+					"unpublished_0232",
+					"unpublished_0270",
+					"posthum_0003",
+					"posthum_0023",
+					"posthum_0253",
+					"posthum_0407"
 				]
 			},
 			"4041316-0": {
@@ -27201,78 +27201,78 @@
 				"type": [],
 				"gndNumber": "4041316-0",
 				"docs": [
-					"smallform_0209",
-					"smallform_0223",
-					"smallform_0226",
-					"smallform_0242",
-					"smallform_0426",
-					"smallform_0432",
-					"smallform_0469",
-					"smallform_0484",
-					"letter_0010",
-					"letter_0011",
-					"letter_0017",
-					"letter_0022",
-					"letter_0023",
-					"letter_0026",
-					"letter_0033",
-					"letter_0040",
-					"letter_0044",
-					"letter_0083",
-					"letter_0086",
-					"letter_0121",
-					"letter_0241",
-					"letter_0250",
-					"letter_0272",
-					"letter_0274",
-					"letter_0277",
-					"letter_0287",
-					"letter_0292",
-					"letter_0407",
-					"letter_0418",
-					"letter_0420"
+					"unpublished_0209",
+					"unpublished_0223",
+					"unpublished_0226",
+					"unpublished_0242",
+					"unpublished_0426",
+					"unpublished_0432",
+					"unpublished_0469",
+					"unpublished_0484",
+					"posthum_0010",
+					"posthum_0011",
+					"posthum_0017",
+					"posthum_0022",
+					"posthum_0023",
+					"posthum_0026",
+					"posthum_0033",
+					"posthum_0040",
+					"posthum_0044",
+					"posthum_0083",
+					"posthum_0086",
+					"posthum_0121",
+					"posthum_0241",
+					"posthum_0250",
+					"posthum_0272",
+					"posthum_0274",
+					"posthum_0277",
+					"posthum_0287",
+					"posthum_0292",
+					"posthum_0407",
+					"posthum_0418",
+					"posthum_0420"
 				]
 			},
 			"4171217-1": {
 				"name": "Nationalität",
 				"type": [],
 				"gndNumber": "4171217-1",
-				"docs": ["smallform_0225", "smallform_0232"]
+				"docs": ["unpublished_0225", "unpublished_0232"]
 			},
 			"4041358-5": {
 				"name": "Natur",
 				"type": [],
 				"gndNumber": "4041358-5",
-				"docs": ["smallform_0014", "smallform_0029", "smallform_0152"]
+				"docs": ["unpublished_0014", "unpublished_0029", "unpublished_0152"]
 			},
 			"4427668-0": {
 				"name": "Naturereignis",
 				"type": [],
 				"gndNumber": "4427668-0",
-				"docs": ["smallform_0165", "smallform_0175", "smallform_0281", "smallform_0283"]
+				"docs": ["unpublished_0165", "unpublished_0175", "unpublished_0281", "unpublished_0283"]
 			},
 			"4171681-4": {
 				"name": "New Deal",
 				"type": [],
 				"gndNumber": "4171681-4",
 				"docs": [
-					"smallform_0175",
-					"smallform_0176",
-					"smallform_0178",
-					"smallform_0185",
-					"smallform_0186",
-					"smallform_0187",
-					"smallform_0188",
-					"smallform_0190",
-					"smallform_0191",
-					"smallform_0195",
-					"smallform_0211",
-					"smallform_0281",
-					"smallform_0282",
-					"smallform_0303",
-					"smallform_0417",
-					"smallform_0436",
-					"smallform_0470"
+					"unpublished_0175",
+					"unpublished_0176",
+					"unpublished_0178",
+					"unpublished_0185",
+					"unpublished_0186",
+					"unpublished_0187",
+					"unpublished_0188",
+					"unpublished_0190",
+					"unpublished_0191",
+					"unpublished_0195",
+					"unpublished_0211",
+					"unpublished_0281",
+					"unpublished_0282",
+					"unpublished_0303",
+					"unpublished_0417",
+					"unpublished_0436",
+					"unpublished_0470"
 				]
 			},
 			"4042452-2": {
@@ -27280,12 +27280,12 @@
 				"type": [],
 				"gndNumber": "4042452-2",
 				"docs": [
-					"smallform_0151",
-					"smallform_0155",
-					"smallform_0160",
-					"smallform_0161",
-					"smallform_0170",
-					"smallform_0171"
+					"unpublished_0151",
+					"unpublished_0155",
+					"unpublished_0160",
+					"unpublished_0161",
+					"unpublished_0170",
+					"unpublished_0171"
 				]
 			},
 			"4042870-9": {
@@ -27298,87 +27298,87 @@
 				"type": [],
 				"gndNumber": "1139293370",
 				"docs": [
-					"smallform_0052",
-					"smallform_0055",
-					"smallform_0087",
-					"smallform_0148",
-					"smallform_0151",
-					"smallform_0164",
-					"smallform_0171"
+					"unpublished_0052",
+					"unpublished_0055",
+					"unpublished_0087",
+					"unpublished_0148",
+					"unpublished_0151",
+					"unpublished_0164",
+					"unpublished_0171"
 				]
 			},
 			"4043912-4": {
 				"name": "Orthodoxe Kirche (Ostkirche)",
 				"type": [],
 				"gndNumber": "4043912-4",
-				"docs": ["smallform_0147", "smallform_0228"]
+				"docs": ["unpublished_0147", "unpublished_0228"]
 			},
 			"4043665-2": {
 				"name": "Optimismus",
 				"type": [],
 				"gndNumber": "4043665-2",
-				"docs": ["smallform_0186", "smallform_0284"]
+				"docs": ["unpublished_0186", "unpublished_0284"]
 			},
 			"4214966-6": {
 				"name": "Pächter",
 				"type": [],
 				"gndNumber": "4214966-6",
 				"docs": [
-					"smallform_0178",
-					"smallform_0195",
-					"smallform_0243",
-					"smallform_0248",
-					"smallform_0265",
-					"smallform_0266",
-					"smallform_0274",
-					"smallform_0284",
-					"smallform_0303"
+					"unpublished_0178",
+					"unpublished_0195",
+					"unpublished_0243",
+					"unpublished_0248",
+					"unpublished_0265",
+					"unpublished_0266",
+					"unpublished_0274",
+					"unpublished_0284",
+					"unpublished_0303"
 				]
 			},
 			"4132835-8": {
 				"name": "Patriotismus",
 				"type": [],
 				"gndNumber": "4132835-8",
-				"docs": ["smallform_0283"]
+				"docs": ["unpublished_0283"]
 			},
 			"4045324-8": {
 				"name": "Pessimismus",
 				"type": [],
 				"gndNumber": "4045324-8",
-				"docs": ["smallform_0186", "smallform_0207", "smallform_0284"]
+				"docs": ["unpublished_0186", "unpublished_0207", "unpublished_0284"]
 			},
 			"4045673-0": {
 				"name": "Phantastik",
 				"type": [],
 				"gndNumber": "4045673-0",
-				"docs": ["smallform_0017", "smallform_0022", "smallform_0033"]
+				"docs": ["unpublished_0017", "unpublished_0022", "unpublished_0033"]
 			},
 			"4655583-3": {
 				"name": "Pionier",
 				"type": [],
 				"gndNumber": "4655583-3",
-				"docs": ["smallform_0176", "smallform_0177", "smallform_0186", "smallform_0248"]
+				"docs": ["unpublished_0176", "unpublished_0177", "unpublished_0186", "unpublished_0248"]
 			},
 			"4136213-5": {
 				"name": "Plantage",
 				"type": [],
 				"gndNumber": "4136213-5",
 				"docs": [
-					"smallform_0176",
-					"smallform_0178",
-					"smallform_0191",
-					"smallform_0195",
-					"smallform_0243",
-					"smallform_0248",
-					"smallform_0265",
-					"smallform_0266",
-					"smallform_0267",
-					"smallform_0274",
-					"smallform_0280",
-					"smallform_0281",
-					"smallform_0284",
-					"smallform_0303",
-					"letter_0256"
+					"unpublished_0176",
+					"unpublished_0178",
+					"unpublished_0191",
+					"unpublished_0195",
+					"unpublished_0243",
+					"unpublished_0248",
+					"unpublished_0265",
+					"unpublished_0266",
+					"unpublished_0267",
+					"unpublished_0274",
+					"unpublished_0280",
+					"unpublished_0281",
+					"unpublished_0284",
+					"unpublished_0303",
+					"posthum_0256"
 				]
 			},
 			"4046449-0": {
@@ -27386,20 +27386,20 @@
 				"type": [],
 				"gndNumber": "4046449-0",
 				"docs": [
-					"smallform_0012",
-					"smallform_0023",
-					"smallform_0030",
-					"smallform_0033",
-					"smallform_0107",
-					"smallform_0302",
-					"letter_0053",
-					"letter_0119",
-					"letter_0126",
-					"letter_0244",
-					"letter_0247",
-					"letter_0255",
-					"letter_0274",
-					"letter_0418"
+					"unpublished_0012",
+					"unpublished_0023",
+					"unpublished_0030",
+					"unpublished_0033",
+					"unpublished_0107",
+					"unpublished_0302",
+					"posthum_0053",
+					"posthum_0119",
+					"posthum_0126",
+					"posthum_0244",
+					"posthum_0247",
+					"posthum_0255",
+					"posthum_0274",
+					"posthum_0418"
 				]
 			},
 			"4047020-9": {
@@ -27407,22 +27407,22 @@
 				"type": [],
 				"gndNumber": "4047020-9",
 				"docs": [
-					"smallform_0175",
-					"smallform_0176",
-					"smallform_0178",
-					"smallform_0185",
-					"smallform_0186",
-					"smallform_0187",
-					"smallform_0190",
-					"smallform_0211",
-					"smallform_0242",
-					"smallform_0419",
-					"smallform_0426",
-					"smallform_0435",
-					"smallform_0438",
-					"smallform_0465",
-					"smallform_0467",
-					"smallform_0470"
+					"unpublished_0175",
+					"unpublished_0176",
+					"unpublished_0178",
+					"unpublished_0185",
+					"unpublished_0186",
+					"unpublished_0187",
+					"unpublished_0190",
+					"unpublished_0211",
+					"unpublished_0242",
+					"unpublished_0419",
+					"unpublished_0426",
+					"unpublished_0435",
+					"unpublished_0438",
+					"unpublished_0465",
+					"unpublished_0467",
+					"unpublished_0470"
 				]
 			},
 			"4047150-0": {
@@ -27430,20 +27430,20 @@
 				"type": [],
 				"gndNumber": "4047150-0",
 				"docs": [
-					"smallform_0175",
-					"smallform_0190",
-					"smallform_0414",
-					"smallform_0417",
-					"smallform_0432",
-					"letter_0064",
-					"letter_0079",
-					"letter_0119",
-					"letter_0284",
-					"letter_0335",
-					"letter_0336",
-					"letter_0348",
-					"letter_0365",
-					"letter_0400"
+					"unpublished_0175",
+					"unpublished_0190",
+					"unpublished_0414",
+					"unpublished_0417",
+					"unpublished_0432",
+					"posthum_0064",
+					"posthum_0079",
+					"posthum_0119",
+					"posthum_0284",
+					"posthum_0335",
+					"posthum_0336",
+					"posthum_0348",
+					"posthum_0365",
+					"posthum_0400"
 				]
 			},
 			"4076374-2": {
@@ -27451,36 +27451,36 @@
 				"type": [],
 				"gndNumber": "4076374-2",
 				"docs": [
-					"smallform_0176",
-					"smallform_0438",
-					"smallform_0484",
-					"letter_0023",
-					"letter_0428",
-					"letter_0430"
+					"unpublished_0176",
+					"unpublished_0438",
+					"unpublished_0484",
+					"posthum_0023",
+					"posthum_0428",
+					"posthum_0430"
 				]
 			},
 			"4047878-6": {
 				"name": "Puritanismus",
 				"type": [],
 				"gndNumber": "4047878-6",
-				"docs": ["smallform_0175", "smallform_0243"]
+				"docs": ["unpublished_0175", "unpublished_0243"]
 			},
 			"4050963-1": {
 				"name": "Radio",
 				"type": [],
 				"gndNumber": "4050963-1",
-				"docs": ["letter_0064"]
+				"docs": ["posthum_0064"]
 			},
 			"4048499-3": {
 				"name": "Rationalisierung",
 				"type": [],
 				"gndNumber": "4048499-3",
 				"docs": [
-					"smallform_0199",
-					"smallform_0206",
-					"smallform_0246",
-					"smallform_0272",
-					"smallform_0485"
+					"unpublished_0199",
+					"unpublished_0206",
+					"unpublished_0246",
+					"unpublished_0272",
+					"unpublished_0485"
 				]
 			},
 			"4048531-6": {
@@ -27488,51 +27488,51 @@
 				"type": [],
 				"gndNumber": "4048531-6",
 				"docs": [
-					"smallform_0176",
-					"smallform_0191",
-					"smallform_0246",
-					"smallform_0281",
-					"smallform_0470"
+					"unpublished_0176",
+					"unpublished_0191",
+					"unpublished_0246",
+					"unpublished_0281",
+					"unpublished_0470"
 				]
 			},
 			"4048680-1": {
 				"name": "Realismus",
 				"type": [],
 				"gndNumber": "4048680-1",
-				"docs": ["smallform_0017"]
+				"docs": ["unpublished_0017"]
 			},
 			"4076527-1": {
 				"name": "Rassismus",
 				"type": [],
 				"gndNumber": "4076527-1",
 				"docs": [
-					"smallform_0161",
-					"smallform_0176",
-					"smallform_0187",
-					"smallform_0195",
-					"smallform_0227",
-					"smallform_0243",
-					"smallform_0244",
-					"smallform_0246",
-					"smallform_0248",
-					"smallform_0266",
-					"smallform_0274",
-					"smallform_0276",
-					"smallform_0280",
-					"smallform_0303",
-					"smallform_0420",
-					"smallform_0423",
-					"smallform_0436",
-					"smallform_0437",
-					"letter_0033",
-					"letter_0186",
-					"letter_0245",
-					"letter_0248",
-					"letter_0250",
-					"letter_0256",
-					"letter_0288",
-					"letter_0357",
-					"letter_0388"
+					"unpublished_0161",
+					"unpublished_0176",
+					"unpublished_0187",
+					"unpublished_0195",
+					"unpublished_0227",
+					"unpublished_0243",
+					"unpublished_0244",
+					"unpublished_0246",
+					"unpublished_0248",
+					"unpublished_0266",
+					"unpublished_0274",
+					"unpublished_0276",
+					"unpublished_0280",
+					"unpublished_0303",
+					"unpublished_0420",
+					"unpublished_0423",
+					"unpublished_0436",
+					"unpublished_0437",
+					"posthum_0033",
+					"posthum_0186",
+					"posthum_0245",
+					"posthum_0248",
+					"posthum_0250",
+					"posthum_0256",
+					"posthum_0288",
+					"posthum_0357",
+					"posthum_0388"
 				]
 			},
 			"4177612-4": {
@@ -27540,11 +27540,11 @@
 				"type": [],
 				"gndNumber": "4177612-4",
 				"docs": [
-					"smallform_0028",
-					"smallform_0084",
-					"smallform_0087",
-					"smallform_0090",
-					"smallform_0302"
+					"unpublished_0028",
+					"unpublished_0084",
+					"unpublished_0087",
+					"unpublished_0090",
+					"unpublished_0302"
 				]
 			},
 			"4049275-8": {
@@ -27552,56 +27552,56 @@
 				"type": [],
 				"gndNumber": "4049275-8",
 				"docs": [
-					"smallform_0028",
-					"smallform_0087",
-					"smallform_0090",
-					"smallform_0173",
-					"smallform_0174",
-					"smallform_0302",
-					"smallform_0321",
-					"smallform_0413",
-					"smallform_0414",
-					"smallform_0419",
-					"smallform_0421",
-					"smallform_0432",
-					"smallform_0480",
-					"letter_0021",
-					"letter_0056",
-					"letter_0070",
-					"letter_0071",
-					"letter_0073",
-					"letter_0075",
-					"letter_0076",
-					"letter_0077",
-					"letter_0078",
-					"letter_0079",
-					"letter_0083",
-					"letter_0087",
-					"letter_0113",
-					"letter_0126",
-					"letter_0127",
-					"letter_0210",
-					"letter_0230",
-					"letter_0256",
-					"letter_0257",
-					"letter_0264",
-					"letter_0265",
-					"letter_0294",
-					"letter_0329",
-					"letter_0337",
-					"letter_0355",
-					"letter_0361",
-					"letter_0367",
-					"letter_0369",
-					"letter_0377",
-					"letter_0381",
-					"letter_0388",
-					"letter_0390",
-					"letter_0400",
-					"letter_0410",
-					"letter_0418",
-					"letter_0428",
-					"letter_0432"
+					"unpublished_0028",
+					"unpublished_0087",
+					"unpublished_0090",
+					"unpublished_0173",
+					"unpublished_0174",
+					"unpublished_0302",
+					"unpublished_0321",
+					"unpublished_0413",
+					"unpublished_0414",
+					"unpublished_0419",
+					"unpublished_0421",
+					"unpublished_0432",
+					"unpublished_0480",
+					"posthum_0021",
+					"posthum_0056",
+					"posthum_0070",
+					"posthum_0071",
+					"posthum_0073",
+					"posthum_0075",
+					"posthum_0076",
+					"posthum_0077",
+					"posthum_0078",
+					"posthum_0079",
+					"posthum_0083",
+					"posthum_0087",
+					"posthum_0113",
+					"posthum_0126",
+					"posthum_0127",
+					"posthum_0210",
+					"posthum_0230",
+					"posthum_0256",
+					"posthum_0257",
+					"posthum_0264",
+					"posthum_0265",
+					"posthum_0294",
+					"posthum_0329",
+					"posthum_0337",
+					"posthum_0355",
+					"posthum_0361",
+					"posthum_0367",
+					"posthum_0369",
+					"posthum_0377",
+					"posthum_0381",
+					"posthum_0388",
+					"posthum_0390",
+					"posthum_0400",
+					"posthum_0410",
+					"posthum_0418",
+					"posthum_0428",
+					"posthum_0432"
 				]
 			},
 			"4049319-2": {
@@ -27609,75 +27609,75 @@
 				"type": [],
 				"gndNumber": "4049319-2",
 				"docs": [
-					"smallform_0004",
-					"smallform_0223",
-					"smallform_0611",
-					"smallform_0617",
-					"letter_0254",
-					"letter_0390",
-					"letter_0407",
-					"letter_0418",
-					"letter_0422"
+					"unpublished_0004",
+					"unpublished_0223",
+					"unpublished_0611",
+					"unpublished_0617",
+					"posthum_0254",
+					"posthum_0390",
+					"posthum_0407",
+					"posthum_0418",
+					"posthum_0422"
 				]
 			},
 			"4049185-7": {
 				"name": "Reichtum",
 				"type": [],
 				"gndNumber": "4049185-7",
-				"docs": ["smallform_0206", "smallform_0210", "smallform_0244", "smallform_0437"]
+				"docs": ["unpublished_0206", "unpublished_0210", "unpublished_0244", "unpublished_0437"]
 			},
 			"4049396-9": {
 				"name": "Religion",
 				"type": [],
 				"gndNumber": "4049396-9",
 				"docs": [
-					"smallform_0021",
-					"smallform_0146",
-					"smallform_0147",
-					"smallform_0158",
-					"smallform_0166",
-					"smallform_0177",
-					"smallform_0208",
-					"smallform_0209",
-					"smallform_0226",
-					"smallform_0246"
+					"unpublished_0021",
+					"unpublished_0146",
+					"unpublished_0147",
+					"unpublished_0158",
+					"unpublished_0166",
+					"unpublished_0177",
+					"unpublished_0208",
+					"unpublished_0209",
+					"unpublished_0226",
+					"unpublished_0246"
 				]
 			},
 			"4049680-6": {
 				"name": "Revolution",
 				"type": [],
 				"gndNumber": "4049680-6",
-				"docs": ["smallform_0027"]
+				"docs": ["unpublished_0027"]
 			},
 			"4178275-6": {
 				"name": "Röhm-Putsch",
 				"type": [],
 				"gndNumber": "4178275-6",
-				"docs": ["letter_0245", "letter_0272", "letter_0274"]
+				"docs": ["posthum_0245", "posthum_0272", "posthum_0274"]
 			},
 			"4050491-8": {
 				"name": "Romantik",
 				"type": [],
 				"gndNumber": "4050491-8",
-				"docs": ["smallform_0003", "smallform_0022", "smallform_0038"]
+				"docs": ["unpublished_0003", "unpublished_0022", "unpublished_0038"]
 			},
 			"4115806-4": {
 				"name": "Rüstungsindustrie",
 				"type": [],
 				"gndNumber": "4115806-4",
 				"docs": [
-					"smallform_0417",
-					"smallform_0435",
-					"smallform_0438",
-					"smallform_0467",
-					"smallform_0474"
+					"unpublished_0417",
+					"unpublished_0435",
+					"unpublished_0438",
+					"unpublished_0467",
+					"unpublished_0474"
 				]
 			},
 			"4050894-8": {
 				"name": "Aufrüstung",
 				"type": [],
 				"gndNumber": "4050894-8",
-				"docs": ["smallform_0417", "smallform_0426"]
+				"docs": ["unpublished_0417", "unpublished_0426"]
 			},
 			"4051949-1": {
 				"name": "Schädling",
@@ -27688,19 +27688,19 @@
 				"name": "Schatten",
 				"type": [],
 				"gndNumber": "4116371-0",
-				"docs": ["smallform_0206", "smallform_0244"]
+				"docs": ["unpublished_0206", "unpublished_0244"]
 			},
 			"4116383-7": {
 				"name": "Schifffahrt",
 				"type": [],
 				"gndNumber": "4116383-7",
 				"docs": [
-					"smallform_0421",
-					"smallform_0463",
-					"smallform_0529",
-					"smallform_0612",
-					"smallform_0616",
-					"letter_0357"
+					"unpublished_0421",
+					"unpublished_0463",
+					"unpublished_0529",
+					"unpublished_0612",
+					"unpublished_0616",
+					"posthum_0357"
 				]
 			},
 			"4194681-9": {
@@ -27708,48 +27708,48 @@
 				"type": [],
 				"gndNumber": "4194681-9",
 				"docs": [
-					"smallform_0242",
-					"smallform_0413",
-					"smallform_0414",
-					"smallform_0416",
-					"smallform_0471",
-					"smallform_0480",
-					"smallform_0529",
-					"letter_0261",
-					"letter_0266",
-					"letter_0294",
-					"letter_0410"
+					"unpublished_0242",
+					"unpublished_0413",
+					"unpublished_0414",
+					"unpublished_0416",
+					"unpublished_0471",
+					"unpublished_0480",
+					"unpublished_0529",
+					"posthum_0261",
+					"posthum_0266",
+					"posthum_0294",
+					"posthum_0410"
 				]
 			},
 			"4052455-3": {
 				"name": "Schiiten",
 				"type": [],
 				"gndNumber": "4052455-3",
-				"docs": ["smallform_0146"]
+				"docs": ["unpublished_0146"]
 			},
 			"4116418-0": {
 				"name": "Schreiben",
 				"type": [],
 				"gndNumber": "4116418-0",
 				"docs": [
-					"smallform_0302",
-					"smallform_0420",
-					"letter_0081",
-					"letter_0084",
-					"letter_0086",
-					"letter_0119",
-					"letter_0241",
-					"letter_0256",
-					"letter_0262",
-					"letter_0293",
-					"letter_0370"
+					"unpublished_0302",
+					"unpublished_0420",
+					"posthum_0081",
+					"posthum_0084",
+					"posthum_0086",
+					"posthum_0119",
+					"posthum_0241",
+					"posthum_0256",
+					"posthum_0262",
+					"posthum_0293",
+					"posthum_0370"
 				]
 			},
 			"4053474-1": {
 				"name": "Schule",
 				"type": [],
 				"gndNumber": "4053474-1",
-				"docs": ["letter_0411", "letter_0423"]
+				"docs": ["posthum_0411", "posthum_0423"]
 			},
 			"4053461-3": {
 				"name": "Schulden",
@@ -27760,63 +27760,63 @@
 				"name": "Schweizer Einwanderer",
 				"type": [],
 				"gndNumber": "4416843-3",
-				"docs": ["smallform_0188", "smallform_0245", "smallform_0271", "smallform_0463"]
+				"docs": ["unpublished_0188", "unpublished_0245", "unpublished_0271", "unpublished_0463"]
 			},
 			"4712413-1": {
 				"name": "Schweizer Einwanderin",
 				"type": [],
 				"gndNumber": "4712413-1",
-				"docs": ["smallform_0245", "smallform_0416"]
+				"docs": ["unpublished_0245", "unpublished_0416"]
 			},
 			"4077343-7": {
 				"name": "Sekte",
 				"type": [],
 				"gndNumber": "4077343-7",
-				"docs": ["smallform_0160", "smallform_0248", "smallform_0303"]
+				"docs": ["unpublished_0160", "unpublished_0248", "unpublished_0303"]
 			},
 			"4054684-6": {
 				"name": "Sexualität",
 				"type": [],
 				"gndNumber": "4054684-6",
-				"docs": ["smallform_0035"]
+				"docs": ["unpublished_0035"]
 			},
 			"4136055-2": {
 				"name": "Sezessionskrieg (1861-1865)",
 				"type": [],
 				"gndNumber": "4136055-2",
 				"docs": [
-					"smallform_0175",
-					"smallform_0195",
-					"smallform_0243",
-					"smallform_0265",
-					"smallform_0274",
-					"smallform_0280",
-					"smallform_0283",
-					"smallform_0284",
-					"smallform_0303"
+					"unpublished_0175",
+					"unpublished_0195",
+					"unpublished_0243",
+					"unpublished_0265",
+					"unpublished_0274",
+					"unpublished_0280",
+					"unpublished_0283",
+					"unpublished_0284",
+					"unpublished_0303"
 				]
 			},
 			"4332482-4": {
 				"name": "Siedler",
 				"type": [],
 				"gndNumber": "4332482-4",
-				"docs": ["smallform_0175"]
+				"docs": ["unpublished_0175"]
 			},
 			"4055245-7": {
 				"name": "Skisport",
 				"type": [],
 				"gndNumber": "4055245-7",
 				"docs": [
-					"smallform_0029",
-					"smallform_0167",
-					"smallform_0614",
-					"smallform_0615",
-					"letter_0074",
-					"letter_0075",
-					"letter_0293",
-					"letter_0297",
-					"letter_0422",
-					"letter_0423"
+					"unpublished_0029",
+					"unpublished_0167",
+					"unpublished_0614",
+					"unpublished_0615",
+					"posthum_0074",
+					"posthum_0075",
+					"posthum_0293",
+					"posthum_0297",
+					"posthum_0422",
+					"posthum_0423"
 				]
 			},
 			"4055260-3": {
@@ -27824,14 +27824,14 @@
 				"type": [],
 				"gndNumber": "4055260-3",
 				"docs": [
-					"smallform_0175",
-					"smallform_0187",
-					"smallform_0243",
-					"smallform_0265",
-					"smallform_0274",
-					"smallform_0280",
-					"smallform_0284",
-					"smallform_0303"
+					"unpublished_0175",
+					"unpublished_0187",
+					"unpublished_0243",
+					"unpublished_0265",
+					"unpublished_0274",
+					"unpublished_0280",
+					"unpublished_0284",
+					"unpublished_0303"
 				]
 			},
 			"4077571-9": {
@@ -27839,32 +27839,32 @@
 				"type": [],
 				"gndNumber": "4077571-9",
 				"docs": [
-					"smallform_0178",
-					"smallform_0201",
-					"smallform_0206",
-					"smallform_0208",
-					"smallform_0272",
-					"smallform_0279",
-					"smallform_0284"
+					"unpublished_0178",
+					"unpublished_0201",
+					"unpublished_0206",
+					"unpublished_0208",
+					"unpublished_0272",
+					"unpublished_0279",
+					"unpublished_0284"
 				]
 			},
 			"4055695-5": {
 				"name": "Sozialdemokratie",
 				"type": [],
 				"gndNumber": "4055695-5",
-				"docs": ["smallform_0226", "smallform_0270", "letter_0253", "letter_0288"]
+				"docs": ["unpublished_0226", "unpublished_0270", "posthum_0253", "posthum_0288"]
 			},
 			"4697347-3": {
 				"name": "Spekulation",
 				"type": [],
 				"gndNumber": "4697347-3",
-				"docs": ["smallform_0265"]
+				"docs": ["unpublished_0265"]
 			},
 			"4056366-2": {
 				"name": "Sport",
 				"type": [],
 				"gndNumber": "4056366-2",
-				"docs": ["smallform_0197", "smallform_0207", "smallform_0613", "letter_0235", "letter_0422"]
+				"docs": ["unpublished_0197", "unpublished_0207", "unpublished_0613", "posthum_0235", "posthum_0422"]
 			},
 			"4454910-6": {
 				"name": "Sprachmischung",
@@ -27875,34 +27875,34 @@
 				"name": "Stalinismus",
 				"type": [],
 				"gndNumber": "4056883-0",
-				"docs": ["letter_0245", "letter_0407"]
+				"docs": ["posthum_0245", "posthum_0407"]
 			},
 			"4057020-4": {
 				"name": "Staudamm",
 				"type": [],
 				"gndNumber": "4057020-4",
-				"docs": ["smallform_0282"]
+				"docs": ["unpublished_0282"]
 			},
 			"4057883-5": {
 				"name": "Strasse",
 				"type": [],
 				"gndNumber": "4057883-5",
 				"docs": [
-					"smallform_0177",
-					"smallform_0188",
-					"smallform_0197",
-					"smallform_0199",
-					"smallform_0207",
-					"smallform_0212",
-					"smallform_0243",
-					"smallform_0244",
-					"smallform_0245",
-					"smallform_0266",
-					"smallform_0282",
-					"smallform_0414",
-					"smallform_0421",
-					"smallform_0480",
-					"smallform_0485"
+					"unpublished_0177",
+					"unpublished_0188",
+					"unpublished_0197",
+					"unpublished_0199",
+					"unpublished_0207",
+					"unpublished_0212",
+					"unpublished_0243",
+					"unpublished_0244",
+					"unpublished_0245",
+					"unpublished_0266",
+					"unpublished_0282",
+					"unpublished_0414",
+					"unpublished_0421",
+					"unpublished_0480",
+					"unpublished_0485"
 				]
 			},
 			"4058029-5": {
@@ -27910,44 +27910,44 @@
 				"type": [],
 				"gndNumber": "4058029-5",
 				"docs": [
-					"smallform_0201",
-					"smallform_0206",
-					"smallform_0211",
-					"smallform_0245",
-					"smallform_0267",
-					"smallform_0272",
-					"smallform_0467"
+					"unpublished_0201",
+					"unpublished_0206",
+					"unpublished_0211",
+					"unpublished_0245",
+					"unpublished_0267",
+					"unpublished_0272",
+					"unpublished_0467"
 				]
 			},
 			"4054423-0": {
 				"name": "Suizid",
 				"type": [],
 				"gndNumber": "4054423-0",
-				"docs": ["letter_0254", "letter_0278", "letter_0294"]
+				"docs": ["posthum_0254", "posthum_0278", "posthum_0294"]
 			},
 			"4058665-0": {
 				"name": "Surrealismus",
 				"type": [],
 				"gndNumber": "4058665-0",
-				"docs": ["smallform_0033"]
+				"docs": ["unpublished_0033"]
 			},
 			"4184403-8": {
 				"name": "Tankstelle",
 				"type": [],
 				"gndNumber": "4184403-8",
-				"docs": ["smallform_0177", "smallform_0485"]
+				"docs": ["unpublished_0177", "unpublished_0485"]
 			},
 			"4059205-4": {
 				"name": "Technik",
 				"type": [],
 				"gndNumber": "4059205-4",
 				"docs": [
-					"smallform_0170",
-					"smallform_0172",
-					"smallform_0177",
-					"smallform_0282",
-					"smallform_0463",
-					"letter_0357"
+					"unpublished_0170",
+					"unpublished_0172",
+					"unpublished_0177",
+					"unpublished_0282",
+					"unpublished_0463",
+					"posthum_0357"
 				]
 			},
 			"4454574-5": {
@@ -27955,12 +27955,12 @@
 				"type": [],
 				"gndNumber": "4454574-5",
 				"docs": [
-					"smallform_0187",
-					"smallform_0195",
-					"smallform_0199",
-					"smallform_0248",
-					"smallform_0321",
-					"smallform_0470"
+					"unpublished_0187",
+					"unpublished_0195",
+					"unpublished_0199",
+					"unpublished_0248",
+					"unpublished_0321",
+					"unpublished_0470"
 				]
 			},
 			"4060087-7": {
@@ -27972,27 +27972,27 @@
 				"name": "Totalitarismus",
 				"type": [],
 				"gndNumber": "4060491-3",
-				"docs": ["smallform_0223", "smallform_0426", "letter_0245", "letter_0420"]
+				"docs": ["unpublished_0223", "unpublished_0426", "posthum_0245", "posthum_0420"]
 			},
 			"4018406-7": {
 				"name": "Tourismus",
 				"type": [],
 				"gndNumber": "4018406-7",
 				"docs": [
-					"smallform_0028",
-					"smallform_0029",
-					"smallform_0173",
-					"smallform_0177",
-					"smallform_0207",
-					"smallform_0421",
-					"smallform_0423",
-					"smallform_0611",
-					"smallform_0612",
-					"smallform_0613",
-					"smallform_0615",
-					"smallform_0616",
-					"smallform_0617",
-					"letter_0292"
+					"unpublished_0028",
+					"unpublished_0029",
+					"unpublished_0173",
+					"unpublished_0177",
+					"unpublished_0207",
+					"unpublished_0421",
+					"unpublished_0423",
+					"unpublished_0611",
+					"unpublished_0612",
+					"unpublished_0613",
+					"unpublished_0615",
+					"unpublished_0616",
+					"unpublished_0617",
+					"posthum_0292"
 				]
 			},
 			"4323955-9": {
@@ -28000,28 +28000,28 @@
 				"type": [],
 				"gndNumber": "4323955-9",
 				"docs": [
-					"smallform_0147",
-					"smallform_0148",
-					"smallform_0166",
-					"smallform_0207",
-					"smallform_0224",
-					"smallform_0282",
-					"smallform_0283",
-					"smallform_0423",
-					"smallform_0436"
+					"unpublished_0147",
+					"unpublished_0148",
+					"unpublished_0166",
+					"unpublished_0207",
+					"unpublished_0224",
+					"unpublished_0282",
+					"unpublished_0283",
+					"unpublished_0423",
+					"unpublished_0436"
 				]
 			},
 			"4060747-1": {
 				"name": "Traum",
 				"type": [],
 				"gndNumber": "4060747-1",
-				"docs": ["smallform_0022"]
+				"docs": ["unpublished_0022"]
 			},
 			"4186270-3": {
 				"name": "Trockenheit",
 				"type": [],
 				"gndNumber": "4186270-3",
-				"docs": ["smallform_0176", "smallform_0191", "smallform_0244", "smallform_0470"]
+				"docs": ["unpublished_0176", "unpublished_0191", "unpublished_0244", "unpublished_0470"]
 			},
 			"4247898-4": {
 				"name": "Überproduktion",
@@ -28032,20 +28032,20 @@
 				"name": "Überschwemmung",
 				"type": [],
 				"gndNumber": "4186634-4",
-				"docs": ["smallform_0175"]
+				"docs": ["unpublished_0175"]
 			},
 			"4061614-9": {
 				"name": "Umsiedlung",
 				"type": [],
 				"gndNumber": "4061614-9",
 				"docs": [
-					"smallform_0178",
-					"smallform_0191",
-					"smallform_0195",
-					"smallform_0205",
-					"smallform_0211",
-					"smallform_0281",
-					"smallform_0284"
+					"unpublished_0178",
+					"unpublished_0191",
+					"unpublished_0195",
+					"unpublished_0205",
+					"unpublished_0211",
+					"unpublished_0281",
+					"unpublished_0284"
 				]
 			},
 			"4384665-8": {
@@ -28057,26 +28057,26 @@
 				"name": "Unfreiheit",
 				"type": [],
 				"gndNumber": "4732816-2",
-				"docs": ["smallform_0242"]
+				"docs": ["unpublished_0242"]
 			},
 			"4061778-6": {
 				"name": "Universität",
 				"type": [],
 				"gndNumber": "4061778-6",
 				"docs": [
-					"smallform_0055",
-					"smallform_0150",
-					"smallform_0197",
-					"smallform_0243",
-					"smallform_0282",
-					"letter_0296"
+					"unpublished_0055",
+					"unpublished_0150",
+					"unpublished_0197",
+					"unpublished_0243",
+					"unpublished_0282",
+					"posthum_0296"
 				]
 			},
 			"4186999-0": {
 				"name": "Unterhaltungsindustrie",
 				"type": [],
 				"gndNumber": "4186999-0",
-				"docs": ["smallform_0034", "smallform_0038"]
+				"docs": ["unpublished_0034", "unpublished_0038"]
 			},
 			"4062714-7": {
 				"name": "Verein",
@@ -28092,29 +28092,29 @@
 				"name": "Vergewaltigung",
 				"type": [],
 				"gndNumber": "4042696-8",
-				"docs": ["smallform_0274"]
+				"docs": ["unpublished_0274"]
 			},
 			"4062901-6": {
 				"name": "Verkehr",
 				"type": [],
 				"gndNumber": "4062901-6",
 				"docs": [
-					"smallform_0146",
-					"smallform_0170",
-					"smallform_0172",
-					"smallform_0188",
-					"smallform_0199",
-					"smallform_0212",
-					"smallform_0228",
-					"smallform_0485",
-					"smallform_0617"
+					"unpublished_0146",
+					"unpublished_0170",
+					"unpublished_0172",
+					"unpublished_0188",
+					"unpublished_0199",
+					"unpublished_0212",
+					"unpublished_0228",
+					"unpublished_0485",
+					"unpublished_0617"
 				]
 			},
 			"4359141-3": {
 				"name": "Vernetzung",
 				"type": [],
 				"gndNumber": "4359141-3",
-				"docs": ["smallform_0421", "smallform_0480", "smallform_0485"]
+				"docs": ["unpublished_0421", "unpublished_0480", "unpublished_0485"]
 			},
 			"4187981-8": {
 				"name": "Verschuldung",
@@ -28130,13 +28130,13 @@
 				"name": "Verstädterung",
 				"type": [],
 				"gndNumber": "4063234-9",
-				"docs": ["smallform_0199"]
+				"docs": ["unpublished_0199"]
 			},
 			"4063254-4": {
 				"name": "Verteidigung",
 				"type": [],
 				"gndNumber": "4063254-4",
-				"docs": ["smallform_0467"]
+				"docs": ["unpublished_0467"]
 			},
 			"4137001-6": {
 				"name": "Verzweiflung",
@@ -28157,54 +28157,54 @@
 				"name": "Weltausstellung New York",
 				"type": [],
 				"gndNumber": "5324656-1",
-				"docs": ["smallform_0416", "smallform_0419", "smallform_0471"]
+				"docs": ["unpublished_0416", "unpublished_0419", "unpublished_0471"]
 			},
 			"4079171-3": {
 				"name": "Weltwirtschaftskrise (1929-1932)",
 				"type": [],
 				"gndNumber": "4079171-3",
 				"docs": [
-					"smallform_0175",
-					"smallform_0178",
-					"smallform_0185",
-					"smallform_0187",
-					"smallform_0195",
-					"smallform_0205",
-					"smallform_0206",
-					"smallform_0207",
-					"smallform_0210",
-					"smallform_0211",
-					"smallform_0212",
-					"smallform_0248",
-					"smallform_0265",
-					"smallform_0266",
-					"smallform_0267",
-					"smallform_0271",
-					"smallform_0279",
-					"smallform_0280",
-					"smallform_0282",
-					"smallform_0283",
-					"smallform_0284",
-					"smallform_0435"
+					"unpublished_0175",
+					"unpublished_0178",
+					"unpublished_0185",
+					"unpublished_0187",
+					"unpublished_0195",
+					"unpublished_0205",
+					"unpublished_0206",
+					"unpublished_0207",
+					"unpublished_0210",
+					"unpublished_0211",
+					"unpublished_0212",
+					"unpublished_0248",
+					"unpublished_0265",
+					"unpublished_0266",
+					"unpublished_0267",
+					"unpublished_0271",
+					"unpublished_0279",
+					"unpublished_0280",
+					"unpublished_0282",
+					"unpublished_0283",
+					"unpublished_0284",
+					"unpublished_0435"
 				]
 			},
 			"4065541-6": {
 				"name": "Werbung",
 				"type": [],
 				"gndNumber": "4065541-6",
-				"docs": ["smallform_0244"]
+				"docs": ["unpublished_0244"]
 			},
 			"4127225-0": {
 				"name": "Wildnis",
 				"type": [],
 				"gndNumber": "4127225-0",
-				"docs": ["smallform_0152"]
+				"docs": ["unpublished_0152"]
 			},
 			"4066334-6": {
 				"name": "Wintersport",
 				"type": [],
 				"gndNumber": "4066334-6",
-				"docs": ["smallform_0613", "smallform_0615"]
+				"docs": ["unpublished_0613", "unpublished_0615"]
 			},
 			"4066380-2": {
 				"name": "Wirklichkeit",
@@ -28215,13 +28215,13 @@
 				"name": "Wirtschaftskrise",
 				"type": [],
 				"gndNumber": "4066466-1",
-				"docs": ["letter_0346"]
+				"docs": ["posthum_0346"]
 			},
 			"4066562-8": {
 				"name": "Wissenschaft",
 				"type": [],
 				"gndNumber": "4066562-8",
-				"docs": ["smallform_0052", "smallform_0055", "smallform_0197", "letter_0332", "letter_0344"]
+				"docs": ["unpublished_0052", "unpublished_0055", "unpublished_0197", "posthum_0332", "posthum_0344"]
 			},
 			"1138650579": {
 				"name": "Wohlstand",
@@ -28242,60 +28242,60 @@
 				"name": "Zensur",
 				"type": [],
 				"gndNumber": "4067601-8",
-				"docs": ["letter_0083", "letter_0250"]
+				"docs": ["posthum_0083", "posthum_0250"]
 			},
 			"4067864-7": {
 				"name": "Zionismus",
 				"type": [],
 				"gndNumber": "4067864-7",
-				"docs": ["letter_0281"]
+				"docs": ["posthum_0281"]
 			},
 			"4067906-8": {
 				"name": "Zivilisation",
 				"type": [],
 				"gndNumber": "4067906-8",
-				"docs": ["smallform_0209"]
+				"docs": ["unpublished_0209"]
 			},
 			"7617561-3": {
 				"name": "Zwangsarbeit",
 				"type": [],
 				"gndNumber": "7617561-3",
-				"docs": ["smallform_0284"]
+				"docs": ["unpublished_0284"]
 			},
 			"4079167-1": {
 				"name": "Zweiter Weltkrieg",
 				"type": [],
 				"gndNumber": "4079167-1",
 				"docs": [
-					"smallform_0413",
-					"smallform_0414",
-					"smallform_0417",
-					"smallform_0419",
-					"smallform_0420",
-					"smallform_0421",
-					"smallform_0423",
-					"smallform_0426",
-					"smallform_0432",
-					"smallform_0435",
-					"smallform_0438",
-					"smallform_0465",
-					"smallform_0467",
-					"smallform_0469",
-					"smallform_0471",
-					"smallform_0474",
-					"smallform_0480",
-					"smallform_0484",
-					"smallform_0485",
-					"smallform_0488",
-					"smallform_0494",
-					"letter_0121",
-					"letter_0241",
-					"letter_0262",
-					"letter_0264",
-					"letter_0266",
-					"letter_0351",
-					"letter_0360",
-					"letter_0369"
+					"unpublished_0413",
+					"unpublished_0414",
+					"unpublished_0417",
+					"unpublished_0419",
+					"unpublished_0420",
+					"unpublished_0421",
+					"unpublished_0423",
+					"unpublished_0426",
+					"unpublished_0432",
+					"unpublished_0435",
+					"unpublished_0438",
+					"unpublished_0465",
+					"unpublished_0467",
+					"unpublished_0469",
+					"unpublished_0471",
+					"unpublished_0474",
+					"unpublished_0480",
+					"unpublished_0484",
+					"unpublished_0485",
+					"unpublished_0488",
+					"unpublished_0494",
+					"posthum_0121",
+					"posthum_0241",
+					"posthum_0262",
+					"posthum_0264",
+					"posthum_0266",
+					"posthum_0351",
+					"posthum_0360",
+					"posthum_0369"
 				]
 			},
 			"1250270871": {
@@ -28308,14 +28308,14 @@
 				"type": [],
 				"gndNumber": "4068097-6",
 				"docs": [
-					"smallform_0177",
-					"smallform_0188",
-					"smallform_0199",
-					"smallform_0201",
-					"smallform_0207",
-					"smallform_0210",
-					"smallform_0212",
-					"letter_0081"
+					"unpublished_0177",
+					"unpublished_0188",
+					"unpublished_0199",
+					"unpublished_0201",
+					"unpublished_0207",
+					"unpublished_0210",
+					"unpublished_0212",
+					"posthum_0081"
 				]
 			},
 			"keyword_antebellum": {

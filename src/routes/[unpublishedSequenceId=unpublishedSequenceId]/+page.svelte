@@ -2,9 +2,9 @@
 	import { resolve } from '$app/paths';
 	import DocumentsNav from '$lib/components/DocumentsNav.svelte';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
-	import type { TSmallformsKeys } from '$lib/types/documents/TSmallformsKeys';
+	import type { TUnpublishedKeys } from '$lib/types/documents/TUnpublishedKeys';
 	import { ScrollState } from 'runed';
-	import type { TSeqSmallformsKeys } from '$lib/types/TSequences.js';
+	import type { TSeqUnpublishedKeys } from '$lib/types/TSequences.js';
 	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 
 	let { data } = $props();
@@ -36,7 +36,7 @@
 </script>
 
 <!-- Series -->
-{#snippet keyList(keys: (TSeqSmallformsKeys | 'separator')[])}
+{#snippet keyList(keys: (TSeqUnpublishedKeys | 'separator')[])}
 	<div class={['preset-btn-list --spacing-sm items-center justify-center']}>
 		{#each keys as key (key)}
 			{#if key.includes('separator')}
@@ -44,7 +44,7 @@
 			{:else}
 				<a
 					class={['preset-btn-round --sm duration-200', data.seqSlug === key && '--active']}
-					href={resolve(`/${key as string}`)}>{data.sequences[key as TSeqSmallformsKeys].name}</a
+					href={resolve(`/${key as string}`)}>{data.sequences[key as TSeqUnpublishedKeys].name}</a
 				>
 			{/if}
 		{/each}
@@ -56,7 +56,7 @@
 	class={['sticky top-0 z-100 -mt-10 flex flex-col gap-2 bg-background px-10 pt-10']}
 >
 	<!-- Navigation -->
-	<DocumentsNav docType="smallforms" />
+	<DocumentsNav docType="unpublished" />
 	<h1 class={['h3 mb-5 text-center whitespace-nowrap transition-all duration-200']}>
 		{@html data.seqSlug ? seq?.preamble : ''}
 	</h1>
@@ -71,25 +71,9 @@
 		>
 			{@render keyList([
 				...(Object.keys(data.sequences).filter((key) => {
-					return (key as string) === 'smallforms_all';
-				}) as TSeqSmallformsKeys[]),
-				...Object.entries(data.sequences)
-					.filter(([, val]) => (val.type as string) === 'unpublished')
-					.map(([key]) => key as TSeqSmallformsKeys),
-				...Object.entries(data.sequences)
-					.filter(([, val]) => (val.type as string) === 'published')
-					.map(([key]) => key as TSeqSmallformsKeys),
-				'separator_3',
-				...Object.entries(data.sequences)
-					.filter(([, val]) => (val.type as string) === 'periodika')
-					.map(([key]) => key as TSeqSmallformsKeys),
-				...Object.entries(data.sequences)
-					.filter(([, val]) => (val.type as string) === 'pubseries')
-					.map(([key]) => key as TSeqSmallformsKeys),
-				...Object.entries(data.sequences)
-					.filter(([, val]) => (val.type as string) === 'gattung')
-					.map(([key]) => key as TSeqSmallformsKeys)
-			] as TSeqSmallformsKeys[])}
+					return (key as string) === 'unpublished_all';
+				}) as TSeqUnpublishedKeys[])
+			] as TSeqUnpublishedKeys[])}
 		</div>
 	</div>
 </div>
@@ -108,8 +92,8 @@
 
 	<!-- Gallery -->
 	<div class="grid h-full grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-3">
-		{#each seq?.docs as TSmallformsKeys[] as docKey (docKey)}
-			{@const item = data.docs[docKey as TSmallformsKeys]}
+		{#each seq?.docs as TUnpublishedKeys[] as docKey (docKey)}
+			{@const item = data.docs[docKey as TUnpublishedKeys]}
 			<a
 				href={resolve(`/${docKey as string}`) + `?seq=${data.seqSlug}`}
 				class="flex items-start justify-start gap-5 rounded-card p-5 hover:bg-dark-10 md:flex-col md:items-center md:justify-center"

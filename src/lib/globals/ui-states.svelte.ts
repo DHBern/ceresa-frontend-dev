@@ -23,10 +23,9 @@ export const activeRegisterTab: { value: TActiveRegisterTab } = $state({ value: 
 // Sequence Toggles
 export const isOpenSeqPanel = $state({ state: false });
 export const sequenceToggle = $state({
-	letters: true,
-	smallforms: true,
-	longforms: true,
-	photos: true
+	posthum: true,
+	unpublished: true,
+	published: true,
 });
 
 // UI

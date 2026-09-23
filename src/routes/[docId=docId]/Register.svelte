@@ -11,9 +11,9 @@
 	} from '$lib/functions/interactive_edendum/handleInteractiveText';
 	import { slide } from 'svelte/transition';
 	import type {
-		TDocItemsLetters,
-		TDocItemsLongforms,
-		TDocItemsSmallforms
+		TDocItemsPosthum,
+		TDocItemsPublished,
+		TDocItemsUnpublished
 	} from '$lib/types/documents/TDocuments';
 	import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
 
@@ -22,8 +22,9 @@
 		{ key_singular: string; label_plural: string }
 	>;
 
-	let { docItem }: { docItem: TDocItemsLetters | TDocItemsSmallforms | TDocItemsLongforms | null } =
-		$props();
+	let {
+		docItem
+	}: { docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null } = $props();
 
 	let regEntries = $derived(docItem?.crossReferences?.citedEntities);
 	const regTypes = Object.keys(reg) as Array<keyof typeof reg>;

@@ -19,21 +19,15 @@ export type TSeqTypes = keyof TSeq;
 
 // Keys
 export type TSeqTextstufenKeys = keyof TSeq['textstufen'];
-export type TSeqTravelsKeys = keyof TSeq['travels'];
-export type TSeqCorrespondenceKeys = keyof TSeq['correspondence'];
-export type TSeqSeriesKeys = keyof TSeq['series'];
-export type TSeqPhotoseriesKeys = keyof TSeq['photoseries'];
-export type TSeqSmallformsKeys = keyof TSeq['smallforms'];
-export type TSeqLongformsKeys = keyof TSeq['longforms'];
+export type TSeqPosthumKeys = keyof TSeq['posthum'];
+export type TSeqUnpublishedKeys = keyof TSeq['unpublished'];
+export type TSeqPublishedKeys = keyof TSeq['published'];
 
 export type TSeqKeys =
 	| TSeqTextstufenKeys
-	| TSeqTravelsKeys
-	| TSeqCorrespondenceKeys
-	| TSeqSeriesKeys
-	| TSeqPhotoseriesKeys
-	| TSeqSmallformsKeys
-	| TSeqLongformsKeys;
+	| TSeqPosthumKeys
+	| TSeqUnpublishedKeys
+	| TSeqPublishedKeys;
 
 export type TDictSeq = Record<
 	string,

@@ -9,17 +9,17 @@
 		"topic_0001": {
 			"url_seq_overview": "/gender",
 			"preamble": "Dokumente zum Thema Gender",
-			"docs": ["smallform_0002", "smallform_0044", "smallform_0231", "smallform_0232"]
+			"docs": ["unpublished_0002", "unpublished_0044", "unpublished_0231", "unpublished_0232"]
 		},
 		"topic_0002": {
 			"url_seq_overview": "/intermediality",
 			"preamble": "Dokumente zum Thema Intermedialität",
-			"docs": ["smallform_0231", "smallform_0232"]
+			"docs": ["unpublished_0231", "unpublished_0232"]
 		},
 		"topic_0003": {
 			"url_seq_overview": "/family",
 			"preamble": "Dokumente zum Thema Familie",
-			"docs": ["letter_0001", "smallform_0044"]
+			"docs": ["posthum_0001", "unpublished_0044"]
 		}
 	}
 }

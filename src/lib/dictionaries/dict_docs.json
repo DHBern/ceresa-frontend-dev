@@ -1,61 +1,12 @@
 {
 	"meta": {},
 	"dict_docs": {
-		"letters": {
-			"name": "Briefe",
-			"url": "correspondence",
-			"key_singular": "letter",
-			"label_plural": "Briefe",
-			"label_singular": "Brief",
-			"metadata": {
-				"types": { "label": "Dokumenttyp" },
-				"date": { "label": "Datum" },
-				"date_stamp": { "label": "Datum Stempel" },
-				"people_sending": { "label": "Absender:in" },
-				"people_addressed": { "label": "Empfänger:in (Anschrift)" },
-				"people_addressfield": { "label": "Empfänger:in (Adresse)" },
-				"place_of_sender": { "label": "Absendeort" },
-				"place_of_recepient": { "label": "Empfangsort" },
-				"summary": { "label": "Zusammenfassung" },
-				"content_and_medium": { "label": "Inhalt und Medium" },
-				"language": { "label": "Sprache" },
-				"attachments": { "label": "Beilagen" },
-				"archive": {
-					"repository": { "label": "Repository" },
-					"repo_url": { "label": "Repository URL" },
-					"shelfmark": { "label": "Shelfmark" },
-					"folder_name": { "label": "Ordnername" },
-					"ref_code_fonds": { "label": "Fonds (ref. code)" },
-					"rights": { "label": "Rechte" },
-					"archival_history": { "label": "Archivierungsgeschichte" },
-					"published_in": { "label": "Publikation / Abdrucke" },
-					"cited_in": { "label": "In Forschungsliteratur erwähnt" }
-				}
-			},
-			"crossReferences": {
-				"citedDocuments": { "label": "Zitierte Dokumente" },
-				"linkedDocuments": { "label": "Verknüpfte Dokumente" },
-				"citedEntities": { "label": "Zitierte Entitiäten" },
-				"linkedEntities": { "label": "Stichworte" }
-			},
-			"groups": {
-				"fragment": { "label_singular": "Fragment", "label_plural": "Fragmente", "slug": null },
-				"lettercard": {
-					"label_singular": "Briefkarte",
-					"label_plural": "Briefkarten",
-					"slug": null
-				},
-				"letter": { "label_singular": "Brief", "label_plural": "Briefe", "slug": null },
-				"postcard": { "label_singular": "Postkarte", "label_plural": "Postkarten", "slug": null },
-				"telegram": { "label_singular": "Telegram", "label_plural": "Telegramme", "slug": null }
-			}
-		},
-		"smallforms": {
-			"name": "Kleine Formen",
-			"url": "smallforms",
-			"key_singular": "smallform",
-			"label_plural": "Kleine Formen",
-			"label_singular": "Kleine Form",
+		"posthum": {
+			"name": "Posthumous Works",
+			"url": "posthumous",
+			"key_singular": "posthum",
+			"label_plural": "Posthumous Works",
+			"label_singular": "Posthumous Work",
 			"metadata": {
 				"title": { "label": "Label" },
 				"editor_workflow": { "label": "Editor Workflow" },
@@ -97,62 +48,24 @@
 					"label_singular": "Manuskript",
 					"label_plural": "Manuskripte",
 					"slug": null
-				},
-				"Feuilleton": {
-					"label_singular": "Feuilleton",
-					"label_plural": "Feuilletons",
-					"slug": null
-				},
-				"Rezension": { "label_singular": "Rezension", "label_plural": "Rezensionen", "slug": null },
-				"Beilage": { "label_singular": "Beilage", "label_plural": "Beilagen", "slug": null },
-				"Fotoreportage": {
-					"label_singular": "Fotoreportage",
-					"label_plural": "Fotoreportagen",
-					"slug": null
-				},
-				"Fotografie": {
-					"label_singular": "Fotografie",
-					"label_plural": "Fotografien",
-					"slug": null
-				},
-				"Zeitschriftenartikel": {
-					"label_singular": "Zeitschriftenartikel",
-					"label_plural": "Zeitschriftenartikel",
-					"slug": null
-				},
-				"Zeitungsartikel": {
-					"label_singular": "Zeitungsartikel",
-					"label_plural": "Zeitungsartikel",
-					"slug": null
-				},
-				"Sammelband-Beitrag": {
-					"label_singular": "Sammelband-Beitrag",
-					"label_plural": "Sammelband-Beiträge",
-					"slug": null
-				},
-				"Sonderbeilage": {
-					"label_singular": "Sonderbeilage",
-					"label_plural": "Sonderbeilagen",
-					"slug": null
-				},
-				"Serie'": { "label_singular": "Serie", "label_plural": "Serien", "slug": null }
+				}
 			}
 		},
-		"longforms": {
-			"name": "Romane und Reportagebücher",
-			"url": "longforms",
-			"key_singular": "longform",
-			"label_plural": "Romane und Reportagebücher",
-			"label_singular": "Roman oder Reportagebuch",
+		"unpublished": {
+			"name": "Unpublished Works",
+			"url": "unpublished",
+			"key_singular": "unpublished",
+			"label_plural": "Unpublished Works",
+			"label_singular": "Unpublished Work",
 			"metadata": {
 				"title": { "label": "Label" },
-				"authors": { "label": "Autor:in(nen)" },
-				"summary": { "label": "Zusammenfassung" },
 				"editor_workflow": { "label": "Editor Workflow" },
 				"year": { "label": "Jahr" },
-				"pubDate": { "label": "Publikaitonsdatum" },
 				"title_full": { "label": "Voller Titel" },
 				"title_short": { "label": "Kurztitel" },
+				"authors": { "label": "Autor:in(nen)" },
+				"summary": { "label": "Zusammenfassung" },
+				"pubDate": { "label": "Publikaitonsdatum" },
 				"pubPosthumOnly": { "label": "Posthume Publikation (ja/nein)" },
 				"pubPlace": { "label": "Publikationsort" },
 				"signature": { "label": "Signatur" },
@@ -176,53 +89,64 @@
 				"linkedEntities": { "label": "Stichworte" }
 			},
 			"groups": {
-				"longform'": {
-					"label_singular": "Lange Form",
-					"label_plural": "Lange Formen",
+				"Typoskript": {
+					"label_singular": "Typoskript",
+					"label_plural": "Typoskripte",
+					"slug": null
+				},
+				"Manuskript": {
+					"label_singular": "Manuskript",
+					"label_plural": "Manuskripte",
 					"slug": null
 				}
 			}
 		},
-		"photos": {
-			"name": "Fotografien",
-			"url": "photos",
-			"key_singular": "photo",
-			"label_plural": "Fotografien",
-			"label_singular": "Fotografie",
+		"published": {
+			"name": "Published Works",
+			"url": "published",
+			"key_singular": "published",
+			"label_plural": "Published Works",
+			"label_singular": "Published Work",
 			"metadata": {
 				"title": { "label": "Label" },
-				"date": { "label": "Datum" },
-				"date_normalised": { "label": "Datum Normalisiert" },
+				"editor_workflow": { "label": "Editor Workflow" },
+				"year": { "label": "Jahr" },
+				"title_full": { "label": "Voller Titel" },
+				"title_short": { "label": "Kurztitel" },
+				"authors": { "label": "Autor:in(nen)" },
+				"summary": { "label": "Zusammenfassung" },
+				"pubDate": { "label": "Publikaitonsdatum" },
+				"pubPosthumOnly": { "label": "Posthume Publikation (ja/nein)" },
+				"pubPlace": { "label": "Publikationsort" },
+				"signature": { "label": "Signatur" },
+				"pubDetails": { "label": "Publikationsdetails" },
+				"textstufen_edited": { "label": "Textstufen (ediert)" },
+				"textzeugen_nonedited": { "label": "Textstufen (nicht ediert)" },
+				"series": { "label": "Serien" },
+				"comment": { "label": "Kommentar" },
+				"maximum": { "label": "Maximum" },
 				"travel": { "label": "Reise" },
-				"photographer": { "label": "Fotograf:in" },
-				"people_on_photo": { "label": "Abgebildete Personen" },
-				"characteristics": { "label": "Umfang" },
-				"comments_1": { "label": "Anmerkung 1" },
-				"comments_2": { "label": "Anmerkungen 2" },
-				"captions_1": { "label": "Caption 1" },
-				"captions_2": { "label": "Caption 2" },
-				"orientation": { "label": "Orientierung" },
-				"shape": { "label": "Form" },
-				"url_helveticarchives": { "label": "URL Helvetic Archives" },
-				"url_wikimedia": { "label": "URL Wikimedia" },
-				"url_emanuscripta": { "label": "URL e-manuscripta" },
-				"repository": { "label": "Repository" },
-				"published_in": { "label": "Publikation (Editionen & Artikel)" },
-				"mentioned_in": { "label": "Erwähung in Forschungsliteratur" },
-				"sla_id_full": { "label": "SLA-ID" },
-				"sla_id_coll": { "label": "SLA Sammlung" },
-				"sla_id_img": { "label": "SLA Dokumentennummer" },
-				"stamped": { "label": "Gestempelt" },
-				"signed": { "label": "Signiert" }
+				"archive": { "label": "Archiv" },
+				"archiveCollation": { "label": "Archivsammlung" },
+				"pubSecondary": { "label": "Sekundärliteratur" },
+				"urlOnlineResource": { "label": "URL Onlineressource" },
+				"note": { "label": "Notizen" }
 			},
 			"crossReferences": {
+				"citedDocuments": { "label": "Zitierte Dokumente" },
 				"linkedDocuments": { "label": "Verknüpfte Dokumente" },
+				"citedEntities": { "label": "Zitierte Entitiäten" },
 				"linkedEntities": { "label": "Stichworte" }
 			},
 			"groups": {
-				"Fotografie'": {
-					"label_singular": "Fotografie",
-					"label_plural": "Fotografien",
+				"Typoskript": {
+					"label_singular": "Typoskript",
+					"label_plural": "Typoskripte",
+					"slug": null
+				},
+				"Manuskript": {
+					"label_singular": "Manuskript",
+					"label_plural": "Manuskripte",
 					"slug": null
 				}
 			}

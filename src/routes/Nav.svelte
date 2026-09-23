@@ -29,11 +29,11 @@
 	};
 
 	const subMenuInfo = {
-		smallforms: {
+		unpublished: {
 			name: 'Kleine Formen',
 			description: 'Kleine Formen',
 			content: 'Artikel, Zeitungsartikel, Sonderbeilagen, Rezensionen und weitere Kleine Formen',
-			path: resolve('/smallforms')
+			path: resolve('/unpublished')
 		}
 	};
 
@@ -46,39 +46,39 @@
 
 	const dictNav = {
 		random_element_text: {
-			smallforms: 'Zufällige Smallform anzeigen'
+			unpublished: 'Zufällige Unpublished anzeigen'
 		}
 	};
 
 	// UI States
 	let hoveredSubmenu: { key: keyof typeof subMenuInfo | undefined } = $state({
-		key: 'smallforms'
+		key: 'unpublished'
 	});
 
 	let isDocType = $derived(hoveredSubmenu.key && hoveredSubmenu.key in dictDoc ? true : false);
 
 	// Sample Documents
 	const sampleDocuments = {
-		smallforms: [
+		unpublished: [
 			{
-				altText: 'Sample Smallform',
-				targetURL: resolve('/smallform_0231'),
+				altText: 'Sample Unpublished',
+				targetURL: resolve('/unpublished_0231'),
 				imgURL:
 					'https://iiif.ub.unibe.ch/image/v3.0/a21e9b64-0740-4576-94d3-61595cda3e80/full/200,/0/default.jpg',
 				classes: 'max-w-40 max-h-40',
 				rotation: randomValue(15)
 			},
 			{
-				altText: 'Sample Smallform',
-				targetURL: resolve('/smallform_0270'),
+				altText: 'Sample Unpublished',
+				targetURL: resolve('/unpublished_0270'),
 				imgURL:
 					'https://iiif.library.ethz.ch/iiif/2/e-periodica%21zui%211938_014%21zui-001_1938_014_0261.jpg/full/200,/0/default.jpg',
 				classes: 'max-w-40 max-h-40',
 				rotation: -1 * randomValue(15)
 			},
 			{
-				altText: 'Sample Smallform',
-				targetURL: resolve('/smallform_0276'),
+				altText: 'Sample Unpublished',
+				targetURL: resolve('/unpublished_0276'),
 				imgURL:
 					'https://iiif.ub.unibe.ch/image/v3.0/07fbd801-4b9f-4e7c-ab04-a7ec240e4b5e/full/200,/0/default.jpg',
 				classes: 'max-w-40 max-h-40',
@@ -97,7 +97,7 @@
 				// img.onerror = () => console.warn(`Failed to load: ${imgURL}`);
 			});
 		}
-		const allImageUrls = [...sampleDocuments.smallforms.map((item) => item.imgURL)];
+		const allImageUrls = [...sampleDocuments.unpublished.map((item) => item.imgURL)];
 		preloadImages(allImageUrls);
 	});
 </script>

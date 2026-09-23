@@ -601,9 +601,9 @@ tei-anchor {
 		border-bottom-style: solid;
 		border-bottom-color: var(--color-background-contrast);
 
-		&[type='smallform'],
-		&[type='longform'],
-		&[type='letter'],
+		&[type='unpublished'],
+		&[type='published'],
+		&[type='posthum'],
 		&[type='image'] {
 			border-bottom-color: var(--color-rs-doc);
 		}
@@ -640,9 +640,9 @@ tei-anchor {
 		border-bottom-style: solid;
 		border-bottom-color: var(--color-background-contrast);
 
-		&[type='smallform']:hover,
-		&[type='longform']:hover,
-		&[type='letter']:hover {
+		&[type='unpublished']:hover,
+		&[type='published']:hover,
+		&[type='posthum']:hover {
 			border-bottom-color: var(--color-rs-doc);
 		}
 		&[type='person']:hover {

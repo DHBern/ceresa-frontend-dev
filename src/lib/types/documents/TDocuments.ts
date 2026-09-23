@@ -1,15 +1,13 @@
 // --- Types ----------------------------------------
 // Keys
-import { type TLettersKeys } from './TLettersKeys';
-import { type TSmallformsKeys } from './TSmallformsKeys';
-import { type TLongformsKeys } from './TLongformsKeys';
-import { type TPhotosKeys } from './TPhotosKeys';
+import { type TPosthumKeys } from './TPosthumKeys';
+import { type TUnpublishedKeys } from './TUnpublishedKeys';
+import { type TPublishedKeys } from './TPublishedKeys';
 
 // Types
-import { type TLettersGroups } from './TLettersGroups';
-import { type TSmallformsGroups } from './TSmallformsGroups';
-import { type TLongformsGroups } from './TLongformGroups';
-import { type TPhotosGroups } from './TPhotosGroups';
+import { type TPosthumGroups } from './TPosthumGroups';
+import { type TUnpublishedGroups } from './TUnpublishedGroups';
+import { type TPublishedGroups } from './TPublishedGroups';
 
 // From Register
 import { type TPeopleKeys } from '../register/TPeopleKeys';
@@ -27,10 +25,9 @@ type TContentNotes = {
 	comment?: string;
 };
 type TCrossRefDocs = {
-	letters?: TLettersKeys[];
-	smallforms?: TSmallformsKeys[];
-	longforms?: TLongformsKeys[];
-	photos?: TPhotosKeys[];
+	posthum?: TPosthumKeys[];
+	unpublished?: TUnpublishedKeys[];
+	published?: TPublishedKeys[];
 };
 type TCrossRefEntities = {
 	people?: TPeopleKeys[];
@@ -54,11 +51,11 @@ export type TDocuments = {
 		description: string;
 	};
 	documents: {
-		letters: {
-			[key in TLettersKeys]: {
+		posthum: {
+			[key in TPosthumKeys]: {
 				name: string | null;
 				metadata: {
-					types: TLettersGroups[] | null;
+					types: TPosthumGroups[] | null;
 					date: { from: string | null; to: string | null };
 					date_stamp: string | null;
 					people_sending: TPeopleKeys[] | null;
@@ -99,12 +96,12 @@ export type TDocuments = {
 				};
 			};
 		};
-		smallforms: {
-			[key in TSmallformsKeys]: {
+		unpublished: {
+			[key in TUnpublishedKeys]: {
 				slug?: string; //! discuss whether this is identical to key
 				name: string;
 				date: { from: string | null; to: string | null };
-				type: TSmallformsGroups | '?' | '';
+				type: TUnpublishedGroups | '?' | '';
 				metadata: {
 					title: string | null;
 					authors?: string[];
@@ -149,12 +146,12 @@ export type TDocuments = {
 				};
 			};
 		};
-		longforms: {
-			[key in TLongformsKeys]: {
+		published: {
+			[key in TPublishedKeys]: {
 				slug?: string; //! discuss whether this is identical to key
 				name: string;
 				date: { from: string | null; to: string | null };
-				type: TLongformsGroups | '?' | '';
+				type: TPublishedGroups | '?' | '';
 				metadata: {
 					title: string | null;
 					authors?: string[];
@@ -199,57 +196,6 @@ export type TDocuments = {
 				};
 			};
 		};
-		photos: {
-			[key in TPhotosKeys]: {
-				name: string | null;
-				type?: TPhotosGroups | '?' | '';
-				metadata: {
-					title: string | null;
-					date: string | null;
-					date_normalised: {
-						from: string | null;
-						to: string | null;
-					} | null;
-					travel: string | null;
-					photographer: string | null;
-					people_on_photo: string[] | null;
-					characteristics: string | null;
-					comments_1: string | null;
-					captions_1: string[] | null;
-					captions_2: string[] | null;
-					orientation: string | null;
-					shape: string | null;
-					url_helveticarchives: string | null;
-					url_wikimedia: string | null;
-					url_emanuscripta: string | null;
-					repository: string | null;
-					published_in: string[] | null;
-					mentioned_in: string[] | null;
-					comments_2: string | null;
-					sla_id_full: string | null;
-					sla_id_coll: string | null;
-					sla_id_img: string | null;
-					stamped: boolean | null;
-					signed: boolean | null;
-				};
-				crossReferences?: {
-					linkedDocuments?: TCrossRefDocs;
-					linkedEntities?: TCrossRefEntities;
-				};
-				faksimile: {
-					iiif_manifest: string | null;
-					iiif_manifest_emanuscripta: string | null;
-					iiif_image_emanuscripta?: string | null;
-				};
-				editorialNotes: {
-					contentNotes?: TContentNotes[];
-				};
-				manuscript: {
-					rendition?: TRendition | null;
-					iiif_urls: string[];
-				};
-			};
-		};
 	};
 };
 
@@ -280,78 +226,67 @@ export type TDocDict = {
 		description: string;
 	};
 	dict_docs: {
-		letters: DictEntity<TDocMetadataKeysLetters, TLettersGroups>;
-		smallforms: DictEntity<TDocMetadataKeysSmallforms, TSmallformsGroups>;
-		longforms: DictEntity<TDocMetadataKeysLongforms, TLongformsGroups>;
-		photos: DictEntity<TDocMetadataKeysPhotos, TPhotosGroups>;
+		posthum: DictEntity<TDocMetadataKeysPosthum, TPosthumGroups>;
+		unpublished: DictEntity<TDocMetadataKeysUnpublished, TUnpublishedGroups>;
+		published: DictEntity<TDocMetadataKeysPublished, TPublishedGroups>;
 	};
 };
 
 // --- Sets -------------------------------------------------------
 export type TDocTypes = keyof TDocuments['documents'];
-export type TDocKeys = TLettersKeys | TSmallformsKeys | TLongformsKeys | TPhotosKeys;
+export type TDocKeys = TPosthumKeys | TUnpublishedKeys | TPublishedKeys;
 export type TDocKeysMap = {
-	letters: TLettersKeys;
-	smallforms: TSmallformsKeys;
-	longforms: TLongformsKeys;
-	photos: TPhotosKeys;
+	posthum: TPosthumKeys;
+	unpublished: TUnpublishedKeys;
+	published: TPublishedKeys;
 };
 
-export type TDocAttrsLetters = keyof TDocuments['documents']['letters'][TLettersKeys];
-export type TDocAttrsSmallforms = keyof TDocuments['documents']['smallforms'][TSmallformsKeys];
-export type TDocAttrsLongforms = keyof TDocuments['documents']['longforms'][TLongformsKeys];
-export type TDocAttrsPhotos = keyof TDocuments['documents']['photos'][TPhotosKeys];
+export type TDocAttrsPosthum = keyof TDocuments['documents']['posthum'][TPosthumKeys];
+export type TDocAttrsUnpublished = keyof TDocuments['documents']['unpublished'][TUnpublishedKeys];
+export type TDocAttrsPublished = keyof TDocuments['documents']['published'][TPublishedKeys];
 export type TDocAttrs =
-	TDocAttrsLetters | TDocAttrsSmallforms | TDocAttrsLongforms | TDocAttrsPhotos;
+	TDocAttrsPosthum | TDocAttrsUnpublished | TDocAttrsPublished;
 export type TDocAttrsMap = {
-	letters: TDocAttrsLetters;
-	smallforms: TDocAttrsSmallforms;
-	longforms: TDocAttrsLongforms;
-	photos: TDocAttrsPhotos;
+	posthum: TDocAttrsPosthum;
+	unpublished: TDocAttrsUnpublished;
+	published: TDocAttrsPublished;
 };
 
-export type TDocMetadataKeysLetters =
-	keyof TDocuments['documents']['letters'][TLettersKeys]['metadata'];
-export type TDocMetadataKeysSmallforms =
-	keyof TDocuments['documents']['smallforms'][TSmallformsKeys]['metadata'];
-export type TDocMetadataKeysLongforms =
-	keyof TDocuments['documents']['longforms'][TLongformsKeys]['metadata'];
-export type TDocMetadataKeysPhotos =
-	keyof TDocuments['documents']['photos'][TPhotosKeys]['metadata'];
+export type TDocMetadataKeysPosthum =
+	keyof TDocuments['documents']['posthum'][TPosthumKeys]['metadata'];
+export type TDocMetadataKeysUnpublished =
+	keyof TDocuments['documents']['unpublished'][TUnpublishedKeys]['metadata'];
+export type TDocMetadataKeysPublished =
+	keyof TDocuments['documents']['published'][TPublishedKeys]['metadata'];
 export type TDocMetadataKeys =
-	| TDocMetadataKeysLetters
-	| TDocMetadataKeysSmallforms
-	| TDocMetadataKeysLongforms
-	| TDocMetadataKeysPhotos;
+	| TDocMetadataKeysPosthum
+	| TDocMetadataKeysUnpublished
+	| TDocMetadataKeysPublished
 export type TDocMetadataKeysMap = {
-	letters: TDocMetadataKeysLetters;
-	smallforms: TDocMetadataKeysSmallforms;
-	longforms: TDocMetadataKeysLongforms;
-	photos: TDocMetadataKeysPhotos;
+	posthum: TDocMetadataKeysPosthum;
+	unpublished: TDocMetadataKeysUnpublished;
+	published: TDocMetadataKeysPublished;
 };
 
-export type TDocItemsLetters = TDocuments['documents']['letters'][TLettersKeys];
-export type TDocItemsSmallforms = TDocuments['documents']['smallforms'][TSmallformsKeys];
-export type TDocItemsLongforms = TDocuments['documents']['longforms'][TLongformsKeys];
-export type TDocItemsPhotos = TDocuments['documents']['photos'][TPhotosKeys];
+export type TDocItemsPosthum = TDocuments['documents']['posthum'][TPosthumKeys];
+export type TDocItemsUnpublished = TDocuments['documents']['unpublished'][TUnpublishedKeys];
+export type TDocItemsPublished = TDocuments['documents']['published'][TPublishedKeys];
 export type TDocItems =
-	TDocItemsLetters | TDocItemsSmallforms | TDocItemsLongforms | TDocItemsPhotos;
+	TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished ;
 export type TDocItemsMap = {
-	letters: TDocItemsLetters;
-	smallforms: TDocItemsSmallforms;
-	longforms: TDocItemsLongforms;
-	photos: TDocItemsPhotos;
+	posthum: TDocItemsPosthum;
+	unpublished: TDocItemsUnpublished;
+	published: TDocItemsPublished;
 };
 
 // Group Set
 export type TDocGroupsFlat =
-	TLettersGroups | TSmallformsGroups | TLongformsGroups | TPhotosGroups | '?' | '';
+	TPosthumGroups | TUnpublishedGroups | TPublishedGroups | '?' | '';
 
 export type TDocGroupsMap = {
-	letters: TLettersGroups | '?' | '';
-	smallforms: TSmallformsGroups | '?' | '';
-	longforms: TLongformsGroups | '?' | '';
-	photos: TPhotosGroups | '?' | '';
+	posthum: TPosthumGroups | '?' | '';
+	unpublished: TUnpublishedGroups | '?' | '';
+	published: TPublishedGroups | '?' | '';
 };
 
 // CrossRef Entities (Register)

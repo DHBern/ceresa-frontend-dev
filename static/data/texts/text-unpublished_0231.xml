@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://cdn.jsdelivr.net/gh/dse-as/oxygen-framework@latest/schema/tei_dseas.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://cdn.jsdelivr.net/gh/dse-as/oxygen-framework@latest/schema/dseas.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="smallform_0231" type="dseas-smallform" xml:base="https://annemarie-schwarzenbach.ch/smallform_0231#"> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="unpublished_0231" type="dseas-unpublished" xml:base="https://annemarie-schwarzenbach.ch/unpublished_0231#"> 
    <teiHeader> 
       <fileDesc> 
          <titleStmt> 
@@ -18,8 +18,8 @@
                      key="place_0110" xml:id="r45">Schweiz</rs> brachte, insbesondere die Fotografien seiner letzten, tödlich geendeten Expedition.
                   Von ihrem hier geschilderten Besuch in <rs type="place" key="place_0017" xml:id="r47">Danzig</rs> Anfang Mai machte Schwarzenbach
                   viele Fotografien (siehe Stellenkommentare). Zudem berichtete sie <rs type="person" key="person_0053" xml:id="r67">Klaus Mann</rs>
-                  in einem – wohl auch aufgrund der anzunehmenden Brief-Zensur – hochironischen Ton über ihren Aufenthalt, vgl. <rs type="letter"
-                     key="letter_0250" xml:id="r48">Brief an Klaus Mann vom 05.05.1937</rs>. Das dortige 'Lob' des <rs type="org"
+                  in einem – wohl auch aufgrund der anzunehmenden Brief-Zensur – hochironischen Ton über ihren Aufenthalt, vgl. <rs type="posthum"
+                     key="posthum_0250" xml:id="r48">Brief an Klaus Mann vom 05.05.1937</rs>. Das dortige 'Lob' des <rs type="org"
                      key="organisation_0002" xml:id="r50">Nationalsozialisten</rs> findet sich auch im vorliegenden Text; die Leserschaft dürfte es
                   angesichts der bekannten antifaschistischen Haltung der Autorin als Kritik verstanden haben. Ob auch der Text direkt aus <rs
                      type="place" key="place_0017" xml:id="r51">Danzig</rs> an die Redaktion geschickt wurde, d.h. wie der genannte Brief der Zensur
@@ -29,12 +29,12 @@
                      Tagblatt</rs> korrespondiert mit der gleichnamigen, in der <rs type="org" key="organisation_0001" xml:id="r53"
                      >National-Zeitung</rs> erschienenen dreiteiligen Serie (die jeweiligen Artikel zu <rs type="place" key="place_0101" xml:id="r59"
                      >Finnland</rs> sind sogar weitgehend identisch, vgl. in der <rs type="org" key="organisation_0001" xml:id="r55"
-                     >National-Zeitung</rs>: <rs type="smallform" key="smallform_0225" xml:id="r54">Baltisches Tagebuch: Suomi - Land zwischen Ost und
-                     West</rs> , im <rs type="org" key="organisation_0007" xml:id="r56">Luzerner Tagblatt</rs>: <rs type="smallform"
-                     key="smallform_0232" xml:id="r57">Baltisches Tagebuch V: Suomi - Land zwischen Ost und West</rs>). Beide Feuilleton-Serien haben
-                  Vorstufen im längeren Typoskript <rs type="smallform" key="smallform_0215" xml:id="r58">Baltisches Tagebuch</rs> und weiterer
+                     >National-Zeitung</rs>: <rs type="unpublished" key="unpublished_0225" xml:id="r54">Baltisches Tagebuch: Suomi - Land zwischen Ost und
+                     West</rs> , im <rs type="org" key="organisation_0007" xml:id="r56">Luzerner Tagblatt</rs>: <rs type="unpublished"
+                     key="unpublished_0232" xml:id="r57">Baltisches Tagebuch V: Suomi - Land zwischen Ost und West</rs>). Beide Feuilleton-Serien haben
+                  Vorstufen im längeren Typoskript <rs type="unpublished" key="unpublished_0215" xml:id="r58">Baltisches Tagebuch</rs> und weiterer
                   Typoskripte. </p>
-               <p>Der vorliegende Text steht in direktem thematischen Zusammenhang mit <rs type="smallform" key="smallform_0223" xml:id="r60"
+               <p>Der vorliegende Text steht in direktem thematischen Zusammenhang mit <rs type="unpublished" key="unpublished_0223" xml:id="r60"
                      >Baltisches Tagebuch. Jenseits des Korridors</rs> in der <rs type="org" key="organisation_0001" xml:id="r61"
                      >National-Zeitung,</rs> kreisen doch beide um das Verhältnis der Bevölkerung ehemalig preussischer Gebiete zum <rs type="org"
                      key="organisation_0002" xml:id="r62">Nationalsozialismus</rs>. Während in letzterem die ländliche Bevölkerung im Vordergrund
@@ -52,8 +52,8 @@
                      key="place_0110" xml:id="r45">Schweiz</rs> brachte, insbesondere die Fotografien seiner letzten, tödlich geendeten Expedition.
                   Von ihrem hier geschilderten Besuch in <rs type="place" key="place_0017" xml:id="r47">Danzig</rs> Anfang Mai machte Schwarzenbach
                   viele Fotografien (siehe Stellenkommentare). Zudem berichtete sie <rs type="person" key="person_0053" xml:id="r67">Klaus Mann</rs>
-                  in einem – wohl auch aufgrund der anzunehmenden Brief-Zensur – hochironischen Ton über ihren Aufenthalt, vgl. <rs type="letter"
-                     key="letter_0250" xml:id="r48">Brief an Klaus Mann vom 05.05.1937</rs>. Das dortige 'Lob' des <rs type="org"
+                  in einem – wohl auch aufgrund der anzunehmenden Brief-Zensur – hochironischen Ton über ihren Aufenthalt, vgl. <rs type="posthum"
+                     key="posthum_0250" xml:id="r48">Brief an Klaus Mann vom 05.05.1937</rs>. Das dortige 'Lob' des <rs type="org"
                      key="organisation_0002" xml:id="r50">Nationalsozialisten</rs> findet sich auch im vorliegenden Text; die Leserschaft dürfte es
                   angesichts der bekannten antifaschistischen Haltung der Autorin als Kritik verstanden haben. Ob auch der Text direkt aus <rs
                      type="place" key="place_0017" xml:id="r51">Danzig</rs> an die Redaktion geschickt wurde, d.h. wie der genannte Brief der Zensur
@@ -63,12 +63,12 @@
                      Tagblatt</rs> korrespondiert mit der gleichnamigen, in der <rs type="org" key="organisation_0001" xml:id="r53"
                      >National-Zeitung</rs> erschienenen dreiteiligen Serie (die jeweiligen Artikel zu <rs type="place" key="place_0101" xml:id="r59"
                      >Finnland</rs> sind sogar weitgehend identisch, vgl. in der <rs type="org" key="organisation_0001" xml:id="r55"
-                     >National-Zeitung</rs>: <rs type="smallform" key="smallform_0225" xml:id="r54">Baltisches Tagebuch: Suomi - Land zwischen Ost und
-                     West</rs> , im <rs type="org" key="organisation_0007" xml:id="r56">Luzerner Tagblatt</rs>: <rs type="smallform"
-                     key="smallform_0232" xml:id="r57">Baltisches Tagebuch V: Suomi - Land zwischen Ost und West</rs>). Beide Feuilleton-Serien haben
-                  Vorstufen im längeren Typoskript <rs type="smallform" key="smallform_0215" xml:id="r58">Baltisches Tagebuch</rs> und weiterer
+                     >National-Zeitung</rs>: <rs type="unpublished" key="unpublished_0225" xml:id="r54">Baltisches Tagebuch: Suomi - Land zwischen Ost und
+                     West</rs> , im <rs type="org" key="organisation_0007" xml:id="r56">Luzerner Tagblatt</rs>: <rs type="unpublished"
+                     key="unpublished_0232" xml:id="r57">Baltisches Tagebuch V: Suomi - Land zwischen Ost und West</rs>). Beide Feuilleton-Serien haben
+                  Vorstufen im längeren Typoskript <rs type="unpublished" key="unpublished_0215" xml:id="r58">Baltisches Tagebuch</rs> und weiterer
                   Typoskripte. </p>
-               <p>Der vorliegende Text steht in direktem thematischen Zusammenhang mit <rs type="smallform" key="smallform_0223" xml:id="r60"
+               <p>Der vorliegende Text steht in direktem thematischen Zusammenhang mit <rs type="unpublished" key="unpublished_0223" xml:id="r60"
                      >Baltisches Tagebuch. Jenseits des Korridors</rs> in der <rs type="org" key="organisation_0001" xml:id="r61"
                      >National-Zeitung,</rs> kreisen doch beide um das Verhältnis der Bevölkerung ehemalig preussischer Gebiete zum <rs type="org"
                      key="organisation_0002" xml:id="r62">Nationalsozialismus</rs>. Während in letzterem die ländliche Bevölkerung im Vordergrund
@@ -81,7 +81,7 @@
              </note>
           </notesStmt>
           <sourceDesc> 
-            <bibl corresp="smallform_0231"> 
+            <bibl corresp="unpublished_0231"> 
                <persName key="person_0082" type="author">Schwarzenbach, Annemarie (1908-1942)</persName>
                 <bibl type="Feuilleton">
                   <title key="organisation_0007" level="j">Luzerner Tagblatt</title>
@@ -119,14 +119,14 @@
           </textClass>
        </profileDesc>
     </teiHeader>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="smallform_0231_facs.xml"> 
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="unpublished_0231_facs.xml"> 
       <xi:fallback/>
        <!--Inclusion path will be adjusted later.-->
     </xi:include>
     <text> 
       <body> 
-         <div type="smallform">
-            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/schwarzenbach/smallform_0231_001.tif/info.json" n="9"/>
+         <div type="unpublished">
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/schwarzenbach/unpublished_0231_001.tif/info.json" n="9"/>
             <milestone unit="textregion" xml:id="p001_r_2"/>            <head>
                <lb xml:id="p001_r_2_tl_1"/><hi rendition="#c">Baltisches Tagebuch.</hi>
                <lb xml:id="p001_l"/><hi rendition="#c">IV.</hi>
@@ -216,7 +216,7 @@
                <lb xml:id="p001_r_3_tl_30"/>war mit einem Kaufmann Branche Heringshandel
                <lb xml:id="p001_r_3_tl_31"/>verheiratet und hatte drei Kinder.
                <note type="annotation" xml:id="n7" targetEnd="a7">Es könnte sich dabei um dieselbe Person handeln, die Schwarzenbach in ihrem <rs
-                     type="letter" key="letter_0250" xml:id="r69">Brief an Klaus Mann vom 5. Mai 1937</rs> als eine <quote>ebenso schüchterne[] aber
+                     type="posthum" key="posthum_0250" xml:id="r69">Brief an Klaus Mann vom 5. Mai 1937</rs> als eine <quote>ebenso schüchterne[] aber
                      sehr brave[]
                      <lb xml:id="p001_tr_1_tl_18"/>kleinen Dame aus eingesessenen Kreisen</quote> beschreibt. </note>Aber einen Aus
                <lb xml:id="p001_r_3_tl_32" break="no"/>flug machte sie nicht. Der Mann war Unterführer
@@ -327,7 +327,7 @@
                <lb xml:id="p001_r_1_tl_35"/>die es aber nicht gab. Wir tranken auch Wodka,
                <lb xml:id="p001_r_1_tl_36"/>und Fräulein Jakobsohn wurde davon heiter und
                <lb xml:id="p001_r_1_tl_37"/>gesprächig. – <quote>Vielleicht erreiche ich es <hi rendition="#g">doch</hi> noch!</quote>
-               <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/schwarzenbach/smallform_0231_002.tif/info.json" n="10"/>
+               <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/schwarzenbach/unpublished_0231_002.tif/info.json" n="10"/>
                <milestone unit="textregion" xml:id="p002_r"/>
                <lb xml:id="p002_r_tl_1"/>sagte sie, und nickte mir mit einem glücklichen Lä
                <lb xml:id="p002_r_tl_2" break="no"/>cheln zu. – <quote>Was wollen Sie denn erreichen?</quote> –

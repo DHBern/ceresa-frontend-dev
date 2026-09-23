@@ -275,16 +275,16 @@
 		<!-- Alphabet -->
 		{#if registerGroupItems.value && !isMobile.value}
 			<div class="flex w-full flex-wrap items-center justify-start gap-2 text-base">
-				{#each groupLabels as letter (letter)}
-					{#if letter}
+				{#each groupLabels as posthum (posthum)}
+					{#if posthum}
 						<button
 							onclick={() => {
-								goto(`#${letter}`, { replaceState: true });
+								goto(`#${posthum}`, { replaceState: true });
 								tick();
 								window.scrollTo({ top: 0, behavior: 'auto' });
 							}}
 							class="center flex w-8 items-center justify-center hover:font-bold"
-							><p>{letter}</p></button
+							><p>{posthum}</p></button
 						>
 					{/if}
 				{/each}

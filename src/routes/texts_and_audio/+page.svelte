@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
-	import type { TSeqSmallformsKeys } from '$lib/types/TSequences';
+	import type { TSeqUnpublishedKeys } from '$lib/types/TSequences';
 	import { resolve } from '$app/paths';
 
-	let seqData = $derived(seqAll.smallforms);
+	let seqData = $derived(seqAll.unpublished);
 </script>
 
 <div class={['z-100 mx-auto flex max-w-300 flex-col gap-10 bg-background px-10']}>

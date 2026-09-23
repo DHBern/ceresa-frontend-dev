@@ -10,57 +10,30 @@
 			"label_next": "Nächstes Dokument",
 			"label_prev": "Vorheriges Dokument"
 		},
-		"travels": {
-			"sequence_name": "Reisen",
-			"key_singular": "travel",
-			"label_plural": "Reisen",
-			"label_singular": "Reise",
-			"label_seq_overview": "Reise auf Karte ansehen",
-			"label_next": "Nächstes Dokument",
-			"label_prev": "Vorheriges Dokument"
-		},
-		"correspondence": {
+		"posthum": {
 			"sequence_name": "Korrespondenz",
-			"key_singular": "correspondence",
+			"key_singular": "posthum",
 			"label_plural": "Korrespondenz",
 			"label_singular": "Korrespondenz",
 			"label_seq_overview": "Zur Korrespondenzansicht",
 			"label_next": "Nächster Brief",
 			"label_prev": "Vorheriger Brief"
 		},
-		"series": {
-			"sequence_name": "Artikelserien",
-			"key_singular": "series",
-			"label_plural": "Artikelserien",
-			"label_singular": "Artikelserie",
-			"label_seq_overview": "Zur Serienansicht",
-			"label_next": "Nächster Artikel",
-			"label_prev": "Vorheriger Artikel"
-		},
-		"photoseries": {
-			"sequence_name": "Fotoserie",
-			"key_singular": "photoseries",
-			"label_plural": "Fotoserien",
-			"label_singular": "Fotoserie",
-			"label_seq_overview": "Zur Übersicht der Fotoserie",
-			"label_next": "Nächstes Foto",
-			"label_prev": "Vorheriges Foto"
-		},
-		"smallforms": {
-			"sequence_name": "Smallforms",
-			"key_singular": "smallforms",
-			"label_plural": "Smallforms",
-			"label_singular": "Smallforms",
-			"label_seq_overview": "Zur Übersicht der Smallforms",
+		"unpublished": {
+			"sequence_name": "Unpublished",
+			"key_singular": "unpublished",
+			"label_plural": "Unpublished",
+			"label_singular": "Unpublished",
+			"label_seq_overview": "Zur Übersicht der Unpublished",
 			"label_next": "Nächstes Dokument",
 			"label_prev": "Vorheriges Dokument"
 		},
-		"longforms": {
-			"sequence_name": "Longforms",
-			"key_singular": "longforms",
-			"label_plural": "Longforms",
-			"label_singular": "Longforms",
-			"label_seq_overview": "Zur Übersicht der Longforms",
+		"published": {
+			"sequence_name": "Published",
+			"key_singular": "published",
+			"label_plural": "Published",
+			"label_singular": "Published",
+			"label_seq_overview": "Zur Übersicht der Publisheds",
 			"label_next": "Nächstes Dokument",
 			"label_prev": "Vorheriges Dokument"
 		}

@@ -2,9 +2,9 @@
 	import IIIF_Viewer from './IIIF_Viewer.svelte';
 	import TextPaged from './TextPaged.svelte';
 	import type {
-		TDocItemsLetters,
-		TDocItemsLongforms,
-		TDocItemsSmallforms
+		TDocItemsPosthum,
+		TDocItemsPublished,
+		TDocItemsUnpublished
 	} from '$lib/types/documents/TDocuments';
 	import type { ProcessedTEI } from './processTEI';
 
@@ -13,7 +13,7 @@
 		ceteiData,
 		params
 	}: {
-		docItem: TDocItemsLetters | TDocItemsSmallforms | TDocItemsLongforms | null;
+		docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null;
 		ceteiData: ProcessedTEI;
 		params: any;
 	} = $props();

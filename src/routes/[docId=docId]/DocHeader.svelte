@@ -2,9 +2,9 @@
 	import { resolve } from '$app/paths';
 	import type { TDocKeys } from '$lib/types/documents/TDocuments';
 	import type {
-		TResolvedLetters,
-		TResolvedSmallforms,
-		TResolvedLongforms,
+		TResolvedPosthum,
+		TResolvedUnpublished,
+		TResolvedPublished,
 		TResolvedDoc
 	} from '$lib/functions/ease_of_use/resolveDoc';
 	import { dict_register as dictReg } from '$lib/dictionaries/dict_register.json';
@@ -22,7 +22,7 @@
 		params
 	}: {
 		docId: TDocKeys | undefined;
-		resDoc: TResolvedLetters | TResolvedSmallforms | TResolvedLongforms | null;
+		resDoc: TResolvedPosthum | TResolvedUnpublished | TResolvedPublished | null;
 		ceteiData: any;
 		crossRef: Partial<
 			Record<'citedDocuments' | 'linkedDocuments' | 'citedEntities' | 'linkedEntities', any>
@@ -110,16 +110,16 @@
 {#if resDoc?.item}
 	<div class="w-full px-10">
 		<h1 class="h1 text-center">
-			{#if resDoc.docType === 'letters'}
+			{#if resDoc.docType === 'posthum'}
 				<span>{resDoc.item.name}</span>
 			{:else}
 				<span>{resDoc.item.metadata.title_full}</span>
 			{/if}
 		</h1>
 		<h3 class="h3 mt-2 text-center">
-			{#if resDoc.docType === 'letters'}
+			{#if resDoc.docType === 'posthum'}
 				<span>{printDateRange(resDoc.item.metadata.date.from, resDoc.item.metadata.date.to)}</span>
-			{:else if resDoc.docType === 'smallforms'}
+			{:else if resDoc.docType === 'unpublished'}
 				Publiziert in {resDoc.item.metadata.pubPlace} ({resDoc.item.metadata.year})
 			{/if}
 		</h3>
@@ -158,71 +158,71 @@
 						{#if stateMetadata === 'eckdaten'}
 							<table>
 								<tbody class="flex flex-col items-start gap-2">
-									{#if resDoc.docType === 'letters'}
+									{#if resDoc.docType === 'posthum'}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.types.label,
+											dictDocs.posthum.metadata.types.label,
 											'types' in resDoc.item!.metadata
 												? resDoc.item!.metadata.types?.join(', ')
 												: undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.date.label,
+											dictDocs.posthum.metadata.date.label,
 											printDateRange(resDoc.item!.metadata.date.from, resDoc.item!.metadata.date.to)
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.date_stamp.label,
+											dictDocs.posthum.metadata.date_stamp.label,
 											'date_stamp' in resDoc.item!.metadata
 												? resDoc.item!.metadata.date_stamp
 												: undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.people_sending.label,
+											dictDocs.posthum.metadata.people_sending.label,
 											'people_sending' in resDoc.item!.metadata
 												? resDoc.item!.metadata.people_sending?.join(', ')
 												: undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.people_addressed.label,
+											dictDocs.posthum.metadata.people_addressed.label,
 											'people_addressed' in resDoc.item!.metadata
 												? resDoc.item!.metadata.people_addressed?.join(', ')
 												: undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.people_addressfield.label,
+											dictDocs.posthum.metadata.people_addressfield.label,
 											'people_addressfield' in resDoc.item!.metadata
 												? resDoc.item!.metadata.people_addressfield?.join(', ')
 												: undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.place_of_sender.label,
+											dictDocs.posthum.metadata.place_of_sender.label,
 											'place_of_sender' in resDoc.item!.metadata
 												? resDoc.item!.metadata.place_of_sender
 												: undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.place_of_recepient.label,
+											dictDocs.posthum.metadata.place_of_recepient.label,
 											'place_of_recepient' in resDoc.item!.metadata
 												? resDoc.item!.metadata.place_of_recepient
 												: undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.summary.label,
+											dictDocs.posthum.metadata.summary.label,
 											'summary' in resDoc.item!.metadata ? resDoc.item!.metadata.summary : undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.content_and_medium.label,
+											dictDocs.posthum.metadata.content_and_medium.label,
 											'content_and_medium' in resDoc.item!.metadata
 												? resDoc.item!.metadata.content_and_medium
 												: undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.language.label,
+											dictDocs.posthum.metadata.language.label,
 											'language' in resDoc.item!.metadata
 												? resDoc.item!.metadata.language
 												: undefined
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.attachments.label,
+											dictDocs.posthum.metadata.attachments.label,
 											'attachments' in resDoc.item!.metadata
 												? resDoc.item!.metadata.attachments
 												: undefined
@@ -251,41 +251,41 @@
 						{:else if stateMetadata === 'sources'}
 							<table>
 								<tbody class="flex flex-col gap-2">
-									{#if resDoc.docType === 'letters'}
+									{#if resDoc.docType === 'posthum'}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.archive.folder_name.label,
+											dictDocs.posthum.metadata.archive.folder_name.label,
 											resDoc.item!.metadata.archive.folder_name
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.archive.ref_code_fonds.label,
+											dictDocs.posthum.metadata.archive.ref_code_fonds.label,
 											resDoc.item!.metadata.archive.ref_code_fonds
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.archive.shelfmark.label,
+											dictDocs.posthum.metadata.archive.shelfmark.label,
 											resDoc.item!.metadata.archive.shelfmark
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.archive.repository.label,
+											dictDocs.posthum.metadata.archive.repository.label,
 											resDoc.item!.metadata.archive.repository
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.archive.repo_url.label,
+											dictDocs.posthum.metadata.archive.repo_url.label,
 											resDoc.item!.metadata.archive.repo_url
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.archive.rights.label,
+											dictDocs.posthum.metadata.archive.rights.label,
 											resDoc.item!.metadata.archive.rights
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.archive.archival_history.label,
+											dictDocs.posthum.metadata.archive.archival_history.label,
 											resDoc.item!.metadata.archive.archival_history
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.archive.published_in.label,
+											dictDocs.posthum.metadata.archive.published_in.label,
 											resDoc.item!.metadata.archive.published_in?.join(' | ')
 										)}
 										{@render metadataEntry(
-											dictDocs.letters.metadata.archive.cited_in.label,
+											dictDocs.posthum.metadata.archive.cited_in.label,
 											resDoc.item!.metadata.archive.cited_in?.join(' | ')
 										)}
 									{:else}
@@ -343,7 +343,7 @@
 							{#if crossRef.citedDocuments && Object.keys(crossRef.citedDocuments).length}
 								<h5 class="h5">Im Text enthaltene Querverweise</h5>
 								<div>
-									{#each ['letters', 'smallforms', 'longforms', 'photos'] as const as type (type)}
+									{#each ['posthum', 'unpublished', 'published'] as const as type (type)}
 										{#if crossRef.citedDocuments?.[type]?.length}
 											{@render metadataCrossRefDoc(
 												dictDocs[type].label_plural,
@@ -365,7 +365,7 @@
 									Durch Editionsteam vergebene Querverweise
 								</h5>
 								<div>
-									{#each ['letters', 'smallforms', 'longforms', 'photos'] as const as type (type)}
+									{#each ['posthum', 'unpublished', 'published'] as const as type (type)}
 										{#if crossRef.linkedDocuments?.[type]?.length}
 											{@render metadataCrossRefDoc(
 												dictDocs[type].label_plural,
@@ -378,7 +378,7 @@
 						{:else if stateMetadata === 'citation'}
 							<table>
 								<tbody class="flex flex-col gap-2">
-									{#if resDoc.docType === 'letters'}
+									{#if resDoc.docType === 'posthum'}
 										{@render metadataEntry(
 											'Dieser Brief',
 											`AUTHOR et al. 2028 "Annemarie Schwarzenbach: Digitale Edition der Kleinen Formen und Briefe. Reisetexte, Intermedialität, Netzwerke", ${resDoc.item!.name} (${docId})`
@@ -404,7 +404,7 @@
 								<tbody class="flex flex-col gap-2">
 									{@render metadataEntry(
 										'XML',
-										`<a href="https://dav.annemarie-schwarzenbach.ch/data/sources/tei/smallforms/02/${docId}.xml" target="_blank" rel="noopener noreferrer">XML-Dokument</a>`
+										`<a href="https://dav.annemarie-schwarzenbach.ch/data/sources/tei/unpublished/02/${docId}.xml" target="_blank" rel="noopener noreferrer">XML-Dokument</a>`
 									)}
 								</tbody>
 							</table>
@@ -449,9 +449,9 @@
 		:global([data-entitytype='orgs']) {
 			@apply bg-(--color-rs-org-20);
 		}
-		:global([data-entitytype='smallforms']),
-		:global([data-entitytype='longforms']),
-		:global([data-entitytype='letters']) {
+		:global([data-entitytype='unpublished']),
+		:global([data-entitytype='published']),
+		:global([data-entitytype='posthum']) {
 			@apply bg-(--color-rs-doc-20);
 		}
 		:global([data-entitytype='bibls']) {

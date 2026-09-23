@@ -6,9 +6,9 @@ import { asset } from '$app/paths';
 import { documents as allDocs } from '$lib/data/documents.json';
 import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
 import type {
-	TResolvedLetters,
-	TResolvedSmallforms,
-	TResolvedLongforms
+	TResolvedPosthum,
+	TResolvedUnpublished,
+	TResolvedPublished
 } from '$lib/functions/ease_of_use/resolveDoc';
 import type {
 	TCrossRefDocumentsExtended,
@@ -19,21 +19,21 @@ import type {
 import { register as reg } from '$lib/data/register.json';
 import type { TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
 import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
-import { letters_keys } from '$lib/data/letters_keys.json';
-import { smallforms_keys } from '$lib/data/smallforms_keys.json';
-import { longforms_keys } from '$lib/data/longforms_keys.json';
+import { posthum_keys } from '$lib/data/posthum_keys.json';
+import { unpublished_keys } from '$lib/data/unpublished_keys.json';
+import { published_keys } from '$lib/data/published_keys.json';
 
 export const entries: EntryGenerator = () => {
-	const lettersKeyObjects = letters_keys.map((key) => {
+	const posthumKeyObjects = posthum_keys.map((key) => {
 		return { docId: key };
 	});
-	const smallformsKeyObjects = smallforms_keys.map((key) => {
+	const unpublishedKeyObjects = unpublished_keys.map((key) => {
 		return { docId: key };
 	});
-	const longformsKeyObjects = longforms_keys.map((key) => {
+	const publishedKeyObjects = published_keys.map((key) => {
 		return { docId: key };
 	});
-	return [...lettersKeyObjects, ...smallformsKeyObjects, ...longformsKeyObjects];
+	return [...posthumKeyObjects, ...unpublishedKeyObjects, ...publishedKeyObjects];
 };
 
 export const load: PageServerLoad = async ({ params, fetch }) => {
@@ -92,7 +92,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 
 	// Resolve Documents to current document
 	const resolvedDoc = resolveDoc(allDocs, params.docId as TDocKeys) as
-		TResolvedLetters | TResolvedSmallforms | TResolvedLongforms;
+		TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
 
 	// Resolve cross-register references
 	const crossRef: {

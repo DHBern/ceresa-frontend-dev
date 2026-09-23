@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { activeRegisterTab } from '$lib/globals/ui-states.svelte';
 	import type {
-		TDocItemsLetters,
-		TDocItemsLongforms,
-		TDocItemsSmallforms
+		TDocItemsPosthum,
+		TDocItemsPublished,
+		TDocItemsUnpublished
 	} from '$lib/types/documents/TDocuments';
 	import Annotations from './Annotations.svelte';
 	import type { ProcessedTEI } from './processTEI';
@@ -17,7 +17,7 @@
 		ceteiData,
 		params
 	}: {
-		docItem: TDocItemsLetters | TDocItemsSmallforms | TDocItemsLongforms | null;
+		docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null;
 		ceteiData: ProcessedTEI;
 		params: object;
 	} = $props();
