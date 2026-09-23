@@ -248,9 +248,7 @@
 			/>
 			<div class={['flex w-max grow flex-col', isCurrent ? 'max-w-60' : 'max-w-40']}>
 				{#if resType === 'posthum'}
-					<span class="line-clamp-2"
-						>{printDateRange(resDoc?.metadata.date.from, resDoc?.metadata.date.to)}</span
-					>
+					<span class="line-clamp-2">{printDateRange(resDoc?.date.from, resDoc?.date.to)}</span>
 					<span class="line-clamp-2">{resDoc?.name}</span>
 				{:else}
 					<span class="line-clamp-2">{resDoc?.metadata?.title_full}</span>

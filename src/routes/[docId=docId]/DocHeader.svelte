@@ -118,7 +118,7 @@
 		</h1>
 		<h3 class="h3 mt-2 text-center">
 			{#if resDoc.docType === 'posthum'}
-				<span>{printDateRange(resDoc.item.metadata.date.from, resDoc.item.metadata.date.to)}</span>
+				<span>{printDateRange(resDoc.item.date.from, resDoc.item.date.to)}</span>
 			{:else if resDoc.docType === 'unpublished'}
 				Publiziert in {resDoc.item.metadata.pubPlace}
 			{/if}
