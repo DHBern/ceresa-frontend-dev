@@ -53,31 +53,24 @@ export type TDocuments = {
 	documents: {
 		posthum: {
 			[key in TPosthumKeys]: {
-				name: string | null;
+				slug?: string; //! discuss whether this is identical to key
+				name: string;
+				date: { from: string | null; to: string | null };
+				type: TPosthumGroups | '?' | '';
 				metadata: {
-					types: TPosthumGroups[] | null;
-					date: { from: string | null; to: string | null };
-					date_stamp: string | null;
-					people_sending: TPeopleKeys[] | null;
-					people_addressed: TPeopleKeys[] | null;
-					people_addressfield?: TPeopleKeys[] | null; //! as suggestion
-					place_of_sender?: string | null; //! discuss whether TPlacesKeys
-					place_of_recepient?: string | null; //! discuss whether TPlacesKeys
-					summary?: string | null;
-					content_and_medium?: string | null;
-					language?: string | null;
-					attachments?: string | null;
-					archive: {
-						repository?: string | null;
-						repo_url?: string | null;
-						shelfmark?: string | null;
-						folder_name?: string | null;
-						ref_code_fonds?: string | null;
-						rights?: string | null;
-						archival_history?: string | null;
-						published_in?: string[];
-						cited_in?: string[];
-					};
+					title: string | null;
+					authors?: string[];
+					pubDate: string;
+					title_full: string;
+					title_short?: string;
+					pubPlace?: string;
+					pubDetails?: string;
+					textstufen_edited: string[];
+					textzeugen_nonedited: string[];
+					archive: string;
+					archiveCollation: string;
+					pubSecondary: string;
+					note: string;
 				};
 				crossReferences?: {
 					citedDocuments?: TCrossRefDocs;
@@ -87,12 +80,14 @@ export type TDocuments = {
 				};
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
-					editorial_comments_1?: string | null;
-					editorial_comments_2?: string | null;
 				};
 				manuscript: {
 					rendition?: TRendition | null;
 					iiif_urls: string[];
+				};
+				numPages: number | null;
+				edition: {
+					fullyEdited: boolean;
 				};
 			};
 		};
@@ -105,26 +100,16 @@ export type TDocuments = {
 				metadata: {
 					title: string | null;
 					authors?: string[];
-					summary?: string;
 					pubDate: string;
 					title_full: string;
 					title_short?: string;
-					editor_workflow: 'ez_ttf_of';
-					year: string;
-					pubPosthumOnly: boolean | string;
 					pubPlace?: string;
-					signature: string;
 					pubDetails?: string;
 					textstufen_edited: string[];
 					textzeugen_nonedited: string[];
-					series: string;
-					comment: string;
-					maximum: string; //! what is this?
-					travel: string; //! what is this?
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
-					urlOnlineResource: string;
 					note: string;
 				};
 				crossReferences?: {
@@ -155,26 +140,16 @@ export type TDocuments = {
 				metadata: {
 					title: string | null;
 					authors?: string[];
-					summary?: string;
 					pubDate: string;
 					title_full: string;
 					title_short?: string;
-					editor_workflow: 'ez_ttf_of';
-					year: string;
-					pubPosthumOnly: boolean | string;
 					pubPlace?: string;
-					signature: string;
 					pubDetails?: string;
 					textstufen_edited: string[];
 					textzeugen_nonedited: string[];
-					series: string;
-					comment: string;
-					maximum: string;
-					travel: string;
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
-					urlOnlineResource: string;
 					note: string;
 				};
 				crossReferences?: {
@@ -244,8 +219,7 @@ export type TDocKeysMap = {
 export type TDocAttrsPosthum = keyof TDocuments['documents']['posthum'][TPosthumKeys];
 export type TDocAttrsUnpublished = keyof TDocuments['documents']['unpublished'][TUnpublishedKeys];
 export type TDocAttrsPublished = keyof TDocuments['documents']['published'][TPublishedKeys];
-export type TDocAttrs =
-	TDocAttrsPosthum | TDocAttrsUnpublished | TDocAttrsPublished;
+export type TDocAttrs = TDocAttrsPosthum | TDocAttrsUnpublished | TDocAttrsPublished;
 export type TDocAttrsMap = {
 	posthum: TDocAttrsPosthum;
 	unpublished: TDocAttrsUnpublished;
@@ -259,9 +233,7 @@ export type TDocMetadataKeysUnpublished =
 export type TDocMetadataKeysPublished =
 	keyof TDocuments['documents']['published'][TPublishedKeys]['metadata'];
 export type TDocMetadataKeys =
-	| TDocMetadataKeysPosthum
-	| TDocMetadataKeysUnpublished
-	| TDocMetadataKeysPublished
+	TDocMetadataKeysPosthum | TDocMetadataKeysUnpublished | TDocMetadataKeysPublished;
 export type TDocMetadataKeysMap = {
 	posthum: TDocMetadataKeysPosthum;
 	unpublished: TDocMetadataKeysUnpublished;
@@ -271,8 +243,7 @@ export type TDocMetadataKeysMap = {
 export type TDocItemsPosthum = TDocuments['documents']['posthum'][TPosthumKeys];
 export type TDocItemsUnpublished = TDocuments['documents']['unpublished'][TUnpublishedKeys];
 export type TDocItemsPublished = TDocuments['documents']['published'][TPublishedKeys];
-export type TDocItems =
-	TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished ;
+export type TDocItems = TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished;
 export type TDocItemsMap = {
 	posthum: TDocItemsPosthum;
 	unpublished: TDocItemsUnpublished;
@@ -280,8 +251,7 @@ export type TDocItemsMap = {
 };
 
 // Group Set
-export type TDocGroupsFlat =
-	TPosthumGroups | TUnpublishedGroups | TPublishedGroups | '?' | '';
+export type TDocGroupsFlat = TPosthumGroups | TUnpublishedGroups | TPublishedGroups | '?' | '';
 
 export type TDocGroupsMap = {
 	posthum: TPosthumGroups | '?' | '';

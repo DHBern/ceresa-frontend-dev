@@ -120,7 +120,7 @@
 			{#if resDoc.docType === 'posthum'}
 				<span>{printDateRange(resDoc.item.metadata.date.from, resDoc.item.metadata.date.to)}</span>
 			{:else if resDoc.docType === 'unpublished'}
-				Publiziert in {resDoc.item.metadata.pubPlace} ({resDoc.item.metadata.year})
+				Publiziert in {resDoc.item.metadata.pubPlace}
 			{/if}
 		</h3>
 		<!-- Global Comment -->
@@ -158,144 +158,23 @@
 						{#if stateMetadata === 'eckdaten'}
 							<table>
 								<tbody class="flex flex-col items-start gap-2">
-									{#if resDoc.docType === 'posthum'}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.types.label,
-											'types' in resDoc.item!.metadata
-												? resDoc.item!.metadata.types?.join(', ')
-												: undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.date.label,
-											printDateRange(resDoc.item!.metadata.date.from, resDoc.item!.metadata.date.to)
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.date_stamp.label,
-											'date_stamp' in resDoc.item!.metadata
-												? resDoc.item!.metadata.date_stamp
-												: undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.people_sending.label,
-											'people_sending' in resDoc.item!.metadata
-												? resDoc.item!.metadata.people_sending?.join(', ')
-												: undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.people_addressed.label,
-											'people_addressed' in resDoc.item!.metadata
-												? resDoc.item!.metadata.people_addressed?.join(', ')
-												: undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.people_addressfield.label,
-											'people_addressfield' in resDoc.item!.metadata
-												? resDoc.item!.metadata.people_addressfield?.join(', ')
-												: undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.place_of_sender.label,
-											'place_of_sender' in resDoc.item!.metadata
-												? resDoc.item!.metadata.place_of_sender
-												: undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.place_of_recepient.label,
-											'place_of_recepient' in resDoc.item!.metadata
-												? resDoc.item!.metadata.place_of_recepient
-												: undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.summary.label,
-											'summary' in resDoc.item!.metadata ? resDoc.item!.metadata.summary : undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.content_and_medium.label,
-											'content_and_medium' in resDoc.item!.metadata
-												? resDoc.item!.metadata.content_and_medium
-												: undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.language.label,
-											'language' in resDoc.item!.metadata
-												? resDoc.item!.metadata.language
-												: undefined
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.attachments.label,
-											'attachments' in resDoc.item!.metadata
-												? resDoc.item!.metadata.attachments
-												: undefined
-										)}
-									{:else}
-										{@render metadataEntry('Voller Titel', resDoc.item!.metadata.title_full)}
-										{@render metadataEntry('Publikationsdatum', resDoc.item!.metadata.pubDate)}
-										{@render metadataEntry(
-											'Publikationsort',
-											'pubPlace' in resDoc.item!.metadata
-												? resDoc.item!.metadata.pubPlace
-												: undefined
-										)}
-										{@render metadataEntry(
-											'Publikation einzig post-hum',
-											typeof resDoc.item!.metadata.pubPosthumOnly === 'boolean'
-												? resDoc.item!.metadata.pubPosthumOnly
-													? 'Ja'
-													: 'Nein'
-												: '?'
-										)}
-										{@render metadataEntry('Publikationsdetails', resDoc.item!.metadata.pubDetails)}
-									{/if}
+									{@render metadataEntry('Voller Titel', resDoc.item!.metadata.title_full)}
+									{@render metadataEntry('Publikationsdatum', resDoc.item!.metadata.pubDate)}
+									{@render metadataEntry(
+										'Publikationsort',
+										'pubPlace' in resDoc.item!.metadata ? resDoc.item!.metadata.pubPlace : undefined
+									)}
+									{@render metadataEntry('Publikationsdetails', resDoc.item!.metadata.pubDetails)}
 								</tbody>
 							</table>
 						{:else if stateMetadata === 'sources'}
 							<table>
 								<tbody class="flex flex-col gap-2">
-									{#if resDoc.docType === 'posthum'}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.archive.folder_name.label,
-											resDoc.item!.metadata.archive.folder_name
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.archive.ref_code_fonds.label,
-											resDoc.item!.metadata.archive.ref_code_fonds
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.archive.shelfmark.label,
-											resDoc.item!.metadata.archive.shelfmark
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.archive.repository.label,
-											resDoc.item!.metadata.archive.repository
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.archive.repo_url.label,
-											resDoc.item!.metadata.archive.repo_url
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.archive.rights.label,
-											resDoc.item!.metadata.archive.rights
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.archive.archival_history.label,
-											resDoc.item!.metadata.archive.archival_history
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.archive.published_in.label,
-											resDoc.item!.metadata.archive.published_in?.join(' | ')
-										)}
-										{@render metadataEntry(
-											dictDocs.posthum.metadata.archive.cited_in.label,
-											resDoc.item!.metadata.archive.cited_in?.join(' | ')
-										)}
-									{:else}
-										{@render metadataEntry('Signatur', resDoc.item!.metadata.signature)}
-										{@render metadataEntry('Archivierungsort', resDoc.item!.metadata.archive)}
-										{@render metadataEntry(
-											'Archive Collation',
-											resDoc.item!.metadata.archiveCollation
-										)}
-									{/if}
+									{@render metadataEntry('Archivierungsort', resDoc.item!.metadata.archive)}
+									{@render metadataEntry(
+										'Archive Collation',
+										resDoc.item!.metadata.archiveCollation
+									)}
 								</tbody>
 							</table>
 						{:else if stateMetadata === 'crossRefEntities'}
