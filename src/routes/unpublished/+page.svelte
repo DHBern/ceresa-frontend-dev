@@ -34,11 +34,7 @@
 				laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
 			<div class="flex flex-wrap justify-center gap-2">
-				{@render keyList(
-					Object.keys(seqData).filter((key) => {
-						return (key as string) === 'unpublished_all';
-					}) as TSeqUnpublishedKeys[]
-				)}
+				{@render keyList(Object.keys(seqAll.unpublished) as TSeqUnpublishedKeys[])}
 			</div>
 		</div>
 	</div>

@@ -1,19 +1,19 @@
 <script lang="ts">
 	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
-	import type { TSeqUnpublishedKeys } from '$lib/types/TSequences';
+	import type { TSeqPosthumKeys } from '$lib/types/TSequences';
 	import { resolve } from '$app/paths';
 	import { dict_docs as dictDoc } from '$lib/dictionaries/dict_docs.json';
 	import DocumentsNav from '$lib/components/DocumentsNav.svelte';
 
-	let seqData = $derived(seqAll.unpublished);
+	let seqData = $derived(seqAll.posthum);
 </script>
 
 <!-- Series -->
-{#snippet keyList(keys: TSeqUnpublishedKeys[])}
+{#snippet keyList(keys: TSeqPosthumKeys[])}
 	<div class={['preset-btn-list items-center justify-center', '--spacing-sm']}>
 		{#each keys as key (key)}
 			<a class="preset-btn-round --normal" href={resolve(`/${key}` as any)}
-				>{seqData[key as TSeqUnpublishedKeys].name}</a
+				>{seqData[key as TSeqPosthumKeys].name}</a
 			>
 		{/each}
 	</div>
@@ -34,11 +34,7 @@
 				laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
 			<div class="flex flex-wrap justify-center gap-2">
-				{@render keyList(
-					Object.keys(seqData).filter((key) => {
-						return (key as string) === 'posthum_all';
-					}) as TSeqUnpublishedKeys[]
-				)}
+				{@render keyList(Object.keys(seqAll.posthum) as TSeqPosthumKeys[])}
 			</div>
 		</div>
 	</div>
