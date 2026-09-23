@@ -3,11 +3,11 @@
 /* @import '../../bitsui.css'; */
 
 /* General UI */
-@import '../../schwastyle-general.css';
-@import '../../schwastyle-colors.css';
-@import '../../schwastyle-fonts.css';
-@import '../../schwastyle-animation-presets.css';
-@import '../../schwastyle-presets.css';
+@import '../../ceresastyle-general.css';
+@import '../../ceresastyle-colors.css';
+@import '../../ceresastyle-fonts.css';
+@import '../../ceresastyle-animation-presets.css';
+@import '../../ceresastyle-presets.css';
 
 /* Edendum */
 @import '../lib/CETEIcean/CETEIcean.scss';
