@@ -15,9 +15,9 @@
 	// Menu
 	const mainMenuInfo = {
 		main1: {
-			nameShort: 'Texte & Fotos',
-			nameLong: 'Texte und Fotografien',
-			idsSub: ['smallforms']
+			nameShort: 'Texts & Audio',
+			nameLong: 'Texts and Audios',
+			path: resolve('/texts_and_audio')
 		},
 		main3: { nameShort: 'Register', nameLong: 'Register', path: resolve('/register') },
 		main4: {
@@ -163,69 +163,6 @@
 	</NavigationMenu.Content>
 {/snippet}
 
-<!-- General Elements -->
-
-{#snippet SampleDocumentPreviews()}
-	<div class="container-centered w-full gap-2">
-		{#if hoveredSubmenu.key}
-			{#each sampleDocuments[hoveredSubmenu.key] as item (item)}
-				<a href={item.targetURL} class={['inline-block']}>
-					<img
-						class={['duration-scale-200 block object-contain hover:scale-[1.1]', item.classes]}
-						src={item.imgURL}
-						alt={item.altText}
-						style={`rotate:${item.rotation}deg`}
-					/>
-				</a>
-			{/each}
-		{/if}
-	</div>
-{/snippet}
-
-<!-- Panel 1: Texte und Fotografien -->
-{#snippet ContentPanelArea1()}
-	<div class="grid h-full w-full grid-cols-1 xl:grid-cols-2">
-		<div class="flex h-full w-full flex-col items-start justify-start xl:justify-center">
-			{@render SampleDocumentPreviews()}
-			{#if isDocType}
-				<a
-					href={resolve(
-						`/${dictDoc[hoveredSubmenu.key as keyof typeof dictDoc].key_singular}_${Math.floor(
-							Math.random() * 8 //! improve heurisic
-						)
-							.toString()
-							.padStart(4, '0')}`
-					)}
-					class="preset-btn-round --lg"
-					>{dictNav.random_element_text[hoveredSubmenu.key as keyof typeof dictDoc]}</a
-				>
-			{/if}
-		</div>
-
-		<!-- Shortcuts -->
-		<div class="flex h-full flex-col justify-end">
-			{#if hoveredSubmenu.key === 'smallforms'}
-				<h5 class="h5 mt-5 text-background-contrast">Shortcuts:</h5>
-				<div class="preset-btn-list --spacing-normal">
-					<a href={resolve('/smallform_0231')} class="preset-btn-round --sm"
-						>Smallform 0231 (Kleine Begegnungen in Danzig)</a
-					>
-					<a href={resolve('/smallform_0529')} class="preset-btn-round --sm"
-						>Smallform 0529 (Schweizer Pionierarbeit)</a
-					>
-				</div>
-			{/if}
-		</div>
-	</div>
-{/snippet}
-
-<!-- Panel 2: Zugänge -->
-{#snippet ContentPanelArea2()}
-	<div class="flex h-full w-full flex-col items-start justify-center">
-		{@render SampleDocumentPreviews()}
-	</div>
-{/snippet}
-
 <!-- Navigation Large Screens -->
 <NavigationMenu.Root
 	onValueChange={() => {
@@ -243,15 +180,6 @@
 				>Arcipelago Ceresa</a
 			>
 		</div>
-
-		<!-- Texte und Fotografien -->
-		<NavigationMenu.Item value="texte-und-fotografien" openOnHover={false}>
-			{@render NavTrigger(mainMenuInfo.main1)}
-			{@render NavSub(
-				mainMenuInfo.main1.idsSub as ('smallforms' | 'longforms' | 'letters' | 'photos')[],
-				ContentPanelArea1
-			)}
-		</NavigationMenu.Item>
 
 		<!-- Main Menu without Submenues -->
 		{#each mainMenuWithoutSub as item (item)}
