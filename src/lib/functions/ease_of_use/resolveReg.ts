@@ -58,7 +58,7 @@ export function resolveReg(
 			regType: 'places',
 			item: object?.places[regKey] || null
 		};
-	} else if (regKey.includes('event_') || regKey.includes('travel')) {
+	} else if (regKey.includes('event_')) {
 		return {
 			regKey: regKey as TEventsKeys,
 			regType: 'events',

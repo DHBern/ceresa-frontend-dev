@@ -719,8 +719,7 @@ tei-anchor {
 		&[type='bibl'] {
 			border-bottom-color: var(--color-rs-bibl);
 		}
-		&[type='event'],
-		&[type='travel'] {
+		&[type='event'] {
 			border-bottom-color: var(--color-rs-event);
 		}
 		&[type='keyword'] {
