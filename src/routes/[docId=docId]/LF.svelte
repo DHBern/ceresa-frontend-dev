@@ -23,7 +23,7 @@
 	} = $props();
 </script>
 
-<div data-fassung="LF" class="pt-10 xl:grid xl:grid-cols-[auto_600px_auto]">
+<div data-fassung="LF" class="mode-lf pt-10 xl:grid xl:grid-cols-[auto_600px_auto]">
 	<!-- Text -->
 	<TextFluid
 		{ceteiData}

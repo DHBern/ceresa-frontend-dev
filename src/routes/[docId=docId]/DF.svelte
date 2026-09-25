@@ -24,7 +24,7 @@
 
 <div
 	data-fassung="DF"
-	class="gap-10 pt-10 xl:grid xl:grid-cols-[auto_45vw_auto] 2xl:grid-cols-[auto_55vw_auto]"
+	class="mode-df gap-10 pt-10 xl:grid xl:grid-cols-[auto_45vw_auto] 2xl:grid-cols-[auto_55vw_auto]"
 >
 	<div></div>
 	<aside class="sticky top-0 hidden h-screen w-full flex-col gap-4 overflow-hidden pt-6 xl:block">
