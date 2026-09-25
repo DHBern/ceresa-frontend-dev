@@ -113,7 +113,12 @@
 			<span>{resDoc.item.name}</span>
 		</h1>
 		<h3 class="h3 mt-2 text-center">
-			<span>{printDateRange(resDoc.item.date.from, resDoc.item.date.to)}</span>
+			<!-- <span>{printDateRange(resDoc.item.date.from, resDoc.item.date.to)}</span> -->
+			<a
+				href={`https://dav.arcipelago-ceresa.digitaleditions.ch/preview/oxy.html?url=../data/sources/tei/${resDoc.item.tei.path}/${resDoc.item.tei.filename}`}
+				target="_blank"
+				rel="noopener noreferrer">{resDoc.item.tei.filename.replace('.xml', '')}</a
+			>
 		</h3>
 		<!-- Global Comment -->
 		<ResponsiveAccordion titleOverview="Überblickskommentar" titleMeta="Metadaten">
