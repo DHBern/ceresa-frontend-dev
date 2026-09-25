@@ -70,14 +70,14 @@ export function resolveReg(
 			regType: 'orgs',
 			item: object?.orgs[regKey] || null
 		};
-	} else if (/^[0-9-]+$/.test(regKey) || regKey.includes('keyword_')) {
+	} else if (regKey.includes('keyword_')) {
 		// String only contains numbers and "-"
 		return {
 			regKey: regKey as TKeywordsKeys,
 			regType: 'keywords',
 			item: object?.keywords[regKey] || null
 		};
-	} else if (regKey.length === 8) {
+	} else if (regKey.includes('bibl_')) {
 		return {
 			regKey: regKey as TBiblsKeys,
 			regType: 'bibls',
