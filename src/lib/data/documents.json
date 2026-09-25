@@ -288,7 +288,19 @@
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
-					"citedEntities": {},
+					"citedEntities": {
+						"people": [
+							"person_0018",
+							"person_0019",
+							"person_0020",
+							"person_0021",
+							"person_0022",
+							"person_0023"
+						],
+						"places": ["place_0009"],
+						"orgs": [],
+						"bibls": ["bibl_0008", "bibl_0009", "bibl_0010", "bibl_0011", "bibl_0012"]
+					},
 					"linkedEntities": {}
 				},
 				"tei": {
@@ -393,7 +405,12 @@
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
-					"citedEntities": {},
+					"citedEntities": {
+						"people": ["person_0008", "person_0011", "person_0012"],
+						"places": ["place_0006", "place_0008"],
+						"orgs": [],
+						"bibls": ["bibl_0004", "bibl_0005", "bibl_0006", "bibl_0007"]
+					},
 					"linkedEntities": {}
 				},
 				"tei": {
