@@ -53,7 +53,7 @@
                n="1"/>
             <anchor xml:id="a1"/>
             <head><add place="margin"><hi rendition="#u">PREFAZIONE PER "<rs type="work"
-                        key="work_0001" xml:id="r1">GLI ALTRI</rs>"</hi></add></head>
+                        key="bibl_0001" xml:id="r1">GLI ALTRI</rs>"</hi></add></head>
             <p rendition="#right"><add place="margin"
                      ><?oxy_comment_start author="luisepappe" timestamp="20260831T140758+0200" comment="encode as a note?"?><lb
                      xml:id="p001_r_tl_2"/>(Scritta al tempo in cui <rs type="person"

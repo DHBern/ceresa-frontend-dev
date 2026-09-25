@@ -60,19 +60,19 @@
                   place="inline" hand="#hw">e</add>
                <del hand="#hw">a été</del>
                <add place="above" hand="#hw">est</add> un morceau intitulé: <lb xml:id="p001_r_tl_4"
-                  /><pc>"</pc><?oxy_comment_start author="luisepappe" timestamp="20260902T170508+0200" comment="Work_0012 isn&apos;t indicated in the work list..."?>A
+                  /><pc>"</pc><?oxy_comment_start author="luisepappe" timestamp="20260902T170508+0200" comment="bibl_0012 isn&apos;t indicated in the work list..."?>A
                solo, la radio<?oxy_comment_end?><pc>"</pc>, paru dans un numéro maintenant déjà <del
                   hand="#hw">vieux</del>
                <add place="above" hand="#hw">ancien</add> du <pc>"</pc><rs type="work"
-                  key="work_0008" xml:id="r15">Teso<pc>-</pc>
+                  key="bibl_0008" xml:id="r15">Teso<pc>-</pc>
                   <lb xml:id="p001_r_tl_5" break="no"/>retto</rs><pc>"</pc>. Dans le même almanach
                   littéraire<add place="inline" hand="#hw">,</add> j'ai trouvé une prose de <rs
                   type="person" key="person_0018" xml:id="r3">Cesare <lb xml:id="p001_r_tl_7"
-                  />Pavese</rs>, <pc>"</pc><rs type="work" key="work_0010" xml:id="r5">Il prato dei
+                  />Pavese</rs>, <pc>"</pc><rs type="work" key="bibl_0010" xml:id="r5">Il prato dei
                   morti</rs><pc>"</pc>. <del hand="#hw">Ce n'était pas,</del>
                <del hand="#hw">celui</del>
                <add place="above" hand="#hw">Le Vittorini</add> du <pc>"</pc><rs type="work"
-                  key="work_0008" xml:id="r16">Tesoretto</rs><pc>"</pc>
+                  key="bibl_0008" xml:id="r16">Tesoretto</rs><pc>"</pc>
                <del hand="#hw">, le</del><lb xml:id="p001_r_tl_9"/><add place="above" hand="#hw"
                   >n'était pas encore le</add>
                <rs type="person" key="person_0020" xml:id="r17">Vittorini</rs>
@@ -82,7 +82,7 @@
                   xml:id="r18">Pavese</rs> du petit conte<choice><sic><del hand="#hw"><add place="inline" hand="#hw">,</add></del></sic><corr>,</corr></choice>
                <lb xml:id="p001_r_tl_10"/>celui qui <del hand="#hw">me</del> se révéla <add
                   hand="#hw" place="above">à moi</add> plus tard, à la lecture des <pc>"</pc><rs
-                  type="work" key="work_0009" xml:id="r6">Paesi tuoi</rs><pc>"</pc>. Je ne <lb
+                  type="work" key="bibl_0009" xml:id="r6">Paesi tuoi</rs><pc>"</pc>. Je ne <lb
                   xml:id="p001_r_tl_11"/>crois pas qu'il soit possible  de rapprocher <rs
                   type="person" key="person_0020" xml:id="r19">Vittorini</rs> et <rs type="person"
                   key="person_0018" xml:id="r20">Pavese</rs> autrement <lb xml:id="p001_r_tl_12"
@@ -127,8 +127,8 @@
                   key="person_0018" xml:id="r24">Pavese</rs>, s'est arrêtée là. Et si<add
                   place="inline" hand="#hw">,</add>
                <lb xml:id="p001_r_tl_33"/>plus tard, <del hand="#hw">en</del> lisant <pc>"</pc><rs
-                  type="work" key="work_0011" xml:id="r9">Conversazione in Sicilia</rs><pc>"</pc> et
-                  <pc>"</pc><rs type="work" key="work_0009" xml:id="r25">Paesi tuoi</rs><pc>"</pc>,
+                  type="work" key="bibl_0011" xml:id="r9">Conversazione in Sicilia</rs><pc>"</pc> et
+                  <pc>"</pc><rs type="work" key="bibl_0009" xml:id="r25">Paesi tuoi</rs><pc>"</pc>,
                j'ai <lb xml:id="p001_r_tl_34"/>dû m'appercevoir qu'il fallait<del hand="#hw"
                   >faire</del>
                <choice><sic><add place="above" hand="#hw">o[?]</add></sic><corr/></choice>, à propos
@@ -213,7 +213,7 @@
                   type="person" key="person_0022" xml:id="r11">Bontempelli</rs>, et il y a eu la
                "prosa <lb xml:id="p002_r_tl_29"/>d'arte" des plus jeunes, celle justement d'un
                Vittorini qui, dans sa <lb xml:id="p002_r_tl_31"/><pc>"</pc><rs type="work"
-                  key="work_0011" xml:id="r26">Conversazione in Sicilia</rs><pc>"</pc>, s'est <del
+                  key="bibl_0011" xml:id="r26">Conversazione in Sicilia</rs><pc>"</pc>, s'est <del
                   hand="#hw">mis</del>
                <add place="above" hand="#hw">placé</add> sur la ligne la plus pure et la <lb
                   xml:id="p002_r_tl_32"/>plus directe de cette "écriture horizontale", de façon
