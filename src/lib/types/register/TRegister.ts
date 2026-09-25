@@ -34,6 +34,7 @@ export type TRegister = {
 				firstname: string | null;
 				lastname: string | null;
 				nameVariants: string[];
+				qid?: string | null;
 				gndNumber?: string | null;
 				dateBirth: string | null;
 				dateDeath: string | null;
@@ -57,21 +58,21 @@ export type TRegister = {
 				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
 			};
 		};
-		events: {
-			[key in TEventsKeys]: {
-				name: string | null;
-				type: TEventsGroups | null;
-				date?: { from: string | null; to: string | null };
-				note: string | null;
-				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
-			};
-		};
 		orgs: {
 			[key in TOrgsKeys]: {
 				name: string | null;
 				nameVariants: string[];
 				gndNumber?: string | null;
 				type: TOrgsGroups | null;
+				note: string | null;
+				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
+			};
+		};
+		events: {
+			[key in TEventsKeys]: {
+				name: string | null;
+				type: TEventsGroups | null;
+				date?: { from: string | null; to: string | null };
 				note: string | null;
 				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
 			};
