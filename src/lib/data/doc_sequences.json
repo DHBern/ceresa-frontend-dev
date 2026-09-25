@@ -6,6 +6,14 @@
 		"description": ""
 	},
 	"doc_sequences": {
+		"prototype": {
+			"all": {
+				"url_seq_overview": null,
+				"name": "All",
+				"preamble": "Works of Prototype",
+				"docs": ["posthum_0001", "posthum_0002", "unpublished_0001", "unpublished_0002","unpublished_0003","unpublished_0004", "published_0001", "published_0002"]
+			}
+		},
 		"textstufen": {
 			"textstufen_unpublished_0006": {
 				"url_seq_overview": null,

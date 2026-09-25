@@ -1,41 +1,50 @@
 {
 	"meta": {},
 	"dict_sequences": {
+		"prototype": {
+			"sequence_name": "Prototype",
+			"key_singular": "prototype",
+			"label_plural": "Prototype",
+			"label_singular": "Prototype",
+			"label_seq_overview": "Zur [DEADEND]",
+			"label_next": "Next Document",
+			"label_prev": "Previous Document"
+		},
 		"textstufen": {
 			"sequence_name": "Textstufen",
 			"key_singular": "textstufe",
 			"label_plural": "Textstufen",
 			"label_singular": "Textstufe",
 			"label_seq_overview": "Zur [DEADEND]",
-			"label_next": "Nächstes Dokument",
-			"label_prev": "Vorheriges Dokument"
+			"label_next": "Next Document",
+			"label_prev": "Previous Document"
 		},
 		"posthum": {
-			"sequence_name": "Korrespondenz",
+			"sequence_name": "Posthumous Works",
 			"key_singular": "posthum",
-			"label_plural": "Korrespondenz",
-			"label_singular": "Korrespondenz",
-			"label_seq_overview": "Zur Korrespondenzansicht",
-			"label_next": "Nächster Brief",
-			"label_prev": "Vorheriger Brief"
+			"label_plural": "Posthumous Works",
+			"label_singular": "Posthumous Works",
+			"label_seq_overview": "See Gallery of all Posthumous Works",
+			"label_next": "Next Document",
+			"label_prev": "Previous Document"
 		},
 		"unpublished": {
 			"sequence_name": "Unpublished",
 			"key_singular": "unpublished",
 			"label_plural": "Unpublished",
 			"label_singular": "Unpublished",
-			"label_seq_overview": "Zur Übersicht der Unpublished",
-			"label_next": "Nächstes Dokument",
-			"label_prev": "Vorheriges Dokument"
+			"label_seq_overview": "See all Unpublished Works",
+			"label_next": "Next Document",
+			"label_prev": "Previous Document"
 		},
 		"published": {
 			"sequence_name": "Published",
 			"key_singular": "published",
 			"label_plural": "Published",
 			"label_singular": "Published",
-			"label_seq_overview": "Zur Übersicht der Publisheds",
-			"label_next": "Nächstes Dokument",
-			"label_prev": "Vorheriges Dokument"
+			"label_seq_overview": "See all Published Works",
+			"label_next": "Next Document",
+			"label_prev": "Previous Document"
 		}
 	}
 }
