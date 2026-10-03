@@ -34,7 +34,7 @@
 	<!-- Sidebar -->
 	<aside class="sticky top-0 hidden h-screen w-full flex-col gap-4 overflow-hidden pt-6 xl:flex">
 		<Tabs.Root bind:value={activeRegisterTab.value} class="flex h-full flex-col">
-			<Tabs.List class="preset-tabs-list --sm shrink-0">
+			<Tabs.List class="preset-tabs-list --sm grid shrink-0 grid-cols-2">
 				<Tabs.Trigger value="notes" class="preset-tabs-trigger --left"
 					>Stellenkommentare</Tabs.Trigger
 				>
