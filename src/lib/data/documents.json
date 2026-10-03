@@ -40,9 +40,11 @@
 				},
 				"manuscript": {
 					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3.0/786276b3-474f-4ddc-9aba-ac35dab8d2b2",
-						"https://iiif.ub.unibe.ch/image/v3.0/eb3b9809-95b1-4973-b94f-9ac7591c3bc9",
-						"https://iiif.ub.unibe.ch/image/v3.0/51874e69-b7ba-4490-a793-627fa4f79c25"
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_001.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_002.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_004.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_005.tif"
 					]
 				},
 				"editorialNotes": {},
@@ -86,9 +88,22 @@
 				},
 				"manuscript": {
 					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3.0/786276b3-474f-4ddc-9aba-ac35dab8d2b2",
-						"https://iiif.ub.unibe.ch/image/v3.0/eb3b9809-95b1-4973-b94f-9ac7591c3bc9",
-						"https://iiif.ub.unibe.ch/image/v3.0/51874e69-b7ba-4490-a793-627fa4f79c25"
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_003.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_009.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_010.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_011.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_012.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_013.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_014.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-1.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-2.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_016.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_017.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_018.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_019.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_020.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_021.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_022.tif"
 					]
 				},
 				"editorialNotes": {},
