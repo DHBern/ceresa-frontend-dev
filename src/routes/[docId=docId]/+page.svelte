@@ -35,26 +35,25 @@
 	/>
 
 	<!-- DFLF Toggle -->
-	<Tabs.Root bind:value={params.mode} class="sticky top-10 z-90000 max-w-160 xl:static">
+	<Tabs.Root bind:value={params.mode} class="sticky top-10 z-90000 max-w-260 xl:static">
 		<Tabs.List class="preset-tabs-list --lg">
-			<Tabs.Trigger value="LF" class=" preset-tabs-trigger --left">Lesefassung</Tabs.Trigger>
+			<Tabs.Trigger value="DF" class="preset-tabs-trigger --left">Diplomatic View</Tabs.Trigger>
 			<Tabs.Trigger value="DF" class="preset-tabs-trigger --right">
-				Diplomatische Fassung
-			</Tabs.Trigger>
+			<Tabs.Trigger value="LF" class=" preset-tabs-trigger --right">Reading View</Tabs.Trigger>
 		</Tabs.List>
 	</Tabs.Root>
-
-	<!-- Thumbnail Gallery -->
-	{#if params.mode === 'DF'}
-		<Gallery docItem={data.resolvedDoc?.item} {params} />
-	{/if}
 
 	<!-- Content -->
 	<div class="w-full grow">
 		{#if params.mode === 'LF'}
 			<LF docItem={data.resolvedDoc?.item} ceteiData={data.ceteiData} {params} />
 		{:else if params.mode === 'DF'}
-			<DF docItem={data.resolvedDoc?.item} ceteiData={data.ceteiData} {params} />
+			<DF
+				docItem={data.resolvedDoc?.item}
+				ceteiData={data.ceteiData}
+				{params}
+				resolvedDoc={data.resolvedDoc}
+			/>
 		{/if}
 	</div>
 </div>
