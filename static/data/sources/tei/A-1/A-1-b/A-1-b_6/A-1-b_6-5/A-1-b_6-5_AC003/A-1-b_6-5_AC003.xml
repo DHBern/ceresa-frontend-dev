@@ -51,8 +51,10 @@
          <div>
             <div xml:id="A-1-b_6-5_AC003a">
             <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_003.tif"/><head>Aborto</head>
-            <p><fw type="pageNum" place="topleft">2</fw>
-               <fw type="catch" place="topright">A-</fw></p>
+            <p><ab>
+               <fw type="pageNum" place="topleft">2</fw>
+                  <fw type="catch" place="topright">A-</fw>
+            </ab></p>
             <p>
                   <lb xml:id="p001_l_2"/>usasi indifferentemente sia per significare interruzione di
                      <lb xml:id="p001_r_2_tl_2"/>gravidanza sia per significare mostruosità (il tale
