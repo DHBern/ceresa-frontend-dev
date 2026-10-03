@@ -83,14 +83,16 @@
 		<IIIF_Thumb
 			url={item.fac}
 			classesContainer=""
-			classes={`min-h-2 h-max mx-2 my-1 flex justify-center items-center ${isCurrent ? 'max-h-25' : 'max-h-12'}`}
-			imgClasses={`h-max ${isCurrent ? 'max-h-25 max-w-27' : 'max-h-12 max-w-25'}`}
+			classes={`min-h-2 h-max mx-2 my-1 flex justify-center items-center ${isCurrent ? 'max-h-35' : 'max-h-20'}`}
+			imgClasses={`h-max border ${isCurrent ? 'max-h-30 max-w-30' : 'max-h-15 max-w-15'}`}
 		/>
-		<span class="mt-1 text-sm">Seite {item.page}</span>
+		<span class="mt-1 text-sm">{item.page}</span>
 	</button>
 {/snippet}
 
-<div class="flex w-full flex-col gap-5 overflow-x-auto px-0 py-5 transition-all duration-200">
+<div
+	class="sticky top-0 z-20 flex w-full flex-col gap-5 overflow-x-auto bg-background px-0 py-5 transition-all duration-200"
+>
 	{#if tzgIds.length}
 		<button
 			class="hyperlink self-start rounded-button text-left"
@@ -153,8 +155,8 @@
 									<IIIF_Thumb
 										url={item.fac}
 										classesContainer=""
-										classes="max-h-[50px]"
-										imgClasses="max-h-[50px]"
+										classes="max-h-[30px]"
+										imgClasses="max-h-[30px]"
 									/>
 									<span class="text-center text-xs">Seite {item.page} <br />({tzgId})</span>
 								</a>
