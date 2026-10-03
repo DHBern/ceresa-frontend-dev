@@ -34,11 +34,11 @@
 
 	let showFac = $state(true);
 	let showSide = $state(false);
-	let showLF = $state(true);
-	let showDF = $state(true);
+	let showMain = $state(true);
+	let showSecond = $state(true);
 	let isFluid = $state(false);
-	let isAll = $derived(showFac && showDF && showLF && showSide);
-	let isFacsimileView = $derived(!showDF && !showLF);
+	let isAll = $derived(showFac && showMain && showSecond && showSide);
+	let isFacsimileView = $derived(!showMain && !showSecond);
 
 	let prioToFac = $state(true);
 
@@ -80,39 +80,39 @@
 	<div class="right-10 flex justify-end gap-5 px-5">
 		<button
 			onclick={() => {
-				showDF = true;
-				showLF = false;
+				showMain = true;
+				showSecond = false;
 			}}
 			aria-label="show DF"
 			class={[
 				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showDF && !showLF ? 'bg-stone-200' : 'bg-stone-50'
+				showMain && !showSecond ? 'bg-stone-200' : 'bg-stone-50'
 			]}
 		>
 			[DF]
 		</button>
 		<button
 			onclick={() => {
-				showDF = true;
-				showLF = true;
+				showMain = true;
+				showSecond = true;
 			}}
 			aria-label="show DF"
 			class={[
 				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showDF && showLF ? 'bg-stone-200' : 'bg-stone-50'
+				showMain && showSecond ? 'bg-stone-200' : 'bg-stone-50'
 			]}
 		>
 			DF+LF
 		</button>
 		<button
 			onclick={() => {
-				showDF = false;
-				showLF = true;
+				showMain = false;
+				showSecond = true;
 			}}
 			aria-label="show LF"
 			class={[
 				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showLF && !showDF ? 'bg-stone-200' : 'bg-stone-50'
+				showSecond && !showMain ? 'bg-stone-200' : 'bg-stone-50'
 			]}
 		>
 			[LF]
@@ -149,28 +149,28 @@
 		</button>
 		<button
 			onclick={() => {
-				showDF = !showDF;
+				showMain = !showMain;
 			}}
 			aria-label="show DF"
 			class={[
 				'  h-10 w-16 rounded-full border  p-2 text-black',
-				showDF ? 'bg-green-200' : 'bg-green-50'
+				showMain ? 'bg-green-200' : 'bg-green-50'
 			]}
 		>
-			DF
+			Main
 		</button>
 
 		<button
 			onclick={() => {
-				showLF = !showLF;
+				showSecond = !showSecond;
 			}}
 			aria-label="show LF"
 			class={[
 				'  h-10 w-16 rounded-full border  p-2 text-black',
-				showLF ? 'bg-red-200' : 'bg-red-50'
+				showSecond ? 'bg-red-200' : 'bg-red-50'
 			]}
 		>
-			LF
+			Second
 		</button>
 		<button
 			onclick={() => {
@@ -237,12 +237,12 @@
 		class={['layout grid pt-10']}
 		class:isAll
 		class:isFluid
-		class:facsimile_view={!showDF && !showLF}
+		class:facsimile_view={!showMain && !showSecond}
 		style:--facsimile-width={!showFac ? '0px' : isFacsimileView ? '100%' : facsimileWidth}
 		style:--facsimile-width-lg={widthFacsimileLg}
 		style:--sidebar-width={showSide && !isFacsimileView ? widthSidebar : '0px'}
-		style:--df-visible={showDF ? '1' : '0'}
-		style:--lf-visible={showLF ? '1' : '0'}
+		style:--df-visible={showMain ? '1' : '0'}
+		style:--lf-visible={showSecond ? '1' : '0'}
 		style:--duration={isFacsimileView ? '1000ms' : `${TRANSITION_LENGTH}ms`}
 	>
 		<aside
@@ -264,13 +264,13 @@
 		{/snippet}
 		{#snippet LFDF(side: string)}
 			{#if side === 'left'}
-				{#if showDF}
+				{#if showMain}
 					<div class="mode-df">
 						{@render Text()}
 					</div>
 				{/if}
 			{:else if side === 'right'}
-				{#if showLF}
+				{#if showSecond}
 					<div class="mode-lf">
 						{@render Text()}
 					</div>
@@ -279,28 +279,19 @@
 		{/snippet}
 
 		<!-- Main Text -->
-		<div
-			class={[
-				'overflow-auto'
-				// sticky
-				// 'mx-5 my-10 w-full rounded-xl border-2 p-4 px-2 pr-5 pl-2',
-				// 'sticky',
-				// isFluid && isGallerySticky ? 'top-10' : 'top-5',
-				// isGallerySticky ? 'h-[80vh]' : 'h-[90vh]'
-			]}
-		>
+		<div class={['overflow-auto']}>
 			{@render LFDF('left')}
 		</div>
 
 		<!-- Secondary Text -->
 		<div
 			class={[
-				'overflow-auto'
-				// sticky
-				// 'mx-5 my-10 w-full rounded-xl border-2 p-4 px-2 pr-5 pl-2',
-				// 'sticky',
-				// isFluid && isGallerySticky ? 'top-10' : 'top-5',
-				// isGallerySticky ? 'h-[80vh]' : 'h-[90vh]'
+				'overflow-auto',
+				// scrollbar
+				'mx-5 my-10 w-full rounded-xl border-2 p-4 px-2 pr-5 pl-2',
+				'sticky',
+				isFluid && isGallerySticky ? 'top-10' : 'top-5',
+				isGallerySticky ? 'h-[80vh]' : 'h-[90vh]'
 			]}
 		>
 			{@render LFDF('right')}
