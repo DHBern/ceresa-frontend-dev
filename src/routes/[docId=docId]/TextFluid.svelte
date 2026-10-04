@@ -161,10 +161,18 @@
 
 				<button
 					class="sticky top-0 float-right ml-2 flex w-full translate-y-10 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[100px] 2xl:max-w-[110px]"
-					onclick={() => openDFpage(thumb.page)}
+					// onclick={() => openDFpage(thumb.page)}
+					onclick={() => {
+						params.page = thumb.page;
+					}}
 				>
 					<div class="w-full flex-col items-center justify-center">
-						<IIIF_Thumb url={thumb.facs} classesContainer="" classes="w-full" imgClasses="w-full" />
+						<IIIF_Thumb
+							url={thumb.facs}
+							classesContainer="rounded-sm border border-muted-foreground shadow-2xl"
+							classes="w-full"
+							imgClasses="w-full"
+						/>
 						<span class="text-sm">Seite {thumb.page}</span>
 					</div>
 				</button>

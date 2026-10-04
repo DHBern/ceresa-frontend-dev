@@ -37,6 +37,8 @@
 	let showMain = $state(true);
 	let showSecond = $state(true);
 	let isFluid = $state(false);
+	let LFleads = $state(true);
+
 	let isAll = $derived(showFac && showMain && showSecond && showSide);
 	let isFacsimileView = $derived(!showMain && !showSecond);
 
@@ -68,7 +70,7 @@
 			onclick={() => {
 				isFluid = !isFluid;
 			}}
-			aria-label="show LF"
+			aria-label="toggle Fluid"
 			class={[
 				'  h-10 w-10 rounded-full border  p-2 text-black',
 				isFluid ? 'bg-orange-200' : 'bg-orange-50'
@@ -82,40 +84,57 @@
 			onclick={() => {
 				showMain = true;
 				showSecond = false;
+				LFleads = false;
 			}}
 			aria-label="show DF"
 			class={[
 				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showMain && !showSecond ? 'bg-stone-200' : 'bg-stone-50'
+				showMain && !showSecond && !LFleads ? 'bg-stone-200' : 'bg-stone-50'
 			]}
 		>
-			[DF]
+			DF
+		</button>
+		<button
+			onclick={() => {
+				showMain = true;
+				showSecond = false;
+				LFleads = true;
+			}}
+			aria-label="show LF"
+			class={[
+				'h-10 w-max rounded-full border  p-2 px-4 text-black',
+				showSecond && !showMain && LFleads ? 'bg-stone-200' : 'bg-stone-50'
+			]}
+		>
+			LF
 		</button>
 		<button
 			onclick={() => {
 				showMain = true;
 				showSecond = true;
+				LFleads = false;
 			}}
-			aria-label="show DF"
+			aria-label="show DF with LF"
 			class={[
 				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showMain && showSecond ? 'bg-stone-200' : 'bg-stone-50'
+				showMain && showSecond && !LFleads ? 'bg-stone-200' : 'bg-stone-50'
 			]}
 		>
-			DF+LF
+			DF+[LF]
 		</button>
 		<button
 			onclick={() => {
-				showMain = false;
+				showMain = true;
 				showSecond = true;
+				LFleads = true;
 			}}
-			aria-label="show LF"
+			aria-label="show LF with DF"
 			class={[
 				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showSecond && !showMain ? 'bg-stone-200' : 'bg-stone-50'
+				showMain && showSecond && LFleads ? 'bg-stone-200' : 'bg-stone-50'
 			]}
 		>
-			[LF]
+			LF+[DF]
 		</button>
 	</div>
 	<div class="right-10 flex justify-end gap-5 px-5">
@@ -139,7 +158,7 @@
 				showFac = !showFac;
 				prioToFac = showFac ? true : false;
 			}}
-			aria-label="show DF"
+			aria-label="toggle facsimile"
 			class={[
 				'  h-10 w-16 rounded-full border  p-2 text-black',
 				showFac ? 'bg-yellow-200' : 'bg-yellow-50'
@@ -151,7 +170,7 @@
 			onclick={() => {
 				showMain = !showMain;
 			}}
-			aria-label="show DF"
+			aria-label="toggle main"
 			class={[
 				'  h-10 w-16 rounded-full border  p-2 text-black',
 				showMain ? 'bg-green-200' : 'bg-green-50'
@@ -164,7 +183,7 @@
 			onclick={() => {
 				showSecond = !showSecond;
 			}}
-			aria-label="show LF"
+			aria-label="toggle secondary"
 			class={[
 				'  h-10 w-16 rounded-full border  p-2 text-black',
 				showSecond ? 'bg-red-200' : 'bg-red-50'
@@ -177,7 +196,7 @@
 				showSide = !showSide;
 				prioToFac = showSide ? false : true;
 			}}
-			aria-label="show sidebar"
+			aria-label="toggle sidebar"
 			class={[
 				'h-10 w-16 rounded-full border p-2 px-4 text-black',
 				showSide ? 'bg-sky-200' : 'bg-sky-50'
@@ -262,25 +281,12 @@
 				{/if}
 			</div>
 		{/snippet}
-		{#snippet LFDF(side: string)}
-			{#if side === 'left'}
-				{#if showMain}
-					<div class="mode-df">
-						{@render Text()}
-					</div>
-				{/if}
-			{:else if side === 'right'}
-				{#if showSecond}
-					<div class="mode-lf">
-						{@render Text()}
-					</div>
-				{/if}
-			{/if}
-		{/snippet}
 
 		<!-- Main Text -->
 		<div class={['overflow-auto']}>
-			{@render LFDF('left')}
+			<div class={[LFleads ? 'mode-lf' : 'mode-df']}>
+				{@render Text()}
+			</div>
 		</div>
 
 		<!-- Secondary Text -->
@@ -288,13 +294,16 @@
 			class={[
 				'overflow-auto',
 				// scrollbar
-				'mx-5 my-10 w-full rounded-xl border-2 p-4 px-2 pr-5 pl-2',
+				'mx-5 my-10 ml-10 w-[calc(100%-10)] p-4 px-2 pr-5 pl-2',
+				showSecond && 'rounded-xl border-2',
 				'sticky',
 				isFluid && isGallerySticky ? 'top-10' : 'top-5',
 				isGallerySticky ? 'h-[80vh]' : 'h-[90vh]'
 			]}
 		>
-			{@render LFDF('right')}
+			<div class={[LFleads ? 'mode-df' : 'mode-lf']}>
+				{@render Text()}
+			</div>
 		</div>
 		<aside
 			class={[

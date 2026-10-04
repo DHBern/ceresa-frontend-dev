@@ -24,7 +24,7 @@
 			return url;
 		} else {
 			// return `${url}/full/${iiif_imageAPI_width},/0/default.jpg`;
-			return `${url}/1400,700,3900,4900/300,/0/default.jpg`; //! Heuristic
+			return `${url}/1450,700,3700,4900/300,/0/default.jpg`; //! Heuristic
 		}
 	}
 </script>

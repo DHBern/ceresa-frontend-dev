@@ -48,9 +48,7 @@
 	}
 
 	function handleSelectPage(newPage: number) {
-		console.log('a', params.page, newPage);
 		params.page = newPage;
-		console.log('b', params.page, newPage);
 	}
 
 	$effect(() => {
