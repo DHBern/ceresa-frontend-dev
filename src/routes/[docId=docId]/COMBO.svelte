@@ -63,7 +63,7 @@
 </script>
 
 <!-- Menu -->
-<p>{url}</p>
+<input type="number" bind:value={nColsFit} class="m-3 border-2 p-3" />
 <div class="fixed top-13 right-10 z-200 flex flex-col gap-2">
 	<div class="flex justify-end gap-5 px-5 py-2.5">
 		<button
@@ -78,8 +78,8 @@
 		>
 			F
 		</button>
-	</div>
-	<div class="right-10 flex justify-end gap-5 px-5">
+
+		<!-- Combo Modes -->
 		<button
 			onclick={() => {
 				showMain = true;
@@ -136,8 +136,8 @@
 		>
 			LF+[DF]
 		</button>
-	</div>
-	<div class="right-10 flex justify-end gap-5 px-5">
+
+		<!-- Shift -->
 		<button
 			onclick={() => {
 				prioToFac = !prioToFac;
@@ -151,8 +151,8 @@
 				<i class="fa-solid fa-arrow-right"></i>
 			{/if}
 		</button>
-	</div>
-	<div class="right-10 flex justify-end gap-5 px-5">
+
+		<!-- Single -->
 		<button
 			onclick={() => {
 				showFac = !showFac;
