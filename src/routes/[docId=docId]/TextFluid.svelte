@@ -160,7 +160,7 @@
 				<div style={`height: ${i === 0 ? '5' : thumb.top - thumbs[i - 1].top}px`}></div>
 
 				<button
-					class="sticky top-0 float-right ml-2 flex w-full translate-y-10 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[100px] 2xl:max-w-[110px]"
+					class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[100px] 2xl:max-w-[110px]"
 					// onclick={() => openDFpage(thumb.page)}
 					onclick={() => {
 						params.page = thumb.page;
