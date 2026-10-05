@@ -36,6 +36,10 @@
 	let showSide = $state(false);
 	let showMain = $state(true);
 	let showSecond = $state(true);
+	let nColsFit = $state(4);
+	let nColsVisible = $derived(
+		(showFac ? 1 : 0) + (showSide ? 1 : 0) + (showMain ? 1 : 0) + (showSecond ? 1 : 0)
+	);
 	let isFluid = $state(false);
 	let LFleads = $state(true);
 
@@ -228,8 +232,10 @@
 		'sticky mx-10 h-max pb-[20vh] transition-all duration-300',
 		isFluid ? 'bg-background' : 'bg-background'
 	]}
-	style:--left={isAll ? (prioToFac ? '10px' : `-${widthSidebar}`) : '0px'}
-	style:--width={isAll ? `calc(100% + ${widthSidebar} - 40px)` : 'calc(100% - 40px)'}
+	style:--left={nColsVisible === nColsFit ? (prioToFac ? '10px' : `-${widthSidebar}`) : '0px'}
+	style:--width={nColsVisible === nColsFit
+		? `calc(100% + ${widthSidebar} - 40px)`
+		: 'calc(100% - 40px)'}
 >
 	<!-- {#if isFacsimileView}
 		<div
@@ -254,7 +260,7 @@
 	<div
 		in:fade={{ delay: DELAY }}
 		class={['layout grid pt-10']}
-		class:isAll
+		class:isAll={nColsVisible === nColsFit}
 		class:isFluid
 		class:facsimile_view={!showMain && !showSecond}
 		style:--facsimile-width={!showFac ? '0px' : isFacsimileView ? '100%' : facsimileWidth}
