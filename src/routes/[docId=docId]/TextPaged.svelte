@@ -11,9 +11,11 @@
 	};
 
 	// Extract the specific page based on xml:id, then remove notes
-	let serializedWithoutNotes = $derived(
-		removeNotesFromMaintext(extractPage(ceteiData.serialized, page))
-	);
+	let serializedWithoutNotes: string | null = $state(null);
+	$effect(() => {
+		// Run this in an effect to guarantee it only runs on mount.
+		serializedWithoutNotes = removeNotesFromMaintext(extractPage(ceteiData.serialized, page));
+	});
 </script>
 
 <div
