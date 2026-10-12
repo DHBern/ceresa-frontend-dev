@@ -14,6 +14,15 @@
 	}
 
 	let { children } = $props();
+
+	import AudioPlayer from './AudioPlayer.svelte';
+
+	let chapters = [
+		{ chapId: '1', chapName: 'Introduction', time: 0 },
+		{ chapId: '2', chapName: 'Setup Guide', time: 45 },
+		{ chapId: '3', chapName: 'Core Concepts', time: 120 },
+		{ chapId: '4', chapName: 'Advanced Topics', time: 240 }
+	];
 </script>
 
 <svelte:window on:resize={checkWindowSize} />
@@ -30,6 +39,8 @@
 <footer
 	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-10 p-20 text-background-contrast"
 >
+	<AudioPlayer audioSrc="/audio/ceresa-test.mp3" {chapters} />
+
 	<p class="mb-5">Diese Webseite befindet sich in einer Alpha-Version.</p>
 	<p>
 		<a
