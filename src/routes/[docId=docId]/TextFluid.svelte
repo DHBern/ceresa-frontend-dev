@@ -115,11 +115,6 @@
 		});
 	}
 
-	function openDFpage(pagenum: number) {
-		params.mode = 'DF';
-		params.page = pagenum;
-	}
-
 	// ---------------------------------------------
 	// Load text
 	const c = new CETEI();
@@ -167,7 +162,6 @@
 
 					<button
 						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[50px] 2xl:max-w-[70px]"
-						// onclick={() => openDFpage(thumb.page)}
 						onclick={() => {
 							params.page = thumb.page;
 						}}

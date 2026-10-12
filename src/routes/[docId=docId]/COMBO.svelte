@@ -32,21 +32,20 @@
 		resolvedDoc: TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
 	} = $props();
 
-	let mode = $state('mode_full_reading');
 	$effect(() => {
-		if (mode === 'mode_full_reading') {
+		if (params.mode === 'LF') {
 			isFluid = true;
 			showFac = false;
 			showMain = true;
 			showSecond = false;
 			LFleads = true;
-		} else if (mode === 'mode_reading') {
+		} else if (params.mode === 'LF2') {
 			isFluid = false;
 			showFac = true;
 			showMain = true;
 			showSecond = false;
 			LFleads = true;
-		} else if (mode === 'mode_diplomatic') {
+		} else if (params.mode === 'DF') {
 			isFluid = false;
 			showFac = true;
 			showMain = true;
@@ -91,13 +90,11 @@
 
 <!-- Toggle -->
 <div class="relative flex h-full w-full flex-col items-center gap-6">
-	<Tabs.Root class="sticky top-10 z-900 max-w-260 xl:static" bind:value={mode}>
+	<Tabs.Root class="sticky top-10 z-900 max-w-260 xl:static" bind:value={params.mode}>
 		<Tabs.List class="preset-tabs-list --lg grid grid-cols-3">
-			<Tabs.Trigger value="mode_full_reading" class="preset-tabs-trigger --left"
-				>Fluid Reading View</Tabs.Trigger
-			>
+			<Tabs.Trigger value="LF" class="preset-tabs-trigger --left">Fluid Reading View</Tabs.Trigger>
 			<Tabs.Trigger
-				value="mode_reading"
+				value="LF2"
 				class="preset-tabs-trigger --center"
 				onclick={() => {
 					isFluid = false;
@@ -108,7 +105,7 @@
 				}}>Reading View</Tabs.Trigger
 			>
 			<Tabs.Trigger
-				value="mode_diplomatic"
+				value="DF"
 				class=" preset-tabs-trigger --right"
 				onclick={() => {
 					isFluid = false;
@@ -223,32 +220,6 @@
 		>
 			LF+[DF]
 		</button>
-
-		<!-- <button
-			onclick={() => {
-				showMain = !showMain;
-			}}
-			aria-label="toggle main"
-			class={[
-				'  h-8  w-max rounded-full border p-2  text-xs text-black',
-				showMain ? 'bg-green-200' : 'bg-white'
-			]}
-		>
-			Main
-		</button>
-
-		<button
-			onclick={() => {
-				showSecond = !showSecond;
-			}}
-			aria-label="toggle secondary"
-			class={[
-				'  h-8  w-max rounded-full border p-2  text-xs text-black',
-				showSecond ? 'bg-red-200' : 'bg-white'
-			]}
-		>
-			Second
-		</button> -->
 
 		<!-- Shift -->
 		<button

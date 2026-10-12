@@ -17,7 +17,7 @@ export const SEARCH_PARAMS_DEFAULTS = {
 export const schema = z.object({
 	seq: z.string().default(SEARCH_PARAMS_DEFAULTS.seq).optional(),
 	page: z.number().default(SEARCH_PARAMS_DEFAULTS.page).optional(),
-	mode: z.enum(['DF', 'LF', 'COMBO']).default(SEARCH_PARAMS_DEFAULTS.mode),
+	mode: z.enum(['LF', 'LF2', 'DF']).default(SEARCH_PARAMS_DEFAULTS.mode),
 	comment: z.string().default(SEARCH_PARAMS_DEFAULTS.comment).optional(),
 	line: z.coerce.number().default(SEARCH_PARAMS_DEFAULTS.line).optional()
 });
