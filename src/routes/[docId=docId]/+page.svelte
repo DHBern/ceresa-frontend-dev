@@ -36,13 +36,13 @@
 	/>
 
 	<!-- DFLF Toggle -->
-	<Tabs.Root bind:value={params.mode} class="sticky top-10 z-90000 max-w-260 xl:static">
+	<!-- <Tabs.Root bind:value={params.mode} class="sticky top-10 z-90000 max-w-260 xl:static">
 		<Tabs.List class="preset-tabs-list --lg grid grid-cols-3">
 			<Tabs.Trigger value="DF" class="preset-tabs-trigger --left">Diplomatic View</Tabs.Trigger>
 			<Tabs.Trigger value="COMBO" class="preset-tabs-trigger --center">Combined View</Tabs.Trigger>
 			<Tabs.Trigger value="LF" class=" preset-tabs-trigger --right">Reading View</Tabs.Trigger>
 		</Tabs.List>
-	</Tabs.Root>
+	</Tabs.Root> -->
 
 	<!-- Content -->
 	<div class="w-full grow">

@@ -32,6 +32,29 @@
 		resolvedDoc: TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
 	} = $props();
 
+	let mode = $state('mode_full_reading');
+	$effect(() => {
+		if (mode === 'mode_full_reading') {
+			isFluid = true;
+			showFac = false;
+			showMain = true;
+			showSecond = false;
+			LFleads = true;
+		} else if (mode === 'mode_reading') {
+			isFluid = false;
+			showFac = true;
+			showMain = true;
+			showSecond = false;
+			LFleads = true;
+		} else if (mode === 'mode_diplomatic') {
+			isFluid = false;
+			showFac = true;
+			showMain = true;
+			showSecond = false;
+			LFleads = false;
+		}
+	});
+
 	let showFac = $state(true);
 	let showSide = $state(false);
 	let showMain = $state(true);
@@ -49,7 +72,7 @@
 	let prioToFac = $state(true);
 
 	let widthFacsimileLg = '600px';
-	let widthFacsimileSm = '200px';
+	let widthFacsimileSm = '300px';
 	let facsimileWidth = $derived(showSide ? widthFacsimileSm : widthFacsimileLg);
 	let widthSidebar = $derived(showSide ? '600px' : '0px');
 
@@ -66,9 +89,40 @@
 	const isGallerySticky = false; //! temp
 </script>
 
+<!-- Toggle -->
+<div class="relative flex h-full w-full flex-col items-center gap-6">
+	<Tabs.Root class="sticky top-10 z-900 max-w-260 xl:static" bind:value={mode}>
+		<Tabs.List class="preset-tabs-list --lg grid grid-cols-3">
+			<Tabs.Trigger value="mode_full_reading" class="preset-tabs-trigger --left"
+				>Fluid Reading View</Tabs.Trigger
+			>
+			<Tabs.Trigger
+				value="mode_reading"
+				class="preset-tabs-trigger --center"
+				onclick={() => {
+					isFluid = false;
+					showFac = true;
+					showMain = true;
+					showSecond = false;
+					LFleads = true;
+				}}>Reading View</Tabs.Trigger
+			>
+			<Tabs.Trigger
+				value="mode_diplomatic"
+				class=" preset-tabs-trigger --right"
+				onclick={() => {
+					isFluid = false;
+					showFac = true;
+					showMain = true;
+					showSecond = false;
+					LFleads = false;
+				}}>Diplomatic View</Tabs.Trigger
+			>
+		</Tabs.List>
+	</Tabs.Root>
+</div>
 <!-- Menu -->
-<input type="number" bind:value={nColsFit} class="m-3 border-2 p-3" />
-<div class="fixed top-13 right-10 z-200 flex flex-col gap-2">
+<div class="fixed top-0 right-10 z-1000 flex w-full flex-col gap-2 bg-background py-2">
 	<div class="flex justify-end gap-5 px-5 py-2.5">
 		<button
 			onclick={() => {
@@ -76,12 +130,41 @@
 			}}
 			aria-label="toggle Fluid"
 			class={[
-				'  h-10 w-10 rounded-full border  p-2 text-black',
-				isFluid ? 'bg-orange-200' : 'bg-orange-50'
+				'h-8 w-max rounded-full border p-2 text-xs text-black',
+				isFluid ? 'bg-orange-200' : 'bg-white'
 			]}
 		>
-			F
+			Fluid
 		</button>
+
+		<button
+			onclick={() => {
+				showFac = !showFac;
+				prioToFac = showFac ? true : false;
+			}}
+			aria-label="toggle facsimile"
+			class={[
+				'  h-8 w-max rounded-full border p-2  text-xs text-black',
+				showFac ? 'bg-yellow-200' : 'bg-white'
+			]}
+		>
+			Fac
+		</button>
+		<button
+			onclick={() => {
+				showSide = !showSide;
+				prioToFac = showSide ? false : true;
+			}}
+			aria-label="toggle sidebar"
+			class={[
+				'h-8  w-max rounded-full border p-2 px-4 text-xs text-black',
+				showSide ? 'bg-sky-200' : 'bg-white'
+			]}
+		>
+			Reg
+		</button>
+
+		<input type="number" bind:value={nColsFit} class="w-20 border px-2" />
 
 		<!-- Combo Modes -->
 		<button
@@ -92,8 +175,8 @@
 			}}
 			aria-label="show DF"
 			class={[
-				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showMain && !showSecond && !LFleads ? 'bg-stone-200' : 'bg-stone-50'
+				'h-8 w-max rounded-full border p-2  px-4 text-xs text-black',
+				showMain && !showSecond && !LFleads ? 'bg-stone-200' : 'bg-white'
 			]}
 		>
 			DF
@@ -106,8 +189,8 @@
 			}}
 			aria-label="show LF"
 			class={[
-				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showSecond && !showMain && LFleads ? 'bg-stone-200' : 'bg-stone-50'
+				'h-8 w-max rounded-full border p-2  px-4 text-xs text-black',
+				showSecond && !showMain && LFleads ? 'bg-stone-200' : 'bg-white'
 			]}
 		>
 			LF
@@ -120,8 +203,8 @@
 			}}
 			aria-label="show DF with LF"
 			class={[
-				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showMain && showSecond && !LFleads ? 'bg-stone-200' : 'bg-stone-50'
+				'h-8 w-max rounded-full border p-2  px-4 text-xs text-black',
+				showMain && showSecond && !LFleads ? 'bg-stone-200' : 'bg-white'
 			]}
 		>
 			DF+[LF]
@@ -134,50 +217,21 @@
 			}}
 			aria-label="show LF with DF"
 			class={[
-				'h-10 w-max rounded-full border  p-2 px-4 text-black',
-				showMain && showSecond && LFleads ? 'bg-stone-200' : 'bg-stone-50'
+				'h-8 w-max rounded-full border p-2  px-4 text-xs text-black',
+				showMain && showSecond && LFleads ? 'bg-stone-200' : 'bg-white'
 			]}
 		>
 			LF+[DF]
 		</button>
 
-		<!-- Shift -->
-		<button
-			onclick={() => {
-				prioToFac = !prioToFac;
-			}}
-			aria-label="shift"
-			class={['h-10 w-max rounded-full border bg-white  p-2 px-4 text-black']}
-		>
-			{#if prioToFac}
-				<i class="fa-solid fa-arrow-left"></i>
-			{:else}
-				<i class="fa-solid fa-arrow-right"></i>
-			{/if}
-		</button>
-
-		<!-- Single -->
-		<button
-			onclick={() => {
-				showFac = !showFac;
-				prioToFac = showFac ? true : false;
-			}}
-			aria-label="toggle facsimile"
-			class={[
-				'  h-10 w-16 rounded-full border  p-2 text-black',
-				showFac ? 'bg-yellow-200' : 'bg-yellow-50'
-			]}
-		>
-			Fac
-		</button>
-		<button
+		<!-- <button
 			onclick={() => {
 				showMain = !showMain;
 			}}
 			aria-label="toggle main"
 			class={[
-				'  h-10 w-16 rounded-full border  p-2 text-black',
-				showMain ? 'bg-green-200' : 'bg-green-50'
+				'  h-8  w-max rounded-full border p-2  text-xs text-black',
+				showMain ? 'bg-green-200' : 'bg-white'
 			]}
 		>
 			Main
@@ -189,24 +243,26 @@
 			}}
 			aria-label="toggle secondary"
 			class={[
-				'  h-10 w-16 rounded-full border  p-2 text-black',
-				showSecond ? 'bg-red-200' : 'bg-red-50'
+				'  h-8  w-max rounded-full border p-2  text-xs text-black',
+				showSecond ? 'bg-red-200' : 'bg-white'
 			]}
 		>
 			Second
-		</button>
+		</button> -->
+
+		<!-- Shift -->
 		<button
 			onclick={() => {
-				showSide = !showSide;
-				prioToFac = showSide ? false : true;
+				prioToFac = !prioToFac;
 			}}
-			aria-label="toggle sidebar"
-			class={[
-				'h-10 w-16 rounded-full border p-2 px-4 text-black',
-				showSide ? 'bg-sky-200' : 'bg-sky-50'
-			]}
+			aria-label="shift"
+			class={['h-8 w-max rounded-full border bg-white p-2  px-4 text-xs text-black']}
 		>
-			Reg
+			{#if prioToFac}
+				<i class="fa-solid fa-arrow-right"></i>
+			{:else}
+				<i class="fa-solid fa-arrow-left"></i>
+			{/if}
 		</button>
 	</div>
 </div>
@@ -232,35 +288,19 @@
 		'sticky mx-10 h-max pb-[20vh] transition-all duration-300',
 		isFluid ? 'bg-background' : 'bg-background'
 	]}
-	style:--left={nColsVisible === nColsFit ? (prioToFac ? '10px' : `-${widthSidebar}`) : '0px'}
-	style:--width={nColsVisible === nColsFit
+	style:--left={nColsVisible >= nColsFit
+		? prioToFac
+			? '10px'
+			: `calc(-1 * (${widthSidebar} - 0vw))`
+		: '0px'}
+	style:--width={nColsVisible >= nColsFit
 		? `calc(100% + ${widthSidebar} - 40px)`
 		: 'calc(100% - 40px)'}
 >
-	<!-- {#if isFacsimileView}
-		<div
-			in:fade={{ delay: DELAY }}
-			class="w-[90vw]] mx-10 grid h-full grid-cols-1 grid-rows-[200px_1fr] gap-10 border-4 bg-sky-700 pt-10 *:border-2"
-		>
-			<aside class={['sticky top-0 z-20 col-span-4 overflow-hidden']}>
-				{#if !isFluid}
-					<div in:fade={{ delay: DELAY }}>
-						<Gallery docItem={resolvedDoc.item} {params} />
-					</div>
-				{/if}
-			</aside>
-			<div class="h-[80vh] w-full bg-red-400">
-				{#if !isFluid && urls.length}
-					<IIIF_Viewer {url} />
-				{/if}
-			</div>
-		</div>
-	{:else} -->
-
 	<div
 		in:fade={{ delay: DELAY }}
 		class={['layout grid pt-10']}
-		class:isAll={nColsVisible === nColsFit}
+		class:isAll={nColsVisible >= nColsFit}
 		class:isFluid
 		class:facsimile_view={!showMain && !showSecond}
 		style:--facsimile-width={!showFac ? '0px' : isFacsimileView ? '100%' : facsimileWidth}
@@ -270,28 +310,38 @@
 		style:--lf-visible={showSecond ? '1' : '0'}
 		style:--duration={isFacsimileView ? '1000ms' : `${TRANSITION_LENGTH}ms`}
 	>
+		<!-- IIIF-Viewer -->
 		<aside
-			class="sticky hidden h-[70vh] w-full shrink flex-col gap-4 overflow-hidden rounded-xl transition-colors duration-300 hover:bg-muted-foreground/30 xl:block"
+			class="sticky block h-[70vh] w-full shrink flex-col gap-4 overflow-hidden rounded-xl px-5 transition-colors duration-300 hover:bg-muted-foreground/30"
 			style={`top: 20vh`}
 		>
 			{#if showFac && urls.length}
 				<IIIF_Viewer {url} />
 			{/if}
 		</aside>
-		{#snippet Text()}
-			<div in:fade={{ delay: DELAY }} class="m-5">
-				{#if isFluid}
-					<TextFluid {ceteiData} {params} classes="mx-auto w-full max-w-300 md:max-w-[1300px]" />
-				{:else}
-					<TextPaged {ceteiData} page={params.page} />
+
+		<!-- Texts-Snippet -->
+		{#snippet Text(showText: boolean, showThumbs: boolean, isFluid: boolean)}
+			<div in:fade={{ delay: DELAY }} class="w-full">
+				{#if showText}
+					{#if isFluid}
+						<TextFluid
+							{ceteiData}
+							{params}
+							{showThumbs}
+							classes="mx-auto w-full max-w-300 md:max-w-[1300px]"
+						/>
+					{:else}
+						<TextPaged {ceteiData} page={params.page} />
+					{/if}
 				{/if}
 			</div>
 		{/snippet}
 
 		<!-- Main Text -->
-		<div class={['overflow-auto']}>
+		<div class="mx-10">
 			<div class={[LFleads ? 'mode-lf' : 'mode-df']}>
-				{@render Text()}
+				{@render Text(true, true, isFluid)}
 			</div>
 		</div>
 
@@ -299,18 +349,19 @@
 		<div
 			class={[
 				'overflow-auto',
-				// scrollbar
-				'mx-5 my-10 ml-10 w-[calc(100%-10)] p-4 px-2 pr-5 pl-2',
-				showSecond && 'rounded-xl border-2',
+				'mx-10 my-10 ml-10 w-[calc(100%-10)] p-4 px-2 pr-5 pl-2',
+				showSecond && 'rounded-lg bg-mist-100 dark:bg-mist-800',
 				'sticky',
 				isFluid && isGallerySticky ? 'top-10' : 'top-5',
 				isGallerySticky ? 'h-[80vh]' : 'h-[90vh]'
 			]}
 		>
 			<div class={[LFleads ? 'mode-df' : 'mode-lf']}>
-				{@render Text()}
+				{@render Text(showSecond, false, isFluid)}
 			</div>
 		</div>
+
+		<!-- Register -->
 		<aside
 			class={[
 				'sticky flex-col gap-4 overflow-auto p-4 px-10 pt-6',
