@@ -11,6 +11,8 @@
 
 	import { schema, validSeqKeys } from './schemas';
 	import { cleanupSearchParams } from '$lib/functions/searchParams/cleanupSearchParams.js';
+	import { currentFilesAudio } from '$lib/globals/ui-states.svelte.js';
+	import { onMount } from 'svelte';
 
 	const params = useSearchParams(schema, { noScroll: true });
 
@@ -19,6 +21,11 @@
 	});
 
 	let { data } = $props();
+
+	// Reset Audio Data
+	$effect(() => {
+		currentFilesAudio.value = data.resolvedDoc?.item?.media.audio || null;
+	});
 </script>
 
 <div class="relative flex h-full flex-col items-center gap-6">

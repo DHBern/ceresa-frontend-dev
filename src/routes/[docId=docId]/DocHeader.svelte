@@ -13,7 +13,11 @@
 	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import type { TResolvedRegister } from '$lib/functions/ease_of_use/resolveReg';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
-	import { isAudioPlayerVisible } from '$lib/globals/ui-states.svelte';
+	import {
+		currentFilesAudio,
+		currentlyPlayingAudio,
+		isAudioPlayerVisible
+	} from '$lib/globals/ui-states.svelte';
 
 	let {
 		docId,
@@ -124,26 +128,32 @@
 		</h3>
 
 		<!-- Audio -->
-		<div class="my-10 flex w-full justify-center">
-			<div
-				class="flex h-max w-[40vw] flex-col items-center justify-center gap-4 rounded-xl border border-foreground p-8 text-base"
-			>
-				<button
-					class="flex items-center justify-center rounded-full bg-foreground p-3 text-background hover:bg-purple-100"
-					aria-label="play audio"
-					onclick={() => {
-						isAudioPlayerVisible.value = !isAudioPlayerVisible.value;
-					}}
+		{#if currentFilesAudio.value?.docId}
+			<div class="my-10 flex w-full justify-center">
+				<div
+					class="flex h-max w-max flex-col items-center justify-center gap-4 rounded-lg border border-foreground px-12 py-4"
 				>
-					{#if isAudioPlayerVisible.value}
-						<i class="fa-solid fa-stop text-sm"></i>
-					{:else}
-						<i class="fa-solid fa-play text-sm"></i>
-					{/if}
-				</button>
-				<p class="max-w-80 text-center">There is an Audio Document linked to this document.</p>
+					<button
+						class="flex h-6 w-6 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-100"
+						aria-label="play audio"
+						onclick={() => {
+							console.log(currentlyPlayingAudio.value?.docId);
+							console.log(currentFilesAudio.value?.docId);
+							currentlyPlayingAudio.value = currentFilesAudio.value;
+							console.log(currentlyPlayingAudio.value?.docId);
+							isAudioPlayerVisible.value = true;
+						}}
+					>
+						{#if isAudioPlayerVisible.value && currentlyPlayingAudio.value?.docId === currentFilesAudio.value.docId}
+							<i class="fa-solid fa-stop text-sm"></i>
+						{:else}
+							<i class="fa-solid fa-play text-sm"></i>
+						{/if}
+					</button>
+					<p class="text-center text-xs">Listen to the Audio Document linked to this document.</p>
+				</div>
 			</div>
-		</div>
+		{/if}
 
 		<!-- Global Comment -->
 		<ResponsiveAccordion titleOverview="Überblickskommentar" titleMeta="Metadaten">

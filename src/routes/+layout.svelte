@@ -7,7 +7,12 @@
 	import Nav from './Nav.svelte';
 	import { asset } from '$app/paths';
 	import { ModeWatcher } from 'mode-watcher';
-	import { isAudioPlayerVisible, isMobile } from '$lib/globals/ui-states.svelte';
+	import {
+		currentFilesAudio,
+		currentlyPlayingAudio,
+		isAudioPlayerVisible,
+		isMobile
+	} from '$lib/globals/ui-states.svelte';
 
 	function checkWindowSize() {
 		isMobile.value = window.innerWidth < TAILWINDBREAKPOINTS.sm;
@@ -17,13 +22,6 @@
 
 	import AudioPlayer from './AudioPlayer.svelte';
 	import { slide } from 'svelte/transition';
-
-	let chapters = [
-		{ chapId: '1', chapName: 'A', time: 0 },
-		{ chapId: '2', chapName: 'B', time: 450 },
-		{ chapId: '3', chapName: 'C', time: 800 },
-		{ chapId: '4', chapName: 'D', time: 1240 }
-	];
 </script>
 
 <svelte:window on:resize={checkWindowSize} />
@@ -41,9 +39,11 @@
 	<aside
 		in:slide={{ duration: 300 }}
 		out:slide={{ duration: 300 }}
-		class="fixed bottom-0 z-9999999999 w-screen bg-foreground py-5"
+		class="fixed bottom-0 z-9999999999 w-screen bg-foreground"
 	>
-		<AudioPlayer audioSrc="/audio/ceresa-test.mp3" {chapters} />
+		{#if currentlyPlayingAudio.value}
+			<AudioPlayer />
+		{/if}
 	</aside>
 {/if}
 <footer

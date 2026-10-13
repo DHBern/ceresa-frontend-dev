@@ -43,6 +43,19 @@ type TRendition = {
 	hide?: boolean;
 };
 
+export type TAudioChapters = {
+	chapId: number;
+	chapName: string;
+	time: number;
+};
+export type TAudio = {
+	docId: string;
+	metadata: {
+		title: string;
+		linkedDocs: string[];
+		chapters: TAudioChapters[];
+	};
+};
 export type TDocuments = {
 	meta: {
 		generated_by: string;
@@ -72,6 +85,7 @@ export type TDocuments = {
 					pubSecondary: string;
 					note: string;
 				};
+				media: { audio: TAudio };
 				crossReferences?: {
 					citedDocuments?: TCrossRefDocs;
 					linkedDocuments?: TCrossRefDocs;
@@ -117,6 +131,7 @@ export type TDocuments = {
 					pubSecondary: string;
 					note: string;
 				};
+				media: { audio: TAudio };
 				crossReferences?: {
 					citedDocuments?: TCrossRefDocs;
 					linkedDocuments?: TCrossRefDocs;
@@ -161,6 +176,7 @@ export type TDocuments = {
 					pubSecondary: string;
 					note: string;
 				};
+				media: { audio: TAudio };
 				crossReferences?: {
 					citedDocuments?: TCrossRefDocs;
 					linkedDocuments?: TCrossRefDocs;

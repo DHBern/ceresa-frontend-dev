@@ -27,6 +27,21 @@
 					"pubSecondary": "",
 					"note": ""
 				},
+				"media": {
+					"audio": {
+						"docId": "ceresa-test.mp3",
+						"metadata": {
+							"title": "Ceresa Test 1",
+							"linkedDocs": ["posthum_0001"],
+							"chapters": [
+								{ "chapId": "1", "chapName": "A", "time": 0 },
+								{ "chapId": "2", "chapName": "B", "time": 450 },
+								{ "chapId": "3", "chapName": "C", "time": 800 },
+								{ "chapId": "4", "chapName": "D", "time": 1240 }
+							]
+						}
+					}
+				},
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
@@ -73,6 +88,21 @@
 					"archiveCollation": "",
 					"pubSecondary": "",
 					"note": ""
+				},
+				"media": {
+					"audio": {
+						"docId": "ceresa-test-3.mp3",
+						"metadata": {
+							"title": "Ceresa Test 3",
+							"linkedDocs": ["posthum_0002"],
+							"chapters": [
+								{ "chapId": "1", "chapName": "A", "time": 0 },
+								{ "chapId": "2", "chapName": "B", "time": 45 },
+								{ "chapId": "3", "chapName": "C", "time": 80 },
+								{ "chapId": "4", "chapName": "D", "time": 120 }
+							]
+						}
+					}
 				},
 				"crossReferences": {
 					"citedDocuments": {},
@@ -121,6 +151,21 @@
 					"archiveCollation": "",
 					"pubSecondary": "",
 					"note": ""
+				},
+				"media": {
+					"audio": {
+						"docId": "ceresa-test-2.m4a",
+						"metadata": {
+							"title": "Ceresa Test 2",
+							"linkedDocs": ["unpublished_0001"],
+							"chapters": [
+								{ "chapId": "1", "chapName": "A", "time": 0 },
+								{ "chapId": "2", "chapName": "B", "time": 50 },
+								{ "chapId": "3", "chapName": "C", "time": 80 },
+								{ "chapId": "4", "chapName": "D", "time": 140 }
+							]
+						}
+					}
 				},
 				"crossReferences": {
 					"citedDocuments": {},
@@ -235,6 +280,9 @@
 					"pubSecondary": "",
 					"note": ""
 				},
+				"media": {
+					"audio": {}
+				},
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
@@ -284,6 +332,9 @@
 					"archiveCollation": "",
 					"pubSecondary": "",
 					"note": ""
+				},
+				"media": {
+					"audio": {}
 				},
 				"crossReferences": {
 					"citedDocuments": {},
@@ -345,6 +396,9 @@
 					"pubSecondary": "",
 					"note": ""
 				},
+				"media": {
+					"audio": {}
+				},
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
@@ -402,6 +456,9 @@
 					"pubSecondary": "",
 					"note": ""
 				},
+				"media": {
+					"audio": {}
+				},
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
@@ -448,6 +505,9 @@
 					"archiveCollation": "",
 					"pubSecondary": "",
 					"note": ""
+				},
+				"media": {
+					"audio": {}
 				},
 				"crossReferences": {
 					"citedDocuments": {},
