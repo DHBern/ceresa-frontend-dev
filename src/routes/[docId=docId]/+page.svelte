@@ -12,6 +12,7 @@
 	import { schema, validSeqKeys } from './schemas';
 	import { cleanupSearchParams } from '$lib/functions/searchParams/cleanupSearchParams.js';
 	import { currentFilesAudio } from '$lib/globals/ui-states.svelte.js';
+	import type { TDocItemsAudio } from '$lib/types/documents/TDocuments.js';
 	import { onMount } from 'svelte';
 
 	const params = useSearchParams(schema, { noScroll: true });
@@ -23,8 +24,17 @@
 	let { data } = $props();
 
 	// Reset Audio Data
-	$effect(() => {
-		currentFilesAudio.value = data.resolvedDoc?.item?.media.audio || null;
+	onMount(() => {
+		const audioId = data.resolvedDoc?.item?.crossReferences?.linkedDocuments?.audio?.[0]; //!FIX [0]-hack
+		if (audioId) {
+			currentFilesAudio.value =
+				(data.crossRef.linkedDocuments?.audio?.filter((item) => {
+					return item.docKey === audioId;
+				})[0].item as TDocItemsAudio) || null;
+			console.log('NEW AUDIO', currentFilesAudio.value?.audioMaterial.filename);
+		} else {
+			console.log('NO AUDIO FOUND');
+		}
 	});
 </script>
 

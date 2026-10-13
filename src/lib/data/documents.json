@@ -27,24 +27,11 @@
 					"pubSecondary": "",
 					"note": ""
 				},
-				"media": {
-					"audio": {
-						"docId": "ceresa-test.mp3",
-						"metadata": {
-							"title": "Ceresa Test 1",
-							"linkedDocs": ["posthum_0001"],
-							"chapters": [
-								{ "chapId": "1", "chapName": "A", "time": 0 },
-								{ "chapId": "2", "chapName": "B", "time": 450 },
-								{ "chapId": "3", "chapName": "C", "time": 800 },
-								{ "chapId": "4", "chapName": "D", "time": 1240 }
-							]
-						}
-					}
-				},
 				"crossReferences": {
 					"citedDocuments": {},
-					"linkedDocuments": {},
+					"linkedDocuments": {
+						"audio": ["audio_0001"]
+					},
 					"citedEntities": {},
 					"linkedEntities": {}
 				},
@@ -88,21 +75,6 @@
 					"archiveCollation": "",
 					"pubSecondary": "",
 					"note": ""
-				},
-				"media": {
-					"audio": {
-						"docId": "ceresa-test-3.mp3",
-						"metadata": {
-							"title": "Ceresa Test 3",
-							"linkedDocs": ["posthum_0002"],
-							"chapters": [
-								{ "chapId": "1", "chapName": "A", "time": 0 },
-								{ "chapId": "2", "chapName": "B", "time": 45 },
-								{ "chapId": "3", "chapName": "C", "time": 80 },
-								{ "chapId": "4", "chapName": "D", "time": 120 }
-							]
-						}
-					}
 				},
 				"crossReferences": {
 					"citedDocuments": {},
@@ -151,21 +123,6 @@
 					"archiveCollation": "",
 					"pubSecondary": "",
 					"note": ""
-				},
-				"media": {
-					"audio": {
-						"docId": "ceresa-test-2.m4a",
-						"metadata": {
-							"title": "Ceresa Test 2",
-							"linkedDocs": ["unpublished_0001"],
-							"chapters": [
-								{ "chapId": "1", "chapName": "A", "time": 0 },
-								{ "chapId": "2", "chapName": "B", "time": 50 },
-								{ "chapId": "3", "chapName": "C", "time": 80 },
-								{ "chapId": "4", "chapName": "D", "time": 140 }
-							]
-						}
-					}
 				},
 				"crossReferences": {
 					"citedDocuments": {},
@@ -280,9 +237,6 @@
 					"pubSecondary": "",
 					"note": ""
 				},
-				"media": {
-					"audio": {}
-				},
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
@@ -332,9 +286,6 @@
 					"archiveCollation": "",
 					"pubSecondary": "",
 					"note": ""
-				},
-				"media": {
-					"audio": {}
 				},
 				"crossReferences": {
 					"citedDocuments": {},
@@ -396,9 +347,6 @@
 					"pubSecondary": "",
 					"note": ""
 				},
-				"media": {
-					"audio": {}
-				},
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
@@ -456,9 +404,6 @@
 					"pubSecondary": "",
 					"note": ""
 				},
-				"media": {
-					"audio": {}
-				},
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
@@ -506,9 +451,6 @@
 					"pubSecondary": "",
 					"note": ""
 				},
-				"media": {
-					"audio": {}
-				},
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {},
@@ -543,6 +485,348 @@
 				"edition": {
 					"fullyEdited": false
 				}
+			}
+		},
+		"audio": {
+			"audio_0001": {
+				"slug": "audio_0001",
+				"name": "La morte del padre I",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "La morte del padre 1/6",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_1-la-morte-del-padre",
+					"filename": "1798215-la-morte-del-padre-1.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
+			},
+			"audio_0002": {
+				"slug": "audio_0002",
+				"name": "La morte del padre I",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "La morte del padre 2/6",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_1-la-morte-del-padre",
+					"filename": "1798212-la-morte-del-padre-2.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
+			},
+			"audio_0003": {
+				"slug": "audio_0003",
+				"name": "La morte del padre I",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "La morte del padre 3/6",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_1-la-morte-del-padre",
+					"filename": "1798209-la-morte-del-padre-3.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
+			},
+			"audio_0004": {
+				"slug": "audio_0004",
+				"name": "La morte del padre I",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "La morte del padre 4/6",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_1-la-morte-del-padre",
+					"filename": "1798206-la-morte-del-padre-4.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
+			},
+			"audio_0005": {
+				"slug": "audio_0005",
+				"name": "La morte del padre I",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "La morte del padre 5/6",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_1-la-morte-del-padre",
+					"filename": "1798203-la-morte-del-padre-5.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
+			},
+			"audio_0006": {
+				"slug": "audio_0006",
+				"name": "La morte del padre I",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "La morte del padre 6/6",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_1-la-morte-del-padre",
+					"filename": "1798200-la-morte-del-padre-6.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
+			},
+			"audio_0007": {
+				"slug": "audio_0001",
+				"name": "Liberalizzazione dell aborto",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Liberalizzazione dell aborto (piccolo dizionario)",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_2-piccolo-dizionario",
+					"filename": "1799073_Liberalizzazione dell aborto.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
+			},
+			"audio_0008": {
+				"slug": "audio_0008",
+				"name": "Le differenze biologiche",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Le differenze biologiche (piccolo dizionario)",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_2-piccolo-dizionario",
+					"filename": "1799067_Le differenze biologiche.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
+			},
+			"audio_0009": {
+				"slug": "audio_0009",
+				"name": "Moda femminile",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Moda femminile (piccolo dizionario)",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_2-piccolo-dizionario",
+					"filename": "1799064_Moda femminile.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
+			},
+			"audio_0010": {
+				"slug": "audio_0010",
+				"name": "Anima Maschile Morale",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Anima Maschile Morale (piccolo dizionario)",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_2-piccolo-dizionario",
+					"filename": "1798382_Anima Maschile Morale.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "A", "time": 0 },
+						]
+					}
+				},
+				"editorialNotes": {}
 			}
 		}
 	}

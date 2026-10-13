@@ -3,11 +3,13 @@
 import { type TPosthumKeys } from './TPosthumKeys';
 import { type TUnpublishedKeys } from './TUnpublishedKeys';
 import { type TPublishedKeys } from './TPublishedKeys';
+import { type TAudioKeys } from './TAudioKeys';
 
 // Types
 import { type TPosthumGroups } from './TPosthumGroups';
 import { type TUnpublishedGroups } from './TUnpublishedGroups';
 import { type TPublishedGroups } from './TPublishedGroups';
+import { type TAudioGroups } from './TAudioGroups';
 
 // From Register
 import { type TPeopleKeys } from '../register/TPeopleKeys';
@@ -28,6 +30,7 @@ type TCrossRefDocs = {
 	posthum?: TPosthumKeys[];
 	unpublished?: TUnpublishedKeys[];
 	published?: TPublishedKeys[];
+	audio?: TAudioKeys[];
 };
 type TCrossRefEntities = {
 	people?: TPeopleKeys[];
@@ -43,18 +46,11 @@ type TRendition = {
 	hide?: boolean;
 };
 
+
 export type TAudioChapters = {
-	chapId: number;
+	id: number;
 	chapName: string;
 	time: number;
-};
-export type TAudio = {
-	docId: string;
-	metadata: {
-		title: string;
-		linkedDocs: string[];
-		chapters: TAudioChapters[];
-	};
 };
 export type TDocuments = {
 	meta: {
@@ -85,7 +81,6 @@ export type TDocuments = {
 					pubSecondary: string;
 					note: string;
 				};
-				media: { audio: TAudio };
 				crossReferences?: {
 					citedDocuments?: TCrossRefDocs;
 					linkedDocuments?: TCrossRefDocs;
@@ -131,7 +126,6 @@ export type TDocuments = {
 					pubSecondary: string;
 					note: string;
 				};
-				media: { audio: TAudio };
 				crossReferences?: {
 					citedDocuments?: TCrossRefDocs;
 					linkedDocuments?: TCrossRefDocs;
@@ -176,7 +170,6 @@ export type TDocuments = {
 					pubSecondary: string;
 					note: string;
 				};
-				media: { audio: TAudio };
 				crossReferences?: {
 					citedDocuments?: TCrossRefDocs;
 					linkedDocuments?: TCrossRefDocs;
@@ -197,6 +190,42 @@ export type TDocuments = {
 				numPages: number | null;
 				edition: {
 					fullyEdited: boolean;
+				};
+			};
+		};
+		audio: {
+			[key in TAudioKeys]: {
+				slug?: string; //! Currently in use as `currentFilesAudio.value?.slug && currentFilesAudio.value?.slug !== currentlyPlayingAudio.value?.slug`
+				name: string;
+				date: { from: string | null; to: string | null };
+				type: TPublishedGroups | '?' | '';
+				metadata: {
+					title: string | null;
+					title_full: string;
+					title_short?: string;
+					authors?: string[];
+					pubDate: string;
+					pubPlace?: string;
+					pubDetails?: string;
+					archive: string;
+					archiveCollation: string;
+					note: string;
+				};
+				crossReferences?: {
+					citedDocuments?: TCrossRefDocs;
+					linkedDocuments?: TCrossRefDocs;
+					citedEntities?: TCrossRefEntities;
+					linkedEntities?: TCrossRefEntities;
+				};
+				audioMaterial: {
+					path: string;
+					filename: string;
+					metadata: {
+						chapters?: TAudioChapters[]
+					}
+				};
+				editorialNotes: {
+					contentNotes?: TContentNotes[];
 				};
 			};
 		};
@@ -238,21 +267,24 @@ export type TDocDict = {
 
 // --- Sets -------------------------------------------------------
 export type TDocTypes = keyof TDocuments['documents'];
-export type TDocKeys = TPosthumKeys | TUnpublishedKeys | TPublishedKeys;
+export type TDocKeys = TPosthumKeys | TUnpublishedKeys | TPublishedKeys | TAudioKeys;
 export type TDocKeysMap = {
 	posthum: TPosthumKeys;
 	unpublished: TUnpublishedKeys;
 	published: TPublishedKeys;
+	audio: TAudioKeys;
 };
 
 export type TDocAttrsPosthum = keyof TDocuments['documents']['posthum'][TPosthumKeys];
 export type TDocAttrsUnpublished = keyof TDocuments['documents']['unpublished'][TUnpublishedKeys];
 export type TDocAttrsPublished = keyof TDocuments['documents']['published'][TPublishedKeys];
-export type TDocAttrs = TDocAttrsPosthum | TDocAttrsUnpublished | TDocAttrsPublished;
+export type TDocAttrsAudio = keyof TDocuments['documents']['audio'][TAudioKeys];
+export type TDocAttrs = TDocAttrsPosthum | TDocAttrsUnpublished | TDocAttrsPublished | TDocAttrsAudio;
 export type TDocAttrsMap = {
 	posthum: TDocAttrsPosthum;
 	unpublished: TDocAttrsUnpublished;
 	published: TDocAttrsPublished;
+	audio: TDocAttrsAudio;
 };
 
 export type TDocMetadataKeysPosthum =
@@ -261,31 +293,37 @@ export type TDocMetadataKeysUnpublished =
 	keyof TDocuments['documents']['unpublished'][TUnpublishedKeys]['metadata'];
 export type TDocMetadataKeysPublished =
 	keyof TDocuments['documents']['published'][TPublishedKeys]['metadata'];
+export type TDocMetadataKeysAudio =
+	keyof TDocuments['documents']['audio'][TAudioKeys]['metadata'];
 export type TDocMetadataKeys =
-	TDocMetadataKeysPosthum | TDocMetadataKeysUnpublished | TDocMetadataKeysPublished;
+	TDocMetadataKeysPosthum | TDocMetadataKeysUnpublished | TDocMetadataKeysPublished | TDocMetadataKeysAudio;
 export type TDocMetadataKeysMap = {
 	posthum: TDocMetadataKeysPosthum;
 	unpublished: TDocMetadataKeysUnpublished;
 	published: TDocMetadataKeysPublished;
+	audio: TDocMetadataKeysAudio;
 };
 
 export type TDocItemsPosthum = TDocuments['documents']['posthum'][TPosthumKeys];
 export type TDocItemsUnpublished = TDocuments['documents']['unpublished'][TUnpublishedKeys];
 export type TDocItemsPublished = TDocuments['documents']['published'][TPublishedKeys];
-export type TDocItems = TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished;
+export type TDocItemsAudio = TDocuments['documents']['audio'][TAudioKeys];
+export type TDocItems = TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | TDocItemsAudio;
 export type TDocItemsMap = {
 	posthum: TDocItemsPosthum;
 	unpublished: TDocItemsUnpublished;
 	published: TDocItemsPublished;
+	audio: TDocItemsAudio;
 };
 
 // Group Set
-export type TDocGroupsFlat = TPosthumGroups | TUnpublishedGroups | TPublishedGroups | '?' | '';
+export type TDocGroupsFlat = TPosthumGroups | TUnpublishedGroups | TPublishedGroups | TAudioGroups | '?' | '';
 
 export type TDocGroupsMap = {
 	posthum: TPosthumGroups | '?' | '';
 	unpublished: TUnpublishedGroups | '?' | '';
 	published: TPublishedGroups | '?' | '';
+	audio: TAudioGroups | '?' | '';
 };
 
 // CrossRef Entities (Register)

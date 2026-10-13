@@ -4,14 +4,15 @@
 		currentlyPlayingAudio,
 		isAudioPlayerVisible
 	} from '$lib/globals/ui-states.svelte';
-	import type { TAudio } from '$lib/types/documents/TDocuments';
 	import { Slider } from 'bits-ui';
 
 	// Props
-	let audioSrc = $derived(`/audio/${currentlyPlayingAudio.value?.docId}` as TAudio['docId']);
-	let chapters = $derived(
-		currentlyPlayingAudio.value?.metadata.chapters as TAudio['metadata']['chapters']
+	let audioSrc = $derived(
+		(currentlyPlayingAudio.value?.audioMaterial?.path || '') +
+			'/' +
+			(currentlyPlayingAudio.value?.audioMaterial?.filename || '')
 	);
+	let chapters = $derived(currentlyPlayingAudio.value?.audioMaterial.metadata.chapters);
 
 	// State
 	let isPlaying = $state(false);
@@ -22,7 +23,7 @@
 	let audioElement: HTMLAudioElement | null = $state(null);
 
 	// Derived
-	let currentChapter = $derived(chapters[currentChapterIndex] ?? null);
+	let currentChapter = $derived(chapters?.[currentChapterIndex] ?? null);
 
 	function formatTime(seconds: number) {
 		const mins = Math.floor(seconds / 60);
@@ -32,6 +33,7 @@
 
 	// Which chapter does a given time belong to?
 	function chapterIndexForTime(time: number) {
+		if (!chapters) return 0;
 		for (let i = chapters.length - 1; i >= 0; i--) {
 			if (time >= chapters[i].time) return i;
 		}
@@ -101,7 +103,7 @@
 	// --- effects ---
 	// Play if audioFile changed
 	$effect(() => {
-		currentlyPlayingAudio.value?.docId;
+		currentlyPlayingAudio.value?.slug; // listen to changes here
 		playAudio();
 	});
 </script>
@@ -116,7 +118,7 @@
 >
 
 <div class="relative w-full px-5 pt-2 [--heightOfButton:35px]">
-	{#if currentFilesAudio.value?.docId && currentFilesAudio.value?.docId !== currentlyPlayingAudio.value?.docId}
+	{#if currentFilesAudio.value?.slug && currentFilesAudio.value?.slug !== currentlyPlayingAudio.value?.slug}
 		<button
 			class="absolute -top-[calc(var(--heightOfButton)*3/4)] left-[50%] z-1 mx-auto h-(--heightOfButton) w-max translate-x-[-50%] rounded-t-xl bg-foreground px-10 text-center text-sm text-black underline"
 			aria-label="close audio player"
@@ -129,8 +131,11 @@
 		<p><strong>{currentlyPlayingAudio.value?.metadata.title}</strong></p>
 		<p>
 			<strong>Linked Documents: </strong>
-			{#each currentlyPlayingAudio.value?.metadata.linkedDocs as linkedDoc (linkedDoc)}
-				<a href={linkedDoc} class="mx-2">{linkedDoc}</a>
+			{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
+				{@const linkedDocs = currentlyPlayingAudio.value?.crossReferences?.linkedDocuments?.[type]}
+				{#each linkedDocs as linkedDoc (linkedDoc)}
+					<a href={linkedDoc} class="mx-2">{linkedDoc}</a>
+				{/each}
 			{/each}
 		</p>
 	</div>
@@ -212,7 +217,7 @@
 					<!-- Chapter markers: clickable, positioned proportionally along the track -->
 					<div class="relative mt-2 h-4 w-full">
 						{#if duration > 0}
-							{#each chapters as chapter, i (chapter.chapId)}
+							{#each chapters as chapter, i (chapter.id)}
 								{#if chapter.time <= duration}
 									{@const pct = (chapter.time / duration) * 100}
 									<!-- clamp so edge labels don't overflow the container -->

@@ -1,0 +1,1 @@
+export type TAudioGroups = 'Audio';

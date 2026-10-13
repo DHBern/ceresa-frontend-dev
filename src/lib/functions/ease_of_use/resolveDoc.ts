@@ -4,8 +4,9 @@
 
 import type { TDocKeys, TDocTypes, TDocuments } from '$lib/types/documents/TDocuments';
 import type { TPosthumKeys } from '$lib/types/documents/TPosthumKeys';
-import type { TPublishedKeys } from '$lib/types/documents/TPublishedKeys';
 import type { TUnpublishedKeys } from '$lib/types/documents/TUnpublishedKeys';
+import type { TPublishedKeys } from '$lib/types/documents/TPublishedKeys';
+import type { TAudioKeys } from '$lib/types/documents/TAudioKeys';
 
 export type TResolvedPosthum = {
 	docId: TPosthumKeys;
@@ -22,9 +23,14 @@ export type TResolvedPublished = {
 	docType: 'published';
 	item: TDocuments['documents']['published'][TPublishedKeys] | null;
 };
+export type TResolvedAudio = {
+	docId: TAudioKeys;
+	docType: 'audio';
+	item: TDocuments['documents']['audio'][TAudioKeys] | null;
+};
 
 export type TResolvedDoc =
-	TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
+	TResolvedPosthum | TResolvedUnpublished | TResolvedPublished | TResolvedAudio;
 
 export function resolveDoc(
 	object: Record<TDocTypes, any> | null,
@@ -47,6 +53,12 @@ export function resolveDoc(
 			docId: docId as TPublishedKeys,
 			docType: 'published',
 			item: object?.published[docId] || null
+		};
+	} else if (docId.includes('audio')) {
+		return {
+			docId: docId as TAudioKeys,
+			docType: 'audio',
+			item: object?.audio[docId] || null
 		};
 	} else {
 		return null;

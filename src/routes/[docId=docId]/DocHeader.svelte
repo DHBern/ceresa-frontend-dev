@@ -16,7 +16,8 @@
 	import {
 		currentFilesAudio,
 		currentlyPlayingAudio,
-		isAudioPlayerVisible
+		isAudioPlayerVisible,
+		isAudioPlaying
 	} from '$lib/globals/ui-states.svelte';
 
 	let {
@@ -128,28 +129,34 @@
 		</h3>
 
 		<!-- Audio -->
-		{#if currentFilesAudio.value?.docId}
+		{#if currentFilesAudio.value?.slug}
 			<div class="my-10 flex w-full justify-center">
 				<div
 					class="flex h-max w-max flex-col items-center justify-center gap-4 rounded-lg border border-foreground px-12 py-4"
 				>
-					<button
-						class="flex h-6 w-6 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-100"
-						aria-label="play audio"
-						onclick={() => {
-							console.log(currentlyPlayingAudio.value?.docId);
-							console.log(currentFilesAudio.value?.docId);
-							currentlyPlayingAudio.value = currentFilesAudio.value;
-							console.log(currentlyPlayingAudio.value?.docId);
-							isAudioPlayerVisible.value = true;
-						}}
-					>
-						{#if isAudioPlayerVisible.value && currentlyPlayingAudio.value?.docId === currentFilesAudio.value.docId}
+					{#if isAudioPlayerVisible.value && currentlyPlayingAudio.value?.slug === currentFilesAudio.value.slug}
+						<button
+							aria-label="stop audio"
+							onclick={() => {
+								currentlyPlayingAudio.value = null;
+								isAudioPlayerVisible.value = false;
+							}}
+							class="flex h-6 w-6 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
+						>
 							<i class="fa-solid fa-stop text-sm"></i>
-						{:else}
+						</button>
+					{:else}
+						<button
+							aria-label="play audio"
+							onclick={() => {
+								currentlyPlayingAudio.value = currentFilesAudio.value;
+								isAudioPlayerVisible.value = true;
+							}}
+							class="flex h-6 w-6 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
+						>
 							<i class="fa-solid fa-play text-sm"></i>
-						{/if}
-					</button>
+						</button>
+					{/if}
 					<p class="text-center text-xs">Listen to the Audio Document linked to this document.</p>
 				</div>
 			</div>
@@ -254,7 +261,7 @@
 							{#if crossRef.citedDocuments && Object.keys(crossRef.citedDocuments).length}
 								<h5 class="h5">Im Text enthaltene Querverweise</h5>
 								<div>
-									{#each ['posthum', 'unpublished', 'published'] as const as type (type)}
+									{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
 										{#if crossRef.citedDocuments?.[type]?.length}
 											{@render metadataCrossRefDoc(
 												dictDocs[type].label_plural,
@@ -276,7 +283,7 @@
 									Durch Editionsteam vergebene Querverweise
 								</h5>
 								<div>
-									{#each ['posthum', 'unpublished', 'published'] as const as type (type)}
+									{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
 										{#if crossRef.linkedDocuments?.[type]?.length}
 											{@render metadataCrossRefDoc(
 												dictDocs[type].label_plural,
