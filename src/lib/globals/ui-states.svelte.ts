@@ -30,3 +30,7 @@ export const sequenceToggle = $state({
 
 // UI
 export const isMobile = $state({ value: false });
+
+// Audio
+export const isAudioPlayerVisible = $state({value: true});
+export const isAudioPlaying = $state({value: false});

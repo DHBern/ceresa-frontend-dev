@@ -13,6 +13,7 @@
 	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import type { TResolvedRegister } from '$lib/functions/ease_of_use/resolveReg';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
+	import { isAudioPlayerVisible } from '$lib/globals/ui-states.svelte';
 
 	let {
 		docId,
@@ -109,6 +110,7 @@
 
 {#if resDoc?.item}
 	<div class="w-full px-10">
+		<!-- Title -->
 		<h1 class="h1 text-center">
 			<span>{resDoc.item.name}</span>
 		</h1>
@@ -120,6 +122,29 @@
 				rel="noopener noreferrer">{resDoc.item.tei.filename.replace('.xml', '')}</a
 			>
 		</h3>
+
+		<!-- Audio -->
+		<div class="my-10 flex w-full justify-center">
+			<div
+				class="flex h-max w-[40vw] flex-col items-center justify-center gap-4 rounded-xl border border-foreground p-8 text-base"
+			>
+				<button
+					class="flex items-center justify-center rounded-full bg-foreground p-3 text-background hover:bg-purple-100"
+					aria-label="play audio"
+					onclick={() => {
+						isAudioPlayerVisible.value = !isAudioPlayerVisible.value;
+					}}
+				>
+					{#if isAudioPlayerVisible.value}
+						<i class="fa-solid fa-stop text-sm"></i>
+					{:else}
+						<i class="fa-solid fa-play text-sm"></i>
+					{/if}
+				</button>
+				<p class="max-w-80 text-center">There is an Audio Document linked to this document.</p>
+			</div>
+		</div>
+
 		<!-- Global Comment -->
 		<ResponsiveAccordion titleOverview="Überblickskommentar" titleMeta="Metadaten">
 			<!-- (1) Übersichtskommentar -->

@@ -1,222 +1,205 @@
-<script>
+<script lang="ts">
+	import { isAudioPlayerVisible } from '$lib/globals/ui-states.svelte';
 	import { Slider } from 'bits-ui';
 
-	// Props with $props rune
+	// Props
 	let { audioSrc, chapters } = $props();
 
-	// Reactive state with $state rune
+	// State
 	let isPlaying = $state(false);
-	let currentTime = $state(0);
 	let duration = $state(0);
 	let currentChapterIndex = $state(0);
 	let isDragging = $state(false);
+	let sliderValue = $state.raw(0);
+	let audioElement: HTMLAudioElement | null = $state(null);
 
-	// Derived values with $derived rune
-	let currentChapter = $derived(chapters[currentChapterIndex] || null);
-	let progressPercent = $derived(duration > 0 ? (currentTime / duration) * 100 : 0);
+	// Derived
+	let currentChapter = $derived(chapters[currentChapterIndex] ?? null);
 
-	// Ref to audio element
-	let audioElement;
-
-	// Format time helper
-	function formatTime(seconds) {
+	function formatTime(seconds: number) {
 		const mins = Math.floor(seconds / 60);
 		const secs = Math.floor(seconds % 60);
 		return `${mins}:${secs.toString().padStart(2, '0')}`;
 	}
 
-	// Get chapter label for slider marks
-	let chapterMarks = $derived.by(() => {
-		return chapters.map((chapter) => ({
-			value: chapter.time,
-			label: chapter.chapName,
-			id: chapter.chapId
-		}));
-	});
-
-	// Effect to set up audio when component mounts
-	$effect(() => {
-		if (audioElement) {
-			// Load audio source
-			audioElement.src = audioSrc;
-
-			// Set up event listeners
-			audioElement.addEventListener('timeupdate', () => {
-				if (!isDragging) {
-					currentTime = audioElement.currentTime;
-
-					// Update current chapter index based on time
-					for (let i = chapters.length - 1; i >= 0; i--) {
-						if (currentTime >= chapters[i].time) {
-							currentChapterIndex = i;
-							break;
-						}
-					}
-				}
-			});
-
-			audioElement.addEventListener('loadedmetadata', () => {
-				duration = audioElement.duration;
-			});
-
-			audioElement.addEventListener('ended', () => {
-				isPlaying = false;
-			});
-
-			// Cleanup
-			return () => {
-				audioElement.removeEventListener('timeupdate', () => {});
-				audioElement.removeEventListener('loadedmetadata', () => {});
-				audioElement.removeEventListener('ended', () => {});
-			};
+	// Which chapter does a given time belong to?
+	function chapterIndexForTime(time: number) {
+		for (let i = chapters.length - 1; i >= 0; i--) {
+			if (time >= chapters[i].time) return i;
 		}
+		return 0;
+	}
+
+	// Central seek: moves the audio element, the slider and the chapter state
+	function seekTo(time: number, { play = true } = {}) {
+		if (!audioElement) return;
+		audioElement.currentTime = time;
+		sliderValue = time;
+		currentChapterIndex = chapterIndexForTime(time);
+		if (play && !isPlaying) {
+			isPlaying = true;
+			audioElement.play().catch(() => (isPlaying = false));
+		}
+	}
+
+	// --- audio element listeners (named, so cleanup actually works) ---
+	function onTimeUpdate() {
+		if (isDragging || !audioElement) return;
+		const t = audioElement.currentTime;
+		// light throttle: only write state if it moved noticeably
+		if (Math.abs(t - sliderValue) > 0.2) sliderValue = t;
+		const idx = chapterIndexForTime(t);
+		if (idx !== currentChapterIndex) currentChapterIndex = idx;
+	}
+	function onLoadedMetadata() {
+		if (audioElement) duration = audioElement.duration;
+	}
+	function onEnded() {
+		isPlaying = false;
+	}
+
+	$effect(() => {
+		const el = audioElement;
+		if (!el) return;
+		el.src = audioSrc;
+		el.addEventListener('timeupdate', onTimeUpdate);
+		el.addEventListener('loadedmetadata', onLoadedMetadata);
+		el.addEventListener('ended', onEnded);
+		return () => {
+			el.removeEventListener('timeupdate', onTimeUpdate);
+			el.removeEventListener('loadedmetadata', onLoadedMetadata);
+			el.removeEventListener('ended', onEnded);
+		};
 	});
 
-	// Toggle play/pause
+	// --- controls ---
 	function togglePlay() {
+		if (!audioElement) return;
 		if (isPlaying) {
 			audioElement.pause();
+			isPlaying = false;
 		} else {
-			audioElement.play();
+			audioElement.play().catch(() => {});
+			isPlaying = true;
 		}
-		isPlaying = !isPlaying;
 	}
-
-	// Go to previous chapter
 	function prevChapter() {
-		if (currentChapterIndex > 0) {
-			currentChapterIndex--;
-			goToChapter(currentChapterIndex);
-		}
+		if (currentChapterIndex > 0) seekTo(chapters[currentChapterIndex - 1].time);
 	}
-
-	// Go to next chapter
 	function nextChapter() {
-		if (currentChapterIndex < chapters.length - 1) {
-			currentChapterIndex++;
-			goToChapter(currentChapterIndex);
-		}
-	}
-
-	// Jump to specific chapter by index
-	function goToChapter(index) {
-		const chapter = chapters[index];
-		if (chapter && audioElement) {
-			audioElement.currentTime = chapter.time;
-			currentTime = chapter.time;
-			if (!isPlaying) {
-				isPlaying = true;
-				audioElement.play();
-			}
-		}
-	}
-
-	// Handle slider value change
-	function handleSliderChange(value) {
-		if (audioElement) {
-			audioElement.currentTime = value;
-			currentTime = value;
-		}
-	}
-
-	// Handle chapter mark click on slider
-	function goToChapterMark(chapterTime) {
-		if (audioElement) {
-			audioElement.currentTime = chapterTime;
-			currentTime = chapterTime;
-
-			// Find and set the chapter index
-			for (let i = 0; i < chapters.length; i++) {
-				if (chapters[i].time === chapterTime) {
-					currentChapterIndex = i;
-					break;
-				}
-			}
-
-			if (!isPlaying) {
-				isPlaying = true;
-				audioElement.play();
-			}
-		}
+		if (currentChapterIndex < chapters.length - 1) seekTo(chapters[currentChapterIndex + 1].time);
 	}
 </script>
 
-<div class="w-full max-w-md space-y-3 rounded-lg bg-gray-800 p-4">
-	<!-- Progress Section -->
-	<div class="space-y-1 bg-red-200">
-		<!-- Chapter Name Display -->
+<!-- Close button -->
+<button
+	class="absolute top-5 right-5 text-lg text-black"
+	aria-label="close audio player"
+	onclick={() => {
+		isAudioPlayerVisible.value = false;
+	}}><i class="fa-solid fa-xmark"></i></button
+>
+<div class="flex w-full justify-center">
+	<div class="relative w-full max-w-md space-y-3 rounded-lg p-4">
+		<!-- Header: chapter name + time -->
 		<div class="flex items-center justify-between">
-			<span class="truncate text-sm font-medium text-white">
-				{currentChapter?.chapName || 'No chapter'}
+			<span class="truncate text-sm font-medium">
+				{currentChapter?.chapName ?? 'No chapter'}
 			</span>
-			<span class="min-w-[80px] text-right text-xs text-gray-400">
-				{formatTime(currentTime)} / {formatTime(duration)}
+			<span class="text-xs text-gray-400">
+				{formatTime(sliderValue)} / {formatTime(duration)}
 			</span>
 		</div>
 
-		<!-- Slider with Chapter Marks -->
-		<div class="relative">
+		<!-- Slider with chapter markers -->
+		<div class="pb-4">
 			<Slider.Root
 				type="single"
-				bind:value={currentTime}
-				max={duration}
+				bind:value={sliderValue}
+				max={duration || 1}
 				step={0.1}
-				class="w-full"
-				onValueChange={handleSliderChange}
-			/>
-
-			<!-- Chapter Mark Labels -->
-			{#each chapterMarks as mark, idx (mark.id)}
-				{#if mark.value <= duration}
-					<button
-						class="group absolute top-6 -translate-x-1/2 transform cursor-pointer text-xs"
-						style:left="{(mark.value / duration) * 100}%"
-						onclick={() => goToChapterMark(mark.value)}
+				onpointerdown={() => (isDragging = true)}
+				onValueCommit={(v) => {
+					isDragging = false;
+					seekTo(v);
+				}}
+				class="relative flex w-full touch-none items-center select-none"
+				trackPadding={3}
+			>
+				{#snippet children()}
+					<span
+						class="relative h-2 w-full grow cursor-pointer overflow-hidden rounded-full bg-gray-300"
 					>
-						<span
-							class="z-10 hidden rounded bg-gray-700 px-2 py-1 whitespace-nowrap text-white group-hover:block"
-						>
-							{mark.label}
-						</span>
-					</button>
+						<Slider.Range class="absolute h-full bg-purple-600" />
+					</span>
+					<Slider.Thumb
+						index={0}
+						class="block size-[18px] cursor-pointer rounded-full border border-gray-400 bg-white shadow-sm transition-colors hover:border-purple-600 focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2 focus-visible:outline-hidden"
+					/>
+				{/snippet}
+			</Slider.Root>
+
+			<!-- Chapter markers: clickable, positioned proportionally along the track -->
+			<div class="relative h-4 w-full">
+				{#if duration > 0}
+					{#each chapters as chapter, i (chapter.chapId)}
+						{#if chapter.time <= duration}
+							{@const pct = (chapter.time / duration) * 100}
+							<!-- clamp so edge labels don't overflow the container -->
+							{@const clamped = Math.min(Math.max(pct, 3), 97)}
+							<button
+								class={[
+									'absolute -translate-x-1/2 rounded px-1 text-xs whitespace-nowrap transition-colors',
+									currentChapterIndex === i
+										? 'font-semibold text-purple-600'
+										: 'text-gray-500 hover:text-gray-800'
+								]}
+								style={`left: ${clamped}%`}
+								onclick={() => seekTo(chapter.time)}
+								title="Jump to {chapter.chapName}"
+							>
+								{chapter.chapName}
+							</button>
+						{/if}
+					{/each}
 				{/if}
-			{/each}
+			</div>
 		</div>
+
+		<!-- Control buttons -->
+		<div class="flex items-center justify-center gap-3">
+			<button
+				onclick={prevChapter}
+				disabled={currentChapterIndex === 0}
+				class="rounded-full p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+				title="Previous Chapter"
+			>
+				<i class="fa-solid fa-backward text-foreground"></i></button
+			>
+
+			<button
+				onclick={togglePlay}
+				class="rounded-full bg-purple-600 p-3 text-white transition-colors hover:bg-purple-500"
+				title={isPlaying ? 'Pause' : 'Play'}
+			>
+				{#if isPlaying}
+					<i class="fa-solid fa-pause text-foreground"></i>
+				{:else}
+					<i class="fa-solid fa-play text-foreground"></i>
+				{/if}
+			</button>
+
+			<button
+				onclick={nextChapter}
+				disabled={currentChapterIndex >= chapters.length - 1}
+				class="rounded-full p-2 transition-colors hover:bg-gray-200 disabled:cursor-not-allowed disabled:opacity-50"
+				title="Next Chapter"
+			>
+				<i class="fa-solid fa-foreward text-foreground"></i>
+			</button>
+		</div>
+
+		<!-- Hidden audio element -->
+		<audio bind:this={audioElement}></audio>
 	</div>
-
-	<!-- Control Buttons -->
-	<div class="flex items-center justify-center gap-3">
-		<button
-			onclick={prevChapter}
-			disabled={currentChapterIndex === 0}
-			class="rounded-full bg-gray-700 p-2 transition-colors hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50"
-			title="Previous Chapter"
-		>
-			⏮️
-		</button>
-
-		<button
-			onclick={togglePlay}
-			class="rounded-full bg-purple-600 p-3 transition-colors hover:bg-purple-500"
-			title={isPlaying ? 'Pause' : 'Play'}
-		>
-			{#if isPlaying}
-				⏸️
-			{:else}
-				▶️
-			{/if}
-		</button>
-
-		<button
-			onclick={nextChapter}
-			disabled={currentChapterIndex >= chapters.length - 1}
-			class="rounded-full bg-gray-700 p-2 transition-colors hover:bg-gray-600 disabled:cursor-not-allowed disabled:opacity-50"
-			title="Next Chapter"
-		>
-			⏭️
-		</button>
-	</div>
-
-	<!-- Hidden Audio Element -->
-	<audio bind:this={audioElement}></audio>
 </div>

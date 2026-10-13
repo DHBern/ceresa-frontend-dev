@@ -7,7 +7,7 @@
 	import Nav from './Nav.svelte';
 	import { asset } from '$app/paths';
 	import { ModeWatcher } from 'mode-watcher';
-	import { isMobile } from '$lib/globals/ui-states.svelte';
+	import { isAudioPlayerVisible, isMobile } from '$lib/globals/ui-states.svelte';
 
 	function checkWindowSize() {
 		isMobile.value = window.innerWidth < TAILWINDBREAKPOINTS.sm;
@@ -16,12 +16,13 @@
 	let { children } = $props();
 
 	import AudioPlayer from './AudioPlayer.svelte';
+	import { slide } from 'svelte/transition';
 
 	let chapters = [
-		{ chapId: '1', chapName: 'Introduction', time: 0 },
-		{ chapId: '2', chapName: 'Setup Guide', time: 45 },
-		{ chapId: '3', chapName: 'Core Concepts', time: 120 },
-		{ chapId: '4', chapName: 'Advanced Topics', time: 240 }
+		{ chapId: '1', chapName: 'A', time: 0 },
+		{ chapId: '2', chapName: 'B', time: 450 },
+		{ chapId: '3', chapName: 'C', time: 800 },
+		{ chapId: '4', chapName: 'D', time: 1240 }
 	];
 </script>
 
@@ -36,11 +37,18 @@
 
 <div class="min-h-screen pt-10 pb-20">{@render children()}</div>
 
+{#if isAudioPlayerVisible.value}
+	<aside
+		in:slide={{ duration: 300 }}
+		out:slide={{ duration: 300 }}
+		class="fixed bottom-0 z-9999999999 w-screen bg-foreground py-5"
+	>
+		<AudioPlayer audioSrc="/audio/ceresa-test.mp3" {chapters} />
+	</aside>
+{/if}
 <footer
 	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-10 p-20 text-background-contrast"
 >
-	<AudioPlayer audioSrc="/audio/ceresa-test.mp3" {chapters} />
-
 	<p class="mb-5">Diese Webseite befindet sich in einer Alpha-Version.</p>
 	<p>
 		<a
