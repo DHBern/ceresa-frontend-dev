@@ -50,9 +50,6 @@
       <body>
          <div>
             <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_001.tif"/>
-            <p>
-               <lb xml:id="p001_l"/>{{SKIP Non trascritto intenzionalmente (motive: not to be edited )}}</p>
-            
             
             <div xml:id="A-1-b_6-2_AC001a">
             <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_002.tif"/>
@@ -153,11 +150,8 @@ te: cassato da Ceresa"?><lb xml:id="p003_tr_3_tl_19" break="no"
                   <lb xml:id="p003_tr_3_tl_23" break="no"/>li.</p><p> <lb xml:id="p003_tr_3_tl_24"
                   />L'ANIMA, essendo immateriale, non può nemmeno mordere.</p>
             </div>
-            <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_004.tif"/>   <p>
-               <lb xml:id="p004_l"/>{{SKIP Non trascritto intenzionalmente (motive: not to be edited )}}</p>
+            <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_004.tif"/>
             <pb xml:id="p005" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_005.tif"/>
-            <p>
-               <lb xml:id="p005_l"/>{{SKIP Non trascritto intenzionalmente (motive: not to be edited )}}</p>
          </div>
       </body>
    </text>

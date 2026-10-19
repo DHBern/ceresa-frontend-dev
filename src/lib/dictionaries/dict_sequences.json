@@ -45,6 +45,15 @@
 			"label_seq_overview": "See all Published Works",
 			"label_next": "Next Document",
 			"label_prev": "Previous Document"
+		},
+		"dictionaries": {
+			"sequence_name": "Dictionaries",
+			"key_singular": "dict",
+			"label_plural": "Dictionaries",
+			"label_singular": "Dictionaries",
+			"label_seq_overview": "See all Dictionaries",
+			"label_next": "Next Entry",
+			"label_prev": "Previous Entry"
 		}
 	}
 }
