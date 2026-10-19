@@ -30,7 +30,7 @@
 				"crossReferences": {
 					"citedDocuments": {},
 					"linkedDocuments": {
-						"audio": ["audio_0001"]
+						"audio": ["audio_0010"]
 					},
 					"citedEntities": {},
 					"linkedEntities": {}
@@ -78,7 +78,9 @@
 				},
 				"crossReferences": {
 					"citedDocuments": {},
-					"linkedDocuments": {},
+					"linkedDocuments": {
+						"audio": ["audio_0007"]
+					},
 					"citedEntities": {},
 					"linkedEntities": {}
 				},
@@ -100,6 +102,1332 @@
 				},
 				"edition": {
 					"fullyEdited": false
+				}
+			},
+			"posthum_0101": {
+				"slug": "posthum_0101",
+				"name": "Anima",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 1,
+					"dict_basename": "Anima",
+					"dict_version": 1
+				},
+				"crossReferences": {
+					"linkedDocuments": {
+						"audio": ["audio_0010"]
+					}
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0102": {
+				"slug": "posthum_0102",
+				"name": "Anima",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 2,
+					"dict_basename": "Anima",
+					"dict_version": 2
+				},
+				"crossReferences": {
+					"linkedDocuments": {
+						"audio": ["audio_0010"]
+					}
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0103": {
+				"slug": "posthum_0103",
+				"name": "Animale",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 3
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0104": {
+				"slug": "posthum_0104",
+				"name": "Animali (esseri)",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 4
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0105": {
+				"slug": "posthum_0105",
+				"name": "Animus",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 5
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0106": {
+				"slug": "posthum_0106",
+				"name": "Apparenza",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 6
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0107": {
+				"slug": "posthum_0107",
+				"name": "Bellezza",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 7
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0108": {
+				"slug": "posthum_0108",
+				"name": "Biologia. Differenze biologiche",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 8
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0109": {
+				"slug": "posthum_0109",
+				"name": "Cattolica (chiesa la)",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 9
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0110": {
+				"slug": "posthum_0110",
+				"name": "Coscienza",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 10,
+					"dict_basename": "Coscienza",
+					"dict_version": 1
+				},
+				"crossReferences": {
+					"dict-1": ["posthum_0111"]
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0111": {
+				"slug": "posthum_0111",
+				"name": "Coscienza",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 11,
+					"dict_basename": "Coscienza",
+					"dict_version": 2
+				},
+				"crossReferences": {
+					"dict-1": ["posthum_0110"]
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0112": {
+				"slug": "posthum_0112",
+				"name": "Cultura",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 12,
+					"dict_basename": "Cultura",
+					"dict_version": 1
+				},
+				"crossReferences": {
+					"dict-1": ["posthum_0113"]
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0113": {
+				"slug": "posthum_0113",
+				"name": "Cultura",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 13,
+					"dict_basename": "Cultura",
+					"dict_version": 2
+				},
+				"crossReferences": {
+					"dict-1": ["posthum_0112"]
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0114": {
+				"slug": "posthum_0114",
+				"name": "Democristiano",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 14
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0115": {
+				"slug": "posthum_0115",
+				"name": "(Dio)",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 15
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0116": {
+				"slug": "posthum_0116",
+				"name": "Donna",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 16
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0117": {
+				"slug": "posthum_0117",
+				"name": "Etologia",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 17
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0118": {
+				"slug": "posthum_0118",
+				"name": "Eva",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 18
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0119": {
+				"slug": "posthum_0119",
+				"name": "Famiglia",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 19
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0120": {
+				"slug": "posthum_0120",
+				"name": "Femminile. Femmina. Femminismo",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 20
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0121": {
+				"slug": "posthum_0121",
+				"name": "Femminilità",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 21,
+					"dict_basename": "Femminilità",
+					"dict_version": 1
+				},
+				"crossReferences": {
+					"dict-1": ["posthum_0122"]
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0122": {
+				"slug": "posthum_0122",
+				"name": "Femminilità",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 22,
+					"dict_basename": "Femminilità",
+					"dict_version": 2
+				},
+				"crossReferences": {
+					"dict-1": ["posthum_0121"]
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0123": {
+				"slug": "posthum_0123",
+				"name": "Figli",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 23
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0124": {
+				"slug": "posthum_0124",
+				"name": "Grammatica",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 24
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0125": {
+				"slug": "posthum_0125",
+				"name": "Lavoro",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 25
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0126": {
+				"slug": "posthum_0126",
+				"name": "Legge",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 26
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0127": {
+				"slug": "posthum_0127",
+				"name": "Letterario (personaggio il)",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 27
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0128": {
+				"slug": "posthum_0128",
+				"name": "Letterario (personaggio femminile il)",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 28
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0129": {
+				"slug": "posthum_0129",
+				"name": "Letteratura",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 29
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0130": {
+				"slug": "posthum_0130",
+				"name": "Madre",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 30
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0131": {
+				"slug": "posthum_0131",
+				"name": "Maschile",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 31
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0132": {
+				"slug": "posthum_0132",
+				"name": "Moda femminile",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 32
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0133": {
+				"slug": "posthum_0133",
+				"name": "Morale. Moralità ",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 33
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0134": {
+				"slug": "posthum_0134",
+				"name": "Natura. Naturale ",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 34
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0135": {
+				"slug": "posthum_0135",
+				"name": "Norma. Normale",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 35
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0136": {
+				"slug": "posthum_0136",
+				"name": "Ovvio",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 36
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0137": {
+				"slug": "posthum_0137",
+				"name": "Personaggio femminile",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 37
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0138": {
+				"slug": "posthum_0138",
+				"name": "Personaggio maschile",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 38
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0139": {
+				"slug": "posthum_0139",
+				"name": "Psicologia",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 39,
+					"dict_basename": "Psicologia",
+					"dict_version": 1
+				},
+				"crossReferences": {
+					"dict-1": ["posthum_0140"]
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0140": {
+				"slug": "posthum_0140",
+				"name": "Psicologia",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 40,
+					"dict_basename": "Psicologia",
+					"dict_version": 2
+				},
+				"crossReferences": {
+					"dict-1": ["posthum_0139"]
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0141": {
+				"slug": "posthum_0141",
+				"name": "Ragione. Ragionare",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 41
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0142": {
+				"slug": "posthum_0142",
+				"name": "Scrittore. Scrittrice",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 42
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0143": {
+				"slug": "posthum_0143",
+				"name": "Sessi (guerra dei)",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 43
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0144": {
+				"slug": "posthum_0144",
+				"name": "Sesso",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 44
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0145": {
+				"slug": "posthum_0145",
+				"name": "Svizzera (la)",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 45
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0146": {
+				"slug": "posthum_0146",
+				"name": "Vita",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-1",
+					"dict_order": 46
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0201": {
+				"slug": "posthum_0201",
+				"name": "Aborto",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 1,
+					"dict_basename": "Aborto",
+					"dict_version": 1
+				},
+				"crossReferences": {
+					"linkedDocuments": {
+						"audio": ["audio_0007"]
+					}
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0202": {
+				"slug": "posthum_0202",
+				"name": "Aborto (liberalizzazione del)",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 2,
+					"dict_basename": "Aborto (liberalizzazione del)",
+					"dict_version": 2
+				},
+				"crossReferences": {
+					"linkedDocuments": {
+						"audio": ["audio_0007"]
+					}
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0203": {
+				"slug": "posthum_0203",
+				"name": "Aborto",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 3,
+					"dict_basename": "Aborto",
+					"dict_version": 3
+				},
+				"crossReferences": {
+					"linkedDocuments": {
+						"audio": ["audio_0007"]
+					}
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0204": {
+				"slug": "posthum_0204",
+				"name": "Accoppiare. Copulazione",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 4
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0205": {
+				"slug": "posthum_0205",
+				"name": "Adamo",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 5
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0206": {
+				"slug": "posthum_0206",
+				"name": "Anima",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 6
+				},
+				"crossReferences": {
+					"linkedDocuments": {
+						"audio": ["audio_0010"]
+					}
+				},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0207": {
+				"slug": "posthum_0207",
+				"name": "Amore",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 7
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0208": {
+				"slug": "posthum_0208",
+				"name": "Animale",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 8
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0209": {
+				"slug": "posthum_0209",
+				"name": "Deserto",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 9
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0210": {
+				"slug": "posthum_0210",
+				"name": "Femminismo",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 10
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0212": {
+				"slug": "posthum_0212",
+				"name": "Prossimo",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 12
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0213": {
+				"slug": "posthum_0213",
+				"name": "Religione",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 13
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0214": {
+				"slug": "posthum_0214",
+				"name": "Uomini",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 14
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
+				}
+			},
+			"posthum_0215": {
+				"slug": "posthum_0215",
+				"name": "Uomo",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"metadata": {
+					"dictId": "dict-2",
+					"dict_order": 15
+				},
+				"crossReferences": {},
+				"tei": {
+					"id": "A-1-b_6-2_AC001",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
+					"filename": "A-1-b_6-2_AC001.xml"
+				},
+				"manuscript": {
+					"iiif_urls": []
 				}
 			}
 		},
@@ -516,7 +1844,8 @@
 					"filename": "1798215-la-morte-del-padre-1.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 0 },
+							{ "id": "2", "chapName": "fine", "time": 180 }
 						]
 					}
 				},
@@ -550,7 +1879,8 @@
 					"filename": "1798212-la-morte-del-padre-2.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 0 },
+							{ "id": "2", "chapName": "fine", "time": 180 }
 						]
 					}
 				},
@@ -584,7 +1914,8 @@
 					"filename": "1798209-la-morte-del-padre-3.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 0 },
+							{ "id": "2", "chapName": "fine", "time": 180 }
 						]
 					}
 				},
@@ -618,7 +1949,8 @@
 					"filename": "1798206-la-morte-del-padre-4.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 0 },
+							{ "id": "2", "chapName": "fine", "time": 180 }
 						]
 					}
 				},
@@ -652,7 +1984,8 @@
 					"filename": "1798203-la-morte-del-padre-5.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 0 },
+							{ "id": "2", "chapName": "fine", "time": 180 }
 						]
 					}
 				},
@@ -686,14 +2019,15 @@
 					"filename": "1798200-la-morte-del-padre-6.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 0 },
+							{ "id": "2", "chapName": "fine", "time": 180 }
 						]
 					}
 				},
 				"editorialNotes": {}
 			},
 			"audio_0007": {
-				"slug": "audio_0001",
+				"slug": "audio_0007",
 				"name": "Liberalizzazione dell aborto",
 				"date": {
 					"from": "2000-01-04",
@@ -711,7 +2045,9 @@
 				},
 				"crossReferences": {
 					"citedDocuments": {},
-					"linkedDocuments": {},
+					"linkedDocuments": {
+						"audio": ["audio_0007"]
+					},
 					"citedEntities": {},
 					"linkedEntities": {}
 				},
@@ -720,7 +2056,8 @@
 					"filename": "1799073_Liberalizzazione dell aborto.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 108 },
+							{ "id": "2", "chapName": "fine", "time": 312 }
 						]
 					}
 				},
@@ -754,7 +2091,8 @@
 					"filename": "1799067_Le differenze biologiche.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 57 },
+							{ "id": "2", "chapName": "fine", "time": 449 }
 						]
 					}
 				},
@@ -788,7 +2126,8 @@
 					"filename": "1799064_Moda femminile.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 47 },
+							{ "id": "2", "chapName": "fine", "time": 279 }
 						]
 					}
 				},
@@ -796,14 +2135,14 @@
 			},
 			"audio_0010": {
 				"slug": "audio_0010",
-				"name": "Anima Maschile Morale",
+				"name": "Anima",
 				"date": {
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
 				"type": "",
 				"metadata": {
-					"title": "Anima Maschile Morale (piccolo dizionario)",
+					"title": "Anima (piccolo dizionario)",
 					"title_full": "",
 					"pubDate": "",
 					"pubPlace": "",
@@ -822,7 +2161,76 @@
 					"filename": "1798382_Anima Maschile Morale.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "A", "time": 0 },
+							{ "id": "1", "chapName": "inizio", "time": 63 },
+							{ "id": "2", "chapName": "fine", "time": 172 }
+						]
+					}
+				}
+			},
+			"audio_0011": {
+				"slug": "audio_0011",
+				"name": "Maschile",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Maschile (piccolo dizionario)",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_2-piccolo-dizionario",
+					"filename": "1798382_Anima Maschile Morale.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "inizio", "time": 343 },
+							{ "id": "2", "chapName": "fine", "time": 522 }
+						]
+					}
+				}
+			},
+			"audio_0012": {
+				"slug": "audio_0012",
+				"name": "Morale",
+				"date": {
+					"from": "2000-01-04",
+					"to": "2000-01-05"
+				},
+				"type": "",
+				"metadata": {
+					"title": "Morale (piccolo dizionario)",
+					"title_full": "",
+					"pubDate": "",
+					"pubPlace": "",
+					"archive": "",
+					"archiveCollation": "",
+					"note": ""
+				},
+				"crossReferences": {
+					"citedDocuments": {},
+					"linkedDocuments": {},
+					"citedEntities": {},
+					"linkedEntities": {}
+				},
+				"audioMaterial": {
+					"path": "/audio/RSI_2-piccolo-dizionario",
+					"filename": "1798382_Anima Maschile Morale.mp3",
+					"metadata": {
+						"chapters": [
+							{ "id": "1", "chapName": "inizio", "time": 755 },
+							{ "id": "2", "chapName": "fine", "time": 908 }
 						]
 					}
 				},

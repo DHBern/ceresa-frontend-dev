@@ -11,7 +11,16 @@
 				"url_seq_overview": null,
 				"name": "All",
 				"preamble": "Works of Prototype",
-				"docs": ["posthum_0001", "posthum_0002", "unpublished_0001", "unpublished_0002","unpublished_0003","unpublished_0004", "published_0001", "published_0002"]
+				"docs": [
+					"posthum_0001",
+					"posthum_0002",
+					"unpublished_0001",
+					"unpublished_0002",
+					"unpublished_0003",
+					"unpublished_0004",
+					"published_0001",
+					"published_0002"
+				]
 			}
 		},
 		"textstufen": {
@@ -89,6 +98,88 @@
 				"name": "Typoskripte",
 				"preamble": "Typoskripte",
 				"docs": []
+			}
+		},
+		"dictionaries": {
+			"dict-1": {
+				"type": "dictionary",
+				"url_seq_overview": "/dict-1",
+				"name": "Piccolo Dizionario",
+				"preamble": "Piccolo Dizionario",
+				"docs": [
+					"posthum_0001",
+					"posthum_0002",
+					"posthum_0101",
+					"posthum_0102",
+					"posthum_0103",
+					"posthum_0104",
+					"posthum_0105",
+					"posthum_0106",
+					"posthum_0107",
+					"posthum_0108",
+					"posthum_0109",
+					"posthum_0110",
+					"posthum_0111",
+					"posthum_0112",
+					"posthum_0113",
+					"posthum_0114",
+					"posthum_0115",
+					"posthum_0116",
+					"posthum_0117",
+					"posthum_0118",
+					"posthum_0119",
+					"posthum_0120",
+					"posthum_0121",
+					"posthum_0122",
+					"posthum_0123",
+					"posthum_0124",
+					"posthum_0125",
+					"posthum_0126",
+					"posthum_0127",
+					"posthum_0128",
+					"posthum_0129",
+					"posthum_0130",
+					"posthum_0131",
+					"posthum_0132",
+					"posthum_0133",
+					"posthum_0134",
+					"posthum_0135",
+					"posthum_0136",
+					"posthum_0137",
+					"posthum_0138",
+					"posthum_0139",
+					"posthum_0140",
+					"posthum_0141",
+					"posthum_0142",
+					"posthum_0143",
+					"posthum_0144",
+					"posthum_0145",
+					"posthum_0146"
+				]
+			},
+			"dict-2": {
+				"type": "dictionary",
+				"url_seq_overview": "/dict-2",
+				"name": "Dizionario eliminabile",
+				"preamble": "Dizionario eliminabile",
+				"docs": [
+					"posthum_0001",
+					"posthum_0002",
+					"posthum_0201",
+					"posthum_0202",
+					"posthum_0203",
+					"posthum_0204",
+					"posthum_0205",
+					"posthum_0206",
+					"posthum_0207",
+					"posthum_0208",
+					"posthum_0209",
+					"posthum_0210",
+					"posthum_0212",
+					"posthum_0213",
+					"posthum_0214",
+					"posthum_0215"
+				]
 			}
 		}
 	}
