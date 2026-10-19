@@ -11,6 +11,8 @@
 
 	import { schema, validSeqKeys } from './schemas';
 	import { cleanupSearchParams } from '$lib/functions/searchParams/cleanupSearchParams.js';
+	import { currentFilesAudio } from '$lib/globals/ui-states.svelte.js';
+	import type { TDocItemsAudio } from '$lib/types/documents/TDocuments.js';
 
 	const params = useSearchParams(schema, { noScroll: true });
 
@@ -19,6 +21,17 @@
 	});
 
 	let { data } = $props();
+
+	// Reset Audio Data
+	$effect(() => {
+		const audioId = data.resolvedDoc?.item?.crossReferences?.linkedDocuments?.audio?.[0]; //!FIX [0]-hack
+		if (audioId) {
+			currentFilesAudio.value =
+				(data.crossRef.linkedDocuments?.audio?.filter((item) => {
+					return item.docKey === audioId;
+				})[0].item as TDocItemsAudio) || null;
+		}
+	});
 </script>
 
 <div class="relative flex h-full flex-col items-center gap-6">

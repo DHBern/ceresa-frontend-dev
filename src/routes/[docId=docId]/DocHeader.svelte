@@ -13,6 +13,12 @@
 	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import type { TResolvedRegister } from '$lib/functions/ease_of_use/resolveReg';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
+	import {
+		currentFilesAudio,
+		currentlyPlayingAudio,
+		isAudioPlayerVisible,
+		isAudioPlaying
+	} from '$lib/globals/ui-states.svelte';
 
 	let {
 		docId,
@@ -109,6 +115,7 @@
 
 {#if resDoc?.item}
 	<div class="w-full px-10">
+		<!-- Title -->
 		<h1 class="h1 text-center">
 			<span>{resDoc.item.name}</span>
 		</h1>
@@ -120,6 +127,41 @@
 				rel="noopener noreferrer">{resDoc.item.tei.filename.replace('.xml', '')}</a
 			>
 		</h3>
+
+		<!-- Audio -->
+		{#if currentFilesAudio.value?.slug}
+			<div class="my-10 flex w-full justify-center">
+				<div
+					class="flex h-max w-max flex-col items-center justify-center gap-4 rounded-lg border border-foreground px-12 py-4"
+				>
+					{#if isAudioPlayerVisible.value && currentlyPlayingAudio.value?.slug === currentFilesAudio.value.slug}
+						<button
+							aria-label="stop audio"
+							onclick={() => {
+								currentlyPlayingAudio.value = null;
+								isAudioPlayerVisible.value = false;
+							}}
+							class="flex h-6 w-6 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
+						>
+							<i class="fa-solid fa-stop text-sm"></i>
+						</button>
+					{:else}
+						<button
+							aria-label="play audio"
+							onclick={() => {
+								currentlyPlayingAudio.value = currentFilesAudio.value;
+								isAudioPlayerVisible.value = true;
+							}}
+							class="flex h-6 w-6 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
+						>
+							<i class="fa-solid fa-play text-sm"></i>
+						</button>
+					{/if}
+					<p class="text-center text-xs">Listen to the Audio Document linked to this document.</p>
+				</div>
+			</div>
+		{/if}
+
 		<!-- Global Comment -->
 		<ResponsiveAccordion titleOverview="Überblickskommentar" titleMeta="Metadaten">
 			<!-- (1) Übersichtskommentar -->
@@ -219,7 +261,7 @@
 							{#if crossRef.citedDocuments && Object.keys(crossRef.citedDocuments).length}
 								<h5 class="h5">Im Text enthaltene Querverweise</h5>
 								<div>
-									{#each ['posthum', 'unpublished', 'published'] as const as type (type)}
+									{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
 										{#if crossRef.citedDocuments?.[type]?.length}
 											{@render metadataCrossRefDoc(
 												dictDocs[type].label_plural,
@@ -241,7 +283,7 @@
 									Durch Editionsteam vergebene Querverweise
 								</h5>
 								<div>
-									{#each ['posthum', 'unpublished', 'published'] as const as type (type)}
+									{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
 										{#if crossRef.linkedDocuments?.[type]?.length}
 											{@render metadataCrossRefDoc(
 												dictDocs[type].label_plural,
