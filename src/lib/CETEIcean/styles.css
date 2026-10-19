@@ -672,7 +672,8 @@ tei-anchor {
 /* -------------------------------- */
 /* Referencing Strings */
 
-[data-textflow='fluid'] {
+[data-textflow='fluid'],
+.mode-lf {
 	/* Hover and Active */
 	tei-rs:hover,
 	tei-rs.active,
@@ -691,7 +692,8 @@ tei-anchor {
 }
 
 /* Types */
-[data-textflow='fluid'] {
+[data-textflow='fluid'],
+.mode-lf {
 	tei-rs {
 		cursor: pointer;
 		border-bottom-width: 3px;

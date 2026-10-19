@@ -97,7 +97,7 @@
 
 	/* Tabs */
 	.preset-tabs-list {
-		@apply mx-2 grid grid-cols-2 rounded-full select-none;
+		@apply mx-2 rounded-full select-none;
 		@apply text-base leading-[0.01em] font-semibold;
 		@apply border-[1.5px] border-dark-40;
 		@apply bg-background text-foreground;
