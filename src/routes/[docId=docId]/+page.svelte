@@ -1,5 +1,5 @@
 <script lang="ts">
-	import COMBO from './COMBO.svelte';
+	import DocViewer from './DocViewer.svelte';
 	import DocHeader from './DocHeader.svelte';
 	import Sequences from './Sequences.svelte';
 
@@ -18,6 +18,7 @@
 	let { data } = $props();
 </script>
 
+<!--  -->
 <div class="relative flex h-full flex-col items-center gap-6">
 	<!-- Sequences -->
 	<Sequences docId={data.resolvedDoc?.docId} {params} {validSeqKeys} />
@@ -32,12 +33,11 @@
 	/>
 
 	<!-- Content -->
-	<div class="w-full grow">
-		<COMBO
-			docItem={data.resolvedDoc?.item}
-			ceteiData={data.ceteiData}
-			{params}
-			resolvedDoc={data.resolvedDoc}
-		/>
-	</div>
+	<DocViewer
+		docItem={data.resolvedDoc?.item}
+		ceteiData={data.ceteiData}
+		resolvedDoc={data.resolvedDoc}
+		classesContainer="w-full grow"
+		{params}
+	/>
 </div>
