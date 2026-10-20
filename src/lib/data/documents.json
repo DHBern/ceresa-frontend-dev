@@ -9,14 +9,14 @@
 		"posthum": {
 			"posthum_0001": {
 				"slug": "posthum_0001",
-				"name": "Anima (Piccolo dizionario)",
+				"name": "Anima",
 				"date": {
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
 				"type": "",
 				"metadata": {
-					"title": "Anima (Piccolo dizionario)",
+					"title": "Anima",
 					"title_full": "",
 					"pubDate": "",
 					"pubPlace": "",
@@ -60,14 +60,14 @@
 			},
 			"posthum_0002": {
 				"slug": "posthum_0002",
-				"name": "Aborto (Piccolo dizionario)",
+				"name": "Aborto",
 				"date": {
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
 				"type": "",
 				"metadata": {
-					"title": "Aborto (Piccolo dizionario)",
+					"title": "Aborto",
 					"title_full": "",
 					"pubDate": "",
 					"pubPlace": "",

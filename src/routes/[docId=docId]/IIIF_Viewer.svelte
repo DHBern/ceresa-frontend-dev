@@ -104,7 +104,9 @@
 				viewer.open($state.snapshot(iiif));
 			},
 			destroy() {
-				viewer.destroy();
+				if (viewer) {
+					viewer.destroy();
+				}
 				if (observer) {
 					observer.disconnect();
 				}

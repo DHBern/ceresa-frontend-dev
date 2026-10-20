@@ -41,12 +41,6 @@
 			showMain = true;
 			showSecond = false;
 			LFleads = true;
-		} else if (params.mode === 'LF2') {
-			isFluid = false;
-			showFac = true;
-			showMain = true;
-			showSecond = false;
-			LFleads = true;
 		} else if (params.mode === 'DF') {
 			isFluid = false;
 			showFac = true;
@@ -67,7 +61,6 @@
 	let isFluid = $state(false);
 	let LFleads = $state(true);
 
-	let isAll = $derived(showFac && showMain && showSecond && showSide);
 	let isFacsimileView = $derived(!showMain && !showSecond);
 
 	let prioToFac = $state(true);
@@ -97,17 +90,7 @@
 			<Tabs.List class="preset-tabs-list --lg grid grid-cols-2">
 				<Tabs.Trigger value="LF" class="preset-tabs-trigger --left">Fluid Reading View</Tabs.Trigger
 				>
-				<Tabs.Trigger
-					value="DF"
-					class=" preset-tabs-trigger --right"
-					onclick={() => {
-						isFluid = false;
-						showFac = true;
-						showMain = true;
-						showSecond = false;
-						LFleads = false;
-					}}>Diplomatic View</Tabs.Trigger
-				>
+				<Tabs.Trigger value="DF" class=" preset-tabs-trigger --right">Diplomatic View</Tabs.Trigger>
 			</Tabs.List>
 		</Tabs.Root>
 	</div>
@@ -142,6 +125,20 @@
 			? `calc(100% + ${widthSidebar} - 40px)`
 			: 'calc(100% - 40px)'}
 	>
+		<!-- Sidebar Toggle -->
+		<button
+			class={[
+				'sticky top-0 right-0 h-max w-max bg-foreground p-2 px-4 text-lg text-foreground-contrast'
+			]}
+			onclick={() => {
+				showSide = !showSide;
+				prioToFac = showSide ? false : true;
+			}}
+			aria-label="toggle sidebar"
+		>
+			{showSide ? 'Hide Register' : 'Show Register'}
+		</button>
+
 		<!-- Content -->
 		<div
 			in:fade={{ delay: DELAY }}
@@ -206,20 +203,6 @@
 					{@render Text(showSecond, false, isFluid)}
 				</div>
 			</div>
-
-			<!-- Sidebar Toggle -->
-			<button
-				class={[
-					'sticky top-0 right-0 h-max w-max bg-foreground p-2 px-4 text-lg text-foreground-contrast'
-				]}
-				onclick={() => {
-					showSide = !showSide;
-					prioToFac = showSide ? false : true;
-				}}
-				aria-label="toggle sidebar"
-			>
-				{showSide ? 'Hide Register' : 'Show Register'}
-			</button>
 
 			<!-- Sidebar -->
 			<aside

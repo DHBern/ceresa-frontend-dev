@@ -12,7 +12,10 @@
 			'/' +
 			(currentlyPlayingAudio.value?.audioMaterial?.filename || '')
 	);
-	let chapters = $derived(currentlyPlayingAudio.value?.audioMaterial.metadata.chapters);
+	let chapters = $derived([
+		{ id: '0', chapName: '', time: 0 },
+		...(currentlyPlayingAudio.value?.audioMaterial.metadata.chapters || [])
+	]);
 
 	// State
 	let isPlaying = $state(false);
@@ -200,7 +203,6 @@
 							seekTo(v);
 						}}
 						class="relative flex w-full touch-none items-center select-none"
-						trackPadding={3}
 					>
 						{#snippet children()}
 							<span
@@ -224,10 +226,10 @@
 									{@const clamped = Math.min(Math.max(pct, 3), 97)}
 									<button
 										class={[
-											'absolute -translate-x-1/2 rounded px-1 text-xs whitespace-nowrap transition-colors',
+											'absolute -translate-x-1/2  rounded px-1 text-xs font-semibold whitespace-nowrap transition-colors',
 											currentChapterIndex === i
-												? 'font-semibold text-purple-600'
-												: 'text-gray-500 hover:text-gray-800'
+												? 'text-purple-600'
+												: 'text-gray-500  hover:text-gray-800'
 										]}
 										style={`left: ${clamped}%`}
 										onclick={() => seekTo(chapter.time)}
