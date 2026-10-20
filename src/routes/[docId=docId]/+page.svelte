@@ -34,7 +34,7 @@
 <!--  -->
 <div class="relative flex h-full flex-col items-center gap-6">
 	<!-- Sequences -->
-	<Sequences docId={data.resolvedDoc?.docId} {params} {validSeqKeys} />
+	<!-- <Sequences docId={data.resolvedDoc?.docId} {params} {validSeqKeys} /> -->
 
 	<!-- Metadata -->
 	<DocHeader

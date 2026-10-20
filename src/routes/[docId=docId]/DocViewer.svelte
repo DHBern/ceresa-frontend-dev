@@ -51,7 +51,7 @@
 	});
 
 	let showFac = $state(true);
-	let showSide = $state(false);
+	let showSide = $state(true);
 	let showMain = $state(true);
 	let showSecond = $state(true);
 	let nColsFit = $state(4);
@@ -126,7 +126,7 @@
 			: 'calc(100% - 40px)'}
 	>
 		<!-- Sidebar Toggle -->
-		<button
+		<!-- <button
 			class={[
 				'sticky top-0 right-0 h-max w-max bg-foreground p-2 px-4 text-lg text-foreground-contrast'
 			]}
@@ -137,7 +137,7 @@
 			aria-label="toggle sidebar"
 		>
 			{showSide ? 'Hide Register' : 'Show Register'}
-		</button>
+		</button> -->
 
 		<!-- Content -->
 		<div

@@ -33,6 +33,15 @@
 	}
 
 	/* Rounded Buttons */
+	.preset-btn-doc {
+		@apply flex w-max cursor-pointer items-center justify-center whitespace-nowrap text-background-contrast select-none hover:text-rs-doc;
+	}
+	.preset-btn-meta {
+		@apply flex w-max cursor-pointer items-center justify-center border-b-3 border-b-foreground px-4 py-1 whitespace-nowrap text-background-contrast select-none hover:bg-dark-04;
+		&.--active {
+			@apply border-b-accent;
+		}
+	}
 	.preset-btn-round {
 		@apply flex w-max cursor-pointer items-center justify-center rounded-full border-border-button bg-background px-4 py-1 whitespace-nowrap text-background-contrast select-none;
 		@apply hover:border-border-button-hover hover:bg-background-hover;

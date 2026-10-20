@@ -74,8 +74,7 @@ export type TDocuments = {
 					title_short?: string;
 					pubPlace?: string;
 					pubDetails?: string;
-					textstufen_edited: string[];
-					textzeugen_nonedited: string[];
+					textstufen: string[];
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
@@ -86,6 +85,9 @@ export type TDocuments = {
 					linkedDocuments?: TCrossRefDocs;
 					citedEntities?: TCrossRefEntities;
 					linkedEntities?: TCrossRefEntities;
+					"dict-1"?: TCrossRefDocs;
+					"dict-2"?: TCrossRefDocs;
+					versions?: TCrossRefDocs;
 				};
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
@@ -119,8 +121,7 @@ export type TDocuments = {
 					title_short?: string;
 					pubPlace?: string;
 					pubDetails?: string;
-					textstufen_edited: string[];
-					textzeugen_nonedited: string[];
+					textstufen: string[];
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
@@ -131,6 +132,9 @@ export type TDocuments = {
 					linkedDocuments?: TCrossRefDocs;
 					citedEntities?: TCrossRefEntities;
 					linkedEntities?: TCrossRefEntities;
+					"dict-1"?: TCrossRefDocs;
+					"dict-2"?: TCrossRefDocs;
+					versions?: TCrossRefDocs;
 				};
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
@@ -163,8 +167,7 @@ export type TDocuments = {
 					title_short?: string;
 					pubPlace?: string;
 					pubDetails?: string;
-					textstufen_edited: string[];
-					textzeugen_nonedited: string[];
+					textstufen: string[];
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
@@ -175,6 +178,9 @@ export type TDocuments = {
 					linkedDocuments?: TCrossRefDocs;
 					citedEntities?: TCrossRefEntities;
 					linkedEntities?: TCrossRefEntities;
+					"dict-1"?: TCrossRefDocs;
+					"dict-2"?: TCrossRefDocs;
+					versions?: TCrossRefDocs;
 				};
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
@@ -216,6 +222,9 @@ export type TDocuments = {
 					linkedDocuments?: TCrossRefDocs;
 					citedEntities?: TCrossRefEntities;
 					linkedEntities?: TCrossRefEntities;
+					"dict-1"?: TCrossRefDocs;
+					"dict-2"?: TCrossRefDocs;
+					versions?: TCrossRefDocs;
 				};
 				audioMaterial: {
 					path: string;

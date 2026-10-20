@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import type { TDocKeys } from '$lib/types/documents/TDocuments';
+	import type { TCrossRefDocumentsExtended, TDocKeys } from '$lib/types/documents/TDocuments';
 	import type {
 		TResolvedPosthum,
 		TResolvedUnpublished,
@@ -19,6 +19,16 @@
 		isAudioPlayerVisible,
 		isAudioPlaying
 	} from '$lib/globals/ui-states.svelte';
+	import { dictionaries } from '$lib/data/dictionaries.json';
+
+	const dictDocIds = [
+		...dictionaries['dict-1'].documents.map((doc) => {
+			return doc.docId;
+		}),
+		...dictionaries['dict-1'].documents.map((doc) => {
+			return doc.docId;
+		})
+	];
 
 	let {
 		docId,
@@ -31,7 +41,16 @@
 		resDoc: TResolvedPosthum | TResolvedUnpublished | TResolvedPublished | null;
 		ceteiData: any;
 		crossRef: Partial<
-			Record<'citedDocuments' | 'linkedDocuments' | 'citedEntities' | 'linkedEntities', any>
+			Record<
+				| 'citedDocuments'
+				| 'linkedDocuments'
+				| 'citedEntities'
+				| 'linkedEntities'
+				| 'dict-1'
+				| 'dict-2'
+				| 'versions',
+				TCrossRefDocumentsExtended
+			>
 		>;
 		params: any;
 	} = $props();
@@ -46,7 +65,7 @@
 
 {#snippet metadataButton(state: string, text: string)}
 	<button
-		class={['preset-btn-round --lg', stateMetadata === state && '--active']}
+		class={['preset-btn-meta --xl', stateMetadata === state && '--active']}
 		onclick={() => {
 			if (stateMetadata !== state) {
 				stateMetadata = state;
@@ -114,25 +133,25 @@
 {/snippet}
 
 {#if resDoc?.item}
-	<div class="w-full px-10">
-		<!-- Title -->
-		<h1 class="h1 text-center">
-			<span>{resDoc.item.name}</span>
-		</h1>
-		<h3 class="h3 mt-2 text-center">
-			<!-- <span>{printDateRange(resDoc.item.date.from, resDoc.item.date.to)}</span> -->
-			<a
-				href={`https://dav.arcipelago-ceresa.digitaleditions.ch/preview/oxy.html?url=../data/sources/tei/${resDoc.item.tei.path}/${resDoc.item.tei.filename}`}
-				target="_blank"
-				rel="noopener noreferrer">{resDoc.item.tei.filename.replace('.xml', '')}</a
-			>
-		</h3>
-
-		<!-- Audio -->
-		{#if currentFilesAudio.value?.slug}
-			<div class="my-10 flex w-full justify-center">
+	<div class="w-full grid-cols-[1fr_2fr] px-10 xl:grid">
+		<div class="w-full">
+			<!-- Title -->
+			<h2 class="font-serif text-2xl font-bold text-blue-500">
+				<a href={resolve('/posthumous')}>Posthumous</a>:
+				{#if dictDocIds.includes(resDoc.item.slug)}
+					<a href={resolve('/posthumous#piccolo_dizionario')}>Piccolo Dizionario</a>
+				{/if}
+			</h2>
+			<h1 class="font-serif text-8xl font-bold">
+				{resDoc.item.name}
+				{#if resDoc.item.metadata?.dict_version}
+					<span class="text-[20px]">Version {resDoc.item.metadata?.dict_version}</span>
+				{/if}
+			</h1>
+			<!-- Audio -->
+			{#if currentFilesAudio.value?.slug}
 				<div
-					class="flex h-max w-max flex-col items-center justify-center gap-4 rounded-lg border border-foreground px-12 py-4"
+					class="my-10 grid h-max w-max max-w-110 grid-cols-[auto_1fr] items-center justify-center gap-10 rounded-lg border border-foreground p-5"
 				>
 					{#if isAudioPlayerVisible.value && currentlyPlayingAudio.value?.slug === currentFilesAudio.value.slug}
 						<button
@@ -141,9 +160,9 @@
 								currentlyPlayingAudio.value = null;
 								isAudioPlayerVisible.value = false;
 							}}
-							class="flex h-6 w-6 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
+							class="flex h-12 w-12 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
 						>
-							<i class="fa-solid fa-stop text-sm"></i>
+							<i class="fa-solid fa-stop text-lg"></i>
 						</button>
 					{:else}
 						<button
@@ -152,38 +171,45 @@
 								currentlyPlayingAudio.value = currentFilesAudio.value;
 								isAudioPlayerVisible.value = true;
 							}}
-							class="flex h-6 w-6 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
+							class="flex h-12 w-12 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
 						>
-							<i class="fa-solid fa-play text-sm"></i>
+							<i class="fa-solid fa-play text-lg"></i>
 						</button>
 					{/if}
-					<p class="text-center text-xs">Listen to the Audio Document linked to this document.</p>
+					<p class="text-sm">Listen to the Audio Document linked to this document.</p>
 				</div>
+			{/if}
+		</div>
+
+		<!-- Versions -->
+		<div class="w-full">
+			<div data-dom="global_comment" class="h-full overflow-auto pr-6 pb-20">
+				<!-- <h3 class="font-serif text-2xl font-bold">Comment</h3> -->
+				<!-- {@html globalComment} -->
+				<h3 class="font-serif text-2xl font-bold">Versions of this Document:</h3>
+				<ul class="preset-btn-list --spacing-normal">
+					{#if crossRef.versions}
+						{#each Object.keys(crossRef.versions) as type}
+							{#each crossRef.versions[type] as version}
+								<li class="preset-btn-doc --sm">
+									<a href={`/${version.item.slug}`}
+										>{version.item.name} ({version.item.metadata.dict_version})</a
+									>
+								</li>
+							{/each}
+						{/each}
+					{/if}
+				</ul>
 			</div>
-		{/if}
+		</div>
+	</div>
 
-		<!-- Global Comment -->
-		<ResponsiveAccordion titleOverview="Überblickskommentar" titleMeta="Metadaten">
-			<!-- (1) Übersichtskommentar -->
-			{#snippet overviewContent()}
-				<div data-dom="global_comment" class="h-full overflow-auto pr-6 pb-20">
-					{@html globalComment}
-				</div>
-				<!-- <ScrollArea
-					orientation="vertical"
-					type="hover"
-					viewportClasses="h-full w-full"
-					data-dom="global_comment"
-					class="bg-background-alt relative h-full overflow-hidden px-4 pb-20 xl:px-0"
-				>
-					{@html globalComment}
-				</ScrollArea> -->
-			{/snippet}
-
-			<!-- (2) Metadata Table -->
+	<!-- Metadata -->
+	<div class="w-full">
+		<ResponsiveAccordion titleMeta="Metadaten">
 			{#snippet metadataContent()}
 				<div class="h-full" data-dom="metadata">
-					<div class="preset-btn-list --spacing-normal">
+					<div class="preset-btn-list">
 						{@render metadataButton('eckdaten', 'Eckdaten')}
 						{@render metadataButton('sources', 'Quellenangaben')}
 						{@render metadataButton('crossRefEntities', 'Referenzierung')}
