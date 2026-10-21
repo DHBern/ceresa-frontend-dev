@@ -5,6 +5,7 @@
 		isAudioPlayerVisible
 	} from '$lib/globals/ui-states.svelte';
 	import { Slider } from 'bits-ui';
+	import { resolve } from '$app/paths';
 
 	// Props
 	let audioSrc = $derived(
@@ -137,7 +138,7 @@
 			{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
 				{@const linkedDocs = currentlyPlayingAudio.value?.crossReferences?.linkedDocuments?.[type]}
 				{#each linkedDocs as linkedDoc (linkedDoc)}
-					<a href={linkedDoc} class="mx-2">{linkedDoc}</a>
+					<a href={resolve(linkedDoc)} class="mx-2">{linkedDoc}</a>
 				{/each}
 			{/each}
 		</p>

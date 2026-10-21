@@ -61,7 +61,7 @@
 					<ul class="">
 						{#each dictionaries[dictId].documents as doc (doc.order)}
 							<li>
-								<a class={[doc.version && 'ml-5']} href={`/${doc.docId}`}
+								<a class={[doc.version && 'ml-5']} href={resolve(`/${doc.docId}`)}
 									>{doc.name}
 									{#if doc.version}<em>({doc.version})</em>{/if}</a
 								>
