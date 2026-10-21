@@ -163,6 +163,7 @@
 					<button
 						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[50px] 2xl:max-w-[70px]"
 						onclick={() => {
+							params.mode = 'DF';
 							params.page = thumb.page;
 						}}
 					>
