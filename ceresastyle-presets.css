@@ -1,0 +1,134 @@
+@layer base {
+	/* Flex Center */
+	.container-centered {
+		@apply flex h-full w-full items-center justify-center;
+	}
+	.flex-centered {
+		@apply flex items-center justify-center;
+	}
+
+	/* Circle Buttons */
+	.preset-btn-circle {
+		@apply flex items-center justify-center rounded-full;
+
+		&:not(.--sm),
+		&:not(.--lg) {
+			@apply h-12 w-12;
+		}
+		&.--sm {
+			@apply h-10 w-10;
+		}
+		&.--lg {
+			@apply h-12 w-12;
+		}
+		&.--shadow-bottom {
+			@apply border-b-2 border-border-shadow;
+		}
+		&.--color-dark {
+			@apply bg-foreground text-background hover:bg-foreground/80;
+		}
+		&.--color-light {
+			@apply bg-background text-foreground hover:bg-hover;
+		}
+	}
+
+	/* Rounded Buttons */
+	.preset-btn-doc {
+		@apply flex w-max cursor-pointer items-center justify-center whitespace-nowrap text-background-contrast select-none hover:text-rs-doc;
+	}
+	.preset-btn-meta {
+		@apply flex w-max cursor-pointer items-center justify-center border-b-3 border-b-foreground px-4 py-1 whitespace-nowrap text-background-contrast select-none hover:bg-dark-04;
+		&.--active {
+			@apply border-b-accent;
+		}
+	}
+	.preset-btn-round {
+		@apply flex w-max cursor-pointer items-center justify-center rounded-full border-border-button bg-background px-4 py-1 whitespace-nowrap text-background-contrast select-none;
+		@apply hover:border-border-button-hover hover:bg-background-hover;
+		@apply active:ring-2;
+		@apply focus:ring-2;
+
+		&:not(.--xs),
+		&:not(.--sm),
+		&:not(.--lg),
+		&:not(.--xl),
+		&:not(.--2xl) {
+			@apply border;
+		}
+		&.--square {
+			/* Does not work yet */
+			@apply px-2 py-2;
+		}
+		&.--ghost {
+			@apply border-0;
+		}
+		&.--2xl {
+			@apply border-2 text-2xl dark:border-3;
+		}
+		&.--xl {
+			@apply text-[1.3rem] dark:border-2;
+		}
+		&.--lg {
+			@apply border text-lg;
+		}
+		&.--sm {
+			@apply border text-xs lg:text-sm;
+		}
+		&.--xs {
+			@apply border text-xs;
+		}
+
+		&.--muted {
+			@apply pointer-events-none border-dark-40 text-muted-foreground;
+		}
+		&.--active {
+			@apply border-foreground bg-foreground text-background;
+		}
+		&.--linkarrow::before {
+			content: '↗\fe0e';
+			padding-right: --spacing(2);
+		}
+	}
+
+	.preset-btn-list {
+		@apply flex w-full flex-wrap justify-start;
+
+		&.--spacing-sm {
+			@apply gap-2;
+		}
+		&.--spacing-normal {
+			@apply gap-3;
+		}
+		&.--spacing-lg {
+			@apply gap-5;
+		}
+	}
+
+	/* Tabs */
+	.preset-tabs-list {
+		@apply mx-2 rounded-full select-none;
+		@apply text-base leading-[0.01em] font-semibold;
+		@apply border-[1.5px] border-dark-40;
+		@apply bg-background text-foreground;
+		&.--sm {
+			@apply h-9 **:px-6;
+		}
+		&.--lg {
+			@apply h-10 **:px-6;
+		}
+	}
+	.preset-tabs-trigger {
+		@apply overflow-hidden leading-normal text-ellipsis whitespace-nowrap;
+		@apply hover:bg-background-hover;
+		@apply data-[state=active]:pointer-events-none data-[state=active]:bg-foreground data-[state=active]:text-background;
+		&.--left {
+			@apply rounded-l-full;
+		}
+		&.--center {
+			@apply rounded-none;
+		}
+		&.--right {
+			@apply rounded-r-full;
+		}
+	}
+}

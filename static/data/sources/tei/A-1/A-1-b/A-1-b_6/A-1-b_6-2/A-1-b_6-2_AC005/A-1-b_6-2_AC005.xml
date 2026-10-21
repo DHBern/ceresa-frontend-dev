@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_6-2_AC005" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_6-2_AC005#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A-1-b_6-2_AC005</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-b/6-2/AC005</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC005/A-1-b_6-2_AC005_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_011.tif"/>
+            <p>
+               <lb xml:id="p001_l"/>1-1
+               <lb xml:id="p001_tr_2_tl_1"/>BELLEZZA 
+               <lb xml:id="p001_tr_2_tl_2"/>A prima vista sembrerebbe (UN cancellato ds.) che sia (INDIS cancellato ds.) per così dire indispen<pc>-</pc>
+               <lb xml:id="p001_tr_2_tl_3" break="no"/>sabile alle donne mentre gli uomini non soltanto possano farne a 
+               <lb xml:id="p001_tr_2_tl_4"/>meno ma addirittura di ciò si compiacciano. Sono tuttavia impres<pc>-</pc>
+               <lb xml:id="p001_tr_2_tl_5" break="no"/>sioni superficiali, derivate dal falso concetto che la bellezza 
+               <lb xml:id="p001_tr_2_tl_6"/>sia un attributo. La bellezza in realtà è una merce e ubbidisce 
+               <lb xml:id="p001_tr_2_tl_7"/>alle correnti leggi di mercato. Come tale è commerciabile e pertan<pc>-</pc>
+               <lb xml:id="p001_tr_2_tl_8" break="no"/>to ove del caso acquistabile. Data la generalmente unilaterale 
+               <lb xml:id="p001_tr_2_tl_9"/>distribuzione della ricchezza e pertanto del potere d'acquisto, 
+               <lb xml:id="p001_tr_2_tl_10"/>anche se considerata soltanto relativamente alle donne e agli uo<pc>-</pc>
+               <lb xml:id="p001_tr_2_tl_11" break="no"/>mini, si capisce come l'offerta possa e debba prevalentemente av<pc>-</pc>
+               <lb xml:id="p001_tr_2_tl_12" break="no"/>venire da parte di una sola parte, l'altra appunto disponendo di 
+               <lb xml:id="p001_tr_2_tl_14"/>merce di ricambio in valuta pregiata (O EQUIVALENTI, aggiunta ms) abili all'effettuazione del<pc>-</pc>
+               <lb xml:id="p001_tr_2_tl_15" break="no"/>l'acquisto. e non essendo pertanto costretta a mettere (SULLA BILANCIA cancellato ds) 
+               <lb xml:id="p001_tr_2_tl_16"/> (cancellatura continua accapo) sul piatto della bilancia a sua volta il bene bellezza. Una 
+               <lb xml:id="p001_tr_2_tl_20"/>diversa distribuzione del potere d'acquisto SAREBBE INFATTI GIà SUFFICIENTE aggiunta sovrascritta ds. su cancellatura ds POTREBBE MODIFICARE) 
+               <lb xml:id="p001_tr_2_tl_22"/>(continua con PER MODIFICARE LE aggiunta sovrascritta ds su cancellatura ds PERTANTO IN VARI SENSI LE) impressioni di cui sopra, (SIA cancellato ds) deprezzan<pc>-</pc>
+               <lb xml:id="p001_tr_2_tl_24" break="no"/>do (aggiunta dovrascritta ds PER ESEMPIO) la bellezza muliebre e aumentando la domanda di bellezza (cancellato ds VIRI) 
+               <lb xml:id="p001_tr_2_tl_25"/>maschile ( da non confondere con bellezza virile digià composta 
+               <lb xml:id="p001_tr_2_tl_26"/>di elementi ampiamente inestetici ) (cancellato ds SIA) il che allo stato attuale 
+               <lb xml:id="p001_tr_2_tl_27"/>(cancellato ds POTREBBE CAUSARE NON POCHI IMBARAZZI) della distribuzione di questo 
+               <lb xml:id="p001_tr_2_tl_28"/>bene caduco potrebbe causare non pochi imbarazzi, (aggiunta manoscritta SPECIE IN SENO ALLE 
+               <lb xml:id="p001_tr_2_tl_29"/>COPPIE, REGOLARI E MENO.)</p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-07-31T15:13:31.90860013Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

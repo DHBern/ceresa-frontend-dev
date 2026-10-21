@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-a_1-4" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-a_1-4#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Gli altri</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-a/1-4</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="it"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-a/A-1-a_1/A-1-a_1-4/A-1-a_1-4_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif"/>
+            <p>
+               <lb xml:id="p001_l"/>{{SKIP Non trascritto intenzionalmente (motive: title
+               page)}}</p>
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif"/>
+            <p>
+               <lb xml:id="p002_l"/>{{SKIP Non trascritto intenzionalmente (motive: frontispice
+               page)}}</p>
+            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-1.tif"/>
+            <p>
+               <lb xml:id="p003_l"/>{{SKIP Non trascritto intenzionalmente (motive: inserted
+               article/recto)}}</p>
+            <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-2.tif"/>
+            <p>
+               <?oxy_comment_start author="luisepappe" timestamp="20260909T113729+0200" comment="what does this error mean?"?><lb
+                  xml:id="p003_l"/><?oxy_comment_end?>{{SKIP Non trascritto intenzionalmente
+               (motive: inserted article/verso)}}</p>
+            <pb xml:id="p005" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003.tif"
+               n="175"/>
+            <head rendition="#c">
+               <lb xml:id="p005_r_2_tl_1"/>Presentazione di una giovane scrittrice ticinese <lb
+                  xml:id="p005_r_2_tl_2"/>ALICE CERESA </head>
+            <p><lb xml:id="p005_r_2_tl_3"/>Pubblichiamo, in tre puntate, un lungo racconto GLI
+               ALTRI, di una <lb xml:id="p005_r_2_tl_4"/>giovane scrittrice ticinese, Alice Ceresa.
+               È il suo esordio nella vita letteraria, <lb xml:id="p005_r_2_tl_5"/>e non dubitiamo
+               ch'esso susciterà un vivo interesse e una certa sensazione. </p>
+            <p><lb xml:id="p005_r_2_tl_6"/>Una cosa subito colpisce alla lettura di questo racconto,
+               il clima letterario: <lb xml:id="p005_r_2_tl_7"/>clima della nuova generazione. Alice
+               Ceresa che ha seguito, nelle scuole supe<pc>-</pc>
+               <lb xml:id="p005_r_2_tl_8" break="no"/>riori, solo tre anni di Commerciale, e ha
+               dovuto poi, per qualche anno vivere <lb xml:id="p005_r_2_tl_9"/>oltre San Gottardo,
+               non è scrittrice di molte letture. Conosce gli autori che <lb xml:id="p005_r_2_tl_10"
+               />si leggono negli anni di scuola e, in più, alcuni scrittori americani. </p>
+            <p><lb xml:id="p005_r_2_tl_11"/>Ma aveva un suo tormento da esprimere, una sua dolorosa
+               esperienza da <lb xml:id="p005_r_2_tl_12"/>comunicare; e le fu possibile farlo
+               allorché venne ad imbattersi nei mezzi <lb xml:id="p005_r_2_tl_13"/>d'espressione
+               della "sua" generazione. Quando le capitò sotto gli occhi qualche <lb
+                  xml:id="p005_r_2_tl_14"/>breve racconto surrealista del Vittorini fu come se le
+               cadessero dagli occhi le <lb xml:id="p005_r_2_tl_15"/>scaglie che le impedivano di
+               vedere il solo modo a lei conveniente; riconobbe <lb xml:id="p005_r_2_tl_16"/>la via
+               da seguire per comunicare altrui, nelle forme dell'arte, il suo tormento. <lb
+                  xml:id="p005_r_2_tl_17"/>È un processo di trasposizione che essa qui impiega, un
+               processo che ha <lb xml:id="p005_l"/>per modello il sogno, l'incubo, l'allucinazione.
+               Poiché il tormento che la dominava <lb xml:id="p005_l_1"/>e l'annientava era proprio
+               come un incubo, esprimendolo, non poteva creare <lb xml:id="p005_r_2_tl_18"/>che
+               forme corrispondenti: forme di sogno e di allucinazione; tragiche, fanta<pc>-</pc>
+               <lb xml:id="p005_r_2_tl_19" break="no"/>stiche visioni. La trasposizione non è dunque
+               del sentimento, che resta identico; <lb xml:id="p005_r_2_tl_20"/>è solo dell'ambiente
+               e delle persone, che diventano fantastici, di sogno. </p>
+            <p><lb xml:id="p005_r_2_tl_21"/>È ammirevole il modo con cui così giovane e di così
+               breve esperienza <lb xml:id="p005_r_2_tl_22"/>letteraria ha saputo concretare in
+               forme tanto salde, e si direbbe definitive <lb xml:id="p005_r_2_tl_23"/>questo intimo
+               tormento. Siccome poi, così trasposto, il senso del racconto <lb
+                  xml:id="p005_r_2_tl_24"/>non risulta senz'altro chiaro e univoco, taluno dei
+               lettori si chiederà cosa signi<pc>-</pc>
+               <lb xml:id="p005_r_2_tl_25" break="no"/>fichi tutta questa fantasmagoria di visioni e
+               tremendi stati d'animo. È quel che <lb xml:id="p005_r_2_tl_26"/>vogliamo tentare di
+               esporre in questa presentazione, cercando noi pure di <lb xml:id="p005_r_2_tl_27"
+               />afferrare il sentimento che sta sotto le fantastiche avventure del racconto. </p>
+            <p><lb xml:id="p005_r_2_tl_28"/>La scrittrice ci mette lei stessa sulla buona via
+               allorché, all'inizio della <lb xml:id="p005_r_2_tl_29"/>seconda parte, spiega il suo
+               stato d'animo: "E allora mi dissero che era meglio <lb xml:id="p005_r_2_tl_30"
+               /><choice><orig>"</orig><reg/></choice>che me ne andassi. E io nemmeno replicai; più
+               silenziosa e più calma di quando <lb xml:id="p005_r_2_tl_31"
+               /><choice><orig>"</orig><reg/></choice>ero venuta partii, poiché nulla portavo più
+               con me, se non questa certezza: che <lb xml:id="p005_r_2_tl_32"
+               /><choice><orig>"</orig><reg/></choice>avevano visto in me qualcuno che era meglio
+               non avere d'intorno, forse anche</p>
+            <pb xml:id="p006" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_004.tif"
+               n="176"/>
+            <p>
+               <lb xml:id="p006_r_1_tl_1"/><choice><orig>"</orig><reg/></choice>un pericolo per gli
+               altri che, le loro carte, le avevano in regola – ecco, io non <lb
+                  xml:id="p006_r_1_tl_2"/><choice><orig>"</orig><reg/></choice>avevo il diritto di
+               usufruire di nessuna ospitalità, come mai potevo pretendere <lb
+                  xml:id="p006_r_1_tl_3"/><choice><orig>"</orig><reg/></choice>una confidenza io,
+               che certo portavo scritto in viso come una condanna, ed <lb xml:id="p006_r_1_tl_4"
+               /><choice><orig>"</orig><reg/></choice>ognuno aveva il diritto di aggiungere la sua?
+               Forse avrei ancora potuto ribel<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_5" break="no"/><choice><orig>"</orig><reg/></choice>larmi,
+               forse avrei potuto tentare un'ultima volta di spiegare che non avevano <lb
+                  xml:id="p006_r_1_tl_6"/><choice><orig>"</orig><reg/></choice>ragione di sospettare
+               – ma tutto m'aveva convinto che essi avessero ragione, <lb xml:id="p006_r_1_tl_7"
+               /><choice><orig>"</orig><reg/></choice>anche se io non sapevo di che". </p>
+            <p><lb xml:id="p006_r_1_tl_8"/>È la psicologia, dunque, di un'esclusa dalla società, di
+               una che si sente <lb xml:id="p006_r_1_tl_9"/>reietta, schivata da tutti. E che non
+               giunge ad afferrare il perché di tale esclu<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_10" break="no"/>sione, in che consista la sua colpa. Eppure
+               si sforza di comprendere e domanda, <lb xml:id="p006_r_1_tl_11"/>ma invano. </p>
+            <p><lb xml:id="p006_r_1_tl_12"/>Quando si è afferrata questa fondamentale posizione,
+               tutti gli episodi del <lb xml:id="p006_r_1_tl_13"/>racconto acquistano un senso,
+               anche se, sia conseguenza di tale modo di tras<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_14" break="no"/>porre, sia una non ancora completa maturità
+               d'espressione, tale senso non è <lb xml:id="p006_r_1_tl_15"/>sempre chiaro. Ma anche
+               quando non si capisca tutto, non cessa per questo <lb xml:id="p006_r_1_tl_16"
+               />l'effetto suggestivo delle grandiose e strane fantasie, la partecipazione nostra
+                  <lb xml:id="p006_r_1_tl_17"/>all'intimo appassionato tormento raccontato in forma
+               velata, e si ammira lo <lb xml:id="p006_r_1_tl_18"/>sforzo e l'originalità di tale
+               tentativo. </p>
+            <p><lb xml:id="p006_r_1_tl_19"/>Si capisce allora, o meglio si intuisce, il significato
+               simbolico del giorna<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_20" break="no"/>laio che, nel primo episodio, dovrebbe dare
+               la soluzione che tormenta tanto la <lb xml:id="p006_r_1_tl_21"/>fanciulla; e non può,
+               poiché anche lui si trova nella stessa situazione, e tenta <lb
+                  xml:id="p006_r_1_tl_22"/>invano di ritrovare una misteriosa melodia che gli
+               sfugge. </p>
+            <p><lb xml:id="p006_r_1_tl_23"/>E si afferra, in seguito, anche il significato del
+               "portiere" che vorrebbe <lb xml:id="p006_r_1_tl_24"/>rifiutare l'ospitalità alla
+               fuggiasca, dopo averla tenuta come sotto un processo <lb xml:id="p006_r_1_tl_25"
+               />d'inquisizione; e che se le cede infine un posticino, lo fa per commiserazione; <lb
+                  xml:id="p006_r_1_tl_26"/>il significato dell'altro ospite pure isolato, anch'esso
+               incapace di esprimersi – <lb xml:id="p006_r_1_tl_27"/>il pianoforte che non dà suoni,
+               e le note toccate che vagano silenziose per <lb xml:id="p006_r_1_tl_28"/>l'aria – i
+               simbolici racconti che si scambiano (pagine di intensa forza lirica), <lb
+                  xml:id="p006_r_1_tl_29"/>nei quali si esprime il desiderio, sempre insoddisfatto,
+               di comunicare con gli <lb xml:id="p006_r_1_tl_30"/>altri e di poterli aiutare; poi il
+               tentativo di chieder aiuto, nella propria dispe<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_31" break="no"/>razione agli <hi rendition="#b">altri</hi>,
+               che invece non comprendono e restano muti; episodio che <lb xml:id="p006_r_1_tl_32"
+               />spiega il titolo del racconto. </p>
+            <p><lb xml:id="p006_r_1_tl_33"/>Segue il sogno che la fanciulla fa nella notte, strano
+               sogno, in cui la scrit<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_34" break="no"/>trice mette il suo pensiero più intimo e
+               profondo – l'impossibilità di compren<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_35" break="no"/>dere e di accettare il sentimento degli altri
+               senza sacrificare la propria perso<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_36" break="no"/>nalità – e infine il risveglio, e lo sguardo
+               dalla finestra verso l'uomo che passa <lb xml:id="p006_r_1_tl_37"/>e non vede il vano
+               gesto delle mani vuote, tristi di non attendere più alcun dono. </p>
+            <p><lb xml:id="p006_r_1_tl_38"/>Più limpida e salda, nei suoi significati simbolici
+               concatenati, è la seconda <lb xml:id="p006_r_1_tl_39"/>parte: l'incubo non si risolve
+               subito, anzi s'inacerbisce ed accresce, rivelando <lb xml:id="p006_r_1_tl_40"/>così
+               il suo intimo significato. La fuga nel treno notturno verso una città sco<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_41" break="no"/>nosciuta, fuga che si compie in un tremendo
+               stato di esaltazione, in un'osses<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_42" break="no"/>sione allucinante, rappresenta il punto più
+               alto e terribile del dramma. Qui la <lb xml:id="p006_r_1_tl_43"/>Ceresa rivela
+               caratteri di scrittrice veramente non comuni. </p>
+            <p><lb xml:id="p006_r_1_tl_44"/>Giunta la fanciulla nella città sconosciuta, ecco
+               l'assalto dei ricordi che <lb xml:id="p006_r_1_tl_45"/>sembrano staccarsi da lei e
+               localizzarsi in giro a lei, come per farle compagnia; <lb xml:id="p006_r_1_tl_46"
+               />poi si dissolvono. Ma non si dissolve il più acerbo di tutti, quello della
+               spaventosa <lb xml:id="p006_r_1_tl_47"/>notte in treno. </p>
+            <p><lb xml:id="p006_r_1_tl_48"/>In seguito, col tempo, la tregua, il calare del
+               tormento, nella tacita pro<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_49" break="no"/>gressiva rassegnazione di chi accetta il suo
+               destino. E, nella città sconosciuta, il <lb xml:id="p006_r_1_tl_50"/>partecipare, a
+               poco a poco, alla vita degli altri (una delle pagine più poetiche!), <lb
+                  xml:id="p006_r_1_tl_51"/>alla vita di coloro che le stanno in giro ma l'ignorano,
+               involando loro, cogli <lb xml:id="p006_r_1_tl_52"/>occhi, coll'udito,
+               coll'intuizione, un po' della loro esistenza, e portando tali bri<pc>-</pc>
+               <lb xml:id="p006_r_1_tl_53" break="no"/>ciole di gesti, sguardi e parole, su nella
+               propria camera, e intrattenendosi e <lb xml:id="p006_r_1_tl_54"/>distraendosi con
+               essi. </p>
+            <p><lb xml:id="p006_r_1_tl_55"/>Infine, la scoperta dolorosa, ma in qualche modo
+               confortante, che tutti <lb xml:id="p006_r_1_tl_56"/>hanno il loro tormento, tutti
+               hanno bisogno dell'aiuto reciproco, e che una <lb xml:id="p006_r_1_tl_57"/>certa
+               pace, un certo acquietamento non si può trovare che nel partecipare al <lb
+                  xml:id="p006_r_1_tl_58"/>dolore altrui, e sentire così l'anima del Tutto. E le
+               mani che vorrebbero aiutare <lb xml:id="p006_r_1_tl_59"/>e in fondo non possono,
+               sembrano ischeletrirsi. </p>
+            <p><lb xml:id="p006_r_1_tl_60"/>Storia di un profondo soffrire, dunque; e tanto più fa
+               meraviglia in quanto <lb xml:id="p006_r_1_tl_61"/>si pensa che è una scrittrice
+               giovanissima che l'ha immaginata ed elaborata in <lb xml:id="p006_r_1_tl_62"/>tutti i
+               particolari. La quale, certo, dovette passare per esperienze simili,
+                  c<?oxy_comment_start author="luisepappe" timestamp="20260901T155348+0200" comment="how to indicate a page break within the digitization?"?>hiarir<pc>-</pc>
+               <lb xml:id="p006_r_2_tl_1" break="no"/><?oxy_comment_end?>sele a poco a poco per
+               poterle superare. Superarle, conferendo loro forma d'arte; <lb xml:id="p006_r_2_tl_2"
+               />poiché, come dice il Pascoli, se il grido del dolore è acerbo, l'eco ne è dolce. </p>
+            <p><lb xml:id="p006_r_2_tl_3"/>Chi legge con attenzione questo racconto non tarda a
+               scoprire le meditate <lb xml:id="p006_r_2_tl_4"/>corrispondenze che esistono fra le
+               varie parti, corrispondenze che ne formano <lb xml:id="p006_r_2_tl_5"/>l'interna
+               ricchezza, e le straordinarie fantasie necessarie a dar corpo concreto <lb
+                  xml:id="p006_r_2_tl_6"/>ai simbolici stati d'animo, le quali ne sono la bellezza. </p>
+            <p><lb xml:id="p006_r_2_tl_7"/>Naturalmente non tutto è ugualmente perfetto. Certe
+               fantasie non appaiono <lb xml:id="p006_r_2_tl_8"/>chiare e non hanno sempre precise
+               corrispondenze; e la lingua, semplice ed effi<pc>-</pc>
+               <lb xml:id="p006_r_2_tl_9" break="no"/>cace, non mostra ancora tutte le scaltrezze
+               d'espressività a cui un più speri<pc>-</pc>
+               <lb xml:id="p006_r_2_tl_10" break="no"/>mentato scrittore potrebbe condurla. </p>
+            <p><lb xml:id="p006_r_2_tl_11"/>Sono le mende dello scrittore giovane: nella loro
+               ingenuità e inesperienza, <lb xml:id="p006_r_2_tl_12"/>non prive di attrattive.
+               Allorché Alice Ceresa possederà meglio l'istrumento <lb xml:id="p006_r_2_tl_13"
+               />dell'arte sua, questi difetti scompariranno; ma con essi, forse, la cordiale e <lb
+                  xml:id="p006_r_2_tl_14"/>commovente immediatezza. </p>
+            <p rendition="#right"
+                  ><?oxy_comment_start author="luisepappe" timestamp="20260909T112732+0200" comment="the introduction by A.J. (everything till here) shouldn&apos;t be included in the prototype"?><lb
+                  xml:id="p006_r_2_tl_15"/>A. J.<?oxy_comment_end?>
+            </p>
+            <head rendition="#c"><lb xml:id="p006_r_tl_1"/>Gli altri<lb xml:id="p006_r_tl_2"/>PRIMA
+                  PARTE<lb xml:id="p006_r_tl_3"/>I. Notizie di morti</head>
+            <p><lb xml:id="p006_r_tl_4"/>M'avevano lasciata sola, sulla riva del lago, e le loro
+               voci s'erano <lb xml:id="p006_r_tl_5"/>allontanate, irrimediabilmente. </p>
+            <p><lb xml:id="p006_r_tl_6"/>Forse era solamente perché i colori così pallidi sapevano
+               di <lb xml:id="p006_r_tl_7"/>freddo, forse era perché veramente si allargava in me
+                  spaventosa<pc>-</pc>
+               <lb xml:id="p006_r_tl_8" break="no"/>mente il silenzio della natura – io camminavo
+               innanzi ed indietro, <lb xml:id="p006_r_tl_9"/>dapprima lentamente, poi correndo, per
+               sfuggire alla vista di quel <lb xml:id="p006_r_tl_10"/>lago che pure non potevo fare
+               a meno di guardare. </p>
+            <p><lb xml:id="p006_r_tl_11"/>E quando mi resi conto che ormai le voci erano
+               completamente <lb xml:id="p006_r_tl_12"/>affondate nel silenzio e che non c'era
+               intorno che il rumore dei miei <lb xml:id="p006_r_tl_13"/>passi ed il rodere della
+               mia pena sul monotono ciangottare delle <lb xml:id="p006_r_tl_14"/>onde sulla riva,
+               mi prese non so che immensa tristezza, e rimasi <lb xml:id="p006_r_tl_15"/>a lungo
+               silenziosa. Ma non ero in ascolto, non attendevo nulla, nem<pc>-</pc>
+               <lb xml:id="p006_r_tl_16" break="no"/>meno pensavo a qualche cosa. I colori erano
+               freddi e deboli, e nessuna <lb xml:id="p006_r_tl_17"/>luce sulla via che laggiù
+               svoltava, deserta ed inanimata ed indif<pc>-</pc>
+               <lb xml:id="p006_r_tl_18" break="no"/>ferente. </p>
+            <p><lb xml:id="p006_r_tl_19"/>Allora m'avvicinai alla edicola dei giornali e guardai
+               dentro <lb xml:id="p006_r_tl_20"/>i vetri. </p>
+            <p><lb xml:id="p006_r_tl_21"/>Un uomo c'era, che caricava un grammofono. Poi prendeva
+                  <lb xml:id="p006_r_tl_22"/>in mano un disco, lo guardava a lungo, fischiettando
+               senza suono <lb xml:id="p006_r_tl_23"/>tra i denti, e lo riponeva scuotendo la testa.
+               Io guardavo dentro <lb xml:id="p006_r_tl_24"/>i vetri, e lo vidi smuovere il freno,
+               ed il grammofono girava a vuoto, <lb xml:id="p006_r_tl_25"/>sotto gli occhi dell'uomo
+               che lo guardava assorto. Allora mi guardai <lb xml:id="p006_r_tl_26"/>attorno, non
+               temendo un agguato, ma cercando per un'ultima volta <lb xml:id="p006_r_tl_27"/>una
+               via d'uscita, qualcosa che mi aiutasse a pensare, o che mi facesse <lb
+                  xml:id="p006_r_tl_28"/>male – cercavo una sofferenza reale, così come qualcuno che
+               piange <lb xml:id="p006_r_tl_29"/>un morto lontano desidera dolorosamente il cadavere
+               e prega tra <lb xml:id="p006_r_tl_30"/>i singhiozzi che lo levino dal terribile
+               dubbio o che glielo perdonino. </p>
+            <p><lb xml:id="p006_r_tl_31"/>Ma nulla c'era, se non la via monotona che laggiù
+               svoltava, ed <lb xml:id="p006_r_tl_32"/>il lago che sembrava non conoscesse altra
+               stagione se non quella <lb xml:id="p006_r_tl_33"/>del tardo autunno o dell'inizio di
+               primavera.</p>
+            <pb xml:id="p007" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_005.tif"
+               n="178"/>
+            <p>
+               <lb xml:id="p007_r_tl_1"/>Allora battei contro il vetro, e l'uomo alzò un poco la
+               testa ed <lb xml:id="p007_r_tl_2"/>aprì lo sportello come se quel gesto fosse per lui
+               una pena rassegnata. <lb xml:id="p007_r_tl_3"/>Gli chiesi: "Avete un giornale dove
+               uno racconti di morti?" </p>
+            <p><lb xml:id="p007_r_tl_4"/>"No" mi disse l'uomo levando le spalle "nei giornali che
+               noi <lb xml:id="p007_r_tl_5"/>vendiamo non parlano mai di morti". </p>
+            <p><lb xml:id="p007_r_tl_6"/>"Non parlano di morti? E la guerra, e le disgrazie, e gli
+               assassinii?" </p>
+            <p><lb xml:id="p007_r_tl_7"/>"Questo" e l'uomo mi guardò appena "È tutt'un'altra cosa.
+               Non <lb xml:id="p007_r_tl_8"/>credevo che voi voleste parlare di ciò. Non dite morti,
+               allora, dite <lb xml:id="p007_r_tl_9"/>vittime". </p>
+            <p><lb xml:id="p007_r_tl_10"/>"Avete ragione" risposi "m'ero sbagliata nel chiedervelo.
+               Avete <lb xml:id="p007_r_tl_11"/>sigarette?" </p>
+            <p><lb xml:id="p007_r_tl_12"/>L'uomo continuò a caricare il grammofono. </p>
+            <p><lb xml:id="p007_r_tl_13"/>lo rimasi a guardarlo e dentro di me la tristezza si
+               faceva pesante <lb xml:id="p007_r_tl_14"/>e densa com'era forse quell'acqua laggiù,
+               nel mezzo del lago, dove <lb xml:id="p007_r_tl_15"/>nulla poteva specchiarsi se non
+               il cielo incolore e privo di luce. </p>
+            <p><lb xml:id="p007_r_tl_16"/>"Allora" chiesi un'altra volta "se non avete sigarette,
+               datemi i <lb xml:id="p007_r_tl_17"/>giornali che parlano delle vittime". </p>
+            <p><lb xml:id="p007_r_tl_18"/>L'uomo mi guardò ancora di sfuggita, fischiettando fra i
+               denti, <lb xml:id="p007_r_tl_19"/>senza suono. "Volete i giornali che parlano delle
+               vittime! Ma non <lb xml:id="p007_r_tl_20"/>cercavate solo notizie di morti, di quelli
+               che se ne vanno senza ragione <lb xml:id="p007_r_tl_21"/>e senza causa, e non
+               riescono a convincere?" </p>
+            <p><lb xml:id="p007_r_tl_22"/>"Sì" dissi io "ma forse ne posso trovare anche tra le
+               vittime, basta <lb xml:id="p007_r_tl_23"/>che cerchi un poco. Non credete?" </p>
+            <p><lb xml:id="p007_r_tl_24"/>"Forse" fece l'uomo scuotendo la testa "forse". </p>
+            <p><lb xml:id="p007_r_tl_25"/>Mi passò i giornali, e poi rinchiuse lo sportello e si
+               rimise a <lb xml:id="p007_r_tl_26"/>dar la molla al grammofono. Mi chinai di nuovo
+               verso il vetro e non <lb xml:id="p007_r_tl_27"/>sapevo decidermi ad andarmene. Era
+               come se attendessi una ragione <lb xml:id="p007_r_tl_28"/>plausibile, una risposta,
+               una soluzione – ma nessun sforzo riuscivo <lb xml:id="p007_r_tl_29"/>a fare per
+               portarmi fuori da quel silenzio in cui affondavo. E la <lb xml:id="p007_r_tl_30"/>mia
+               tristezza si faceva più vasta e più nera. </p>
+            <p><lb xml:id="p007_r_tl_31"/>Bussai un'altra volta allo sportello. L'uomo aperse e
+               questa <lb xml:id="p007_r_tl_32"/>volta mi guardò bene in viso, con lo sguardo di
+               qualcuno che è abi<pc>-</pc>
+               <lb xml:id="p007_r_tl_33" break="no"/>tuato a contemplare il proprio silenzio.
+               Eravamo ambedue senza fede <lb xml:id="p007_r_tl_34"/>ed incapaci di speranze, come
+               in un punto morto, non assaliti da <lb xml:id="p007_r_tl_35"/>domande ed incapaci di
+               risposte. </p>
+            <p><lb xml:id="p007_r_tl_36"/>Mi chiese: "Non sapete la melodia, voi, quella che io
+               cerco ?" </p>
+            <p><lb xml:id="p007_r_tl_37"/>Io pensai a lungo: "Non saprei, no. Nemmeno voi mi sapete
+               dare <lb xml:id="p007_r_tl_38"/>i giornali, quelli che io cerco". </p>
+            <p><lb xml:id="p007_r_tl_39"/>Allora l'uomo si animò e mi disse sottovoce, intensamente:
+               "Se <lb xml:id="p007_r_tl_40"/>voi mi trovate la melodia, io vi posso procurare i
+               giornali che voi <lb xml:id="p007_r_tl_41"/>desiderate". </p>
+            <p><lb xml:id="p007_r_tl_42"/>Ma io rimasi a guardarlo soprapensiero, e, dopo un poco:
+               "Non <lb xml:id="p007_r_tl_43"/>capite che io non posso aiutarvi? lo sono qualcuno
+               che ha bisogno <lb xml:id="p007_r_tl_44"/>di comprendere e non sa che cosa, che ha
+               bisogno di avere nelle <lb xml:id="p007_r_tl_45"/>mani una prova e sempre gli sfugge
+               il pensiero che potrebbe aiutarlo. <lb xml:id="p007_r_tl_46"/>Che possiamo fare?" </p>
+            <p><lb xml:id="p007_r_tl_47"/>Rimanemmo a guardarci, ed il tempo sembrava non volesse
+                  <lb xml:id="p007_r_tl_48"/>passare. </p>
+            <p><lb xml:id="p007_r_tl_49"/>Allora l'uomo mi passò una matita ed un foglio bianco: "Se
+                  <lb xml:id="p007_r_tl_50"/>trovate in questi giornali notizie di morti, scrivetele
+               quassù. Poi <lb xml:id="p007_r_tl_51"/>passate ancora qui da me. Avremo la
+               soluzione". </p>
+            <p><lb xml:id="p007_r_tl_52"/>"Che morti?" chiesi io "E se sono troppi, se vi foste
+               sbagliato? <lb xml:id="p007_r_1_tl_1"/>Se dovessi trovare che vittime e morti, morti
+               semplicemente, sono la <lb xml:id="p007_r_1_tl_2"/>medesima cosa?". </p>
+            <p><lb xml:id="p007_r_1_tl_3"/>Ma l'uomo disse severamente: "Voi non capite. Non possono
+                  <lb xml:id="p007_r_1_tl_4"/>essere la medesima cosa. Scrivete quassù e poi passate
+               da me". </p>
+            <p><lb xml:id="p007_r_1_tl_5"/>"Bene" annuii io "mi proverò". </p>
+            <p><lb xml:id="p007_r_1_tl_6"/>Mi allontanai un poco, e poi mi sedetti sulla riva che
+               era l'orlo <lb xml:id="p007_r_1_tl_7"/>della strada lungo il lago, e cominciai a
+               guardare i giornali. Tutti <lb xml:id="p007_r_1_tl_8"/>parlavano di vittime, e d'un
+               tratto mi parve tutto falso quanto <lb xml:id="p007_r_1_tl_9"/>facevo, perché non mi
+               sarebbe servito a nulla, ed alzai la testa per <lb xml:id="p007_r_1_tl_10"/>fare un
+               cenno all'uomo dell'edicola. </p>
+            <p><lb xml:id="p007_r_1_tl_11"/>Ma vidi questa scura e chiusa, e l'uomo era in piedi lì
+               vicino, <lb xml:id="p007_r_1_tl_12"/>assorto. Poi alzò il braccio ed estrasse la
+               chiave dalla toppa e la <lb xml:id="p007_r_1_tl_13"/>buttò nel lago. </p>
+            <p><lb xml:id="p007_r_1_tl_14"/>Si allontanò rapidamente ed io lo seguivo con gli occhi,
+               senza <lb xml:id="p007_r_1_tl_15"/>riuscire a comprendere. </p>
+            <p><lb xml:id="p007_r_1_tl_16"/>Fin quando non udii più il rumore dei suoi passi né più
+               lo <lb xml:id="p007_r_1_tl_17"/>scorsi. Allora mi alzai in piedi ed afferrai il
+               foglio e la matita e <lb xml:id="p007_r_1_tl_18"/>mi misi a correre nella sua
+               direzione ed urlavo: "La soluzione, mi <lb xml:id="p007_r_1_tl_19"/>avete promesso la
+               soluzione, dovete attendermi!" </p>
+            <p><lb xml:id="p007_r_1_tl_20"/>Ma quando giunsi presso alla edicola chiusa compresi che
+               era <lb xml:id="p007_r_1_tl_21"/>inutile, e che non sarebbe più tornato. Posai sul
+               davanzale il foglio <lb xml:id="p007_r_1_tl_22"/>e la matita, ma i giornali li presi
+               con me, e ritornai sui miei passi. <lb xml:id="p007_r_1_tl_23"/>Volevo fare la strada
+               fino alla svolta e più in là, lungo il lago, fino <lb xml:id="p007_r_1_tl_24"/>a
+               sera, fino a notte, e non c'era nessuno in giro ed io tenevo i giornali <lb
+                  xml:id="p007_r_1_tl_25"/>sotto il braccio e pensavo: "Che cosa speravo quando gli
+               ho chiesto <lb xml:id="p007_r_1_tl_26"/>notizie di morti, io, priva di speranze? lo
+               non voglio sapere di nessuna <lb xml:id="p007_r_1_tl_27"/>differenza, voglio sapere
+               solo se si possa morire, e convincere qual<pc>-</pc>
+               <lb xml:id="p007_r_1_tl_28" break="no"/>cuno della propria morte quando non si giace
+               ai suoi piedi e non <lb xml:id="p007_r_1_tl_29"/>si penetrano i suoi sensi di questa
+               realtà. Solo questo voglio sapere, <lb xml:id="p007_r_1_tl_30"/>tutto il resto è
+               troppo facile, tutto il resto non ha bisogno di con<pc>-</pc>
+               <lb xml:id="p007_r_1_tl_31" break="no"/>vincere". </p>
+            <p><lb xml:id="p007_r_1_tl_32"/>E guardai di nuovo il lago e la via che conduceva
+               attorno ad <lb xml:id="p007_r_1_tl_33"/>esso, e mi sembrava che su quel lago non era
+               mai estate, mai autunno, <lb xml:id="p007_r_1_tl_34"/>mai nessuna stagione, solo un
+               inizio ed una fine ed un lungo periodo <lb xml:id="p007_r_1_tl_35"/>intermedio, ed
+               allora mi misi a correre ed urlavo: "Ditemi la solu<pc>-</pc>
+               <lb xml:id="p007_r_1_tl_36" break="no"/>zione, Dio, ho bisogno di aver fede in
+               qualcosa, in una sofferenza, <lb xml:id="p007_r_1_tl_37"/>ho bisogno d'avere la
+               certezza che non soffro per nulla, che non <lb xml:id="p007_r_1_tl_38"/>soffro per
+               cose inutili!" </p>
+            <p><lb xml:id="p007_r_1_tl_39"/>E la tristezza e l'angoscia in me erano immense, ed in
+               quel <lb xml:id="p007_r_1_tl_40"/>luogo deserto correvo e battevo i denti nel terrore
+               che qualcuno <lb xml:id="p007_r_1_tl_41"/>m'avrebbe potuto porre la domanda terribile
+               a cui mai avrei saputo <lb xml:id="p007_r_1_tl_42"/>rispondere: </p>
+            <p><lb xml:id="p007_r_1_tl_43"/>"Che cosa sono le <hi rendition="#i">sofferenze
+                  reali</hi>?" </p>
+            <head rendition="#c"><lb xml:id="p007_r_1_tl_44"/>II. Il portiere</head>
+            <p><lb xml:id="p007_r_1_tl_45"/>Era quasi l'alba quando giunsi ad una casa alta,
+               solitaria nei <lb xml:id="p007_r_1_tl_46"/>campi, lontana dal lago. Aveva cominciato
+               a piovere, ed io stringevo <lb xml:id="p007_r_1_tl_47"/>ancora i giornali sotto il
+               braccio, perché mi sembrava che se li <lb xml:id="p007_r_1_tl_48"/>avessi persi o
+               lasciati da qualche parte, di me stessa non mi sarebbe <lb xml:id="p007_r_1_tl_49"
+               />rimasto più nulla.</p>
+            <pb xml:id="p008" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_006.tif"
+               n="180"/>
+            <p>
+               <lb xml:id="p008_r_tl_1"/>La casa era alta e scura, e d'intorno c'era la pianura
+               brulla, forse <lb xml:id="p008_r_tl_2"/>dietro si scendeva a picco su di una valle. E
+               sembrava una protesta, <lb xml:id="p008_r_tl_3"/>così sollevata verso il cielo, qui
+               dove tutto era orizzontale. Sembrava <lb xml:id="p008_r_tl_4"/>una bestemmia urlata
+               con orgoglio, senza nessuno che la raccogliesse <lb xml:id="p008_r_tl_5"/>o la
+               ricevesse in viso. Mi rivolsi indietro, ma nulla vidi della strada <lb
+                  xml:id="p008_r_tl_6"/>che avevo fatto, ed in me c'era la stanchezza di tutte
+               quelle lunghe <lb xml:id="p008_r_tl_7"/>ore passate correndo lungo il lago lontano,
+               come fuggendo davanti <lb xml:id="p008_r_tl_8"/>ad una domanda, e tremante nel
+               medesimo tempo di andarle incontro, <lb xml:id="p008_r_tl_9"/>correndo così. Ero
+               stanca, e nella mia testa i pensieri turbinavano <lb xml:id="p008_r_tl_10"
+               />sordamente sotto un peso grave e scuro, ritmato lentamente. </p>
+            <p><lb xml:id="p008_r_tl_11"/>Sospinsi la porta ed entrai. </p>
+            <p><lb xml:id="p008_r_tl_12"/>Era l'andito di un albergo ed in fondo, vicino alla scala
+               che <lb xml:id="p008_r_tl_13"/>saliva dietro l'ascensore, il portiere sbadigliava, i
+               piedi sul tavolo. <lb xml:id="p008_r_tl_14"/>Mi avvicinai e gli chiesi una camera. </p>
+            <p><lb xml:id="p008_r_tl_15"/>"Non so" mi disse "se ne abbiamo ancora. Riempite questo
+                  <lb xml:id="p008_r_tl_16"/>formulario". </p>
+            <p><lb xml:id="p008_r_tl_17"/>"Ma se non avete camere è inutile che io scriva qui il mio
+               nome. <lb xml:id="p008_r_tl_18"/>Non mi piace scrivere il mio nome, e non vorrei
+               scriverlo inutilmente". </p>
+            <p><lb xml:id="p008_r_tl_19"/>"Se è così" fece il portiere "non posso fare nulla per
+               voi". E <lb xml:id="p008_r_tl_20"/>rimase a guardarmi. Anche io mi guardai
+               lentamente, abbassando <lb xml:id="p008_r_tl_21"/>la testa. </p>
+            <p><lb xml:id="p008_r_tl_22"/>Sulle mie scarpe c'era fango, ed i giornali che tenevo
+               sotto il <lb xml:id="p008_r_tl_23"/>braccio erano molli di pioggia. </p>
+            <p><lb xml:id="p008_r_tl_24"/>D'un tratto pensai che se non avessi trovato un letto in
+               questa <lb xml:id="p008_r_tl_25"/>casa avrei dovuto andarmene di nuovo. E rabbrividii
+               al pensiero. </p>
+            <p><lb xml:id="p008_r_tl_26"/>Lentamente scrissi il mio nome sul formulario, e poi lo
+               sospinsi <lb xml:id="p008_r_tl_27"/>verso il portiere. Egli lo guardò, poi alzò la
+               testa sorpreso, sorrise <lb xml:id="p008_r_tl_28"/>con indulgenza ma con le dita
+               batteva e ribatteva irritato sul piano <lb xml:id="p008_r_tl_29"/>del tavolo. </p>
+            <p><lb xml:id="p008_r_tl_30"/>"Non basta" mi disse dopo un nuovo sbadiglio pieno di
+               lento <lb xml:id="p008_r_tl_31"/>piacere. "Professione, luogo da cui venite,
+               indirizzo...". </p>
+            <p><lb xml:id="p008_r_tl_32"/>"Anche questo volete sapere? Ma che volete da me? Non vi
+                  <lb xml:id="p008_r_tl_33"/>basta il mio nome? Mi è già costato tanta fatica!" E
+               avrei voluto <lb xml:id="p008_r_tl_34"/>pregarlo di lasciarmi stare, tanto stanca ero
+               ed incapace di resistere. </p>
+            <p><lb xml:id="p008_r_tl_35"/>"Come volete" disse il portiere, e si appoggiò indietro
+               sulla <lb xml:id="p008_r_tl_36"/>sedia, sbadigliando di nuovo, questa volta con più
+               noia ed irritazione <lb xml:id="p008_r_tl_37"/>di prima. "Ma in questo caso non posso
+               fare nulla per voi". </p>
+            <p><lb xml:id="p008_r_tl_38"/>Allora mi prese non so che furore, e mi vergognai del
+               pensiero <lb xml:id="p008_r_tl_39"/>che avevo avuto di chiedergli che mi concedesse
+               un poco di pietà. </p>
+            <p><lb xml:id="p008_r_tl_40"/>"Scrivete voi" comandai "Che volete sapere?"
+               "Professione?" <lb xml:id="p008_r_tl_41"/>chiese lui, allontanando come d'un gesto
+               distratto della mano il mio <lb xml:id="p008_r_tl_42"/>tentativo di umiliarlo
+               facendolo scrivere per me, e diventando di <lb xml:id="p008_r_tl_43"/>nuovo qualcuno
+               che di me decideva. </p>
+            <p><lb xml:id="p008_r_tl_44"/>"Non so bene" dissi io, tornando ad avvertire pesantemente
+               la <lb xml:id="p008_r_tl_45"/>mia tristezza. "lo non sono nulla... Sono solo qualcuno
+               che cerca...". </p>
+            <p><lb xml:id="p008_r_tl_46"/>"Qualcuno che cerca?" sorrise il portiere beffardo ed
+               annoiato. <lb xml:id="p008_r_tl_47"/>"E che cosa cercate?". </p>
+            <p><lb xml:id="p008_r_tl_48"/>"Non so bene" ripetei "Ma è tutto ciò che faccio. Scrivete
+                  <lb xml:id="p008_r_tl_49"/>quello che volete, tanto, non ha importanza". </p>
+            <p><lb xml:id="p008_r_tl_50"/>"Come volete" accondiscese lui visibilmente "qualcosa devo
+                  <lb xml:id="p008_r_tl_51"/>pur scrivere. Metterò che siete qualcuno che cerca".
+               Scrisse lenta<pc>-</pc>
+               <lb xml:id="p008_r_tl_52" break="no"/>mente, e la penna scricchiolava sulla carta. </p>
+            <p><lb xml:id="p008_r_1_tl_1"/>Udii allora per la prima volta un confuso rumore di
+               musica e <lb xml:id="p008_r_1_tl_2"/>di voci, e nel medesimo istante mi parve di
+               avvertire un forte odore <lb xml:id="p008_r_1_tl_3"/>di alcool e di gente che si
+               diverte. </p>
+            <p><lb xml:id="p008_r_1_tl_4"/>"Che cosa c'è? Una festa?" </p>
+            <p><lb xml:id="p008_r_1_tl_5"/>"Ballano" brontolò il portiere e s'interruppe per
+               sbadigliare. <lb xml:id="p008_r_1_tl_6"/>"Da dove venite?" "Non lo so" risposi " non
+               tengo mai a mente <lb xml:id="p008_r_1_tl_7"/>il nome dei luoghi, e poi ho camminato
+               tanto. Non ho fatto altro che <lb xml:id="p008_r_1_tl_8"/>camminare, da molto tempo". </p>
+            <p><lb xml:id="p008_r_1_tl_9"/>"Questo non ha importanza" osservò lui seccamente "in
+               qualche <lb xml:id="p008_r_1_tl_10"/>luogo vi sarete ben fermata l'ultima volta". </p>
+            <p><lb xml:id="p008_r_1_tl_11"/>"È ben questo che non ricordo" dissi io con una lenta
+                  dispe<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_12" break="no"/>razione "perché dall'ultima volta qualcosa è
+               finito e qualcosa di <lb xml:id="p008_r_1_tl_13"/>nuovo è cominciato. E questa è la
+               prima tappa". </p>
+            <p><lb xml:id="p008_r_1_tl_14"/>Il portiere scosse il capo e mi guardò attentamente.
+               "Ditemi <lb xml:id="p008_r_1_tl_15"/>il vostro indirizzo, allora" riprese con
+               impazienza. </p>
+            <p><lb xml:id="p008_r_1_tl_16"/>lo incominciai ad avere paura, e dissi sottovoce: "Come
+               volete <lb xml:id="p008_r_1_tl_17"/>che lo sappia? Ora non ha più valore quello di
+               prima. Ed anche <lb xml:id="p008_r_1_tl_18"/>l'ho dimenticato". </p>
+            <p><lb xml:id="p008_r_1_tl_19"/>Il portiere posò seccamente la penna e si chinò innanzi,
+                  scru<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_20" break="no"/>tandomi con rabbia: "Volete prendermi in
+               giro? Datemi le vostre <lb xml:id="p008_r_1_tl_21"/>carte!" </p>
+            <p><lb xml:id="p008_r_1_tl_22"/>lo mi sentivo spersa, e mi riprese il terrore che magari
+               avrei <lb xml:id="p008_r_1_tl_23"/>dovuto uscire di lì e riprendere il cammino. Tanto
+               incalzante era <lb xml:id="p008_r_1_tl_24"/>questo terrore, che mi misi a gridare:
+               "Non ho carte, non ho che <lb xml:id="p008_r_1_tl_25"/>questi giornali ma non posso
+               darveli altrimenti mi sembrerà che tutto <lb xml:id="p008_r_1_tl_26"/>non sia stato
+               vero, ed allora come farò ad andare innanzi per questa <lb xml:id="p008_r_1_tl_27"
+               />nuova strada? Non ho carte, perché dovrei averne? Lasciatemi <lb
+                  xml:id="p008_r_1_tl_28"/>stare, vi prego, non posso più pensare ora, non posso
+               pensare a nulla, <lb xml:id="p008_r_1_tl_29"/>forse domani, ora non posso ed a voi
+               costa così poco lasciarmi stare, <lb xml:id="p008_r_1_tl_30"/>non so sopportare
+               domande, non so più resistere..." E mi tenevo con <lb xml:id="p008_r_1_tl_31"/>le
+               mani aggrappata all'orlo del tavolo, e tremavo. </p>
+            <p><lb xml:id="p008_r_1_tl_32"/>"Bene. Forse vi sentite male, ma potevate dirlo subito.
+               Mi rispar<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_33" break="no"/>miavate tutto questo lavoro. Ora dovete
+               aspettare ancora un poco <lb xml:id="p008_r_1_tl_34"/>finché tutti siano saliti alle
+               loro camere, perché non sono numerate <lb xml:id="p008_r_1_tl_35"/>e quindi non si
+               può controllare. Ma quando c'è qualcuno nella camera <lb xml:id="p008_r_1_tl_36"
+               />s'accende un lumino fuori dalla porta, e così quando tutti saranno <lb
+                  xml:id="p008_r_1_tl_37"/>saliti la camera senza lumino sarà per voi". </p>
+            <p><lb xml:id="p008_r_1_tl_38"/>Chiuse il libretto e mise ancora i piedi sul tavolo,
+               guardandomi <lb xml:id="p008_r_1_tl_39"/>ora con una specie di benevolenza. Io avrei
+               voluto dirgli che volevo <lb xml:id="p008_r_1_tl_40"/>dormire e che non potevo
+               aspettare, e che non era vero che mi sen<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_41" break="no"/>tissi male, ma sarebbe stato un pregarlo di
+               volermi capire, e ancora <lb xml:id="p008_r_1_tl_42"/>mi riprese il furore di prima
+               che scuoteva tutta la mia grande stan<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_43" break="no"/>chezza. Mi protesi verso di lui, ancora così
+               com'ero, aggrappata con <lb xml:id="p008_r_1_tl_44"/>le mani all'orlo del tavolo, e
+               guardai quel suo sorriso e quella sua <lb xml:id="p008_r_1_tl_45"/>posa soddisfatti,
+               tranquilli, e d'un tratto mi prese un grande desiderio <lb xml:id="p008_r_1_tl_46"
+               />di fargli del male, di dargli un pugno magari o di lanciargli qualche <lb
+                  xml:id="p008_r_1_tl_47"/>oggetto, e febbrilmente distaccai lo sguardo da lui e mi
+               misi a per<pc>-</pc>
+               <lb xml:id="p008_r_1_tl_48" break="no"/>correre gli oggetti che erano sul tavolo. Nel
+               medesimo tempo mi stavo <lb xml:id="p008_r_1_tl_49"/>guardando con orrore, e mi
+               sembrava di vedermi sdrucciolare per <lb xml:id="p008_r_1_tl_50"/>una china, e nulla
+               potevo fare per salvarmi. Mi strappai con un grido <lb xml:id="p008_r_1_tl_51"/>da
+               quella visione, e mi ritrovai con gli occhi fissi sul portiere, e dentro <lb
+                  xml:id="p008_r_1_tl_52"/>di me c'era una grande vertigine, dalla quale lentamente
+               l'immagine</p>
+            <pb xml:id="p009" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_007.tif"
+               n="182"/>
+            <p>
+               <lb xml:id="p009_r_tl_1"/>di me, così ritta davanti a lui, riprendeva contorno. E
+               come mi passavo <lb xml:id="p009_r_tl_2"/>respirando profondamente una mano sulla
+               fronte, il portiere tolse <lb xml:id="p009_r_tl_3"/>lentamente i piedi dal tavolo, e
+               la sua faccia si avvicinava a me <lb xml:id="p009_r_tl_4"/>come una orribile cosa
+               inesorabile a cui non potevo sfuggire, ed io <lb xml:id="p009_r_tl_5"/>rimasi a
+               fissarlo senza nemmeno tentare di svincolarmi dal suo sguar<pc>-</pc>
+               <lb xml:id="p009_r_tl_6" break="no"/>do. Ed egli mi disse, sottovoce, scandendo le
+               parole quasi per convin<pc>-</pc>
+               <lb xml:id="p009_r_tl_7" break="no"/>cermi che quanto diceva doveva essere vero:
+               "Dite, non avrete alle <lb xml:id="p009_r_tl_8"/>volte combinato qualche cosa? Non
+               sarete alle volte inseguita?" </p>
+            <p><lb xml:id="p009_r_tl_9"/>Fu come se mi avessero tolta la terra di sotto ai piedi, e
+                  stanca<pc>-</pc>
+               <lb xml:id="p009_r_tl_10" break="no"/>mente risposi, non pensando che al mio lungo
+               andare sulla riva del <lb xml:id="p009_r_tl_11"/>lago: "Si, credo di essere
+               inseguita, è per questo che vorrei dormire <lb xml:id="p009_r_tl_12"/>e non pensare
+               più a nulla". </p>
+            <p><lb xml:id="p009_r_tl_13"/>"Siete inseguita dunque!" sbottò lui con una specie di
+               trionfo <lb xml:id="p009_r_tl_14"/>e con non so che paura verso di me nel medesimo
+               tempo, ed il suo <lb xml:id="p009_r_tl_15"/>viso si ritrasse nell'ombra "allora non è
+               vero quanto mi avete rac<pc>-</pc>
+               <lb xml:id="p009_r_tl_16" break="no"/>contato, non è vero che non state bene e che è
+               per questo che non <lb xml:id="p009_r_tl_17"/>ricordate..." </p>
+            <p><lb xml:id="p009_r_tl_18"/>E davanti alla minaccia che c'era nelle sue parole mi
+               prese una <lb xml:id="p009_r_tl_19"/>orribile paura, e nemmeno pensai a difendermi, e
+               dissi: "Ma io non <lb xml:id="p009_r_tl_20"/>sono sicura di esser inseguita, solo lo
+               credo e non so che fare. Vorrei <lb xml:id="p009_r_tl_21"/>solo dormire, poter
+               dormire e non saper più nulla..." Ed era come <lb xml:id="p009_r_tl_22"/>un lamento,
+               questo, e nel grande silenzio che si fece dopo le mie po<pc>-</pc>
+               <lb xml:id="p009_r_tl_23" break="no"/>vere parole, tornai ad udire la superficiale,
+               triste musica da ballo <lb xml:id="p009_r_tl_24"/>di dietro una porta. </p>
+            <p><lb xml:id="p009_r_tl_25"/>Allora improvvisamente mi balenò un pensiero lucidissimo,
+               e <lb xml:id="p009_r_tl_26"/>volevo parlare lentamente, sottovoce, ma non potevo, le
+               parole urge<pc>-</pc>
+               <lb xml:id="p009_r_tl_27" break="no"/>vano in me, e nuovamente mi misi a gridare,
+               rabbrividendo nell'udire <lb xml:id="p009_r_tl_28"/>le mie parole lanciate così nude
+               nel silenzio. </p>
+            <p><lb xml:id="p009_r_tl_29"/>"Ma è pazzesco quello che pensate, io non ho fatto nulla,
+               ecco, <lb xml:id="p009_r_tl_30"/>vedete, questi sono i giornali dove parlano di
+               vittime, ma io non li <lb xml:id="p009_r_tl_31"/>volevo, io volevo gli altri, perché
+               a me questi non servono, io non so <lb xml:id="p009_r_tl_32"/>nulla, non ho fatto
+               nulla, ho solo voluto per un momento sperare, è <lb xml:id="p009_r_tl_33"/>questo che
+               ha fatto diventare tanto grande ed irrimediabile il mio <lb xml:id="p009_r_tl_34"
+               />male, null'altro, credetemi!". </p>
+            <p><lb xml:id="p009_r_tl_35"/>"Oh" disse il portiere rinchiudendo la sua curiosità e la
+               sua <lb xml:id="p009_r_tl_36"/>meraviglia in se stesso e ritornando a sorridere pur
+               mantenendosi <lb xml:id="p009_r_tl_37"/>in agguato "in fondo a me poco importa. Ma io
+               avevo capito una <lb xml:id="p009_r_tl_38"/>cosa: che voi fuggivate – ed ora voi mi
+               dite un'altra cosa, senza che <lb xml:id="p009_r_tl_39"/>io ve la chieda: parlate di
+               morti. Ma a me poco importa, ve l'ho detto, <lb xml:id="p009_r_tl_40"/>se c'è una
+               camera libera potete fermarvi qui, e tutte le altre cose <lb xml:id="p009_r_tl_41"
+               />riguardano voi sola. Anzi, fate conto che non abbiate detto nulla, <lb
+                  xml:id="p009_r_tl_42"/>che io vi consideri semplicemente ammalata, io non voglio
+               aver nulla <lb xml:id="p009_r_tl_43"/>a che fare con tutta questa storia. Ora
+               andatevene in qualche luogo <lb xml:id="p009_r_tl_44"/>ad aspettare. Non potete certo
+               rimanere qui in piedi tutto il tempo". </p>
+            <p><lb xml:id="p009_r_tl_45"/>"Tutto il tempo? Che tempo?". </p>
+            <p><lb xml:id="p009_r_tl_46"/>"Il tempo finché tutti gli altri siano saliti alle loro
+               camere" <lb xml:id="p009_r_tl_47"/>spiegò il portiere pazientemente. </p>
+            <p><lb xml:id="p009_r_tl_48"/>"Son quelli che ballano che devono salire?" </p>
+            <p><lb xml:id="p009_r_tl_49"/>"Quelli ed altri. Ma a voi che importa? Non avete certo
+               più diritto <lb xml:id="p009_r_tl_50"/>di me di sapere le cose altrui. Ebbene, a me
+               le vostre cose non inte<pc>-</pc>
+               <lb xml:id="p009_r_tl_51" break="no"/>ressano, capite?". </p>
+            <p><lb xml:id="p009_r_1_tl_1"/>" Sì" dissi io umilmente, perché la stanchezza mi
+               riprendeva, <lb xml:id="p009_r_1_tl_2"/>atroce e monotona. "Dove posso aspettare?" </p>
+            <p><lb xml:id="p009_r_1_tl_3"/>"Nella sala se volete, oppure laggiù" e mi indicò una
+               porta <lb xml:id="p009_r_1_tl_4"/>"là ce n'è un altro come voi che aspetta". </p>
+            <p><lb xml:id="p009_r_1_tl_5"/>"Aspetta che cosa?" chiesi io rapidamente, colpita dalle
+               parole: <lb xml:id="p009_r_1_tl_6"/>un altro come voi. </p>
+            <p><lb xml:id="p009_r_1_tl_7"/>"Aspetta che gli altri siano saliti" disse lui sollevando
+               seccato <lb xml:id="p009_r_1_tl_8"/>le sopracciglia. </p>
+            <p><lb xml:id="p009_r_1_tl_9"/>"Ah" respirai io, non so se con sollievo oppure delusa
+               "un altro <lb xml:id="p009_r_1_tl_10"/>che aspetta come me". </p>
+            <p><lb xml:id="p009_r_1_tl_11"/>"Un altro come voi, che aspetta" insistè il portiere,
+               sorridendo <lb xml:id="p009_r_1_tl_12"/>beffardo. lo rimasi titubante un momento, poi
+               riflettei che non mi <lb xml:id="p009_r_1_tl_13"/>avrebbe detto mai quanto pensava, e
+               forse non sapeva nemmeno <lb xml:id="p009_r_1_tl_14"/>lui perché dicesse così. </p>
+            <p><lb xml:id="p009_r_1_tl_15"/>"Mi chiamerete" gli chiesi "quando gli altri saranno
+               saliti? <lb xml:id="p009_r_1_tl_16"/>Vorrei andare io stessa a cercare la camera
+               senza lumino". </p>
+            <p><lb xml:id="p009_r_1_tl_17"/>"State tranquilla" sorrise lui con superiorità "vi
+               chiamerò". </p>
+            <p><lb xml:id="p009_r_1_tl_18"/>lo mi avviai verso la porta, e poi tornai indietro: "Ma
+               quando <lb xml:id="p009_r_1_tl_19"/>mi chiamerete?". </p>
+            <p><lb xml:id="p009_r_1_tl_20"/>"Come siete seccante" sospirò rabbiosamente il portiere
+                  levan<pc>-</pc>
+               <lb xml:id="p009_r_1_tl_21" break="no"/>dosi in piedi "potete già essere contenta che
+               vi lasci aspettare e che <lb xml:id="p009_r_1_tl_22"/>vi prometta di chiamarvi, dal
+               momento che non avete nemmeno <lb xml:id="p009_r_1_tl_23"/>riempito tutto il
+               formulario!". lo andai di nuovo verso la porta, poi <lb xml:id="p009_r_1_tl_24"/>mi
+               rivolsi facendo uno sforzo per ricordarmi: "Ma se avete detto che <lb
+                  xml:id="p009_r_1_tl_25"/>non vi importa di me, non fa nulla che il formulario non
+               sia com<pc>-</pc>
+               <lb xml:id="p009_r_1_tl_26" break="no"/>pleto". </p>
+            <p><lb xml:id="p009_r_1_tl_27"/>"Sentite" disse il portiere esasperato "certo che mi
+               importa. Ma <lb xml:id="p009_r_1_tl_28"/>dal momento che non voglio sapere nulla da
+               voi, tutto quanto di voi <lb xml:id="p009_r_1_tl_29"/>penso non vi riguarda. Fareste
+               bene a ricordarvi di questo". </p>
+            <p><lb xml:id="p009_r_1_tl_30"/>Poi mi voltò la schiena e si mise ad ordinare delle
+               chiavi che <lb xml:id="p009_r_1_tl_31"/>erano appese su di un'asse dietro il tavolo. </p>
+            <p><lb xml:id="p009_r_1_tl_32"/>Allora sospinsi la porta ed a testa bassa entrai nella
+               camera che <lb xml:id="p009_r_1_tl_33"/>m'aveva indicato. </p>
+            <head rendition="#c"><lb xml:id="p009_r_2_tl_1"/>III. Tentativo di un incontro </head>
+            <p><lb xml:id="p009_r_2_tl_2"/>La penombra tremolante della prima alba era nella grande
+                  <lb xml:id="p009_r_2_tl_3"/>stanza vuota come un antro: quanto c'era lungo le
+               pareti non con<pc>-</pc>
+               <lb xml:id="p009_r_2_tl_4" break="no"/>tava, non la riempiva. Fuori dalla grande
+               vetrata l'orizzonte era <lb xml:id="p009_r_2_tl_5"/>lontanissimo, oltre l'immensa
+               pianura. Feci alcuni passi per la stanza, <lb xml:id="p009_r_2_tl_6"/>ed il rumore di
+               essi affondava come nella bambagia. Pensai che in <lb xml:id="p009_r_2_tl_7"
+               />quell'ambiente nessun suono sarebbe stato capace di vibrare, perché <lb
+                  xml:id="p009_r_2_tl_8"/>il rombo della pianura lontana e vicina, fuori, premeva
+               sui vetri. </p>
+            <p><lb xml:id="p009_r_2_tl_9"/>Poi mi ricordai di quell'altro come me, che era là
+               dentro, e mi <lb xml:id="p009_r_2_tl_10"/>prese il forte desiderio di sapere se il
+               portiere avesse coscientemente <lb xml:id="p009_r_2_tl_11"/>ripetuto che era un altro
+               come me, o se semplicemente il fatto di aspet<pc>-</pc>
+               <lb xml:id="p009_r_2_tl_12" break="no"/>tare ambedue ci rendesse simili. Mi guardai
+               attorno, ma vidi solo <lb xml:id="p009_r_2_tl_13"/>ampi schienali di sedie che erano
+               come i seggi dei cori delle chiese <lb xml:id="p009_r_2_tl_14"/>macchiare di scuro
+               denso i muri stemperati nel colore dell'alba.</p>
+            <pb xml:id="p010" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_008.tif"
+               n="184"/>
+            <p>
+               <lb xml:id="p010_r_tl_1"/>Guardai ancora più intensamente, sebbene ogni sforzo che
+               facessi <lb xml:id="p010_r_tl_2"/>suonasse dolorose campane nel sordo ritmo della mia
+               triste stanchezza. </p>
+            <p><lb xml:id="p010_r_tl_3"/>Ancora non vidi nulla. </p>
+            <p><lb xml:id="p010_r_tl_4"/>Nulla, se non la grande stanza che era come un antro. </p>
+            <p><lb xml:id="p010_r_tl_5"/>Allora mi avvicinai ad una parete e mi sedetti in una delle
+               strane <lb xml:id="p010_r_tl_6"/>sedie che per avere lo schienale così alto ed
+               austero, costringevano a <lb xml:id="p010_r_tl_7"/>tenersi tesi, come statue ad un
+               rito. Quelle sedie non avevano pietà <lb xml:id="p010_r_tl_8"/>per la mia stanchezza.
+               Così mi misi a ridere d'un riso stridulo e cat<pc>-</pc>
+               <lb xml:id="p010_r_tl_9" break="no"/>tivo, perché in quell'albergo sapevano ciò che
+               volevano e non c'era <lb xml:id="p010_r_tl_10"/>modo di ingannarli, sia pure
+               innocentemente, riposandosi nell'attesa <lb xml:id="p010_r_tl_11"/>di trovare una
+               camera ed un letto. E come ancora ridevo così, spa<pc>-</pc>
+               <lb xml:id="p010_r_tl_12" break="no"/>ventosamente sola in quella stanza, udii come
+               un battere d'unghie <lb xml:id="p010_r_tl_13"/>su di una superficie liscia e fredda.
+               Lentamente il mio riso si smorzò, <lb xml:id="p010_r_tl_14"/>e rimasi in ascolto,
+               penetrando faticosamente con lo sguardo la camera <lb xml:id="p010_r_tl_15"/>triste,
+               senza muovere la testa, perché stavo seduta in quella sedia e <lb
+                  xml:id="p010_r_tl_16"/>bisognava che ubbidissi al ritmo delle sue linee. </p>
+            <p><lb xml:id="p010_r_tl_17"/>E d'un tratto incontrai uno sguardo, nulla altro che uno
+               sguardo <lb xml:id="p010_r_tl_18"/>fisso nel mio, scuro e non penetrante ed
+               impenetrabile. </p>
+            <p><lb xml:id="p010_r_tl_19"/>Uno sguardo che disperse la mia stanchezza e si fermò sul
+               battito <lb xml:id="p010_r_tl_20"/>del mio cuore, e mi sembrava di vedere questi
+               battiti cacciare e <lb xml:id="p010_r_tl_21"/>ricacciare il sangue nel mio corpo.
+               Rimasi così anche io, con lo <lb xml:id="p010_r_tl_22"/>sguardo fisso in quell'altro
+               sguardo, ed era come un silenzioso, terri<pc>-</pc>
+               <lb xml:id="p010_r_tl_23" break="no"/>bile e laborioso cozzo, come di due che lottano
+               muti, con tutte le <lb xml:id="p010_r_tl_24"/>forze ma senza movimento, corpo a
+               corpo. </p>
+            <p><lb xml:id="p010_r_tl_25"/>Non so quanto tempo rimasi così, e poi mi alzai, senza
+               movimenti <lb xml:id="p010_r_tl_26"/>superflui, come ubbedendo ad un meccanismo. Mi
+               alzai così dalla <lb xml:id="p010_r_tl_27"/>sedia e lentamente mi avvicinai a quello
+               sguardo, sempre fisso nel <lb xml:id="p010_r_tl_28"/>mio, ma non penetrante, solo
+               fermo sul limite dove pure il mio <lb xml:id="p010_r_tl_29"/>sguardo doveva fermarsi
+               per potergli fare fronte. E man mano che <lb xml:id="p010_r_tl_30"/>mi avvicinavo, il
+               mio sguardo sdrucciolava via da questo limite, <lb xml:id="p010_r_tl_31"/>ed io vidi
+               un pianoforte aperto nell'angolo, e davanti, rivolto sullo <lb xml:id="p010_r_tl_32"
+               />sgabello verso la stanza, stava un uomo. </p>
+            <p><lb xml:id="p010_r_tl_33"/>"Buongiorno" gli dissi. </p>
+            <p><lb xml:id="p010_r_tl_34"/>Ma lui non rispose. Rimase un poco a guardarmi, come
+               sorridendo <lb xml:id="p010_r_tl_35"/>beffardo, e poi chiese: "Chi siete?". </p>
+            <p><lb xml:id="p010_r_tl_36"/>lo guardai quel sorriso e non mi parve nuovo. Guardai quel
+               viso <lb xml:id="p010_r_tl_37"/>e mi parve di riconoscerlo. Ma non con gioia, non con
+               certezza. </p>
+            <p><lb xml:id="p010_r_tl_38"/>"Chi siete voi?" gli domandai, tendendomi verso di lui e
+                  scru<pc>-</pc>
+               <lb xml:id="p010_r_tl_39" break="no"/>tandolo. "Mi sembra di conoscervi". </p>
+            <p><lb xml:id="p010_r_tl_40"/>"Vi sembra di conoscermi!" disse l'uomo chinandosi sui
+               tasti con <lb xml:id="p010_r_tl_41"/>una tale tristezza che qualcosa mi tremò dentro
+               come stesse per tra<pc>-</pc>
+               <lb xml:id="p010_r_tl_42" break="no"/>boccare "Allora ditemi chi sono". E lentamente
+               alzò lo sguardo su <lb xml:id="p010_r_tl_43"/>di me, come da una immensa lontananza. </p>
+            <p><lb xml:id="p010_r_tl_44"/>"Come posso dirvi chi siete" feci io con vago spavento "se
+               voi <lb xml:id="p010_r_tl_45"/>stesso non lo sapete?" </p>
+            <p><lb xml:id="p010_r_tl_46"/>L'uomo riabbassò lo sguardo sui tasti, e tornai ad udire
+               quel <lb xml:id="p010_r_tl_47"/>lieve picchiettìo, e vidi i tasti cedere mollemente
+               sotto alle sue dita, <lb xml:id="p010_r_tl_48"/>senza suono. </p>
+            <p><lb xml:id="p010_r_tl_49"/>"Che fate?" gridai "Ma è orribile quanto fate!". </p>
+            <p><lb xml:id="p010_r_tl_50"/>"È un piano senza suono" disse lui "Tutta la sera ho
+               suonato, <lb xml:id="p010_r_tl_51"/>e la notte. Non vedete?" e si voltò verso la
+               stanza "l'aria è già tutta <lb xml:id="p010_r_tl_52"/>gremita di note". </p>
+            <p><lb xml:id="p010_r_1_tl_1"/>lo guardai ed il vago terrore che era in me mi illividì
+               dentro: </p>
+            <p><lb xml:id="p010_r_1_tl_2"/>"Ma perché suonate? Presto non ci sarà più spazio per le
+               note, <lb xml:id="p010_r_1_tl_3"/>e allora che faremo? Dobbiamo pur stare qui ad
+               aspettare!" </p>
+            <p><lb xml:id="p010_r_1_tl_4"/>"Aspettare?" ripetè l'uomo guardandomi rapidamente. </p>
+            <p><lb xml:id="p010_r_1_tl_5"/>"<choice><orig>Si</orig><reg>Sì</reg></choice>" dissi io
+               "aspettare finché gli altri siano saliti". </p>
+            <p><lb xml:id="p010_r_1_tl_6"/>"Ah" fece l'uomo "Dicevate questo!" Poi soggiunse:
+               "Sempre <lb xml:id="p010_r_1_tl_7"/>quando si hanno desideri bisogna attendere.
+               Perché quando deside<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_8" break="no"/>riamo non abbiamo mai in mano i fili di nulla.
+               Fra noi e l'oggetto <lb xml:id="p010_r_1_tl_9"/>del nostro desiderio sono sempre le
+               azioni degli altri che non sanno <lb xml:id="p010_r_1_tl_10"/>nulla di noi, ed a cui
+               noi siamo indifferenti". E le sue parole erano <lb xml:id="p010_r_1_tl_11"/>come una
+               forza che mi attirava verso di lui, a scrutarlo, e dolorosa<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_12" break="no"/>mente tentavo di ricordarmi. </p>
+            <p><lb xml:id="p010_r_1_tl_13"/>"Attendere senza speranza" disse l'uomo. E su quelle
+               povere <lb xml:id="p010_r_1_tl_14"/>parole la mia stessa pena sembrava tremare. </p>
+            <p><lb xml:id="p010_r_1_tl_15"/>"Chi siete?" chiesi ancora. </p>
+            <p><lb xml:id="p010_r_1_tl_16"/>Ma lui scosse il capo: </p>
+            <p><lb xml:id="p010_r_1_tl_17"/>"Nemmeno suonare si può in questa casa. È tutto strano
+               qui <lb xml:id="p010_r_1_tl_18"/>dentro. Non trovate?" </p>
+            <p><lb xml:id="p010_r_1_tl_19"/>"Non so se trovare strano questo luogo" risposi. "Finora
+               tutto <lb xml:id="p010_r_1_tl_20"/>m'ha fatto comprendere la mia stranezza". </p>
+            <p><lb xml:id="p010_r_1_tl_21"/>"La vostra stranezza?" ripetè l'uomo "Ma chi siete voi?" </p>
+            <p><lb xml:id="p010_r_1_tl_22"/>"Non so dirvelo" risposi. "Non ho che questi giornali" e
+               li solle<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_23" break="no"/>vai nelle mani "ma non mi servono a nulla". </p>
+            <p><lb xml:id="p010_r_1_tl_24"/>"Nemmeno a me questo piano serve. Che possiamo fare?". </p>
+            <p><lb xml:id="p010_r_1_tl_25"/>Rimanemmo a guardarci, e nell'aria le note nere erano
+                  immo<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_26" break="no"/>bili, nemmeno tremolavano, nemmeno un
+               pochino, e sembravano <lb xml:id="p010_r_1_tl_27"/>pitturate davanti agli occhi. </p>
+            <p><lb xml:id="p010_r_1_tl_28"/>"Raccontatemi di voi, volete?" disse l'uomo "ed io vi
+               racconterò <lb xml:id="p010_r_1_tl_29"/>di me. Forse potremo riconoscerci". </p>
+            <p><lb xml:id="p010_r_1_tl_30"/>lo pensai allora improvvisamente all'uomo dell'edicola
+               che mi <lb xml:id="p010_r_1_tl_31"/>aveva promesso una soluzione. Poi pensai al
+               portiere che m'aveva <lb xml:id="p010_r_1_tl_32"/>tanto umiliata per potermi vedere
+               come lui voleva. </p>
+            <p><lb xml:id="p010_r_1_tl_33"/>Ed ora questo uomo era davanti a me, ed ancora cercavo
+               di <lb xml:id="p010_r_1_tl_34"/>ricordarmi, ma era inutile. </p>
+            <p><lb xml:id="p010_r_1_tl_35"/>Nulla potevo fare, se non tentare un'altra volta di
+               uscire di me, <lb xml:id="p010_r_1_tl_36"/>era questo che dovevo fare ora, sulla
+               nuova strada, anche se sempre <lb xml:id="p010_r_1_tl_37"/>avesse dovuto essere
+               inutilmente. </p>
+            <head rendition="#c"><lb xml:id="p010_r_1_tl_38"/>IV. Mio racconto </head>
+            <p><lb xml:id="p010_r_1_tl_39"/>Io vorrei abitare in una città dove ci fossero tanti
+               vicoli alti e <lb xml:id="p010_r_1_tl_40"/>stretti di case scure e sbiadite, e dove
+               le porte sempre chiuse diffon<pc>-</pc>
+               <lb xml:id="p010_r_1_tl_41" break="no"/>dessero nell'aria un rombo attenuato, fatto
+               di un lontano e definitivo <lb xml:id="p010_r_1_tl_42"/>sbattere su di un gran
+               silenzio. E vorrei che ci fossero altri vicoli, <lb xml:id="p010_r_1_tl_43"/>più
+               chiari ma ugualmente deserti, dove le porte pure chiuse non <lb
+                  xml:id="p010_r_1_tl_44"/>abbiano mai conosciuto un aprirsi ed un chiudersi forte e
+               rumoroso <lb xml:id="p010_r_1_tl_45"/>sul buio, ma solo un silenzioso schiudersi al
+               sole e d'un tratto come <lb xml:id="p010_r_1_tl_46"/>una morte piana, attesa, lenta e
+               piena di pace. </p>
+            <p><lb xml:id="p010_r_1_tl_47"/>E me ne andrei allora per questi vicoli, e guarderei
+               quelle porte <lb xml:id="p010_r_1_tl_48"/>e tutte le studierei. Ed in quelli scuri,
+               pieni dello sbattere lontano</p>
+            <pb xml:id="p011" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_009.tif"
+               n="186"/>
+            <p>
+               <lb xml:id="p011_r_tl_1"/>raccolto in un rombo silenzioso e pieno di un vigore
+               incosciente e <lb xml:id="p011_r_tl_2"/>triste, starei ad attendere nelle sere e
+               nelle notti di vento e di brividi <lb xml:id="p011_r_tl_3"/>di pioggia. Non so bene
+               che cosa attenderei, e nemmeno so il perché <lb xml:id="p011_r_tl_4"/>di questa
+               intenzione. Ma forse mi sembrerebbe che quei vicoli sono <lb xml:id="p011_r_tl_5"
+               />fatti per questo: nel loro lontano, tragico sbattere delle porte ormai <lb
+                  xml:id="p011_r_tl_6"/>chiuse è necessario che qualcuno attenda, e forse cammini
+               davanti <lb xml:id="p011_r_tl_7"/>a quegli usci deserti, innanzi ed indietro, nel
+               gran vento che pian<pc>-</pc>
+               <lb xml:id="p011_r_tl_8" break="no"/>gerebbe nelle case ma non sulla strada, troppo
+               stretta e profonda, <lb xml:id="p011_r_tl_9"/>nell'acqua tristemente luccicante in
+               raffiche trasversali che investis<pc>-</pc>
+               <lb xml:id="p011_r_tl_10" break="no"/>sero le porte, ora quelle di qua ed ora quelle
+               di là, con un amaro <lb xml:id="p011_r_tl_11"/>crepitare molle che si sciogliesse in
+               uno scorrere dolce ed aderente <lb xml:id="p011_r_tl_12"/>che formi pozze sotto alla
+               fessura scura delle soglie. </p>
+            <p><lb xml:id="p011_r_tl_13"/>E negli altri vicoli me ne andrei ad attendere nei giorni
+               di sole, <lb xml:id="p011_r_tl_14"/>non troppo caldi ma luminosi, e mi fermerei in un
+               punto in cui fosse <lb xml:id="p011_r_tl_15"/>possibile vedere quella grande, densa
+               luce penetrare faticosamente <lb xml:id="p011_r_tl_16"/>fra le case abbacinate
+               gravida di forza, e premere su quelle porte <lb xml:id="p011_r_tl_17"/>chiuse che si
+               gonfierebbero piene di minaccia, lentamente. </p>
+            <p><lb xml:id="p011_r_tl_18"/>E non sarebbe tutto, questo, perché io non saprei chi
+               abita nelle <lb xml:id="p011_r_tl_19"/>case di questi vicoli. Ma che ci abiti
+               qualcuno, questo sì, lo saprei, <lb xml:id="p011_r_tl_20"/>perché le porte tutte
+               s'eran chiuse su qualcuno e non in faccia a <lb xml:id="p011_r_tl_21"/>qualcuno. </p>
+            <p><lb xml:id="p011_r_tl_22"/>I vetri poveri e scuri dei vicoli incassati sanno d'una
+               misera vita <lb xml:id="p011_r_tl_23"/>fra grigio e fiori strani sulle pareti
+               sbiadite delle stanze in penombra. <lb xml:id="p011_r_tl_24"/>Sanno di scale
+               irregolari e screpolate per cui è difficile e doloroso <lb xml:id="p011_r_tl_25"
+               />scendere e di anditi lunghi ed umidi nei quali si ha paura di cammi<pc>-</pc>
+               <lb xml:id="p011_r_tl_26" break="no"/>nare perché le maniglie allentate delle porte
+               d'uscita, in fondo, <lb xml:id="p011_r_tl_27"/>potrebbero restare nella mano di chi
+               le preme per uscire, nell'ango<pc>-</pc>
+               <lb xml:id="p011_r_tl_28" break="no"/>scia di trovare di là un altro andito ancora,
+               pieno di muffa e di mac<pc>-</pc>
+               <lb xml:id="p011_r_tl_29" break="no"/>chie verdi sui muri come impronte livide. lo
+               dovrei camminare per <lb xml:id="p011_r_tl_30"/>quei vicoli nelle sere e nelle notti
+               di pioggia e di vento perché coloro <lb xml:id="p011_r_tl_31"/>che scendessero le
+               scale – e sarebbero molti, forse tutti nella dispe<pc>-</pc>
+               <lb xml:id="p011_r_tl_32" break="no"/>razione delle ore in cui si sentono le voci del
+               vento ed il piangere <lb xml:id="p011_r_tl_33"/>dell'acqua – e si soffermassero al
+               principio dell'andito rabbrivi<pc>-</pc>
+               <lb xml:id="p011_r_tl_34" break="no"/>dendo nel dubbio, sentissero il mio passo
+               tranquillo e regolare, e <lb xml:id="p011_r_tl_35"/>sapessero che al di là della
+               porta c'è il vicolo, e che se anche le <lb xml:id="p011_r_tl_36"/>maniglie allentate
+               dovessero distaccarsi senza rumore quando le pren<pc>-</pc>
+               <lb xml:id="p011_r_tl_37" break="no"/>dessero in mano, ci sarebbe qualcuno a
+               raccogliere quella che cade <lb xml:id="p011_r_tl_38"/>al di fuori, e potrebbe
+               spingere i battenti che si aprirebbero sull'an<pc>-</pc>
+               <lb xml:id="p011_r_tl_39" break="no"/>dito, che è come una vallata riempita di echi
+               che giungano roto<pc>-</pc>
+               <lb xml:id="p011_r_tl_40" break="no"/>lando dal fondo. </p>
+            <p><lb xml:id="p011_r_tl_41"/>E nei vicoli chiari e tranquilli, soffocati di troppo
+               sole, so pure <lb xml:id="p011_r_tl_42"/>che le case sarebbero abitate, perché dietro
+               alle persiane le finestre <lb xml:id="p011_r_tl_43"/>sono aperte sull'ombra fresca,
+               non troppo scura sui muri lisci e <lb xml:id="p011_r_tl_44"/>chiari delle stanze. </p>
+            <p><lb xml:id="p011_r_tl_45"/>Ma là le scale sono di legno, e suonano di vuoto quando il
+               piede <lb xml:id="p011_r_tl_46"/>ci si posa per scenderle. E nei giorni di sole si sa
+               che quelle porte <lb xml:id="p011_r_tl_47"/>che non sono mai state sbattute e che
+               sempre sembravano salde, <lb xml:id="p011_r_tl_48"/>sono gonfiate dal sole luminoso e
+               potrebbero spaccarsi sul vuoto del<pc>-</pc>
+               <lb xml:id="p011_r_tl_49" break="no"/>l'andito in cui giocano le fessure di luce,
+               malignamente. E se scop<pc>-</pc>
+               <lb xml:id="p011_r_tl_50" break="no"/>piassero, coloro che si trovano sulle scale che
+               assorbono ogni passo <lb xml:id="p011_r_tl_51"/>sarebbero investiti dalla fiumana di
+               luce che si urterebbe minacciosa <lb xml:id="p011_r_tl_52"/>di tuoni per salirle. E
+               allora si soffermano in cima alle scale, ed <lb xml:id="p011_r_1_tl_1"/>ascoltano, e
+               non osano scendere oppure se provano dopo pochi gra<pc>-</pc>
+               <lb xml:id="p011_r_1_tl_2" break="no"/>dini tornano indietro perché il vuoto in cui
+               il rumore dei loro passi <lb xml:id="p011_r_1_tl_3"/>affonda è grandissimo ed
+               assetato di rumore, alleato perfidamente <lb xml:id="p011_r_1_tl_4"/>con la luce di
+               fuori che diventerà sonora, scoppiando nelle case e <lb xml:id="p011_r_1_tl_5"
+               />urtandosi in pesanti masse trasparenti. </p>
+            <p><lb xml:id="p011_r_1_tl_6"/>Ed in questi vicoli il mio passo non sarebbe di nessuna
+               utilità. <lb xml:id="p011_r_1_tl_7"/>Nessuno potrebbe udirlo, perché la cima delle
+               scale è troppo lon<pc>-</pc>
+               <lb xml:id="p011_r_1_tl_8" break="no"/>tana, e nel momento dell'immenso frastuono che
+               potrebbe venire <lb xml:id="p011_r_1_tl_9"/>nessuno lo udirebbe nemmeno attraverso le
+               porte spaccate. Ma dovrei <lb xml:id="p011_r_1_tl_10"/>essere lì ugualmente in
+               attesa, e pensare ad una parola che forse <lb xml:id="p011_r_1_tl_11"/>potrei dire e
+               che attraversasse sottile come uno spillo tutto quel <lb xml:id="p011_r_1_tl_12"
+               />rotolìo teso e gonfio nel momento opportuno. Ecco, basterebbe una <lb
+                  xml:id="p011_r_1_tl_13"/>parola, sicuramente, ed io l'avrei detta e la luce densa
+               si scioglierebbe <lb xml:id="p011_r_1_tl_14"/>improvvisamente nel nulla, e solo la
+               parola rimarrebbe sospesa nel<pc>-</pc>
+               <lb xml:id="p011_r_1_tl_15" break="no"/>l'aria, allargata, a vaste lettere separate,
+               perché sarebbe giunta dap<pc>-</pc>
+               <lb xml:id="p011_r_1_tl_16" break="no"/>pertutto e poi si sarebbe svaporata lontano,
+               rapidamente, senza che <lb xml:id="p011_r_1_tl_17"/>nessuno se la ricordasse, nemmeno
+               io, ancora ferma in mezzo alla <lb xml:id="p011_r_1_tl_18"/>via, muta e compresa nel
+               grande dubbio di aver detto qualche cosa, <lb xml:id="p011_r_1_tl_19"/>e come in
+               ascolto ancora. </p>
+            <p><lb xml:id="p011_r_1_tl_20"/>Per questo avrei dovuto attendere. </p>
+            <p><lb xml:id="p011_r_1_tl_21"/>E vorrei poterlo fare, vorrei che ci fossero questi
+               vicoli. Vorrei <lb xml:id="p011_r_1_tl_22"/>che fossero proprio così, perché nei
+               momenti di maggiore solitudine, <lb xml:id="p011_r_1_tl_23"/>che sono le sere e le
+               notti di pioggia e di vento ed i pomeriggi di <lb xml:id="p011_r_1_tl_24"/>sole forte
+               e prepotente, potessi mettere questa solitudine al servizio <lb
+                  xml:id="p011_r_1_tl_25"/>di qualcuno. Perché non posso sfuggirla, ed a me non
+               serve nei luoghi <lb xml:id="p011_r_1_tl_26"/>dove sono io – o anche se mi servisse
+               non saprei più tardi ricordar<pc>-</pc>
+               <lb xml:id="p011_r_1_tl_27" break="no"/>mene, e così me la porto attorno non davanti
+               a porte chiuse, ma <lb xml:id="p011_r_1_tl_28"/>chiusa dentro di me. </p>
+            <p rendition="#right"><lb xml:id="p011_r_1_tl_29"/><hi rendition="#b">Alice
+               Ceresa</hi></p>
+            <p><lb xml:id="p011_r_1_tl_30"/><hi rendition="#i">(Continua)</hi></p>
+            <pb xml:id="p012" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_010.tif"/>
+            <p>
+               <lb xml:id="p003_l"/>{{SKIP Non trascritto intenzionalmente (motive: last page of the
+               journal)}}</p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-08-26T16:31:45.083604127Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

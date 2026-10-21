@@ -1,21 +1,4 @@
 export type TPlacesGroups =
 	| 'places_cat_1'
 	| 'places_cat_2'
-	| 'places_cat_3'
-	| 'places_cat_4'
-	| 'places_cat_5'
-	| 'places_cat_6'
-	| 'places_cat_7'
-	| 'places_cat_8'
-	| 'places_cat_9'
-	| 'places_cat_10'
-	| 'places_cat_11'
-	| 'places_cat_12'
-	| 'places_cat_13'
-	| 'places_cat_14'
-	| 'places_cat_15'
-	| 'places_cat_16'
-	| 'places_cat_17'
-	| 'places_cat_18'
-	| 'places_cat_19'
-	| 'places_cat_20';
+	| 'places_cat_3';

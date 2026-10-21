@@ -5,7 +5,7 @@
 
 	let { docType }: { docType: TDocTypes } = $props();
 
-	const navEntries: TDocTypes[] = ['smallforms', 'longforms', 'letters', 'photos'];
+	const navEntries: TDocTypes[] = ['posthum', 'unpublished', 'published'];
 </script>
 
 <nav

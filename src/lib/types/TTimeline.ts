@@ -1,6 +1,6 @@
-import { type TSmallformsKeys } from '$lib/types/documents/TSmallformsKeys';
-import { type TLettersKeys } from '$lib/types/documents/TLettersKeys';
-import { type TLongformsKeys } from '$lib/types/documents/TLongformsKeys';
+import { type TUnpublishedKeys } from '$lib/types/documents/TUnpublishedKeys';
+import { type TPosthumKeys } from '$lib/types/documents/TPosthumKeys';
+import { type TPublishedKeys } from '$lib/types/documents/TPublishedKeys';
 
 export type TTimelineEntry = {
 	meta: {
@@ -15,7 +15,7 @@ export type TTimelineEntry = {
 		event: string;
 		textWork: string;
 		textPub: string;
-		work_id: TSmallformsKeys | TLongformsKeys | TLettersKeys;
+		work_id: TUnpublishedKeys | TPublishedKeys | TPosthumKeys;
 		note: string;
 	};
 };

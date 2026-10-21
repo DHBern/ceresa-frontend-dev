@@ -27,7 +27,7 @@ jobs:
       - name: Build
         env:
           # BASE_PATH: '/${{ github.event.repository.name }}'
-          BASE_PATH: '/frontend'
+          BASE_PATH: '/ceresa-frontend-dev'
           NODE_OPTIONS: '--max_old_space_size=9000'
         run: |
           pnpm run build

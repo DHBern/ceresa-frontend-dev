@@ -15,9 +15,9 @@ import { type TBiblsGroups } from './TBiblsGroups';
 import { type TKeywordsGroups } from './TKeywordsGroups';
 
 // From Documents
-import { type TSmallformsKeys } from '$lib/types/documents/TSmallformsKeys';
-import { type TLettersKeys } from '$lib/types/documents/TLettersKeys';
-import { type TLongformsKeys } from '$lib/types/documents/TLongformsKeys';
+import { type TUnpublishedKeys } from '$lib/types/documents/TUnpublishedKeys';
+import { type TPosthumKeys } from '$lib/types/documents/TPosthumKeys';
+import { type TPublishedKeys } from '$lib/types/documents/TPublishedKeys';
 
 // --- Register -------------------------------------------------------
 export type TRegister = {
@@ -34,13 +34,14 @@ export type TRegister = {
 				firstname: string | null;
 				lastname: string | null;
 				nameVariants: string[];
+				qid?: string | null;
 				gndNumber?: string | null;
 				dateBirth: string | null;
 				dateDeath: string | null;
 				type: TPeopleGroups | null;
 				orgIds: TOrgsKeys[] | null;
 				note: string | null;
-				docs?: (TSmallformsKeys | TLettersKeys | TLongformsKeys)[];
+				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
 			};
 		};
 		places: {
@@ -54,16 +55,7 @@ export type TRegister = {
 				coords: number[] | null;
 				country: string | null;
 				note: string | null;
-				docs?: (TSmallformsKeys | TLettersKeys | TLongformsKeys)[];
-			};
-		};
-		events: {
-			[key in TEventsKeys]: {
-				name: string | null;
-				type: TEventsGroups | null;
-				date?: { from: string | null; to: string | null };
-				note: string | null;
-				docs?: (TSmallformsKeys | TLettersKeys | TLongformsKeys)[];
+				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
 			};
 		};
 		orgs: {
@@ -73,7 +65,16 @@ export type TRegister = {
 				gndNumber?: string | null;
 				type: TOrgsGroups | null;
 				note: string | null;
-				docs?: (TSmallformsKeys | TLettersKeys | TLongformsKeys)[];
+				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
+			};
+		};
+		events: {
+			[key in TEventsKeys]: {
+				name: string | null;
+				type: TEventsGroups | null;
+				date?: { from: string | null; to: string | null };
+				note: string | null;
+				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
 			};
 		};
 		bibls: {
@@ -84,7 +85,7 @@ export type TRegister = {
 				pubDate: string | null;
 				gndNumber?: string | null;
 				note?: string | null;
-				docs?: (TSmallformsKeys | TLettersKeys | TLongformsKeys)[];
+				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
 			};
 		};
 		keywords: {
@@ -93,7 +94,7 @@ export type TRegister = {
 				type: TKeywordsGroups | null;
 				gndNumber?: string | null;
 				note?: string | null;
-				docs?: (TSmallformsKeys | TLettersKeys | TLongformsKeys)[];
+				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
 			};
 		};
 	};

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_1-1" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_1-1#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Caino</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-b/1-1</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="it"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_1/A-1-b_1-1/A-1-b_1-1_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-1_001.tif"/>
+            <p>
+               <lb xml:id="p001_r_tl_1"/><rs type="person" key="person_0016" xml:id="r1">Caino</rs>
+            </p>
+            <p><lb/>Dalle nostre parti si vive in modo precario.<del> Voglio dire che si</del> Si
+                  <lb xml:id="p001_r_tl_3"/>sa sempre come si esce di casa, ma non mai come vi si
+               ritorna. Si <lb xml:id="p001_r_tl_4"/>conoscono i propri connotati ma non si sa come
+               si trasformeranno <lb xml:id="p001_r_tl_5"/>né che cosa dive<del>n</del>nteranno e a
+               che cosa ci faranno assomigliare og<pc>-</pc>
+               <lb xml:id="p001_r_tl_6" break="no"/>gi stesso o domani e neanche per quel che di noi
+               è rimasto di <lb xml:id="p001_r_tl_7"/>ieri o chissà, anche di prima. Per un futuro
+               più lontano non c'e <lb xml:id="p001_r_tl_8"/>neanche da parlarne: è peggio che
+               un'incognita: è la totale <lb xml:id="p001_r_tl_9"/>impossibilità a prevedere. <lb
+                  xml:id="p001_r_tl_10"/>Dalle nostre parti sembrerebbe dunque che si viva alla
+               giornata; <lb xml:id="p001_r_tl_11"/>ma non è così semplice. Noi abbiamo ogni
+               possibilità di vivere co<pc>-</pc>
+               <lb xml:id="p001_r_tl_12" break="no"/>me chiunque e non si può a priori escludere che
+               non lo facciamo. <lb xml:id="p001_r_tl_13"/>Noi amiamo e odiamo come tutti, e fra
+               questi due estremi facciamo <lb xml:id="p001_r_tl_14"/>una infinita varietà di altre
+               cose, suppongo appunto come gli <lb xml:id="p001_r_tl_15"/>altri. Infliggiamo e
+               recepiamo come qualsiasi sia pure magari <lb xml:id="p001_r_tl_16"/>diverso organismo
+               vivente, perché immagino che questa sia comun<pc>-</pc>
+               <lb xml:id="p001_r_tl_17" break="no"/>que la qualità della vita, sulla quale non
+               vorrei stare a discu<pc>-</pc>
+               <lb xml:id="p001_r_tl_18" break="no"/>tere altrimenti e diversamente, magari come
+               siete abituati a farlo <lb xml:id="p001_r_tl_19"/>voi: perché a noi questa è l'unica
+               utilità della vita che ci sia <lb xml:id="p001_r_tl_20"/>nota e con la quale siamo in
+               grado di arrabattarci. Il resto non <lb xml:id="p001_r_tl_21"/>ci è noto e non potrei
+               quindi nemmeno starne a parlare. Si potreb<pc>-</pc>
+               <lb xml:id="p001_r_tl_22" break="no"/>be forse dire che noi siamo degli organismi
+               molto elementari, per<pc>-</pc>
+               <lb xml:id="p001_r_tl_23" break="no"/>lomeno se comparati con voi. E fin qui potremmo
+               anche tutti es<pc>-</pc>
+               <lb xml:id="p001_r_tl_24" break="no"/>sere d'accordo. Ma purtuttavia, in quanto
+               organismi, abbiamo<add place="inline" hand="#hw">,</add>
+               <del>una</del><lb xml:id="p001_r_tl_25"/><del>nostra complessitç<add place="over"
+                     >à</add></del> come è logico, la nostra infinitesimale com<pc>-</pc>
+               <lb xml:id="p001_r_tl_26" break="no"/>plessità.</p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-06-11T06:13:24.604464989Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

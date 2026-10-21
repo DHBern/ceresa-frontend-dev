@@ -25,84 +25,28 @@
 			},
 			"groups": {
 				"people_cat_1": {
-					"label_singular": "Archäolog:in",
-					"label_plural": "Archäolog:innen"
+					"label_singular": "Categoria a",
+					"label_plural": "Categoria a"
 				},
 				"people_cat_2": {
-					"label_singular": "Autor:in",
-					"label_plural": "Autor:innen"
+					"label_singular": "Categoria b",
+					"label_plural": "Categoria b"
 				},
 				"people_cat_3": {
-					"label_singular": "Bekannte:r",
-					"label_plural": "Bekannte"
+					"label_singular": "Categoria c",
+					"label_plural": "Categoria c"
 				},
 				"people_cat_4": {
-					"label_singular": "Bergsteiger:in",
-					"label_plural": "Bergsteiger:innen"
+					"label_singular": "scrittore/scrittrice",
+					"label_plural": "scrittori/scrittrici"
 				},
 				"people_cat_5": {
-					"label_singular": "Biblische Figur",
-					"label_plural": "Biblische Figuren"
+					"label_singular": "personaggio letterario",
+					"label_plural": "personaggi letterari"
 				},
 				"people_cat_6": {
-					"label_singular": "Familienangehörige:r",
-					"label_plural": "Familienangehörige"
-				},
-				"people_cat_7": {
-					"label_singular": "Fotograf:in",
-					"label_plural": "Fotograf:innen"
-				},
-				"people_cat_8": {
-					"label_singular": "Freund:in",
-					"label_plural": "Freund:innen"
-				},
-				"people_cat_9": {
-					"label_singular": "Gottheit",
-					"label_plural": "Gottheiten"
-				},
-				"people_cat_10": {
-					"label_singular": "Historische Person (ohne persönliche Bekanntschaft)",
-					"label_plural": "Historische Personen (ohne persönliche Bekanntschaft)"
-				},
-				"people_cat_11": {
-					"label_singular": "Künstler:in",
-					"label_plural": "Künstler:innen"
-				},
-				"people_cat_12": {
-					"label_singular": "Mitarbeiter:in Medium",
-					"label_plural": "Mitarbeiter:innen Medium"
-				},
-				"people_cat_13": {
-					"label_singular": "Musiker:in",
-					"label_plural": "Musiker:innen"
-				},
-				"people_cat_14": {
-					"label_singular": "rassistische Bezeichnung",
-					"label_plural": "rassistische Bezeichnungen"
-				},
-				"people_cat_15": {
-					"label_singular": "Redakteur:in",
-					"label_plural": "Redakteur:innen"
-				},
-				"people_cat_16": {
-					"label_singular": "Regisseur:in",
-					"label_plural": "Regisseur:innen"
-				},
-				"people_cat_17": {
-					"label_singular": "Sagengestalt",
-					"label_plural": "Sagengestalten"
-				},
-				"people_cat_18": {
-					"label_singular": "Schauspieler:in",
-					"label_plural": "Schauspieler:innen"
-				},
-				"people_cat_19": {
-					"label_singular": "Schwarzenbach-Forscher:in",
-					"label_plural": "Schwarzenbach-Forscher:innen"
-				},
-				"people_cat_20": {
-					"label_singular": "Verleger:in",
-					"label_plural": "Verleger:innen"
+					"label_singular": "personaggo biblico",
+					"label_plural": "personaggi biblici"
 				}
 			}
 		},
@@ -124,80 +68,16 @@
 			},
 			"groups": {
 				"places_cat_1": {
-					"label_singular": "Berg",
-					"label_plural": "Berge"
+					"label_singular": "Città",
+					"label_plural": "Città"
 				},
 				"places_cat_2": {
-					"label_singular": "Bundesstaat oder Kanton",
-					"label_plural": "Bundesstaaten oder Kantone"
+					"label_singular": "Commune",
+					"label_plural": "Commune"
 				},
 				"places_cat_3": {
-					"label_singular": "Gebirge",
-					"label_plural": "Gebirge"
-				},
-				"places_cat_4": {
-					"label_singular": "Gebäude",
-					"label_plural": "Gebäude"
-				},
-				"places_cat_5": {
-					"label_singular": "Gewässer",
-					"label_plural": "Gewässer"
-				},
-				"places_cat_6": {
-					"label_singular": "Gletscher",
-					"label_plural": "Gletscher"
-				},
-				"places_cat_7": {
-					"label_singular": "Höhle",
-					"label_plural": "Höhlen"
-				},
-				"places_cat_8": {
-					"label_singular": "Insel",
-					"label_plural": "Inseln"
-				},
-				"places_cat_9": {
-					"label_singular": "Land",
-					"label_plural": "Länder"
-				},
-				"places_cat_10": {
-					"label_singular": "Militärische Anlage",
-					"label_plural": "Militärische Anlagen"
-				},
-				"places_cat_11": {
-					"label_singular": "Monument",
-					"label_plural": "Monumente"
-				},
-				"places_cat_12": {
-					"label_singular": "Park",
-					"label_plural": "Parks"
-				},
-				"places_cat_13": {
-					"label_singular": "Pass",
-					"label_plural": "Pässe"
-				},
-				"places_cat_14": {
-					"label_singular": "Region",
-					"label_plural": "Regionen"
-				},
-				"places_cat_15": {
-					"label_singular": "Ruine/Ausgrabung",
-					"label_plural": "Ruinen/Ausgrabungen"
-				},
-				"places_cat_16": {
-					"label_singular": "Siedlung",
-					"label_plural": "Siedlungen"
-				},
-				"places_cat_17": {
-					"label_singular": "Staudamm",
-					"label_plural": "Staudämme"
-				},
-				"places_cat_18": {
-					"label_singular": "Strasse",
-					"label_plural": "Strassen"
-				},
-				"places_cat_19": {
-					"label_singular": "Wüste",
-					"label_plural": "Wüsten"
+					"label_singular": "Stato",
+					"label_plural": "Stati"
 				}
 			}
 		},
@@ -212,16 +92,7 @@
 				"note": { "label": "Bemerkungen" },
 				"docs": { "label": "Verknüpfte Dokumente" }
 			},
-			"groups": {
-				"events_cat_1": {
-					"label_singular": "Event",
-					"label_plural": "Events"
-				},
-				"events_cat_2": {
-					"label_singular": "Reise",
-					"label_plural": "Reisen"
-				}
-			}
+			"groups": {}
 		},
 		"orgs": {
 			"register_name": "Organisationsregister",
@@ -237,56 +108,12 @@
 			},
 			"groups": {
 				"orgs_cat_1": {
-					"label_singular": "Bar/Klub/Lokal",
-					"label_plural": "Bars/Klubs/Lokale"
+					"label_singular": "Categoria a",
+					"label_plural": "Categoria a"
 				},
 				"orgs_cat_2": {
-					"label_singular": "Hochschule",
-					"label_plural": "Hochschulen"
-				},
-				"orgs_cat_3": {
-					"label_singular": "Hotel",
-					"label_plural": "Hotels"
-				},
-				"orgs_cat_4": {
-					"label_singular": "Klinik",
-					"label_plural": "Kliniken"
-				},
-				"orgs_cat_5": {
-					"label_singular": "Periodikum",
-					"label_plural": "Periodika"
-				},
-				"orgs_cat_6": {
-					"label_singular": "Politische Organisation",
-					"label_plural": "Politische Organisationen"
-				},
-				"orgs_cat_7": {
-					"label_singular": "Religiöse Organisation",
-					"label_plural": "Religiöse Organisationen"
-				},
-				"orgs_cat_8": {
-					"label_singular": "Sammelband",
-					"label_plural": "Sammelbände"
-				},
-				"orgs_cat_9": {
-					"label_singular": "Schule",
-					"label_plural": "Schulen"
-				},
-				"orgs_cat_10": {
-					"label_singular": "Theater",
-					"label_plural": "Theater"
-				},
-				"orgs_cat_11": {
-					"label_singular": "Verlag",
-					"label_plural": "Verlage"
-				},
-				"orgs_cat_12": {
-					"label_singular": "Wirtschaftliche Organisation",
-					"label_plural": "Wirtschaftliche Organisationen"
-				},
-				"orgs_cat_13": {
-					"label_singular": "Öffentliche Einrichtung",
-					"label_plural": "Öffentliche Einrichtungen"
+					"label_singular": "Casa editrice",
+					"label_plural": "Case editrici"
 				}
 			}
 		},

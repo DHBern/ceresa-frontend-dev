@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_1-2" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_1-2#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>La strega</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-b/1-2</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="it"/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_1/A-1-b_1-2/A-1-b_1-2_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_001.tif"
+               n="1"/>
+            <ab>
+               <fw type="pageNum" place="topright">1</fw>
+            </ab>
+            <head><lb xml:id="p001_r_tl_1"/>LA STREGA </head>
+            <p><lb xml:id="p001_l"/>La strega abitava <del>da anni</del> nella casa del vecchio
+               parco. <lb xml:id="p001_r_tl_2"/>Una volta in quel parco stava un palazzo; poi esso
+                  <lb xml:id="p001_r_tl_3"/>era passato in possesso della città la quale intendeva
+                  <lb xml:id="p001_r_tl_4"/>costruirvi una scuola femminile. Perché era situato <lb
+                  xml:id="p001_r_tl_5"/>nel mezzo della città in un quartiere però tranquillo. <lb
+                  xml:id="p001_r_tl_6"/>Ma il progetto rimase a metà, lasciando il parco in <lb
+                  xml:id="p001_r_tl_7"/>disordine ed un appezzamento di terra, sassi e sterpi <lb
+                  xml:id="p001_r_tl_9"/>al posto del palazzo demolito. Quest'appezzamento <lb
+                  xml:id="p001_r_tl_11"/>cosparso qua e là di qualche rossiccio frammento <lb
+                  xml:id="p001_r_tl_12"/>di mattone, fu coltivato dalla gente del quartiere <lb
+                  xml:id="p001_r_tl_13"/>a orto domestico. Rimase anche, testimone muto <lb
+                  xml:id="p001_r_tl_14"/>dell'umana indifferenza, la casetta del giardiniere <lb
+                  xml:id="p001_r_tl_15"/>intatta nel folto degli alti alberi sul fondo; <lb
+                  xml:id="p001_r_tl_16"/>la grande cancellata del parco era arruginita <lb
+                  xml:id="p001_r_tl_17"/>nei cardini, aperta. </p>
+            <p><lb xml:id="p001_r_tl_18"/>Nessuno del quartiere si conosceva, sebbene sempre <lb
+                  xml:id="p001_r_tl_22"/>la stessa gente si incontrasse lungo i muretti <lb
+                  xml:id="p001_r_tl_20"/>di cinta sui marciapiedi deserti. Era un quartiere <lb
+                  xml:id="p001_r_tl_26"/>di villette, e la gente, pur di serbarsi l'illusione <lb
+                  xml:id="p001_r_tl_27"/>di vivere in campagna, rinunciava perfino al <lb
+                  xml:id="p001_r_tl_29"/>pettegolezzo. </p>
+            <p><lb xml:id="p001_r_tl_30"/>Infatti quest'illusione coloriva di se[?] tutta l'aria <lb
+                  xml:id="p001_r_tl_33"/>del quartiere; ma risiedeva profondamente <lb
+                  xml:id="p001_r_tl_36"/>proprio nella casetta del parco, nascosta alla <lb
+                  xml:id="p001_r_tl_37"/>vista sin dall'entrata dai fitti rami spioventi <lb
+                  xml:id="p001_r_tl_39"/>degli alberi ai due lati del sentiero che <lb
+                  xml:id="p001_r_tl_43"/>s'apriva dietro il cancello. Il segreto della <lb
+                  xml:id="p001_r_tl_45"/>calma del quartiere risiedeva in quell'angolo <lb
+                  xml:id="p001_r_tl_46"/>remoto. Ma nessuno lo seppe mai fino al giorno <lb
+                  xml:id="p001_r_tl_47"/>in cui tutto mutò. Ma quel giorno è ancora lontano.</p>
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_002.tif"
+               n="2"/>
+            <ab>
+               <fw type="pageNum" place="topright">2</fw>
+            </ab>
+            <p><lb xml:id="p002_r_tl_2"/>La strega abitava, sola, in quella casa fuori del mondo.
+                  <lb xml:id="p002_r_tl_4"/>Era una donna di mezza età e di ancor grande <lb
+                  xml:id="p002_r_tl_5"/>bellezza, a cui un passato <del>tempres</del> tempestoso
+               aveva <lb xml:id="p002_r_tl_7"/>abbandonato tracce ma non scorie lungo il cammino.
+                  <lb xml:id="p002_r_tl_10"/>Essa viveva nell'unica e difficile compagnia di <lb
+                  xml:id="p002_r_tl_12"/>queste tracce le sue giornate segrete. </p>
+            <p><lb xml:id="p002_r_tl_13"/>L'unica cosa che essa avesse a conoscenza del mondo <lb
+                  xml:id="p002_r_tl_14"/>era un amico, un ragazzo molto giovane e molto <lb
+                  xml:id="p002_r_tl_15"/>sfortunato, che la sventura aveva reso più duro e <lb
+                  xml:id="p002_r_tl_16"/>più chiuso di quanto la sua natura stessa sarebbe <lb
+                  xml:id="p002_r_tl_17"/>stata in grado di renderlo. Era, questo amico, di una <lb
+                  xml:id="p002_r_tl_18"/>grande indifferenza per ogni cosa vivente ed
+                  inani<pc>-</pc>
+               <lb xml:id="p002_r_tl_19" break="no"/>mata, e si chiamava Claudio. Solo la sua
+               bellezza <lb xml:id="p002_r_tl_20"/>gli forniva la ragione per vivere. </p>
+            <p><lb xml:id="p002_r_tl_22"/>Questo, la strega, lo sapeva bene. Ed era perciò <lb
+                  xml:id="p002_r_tl_23"/>tranquilla al suo proposito. Sapeva che quando <lb
+                  xml:id="p002_r_tl_25"/>la bellezza di Claudio fosse tramontata, nulla <lb
+                  xml:id="p002_r_tl_26"/>più sarebbe riuscito a tenerlo in vita, e che si <lb
+                  xml:id="p002_r_tl_27"/>sarebbe allora rapidamente spacciato da solo, <lb
+                  xml:id="p002_r_tl_28"/>di propria iniziativa. Forse andando a languire <lb
+                  xml:id="p002_r_tl_32"/>in una prigione o dandosi la morte per la <lb
+                  xml:id="p002_r_tl_33"/>propria mano. Poiché la strega, fra le altre <lb
+                  xml:id="p002_r_tl_34"/>cose che sapeva, sapeva anche questo: che <lb
+                  xml:id="p002_r_tl_36"/>nulla vive senza una giustificazione, e questa <lb
+                  xml:id="p002_r_tl_37"/>giustificazione può essere sempre solo una <lb
+                  xml:id="p002_r_tl_40"/>ragione positiva. <del>Essa si teneva quindi Claudio <lb
+                     xml:id="p002_r_tl_43"/>con ogni tranquillità, e viveva la propria <lb
+                     xml:id="p002_r_tl_46"/>vita senza nessun rimorso lontano da lui e <lb
+                     xml:id="p002_r_tl_48"/>senza il suo concorso. Inutile dire che a Claudio <lb
+                     xml:id="p002_l_1"/>stesso, di questo, non importava nulla.</del></p>
+            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_003.tif"
+               n="3"/>
+            <ab>
+               <fw type="pageNum" place="topright">3</fw>
+            </ab>
+            <p><lb xml:id="p003_r_tl_1"/>Sapeva anche che qualcuno può apparentemente <lb
+                  xml:id="p003_r_tl_2"/>continuare a vivere quando in verità è già morto <lb
+                  xml:id="p003_r_tl_3"/>ed il suo spirito da lungo tempo abbia <add place="above"
+                  >lasciato</add><del> abbandonato</del>
+               <lb xml:id="p003_r_tl_5"/>un corpo abbandonato a sé stesso. E non è forse <lb
+                  xml:id="p003_r_tl_6"/>questo essere morti: un corpo abbandonato a sé <lb
+                  xml:id="p003_r_tl_7"/>stesso, cioè alle proprie leggi non rette più da <lb
+                  xml:id="p003_r_tl_8"/>nessun soffio, così come un corpo abbandonato <lb
+                  xml:id="p003_r_tl_9"/>nella tomba genera da sé i vermi che lo <lb
+                  xml:id="p003_r_tl_10"/>corroderanno e dissolveranno? </p>
+            <p><lb xml:id="p003_r_tl_11"/>La strega sapeva tutto questo ed altro ancora, <lb
+                  xml:id="p003_r_tl_12"/>e per la via riconosceva al fiuto coloro che <lb
+                  xml:id="p003_r_tl_15"/>già erano morti, coloro che, lugubri cadaveri, <lb
+                  xml:id="p003_r_tl_16"/>più lugubri di carogne fisiche, portavano <lb
+                  xml:id="p003_r_tl_18"/>a spasso un triste non più essere, una penosa <lb
+                  xml:id="p003_r_tl_19"/>illusione. </p>
+            <p><lb xml:id="p003_r_tl_20"/>Essa sapeva anche che a Claudio rimanevano pochi <lb
+                  xml:id="p003_r_tl_21"/>anni di vita, e perciò se lo teneva con ogni <lb
+                  xml:id="p003_r_tl_24"/>tranquillità, incurante della sua grande giovinez<pc>-</pc>
+               <lb xml:id="p003_r_tl_27" break="no"/>za, e proprio per questa. Perché in verità <lb
+                  xml:id="p003_r_tl_28"/>trascorreva la propria vita fuori di lui, lontana <lb
+                  xml:id="p003_r_tl_29"/>da lui, senza rimorso alcuno. Inutile dire <lb
+                  xml:id="p003_r_tl_32"/>che a Claudio stesso, di questo, non importava <lb
+                  xml:id="p003_r_tl_34"/>nulla, se pure riusciva a comprendere che <lb
+                  xml:id="p003_r_tl_35"/>la strega non era quella donna che stringeva <lb
+                  xml:id="p003_r_tl_36"/>tra le braccia, ma quella forza terribile ed <lb
+                  xml:id="p003_r_tl_38"/>intensa che sapeva molte cose, viveva fra <lb
+                  xml:id="p003_r_tl_39"/>queste cose e <del>lo</del> guardava <add place="above"
+                  >lui</add> come un condannato <lb xml:id="p003_r_tl_42"/>a cui si legga in
+                     <del><unclear>fron</unclear></del> fronte la vicina esecuzione. <lb
+                  xml:id="p003_r_tl_43"/>Claudio non lo sapeva e non gliene importava.</p>
+            <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_004.tif"
+               n="4"/>
+            <ab>
+               <fw type="pageNum" place="topright">4</fw>
+            </ab>
+            <p><lb xml:id="p004_r_tl_1"/>Fino al giorno in cui, sul mezzo della primavera fredda <lb
+                  xml:id="p004_r_tl_2"/>e piovigginosa, fra gli alberi spogli del parco, la <lb
+                  xml:id="p004_r_tl_3"/>strega si mise a letto per morire.</p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-06-22T11:53:08.826859267Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.0 from Saxonica.-->
+</TEI>

@@ -1,1 +1,1 @@
-export type TBiblsGroups = 'book' | '';
+export type TBiblsGroups = 'bibls_cat_1';

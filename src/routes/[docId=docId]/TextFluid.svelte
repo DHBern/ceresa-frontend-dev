@@ -11,7 +11,7 @@
 
 	let containerMaintext: HTMLElement;
 	let containerTEI: HTMLElement;
-	let { ceteiData, params, classes } = $props();
+	let { ceteiData, params, showThumbs = true, classes } = $props();
 
 	let serializedWithoutNotes = $derived(removeNotesFromMaintext(ceteiData.serialized));
 
@@ -115,11 +115,6 @@
 		});
 	}
 
-	function openDFpage(pagenum: number) {
-		params.mode = 'DF';
-		params.page = pagenum;
-	}
-
 	// ---------------------------------------------
 	// Load text
 	const c = new CETEI();
@@ -152,24 +147,38 @@
 </script>
 
 <div data-textflow="fluid" class={classes} bind:this={containerMaintext}>
-	<div class="w-full gap-4 p-10 pt-0 xl:grid xl:grid-cols-[7vw_1fr] xl:pl-1">
+	<div
+		class={[
+			'w-full gap-4 p-10 pt-0 xl:grid xl:pl-1',
+			showThumbs ? 'xl:grid-cols-[7vw_1fr]' : 'xl:grid-cols-1'
+		]}
+	>
 		<!-- Thumbnail Column -->
-		<aside class="hidden h-full xl:block">
-			{#each thumbs as thumb, i (thumb.id)}
-				<!-- spacer -->
-				<div style={`height: ${i === 0 ? '5' : thumb.top - thumbs[i - 1].top}px`}></div>
+		{#if showThumbs}
+			<aside class="hidden h-full xl:block">
+				{#each thumbs as thumb, i (thumb.id)}
+					<!-- spacer -->
+					<div style={`height: ${i === 0 ? '5' : thumb.top - thumbs[i - 1].top}px`}></div>
 
-				<button
-					class="sticky top-0 float-right ml-2 flex w-full translate-y-10 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[100px] 2xl:max-w-[110px]"
-					onclick={() => openDFpage(thumb.page)}
-				>
-					<div class="w-full flex-col items-center justify-center">
-						<IIIF_Thumb url={thumb.facs} classesContainer="" classes="w-full" imgClasses="w-full" />
-						<span class="text-sm">Seite {thumb.page}</span>
-					</div>
-				</button>
-			{/each}
-		</aside>
+					<button
+						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[50px] 2xl:max-w-[70px]"
+						onclick={() => {
+							params.page = thumb.page;
+						}}
+					>
+						<div class="w-full flex-col items-center justify-center">
+							<IIIF_Thumb
+								url={thumb.facs}
+								classesContainer="rounded-xs border border-muted-foreground shadow-2xl"
+								classes="w-full"
+								imgClasses="w-full"
+							/>
+							<span class="text-sm">Seite {thumb.page}</span>
+						</div>
+					</button>
+				{/each}
+			</aside>
+		{/if}
 
 		<!-- Text Column -->
 		<main

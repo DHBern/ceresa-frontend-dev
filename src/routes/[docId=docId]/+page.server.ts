@@ -6,9 +6,9 @@ import { asset } from '$app/paths';
 import { documents as allDocs } from '$lib/data/documents.json';
 import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
 import type {
-	TResolvedLetters,
-	TResolvedSmallforms,
-	TResolvedLongforms
+	TResolvedPosthum,
+	TResolvedUnpublished,
+	TResolvedPublished
 } from '$lib/functions/ease_of_use/resolveDoc';
 import type {
 	TCrossRefDocumentsExtended,
@@ -19,24 +19,38 @@ import type {
 import { register as reg } from '$lib/data/register.json';
 import type { TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
 import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
-import { letters_keys } from '$lib/data/letters_keys.json';
-import { smallforms_keys } from '$lib/data/smallforms_keys.json';
-import { longforms_keys } from '$lib/data/longforms_keys.json';
+import { posthum_keys } from '$lib/data/posthum_keys.json';
+import { unpublished_keys } from '$lib/data/unpublished_keys.json';
+import { published_keys } from '$lib/data/published_keys.json';
 
 export const entries: EntryGenerator = () => {
-	const lettersKeyObjects = letters_keys.map((key) => {
+	const posthumKeyObjects = posthum_keys.map((key) => {
 		return { docId: key };
 	});
-	const smallformsKeyObjects = smallforms_keys.map((key) => {
+	const unpublishedKeyObjects = unpublished_keys.map((key) => {
 		return { docId: key };
 	});
-	const longformsKeyObjects = longforms_keys.map((key) => {
+	const publishedKeyObjects = published_keys.map((key) => {
 		return { docId: key };
 	});
-	return [...lettersKeyObjects, ...smallformsKeyObjects, ...longformsKeyObjects];
+	return [...posthumKeyObjects, ...unpublishedKeyObjects, ...publishedKeyObjects];
 };
 
 export const load: PageServerLoad = async ({ params, fetch }) => {
+	// Resolve Documents to current document
+	const resolvedDoc = resolveDoc(allDocs, params.docId as TDocKeys) as
+		TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
+	// Resolve cross-register references
+	const crossRef: {
+		linkedEntities?: TCrossRefEntitiesExtended;
+		citedEntities?: TCrossRefEntitiesExtended;
+		linkedDocuments?: TCrossRefDocumentsExtended;
+		citedDocuments?: TCrossRefDocumentsExtended;
+		"dict-1"?: TCrossRefDocumentsExtended;
+		"dict-2"?: TCrossRefDocumentsExtended;
+		versions?: TCrossRefDocumentsExtended;
+	} = {};
+
 	// CETEI Data
 	async function loadText(params: { docId: string }): Promise<ProcessedTEI> {
 		const defaultBody = {
@@ -56,7 +70,9 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 
 		try {
 			// (1) Fetch xml data
-			const res = await fetch(asset(`/data/texts/text-${params.docId}.xml`));
+			const res = await fetch(
+				asset(`/data/sources/tei/${resolvedDoc.item?.tei.path}/${resolvedDoc.item?.tei.filename}`)
+			);
 			// Throw 404 if XML not found
 			if (!res.ok) {
 				if (res.status === 404) {
@@ -89,18 +105,6 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 		}
 	}
 	const ceteiData = await loadText(params);
-
-	// Resolve Documents to current document
-	const resolvedDoc = resolveDoc(allDocs, params.docId as TDocKeys) as
-		TResolvedLetters | TResolvedSmallforms | TResolvedLongforms;
-
-	// Resolve cross-register references
-	const crossRef: {
-		linkedEntities?: TCrossRefEntitiesExtended;
-		citedEntities?: TCrossRefEntitiesExtended;
-		linkedDocuments?: TCrossRefDocumentsExtended;
-		citedDocuments?: TCrossRefDocumentsExtended;
-	} = {};
 
 	if (resolvedDoc?.item) {
 		// linkedEntities
@@ -158,6 +162,22 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			Object.keys(resolvedDoc.item.crossReferences.citedDocuments).forEach((type) => {
 				crossRef.citedDocuments![type as TDocTypes] =
 					resolvedDoc.item!.crossReferences?.citedDocuments?.[type as TDocTypes]?.map((key) => {
+						const resolvedDoc = resolveDoc(allDocs, key as TDocKeys);
+						const hasValidType = resolvedDoc?.docType;
+						return {
+							item: hasValidType ? resolvedDoc?.item : null,
+							docType: hasValidType ? resolvedDoc?.docType : null,
+							docKey: key
+						};
+					}) ?? null;
+			});
+		}
+		// versions
+		if (resolvedDoc.item.crossReferences?.versions) {
+			crossRef.versions = {};
+			Object.keys(resolvedDoc.item.crossReferences.versions).forEach((type) => {
+				crossRef.versions![type as TDocTypes] =
+					resolvedDoc.item!.crossReferences?.versions?.[type as TDocTypes]?.map((key) => {
 						const resolvedDoc = resolveDoc(allDocs, key as TDocKeys);
 						const hasValidType = resolvedDoc?.docType;
 						return {

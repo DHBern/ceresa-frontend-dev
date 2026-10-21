@@ -7,13 +7,21 @@
 	import Nav from './Nav.svelte';
 	import { asset } from '$app/paths';
 	import { ModeWatcher } from 'mode-watcher';
-	import { isMobile } from '$lib/globals/ui-states.svelte';
+	import {
+		currentFilesAudio,
+		currentlyPlayingAudio,
+		isAudioPlayerVisible,
+		isMobile
+	} from '$lib/globals/ui-states.svelte';
 
 	function checkWindowSize() {
 		isMobile.value = window.innerWidth < TAILWINDBREAKPOINTS.sm;
 	}
 
 	let { children } = $props();
+
+	import AudioPlayer from './AudioPlayer.svelte';
+	import { slide } from 'svelte/transition';
 </script>
 
 <svelte:window on:resize={checkWindowSize} />
@@ -27,6 +35,17 @@
 
 <div class="min-h-screen pt-10 pb-20">{@render children()}</div>
 
+{#if isAudioPlayerVisible.value}
+	<aside
+		in:slide={{ duration: 300 }}
+		out:slide={{ duration: 300 }}
+		class="fixed bottom-0 z-9999999999 w-screen bg-foreground"
+	>
+		{#if currentlyPlayingAudio.value}
+			<AudioPlayer />
+		{/if}
+	</aside>
+{/if}
 <footer
 	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-10 p-20 text-background-contrast"
 >

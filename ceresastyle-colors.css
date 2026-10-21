@@ -1,0 +1,247 @@
+:root {
+	/* Basic Colors */
+	--custom: rgb(243, 235, 244);
+
+	--background: hsl(0 0% 100%);
+	--background-inverted: hsl(0 0% 27%);
+	--foreground: hsl(0 0% 9%);
+	--foreground-inverted: hsl(0 0% 95%);
+	--background-contrast: hsl(0 0% 0%);
+	--foreground-contrast: hsl(0 0% 100%);
+	--hover: hsl(0 0% 95%);
+	--hover-foreground: hsl(0 0% 9%);
+	--border-shadow: hsl(0 0% 95%);
+	--muted: hsl(240 5% 96%);
+	--muted-foreground: hsla(0 0% 9% / 0.25);
+	--border: hsl(240 6% 10%);
+	--border-input: hsla(240 6% 10% / 0.17);
+	--border-input-hover: hsla(240 6% 10% / 1);
+	--border-button: hsla(240 6% 10%);
+	--border-button-hover: hsla(240 6% 10% / 1);
+	--border-card: hsla(240 6% 10% / 0.6);
+	--dark: hsl(240 6% 10%);
+	--dark-70: hsla(240 6% 10% / 0.6);
+	--dark-40: hsla(240 6% 10% / 0.4);
+	--dark-10: hsla(240 6% 10% / 0.1);
+	--dark-04: hsla(240 6% 10% / 0.04);
+	--light: hsl(0 0% 96%);
+	--light-40: hsla(0 0% 96% / 0.4);
+	--light-10: hsla(0 0% 96% / 0.1);
+	--light-04: hsla(0 0% 96% / 0.04);
+	--background-hover: var(--dark-04);
+	--background-hover-safe: hsla(0 0% 96%); /* //! change this */
+	--foreground-hover: var(--light-10);
+	--foreground-hover-safe: rgb(54, 54, 55); /* //! change this */
+	--spinner: var(--dark-70);
+	--warning: var(--color-red-500);
+	--accent: var(--color-primary-100);
+	--accent-foreground: hsl(204 80% 16%);
+
+	/* Content Note Colors */
+	--cn-warning: rgb(255, 206, 131);
+	--cn-warning-iconhead: rgb(255, 239, 216);
+	--cn-warning-border: rgb(255, 206, 131);
+	--cn-unclear: rgb(177, 131, 255);
+	--cn-unclear-iconhead: rgb(236, 224, 255);
+	--cn-unclear-border: rgb(177, 131, 255);
+	--cn-neutral: var(--background);
+	--cn-neutral-iconhead: var(--light-10);
+	--cn-neutral-border: var(--foreground);
+	--cn-contrast: var(--background-contrast);
+	--cn-iconhead-contrast: var(--background-contrast);
+
+	/* Entity Colors */
+	--rs-doc: hsla(0, 50%, 50%);
+	--rs-person: hsla(262, 83%, 58%);
+	--rs-place: hsla(192, 91%, 36%);
+	--rs-event: hsla(26, 90%, 37%);
+	--rs-org: hsla(142, 72%, 29%);
+	--rs-bibl: hsla(55, 54%, 66%);
+	--rs-keyword: hsla(243, 72%, 29%);
+
+	--rs-doc-20: hsla(0, 50%, 50%, 0.2);
+	--rs-person-20: hsla(262, 83%, 58%, 0.2);
+	--rs-place-20: hsla(192, 91%, 36%, 0.2);
+	--rs-event-20: hsla(26, 90%, 37%, 0.2);
+	--rs-org-20: hsla(142, 72%, 29%, 0.2);
+	--rs-bibl-20: hsla(55, 54%, 66%, 0.2);
+	--rs-keyword-20: hsla(243, 72%, 29%, 0.2);
+}
+
+.dark {
+	--custom: rgb(43, 38, 43);
+	--background: hsl(0, 0%, 12%);
+	--background-inverted: hsl(0 0% 95%);
+	--foreground: hsl(0 0% 95%);
+	--foreground-inverted: hsl(0, 0%, 27%);
+	--foreground-contrast: hsl(0 0% 0%);
+	--background-contrast: hsl(0 0% 100%);
+	--hover: hsl(0 0% 38%);
+	--hover-foreground: hsl(0 0% 95%);
+	--border-shadow: hsl(0 0% 38%);
+	--muted: hsl(240 4% 16%);
+	--muted-foreground: hsla(0 0% 100% / 0.25);
+	--border: hsl(0 0% 96%);
+	--border-input: hsla(0 0% 96% / 0.17);
+	--border-input-hover: hsla(0 0% 96% / 0.4);
+	--border-button: hsla(0 0% 96% / 0.17);
+	--border-button-hover: hsla(0 0% 96% / 0.4);
+	--border-card: hsla(0 0% 96% / 0.1);
+	--dark: hsl(0 0% 96%);
+	--dark-70: hsl(0 0% 96% / 0.7);
+	--dark-40: hsl(0 0% 96% / 0.4);
+	--dark-10: hsl(0 0% 96% / 0.1);
+	--dark-04: hsl(0 0% 96% / 0.04);
+	--light: hsl(240 6% 10%);
+	--light-40: hsla(240 6% 10% / 0.4);
+	--light-10: hsla(240 6% 10% / 0.1);
+	--light-04: hsla(240 6% 10% / 0.04);
+	--background-hover: var(--dark-04);
+	--background-hover-safe: rgb(54, 54, 55); /* //! change this */
+	--foreground-hover: var(--light-04);
+	--foreground-hover-safe: hsla(0 0% 96% / 1); /* //! change this */
+	--spinner: var(--color-dark-70);
+	--warning: var(--color-red-500);
+	--accent: var(--color-primary-600);
+	--accent-foreground: hsl(204 94% 94%);
+
+	/* Content Note Colors */
+	--cn-warning: rgb(255, 206, 131);
+	--cn-warning-iconhead: rgb(209, 145, 49);
+	--cn-warning-border: rgb(255, 206, 131);
+	--cn-unclear: rgb(177, 131, 255);
+	--cn-unclear-iconhead: rgb(42, 10, 94);
+	--cn-unclear-border: rgb(177, 131, 255);
+	--cn-neutral: var(--foreground);
+	--cn-neutral-iconhead: var(--light-40);
+	--cn-neutral-border: var(--foreground);
+	--cn-contrast: var(--background);
+	--cn-iconhead-contrast: white;
+
+	/* Entity Colors */
+	--rs-doc: hsla(0, 50%, 50%);
+	--rs-person: hsla(262, 83%, 58%);
+	--rs-place: hsla(192, 91%, 36%);
+	--rs-event: hsla(26, 90%, 37%);
+	--rs-org: hsla(142, 72%, 29%);
+	--rs-bibl: hsla(55, 54%, 66%);
+	--rs-keyword: hsla(243, 72%, 29%);
+
+	--rs-doc-20: hsla(0, 50%, 50%, 0.2);
+	--rs-person-20: hsla(262, 83%, 58%, 0.2);
+	--rs-place-20: hsla(192, 91%, 36%, 0.2);
+	--rs-event-20: hsla(26, 90%, 37%, 0.2);
+	--rs-org-20: hsla(142, 72%, 29%, 0.2);
+	--rs-bibl-20: hsla(55, 54%, 66%, 0.2);
+	--rs-keyword-20: hsla(243, 72%, 29%, 0.2);
+}
+
+/* Fixed Colors (Skeleton-Style) */
+@theme inline {
+	--color-primary-50: rgb(237, 249, 248);
+	--color-primary-100: rgb(202, 238, 234);
+	--color-primary-200: rgb(167, 227, 220);
+	--color-primary-300: rgb(131, 216, 206);
+	--color-primary-400: rgb(96, 205, 192);
+	--color-primary-500: rgb(61, 194, 178);
+	--color-primary-600: rgb(50, 159, 145);
+	--color-primary-700: rgb(39, 123, 113);
+	--color-primary-800: rgb(28, 88, 81);
+	--color-primary-900: rgb(17, 53, 48);
+	--color-primary-950: rgb(6, 18, 16);
+	--color-primary-contrast-dark: var(--color-primary-950);
+	--color-primary-contrast-light: var(--color-primary-50);
+
+	--color-secondary-50: oklch(100% 0 none);
+	--color-secondary-100: oklch(97.02% 0 none);
+	--color-secondary-200: oklch(94.01% 0 none);
+	--color-secondary-300: oklch(90.67% 0 none);
+	--color-secondary-400: oklch(87.61% 0 none);
+	--color-secondary-500: oklch(84.52% 0 none);
+	--color-secondary-600: oklch(77.31% 0 none);
+	--color-secondary-700: oklch(69.6% 0 none);
+	--color-secondary-800: oklch(62.01% 0 none);
+	--color-secondary-900: oklch(53.82% 0 none);
+	--color-secondary-950: oklch(45.68% 0 none);
+	--color-secondary-contrast-dark: var(--color-secondary-950);
+	--color-secondary-contrast-light: var(--color-secondary-50);
+}
+
+@theme inline {
+	/* Colors */
+
+	--color-custom: var(--custom);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-background-inverted: var(--background-inverted);
+	--color-foreground-inverted: var(--foreground-inverted);
+	--color-background-contrast: var(--background-contrast);
+	--color-foreground-contrast: var(--foreground-contrast);
+	--color-hover: var(--hover);
+	--color-hover-foreground: var(--hover-foreground);
+	--color-border-shadow: var(--border-shadow);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-border: var(--border-card);
+	--color-border-input: var(--border-input);
+	--color-border-input-hover: var(--border-input-hover);
+	--color-border-button: var(--border-button);
+	--color-border-button-hover: var(--border-button-hover);
+	--color-border-card: var(--border-card);
+	--color-dark: var(--dark);
+	--color-dark-70: var(--dark-70);
+	--color-dark-40: var(--dark-40);
+	--color-dark-10: var(--dark-10);
+	--color-dark-04: var(--dark-04);
+	--color-light: var(--light);
+	--color-light-10: var(--light-10);
+	--color-light-40: var(--light-40);
+	--color-light-04: var(--light-04);
+	--color-background-hover: var(--background-hover);
+	--color-background-hover-safe: var(--background-hover-safe);
+	--color-foreground-hover: var(--foreground-hover);
+	--color-foreground-hover-safe: var(--foreground-hover-safe);
+	--color-spinner: var(--spinner);
+	--color-warning: var(--warning);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+}
+
+/* UI-Elements*/
+@theme inline {
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+}
+
+/* Content Notes */
+@theme inline {
+	--color-cn-warning: var(--cn-warning);
+	--color-cn-warning-border: var(--cn-warning-border);
+	--color-cn-warning-iconhead: var(--cn-warning-iconhead);
+	--color-cn-unclear: var(--cn-unclear);
+	--color-cn-unclear-border: var(--cn-unclear-border);
+	--color-cn-unclear-iconhead: var(--cn-unclear-iconhead);
+	--color-cn-neutral: var(--cn-neutral);
+	--color-cn-neutral-iconhead: var(--cn-neutral-iconhead);
+	--color-cn-neutral-border: var(--cn-neutral-border);
+	--color-cn-contrast: var(--cn-contrast);
+	--color-cn-iconhead-contrast: var(--cn-iconhead-contrast);
+}
+/* Cross-References */
+@theme inline {
+	--color-rs-doc: var(--rs-doc);
+	--color-rs-person: var(--rs-person);
+	--color-rs-place: var(--rs-place);
+	--color-rs-event: var(--rs-event);
+	--color-rs-org: var(--rs-org);
+	--color-rs-bibl: var(--rs-bibl);
+	--color-rs-keyword: var(--rs-keyword);
+
+	--color-rs-doc-20: var(--rs-doc-20);
+	--color-rs-person-20: var(--rs-person-20);
+	--color-rs-place-20: var(--rs-place-20);
+	--color-rs-event-20: var(--rs-event-20);
+	--color-rs-org-20: var(--rs-org-20);
+	--color-rs-bibl-20: var(--rs-bibl-20);
+	--color-rs-keyword-20: var(--rs-keyword-20);
+}

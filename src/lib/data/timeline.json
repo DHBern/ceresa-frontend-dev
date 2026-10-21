@@ -48,7 +48,7 @@
 			"event": "",
 			"textWork": "",
 			"textPub": "",
-			"work_id": "smallform_0001 smallform_0002 smallform_0003 smallform_0004",
+			"work_id": "unpublished_0001 unpublished_0002 unpublished_0003 unpublished_0004",
 			"note": "einzelne Publikationen noch ergänzen?"
 		},
 		{
@@ -102,7 +102,7 @@
 			"event": "",
 			"textWork": "",
 			"textPub": "Gespräch (zu Lebzeiten unveröffentlicht) [BU, S. 422]",
-			"work_id": "smallform_0005",
+			"work_id": "unpublished_0005",
 			"note": ""
 		},
 		{
@@ -111,7 +111,7 @@
 			"event": "Datirung Alexis Notizen (dieser spricht in ASF etwas ungenau davon, dass sie im Herbst 29 wieder nach Zürich zurückkehrt, in seinen Notizen kehrt sie jedoch schon im Juni 29 krank nach Bocken zurück und verbringt dann den Sommer mit Tania Doukhouetzky in der Schweiz). ",
 			"textWork": "",
 			"textPub": "Das Märchen von der gefangenen Prinzessin ([zu Lebzeiten, ez] unveröffentlicht) [BU, S. 422]",
-			"work_id": "smallform_0010",
+			"work_id": "unpublished_0010",
 			"note": "stimmt die Angabe Januar? Hat sich doch erst im Herbst 1929 in Paris aufgehalten? Die Datierung ist eigenhändig am Ende des Ms, womöglich befand sie sich schon Anfang 1929 in Paris, begann das Studium jedoch erst im Herbst, ez. "
 		},
 		{
@@ -129,11 +129,11 @@
 			"event": "",
 			"textWork": "",
 			"textPub": "In der Neuen Zürcher Zeitung erscheint die Novelle Erik. [OR, S. 181]",
-			"work_id": "\"smallform_0006",
+			"work_id": "\"unpublished_0006",
 			"note": ""
 		},
 		{
-			"date": "smallform_0007\"",
+			"date": "unpublished_0007\"",
 			"biography_info": "",
 			"event": "",
 			"textWork": "",
@@ -156,7 +156,7 @@
 			"event": "",
 			"textWork": "Arbeit an der Pariser Novelle, Paris III [3./4.1930], Yelinda [27.12.1930] und Eine Frau zu sehen. Diese Texte bleiben zu Lebzeiten unveröffentlicht. [OR, S. 181]",
 			"textPub": "",
-			"work_id": "smallform_0018 smallform_0024 smallform_0025 smallform_0008 letter_0172 (Yelinda)",
+			"work_id": "unpublished_0018 unpublished_0024 unpublished_0025 unpublished_0008 posthum_0172 (Yelinda)",
 			"note": "Genaue Datierungen der Arbeiten? Wo möglich in eckigen Klammern hinzugefügt, ez. "
 		},
 		{
@@ -165,7 +165,7 @@
 			"event": "",
 			"textWork": "",
 			"textPub": "",
-			"work_id": "smallform_0020 smallform_0021",
+			"work_id": "unpublished_0020 unpublished_0021",
 			"note": "separat anführen?"
 		},
 		{
@@ -183,7 +183,7 @@
 			"event": "Venedigreise 1930",
 			"textWork": "",
 			"textPub": "",
-			"work_id": "letter_0173",
+			"work_id": "posthum_0173",
 			"note": ""
 		},
 		{
@@ -193,7 +193,7 @@
 			"textWork": "",
 			"textPub": "",
 			"work_id": "",
-			"note": "Frühester erhaltener datierter Brief an EM: 15.10.30 (letter_0173). Bekanntschaft durch briefliche Kontaktaufnahme mit den Manns durch AS, gemäss Polizeireport während der Pfeffermühle-Affäre (vgl. ASF)"
+			"note": "Frühester erhaltener datierter Brief an EM: 15.10.30 (posthum_0173). Bekanntschaft durch briefliche Kontaktaufnahme mit den Manns durch AS, gemäss Polizeireport während der Pfeffermühle-Affäre (vgl. ASF)"
 		},
 		{
 			"date": "22.11.1930",
@@ -201,7 +201,7 @@
 			"event": "",
 			"textWork": "\"Lesung aus ihrem Roman Freunde um Bernhard [OR, S. 182]. AS habe auch aus der Römischen Skizze und aus Ruth gelesen. [LE, S. 228] Die Römische Skizze ist nicht erhalten geblieben, könnte jedoch mit der erst bei Rooney erwähnten Romreise (\"\"Italien 1930\"\") im Frühling 1930 zu tun haben. [ez]\"",
 			"textPub": "",
-			"work_id": "smallform_0036",
+			"work_id": "unpublished_0036",
 			"note": ""
 		},
 		{
@@ -210,7 +210,7 @@
 			"event": "",
 			"textWork": "",
 			"textPub": "Schreibt den unveröffentlichen Text: Der Hut [BU, S. 422]",
-			"work_id": "smallform_0026",
+			"work_id": "unpublished_0026",
 			"note": ""
 		},
 		{
@@ -219,14 +219,14 @@
 			"event": "",
 			"textWork": "",
 			"textPub": "Über den Vortrag von Klaus und Erika Mann publiziert AS in der NZZ den Artikel Klaus und Erika Mann in Zürich am 19.12.1930. [ez]",
-			"work_id": "smallform_0023",
+			"work_id": "unpublished_0023",
 			"note": ""
 		},
 		{
 			"date": "3.1931",
 			"biography_info": "",
 			"event": "",
-			"textWork": "Germanistische Arbeit über Georg Trakl. [OR, S. 182] --> 10.April Abgabeschluss, eingereicht bei Robert Faesi, vgl. Brief an Erika Mann vom 9. April 1931 (letter_0166)",
+			"textWork": "Germanistische Arbeit über Georg Trakl. [OR, S. 182] --> 10.April Abgabeschluss, eingereicht bei Robert Faesi, vgl. Brief an Erika Mann vom 9. April 1931 (posthum_0166)",
 			"textPub": "Schreibt den unveröffentlichten Text: Yelinda [BU, S. 422]",
 			"work_id": "",
 			"note": ""
@@ -237,7 +237,7 @@
 			"event": "",
 			"textWork": "",
 			"textPub": "",
-			"work_id": "smallform_0030",
+			"work_id": "unpublished_0030",
 			"note": "Die Arbeit findet sich im selben Dossier des Staatsarchives Zürich, StAZH 109.7.1140, indem auch die Unterlagen zur Promotion sind. "
 		},
 		{
@@ -255,7 +255,7 @@
 			"event": "Frankreichreise 1931",
 			"textWork": "",
 			"textPub": "Über den gemeinsamen Aufenthalt in Bandol publiziert AS in der NZZ Brief von der Côte d'Azur am 28.6.1931. ",
-			"work_id": "smallform_0028",
+			"work_id": "unpublished_0028",
 			"note": ""
 		},
 		{
@@ -283,7 +283,7 @@
 			"textWork": "\"Niederschrift von Artikel für den ersten Band des Schweizer Reiseführers für den Piper Verlag [BU, S. 414]",
 			"textPub": " Buch erscheint 1932 [BU, S. 420]\"",
 			"work_id": "",
-			"note": "smallform_0599"
+			"note": "unpublished_0599"
 		},
 		{
 			"date": "11.1931",
@@ -309,7 +309,7 @@
 			"event": "unklar",
 			"textWork": "",
 			"textPub": "",
-			"work_id": "smallform_0600",
+			"work_id": "unpublished_0600",
 			"note": "Achtung: Angaben OR, BU und LE noch sinnvoll zusammenführen"
 		},
 		{
@@ -336,7 +336,7 @@
 			"event": "unklar [Berlinreise 1932]?",
 			"textWork": "Arbeit am Drama Cromwell (unveröffentlicht) [OR, S. 182] ",
 			"textPub": "",
-			"work_id": "smallform_0037",
+			"work_id": "unpublished_0037",
 			"note": "genauere Angaben?"
 		},
 		{
@@ -355,7 +355,7 @@
 			"textWork": "\"Mehrere Artikel für den zweiten Band des Piper-Reiseführers [BU, S. 414]",
 			"textPub": " Buch erscheint 1933 [BU, S. 420]\"",
 			"work_id": "",
-			"note": "smallform_0600"
+			"note": "unpublished_0600"
 		},
 		{
 			"date": "11.1932",
@@ -431,7 +431,7 @@
 		},
 		{
 			"date": "16.04.1933",
-			"biography_info": "\"AS schreibt Bourdet über ihre Pläne, eine Zeitschrift zu gründen (letter_0011). Später in Le Lavandou informiert sie Klaus Mann. Mann nimmt das Projekt in die Hand. Am 16. Juni unterzeichnet er einen Vertrag mit dem Querido Verlag (Fritz Landshoff) für die Zeitschrift, die nun den Titel \"\"Die Sammlung\"\" trägt (BU 119)\"",
+			"biography_info": "\"AS schreibt Bourdet über ihre Pläne, eine Zeitschrift zu gründen (posthum_0011). Später in Le Lavandou informiert sie Klaus Mann. Mann nimmt das Projekt in die Hand. Am 16. Juni unterzeichnet er einen Vertrag mit dem Querido Verlag (Fritz Landshoff) für die Zeitschrift, die nun den Titel \"\"Die Sammlung\"\" trägt (BU 119)\"",
 			"event": "",
 			"textWork": "",
 			"textPub": "",
@@ -620,7 +620,7 @@
 		},
 		{
 			"date": "03.01.1935",
-			"biography_info": "AS begiebt sich zu einer Entziehungskur in die Klinik von Samedan und unternimmt dort einen Suizidversuch. [OR, S. 184] Im Januar auch: Anmietung des Jägerhauses in Sils-Baselgia für ein Jahr. [BU, S. 415] ACHTUNG: Alexis spricht davon, dass sie zunächst das gegenüberliegende Haus Salis (Bucheli: Chesa Castelmur-Salis) gemietet habe, spätestens ab 1938 dann das Jägerhaus (ASF 285). Alexis Quelle (ev. noch mehr): Unpublizierter Tagebuch-Eintrag von Klaus Mann vom 19. Juni 1936 (könnte sich KM getäuscht haben?). Was definitiv für Alexis Behauptung spricht: das Jägerhaus sei klein gewesen, das Haus, das sie 1934 (letter_0272) ankündigt, wird als grosser Bauernhof mit 7 Zimmern beschrieben. Auch: Martha Cadisch Korrespondenz beginnt erst im Dezember 37. Auch: Die Fotos sprechen dafür (insbesondere A-5-08/153, wo Giehse und Auto vor Haus Salis sind). ",
+			"biography_info": "AS begiebt sich zu einer Entziehungskur in die Klinik von Samedan und unternimmt dort einen Suizidversuch. [OR, S. 184] Im Januar auch: Anmietung des Jägerhauses in Sils-Baselgia für ein Jahr. [BU, S. 415] ACHTUNG: Alexis spricht davon, dass sie zunächst das gegenüberliegende Haus Salis (Bucheli: Chesa Castelmur-Salis) gemietet habe, spätestens ab 1938 dann das Jägerhaus (ASF 285). Alexis Quelle (ev. noch mehr): Unpublizierter Tagebuch-Eintrag von Klaus Mann vom 19. Juni 1936 (könnte sich KM getäuscht haben?). Was definitiv für Alexis Behauptung spricht: das Jägerhaus sei klein gewesen, das Haus, das sie 1934 (posthum_0272) ankündigt, wird als grosser Bauernhof mit 7 Zimmern beschrieben. Auch: Martha Cadisch Korrespondenz beginnt erst im Dezember 37. Auch: Die Fotos sprechen dafür (insbesondere A-5-08/153, wo Giehse und Auto vor Haus Salis sind). ",
 			"event": "",
 			"textWork": "",
 			"textPub": "",
@@ -836,7 +836,7 @@
 		},
 		{
 			"date": "Juli bis [Mitte August]",
-			"biography_info": "Erneute Entziehungskuren [OR, S. 185] Aufenthalt bei Dr. Ruppaner in Samedan. [LE, S. 233]. EZ: Lernt Anita Forrer kennen (letter_0280)",
+			"biography_info": "Erneute Entziehungskuren [OR, S. 185] Aufenthalt bei Dr. Ruppaner in Samedan. [LE, S. 233]. EZ: Lernt Anita Forrer kennen (posthum_0280)",
 			"event": "",
 			"textWork": "",
 			"textPub": "",

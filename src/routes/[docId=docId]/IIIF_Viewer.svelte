@@ -18,6 +18,9 @@
 			viewer = new OpenSeadragon.Viewer({
 				id: node.id,
 				prefixUrl: asset(`/openseadragon-svg-icons/`),
+				animationDuration: 0,
+				controlsFadeDelay: 300,
+				controlsFadeLength: 200,
 				navImages: {
 					zoomIn: {
 						REST: 'zoomin_rest.svg',
@@ -56,19 +59,34 @@
 						DOWN: 'rotateright_pressed.svg'
 					}
 				},
-				showNavigator: true,
+				showNavigator: false,
 				showRotationControl: true,
 				sequenceMode: false,
 				crossOriginPolicy: 'Anonymous'
 			});
 
+			// resize observer
 			observer = new ResizeObserver(() => {
 				setTimeout(() => {
-					viewer.viewport.goHome(false);
+					viewer.viewport.goHome(true);
 				}, 50);
 			});
 			observer.observe(node);
 			if (!manifest) return;
+
+			viewer.addHandler('open', () => {
+				const item = viewer.world.getItemAt(0);
+
+				const rect = item.imageToViewportRectangle(
+					1400, // x
+					1700, // y
+					3900, // width
+					2900 // height
+				);
+
+				viewer.viewport.fitBounds(rect, true);
+			});
+
 			viewer.open(manifest);
 		};
 		if (!OpenSeadragon) {
@@ -86,7 +104,9 @@
 				viewer.open($state.snapshot(iiif));
 			},
 			destroy() {
-				viewer.destroy();
+				if (viewer) {
+					viewer.destroy();
+				}
 				if (observer) {
 					observer.disconnect();
 				}

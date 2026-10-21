@@ -11,9 +11,9 @@
 	} from '$lib/functions/interactive_edendum/handleInteractiveText';
 	import { slide } from 'svelte/transition';
 	import type {
-		TDocItemsLetters,
-		TDocItemsLongforms,
-		TDocItemsSmallforms
+		TDocItemsPosthum,
+		TDocItemsPublished,
+		TDocItemsUnpublished
 	} from '$lib/types/documents/TDocuments';
 	import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
 
@@ -22,8 +22,9 @@
 		{ key_singular: string; label_plural: string }
 	>;
 
-	let { docItem }: { docItem: TDocItemsLetters | TDocItemsSmallforms | TDocItemsLongforms | null } =
-		$props();
+	let {
+		docItem
+	}: { docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null } = $props();
 
 	let regEntries = $derived(docItem?.crossReferences?.citedEntities);
 	const regTypes = Object.keys(reg) as Array<keyof typeof reg>;
@@ -44,11 +45,11 @@
 >
 	{#each regTypes as regType (regType)}
 		<Accordion.Item value={regType} data-regType={regType}>
-			<h1 class="h4">
+			<h1 class="h5">
 				<Accordion.Trigger class="group flex w-full gap-2 py-3 hover:bg-transparent">
 					<div>
 						<i
-							class="fa-regular fa-chevron-right text-lg transition-transform group-data-[state=open]:rotate-90"
+							class="fa-regular fa-chevron-right text-sm transition-transform group-data-[state=open]:rotate-90"
 						></i>
 					</div>
 					<span class="pl-4">
@@ -80,7 +81,7 @@
 											handleRegisterClick(regKey);
 										}}
 									>
-										<p class="text-lg">{resolvedReg?.item?.name}</p>
+										<p class="">{resolvedReg?.item?.name}</p>
 										<a
 											class="flex h-9 w-9 items-center justify-center rounded-button group-hover:flex group-[data-active]:flex hover:bg-light-10"
 											href={resolve(`/register/${regKey as string}`)}

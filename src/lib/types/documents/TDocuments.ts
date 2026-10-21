@@ -1,15 +1,15 @@
 // --- Types ----------------------------------------
 // Keys
-import { type TLettersKeys } from './TLettersKeys';
-import { type TSmallformsKeys } from './TSmallformsKeys';
-import { type TLongformsKeys } from './TLongformsKeys';
-import { type TPhotosKeys } from './TPhotosKeys';
+import { type TPosthumKeys } from './TPosthumKeys';
+import { type TUnpublishedKeys } from './TUnpublishedKeys';
+import { type TPublishedKeys } from './TPublishedKeys';
+import { type TAudioKeys } from './TAudioKeys';
 
 // Types
-import { type TLettersGroups } from './TLettersGroups';
-import { type TSmallformsGroups } from './TSmallformsGroups';
-import { type TLongformsGroups } from './TLongformGroups';
-import { type TPhotosGroups } from './TPhotosGroups';
+import { type TPosthumGroups } from './TPosthumGroups';
+import { type TUnpublishedGroups } from './TUnpublishedGroups';
+import { type TPublishedGroups } from './TPublishedGroups';
+import { type TAudioGroups } from './TAudioGroups';
 
 // From Register
 import { type TPeopleKeys } from '../register/TPeopleKeys';
@@ -27,10 +27,10 @@ type TContentNotes = {
 	comment?: string;
 };
 type TCrossRefDocs = {
-	letters?: TLettersKeys[];
-	smallforms?: TSmallformsKeys[];
-	longforms?: TLongformsKeys[];
-	photos?: TPhotosKeys[];
+	posthum?: TPosthumKeys[];
+	unpublished?: TUnpublishedKeys[];
+	published?: TPublishedKeys[];
+	audio?: TAudioKeys[];
 };
 type TCrossRefEntities = {
 	people?: TPeopleKeys[];
@@ -46,6 +46,12 @@ type TRendition = {
 	hide?: boolean;
 };
 
+
+export type TAudioChapters = {
+	id: number;
+	chapName: string;
+	time: number;
+};
 export type TDocuments = {
 	meta: {
 		generated_by: string;
@@ -54,80 +60,24 @@ export type TDocuments = {
 		description: string;
 	};
 	documents: {
-		letters: {
-			[key in TLettersKeys]: {
-				name: string | null;
-				metadata: {
-					types: TLettersGroups[] | null;
-					date: { from: string | null; to: string | null };
-					date_stamp: string | null;
-					people_sending: TPeopleKeys[] | null;
-					people_addressed: TPeopleKeys[] | null;
-					people_addressfield?: TPeopleKeys[] | null; //! as suggestion
-					place_of_sender?: string | null; //! discuss whether TPlacesKeys
-					place_of_recepient?: string | null; //! discuss whether TPlacesKeys
-					summary?: string | null;
-					content_and_medium?: string | null;
-					language?: string | null;
-					attachments?: string | null;
-					archive: {
-						repository?: string | null;
-						repo_url?: string | null;
-						shelfmark?: string | null;
-						folder_name?: string | null;
-						ref_code_fonds?: string | null;
-						rights?: string | null;
-						archival_history?: string | null;
-						published_in?: string[];
-						cited_in?: string[];
-					};
-				};
-				crossReferences?: {
-					citedDocuments?: TCrossRefDocs;
-					linkedDocuments?: TCrossRefDocs;
-					citedEntities?: TCrossRefEntities;
-					linkedEntities?: TCrossRefEntities;
-				};
-				editorialNotes: {
-					contentNotes?: TContentNotes[];
-					editorial_comments_1?: string | null;
-					editorial_comments_2?: string | null;
-				};
-				manuscript: {
-					rendition?: TRendition | null;
-					iiif_urls: string[];
-				};
-			};
-		};
-		smallforms: {
-			[key in TSmallformsKeys]: {
+		posthum: {
+			[key in TPosthumKeys]: {
 				slug?: string; //! discuss whether this is identical to key
 				name: string;
 				date: { from: string | null; to: string | null };
-				type: TSmallformsGroups | '?' | '';
+				type: TPosthumGroups | '?' | '';
 				metadata: {
 					title: string | null;
 					authors?: string[];
-					summary?: string;
 					pubDate: string;
 					title_full: string;
 					title_short?: string;
-					editor_workflow: 'ez_ttf_of';
-					year: string;
-					pubPosthumOnly: boolean | string;
 					pubPlace?: string;
-					signature: string;
 					pubDetails?: string;
-					textstufen_edited: string[];
-					textzeugen_nonedited: string[];
-					series: string;
-					comment: string;
-					maximum: string; //! what is this?
-					travel: string; //! what is this?
+					textstufen: string[];
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
-					urlOnlineResource: string;
 					note: string;
 				};
 				crossReferences?: {
@@ -135,9 +85,17 @@ export type TDocuments = {
 					linkedDocuments?: TCrossRefDocs;
 					citedEntities?: TCrossRefEntities;
 					linkedEntities?: TCrossRefEntities;
+					"dict-1"?: TCrossRefDocs;
+					"dict-2"?: TCrossRefDocs;
+					versions?: TCrossRefDocs;
 				};
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
+				};
+				tei: {
+					id?: string;
+					path: string;
+					filename: string;
 				};
 				manuscript: {
 					rendition?: TRendition | null;
@@ -149,35 +107,24 @@ export type TDocuments = {
 				};
 			};
 		};
-		longforms: {
-			[key in TLongformsKeys]: {
+		unpublished: {
+			[key in TUnpublishedKeys]: {
 				slug?: string; //! discuss whether this is identical to key
 				name: string;
 				date: { from: string | null; to: string | null };
-				type: TLongformsGroups | '?' | '';
+				type: TUnpublishedGroups | '?' | '';
 				metadata: {
 					title: string | null;
 					authors?: string[];
-					summary?: string;
 					pubDate: string;
 					title_full: string;
 					title_short?: string;
-					editor_workflow: 'ez_ttf_of';
-					year: string;
-					pubPosthumOnly: boolean | string;
 					pubPlace?: string;
-					signature: string;
 					pubDetails?: string;
-					textstufen_edited: string[];
-					textzeugen_nonedited: string[];
-					series: string;
-					comment: string;
-					maximum: string;
-					travel: string;
+					textstufen: string[];
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
-					urlOnlineResource: string;
 					note: string;
 				};
 				crossReferences?: {
@@ -185,9 +132,16 @@ export type TDocuments = {
 					linkedDocuments?: TCrossRefDocs;
 					citedEntities?: TCrossRefEntities;
 					linkedEntities?: TCrossRefEntities;
+					"dict-1"?: TCrossRefDocs;
+					"dict-2"?: TCrossRefDocs;
+					versions?: TCrossRefDocs;
 				};
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
+				};
+				tei: {
+					path: string;
+					filename: string;
 				};
 				manuscript: {
 					rendition?: TRendition | null;
@@ -199,54 +153,88 @@ export type TDocuments = {
 				};
 			};
 		};
-		photos: {
-			[key in TPhotosKeys]: {
-				name: string | null;
-				type?: TPhotosGroups | '?' | '';
+		published: {
+			[key in TPublishedKeys]: {
+				slug?: string; //! discuss whether this is identical to key
+				name: string;
+				date: { from: string | null; to: string | null };
+				type: TPublishedGroups | '?' | '';
 				metadata: {
 					title: string | null;
-					date: string | null;
-					date_normalised: {
-						from: string | null;
-						to: string | null;
-					} | null;
-					travel: string | null;
-					photographer: string | null;
-					people_on_photo: string[] | null;
-					characteristics: string | null;
-					comments_1: string | null;
-					captions_1: string[] | null;
-					captions_2: string[] | null;
-					orientation: string | null;
-					shape: string | null;
-					url_helveticarchives: string | null;
-					url_wikimedia: string | null;
-					url_emanuscripta: string | null;
-					repository: string | null;
-					published_in: string[] | null;
-					mentioned_in: string[] | null;
-					comments_2: string | null;
-					sla_id_full: string | null;
-					sla_id_coll: string | null;
-					sla_id_img: string | null;
-					stamped: boolean | null;
-					signed: boolean | null;
+					authors?: string[];
+					pubDate: string;
+					title_full: string;
+					title_short?: string;
+					pubPlace?: string;
+					pubDetails?: string;
+					textstufen: string[];
+					archive: string;
+					archiveCollation: string;
+					pubSecondary: string;
+					note: string;
 				};
 				crossReferences?: {
+					citedDocuments?: TCrossRefDocs;
 					linkedDocuments?: TCrossRefDocs;
+					citedEntities?: TCrossRefEntities;
 					linkedEntities?: TCrossRefEntities;
-				};
-				faksimile: {
-					iiif_manifest: string | null;
-					iiif_manifest_emanuscripta: string | null;
-					iiif_image_emanuscripta?: string | null;
+					"dict-1"?: TCrossRefDocs;
+					"dict-2"?: TCrossRefDocs;
+					versions?: TCrossRefDocs;
 				};
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
 				};
+				tei: {
+					path: string;
+					filename: string;
+				};
 				manuscript: {
 					rendition?: TRendition | null;
 					iiif_urls: string[];
+				};
+				numPages: number | null;
+				edition: {
+					fullyEdited: boolean;
+				};
+			};
+		};
+		audio: {
+			[key in TAudioKeys]: {
+				slug?: string; //! Currently in use as `currentFilesAudio.value?.slug && currentFilesAudio.value?.slug !== currentlyPlayingAudio.value?.slug`
+				name: string;
+				date: { from: string | null; to: string | null };
+				type: TPublishedGroups | '?' | '';
+				metadata: {
+					title: string | null;
+					title_full: string;
+					title_short?: string;
+					authors?: string[];
+					pubDate: string;
+					pubPlace?: string;
+					pubDetails?: string;
+					archive: string;
+					archiveCollation: string;
+					note: string;
+				};
+				crossReferences?: {
+					citedDocuments?: TCrossRefDocs;
+					linkedDocuments?: TCrossRefDocs;
+					citedEntities?: TCrossRefEntities;
+					linkedEntities?: TCrossRefEntities;
+					"dict-1"?: TCrossRefDocs;
+					"dict-2"?: TCrossRefDocs;
+					versions?: TCrossRefDocs;
+				};
+				audioMaterial: {
+					path: string;
+					filename: string;
+					metadata: {
+						chapters?: TAudioChapters[]
+					}
+				};
+				editorialNotes: {
+					contentNotes?: TContentNotes[];
 				};
 			};
 		};
@@ -280,78 +268,71 @@ export type TDocDict = {
 		description: string;
 	};
 	dict_docs: {
-		letters: DictEntity<TDocMetadataKeysLetters, TLettersGroups>;
-		smallforms: DictEntity<TDocMetadataKeysSmallforms, TSmallformsGroups>;
-		longforms: DictEntity<TDocMetadataKeysLongforms, TLongformsGroups>;
-		photos: DictEntity<TDocMetadataKeysPhotos, TPhotosGroups>;
+		posthum: DictEntity<TDocMetadataKeysPosthum, TPosthumGroups>;
+		unpublished: DictEntity<TDocMetadataKeysUnpublished, TUnpublishedGroups>;
+		published: DictEntity<TDocMetadataKeysPublished, TPublishedGroups>;
 	};
 };
 
 // --- Sets -------------------------------------------------------
 export type TDocTypes = keyof TDocuments['documents'];
-export type TDocKeys = TLettersKeys | TSmallformsKeys | TLongformsKeys | TPhotosKeys;
+export type TDocKeys = TPosthumKeys | TUnpublishedKeys | TPublishedKeys | TAudioKeys;
 export type TDocKeysMap = {
-	letters: TLettersKeys;
-	smallforms: TSmallformsKeys;
-	longforms: TLongformsKeys;
-	photos: TPhotosKeys;
+	posthum: TPosthumKeys;
+	unpublished: TUnpublishedKeys;
+	published: TPublishedKeys;
+	audio: TAudioKeys;
 };
 
-export type TDocAttrsLetters = keyof TDocuments['documents']['letters'][TLettersKeys];
-export type TDocAttrsSmallforms = keyof TDocuments['documents']['smallforms'][TSmallformsKeys];
-export type TDocAttrsLongforms = keyof TDocuments['documents']['longforms'][TLongformsKeys];
-export type TDocAttrsPhotos = keyof TDocuments['documents']['photos'][TPhotosKeys];
-export type TDocAttrs =
-	TDocAttrsLetters | TDocAttrsSmallforms | TDocAttrsLongforms | TDocAttrsPhotos;
+export type TDocAttrsPosthum = keyof TDocuments['documents']['posthum'][TPosthumKeys];
+export type TDocAttrsUnpublished = keyof TDocuments['documents']['unpublished'][TUnpublishedKeys];
+export type TDocAttrsPublished = keyof TDocuments['documents']['published'][TPublishedKeys];
+export type TDocAttrsAudio = keyof TDocuments['documents']['audio'][TAudioKeys];
+export type TDocAttrs = TDocAttrsPosthum | TDocAttrsUnpublished | TDocAttrsPublished | TDocAttrsAudio;
 export type TDocAttrsMap = {
-	letters: TDocAttrsLetters;
-	smallforms: TDocAttrsSmallforms;
-	longforms: TDocAttrsLongforms;
-	photos: TDocAttrsPhotos;
+	posthum: TDocAttrsPosthum;
+	unpublished: TDocAttrsUnpublished;
+	published: TDocAttrsPublished;
+	audio: TDocAttrsAudio;
 };
 
-export type TDocMetadataKeysLetters =
-	keyof TDocuments['documents']['letters'][TLettersKeys]['metadata'];
-export type TDocMetadataKeysSmallforms =
-	keyof TDocuments['documents']['smallforms'][TSmallformsKeys]['metadata'];
-export type TDocMetadataKeysLongforms =
-	keyof TDocuments['documents']['longforms'][TLongformsKeys]['metadata'];
-export type TDocMetadataKeysPhotos =
-	keyof TDocuments['documents']['photos'][TPhotosKeys]['metadata'];
+export type TDocMetadataKeysPosthum =
+	keyof TDocuments['documents']['posthum'][TPosthumKeys]['metadata'];
+export type TDocMetadataKeysUnpublished =
+	keyof TDocuments['documents']['unpublished'][TUnpublishedKeys]['metadata'];
+export type TDocMetadataKeysPublished =
+	keyof TDocuments['documents']['published'][TPublishedKeys]['metadata'];
+export type TDocMetadataKeysAudio =
+	keyof TDocuments['documents']['audio'][TAudioKeys]['metadata'];
 export type TDocMetadataKeys =
-	| TDocMetadataKeysLetters
-	| TDocMetadataKeysSmallforms
-	| TDocMetadataKeysLongforms
-	| TDocMetadataKeysPhotos;
+	TDocMetadataKeysPosthum | TDocMetadataKeysUnpublished | TDocMetadataKeysPublished | TDocMetadataKeysAudio;
 export type TDocMetadataKeysMap = {
-	letters: TDocMetadataKeysLetters;
-	smallforms: TDocMetadataKeysSmallforms;
-	longforms: TDocMetadataKeysLongforms;
-	photos: TDocMetadataKeysPhotos;
+	posthum: TDocMetadataKeysPosthum;
+	unpublished: TDocMetadataKeysUnpublished;
+	published: TDocMetadataKeysPublished;
+	audio: TDocMetadataKeysAudio;
 };
 
-export type TDocItemsLetters = TDocuments['documents']['letters'][TLettersKeys];
-export type TDocItemsSmallforms = TDocuments['documents']['smallforms'][TSmallformsKeys];
-export type TDocItemsLongforms = TDocuments['documents']['longforms'][TLongformsKeys];
-export type TDocItemsPhotos = TDocuments['documents']['photos'][TPhotosKeys];
-export type TDocItems =
-	TDocItemsLetters | TDocItemsSmallforms | TDocItemsLongforms | TDocItemsPhotos;
+export type TDocItemsPosthum = TDocuments['documents']['posthum'][TPosthumKeys];
+export type TDocItemsUnpublished = TDocuments['documents']['unpublished'][TUnpublishedKeys];
+export type TDocItemsPublished = TDocuments['documents']['published'][TPublishedKeys];
+export type TDocItemsAudio = TDocuments['documents']['audio'][TAudioKeys];
+export type TDocItems = TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | TDocItemsAudio;
 export type TDocItemsMap = {
-	letters: TDocItemsLetters;
-	smallforms: TDocItemsSmallforms;
-	longforms: TDocItemsLongforms;
-	photos: TDocItemsPhotos;
+	posthum: TDocItemsPosthum;
+	unpublished: TDocItemsUnpublished;
+	published: TDocItemsPublished;
+	audio: TDocItemsAudio;
 };
 
 // Group Set
-export type TDocGroupsFlat =
-	TLettersGroups | TSmallformsGroups | TLongformsGroups | TPhotosGroups | '?' | '';
+export type TDocGroupsFlat = TPosthumGroups | TUnpublishedGroups | TPublishedGroups | TAudioGroups | '?' | '';
 
 export type TDocGroupsMap = {
-	letters: TLettersGroups | '?' | '';
-	smallforms: TSmallformsGroups | '?' | '';
-	longforms: TLongformsGroups | '?' | '';
-	photos: TPhotosGroups | '?' | '';
+	posthum: TPosthumGroups | '?' | '';
+	unpublished: TUnpublishedGroups | '?' | '';
+	published: TPublishedGroups | '?' | '';
+	audio: TAudioGroups | '?' | '';
 };
 
 // CrossRef Entities (Register)
