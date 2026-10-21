@@ -192,7 +192,7 @@
 						{#each Object.keys(crossRef.versions) as type}
 							{#each crossRef.versions[type] as version}
 								<li class="preset-btn-doc --sm">
-									<a href={`/${version.item.slug}`}
+									<a href={resolve(`/${version.item.slug}`)}
 										>{version.item.name} ({version.item.metadata.dict_version})</a
 									>
 								</li>
