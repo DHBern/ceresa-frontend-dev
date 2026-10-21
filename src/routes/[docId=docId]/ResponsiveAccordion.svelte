@@ -7,7 +7,7 @@
 
 <div class="mt-10 flex flex-col">
 	<!-- Metadata Accordion -->
-	<Accordion.Root type="single" bind:value class="w-full border border-dark-40 shadow-sm">
+	<Accordion.Root type="single" bind:value class="w-full border-y border-y-dark-40 shadow-sm">
 		<Accordion.Item value="meta">
 			<Accordion.Trigger
 				class="group flex w-full items-center justify-center gap-2 p-4 text-left hover:bg-background-hover focus:ring-2 focus:outline-none data-[state=open]:rounded-b-none data-[state=open]:bg-background-hover"
