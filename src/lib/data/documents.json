@@ -83,6 +83,7 @@
 					"linkedEntities": {}
 				},
 				"tei": {
+					"id": "A-1-b_6-5_AC003",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
 					"filename": "A-1-b_6-5_AC003.xml"
 				},
@@ -132,7 +133,7 @@
 					"linkedDocuments": {
 						"audio": ["audio_0010"]
 					},
-					"versions": {"posthum": ["posthum_0102"]}
+					"versions": { "posthum": ["posthum_0102"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -140,7 +141,13 @@
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
 				"manuscript": {
-					"iiif_urls": []
+					"iiif_urls": [
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_001.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_002.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_004.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_005.tif"
+					]
 				}
 			},
 			"posthum_0102": {
@@ -160,7 +167,7 @@
 					"linkedDocuments": {
 						"audio": ["audio_0010"]
 					},
-					"versions": {"posthum": ["posthum_0101"]}
+					"versions": { "posthum": ["posthum_0101"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -168,7 +175,13 @@
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
 				"manuscript": {
-					"iiif_urls": []
+					"iiif_urls": [
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_001.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_002.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_004.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_005.tif"
+					]
 				}
 			},
 			"posthum_0103": {
@@ -332,7 +345,7 @@
 					"dict_version": 1
 				},
 				"crossReferences": {
-					"versions": {"posthum": ["posthum_0111"]}
+					"versions": { "posthum": ["posthum_0111"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -357,7 +370,7 @@
 					"dict_version": 2
 				},
 				"crossReferences": {
-					"versions": {"posthum": ["posthum_0110"]}
+					"versions": { "posthum": ["posthum_0110"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -382,7 +395,7 @@
 					"dict_version": 1
 				},
 				"crossReferences": {
-					"versions": {"posthum": ["posthum_0113"]}
+					"versions": { "posthum": ["posthum_0113"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -407,7 +420,7 @@
 					"dict_version": 2
 				},
 				"crossReferences": {
-					"versions": {"posthum": ["posthum_0112"]}
+					"versions": { "posthum": ["posthum_0112"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -579,7 +592,7 @@
 					"dict_version": 1
 				},
 				"crossReferences": {
-					"versions": {"posthum": ["posthum_0122"]}
+					"versions": { "posthum": ["posthum_0122"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -604,7 +617,7 @@
 					"dict_version": 2
 				},
 				"crossReferences": {
-					"versions": {"posthum": ["posthum_0121"]}
+					"versions": { "posthum": ["posthum_0121"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -965,7 +978,7 @@
 					"dict_version": 1
 				},
 				"crossReferences": {
-					"versions": {"posthum": ["posthum_0140"]}
+					"versions": { "posthum": ["posthum_0140"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -990,7 +1003,7 @@
 					"dict_version": 2
 				},
 				"crossReferences": {
-					"versions": {"posthum": ["posthum_0139"]}
+					"versions": { "posthum": ["posthum_0139"] }
 				},
 				"tei": {
 					"id": "A-1-b_6-2_AC001",
@@ -1146,12 +1159,29 @@
 					}
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"id": "A-1-b_6-5_AC003",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
+					"filename": "A-1-b_6-5_AC003.xml"
 				},
 				"manuscript": {
-					"iiif_urls": []
+					"iiif_urls": [
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_003.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_009.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_010.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_011.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_012.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_013.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_014.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-1.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-2.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_016.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_017.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_018.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_019.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_020.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_021.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_022.tif"
+					]
 				}
 			},
 			"posthum_0202": {
@@ -1173,12 +1203,29 @@
 					}
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"id": "A-1-b_6-5_AC003",
+					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
+					"filename": "A-1-b_6-5_AC003.xml"
 				},
 				"manuscript": {
-					"iiif_urls": []
+					"iiif_urls": [
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_003.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_009.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_010.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_011.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_012.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_013.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_014.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-1.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-2.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_016.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_017.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_018.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_019.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_020.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_021.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_022.tif"
+					]
 				}
 			},
 			"posthum_0203": {
@@ -1470,6 +1517,7 @@
 					"linkedEntities": {}
 				},
 				"tei": {
+					"id": "A-1-b_7-8",
 					"path": "A-1/A-1-b/A-1-b_7/A-1-b_7-8",
 					"filename": "A-1-b_7-8.xml"
 				},
@@ -1585,6 +1633,7 @@
 					"linkedEntities": {}
 				},
 				"tei": {
+					"id": "A-1-a_1-1",
 					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-1",
 					"filename": "A-1-a_1-1.xml"
 				},
@@ -1641,6 +1690,7 @@
 					"linkedEntities": {}
 				},
 				"tei": {
+					"id": "A-5-b_1",
 					"path": "A-5/A-5-b/A-5-b_1",
 					"filename": "A-5-b_1.xml"
 				},
@@ -1687,6 +1737,7 @@
 					"linkedEntities": {}
 				},
 				"tei": {
+					"id": "A-1-b_1-2",
 					"path": "A-1/A-1-b/A-1-b_1/A-1-b_1-2",
 					"filename": "A-1-b_1-2.xml"
 				},
@@ -1747,6 +1798,7 @@
 					"linkedEntities": {}
 				},
 				"tei": {
+					"id": "A-5-a_13",
 					"path": "A-5/A-5-a/A-5-a_13",
 					"filename": "A-5-a_13.xml"
 				},
@@ -1787,6 +1839,7 @@
 					"linkedEntities": {}
 				},
 				"tei": {
+					"id": "A-1-a_1-4",
 					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-4",
 					"filename": "A-1-a_1-4.xml"
 				},
