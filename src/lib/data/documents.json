@@ -34,7 +34,6 @@
 					"linkedEntities": {}
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -83,7 +82,6 @@
 					"linkedEntities": {}
 				},
 				"tei": {
-					"id": "A-1-b_6-5_AC003",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
 					"filename": "A-1-b_6-5_AC003.xml"
 				},
@@ -136,7 +134,6 @@
 					"versions": { "posthum": ["posthum_0102"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -170,7 +167,6 @@
 					"versions": { "posthum": ["posthum_0101"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -197,7 +193,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -218,7 +213,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -239,7 +233,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -260,7 +253,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -281,7 +273,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -302,7 +293,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -323,7 +313,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -348,7 +337,6 @@
 					"versions": { "posthum": ["posthum_0111"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -373,7 +361,6 @@
 					"versions": { "posthum": ["posthum_0110"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -398,7 +385,6 @@
 					"versions": { "posthum": ["posthum_0113"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -423,7 +409,6 @@
 					"versions": { "posthum": ["posthum_0112"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -444,7 +429,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -465,7 +449,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -486,7 +469,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -507,7 +489,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -528,7 +509,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -549,7 +529,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -570,7 +549,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -595,7 +573,6 @@
 					"versions": { "posthum": ["posthum_0122"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -620,7 +597,6 @@
 					"versions": { "posthum": ["posthum_0121"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -641,7 +617,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -662,7 +637,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -683,7 +657,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -704,7 +677,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -725,7 +697,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -746,7 +717,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -767,7 +737,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -788,7 +757,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -809,7 +777,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -830,7 +797,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -851,7 +817,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -872,7 +837,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -893,7 +857,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -914,7 +877,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -935,7 +897,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -956,7 +917,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -981,7 +941,6 @@
 					"versions": { "posthum": ["posthum_0140"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1006,7 +965,6 @@
 					"versions": { "posthum": ["posthum_0139"] }
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1027,7 +985,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1048,7 +1005,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1069,7 +1025,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1090,7 +1045,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1111,7 +1065,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1132,7 +1085,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1159,7 +1111,6 @@
 					}
 				},
 				"tei": {
-					"id": "A-1-b_6-5_AC003",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
 					"filename": "A-1-b_6-5_AC003.xml"
 				},
@@ -1203,7 +1154,6 @@
 					}
 				},
 				"tei": {
-					"id": "A-1-b_6-5_AC003",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
 					"filename": "A-1-b_6-5_AC003.xml"
 				},
@@ -1247,7 +1197,6 @@
 					}
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1268,7 +1217,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1289,7 +1237,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1314,7 +1261,6 @@
 					}
 				},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1335,7 +1281,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1356,7 +1301,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1377,7 +1321,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1398,7 +1341,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1419,7 +1361,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1440,7 +1381,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1461,7 +1401,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1482,7 +1421,6 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"id": "A-1-b_6-2_AC001",
 					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
 					"filename": "A-1-b_6-2_AC001.xml"
 				},
@@ -1517,7 +1455,6 @@
 					"linkedEntities": {}
 				},
 				"tei": {
-					"id": "A-1-b_7-8",
 					"path": "A-1/A-1-b/A-1-b_7/A-1-b_7-8",
 					"filename": "A-1-b_7-8.xml"
 				},
@@ -1633,7 +1570,6 @@
 					"linkedEntities": {}
 				},
 				"tei": {
-					"id": "A-1-a_1-1",
 					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-1",
 					"filename": "A-1-a_1-1.xml"
 				},
@@ -1690,7 +1626,6 @@
 					"linkedEntities": {}
 				},
 				"tei": {
-					"id": "A-5-b_1",
 					"path": "A-5/A-5-b/A-5-b_1",
 					"filename": "A-5-b_1.xml"
 				},
@@ -1737,7 +1672,6 @@
 					"linkedEntities": {}
 				},
 				"tei": {
-					"id": "A-1-b_1-2",
 					"path": "A-1/A-1-b/A-1-b_1/A-1-b_1-2",
 					"filename": "A-1-b_1-2.xml"
 				},
@@ -1798,7 +1732,6 @@
 					"linkedEntities": {}
 				},
 				"tei": {
-					"id": "A-5-a_13",
 					"path": "A-5/A-5-a/A-5-a_13",
 					"filename": "A-5-a_13.xml"
 				},
@@ -1839,7 +1772,6 @@
 					"linkedEntities": {}
 				},
 				"tei": {
-					"id": "A-1-a_1-4",
 					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-4",
 					"filename": "A-1-a_1-4.xml"
 				},
