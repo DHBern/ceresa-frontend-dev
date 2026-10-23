@@ -16,6 +16,7 @@ import type {
 	TDocKeys,
 	TDocTypes
 } from '$lib/types/documents/TDocuments';
+import documents_path_map_xml from '$lib/data/documents_path_map_xml.json';
 import { register as reg } from '$lib/data/register.json';
 import type { TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
 import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
@@ -46,8 +47,8 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 		citedEntities?: TCrossRefEntitiesExtended;
 		linkedDocuments?: TCrossRefDocumentsExtended;
 		citedDocuments?: TCrossRefDocumentsExtended;
-		"dict-1"?: TCrossRefDocumentsExtended;
-		"dict-2"?: TCrossRefDocumentsExtended;
+		'dict-1'?: TCrossRefDocumentsExtended;
+		'dict-2'?: TCrossRefDocumentsExtended;
 		versions?: TCrossRefDocumentsExtended;
 	} = {};
 
@@ -69,14 +70,21 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 		};
 
 		try {
+			// (0) Resolve full path
+			const filename = resolvedDoc.item?.tei.filename;
+			const path_from_map = documents_path_map_xml[resolvedDoc.item?.tei.filename];
+			const path = `/data/sources/tei/${path_from_map}`
+			if (!path_from_map) {
+				console.warn(`Mapping does not contain filename ${filename}.`);
+				return defaultBody
+			}
+			
 			// (1) Fetch xml data
-			const res = await fetch(
-				asset(`/data/sources/tei/${resolvedDoc.item?.tei.path}/${resolvedDoc.item?.tei.filename}`)
-			);
+			const res = await fetch(asset(`${path}/${filename}.xml`));
 			// Throw 404 if XML not found
 			if (!res.ok) {
 				if (res.status === 404) {
-					console.warn('XML not found, using default data');
+					console.warn(`XML not found in ${path}/${filename}.xml. Using default data.`);
 					return defaultBody;
 				}
 				throw new Error(`Fetch error: ${res.status} ${res.statusText}`);
@@ -86,7 +94,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			const xmlString = await res.text();
 			// Warn if empty/invalid XML
 			if (!xmlString || !xmlString.trim()) {
-				console.warn('Empty XML response, using default data');
+				console.warn(`Empty XML response from ${path}/${filename}.xml. Using default data.`);
 				return defaultBody;
 			}
 

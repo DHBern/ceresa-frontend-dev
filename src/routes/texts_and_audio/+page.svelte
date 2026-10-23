@@ -1,9 +1,5 @@
 <script lang="ts">
-	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
-	import type { TSeqUnpublishedKeys } from '$lib/types/TSequences';
 	import { resolve } from '$app/paths';
-
-	let seqData = $derived(seqAll.unpublished);
 </script>
 
 <div class={['z-100 mx-auto flex max-w-300 flex-col gap-10 bg-background px-10']}>
@@ -55,6 +51,34 @@
 			</p>
 			<div class="flex flex-wrap justify-center gap-2">
 				<a class="preset-btn-round --normal" href={resolve('/published')}>Published Works</a>
+			</div>
+		</div>
+
+		<!-- Piccolo Dizionario -->
+		<div class="flex flex-col gap-7">
+			<h2 class="h2 text-center">Piccolo Dizionario</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+			<div class="flex flex-wrap justify-center gap-2">
+				<a class="preset-btn-round --normal" href={resolve('/piccolo_dizionario')}
+					>Piccolo Dizionario</a
+				>
+			</div>
+		</div>
+
+		<!-- Audio Documents -->
+		<div class="flex flex-col gap-7">
+			<h2 class="h2 text-center">Audio Documents</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+			<div class="flex flex-wrap justify-center gap-2">
+				<a class="preset-btn-round --normal" href={resolve('/audio_documents')}>Audio Documents</a>
 			</div>
 		</div>
 	</div>

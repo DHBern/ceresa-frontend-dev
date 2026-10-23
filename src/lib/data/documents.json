@@ -6,1425 +6,1765 @@
 		"description": ""
 	},
 	"documents": {
-		"posthum": {
+			"posthum": {
 			"posthum_0001": {
 				"slug": "posthum_0001",
-				"name": "Anima",
+				"name": "[Emily Brontë]",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "1991-06-20",
+					"to": "1991-06-20"
 				},
-				"type": "",
 				"metadata": {
-					"title": "Anima",
-					"title_full": "",
-					"pubDate": "",
+					"part_of_dict": false, "part_of_eliminabile": false,
+					"title": "[Emily Brontë]",
+					"title_full": "[Emily Brontë]",
 					"pubPlace": "",
-					"archive": "",
-					"archiveCollation": "",
-					"pubSecondary": "",
-					"note": ""
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
-				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {
-						"audio": ["audio_0010"]
-					},
-					"citedEntities": {},
-					"linkedEntities": {}
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-5-b_11_AC001"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_004.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_005.tif"
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_001.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_002.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_003.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_004.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_005.tif"
 					]
-				},
-				"editorialNotes": {},
-				"numPages": null,
-				"pageLimits": {
-					"text": [null, null]
-				},
-				"edition": {
-					"fullyEdited": false
 				}
 			},
 			"posthum_0002": {
 				"slug": "posthum_0002",
-				"name": "Aborto",
+				"name": "[Intervento all'Istituto Svizzero]",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "1991",
+					"to": "1991"
 				},
-				"type": "",
 				"metadata": {
-					"title": "Aborto",
-					"title_full": "",
-					"pubDate": "",
+					"part_of_dict": false, "part_of_eliminabile": false,
+					"title": "[Intervento all'Istituto Svizzero]",
+					"title_full": "[Intervento all'Istituto Svizzero]",
 					"pubPlace": "",
-					"archive": "",
-					"archiveCollation": "",
-					"pubSecondary": "",
-					"note": ""
-				},
-				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {
-						"audio": ["audio_0007"]
-					},
-					"citedEntities": {},
-					"linkedEntities": {}
-				},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
-					"filename": "A-1-b_6-5_AC003.xml"
-				},
-				"manuscript": {
-					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_009.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_010.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_011.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_012.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_013.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_014.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-1.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-2.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_016.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_017.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_018.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_019.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_020.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_021.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_022.tif"
-					]
-				},
-				"editorialNotes": {},
-				"numPages": null,
-				"pageLimits": {
-					"text": [null, null]
-				},
-				"edition": {
-					"fullyEdited": false
-				}
-			},
-			"posthum_0101": {
-				"slug": "posthum_0101",
-				"name": "Anima",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 1,
-					"dict_basename": "Anima",
-					"dict_version": 1
-				},
-				"crossReferences": {
-					"linkedDocuments": {
-						"audio": ["audio_0010"]
-					},
-					"versions": { "posthum": ["posthum_0102"] }
-				},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
-				},
-				"manuscript": {
-					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_004.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_005.tif"
-					]
-				}
-			},
-			"posthum_0102": {
-				"slug": "posthum_0102",
-				"name": "Anima",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 2,
-					"dict_basename": "Anima",
-					"dict_version": 2
-				},
-				"crossReferences": {
-					"linkedDocuments": {
-						"audio": ["audio_0010"]
-					},
-					"versions": { "posthum": ["posthum_0101"] }
-				},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
-				},
-				"manuscript": {
-					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_004.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_005.tif"
-					]
-				}
-			},
-			"posthum_0103": {
-				"slug": "posthum_0103",
-				"name": "Animale",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 3
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-5-b_11_AC002"
 				},
 				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": [
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_011.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_012.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_013.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_014.tif"
+					]
+				}
+			},
+			"posthum_0003": {
+				"slug": "posthum_0003",
+				"name": "Anima [1]",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Anima [1]",
+					"title_full": "Anima [1]",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-2_AC001a??"
+				},
+				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0104": {
-				"slug": "posthum_0104",
+			"posthum_0004": {
+				"slug": "posthum_0004",
+				"name": "Anima [2]",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Anima [2]",
+					"title_full": "Anima [2]",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-2_AC001b??"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0005": {
+				"slug": "posthum_0005",
+				"name": "Animale",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Animale",
+					"title_full": "Animale",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-2_AC002a??"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0006": {
+				"slug": "posthum_0006",
 				"name": "Animali (esseri)",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 4
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Animali (esseri)",
+					"title_full": "Animali (esseri)",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC002b??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0105": {
-				"slug": "posthum_0105",
+			"posthum_0007": {
+				"slug": "posthum_0007",
 				"name": "Animus",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 5
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Animus",
+					"title_full": "Animus",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC003"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0106": {
-				"slug": "posthum_0106",
+			"posthum_0008": {
+				"slug": "posthum_0008",
 				"name": "Apparenza",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 6
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Apparenza",
+					"title_full": "Apparenza",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC004"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0107": {
-				"slug": "posthum_0107",
+			"posthum_0009": {
+				"slug": "posthum_0009",
 				"name": "Bellezza",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 7
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Bellezza",
+					"title_full": "Bellezza",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC005"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0108": {
-				"slug": "posthum_0108",
-				"name": "Biologia. Differenze biologiche",
+			"posthum_0010": {
+				"slug": "posthum_0010",
+				"name": "Biologia - Differenze biologiche",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 8
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Biologia - Differenze biologiche",
+					"title_full": "Biologia - Differenze biologiche",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC006"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0109": {
-				"slug": "posthum_0109",
+			"posthum_0011": {
+				"slug": "posthum_0011",
 				"name": "Cattolica (chiesa la)",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 9
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Cattolica (chiesa la)",
+					"title_full": "Cattolica (chiesa la)",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC007"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0110": {
-				"slug": "posthum_0110",
+			"posthum_0012": {
+				"slug": "posthum_0012",
 				"name": "Coscienza",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 10,
-					"dict_basename": "Coscienza",
-					"dict_version": 1
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Coscienza",
+					"title_full": "Coscienza",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
-				"crossReferences": {
-					"versions": { "posthum": ["posthum_0111"] }
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC008"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0111": {
-				"slug": "posthum_0111",
-				"name": "Coscienza",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 11,
-					"dict_basename": "Coscienza",
-					"dict_version": 2
-				},
-				"crossReferences": {
-					"versions": { "posthum": ["posthum_0110"] }
-				},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
-				},
-				"manuscript": {
-					"iiif_urls": []
-				}
-			},
-			"posthum_0112": {
-				"slug": "posthum_0112",
+			"posthum_0013": {
+				"slug": "posthum_0013",
 				"name": "Cultura",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 12,
-					"dict_basename": "Cultura",
-					"dict_version": 1
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Cultura",
+					"title_full": "Cultura",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
-				"crossReferences": {
-					"versions": { "posthum": ["posthum_0113"] }
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC009"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0113": {
-				"slug": "posthum_0113",
-				"name": "Cultura",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 13,
-					"dict_basename": "Cultura",
-					"dict_version": 2
-				},
-				"crossReferences": {
-					"versions": { "posthum": ["posthum_0112"] }
-				},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
-				},
-				"manuscript": {
-					"iiif_urls": []
-				}
-			},
-			"posthum_0114": {
-				"slug": "posthum_0114",
+			"posthum_0014": {
+				"slug": "posthum_0014",
 				"name": "Democristiano",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 14
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Democristiano",
+					"title_full": "Democristiano",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC010"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0115": {
-				"slug": "posthum_0115",
+			"posthum_0015": {
+				"slug": "posthum_0015",
 				"name": "(Dio)",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 15
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "(Dio)",
+					"title_full": "(Dio)",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC011"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0116": {
-				"slug": "posthum_0116",
+			"posthum_0016": {
+				"slug": "posthum_0016",
 				"name": "Donna",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 16
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Donna",
+					"title_full": "Donna",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC012"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0117": {
-				"slug": "posthum_0117",
+			"posthum_0017": {
+				"slug": "posthum_0017",
 				"name": "Etologia",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 17
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Etologia",
+					"title_full": "Etologia",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC013"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0118": {
-				"slug": "posthum_0118",
+			"posthum_0018": {
+				"slug": "posthum_0018",
 				"name": "Eva",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 18
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Eva",
+					"title_full": "Eva",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC014"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0119": {
-				"slug": "posthum_0119",
+			"posthum_0019": {
+				"slug": "posthum_0019",
 				"name": "Famiglia",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 19
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Famiglia",
+					"title_full": "Famiglia",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC016"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0120": {
-				"slug": "posthum_0120",
+			"posthum_0020": {
+				"slug": "posthum_0020",
 				"name": "Femminile. Femmina. Femminismo",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 20
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Femminile. Femmina. Femminismo",
+					"title_full": "Femminile. Femmina. Femminismo",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC017"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0121": {
-				"slug": "posthum_0121",
-				"name": "Femminilità",
+			"posthum_0021": {
+				"slug": "posthum_0021",
+				"name": "Femminilità  [1]",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 21,
-					"dict_basename": "Femminilità",
-					"dict_version": 1
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Femminilità  [1]",
+					"title_full": "Femminilità  [1]",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
-				"crossReferences": {
-					"versions": { "posthum": ["posthum_0122"] }
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC018a??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0122": {
-				"slug": "posthum_0122",
-				"name": "Femminilità",
+			"posthum_0022": {
+				"slug": "posthum_0022",
+				"name": "Femminilità  [2]",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 22,
-					"dict_basename": "Femminilità",
-					"dict_version": 2
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Femminilità  [2]",
+					"title_full": "Femminilità  [2]",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
-				"crossReferences": {
-					"versions": { "posthum": ["posthum_0121"] }
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC018b??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0123": {
-				"slug": "posthum_0123",
+			"posthum_0023": {
+				"slug": "posthum_0023",
 				"name": "Figli",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 23
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Figli",
+					"title_full": "Figli",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC015"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0124": {
-				"slug": "posthum_0124",
+			"posthum_0024": {
+				"slug": "posthum_0024",
 				"name": "Grammatica",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 24
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Grammatica",
+					"title_full": "Grammatica",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-2_AC019"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0125": {
-				"slug": "posthum_0125",
+			"posthum_0025": {
+				"slug": "posthum_0025",
 				"name": "Lavoro",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 25
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Lavoro",
+					"title_full": "Lavoro",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC001"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0126": {
-				"slug": "posthum_0126",
+			"posthum_0026": {
+				"slug": "posthum_0026",
 				"name": "Legge",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 26
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Legge",
+					"title_full": "Legge",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC002"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0127": {
-				"slug": "posthum_0127",
-				"name": "Letterario (personaggio il)",
+			"posthum_0027": {
+				"slug": "posthum_0027",
+				"name": "Letteratura??",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 27
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Letteratura??",
+					"title_full": "Letteratura??",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC003a??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0128": {
-				"slug": "posthum_0128",
-				"name": "Letterario (personaggio femminile il)",
+			"posthum_0028": {
+				"slug": "posthum_0028",
+				"name": "Letterario (personaggio femminile il)??",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 28
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Letterario (personaggio femminile il)??",
+					"title_full": "Letterario (personaggio femminile il)??",
+					"pubPlace": "",
+					"language": "",
+					"type_editoriale": "",
+					"type_genere": ""
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC003b??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0129": {
-				"slug": "posthum_0129",
-				"name": "Letteratura",
+			"posthum_0029": {
+				"slug": "posthum_0029",
+				"name": "Letterario (personaggio il)??",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 29
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Letterario (personaggio il)??",
+					"title_full": "Letterario (personaggio il)??",
+					"pubPlace": "",
+					"language": "",
+					"type_editoriale": "",
+					"type_genere": ""
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC003c???"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0130": {
-				"slug": "posthum_0130",
+			"posthum_0030": {
+				"slug": "posthum_0030",
 				"name": "Madre",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 30
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Madre",
+					"title_full": "Madre",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC004"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0131": {
-				"slug": "posthum_0131",
+			"posthum_0031": {
+				"slug": "posthum_0031",
 				"name": "Maschile",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 31
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Maschile",
+					"title_full": "Maschile",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC005"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0132": {
-				"slug": "posthum_0132",
+			"posthum_0032": {
+				"slug": "posthum_0032",
 				"name": "Moda femminile",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 32
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Moda femminile",
+					"title_full": "Moda femminile",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC006"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0133": {
-				"slug": "posthum_0133",
-				"name": "Morale. Moralità ",
+			"posthum_0033": {
+				"slug": "posthum_0033",
+				"name": "Morale. Moralità",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 33
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Morale. Moralità",
+					"title_full": "Morale. Moralità",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC007"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0134": {
-				"slug": "posthum_0134",
-				"name": "Natura. Naturale ",
+			"posthum_0034": {
+				"slug": "posthum_0034",
+				"name": "Natura. Naturale",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 34
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Natura. Naturale",
+					"title_full": "Natura. Naturale",
+					"pubPlace": "",
+					"language": "",
+					"type_editoriale": "",
+					"type_genere": ""
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC007??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0135": {
-				"slug": "posthum_0135",
-				"name": "Norma. Normale",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 35
-				},
-				"crossReferences": {},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
-				},
-				"manuscript": {
-					"iiif_urls": []
-				}
-			},
-			"posthum_0136": {
-				"slug": "posthum_0136",
+			"posthum_0035": {
+				"slug": "posthum_0035",
 				"name": "Ovvio",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 36
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Ovvio",
+					"title_full": "Ovvio",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC008"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0137": {
-				"slug": "posthum_0137",
+			"posthum_0036": {
+				"slug": "posthum_0036",
+				"name": "Parabola",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Parabola",
+					"title_full": "Parabola",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-3_AC009"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0037": {
+				"slug": "posthum_0037",
 				"name": "Personaggio femminile",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 37
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Personaggio femminile",
+					"title_full": "Personaggio femminile",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC003d??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0138": {
-				"slug": "posthum_0138",
+			"posthum_0038": {
+				"slug": "posthum_0038",
 				"name": "Personaggio maschile",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 38
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Personaggio maschile",
+					"title_full": "Personaggio maschile",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC003e??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0139": {
-				"slug": "posthum_0139",
-				"name": "Psicologia",
+			"posthum_0039": {
+				"slug": "posthum_0039",
+				"name": "Pornografia",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 39,
-					"dict_basename": "Psicologia",
-					"dict_version": 1
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Pornografia",
+					"title_full": "Pornografia",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
-				"crossReferences": {
-					"versions": { "posthum": ["posthum_0140"] }
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC010"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0140": {
-				"slug": "posthum_0140",
-				"name": "Psicologia",
+			"posthum_0040": {
+				"slug": "posthum_0040",
+				"name": "Psicologia [1]",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 40,
-					"dict_basename": "Psicologia",
-					"dict_version": 2
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Psicologia [1]",
+					"title_full": "Psicologia [1]",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
-				"crossReferences": {
-					"versions": { "posthum": ["posthum_0139"] }
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC011a??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0141": {
-				"slug": "posthum_0141",
+			"posthum_0041": {
+				"slug": "posthum_0041",
+				"name": "Psicologia [2]",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Psicologia [2]",
+					"title_full": "Psicologia [2]",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-3_AC011b??"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0042": {
+				"slug": "posthum_0042",
 				"name": "Ragione. Ragionare",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 41
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Ragione. Ragionare",
+					"title_full": "Ragione. Ragionare",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC012"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0142": {
-				"slug": "posthum_0142",
-				"name": "Scrittore. Scrittrice",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 42
-				},
-				"crossReferences": {},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
-				},
-				"manuscript": {
-					"iiif_urls": []
-				}
-			},
-			"posthum_0143": {
-				"slug": "posthum_0143",
+			"posthum_0043": {
+				"slug": "posthum_0043",
 				"name": "Sessi (guerra dei)",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 43
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Sessi (guerra dei)",
+					"title_full": "Sessi (guerra dei)",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC013a??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0144": {
-				"slug": "posthum_0144",
+			"posthum_0044": {
+				"slug": "posthum_0044",
 				"name": "Sesso",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 44
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Sesso",
+					"title_full": "Sesso",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC013b??"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0145": {
-				"slug": "posthum_0145",
-				"name": "Svizzera (la)",
+			"posthum_0045": {
+				"slug": "posthum_0045",
+				"name": "Scrittore. Scrittrice",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 45
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Scrittore. Scrittrice",
+					"title_full": "Scrittore. Scrittrice",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC014"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0146": {
-				"slug": "posthum_0146",
+			"posthum_0046": {
+				"slug": "posthum_0046",
+				"name": "Vergine",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Vergine",
+					"title_full": "Vergine",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-3_AC015"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0047": {
+				"slug": "posthum_0047",
 				"name": "Vita",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-1",
-					"dict_order": 46
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Vita",
+					"title_full": "Vita",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-3_AC016"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0201": {
-				"slug": "posthum_0201",
-				"name": "Aborto",
+			"posthum_0048": {
+				"slug": "posthum_0048",
+				"name": "Svizzera (la)",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 1,
-					"dict_basename": "Aborto",
-					"dict_version": 1
+					"part_of_dict": true, "part_of_eliminabile": false,
+					"title": "Svizzera (la)",
+					"title_full": "Svizzera (la)",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
 				},
-				"crossReferences": {
-					"linkedDocuments": {
-						"audio": ["audio_0007"]
-					}
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
-					"filename": "A-1-b_6-5_AC003.xml"
+					"filename": "A-1-b_6-4"
 				},
 				"manuscript": {
-					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_009.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_010.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_011.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_012.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_013.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_014.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-1.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-2.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_016.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_017.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_018.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_019.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_020.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_021.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_022.tif"
-					]
-				}
-			},
-			"posthum_0202": {
-				"slug": "posthum_0202",
-				"name": "Aborto (liberalizzazione del)",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 2,
-					"dict_basename": "Aborto (liberalizzazione del)",
-					"dict_version": 2
-				},
-				"crossReferences": {
-					"linkedDocuments": {
-						"audio": ["audio_0007"]
-					}
-				},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-5/A-1-b_6-5_AC003",
-					"filename": "A-1-b_6-5_AC003.xml"
-				},
-				"manuscript": {
-					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_009.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_010.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_011.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_012.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_013.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_014.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-1.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-2.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_016.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_017.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_018.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_019.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_020.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_021.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_022.tif"
-					]
-				}
-			},
-			"posthum_0203": {
-				"slug": "posthum_0203",
-				"name": "Aborto",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 3,
-					"dict_basename": "Aborto",
-					"dict_version": 3
-				},
-				"crossReferences": {
-					"linkedDocuments": {
-						"audio": ["audio_0007"]
-					}
-				},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
-				},
-				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0204": {
-				"slug": "posthum_0204",
+			"posthum_0049": {
+				"slug": "posthum_0049",
 				"name": "Accoppiare. Copulazione",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 4
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Accoppiare. Copulazione",
+					"title_full": "Accoppiare. Copulazione",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC002"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0205": {
-				"slug": "posthum_0205",
+			"posthum_0050": {
+				"slug": "posthum_0050",
+				"name": "Aborto (liberalizzazione del)",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Aborto (liberalizzazione del)",
+					"title_full": "Aborto (liberalizzazione del)",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC003a??"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0051": {
+				"slug": "posthum_0051",
+				"name": "Aborto",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Aborto",
+					"title_full": "Aborto",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC003b??"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0052": {
+				"slug": "posthum_0052",
+				"name": "Aborto",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Aborto",
+					"title_full": "Aborto",
+					"pubPlace": "",
+					"language": "",
+					"type_editoriale": "",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC003c??"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0053": {
+				"slug": "posthum_0053",
 				"name": "Adamo",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 5
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Adamo",
+					"title_full": "Adamo",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC004"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0206": {
-				"slug": "posthum_0206",
-				"name": "Anima",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 6
-				},
-				"crossReferences": {
-					"linkedDocuments": {
-						"audio": ["audio_0010"]
-					}
-				},
-				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
-				},
-				"manuscript": {
-					"iiif_urls": []
-				}
-			},
-			"posthum_0207": {
-				"slug": "posthum_0207",
+			"posthum_0054": {
+				"slug": "posthum_0054",
 				"name": "Amore",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 7
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Amore",
+					"title_full": "Amore",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC005"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0208": {
-				"slug": "posthum_0208",
-				"name": "Animale",
+			"posthum_0055": {
+				"slug": "posthum_0055",
+				"name": "Anima",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 8
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Anima",
+					"title_full": "Anima",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC006"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0209": {
-				"slug": "posthum_0209",
-				"name": "Deserto",
+			"posthum_0056": {
+				"slug": "posthum_0056",
+				"name": "Animale ",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 9
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Animale ",
+					"title_full": "Animale ",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC007"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0210": {
-				"slug": "posthum_0210",
+			"posthum_0057": {
+				"slug": "posthum_0057",
 				"name": "Femminismo",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 10
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Femminismo",
+					"title_full": "Femminismo",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC008"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0212": {
-				"slug": "posthum_0212",
+			"posthum_0058": {
+				"slug": "posthum_0058",
+				"name": "Cultura",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Cultura",
+					"title_full": "Cultura",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC009"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0059": {
+				"slug": "posthum_0059",
+				"name": "Deserto",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Deserto",
+					"title_full": "Deserto",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC010"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0060": {
+				"slug": "posthum_0060",
+				"name": "Donna",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Donna",
+					"title_full": "Donna",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC011"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0061": {
+				"slug": "posthum_0061",
+				"name": "Etologia",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Etologia",
+					"title_full": "Etologia",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC012"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0062": {
+				"slug": "posthum_0062",
+				"name": "Generare",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Generare",
+					"title_full": "Generare",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC013"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0063": {
+				"slug": "posthum_0063",
+				"name": "Lavoro",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Lavoro",
+					"title_full": "Lavoro",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC014"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0064": {
+				"slug": "posthum_0064",
+				"name": "Madre",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Madre",
+					"title_full": "Madre",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "dattiloscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC015"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0065": {
+				"slug": "posthum_0065",
+				"name": "Pornografia",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Pornografia",
+					"title_full": "Pornografia",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC016"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0066": {
+				"slug": "posthum_0066",
 				"name": "Prossimo",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 12
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Prossimo",
+					"title_full": "Prossimo",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC017"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0213": {
-				"slug": "posthum_0213",
+			"posthum_0067": {
+				"slug": "posthum_0067",
 				"name": "Religione",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 13
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Religione",
+					"title_full": "Religione",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC018"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0214": {
-				"slug": "posthum_0214",
-				"name": "Uomini",
+			"posthum_0068": {
+				"slug": "posthum_0068",
+				"name": "Sesso",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 14
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Sesso",
+					"title_full": "Sesso",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC019"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			},
-			"posthum_0215": {
-				"slug": "posthum_0215",
+			"posthum_0069": {
+				"slug": "posthum_0069",
 				"name": "Uomo",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "",
+					"to": ""
 				},
 				"metadata": {
-					"dictId": "dict-2",
-					"dict_order": 15
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Uomo",
+					"title_full": "Uomo",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
 				},
 				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC001",
-					"filename": "A-1-b_6-2_AC001.xml"
+					"filename": "A-1-b_6-5_AC020"
 				},
 				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": []
+				}
+			},
+			"posthum_0070": {
+				"slug": "posthum_0070",
+				"name": "Uomini",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"part_of_dict": true, "part_of_eliminabile": true,
+					"title": "Uomini",
+					"title_full": "Uomini",
+					"pubPlace": "",
+					"language": "it",
+					"type_editoriale": "",
+					"type_genere": "manoscritto"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_6-5_AC020b??"
+				},
+				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": []
 				}
 			}
@@ -1432,33 +1772,482 @@
 		"unpublished": {
 			"unpublished_0001": {
 				"slug": "unpublished_0001",
-				"name": "Eloisa",
+				"name": "Prefazione per Gli altri",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "1945/1946",
+					"to": "1945/1946"
 				},
-				"type": "",
 				"metadata": {
-					"title": "Eloisa",
-					"title_full": "",
-					"pubDate": "",
+					"title": "Prefazione per Gli altri",
+					"title_full": "Prefazione per Gli altri",
 					"pubPlace": "",
-					"archive": "",
-					"archiveCollation": "",
-					"pubSecondary": "",
-					"note": ""
+					"language": "it",
+					"type_editorale": "manoscritto",
+					"type_genere": "saggistica"
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"citedEntities": {
+						"people": ["person_0017"],
+						"places": ["place_0003"],
+						"bibls": ["bibl_0001"]
+					}
 				},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_7/A-1-b_7-8",
-					"filename": "A-1-b_7-8.xml"
+					"filename": "A-1-a_1-1"
 				},
 				"manuscript": {
+					"comment_lab": "003 is not part of spreadsheet",
+					"iiif_urls": [
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_001.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_002.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_003.tif"
+					]
+				}
+			},
+			"unpublished_0002": {
+				"slug": "unpublished_0002",
+				"name": "Fondo di me",
+				"date": {
+					"from": "1943",
+					"to": "1943"
+				},
+				"metadata": {
+					"title": "Fondo di me",
+					"title_full": "Fondo di me",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "dattiloscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-a_1-2"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": [
+						"A-1-a_1-2_001.tif",
+						"A-1-a_1-2_002.tif",
+						"A-1-a_1-2_003.tif",
+						"A-1-a_1-2_004.tif",
+						"A-1-a_1-2_005.tif",
+						"A-1-a_1-2_006.tif",
+						"A-1-a_1-2_007.tif",
+						"A-1-a_1-2_008.tif",
+						"A-1-a_1-2_009.tif",
+						"A-1-a_1-2_010.tif",
+						"A-1-a_1-2_011.tif",
+						"A-1-a_1-2_012.tif",
+						"A-1-a_1-2_013.tif",
+						"A-1-a_1-2_014.tif",
+						"A-1-a_1-2_015.tif",
+						"A-1-a_1-2_016.tif",
+						"A-1-a_1-2_017.tif",
+						"A-1-a_1-2_018.tif",
+						"A-1-a_1-2_019.tif",
+						"A-1-a_1-2_020.tif",
+						"A-1-a_1-2_021.tif",
+						"A-1-a_1-2_022.tif",
+						"A-1-a_1-2_023.tif",
+						"A-1-a_1-2_024.tif",
+						"A-1-a_1-2_025.tif",
+						"A-1-a_1-2_026.tif",
+						"A-1-a_1-2_027.tif",
+						"A-1-a_1-2_028.tif",
+						"A-1-a_1-2_029.tif",
+						"A-1-a_1-2_030.tif",
+						"A-1-a_1-2_031.tif",
+						"A-1-a_1-2_032.tif",
+						"A-1-a_1-2_033.tif",
+						"A-1-a_1-2_034.tif",
+						"A-1-a_1-2_035.tif",
+						"A-1-a_1-2_036.tif",
+						"A-1-a_1-2_037.tif",
+						"A-1-a_1-2_038.tif",
+						"A-1-a_1-2_039.tif",
+						"A-1-a_1-2_040.tif",
+						"A-1-a_1-2_041.tif",
+						"A-1-a_1-2_042.tif",
+						"A-1-a_1-2_043.tif",
+						"A-1-a_1-2_044.tif",
+						"A-1-a_1-2_045.tif",
+						"A-1-a_1-2_046.tif",
+						"A-1-a_1-2_047.tif",
+						"A-1-a_1-2_048.tif",
+						"A-1-a_1-2_049.tif",
+						"A-1-a_1-2_050.tif",
+						"A-1-a_1-2_051.tif",
+						"A-1-a_1-2_052.tif",
+						"A-1-a_1-2_053.tif",
+						"A-1-a_1-2_054.tif",
+						"A-1-a_1-2_055.tif",
+						"A-1-a_1-2_056.tif",
+						"A-1-a_1-2_057.tif"
+					]
+				}
+			},
+			"unpublished_0003": {
+				"slug": "unpublished_0003",
+				"name": "Caino",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "Caino",
+					"title_full": "Caino",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "dattiloscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_1-1"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": ["A-1-b_1-1_001.tif"]
+				}
+			},
+			"unpublished_0004": {
+				"slug": "unpublished_0004",
+				"name": "Autobiografie / II. Io cannibale",
+				"date": {
+					"from": "1946-10-05",
+					"to": "1946-10-05"
+				},
+				"metadata": {
+					"title": "Autobiografie / II. Io cannibale",
+					"title_full": "Autobiografie / II. Io cannibale",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "manoscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_1-4_AC001"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": [
+						"A-1-b_1-4_001.tif",
+						"A-1-b_1-4_002.tif",
+						"A-1-b_1-4_003.tif",
+						"A-1-b_1-4_004.tif",
+						"A-1-b_1-4_005.tif"
+					]
+				}
+			},
+			"unpublished_0005": {
+				"slug": "unpublished_0005",
+				"name": "Autobiografie / IV",
+				"date": {
+					"from": "1946-10-05",
+					"to": "1946-10-05"
+				},
+				"metadata": {
+					"title": "Autobiografie / IV",
+					"title_full": "Autobiografie / IV",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "manoscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_1-4_AC002"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": ["A-1-b_1-4_006.tif", "A-1-b_1-4_007.tif"]
+				}
+			},
+			"unpublished_0006": {
+				"slug": "unpublished_0006",
+				"name": "Autobiografie / III",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "Autobiografie / III",
+					"title_full": "Autobiografie / III",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "manoscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_1"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": ["A-1-b_1_001.tif", "A-1-b_1_002.tif", "A-1-b_1_003.tif", "A-1-b_1_004.tif"]
+				}
+			},
+			"unpublished_0007": {
+				"slug": "unpublished_0007",
+				"name": "La strega",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "La strega",
+					"title_full": "La strega",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "manoscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_1-2"
+				},
+				"manuscript": {
+					"comment_lab": "spreadsheet only contians A-1-b_1-2_001.tif, A-1-b_1-2_002.tif, A-1-b_1-2_003.tif, A-1-b_1-2_004.tif",
+					"iiif_urls": [
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-1.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-2.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_004.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_005.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_006.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_007.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_008.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_009.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_010.tif"
+					]
+				}
+			},
+			"unpublished_0008": {
+				"slug": "unpublished_0008",
+				"name": "La macchina psicoanalitica",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "La macchina psicoanalitica",
+					"title_full": "La macchina psicoanalitica",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "manoscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_1-3"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": ["A-1-b_1-3_001-1.tif", "A-1-b_1-3_001-2.tif"]
+				}
+			},
+			"unpublished_0009": {
+				"slug": "unpublished_0009",
+				"name": "Il monologo",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "Il monologo",
+					"title_full": "Il monologo",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "}",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_1-10"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": [""]
+				}
+			},
+			"unpublished_0010": {
+				"slug": "unpublished_0010",
+				"name": "Aridità",
+				"date": {
+					"from": "1951-03",
+					"to": "1951-03"
+				},
+				"metadata": {
+					"title": "Aridità",
+					"title_full": "Aridità",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "dattiloscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_1-9"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": [""]
+				}
+			},
+			"unpublished_0011": {
+				"slug": "unpublished_0011",
+				"name": "[Oh Messina oh mia cara dal fondo dei tempi vani]",
+				"date": {
+					"from": "1948-03-18",
+					"to": "1948-03-18"
+				},
+				"metadata": {
+					"title": "[Oh Messina oh mia cara dal fondo dei tempi vani]",
+					"title_full": "[Oh Messina oh mia cara dal fondo dei tempi vani]",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "manoscritto",
+					"type_genere": "poesia"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_3-1"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": ["A-1-b_3-1_001.tif"]
+				}
+			},
+			"unpublished_0012": {
+				"slug": "unpublished_0012",
+				"name": "[Può darsi che la nostra insensibilità]",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "[Può darsi che la nostra insensibilità]",
+					"title_full": "[Può darsi che la nostra insensibilità]",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "dattiloscritto",
+					"type_genere": "poesia"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-2-a_2"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": ["A-2-a_2_001.tif"]
+				}
+			},
+			"unpublished_0013": {
+				"slug": "unpublished_0013",
+				"name": "Messina. Dramma in tre atti",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "Messina. Dramma in tre atti",
+					"title_full": "Messina. Dramma in tre atti",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "manoscritto",
+					"type_genere": "teatro"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_3-2"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": [
+						"A-1-b_3-2_001.tif",
+						"A-1-b_3-2_002.tif",
+						"A-1-b_3-2_003.tif",
+						"A-1-b_3-2_004.tif",
+						"A-1-b_3-2_005.tif",
+						"A-1-b_3-2_006.tif",
+						"A-1-b_3-2_007.tif",
+						"A-1-b_3-2_008.tif",
+						"A-1-b_3-2_009.tif"
+					]
+				}
+			},
+			"unpublished_0014": {
+				"slug": "unpublished_0014",
+				"name": "[piantina Messina]",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "[piantina Messina]",
+					"title_full": "[piantina Messina]",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "manoscritto",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_3-3"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": ["A-1-b_3-3_001.tif"]
+				}
+			},
+			"unpublished_0015": {
+				"slug": "unpublished_0015",
+				"name": "Stratificazione",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "Stratificazione",
+					"title_full": "Stratificazione",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "dattiloscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_5-2"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": [""]
+				}
+			},
+			"unpublished_0016": {
+				"slug": "unpublished_0016",
+				"name": "Eloise ultime ??",
+				"date": {
+					"from": "",
+					"to": ""
+				},
+				"metadata": {
+					"title": "Eloise ultime ??",
+					"title_full": "Eloise ultime ??",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "dattiloscritto",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-b_7-8"
+				},
+				"manuscript": {
+					"comment_lab": "was fully empty in spreadsheet",
 					"iiif_urls": [
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_001.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_002.tif",
@@ -1531,85 +2320,24 @@
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_069.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_070.tif"
 					]
-				},
-				"editorialNotes": {},
-				"numPages": null,
-				"pageLimits": {
-					"text": [null, null]
-				},
-				"edition": {
-					"fullyEdited": false
 				}
 			},
-			"unpublished_0002": {
-				"slug": "unpublished_0002",
-				"name": "Prefazione per “Gli altri”",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"type": "",
-				"metadata": {
-					"title": "Gli altri, prima parte",
-					"title_full": "",
-					"pubDate": "",
-					"pubPlace": "",
-					"archive": "",
-					"archiveCollation": "",
-					"pubSecondary": "",
-					"note": ""
-				},
-				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {
-						"people": ["person_0017"],
-						"places": ["place_0003"],
-						"bibls": ["bibl_0001"]
-					},
-					"linkedEntities": {}
-				},
-				"tei": {
-					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-1",
-					"filename": "A-1-a_1-1.xml"
-				},
-				"manuscript": {
-					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_003.tif"
-					]
-				},
-				"editorialNotes": {},
-				"numPages": null,
-				"pageLimits": {
-					"text": [null, null]
-				},
-				"edition": {
-					"fullyEdited": false
-				}
-			},
-			"unpublished_0003": {
-				"slug": "unpublished_0003",
+			"unpublished_0017": {
+				"slug": "unpublished_0017",
 				"name": "Vittorini et la nouvelle prose italienne",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "1943",
+					"to": "1943"
 				},
-				"type": "",
 				"metadata": {
 					"title": "Vittorini et la nouvelle prose italienne",
-					"title_full": "",
-					"pubDate": "",
+					"title_full": "Vittorini et la nouvelle prose italienne",
 					"pubPlace": "",
-					"archive": "",
-					"archiveCollation": "",
-					"pubSecondary": "",
-					"note": ""
+					"language": "it",
+					"type_editorale": "dattiloscritto",
+					"type_genere": "saggistica"
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
 					"citedEntities": {
 						"people": [
 							"person_0018",
@@ -1622,14 +2350,13 @@
 						"places": ["place_0009"],
 						"orgs": [],
 						"bibls": ["bibl_0008", "bibl_0009", "bibl_0010", "bibl_0011", "bibl_0012"]
-					},
-					"linkedEntities": {}
+					}
 				},
 				"tei": {
-					"path": "A-5/A-5-b/A-5-b_1",
-					"filename": "A-5-b_1.xml"
+					"filename": "A-5-b_1"
 				},
 				"manuscript": {
+					"comment_lab": "",
 					"iiif_urls": [
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_001.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_002.tif",
@@ -1637,146 +2364,90 @@
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_004.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_005.tif"
 					]
-				},
-				"editorialNotes": {},
-				"numPages": null,
-				"pageLimits": {
-					"text": [null, null]
-				},
-				"edition": {
-					"fullyEdited": false
 				}
 			},
-			"unpublished_0004": {
-				"slug": "unpublished_0004",
-				"name": "La strega",
+			"unpublished_0018": {
+				"slug": "unpublished_0018",
+				"name": "Per un catalogo di Afro",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "1952-05-10",
+					"to": "1952-05-10"
 				},
-				"type": "",
 				"metadata": {
-					"title": "La strega",
-					"title_full": "",
-					"pubDate": "",
+					"title": "Per un catalogo di Afro",
+					"title_full": "Per un catalogo di Afro",
 					"pubPlace": "",
-					"archive": "",
-					"archiveCollation": "",
-					"pubSecondary": "",
-					"note": ""
+					"language": "it",
+					"type_editorale": "dattiloscritto",
+					"type_genere": ""
 				},
-				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-1/A-1-b/A-1-b_1/A-1-b_1-2",
-					"filename": "A-1-b_1-2.xml"
+					"filename": "A-5-b_3"
 				},
 				"manuscript": {
-					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-1.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-2.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_004.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_005.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_006.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_007.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_008.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_009.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_010.tif"
-					]
+					"comment_lab": "",
+					"iiif_urls": ["A-5-b_3_001.tif", "A-5-b_3_002.tif"]
+				}
+			},
+			"unpublished_0019": {
+				"slug": "unpublished_0019",
+				"name": "Da: \"Sisterhood Is Powerful\" di Susan Brownmiller, 1970",
+				"date": {
+					"from": "",
+					"to": ""
 				},
-				"editorialNotes": {},
-				"numPages": null,
-				"pageLimits": {
-					"text": [null, null]
+				"metadata": {
+					"title": "Da: \"Sisterhood Is Powerful\" di Susan Brownmiller, 1970",
+					"title_full": "Da: \"Sisterhood Is Powerful\" di Susan Brownmiller, 1970",
+					"pubPlace": "",
+					"language": "it",
+					"type_editorale": "dattiloscritto",
+					"type_genere": "saggistica"
 				},
-				"edition": {
-					"fullyEdited": false
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-6-c"
+				},
+				"manuscript": {
+					"comment_lab": "",
+					"iiif_urls": [""]
 				}
 			}
 		},
 		"published": {
 			"published_0001": {
 				"slug": "published_0001",
-				"name": "Carson McCullers. Eine junge amerikanische Schriftstellerin setzt sich durch",
+				"name": "Gli altri. Prima parte",
 				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
+					"from": "1943-04-30",
+					"to": "1943-04-30"
 				},
-				"type": "",
 				"metadata": {
-					"title": "Carson McCullers. Eine junge amerikanische Schriftstellerin setzt sich durch",
-					"title_full": "",
-					"pubDate": "",
-					"pubPlace": "",
-					"archive": "",
-					"archiveCollation": "",
-					"pubSecondary": "",
-					"note": ""
+					"title": "Gli altri. Prima parte",
+					"title_full": "Gli altri. Prima parte",
+					"pubPlace": "Svizzera italiana. Rivista mensile di cultura",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": "narrativa"
 				},
-				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {
-						"people": ["person_0008", "person_0011", "person_0012"],
-						"places": ["place_0006", "place_0008"],
-						"orgs": [],
-						"bibls": ["bibl_0004", "bibl_0005", "bibl_0006", "bibl_0007"]
-					},
-					"linkedEntities": {}
-				},
+				"crossReferences": {},
 				"tei": {
-					"path": "A-5/A-5-a/A-5-a_13",
-					"filename": "A-5-a_13.xml"
-				},
-				"manuscript": {
-					"iiif_urls": ["https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-a_13_001.tif"]
-				},
-				"editorialNotes": {},
-				"numPages": null,
-				"pageLimits": {
-					"text": [null, null]
-				},
-				"edition": {
-					"fullyEdited": false
-				}
-			},
-			"published_0002": {
-				"slug": "published_0002",
-				"name": "Gli altri, prima parte",
-				"date": {
-					"from": "2000-01-04",
-					"to": "2000-01-05"
-				},
-				"type": "",
-				"metadata": {
-					"title": "Gli altri, prima parte",
-					"title_full": "",
-					"pubDate": "",
-					"pubPlace": "",
-					"archive": "",
-					"archiveCollation": "",
-					"pubSecondary": "",
-					"note": ""
-				},
-				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
-				},
-				"tei": {
-					"path": "A-1/A-1-a/A-1-a_1/A-1-a_1-4",
-					"filename": "A-1-a_1-4.xml"
+					"filename": "A-1-a_1-4"
 				},
 				"manuscript": {
 					"iiif_urls": [
+						"A-1-a_1-4_001.tif",
+						"A-1-a_1-4_002.tif",
+						"A-1-a_1-4_003.tif",
+						"A-1-a_1-4_004.tif",
+						"A-1-a_1-4_005.tif",
+						"A-1-a_1-4_006.tif",
+						"A-1-a_1-4_007.tif",
+						"A-1-a_1-4_008.tif",
+						"A-1-a_1-4_009.tif"
+					],
+					"iiif_urls_old": [
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-1.,tif",
@@ -1790,14 +2461,687 @@
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_009.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_010.tif"
 					]
+				}
+			},
+			"published_0002": {
+				"slug": "published_0002",
+				"name": "Gli altri. Terza parte",
+				"date": {
+					"from": "1943-07-25",
+					"to": "1943-07-25"
 				},
-				"editorialNotes": {},
-				"numPages": null,
-				"pageLimits": {
-					"text": [null, null]
+				"metadata": {
+					"title": "Gli altri. Terza parte",
+					"title_full": "Gli altri. Terza parte",
+					"pubPlace": "Svizzera italiana. Rivista mensile di cultura",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": "narrativa"
 				},
-				"edition": {
-					"fullyEdited": false
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_1"
+				},
+				"manuscript": {
+					"iiif_urls": [
+						"D-3-a_1_001.tif",
+						"D-3-a_1_002.tif",
+						"D-3-a_1_003.tif",
+						"D-3-a_1_004.tif",
+						"D-3-a_1_005.tif",
+						"D-3-a_1_006.tif",
+						"D-3-a_1_007.tif",
+						"D-3-a_1_008.tif"
+					]
+				}
+			},
+			"published_0003": {
+				"slug": "published_0003",
+				"name": "Complicazioni",
+				"date": {
+					"from": "1994",
+					"to": "1994"
+				},
+				"metadata": {
+					"title": "Complicazioni",
+					"title_full": "Complicazioni",
+					"pubPlace": "Roma o cara. Opere e testi",
+					"language": "it",
+					"type_editorale": "in volume",
+					"type_genere": "narrativa"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_15"
+				},
+				"manuscript": {
+					"iiif_urls": ["D-3-a_15_001.tif", "D-3-a_15_002.tif", "D-3-a_15_003.tif"]
+				}
+			},
+			"published_0004": {
+				"slug": "published_0004",
+				"name": "[lettera al] signor P. [+] Preambolo [al Ratto delle Sabine]",
+				"date": {
+					"from": "1946-07",
+					"to": "1946-07"
+				},
+				"metadata": {
+					"title": "[lettera al] signor P. [+] Preambolo [al Ratto delle Sabine]",
+					"title_full": "[lettera al] signor P. [+] Preambolo [al Ratto delle Sabine]",
+					"pubPlace": "Bollettino della Ghilda del libro",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-1-a_2-1"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-1-a_2-1_001-2.tif", "A-1-a_2-1_002-1.tif", "A-1-a_2-1_002-2.tif"]
+				}
+			},
+			"published_0005": {
+				"slug": "published_0005",
+				"name": "Vom Danebendenken",
+				"date": {
+					"from": "1944-05-19",
+					"to": "1944-05-19"
+				},
+				"metadata": {
+					"title": "Vom Danebendenken",
+					"title_full": "Vom Danebendenken",
+					"pubPlace": "Die Weltwoche",
+					"language": "de",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-a_3"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-a_3_001.tif"]
+				}
+			},
+			"published_0006": {
+				"slug": "published_0006",
+				"name": "Es gibt in jedem Leben so etwas wie eine Leiter...",
+				"date": {
+					"from": "1945-01-05",
+					"to": "1945-01-05"
+				},
+				"metadata": {
+					"title": "Es gibt in jedem Leben so etwas wie eine Leiter...",
+					"title_full": "Es gibt in jedem Leben so etwas wie eine Leiter...",
+					"pubPlace": "Die Weltwoche",
+					"language": "de",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-a_5"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-a_5_001.tif"]
+				}
+			},
+			"published_0007": {
+				"slug": "published_0007",
+				"name": "Von der Phantasielosigkeit",
+				"date": {
+					"from": "1945-04-06",
+					"to": "1945-04-06"
+				},
+				"metadata": {
+					"title": "Von der Phantasielosigkeit",
+					"title_full": "Von der Phantasielosigkeit",
+					"pubPlace": "Die Weltwoche",
+					"language": "de",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-a_6"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-a_6_001.tif"]
+				}
+			},
+			"published_0008": {
+				"slug": "published_0008",
+				"name": "Ein Tag beim Schweizerischen Arbeiterhilfswerk in Mailand",
+				"date": {
+					"from": "1945-12-28",
+					"to": "1945-12-28"
+				},
+				"metadata": {
+					"title": "Ein Tag beim Schweizerischen Arbeiterhilfswerk in Mailand",
+					"title_full": "Ein Tag beim Schweizerischen Arbeiterhilfswerk in Mailand",
+					"pubPlace": "Die Weltwoche",
+					"language": "de",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-a_7"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-a_7_001.tif"]
+				}
+			},
+			"published_0009": {
+				"slug": "published_0009",
+				"name": "Portrait einer jungen Schriftstellerin",
+				"date": {
+					"from": "1949-11-04",
+					"to": "1949-11-04"
+				},
+				"metadata": {
+					"title": "Portrait einer jungen Schriftstellerin",
+					"title_full": "Portrait einer jungen Schriftstellerin",
+					"pubPlace": "Die Weltwoche",
+					"language": "de",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-a_11"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-a_11_001.tif"]
+				}
+			},
+			"published_0010": {
+				"slug": "published_0010",
+				"name": "Eine seltsame Familienchronik. Elsa Morante: Menzogna e sortilegio. Ed. Einaudi",
+				"date": {
+					"from": "1949-12-30",
+					"to": "1949-12-30"
+				},
+				"metadata": {
+					"title": "Eine seltsame Familienchronik. Elsa Morante: Menzogna e sortilegio. Ed. Einaudi",
+					"title_full": "Eine seltsame Familienchronik. Elsa Morante: Menzogna e sortilegio. Ed. Einaudi",
+					"pubPlace": "Die Weltwoche",
+					"language": "de",
+					"type_editorale": "in periodico",
+					"type_genere": "recensione"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-a_12"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-a_12_001.tif"]
+				}
+			},
+			"published_0011": {
+				"slug": "published_0011",
+				"name": "Carson McCuller[s]. Eine junge amerikanische Schriftstellerin setzt sich durch.",
+				"date": {
+					"from": "1950-06-30",
+					"to": "1950-06-30"
+				},
+				"metadata": {
+					"title": "Carson McCuller[s]. Eine junge amerikanische Schriftstellerin setzt sich durch.",
+					"title_full": "Carson McCuller[s]. Eine junge amerikanische Schriftstellerin setzt sich durch.",
+					"pubPlace": "Die Weltwoche",
+					"language": "de",
+					"type_editorale": "in periodico",
+					"type_genere": "recensione"
+				},
+				"crossReferences": {
+					"citedEntities": {
+						"people": ["person_0008", "person_0011", "person_0012"],
+						"places": ["place_0006", "place_0008"],
+						"orgs": [],
+						"bibls": ["bibl_0004", "bibl_0005", "bibl_0006", "bibl_0007"]
+					}
+				},
+				"tei": {
+					"filename": "A-5-a_13"
+				},
+				"manuscript": {
+					"iiif_urls": ["https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-a_13_001.tif"]
+				}
+			},
+			"published_0012": {
+				"slug": "published_0012",
+				"name": "Der Moralist ohne Moral. Alberto Moravia: Il Conformista – Bompiani, Mailand",
+				"date": {
+					"from": "1951-09-21",
+					"to": "1951-09-21"
+				},
+				"metadata": {
+					"title": "Der Moralist ohne Moral. Alberto Moravia: Il Conformista – Bompiani, Mailand",
+					"title_full": "Der Moralist ohne Moral. Alberto Moravia: Il Conformista – Bompiani, Mailand",
+					"pubPlace": "Die Weltwoche",
+					"language": "de",
+					"type_editorale": "in periodico",
+					"type_genere": "recensione"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-a_14"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-a_14_001.tif"]
+				}
+			},
+			"published_0013": {
+				"slug": "published_0013",
+				"name": "Amerikana. Amerikanische und europäische Tradition in der jungen amerikanischen Literatur. Carson McCullers und Truman Capote",
+				"date": {
+					"from": "1950-08-04",
+					"to": "1950-08-04"
+				},
+				"metadata": {
+					"title": "Amerikana. Amerikanische und europäische Tradition in der jungen amerikanischen Literatur. Carson McCullers und Truman Capote",
+					"title_full": "Amerikana. Amerikanische und europäische Tradition in der jungen amerikanischen Literatur. Carson McCullers und Truman Capote",
+					"pubPlace": "Basler Nachrichten",
+					"language": "de",
+					"type_editorale": "in giornale",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-b_2"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-b_2_001.tif"]
+				}
+			},
+			"published_0014": {
+				"slug": "published_0014",
+				"name": "Petit tableau d'une polémique",
+				"date": {
+					"from": "1964",
+					"to": "1964"
+				},
+				"metadata": {
+					"title": "Petit tableau d'une polémique",
+					"title_full": "Petit tableau d'une polémique",
+					"pubPlace": "Les lettres nouvelles",
+					"language": "fr",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-b_4"
+				},
+				"manuscript": {
+					"iiif_urls": [
+						"A-5-b_4_001.tif",
+						"A-5-b_4_002.tif",
+						"A-5-b_4_003.tif",
+						"A-5-b_4_004.tif",
+						"A-5-b_4_005.tif"
+					]
+				}
+			},
+			"published_0015": {
+				"slug": "published_0015",
+				"name": "Assenteismo e confusione della \"cultura operante\"",
+				"date": {
+					"from": "1968-04",
+					"to": "1968-04"
+				},
+				"metadata": {
+					"title": "Assenteismo e confusione della \"cultura operante\"",
+					"title_full": "Assenteismo e confusione della \"cultura operante\"",
+					"pubPlace": "Uomini e libri",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-b_5"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-b_5_001.tif", "A-5-b_5_002.tif", "A-5-b_5_003.tif"]
+				}
+			},
+			"published_0016": {
+				"slug": "published_0016",
+				"name": "Nuovo Lorenz",
+				"date": {
+					"from": "1973-11-22",
+					"to": "1973-11-22"
+				},
+				"metadata": {
+					"title": "Nuovo Lorenz",
+					"title_full": "Nuovo Lorenz",
+					"pubPlace": "Il Mondo",
+					"language": "it",
+					"type_editorale": "in giornale",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-b_8"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-b_8_001.tif"]
+				}
+			},
+			"published_0017": {
+				"slug": "published_0017",
+				"name": "Uscito il \"Diario di lavoro\". Brogliaccio di Brecht",
+				"date": {
+					"from": "1974-04-04",
+					"to": "1974-04-04"
+				},
+				"metadata": {
+					"title": "Uscito il \"Diario di lavoro\". Brogliaccio di Brecht",
+					"title_full": "Uscito il \"Diario di lavoro\". Brogliaccio di Brecht",
+					"pubPlace": "Il Mondo",
+					"language": "it",
+					"type_editorale": "in giornale",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-b_9"
+				},
+				"manuscript": {
+					"iiif_urls": ["A-5-b_9_001.tif"]
+				}
+			},
+			"published_0018": {
+				"slug": "published_0018",
+				"name": "Nascere già emigrata",
+				"date": {
+					"from": "1994-11",
+					"to": "1994-11"
+				},
+				"metadata": {
+					"title": "Nascere già emigrata",
+					"title_full": "Nascere già emigrata",
+					"pubPlace": "Tuttestorie. Racconti letture trame di donne",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-b_15"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
+				}
+			},
+			"published_0019": {
+				"slug": "published_0019",
+				"name": "Due teorie",
+				"date": {
+					"from": "1999",
+					"to": "1999"
+				},
+				"metadata": {
+					"title": "Due teorie",
+					"title_full": "Due teorie",
+					"pubPlace": "Tuttestorie. Racconti letture trame di donne",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-5-b_18"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
+				}
+			},
+			"published_0020": {
+				"slug": "published_0020",
+				"name": "Biblioteche popolari, problemi e esperienze",
+				"date": {
+					"from": "1967",
+					"to": "1967"
+				},
+				"metadata": {
+					"title": "Biblioteche popolari, problemi e esperienze",
+					"title_full": "Biblioteche popolari, problemi e esperienze",
+					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": "saggistica"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_21"
+				},
+				"manuscript": {
+					"iiif_urls": [
+						"D-3-a_21_001.tif",
+						"D-3-a_21_002.tif",
+						"D-3-a_21_003.tif",
+						"D-3-a_21_004.tif",
+						"D-3-a_21_005.tif",
+						"D-3-a_21_006.tif",
+						"D-3-a_21_007.tif"
+					]
+				}
+			},
+			"published_0021": {
+				"slug": "published_0021",
+				"name": "Relazione di lavoro del settore biblioteca per i Centri di cultura popolare al 1° gennaio 1970",
+				"date": {
+					"from": "1970",
+					"to": "1970"
+				},
+				"metadata": {
+					"title": "Relazione di lavoro del settore biblioteca per i Centri di cultura popolare al 1° gennaio 1970",
+					"title_full": "Relazione di lavoro del settore biblioteca per i Centri di cultura popolare al 1° gennaio 1970",
+					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_24"
+				},
+				"manuscript": {
+					"iiif_urls": [
+						"D-3-a_24_002.tif",
+						"D-3-a_24_003.tif",
+						"D-3-a_24_004.tif",
+						"D-3-a_24_005.tif",
+						"D-3-a_24_006.tif",
+						"D-3-a_24_007.tif"
+					]
+				}
+			},
+			"published_0022": {
+				"slug": "published_0022",
+				"name": "Sabina e il fantasma",
+				"date": {
+					"from": "1952",
+					"to": "1952"
+				},
+				"metadata": {
+					"title": "Sabina e il fantasma",
+					"title_full": "Sabina e il fantasma",
+					"pubPlace": "Botteghe Oscure",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": ""
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_25"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
+				}
+			},
+			"published_0023": {
+				"slug": "published_0023",
+				"name": "L'emigrante. Situazioni e condizioni di partenza",
+				"date": {
+					"from": "1964",
+					"to": "1964"
+				},
+				"metadata": {
+					"title": "L'emigrante. Situazioni e condizioni di partenza",
+					"title_full": "L'emigrante. Situazioni e condizioni di partenza",
+					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": "saggistica"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_18-1"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
+				}
+			},
+			"published_0024": {
+				"slug": "published_0024",
+				"name": "Libro o lettura",
+				"date": {
+					"from": "1964",
+					"to": "1964"
+				},
+				"metadata": {
+					"title": "Libro o lettura",
+					"title_full": "Libro o lettura",
+					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": "saggistica"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_18-2"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
+				}
+			},
+			"published_0025": {
+				"slug": "published_0025",
+				"name": "Introduzione all'arte figurativa moderna",
+				"date": {
+					"from": "1964",
+					"to": "1964"
+				},
+				"metadata": {
+					"title": "Introduzione all'arte figurativa moderna",
+					"title_full": "Introduzione all'arte figurativa moderna",
+					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": "saggistica"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_18-3"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
+				}
+			},
+			"published_0026": {
+				"slug": "published_0026",
+				"name": "Esame critico delle schede di lettura",
+				"date": {
+					"from": "1964",
+					"to": "1964"
+				},
+				"metadata": {
+					"title": "Esame critico delle schede di lettura",
+					"title_full": "Esame critico delle schede di lettura",
+					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": "saggistica"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_18-4"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
+				}
+			},
+			"published_0027": {
+				"slug": "published_0027",
+				"name": "Il Jazz",
+				"date": {
+					"from": "1965",
+					"to": "1965"
+				},
+				"metadata": {
+					"title": "Il Jazz",
+					"title_full": "Il Jazz",
+					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": "saggistica"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_19-1"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
+				}
+			},
+			"published_0028": {
+				"slug": "published_0028",
+				"name": "Letteratura come cultura o come estetismo?",
+				"date": {
+					"from": "1965",
+					"to": "1965"
+				},
+				"metadata": {
+					"title": "Letteratura come cultura o come estetismo?",
+					"title_full": "Letteratura come cultura o come estetismo?",
+					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
+					"language": "it",
+					"type_editorale": "in periodico",
+					"type_genere": "saggistica"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "D-3-a_19-2"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
+				}
+			},
+			"published_0029": {
+				"slug": "published_0029",
+				"name": "[Hans Arp, Poesie]",
+				"date": {
+					"from": "1961-02-02",
+					"to": "1961-02-02"
+				},
+				"metadata": {
+					"title": "[Hans Arp, Poesie]",
+					"title_full": "[Hans Arp, Poesie]",
+					"pubPlace": "XIII Kammersprechchor di Zurigo",
+					"language": "it",
+					"type_editorale": " ",
+					"type_genere": "poesia"
+				},
+				"crossReferences": {},
+				"tei": {
+					"filename": "A-6-a_1"
+				},
+				"manuscript": {
+					"iiif_urls": [""]
 				}
 			}
 		},
@@ -1809,7 +3153,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "La morte del padre 1/6",
 					"title_full": "",
@@ -1844,7 +3189,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "La morte del padre 2/6",
 					"title_full": "",
@@ -1879,7 +3225,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "La morte del padre 3/6",
 					"title_full": "",
@@ -1914,7 +3261,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "La morte del padre 4/6",
 					"title_full": "",
@@ -1949,7 +3297,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "La morte del padre 5/6",
 					"title_full": "",
@@ -1984,7 +3333,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "La morte del padre 6/6",
 					"title_full": "",
@@ -2019,7 +3369,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "Liberalizzazione dell aborto (piccolo dizionario)",
 					"title_full": "",
@@ -2056,7 +3407,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "Le differenze biologiche (piccolo dizionario)",
 					"title_full": "",
@@ -2091,7 +3443,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "Moda femminile (piccolo dizionario)",
 					"title_full": "",
@@ -2126,7 +3479,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "Anima (piccolo dizionario)",
 					"title_full": "",
@@ -2160,7 +3514,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "Maschile (piccolo dizionario)",
 					"title_full": "",
@@ -2194,7 +3549,8 @@
 					"from": "2000-01-04",
 					"to": "2000-01-05"
 				},
-				"type": "",
+				"type_editorale": "",
+				"type_genere": "",
 				"metadata": {
 					"title": "Morale (piccolo dizionario)",
 					"title_full": "",

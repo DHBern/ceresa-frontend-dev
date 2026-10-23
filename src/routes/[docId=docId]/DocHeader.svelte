@@ -187,7 +187,7 @@
 				<!-- <h3 class="font-serif text-2xl font-bold">Comment</h3> -->
 				<!-- {@html globalComment} -->
 				<h3 class="font-serif text-2xl font-bold">Versions of this Document:</h3>
-				<ul class="preset-btn-list --spacing-normal">
+				<ul class="">
 					{#if crossRef.versions}
 						{#each Object.keys(crossRef.versions) as type}
 							{#each crossRef.versions[type] as version}
