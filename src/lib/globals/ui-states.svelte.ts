@@ -9,6 +9,9 @@ export const selectedTextNode: {
 });
 
 // sorting and grouping
+type TgalleryViewType = 'gallery' | 'list' | 'iconList';
+export const galleryViewType : {value: TgalleryViewType} = $state({value: 'iconList'});
+
 export const registerSortBy = $state({ value: 'name' });
 export const registerGroupItems = $state({ value: true });
 
@@ -37,3 +40,4 @@ export const isAudioPlayerVisible = $state({ value: false });
 export const isAudioPlaying = $state({ value: false });
 export const currentFilesAudio: { value: TDocItemsAudio | null } = $state({ value: null });
 export const currentlyPlayingAudio: { value: TDocItemsAudio | null } = $state({ value: null });
+

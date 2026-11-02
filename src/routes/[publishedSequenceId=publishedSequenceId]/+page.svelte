@@ -1,12 +1,11 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import DocumentsNav from '$lib/components/DocumentsNav.svelte';
-	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
-	import type { TPublishedKeys } from '$lib/types/documents/TPublishedKeys';
 	import { ScrollState } from 'runed';
 	import type { TSeqPublishedKeys } from '$lib/types/TSequences.js';
-	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
+	import DocListGallery from '../DocListGallery.svelte';
+	import type { TPublishedKeys } from '$lib/types/documents/TPublishedKeys';
 
 	let { data } = $props();
 
@@ -87,33 +86,6 @@
 		</p>
 	</div>
 
-	<!-- Gallery -->
-	<div class="grid h-full grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-3">
-		{#each seq?.docs as TPublishedKeys[] as docKey (docKey)}
-			{@const item = data.docs[docKey as TPublishedKeys]}
-			<a
-				href={resolve(`/${docKey as string}`) + `?seq=${data.seqSlug}`}
-				class="flex items-start justify-start gap-5 rounded-card p-5 hover:bg-dark-10 md:flex-col md:items-center md:justify-center"
-			>
-				{#if item}
-					<IIIF_Thumb
-						url={item.manuscript?.iiif_urls[0]}
-						iiif_imageAPI_width={600}
-						classesContainer=""
-						classes="h-90"
-						imgClasses="h-90"
-					/>
-					<p class="flex flex-col gap-2 text-left md:text-center">
-						<span>{item.name}</span>
-						<span>{printDateRange(item.date.from, item.date.to)}</span>
-					</p>
-				{:else}
-					<div class="flex h-50 w-50 flex-col items-center justify-center text-center">
-						<p>{docKey}</p>
-						<p class="text-muted-foreground">(noch keine Metadaten)</p>
-					</div>
-				{/if}
-			</a>
-		{/each}
-	</div>
+	<!-- Documents List / Gallery -->
+	<DocListGallery containerClasses="h-full" {data} {seq}></DocListGallery>
 </div>
