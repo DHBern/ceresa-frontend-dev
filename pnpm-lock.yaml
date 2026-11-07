@@ -120,6 +120,9 @@ importers:
       typescript-eslint:
         specifier: ^8.72.1
         version: 8.72.1(eslint@10.14.0(jiti@2.7.0))(typescript@6.0.3)
+      vaul-svelte:
+        specifier: 1.0.0-next.7
+        version: 1.0.0-next.7(svelte@5.57.3(@typescript-eslint/types@8.72.1))
       vite:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@25.9.9)(esbuild@0.27.4)(jiti@2.7.0)(sass-embedded@1.108.1)(sass@1.108.1)
@@ -1899,6 +1902,12 @@ packages:
   varint@6.0.0:
     resolution: {integrity: sha512-cXEIW6cfr15lFv563k4GuVuW/fiwjknytD37jIOLSdSWuOI6WnO/oKwmP2FQTU2l01LP8/M5TSAJpzUaGe3uWg==}
 
+  vaul-svelte@1.0.0-next.7:
+    resolution: {integrity: sha512-7zN7Bi3dFQixvvbUJY9uGDe7Ws/dGZeBQR2pXdXmzQiakjrxBvWo0QrmsX3HK+VH+SZOltz378cmgmCS9f9rSg==}
+    engines: {node: '>=18', pnpm: '>=8.7.0'}
+    peerDependencies:
+      svelte: ^5.0.0
+
   vfile-message@2.0.4:
     resolution: {integrity: sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==}
 
@@ -3512,6 +3521,12 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   varint@6.0.0: {}
+
+  vaul-svelte@1.0.0-next.7(svelte@5.57.3(@typescript-eslint/types@8.72.1)):
+    dependencies:
+      runed: 0.23.4(svelte@5.57.3(@typescript-eslint/types@8.72.1))
+      svelte: 5.57.3(@typescript-eslint/types@8.72.1)
+      svelte-toolbelt: 0.7.1(svelte@5.57.3(@typescript-eslint/types@8.72.1))
 
   vfile-message@2.0.4:
     dependencies:
