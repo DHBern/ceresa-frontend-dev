@@ -6,7 +6,7 @@
 		"description": ""
 	},
 	"documents": {
-			"posthum": {
+		"posthum": {
 			"posthum_0001": {
 				"slug": "posthum_0001",
 				"name": "[Emily Brontë]",
@@ -15,7 +15,8 @@
 					"to": "1991-06-20"
 				},
 				"metadata": {
-					"part_of_dict": false, "part_of_eliminabile": false,
+					"part_of_dict": false,
+					"part_of_eliminabile": false,
 					"title": "[Emily Brontë]",
 					"title_full": "[Emily Brontë]",
 					"pubPlace": "",
@@ -46,7 +47,8 @@
 					"to": "1991"
 				},
 				"metadata": {
-					"part_of_dict": false, "part_of_eliminabile": false,
+					"part_of_dict": false,
+					"part_of_eliminabile": false,
 					"title": "[Intervento all'Istituto Svizzero]",
 					"title_full": "[Intervento all'Istituto Svizzero]",
 					"pubPlace": "",
@@ -76,7 +78,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Anima [1]",
 					"title_full": "Anima [1]",
 					"pubPlace": "",
@@ -101,7 +104,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Anima [2]",
 					"title_full": "Anima [2]",
 					"pubPlace": "",
@@ -109,7 +113,11 @@
 					"type_editoriale": "",
 					"type_genere": "dattiloscritto"
 				},
-				"crossReferences": {},
+				"crossReferences": {
+					"linkedDocuments": {
+						"audio": ["audio_0001"]
+					}
+				},
 				"tei": {
 					"filename": "A-1-b_6-2_AC001b??"
 				},
@@ -126,7 +134,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Animale",
 					"title_full": "Animale",
 					"pubPlace": "",
@@ -151,7 +160,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Animali (esseri)",
 					"title_full": "Animali (esseri)",
 					"pubPlace": "",
@@ -176,7 +186,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Animus",
 					"title_full": "Animus",
 					"pubPlace": "",
@@ -201,7 +212,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Apparenza",
 					"title_full": "Apparenza",
 					"pubPlace": "",
@@ -226,7 +238,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Bellezza",
 					"title_full": "Bellezza",
 					"pubPlace": "",
@@ -251,7 +264,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Biologia - Differenze biologiche",
 					"title_full": "Biologia - Differenze biologiche",
 					"pubPlace": "",
@@ -276,7 +290,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Cattolica (chiesa la)",
 					"title_full": "Cattolica (chiesa la)",
 					"pubPlace": "",
@@ -301,7 +316,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Coscienza",
 					"title_full": "Coscienza",
 					"pubPlace": "",
@@ -326,7 +342,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Cultura",
 					"title_full": "Cultura",
 					"pubPlace": "",
@@ -351,7 +368,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Democristiano",
 					"title_full": "Democristiano",
 					"pubPlace": "",
@@ -376,7 +394,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "(Dio)",
 					"title_full": "(Dio)",
 					"pubPlace": "",
@@ -401,7 +420,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Donna",
 					"title_full": "Donna",
 					"pubPlace": "",
@@ -426,7 +446,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Etologia",
 					"title_full": "Etologia",
 					"pubPlace": "",
@@ -451,7 +472,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Eva",
 					"title_full": "Eva",
 					"pubPlace": "",
@@ -476,7 +498,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Famiglia",
 					"title_full": "Famiglia",
 					"pubPlace": "",
@@ -501,7 +524,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Femminile. Femmina. Femminismo",
 					"title_full": "Femminile. Femmina. Femminismo",
 					"pubPlace": "",
@@ -526,7 +550,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Femminilità  [1]",
 					"title_full": "Femminilità  [1]",
 					"pubPlace": "",
@@ -551,7 +576,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Femminilità  [2]",
 					"title_full": "Femminilità  [2]",
 					"pubPlace": "",
@@ -576,7 +602,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Figli",
 					"title_full": "Figli",
 					"pubPlace": "",
@@ -601,7 +628,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Grammatica",
 					"title_full": "Grammatica",
 					"pubPlace": "",
@@ -626,7 +654,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Lavoro",
 					"title_full": "Lavoro",
 					"pubPlace": "",
@@ -651,7 +680,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Legge",
 					"title_full": "Legge",
 					"pubPlace": "",
@@ -676,7 +706,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Letteratura??",
 					"title_full": "Letteratura??",
 					"pubPlace": "",
@@ -701,7 +732,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Letterario (personaggio femminile il)??",
 					"title_full": "Letterario (personaggio femminile il)??",
 					"pubPlace": "",
@@ -726,7 +758,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Letterario (personaggio il)??",
 					"title_full": "Letterario (personaggio il)??",
 					"pubPlace": "",
@@ -751,7 +784,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Madre",
 					"title_full": "Madre",
 					"pubPlace": "",
@@ -776,7 +810,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Maschile",
 					"title_full": "Maschile",
 					"pubPlace": "",
@@ -801,7 +836,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Moda femminile",
 					"title_full": "Moda femminile",
 					"pubPlace": "",
@@ -826,7 +862,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Morale. Moralità",
 					"title_full": "Morale. Moralità",
 					"pubPlace": "",
@@ -851,7 +888,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Natura. Naturale",
 					"title_full": "Natura. Naturale",
 					"pubPlace": "",
@@ -876,7 +914,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Ovvio",
 					"title_full": "Ovvio",
 					"pubPlace": "",
@@ -901,7 +940,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Parabola",
 					"title_full": "Parabola",
 					"pubPlace": "",
@@ -926,7 +966,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Personaggio femminile",
 					"title_full": "Personaggio femminile",
 					"pubPlace": "",
@@ -951,7 +992,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Personaggio maschile",
 					"title_full": "Personaggio maschile",
 					"pubPlace": "",
@@ -976,7 +1018,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Pornografia",
 					"title_full": "Pornografia",
 					"pubPlace": "",
@@ -1001,7 +1044,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Psicologia [1]",
 					"title_full": "Psicologia [1]",
 					"pubPlace": "",
@@ -1026,7 +1070,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Psicologia [2]",
 					"title_full": "Psicologia [2]",
 					"pubPlace": "",
@@ -1051,7 +1096,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Ragione. Ragionare",
 					"title_full": "Ragione. Ragionare",
 					"pubPlace": "",
@@ -1076,7 +1122,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Sessi (guerra dei)",
 					"title_full": "Sessi (guerra dei)",
 					"pubPlace": "",
@@ -1101,7 +1148,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Sesso",
 					"title_full": "Sesso",
 					"pubPlace": "",
@@ -1126,7 +1174,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Scrittore. Scrittrice",
 					"title_full": "Scrittore. Scrittrice",
 					"pubPlace": "",
@@ -1151,7 +1200,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Vergine",
 					"title_full": "Vergine",
 					"pubPlace": "",
@@ -1176,7 +1226,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Vita",
 					"title_full": "Vita",
 					"pubPlace": "",
@@ -1201,7 +1252,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": false,
+					"part_of_dict": true,
+					"part_of_eliminabile": false,
 					"title": "Svizzera (la)",
 					"title_full": "Svizzera (la)",
 					"pubPlace": "",
@@ -1226,7 +1278,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Accoppiare. Copulazione",
 					"title_full": "Accoppiare. Copulazione",
 					"pubPlace": "",
@@ -1251,7 +1304,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Aborto (liberalizzazione del)",
 					"title_full": "Aborto (liberalizzazione del)",
 					"pubPlace": "",
@@ -1276,7 +1330,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Aborto",
 					"title_full": "Aborto",
 					"pubPlace": "",
@@ -1301,7 +1356,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Aborto",
 					"title_full": "Aborto",
 					"pubPlace": "",
@@ -1326,7 +1382,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Adamo",
 					"title_full": "Adamo",
 					"pubPlace": "",
@@ -1351,7 +1408,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Amore",
 					"title_full": "Amore",
 					"pubPlace": "",
@@ -1376,7 +1434,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Anima",
 					"title_full": "Anima",
 					"pubPlace": "",
@@ -1401,7 +1460,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Animale ",
 					"title_full": "Animale ",
 					"pubPlace": "",
@@ -1426,7 +1486,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Femminismo",
 					"title_full": "Femminismo",
 					"pubPlace": "",
@@ -1451,7 +1512,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Cultura",
 					"title_full": "Cultura",
 					"pubPlace": "",
@@ -1476,7 +1538,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Deserto",
 					"title_full": "Deserto",
 					"pubPlace": "",
@@ -1501,7 +1564,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Donna",
 					"title_full": "Donna",
 					"pubPlace": "",
@@ -1526,7 +1590,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Etologia",
 					"title_full": "Etologia",
 					"pubPlace": "",
@@ -1551,7 +1616,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Generare",
 					"title_full": "Generare",
 					"pubPlace": "",
@@ -1576,7 +1642,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Lavoro",
 					"title_full": "Lavoro",
 					"pubPlace": "",
@@ -1601,7 +1668,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Madre",
 					"title_full": "Madre",
 					"pubPlace": "",
@@ -1626,7 +1694,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Pornografia",
 					"title_full": "Pornografia",
 					"pubPlace": "",
@@ -1651,7 +1720,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Prossimo",
 					"title_full": "Prossimo",
 					"pubPlace": "",
@@ -1676,7 +1746,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Religione",
 					"title_full": "Religione",
 					"pubPlace": "",
@@ -1701,7 +1772,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Sesso",
 					"title_full": "Sesso",
 					"pubPlace": "",
@@ -1726,7 +1798,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Uomo",
 					"title_full": "Uomo",
 					"pubPlace": "",
@@ -1751,7 +1824,8 @@
 					"to": ""
 				},
 				"metadata": {
-					"part_of_dict": true, "part_of_eliminabile": true,
+					"part_of_dict": true,
+					"part_of_eliminabile": true,
 					"title": "Uomini",
 					"title_full": "Uomini",
 					"pubPlace": "",

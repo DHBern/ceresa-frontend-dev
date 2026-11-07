@@ -24,10 +24,7 @@ export type TSeqUnpublishedKeys = keyof TSeq['unpublished'];
 export type TSeqPublishedKeys = keyof TSeq['published'];
 
 export type TSeqKeys =
-	| TSeqTextstufenKeys
-	| TSeqPosthumKeys
-	| TSeqUnpublishedKeys
-	| TSeqPublishedKeys;
+	TSeqTextstufenKeys | TSeqPosthumKeys | TSeqUnpublishedKeys | TSeqPublishedKeys;
 
 export type TDictSeq = Record<
 	string,
