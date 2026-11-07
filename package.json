@@ -47,6 +47,7 @@
 		"openseadragon": "^6.1.1",
 		"runed": "^0.37.1",
 		"tailwindcss-animate": "^1.0.7",
+		"vaul-svelte": "^0.3.2",
 		"zod": "^4.6.7"
 	}
 }
