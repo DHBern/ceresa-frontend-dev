@@ -20,6 +20,8 @@
 {/snippet}
 
 <div class={['z-100 mx-auto flex max-w-300 flex-col gap-10 bg-background px-10']}>
+	<!-- Navigation -->
+	<DocumentsNav docType="posthum" />
 	<div class={['flex gap-10 py-5']}>
 		<!-- Piccolor Dizionario -->
 		<!-- Posthumous -->
