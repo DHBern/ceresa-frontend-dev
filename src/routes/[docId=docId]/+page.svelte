@@ -1,7 +1,6 @@
 <script lang="ts">
 	import DocViewer from './DocViewer.svelte';
 	import DocHeader from './DocHeader.svelte';
-	import Sequences from './Sequences.svelte';
 
 	import { page } from '$app/state';
 	import { useSearchParams } from 'runed/kit';

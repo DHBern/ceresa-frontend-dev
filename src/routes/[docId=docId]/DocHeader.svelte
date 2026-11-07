@@ -10,14 +10,12 @@
 	import { dict_register as dictReg } from '$lib/dictionaries/dict_register.json';
 	import { dict_docs as dictDocs } from '$lib/dictionaries/dict_docs.json';
 	import ResponsiveAccordion from './ResponsiveAccordion.svelte';
-	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import type { TResolvedRegister } from '$lib/functions/ease_of_use/resolveReg';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import {
 		currentFilesAudio,
 		currentlyPlayingAudio,
-		isAudioPlayerVisible,
-		isAudioPlaying
+		isAudioPlayerVisible
 	} from '$lib/globals/ui-states.svelte';
 	import { dictionaries } from '$lib/data/dictionaries.json';
 
@@ -54,11 +52,6 @@
 		>;
 		params: any;
 	} = $props();
-
-	let globalComment = $derived.by(() => {
-		const match = ceteiData.serialized.match(/<tei-notesstmt\b[^>]*>(.*?)<\/tei-notesstmt>/s);
-		return match ? match[1] : '';
-	});
 
 	let stateMetadata = $state<string | null>('eckdaten');
 </script>
@@ -189,8 +182,8 @@
 				<h3 class="font-serif text-2xl font-bold">Versions of this Document:</h3>
 				<ul class="">
 					{#if crossRef.versions}
-						{#each Object.keys(crossRef.versions) as type}
-							{#each crossRef.versions[type] as version}
+						{#each Object.keys(crossRef.versions) as type (type)}
+							{#each crossRef.versions[type] as version (version)}
 								<li class="preset-btn-doc --sm">
 									<a href={resolve(`/${version.item.slug}`)}
 										>{version.item.name} ({version.item.metadata.dict_version})</a

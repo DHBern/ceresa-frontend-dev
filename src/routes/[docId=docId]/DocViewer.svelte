@@ -19,7 +19,6 @@
 	import Gallery from './Gallery.svelte';
 	import { fade } from 'svelte/transition';
 	import TextFluid from './TextFluid.svelte';
-	import { mode } from 'mode-watcher';
 
 	let {
 		docItem,
@@ -198,7 +197,7 @@
 			<!-- IIIF-Viewer -->
 			<aside
 				class="sticky block h-[70vh] w-full shrink flex-col gap-4 overflow-hidden rounded-xl px-5 transition-colors duration-300 hover:bg-muted-foreground/30"
-				style={`top: 20vh`}
+				style="top: 20vh"
 			>
 				{#if showFac && urls.length}
 					<IIIF_Viewer {url} />

@@ -1,11 +1,8 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import DocumentsNav from '$lib/components/DocumentsNav.svelte';
-	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
-	import type { TUnpublishedKeys } from '$lib/types/documents/TUnpublishedKeys';
 	import { ScrollState } from 'runed';
 	import type { TSeqUnpublishedKeys } from '$lib/types/TSequences.js';
-	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
 	import DocListGallery from '../DocListGallery.svelte';
 

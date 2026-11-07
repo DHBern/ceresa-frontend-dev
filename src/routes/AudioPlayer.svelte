@@ -107,7 +107,7 @@
 	// --- effects ---
 	// Play if audioFile changed
 	$effect(() => {
-		currentlyPlayingAudio.value?.slug; // listen to changes here
+		const _listen = currentlyPlayingAudio.value?.slug; // listen to changes here
 		playAudio();
 	});
 </script>
@@ -205,17 +205,17 @@
 						}}
 						class="relative flex w-full touch-none items-center select-none"
 					>
-						{#snippet children()}
-							<span
-								class="relative h-2 w-full grow cursor-pointer overflow-hidden rounded-full bg-gray-300"
-							>
-								<Slider.Range class="absolute h-full bg-purple-600" />
-							</span>
-							<Slider.Thumb
-								index={0}
-								class="block size-[18px] cursor-pointer rounded-full border border-gray-400 bg-white shadow-sm transition-colors hover:border-purple-600 focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2 focus-visible:outline-hidden"
-							/>
-						{/snippet}
+						<!-- {#snippet children()} -->
+						<span
+							class="relative h-2 w-full grow cursor-pointer overflow-hidden rounded-full bg-gray-300"
+						>
+							<Slider.Range class="absolute h-full bg-purple-600" />
+						</span>
+						<Slider.Thumb
+							index={0}
+							class="block size-[18px] cursor-pointer rounded-full border border-gray-400 bg-white shadow-sm transition-colors hover:border-purple-600 focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2 focus-visible:outline-hidden"
+						/>
+						<!-- {/snippet} -->
 					</Slider.Root>
 					<!-- Chapter markers: clickable, positioned proportionally along the track -->
 					<div class="relative mt-2 h-4 w-full">

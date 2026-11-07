@@ -44,18 +44,10 @@
 		return 'idsSub' in item;
 	});
 
-	const dictNav = {
-		random_element_text: {
-			unpublished: 'Zufällige Unpublished anzeigen'
-		}
-	};
-
 	// UI States
 	let hoveredSubmenu: { key: keyof typeof subMenuInfo | undefined } = $state({
 		key: 'unpublished'
 	});
-
-	let isDocType = $derived(hoveredSubmenu.key && hoveredSubmenu.key in dictDoc ? true : false);
 
 	// Sample Documents
 	const sampleDocuments = {
@@ -101,67 +93,6 @@
 		preloadImages(allImageUrls);
 	});
 </script>
-
-<!-- Triggers -->
-{#snippet NavTrigger(info: (typeof mainMenuWithSub)[number])}
-	<NavigationMenu.Trigger
-		class={[
-			'group inline-flex h-8 w-max items-center justify-center rounded-[7px] px-4 py-2 transition-colors',
-			'hover:bg-background hover:text-background-contrast',
-			'focus-visible:bg-muted focus-visible:text-dark-40 focus-visible:outline-hidden',
-			'data-[state=open]:bg-dark-10 data-[state=open]:shadow-mini data-[state=open]:hover:text-background'
-		]}
-	>
-		<span class="hidden lg:inline">{info.nameLong}</span>
-		<span class="inline lg:hidden">{info.nameShort}</span>
-		<i
-			class="fa-solid fa-chevron-down ml-2 transition-transform duration-200 group-data-[state=open]:rotate-180"
-			aria-hidden="true"
-		></i>
-	</NavigationMenu.Trigger>
-{/snippet}
-
-{#snippet NavSub(keys: (keyof typeof subMenuInfo)[], ContentArea: Snippet)}
-	<NavigationMenu.Content class="absolute top-0 left-0 w-auto">
-		<ul
-			class="m-0 grid w-full list-none grid-flow-col grid-cols-[400px_auto] grid-rows-4 gap-x-10 p-3"
-		>
-			{#each keys as key (key)}
-				<li>
-					<NavigationMenu.Link
-						class={[
-							'block space-y-1 rounded-md p-3 leading-none text-background-contrast no-underline outline-hidden transition-colors select-none',
-							'hover:bg-muted hover:text-background-contrast',
-							'focus:bg-muted focus:text-background-contrast'
-						]}
-						onkeydown={() => {
-							hoveredSubmenu.key = key;
-						}}
-						onmouseenter={() => {
-							hoveredSubmenu.key = key;
-						}}
-						href={subMenuInfo[key].path}
-					>
-						<h5 class="h5 font-serif leading-none font-bold">{subMenuInfo[key].name}</h5>
-						<p class="line-clamp-2 leading-snug text-muted-foreground">
-							{subMenuInfo[key].content}
-						</p>
-					</NavigationMenu.Link>
-				</li>
-			{/each}
-
-			<!-- Description Area -->
-			<li class="col-2 row-span-4">
-				<NavigationMenu.Link
-					href={resolve('/')}
-					class={['flex h-full shrink-0 items-start gap-7 p-6 outline-hidden']}
-				>
-					{@render ContentArea()}
-				</NavigationMenu.Link>
-			</li>
-		</ul>
-	</NavigationMenu.Content>
-{/snippet}
 
 <!-- Navigation Large Screens -->
 <NavigationMenu.Root

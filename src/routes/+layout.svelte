@@ -8,7 +8,6 @@
 	import { asset } from '$app/paths';
 	import { ModeWatcher } from 'mode-watcher';
 	import {
-		currentFilesAudio,
 		currentlyPlayingAudio,
 		isAudioPlayerVisible,
 		isMobile

@@ -34,19 +34,18 @@
 				if (processedIds.has(targetId)) return;
 				processedIds.add(targetId);
 
+				let originWrapper;
 				if (!targetElt.querySelector('.metamark-relocated-text-at-original-position')) {
-					var originWrapper = document.createElement('span');
+					originWrapper = document.createElement('span');
 					originWrapper.className = 'metamark-relocated-text-at-original-position';
 					originWrapper.setAttribute('id', targetId);
 					while (targetElt.firstChild) {
 						originWrapper.appendChild(targetElt.firstChild);
 					}
 					targetElt.appendChild(originWrapper);
+				} else {
+					originWrapper = targetElt.querySelector('.metamark-relocated-text-at-original-position');
 				}
-
-				var originWrapper = targetElt.querySelector(
-					'.metamark-relocated-text-at-original-position'
-				);
 				var fragment = document.createDocumentFragment();
 
 				if (originWrapper) {
@@ -96,7 +95,7 @@
 			if (sourceElt.querySelector('.metamark-relocated-text-at-new-location')) return;
 
 			// 1. Wrap explanation and extract text
-			var explanationText = '';
+			var explanationText;
 			if (!sourceElt.querySelector('.metamark-explanation-for-relocation')) {
 				var explanationWrapper = document.createElement('span');
 				explanationWrapper.className = 'metamark-explanation-for-relocation';

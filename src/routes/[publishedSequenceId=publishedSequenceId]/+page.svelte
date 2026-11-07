@@ -5,7 +5,6 @@
 	import type { TSeqPublishedKeys } from '$lib/types/TSequences.js';
 	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
 	import DocListGallery from '../DocListGallery.svelte';
-	import type { TPublishedKeys } from '$lib/types/documents/TPublishedKeys';
 
 	let { data } = $props();
 
