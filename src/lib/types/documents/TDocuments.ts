@@ -98,6 +98,7 @@ export type TDocuments = {
 					id?: string;
 					path: string;
 					filename: string;
+					version_suffix: string;
 				};
 				manuscript: {
 					rendition?: TRendition | null;
@@ -147,6 +148,7 @@ export type TDocuments = {
 				tei: {
 					path: string;
 					filename: string;
+					version_suffix: string;
 				};
 				manuscript: {
 					rendition?: TRendition | null;
@@ -196,6 +198,7 @@ export type TDocuments = {
 				tei: {
 					path: string;
 					filename: string;
+					version_suffix: string;
 				};
 				manuscript: {
 					rendition?: TRendition | null;

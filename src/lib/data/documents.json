@@ -89,7 +89,8 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-2_AC001a??"
+					"filename": "A-1-b_6-2_AC001",
+					"version_suffix": "a"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -119,7 +120,8 @@
 					}
 				},
 				"tei": {
-					"filename": "A-1-b_6-2_AC001b??"
+					"filename": "A-1-b_6-2_AC001",
+					"version_suffix": "b"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -145,7 +147,8 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-2_AC002a??"
+					"filename": "A-1-b_6-2_AC002",
+					"version_suffix": "a"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -171,7 +174,8 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-2_AC002b??"
+					"filename": "A-1-b_6-2_AC002",
+					"version_suffix": "b"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -561,7 +565,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-2_AC018a??"
+					"filename": "A-1-b_6-2_AC018a"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -587,7 +591,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-2_AC018b??"
+					"filename": "A-1-b_6-2_AC018b"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -700,7 +704,7 @@
 			},
 			"posthum_0027": {
 				"slug": "posthum_0027",
-				"name": "Letteratura??",
+				"name": "Letteratura",
 				"date": {
 					"from": "",
 					"to": ""
@@ -708,8 +712,8 @@
 				"metadata": {
 					"part_of_dict": true,
 					"part_of_eliminabile": false,
-					"title": "Letteratura??",
-					"title_full": "Letteratura??",
+					"title": "Letteratura",
+					"title_full": "Letteratura",
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
@@ -717,7 +721,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC003a??"
+					"filename": "A-1-b_6-3_AC003a"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -726,7 +730,7 @@
 			},
 			"posthum_0028": {
 				"slug": "posthum_0028",
-				"name": "Letterario (personaggio femminile il)??",
+				"name": "Letterario (personaggio femminile il)",
 				"date": {
 					"from": "",
 					"to": ""
@@ -734,8 +738,8 @@
 				"metadata": {
 					"part_of_dict": true,
 					"part_of_eliminabile": false,
-					"title": "Letterario (personaggio femminile il)??",
-					"title_full": "Letterario (personaggio femminile il)??",
+					"title": "Letterario (personaggio femminile il)",
+					"title_full": "Letterario (personaggio femminile il)",
 					"pubPlace": "",
 					"language": "",
 					"type_editoriale": "",
@@ -743,7 +747,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC003b??"
+					"filename": "A-1-b_6-3_AC003b"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -752,7 +756,7 @@
 			},
 			"posthum_0029": {
 				"slug": "posthum_0029",
-				"name": "Letterario (personaggio il)??",
+				"name": "Letterario (personaggio il)",
 				"date": {
 					"from": "",
 					"to": ""
@@ -760,8 +764,8 @@
 				"metadata": {
 					"part_of_dict": true,
 					"part_of_eliminabile": false,
-					"title": "Letterario (personaggio il)??",
-					"title_full": "Letterario (personaggio il)??",
+					"title": "Letterario (personaggio il)",
+					"title_full": "Letterario (personaggio il)",
 					"pubPlace": "",
 					"language": "",
 					"type_editoriale": "",
@@ -769,7 +773,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC003c???"
+					"filename": "A-1-b_6-3_AC003c?"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -899,7 +903,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC007??"
+					"filename": "A-1-b_6-3_AC007"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -977,7 +981,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC003d??"
+					"filename": "A-1-b_6-3_AC003d"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -1003,7 +1007,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC003e??"
+					"filename": "A-1-b_6-3_AC003e"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -1055,7 +1059,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC011a??"
+					"filename": "A-1-b_6-3_AC011a"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -1081,7 +1085,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC011b??"
+					"filename": "A-1-b_6-3_AC011b"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -1133,7 +1137,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC013a??"
+					"filename": "A-1-b_6-3_AC013a"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -1159,7 +1163,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-3_AC013b??"
+					"filename": "A-1-b_6-3_AC013b"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -1315,7 +1319,8 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-5_AC003a??"
+					"filename": "A-1-b_6-5_AC003",
+					"version_suffix": "a"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -1341,7 +1346,8 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-5_AC003b??"
+					"filename": "A-1-b_6-5_AC003",
+					"version_suffix": "b"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -1367,7 +1373,8 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-5_AC003c??"
+					"filename": "A-1-b_6-5_AC003",
+					"version_suffix": "c"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -1835,7 +1842,7 @@
 				},
 				"crossReferences": {},
 				"tei": {
-					"filename": "A-1-b_6-5_AC020b??"
+					"filename": "A-1-b_6-5_AC020b"
 				},
 				"manuscript": {
 					"comment_lab": "",
@@ -2303,14 +2310,14 @@
 			},
 			"unpublished_0016": {
 				"slug": "unpublished_0016",
-				"name": "Eloise ultime ??",
+				"name": "Eloise ultime ",
 				"date": {
 					"from": "",
 					"to": ""
 				},
 				"metadata": {
-					"title": "Eloise ultime ??",
-					"title_full": "Eloise ultime ??",
+					"title": "Eloise ultime ",
+					"title_full": "Eloise ultime ",
 					"pubPlace": "",
 					"language": "it",
 					"type_editorale": "dattiloscritto",
