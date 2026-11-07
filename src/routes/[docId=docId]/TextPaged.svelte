@@ -3,7 +3,7 @@
 	import { behaviors, removeNotesFromMaintext, extractPage } from '$lib/CETEIcean/behaviors';
 
 	const c = new CETEI();
-	let { ceteiData, page } = $props();
+	let { textData, page } = $props();
 
 	const setupCustomElements = () => {
 		c.addBehaviors(behaviors(document));
@@ -14,7 +14,7 @@
 	let serializedWithoutNotes: string | null = $state(null);
 	$effect(() => {
 		// Run this in an effect to guarantee it only runs on mount.
-		serializedWithoutNotes = removeNotesFromMaintext(extractPage(ceteiData.serialized, page));
+		serializedWithoutNotes = removeNotesFromMaintext(extractPage(textData.serialized, page));
 	});
 </script>
 

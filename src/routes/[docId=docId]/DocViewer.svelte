@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { activeRegisterTab } from '$lib/globals/ui-states.svelte';
+	import { activeRegisterTab, showSide as showSideGlobal } from '$lib/globals/ui-states.svelte';
 	import IIIF_Viewer from './IIIF_Viewer.svelte';
 	import TextPaged from './TextPaged.svelte';
 	import type {
@@ -19,39 +19,26 @@
 	import Gallery from './Gallery.svelte';
 	import { fade } from 'svelte/transition';
 	import TextFluid from './TextFluid.svelte';
+	import { mode } from 'mode-watcher';
 
 	let {
 		docItem,
 		ceteiData,
+		ceteiDataTranslation,
 		resolvedDoc,
 		classesContainer,
 		params
 	}: {
 		docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null;
 		ceteiData: ProcessedTEI;
+		ceteiDataTranslation: ProcessedTEI;
 		resolvedDoc: TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
 		classesContainer: string;
 		params: any;
 	} = $props();
 
-	$effect(() => {
-		if (params.mode === 'LF') {
-			isFluid = true;
-			showFac = false;
-			showMain = true;
-			showSecond = false;
-			LFleads = true;
-		} else if (params.mode === 'DF') {
-			isFluid = false;
-			showFac = true;
-			showMain = true;
-			showSecond = false;
-			LFleads = false;
-		}
-	});
-
 	let showFac = $state(true);
-	let showSide = $state(true);
+	let showSide = $derived(showSideGlobal.value);
 	let showMain = $state(true);
 	let showSecond = $state(true);
 	let nColsFit = $state(4);
@@ -59,7 +46,8 @@
 		(showFac ? 1 : 0) + (showSide ? 1 : 0) + (showMain ? 1 : 0) + (showSecond ? 1 : 0)
 	);
 	let isFluid = $state(false);
-	let LFleads = $state(true);
+	let mode_main: string | null = $state('mode-lf');
+	let mode_secondary: string | null = $state('mode-lf');
 
 	let isFacsimileView = $derived(!showMain && !showSecond);
 
@@ -71,10 +59,41 @@
 	let widthSidebar = $derived(showSide ? '600px' : '0px');
 
 	$effect(() => {
-		if (isFacsimileView) {
-			showSide = false;
+		if (params.mode === 'LF') {
+			isFluid = true;
+			showFac = false;
+			showSideGlobal.value = true;
+			showMain = true;
+			showSecond = false;
+			mode_main = 'mode-lf';
+			mode_secondary = null;
+		} else if (params.mode === 'DF') {
+			isFluid = false;
+			showFac = true;
+			showSideGlobal.value = true;
+			showMain = true;
+			showSecond = false;
+			mode_main = 'mode-df';
+			mode_secondary = null;
+		} else if (params.mode === 'TRLF') {
+			isFluid = true;
+			showFac = false;
+			showSideGlobal.value = false;
+			showMain = true;
+			showSecond = true;
+			mode_main = 'mode-lf';
+			mode_secondary = 'mode-lf';
+		} else if (params.mode === 'FAC') {
+			isFluid = true;
+			showFac = true;
+			showSideGlobal.value = false;
+			showMain = false;
+			showSecond = false;
+			mode_main = null;
+			mode_secondary = null;
 		}
 	});
+
 	let urls = $derived(docItem?.manuscript?.iiif_urls ?? []);
 	let url = $derived(urls[params.page - 1]);
 	const TRANSITION_LENGTH = 400;
@@ -87,11 +106,34 @@
 	<!-- Toggle -->
 	<div class="relative flex h-full w-full flex-col items-center gap-6">
 		<Tabs.Root class="sticky top-10 z-900 max-w-260 xl:static" bind:value={params.mode}>
-			<Tabs.List class="preset-tabs-list --lg grid grid-cols-2">
-				<Tabs.Trigger value="LF" class="preset-tabs-trigger --left">Fluid Reading View</Tabs.Trigger
-				>
-				<Tabs.Trigger value="DF" class=" preset-tabs-trigger --right">Diplomatic View</Tabs.Trigger>
-			</Tabs.List>
+			{#if ceteiDataTranslation}
+				<Tabs.List class="preset-tabs-list --lg grid grid-cols-4">
+					<Tabs.Trigger value="LF" class="preset-tabs-trigger --left"
+						>Fluid Reading View</Tabs.Trigger
+					>
+					<Tabs.Trigger value="DF" class=" preset-tabs-trigger --center"
+						>Diplomatic View</Tabs.Trigger
+					>
+					<Tabs.Trigger value="TRLF" class=" preset-tabs-trigger --center"
+						>Translation View</Tabs.Trigger
+					>
+					<Tabs.Trigger value="FAC" class=" preset-tabs-trigger --right"
+						>Facsimile View</Tabs.Trigger
+					>
+				</Tabs.List>
+			{:else}
+				<Tabs.List class="preset-tabs-list --lg grid grid-cols-3">
+					<Tabs.Trigger value="LF" class="preset-tabs-trigger --left"
+						>Fluid Reading View</Tabs.Trigger
+					>
+					<Tabs.Trigger value="DF" class=" preset-tabs-trigger --center"
+						>Diplomatic View</Tabs.Trigger
+					>
+					<Tabs.Trigger value="FAC" class=" preset-tabs-trigger --right"
+						>Facsimile View</Tabs.Trigger
+					>
+				</Tabs.List>
+			{/if}
 		</Tabs.Root>
 	</div>
 
@@ -164,18 +206,23 @@
 			</aside>
 
 			<!-- Texts-Snippet -->
-			{#snippet Text(showText: boolean, showThumbs: boolean, isFluid: boolean)}
+			{#snippet Text(
+				textData: ProcessedTEI,
+				showText: boolean,
+				showThumbs: boolean,
+				isFluid: boolean
+			)}
 				<div in:fade={{ delay: DELAY }} class="w-full">
 					{#if showText}
 						{#if isFluid}
 							<TextFluid
-								{ceteiData}
+								{textData}
 								{params}
 								{showThumbs}
 								classes="mx-auto w-full max-w-300 md:max-w-[1300px]"
 							/>
 						{:else}
-							<TextPaged {ceteiData} page={params.page} />
+							<TextPaged {textData} page={params.page} />
 						{/if}
 					{/if}
 				</div>
@@ -183,8 +230,8 @@
 
 			<!-- Main Text -->
 			<div class="mx-10">
-				<div class={[LFleads ? 'mode-lf' : 'mode-df']}>
-					{@render Text(true, true, isFluid)}
+				<div class={[mode_main && mode_main]}>
+					{@render Text(ceteiData, showMain, true, isFluid)}
 				</div>
 			</div>
 
@@ -199,8 +246,8 @@
 					isGallerySticky ? 'h-[80vh]' : 'h-[90vh]'
 				]}
 			>
-				<div class={[LFleads ? 'mode-df' : 'mode-lf']}>
-					{@render Text(showSecond, false, isFluid)}
+				<div class={[mode_secondary && mode_secondary]}>
+					{@render Text(ceteiDataTranslation, showSecond, false, isFluid)}
 				</div>
 			</div>
 
@@ -212,30 +259,30 @@
 					isGallerySticky ? 'h-[80vh]' : 'h-[90vh]'
 				]}
 			>
-				{#if showSide}
-					<div in:fade={{ delay: DELAY }} class="h-full">
-						<Tabs.Root bind:value={activeRegisterTab.value} class="flex h-full flex-col">
-							<Tabs.List class="preset-tabs-list --sm grid shrink-0 grid-cols-2">
-								<Tabs.Trigger value="notes" class="preset-tabs-trigger --left"
-									>Stellenkommentare</Tabs.Trigger
-								>
-								<Tabs.Trigger value="register" class="preset-tabs-trigger --right"
-									>Register</Tabs.Trigger
-								>
-							</Tabs.List>
+				<!-- {#if showSide} -->
+				<div in:fade={{ delay: DELAY }} class="h-full">
+					<Tabs.Root bind:value={activeRegisterTab.value} class="flex h-full flex-col">
+						<Tabs.List class="preset-tabs-list --sm grid shrink-0 grid-cols-2">
+							<Tabs.Trigger value="notes" class="preset-tabs-trigger --left"
+								>Stellenkommentare</Tabs.Trigger
+							>
+							<Tabs.Trigger value="register" class="preset-tabs-trigger --right"
+								>Register</Tabs.Trigger
+							>
+						</Tabs.List>
 
-							<div class="relative min-h-0 flex-1">
-								<Tabs.Content value="notes" class="absolute inset-0 overflow-y-auto p-4">
-									<Annotations {ceteiData} />
-								</Tabs.Content>
+						<div class="relative min-h-0 flex-1">
+							<Tabs.Content value="notes" class="absolute inset-0 overflow-y-auto p-4">
+								<Annotations {ceteiData} />
+							</Tabs.Content>
 
-								<Tabs.Content value="register" class="absolute inset-0 ml-6 overflow-y-auto p-6">
-									<Register {docItem} />
-								</Tabs.Content>
-							</div>
-						</Tabs.Root>
-					</div>
-				{/if}
+							<Tabs.Content value="register" class="absolute inset-0 ml-6 overflow-y-auto p-6">
+								<Register {docItem} />
+							</Tabs.Content>
+						</div>
+					</Tabs.Root>
+				</div>
+				<!-- {/if} -->
 			</aside>
 		</div>
 	</div>

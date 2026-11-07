@@ -2352,6 +2352,9 @@
 						"bibls": ["bibl_0008", "bibl_0009", "bibl_0010", "bibl_0011", "bibl_0012"]
 					}
 				},
+				"translation": {
+					"filename": "A-5-b_1-translation"
+				},
 				"tei": {
 					"filename": "A-5-b_1"
 				},
@@ -2701,6 +2704,9 @@
 						"orgs": [],
 						"bibls": ["bibl_0004", "bibl_0005", "bibl_0006", "bibl_0007"]
 					}
+				},
+				"translation": {
+					"filename": "A-5-a_13-translation"
 				},
 				"tei": {
 					"filename": "A-5-a_13"

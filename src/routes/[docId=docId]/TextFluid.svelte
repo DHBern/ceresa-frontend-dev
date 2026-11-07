@@ -11,9 +11,9 @@
 
 	let containerMaintext: HTMLElement;
 	let containerTEI: HTMLElement;
-	let { ceteiData, params, showThumbs = true, classes } = $props();
+	let { textData, params, showThumbs = true, classes } = $props();
 
-	let serializedWithoutNotes = $derived(removeNotesFromMaintext(ceteiData.serialized));
+	let serializedWithoutNotes = $derived(removeNotesFromMaintext(textData.serialized));
 
 	// ---------------------------------------------
 	// Thumbnails

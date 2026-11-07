@@ -92,6 +92,9 @@ export type TDocuments = {
 				editorialNotes: {
 					contentNotes?: TContentNotes[];
 				};
+				translation?: {
+					filename: string;
+				};
 				tei: {
 					id?: string;
 					path: string;
@@ -126,6 +129,9 @@ export type TDocuments = {
 					archiveCollation: string;
 					pubSecondary: string;
 					note: string;
+				};
+				translation?: {
+					filename: string;
 				};
 				crossReferences?: {
 					citedDocuments?: TCrossRefDocs;
@@ -172,6 +178,9 @@ export type TDocuments = {
 					archiveCollation: string;
 					pubSecondary: string;
 					note: string;
+				};
+				translation?: {
+					filename: string;
 				};
 				crossReferences?: {
 					citedDocuments?: TCrossRefDocs;

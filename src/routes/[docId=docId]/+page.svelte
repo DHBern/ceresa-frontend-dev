@@ -33,9 +33,6 @@
 
 <!--  -->
 <div class="relative flex h-full flex-col items-center gap-6">
-	<!-- Sequences -->
-	<!-- <Sequences docId={data.resolvedDoc?.docId} {params} {validSeqKeys} /> -->
-
 	<!-- Metadata -->
 	<DocHeader
 		docId={data.resolvedDoc?.docId}
@@ -49,6 +46,7 @@
 	<DocViewer
 		docItem={data.resolvedDoc?.item}
 		ceteiData={data.ceteiData}
+		ceteiDataTranslation={data.ceteiDataTranslation}
 		resolvedDoc={data.resolvedDoc}
 		classesContainer="w-full grow"
 		{params}

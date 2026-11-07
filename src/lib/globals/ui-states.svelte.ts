@@ -10,7 +10,7 @@ export const selectedTextNode: {
 
 // sorting and grouping
 type TgalleryViewType = 'gallery' | 'list' | 'iconList';
-export const galleryViewType : {value: TgalleryViewType} = $state({value: 'iconList'});
+export const galleryViewType: { value: TgalleryViewType } = $state({ value: 'iconList' });
 
 export const registerSortBy = $state({ value: 'name' });
 export const registerGroupItems = $state({ value: true });
@@ -21,8 +21,8 @@ import { type TRegTypes } from '$lib/types/register/TRegister';
 export const openRegisters: { list: TRegTypes[] } = $state({ list: [] });
 
 // Sidebar Toggle
-type TActiveRegisterTab = 'register' | 'notes';
-export const activeRegisterTab: { value: TActiveRegisterTab } = $state({ value: 'notes' });
+export const showSide = $state({ value: true });
+export const activeRegisterTab: { value: 'register' | 'notes' } = $state({ value: 'notes' });
 
 // Sequence Toggles
 export const isOpenSeqPanel = $state({ state: false });
@@ -40,4 +40,3 @@ export const isAudioPlayerVisible = $state({ value: false });
 export const isAudioPlaying = $state({ value: false });
 export const currentFilesAudio: { value: TDocItemsAudio | null } = $state({ value: null });
 export const currentlyPlayingAudio: { value: TDocItemsAudio | null } = $state({ value: null });
-

@@ -1,4 +1,4 @@
-import { activeRegisterTab, selectedTextNode } from '$lib/globals/ui-states.svelte';
+import { activeRegisterTab, selectedTextNode, showSide } from '$lib/globals/ui-states.svelte';
 import { openRegisters } from '$lib/globals/ui-states.svelte';
 import type { TRegKeysFlat } from '$lib/types/register/TRegister';
 import { findRegTypeByRegKey } from '../ease_of_use/findRegTypeByRegKey';
@@ -116,6 +116,7 @@ function activateNoteInText(key: string) {
 
 // Open Sidebar
 function openRegisterSidebar(key: TRegKeysFlat) {
+	showSide.value = true;
 	activeRegisterTab.value = 'register';
 	const regType = findRegTypeByRegKey(key);
 	if (regType && !openRegisters.list.includes(regType)) {
@@ -123,6 +124,7 @@ function openRegisterSidebar(key: TRegKeysFlat) {
 	}
 }
 function openNoteSidebar() {
+	showSide.value = true;
 	activeRegisterTab.value = 'notes';
 }
 

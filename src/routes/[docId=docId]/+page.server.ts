@@ -38,9 +38,10 @@ export const entries: EntryGenerator = () => {
 };
 
 export const load: PageServerLoad = async ({ params, fetch }) => {
-	// Resolve Documents to current document
+	// Resolve current document
 	const resolvedDoc = resolveDoc(allDocs, params.docId as TDocKeys) as
 		TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
+
 	// Resolve cross-register references
 	const crossRef: {
 		linkedEntities?: TCrossRefEntitiesExtended;
@@ -53,7 +54,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 	} = {};
 
 	// CETEI Data
-	async function loadText(params: { docId: string }): Promise<ProcessedTEI> {
+	async function loadText(filename: string | null | undefined): Promise<ProcessedTEI> {
 		const defaultBody = {
 			serialized: `
 	<?xml version="1.0" encoding="UTF-8"?>
@@ -69,16 +70,20 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			elements: []
 		};
 
+		if (!filename) {
+			console.warn(`Nullish filename`);
+			return defaultBody;
+		}
+
 		try {
 			// (0) Resolve full path
-			const filename = resolvedDoc.item?.tei.filename;
-			const path_from_map = documents_path_map_xml[resolvedDoc.item?.tei.filename];
-			const path = `/data/sources/tei/${path_from_map}`
+			const path_from_map = documents_path_map_xml[filename]; //! FIX THIS
+			const path = `/data/sources/tei/${path_from_map}`;
 			if (!path_from_map) {
 				console.warn(`Mapping does not contain filename ${filename}.`);
-				return defaultBody
+				return defaultBody;
 			}
-			
+
 			// (1) Fetch xml data
 			const res = await fetch(asset(`${path}/${filename}.xml`));
 			// Throw 404 if XML not found
@@ -112,8 +117,17 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			return defaultBody;
 		}
 	}
-	const ceteiData = await loadText(params);
 
+	// Load main text
+	const ceteiData = await loadText(resolvedDoc.item?.tei.filename);
+
+	// Load translation
+	let ceteiDataTranslation: ProcessedTEI | null = null;
+	if (resolvedDoc.item?.translation) {
+		ceteiDataTranslation = await loadText(resolvedDoc.item?.translation?.filename);
+	}
+
+	// Retrieve Data for Cross References
 	if (resolvedDoc?.item) {
 		// linkedEntities
 		if (resolvedDoc.item.crossReferences?.linkedEntities) {
@@ -180,7 +194,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 					}) ?? null;
 			});
 		}
-		// versions
+		// versions //! Still needed?
 		if (resolvedDoc.item.crossReferences?.versions) {
 			crossRef.versions = {};
 			Object.keys(resolvedDoc.item.crossReferences.versions).forEach((type) => {
@@ -200,6 +214,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 
 	return {
 		ceteiData,
+		ceteiDataTranslation,
 		resolvedDoc,
 		crossRef
 	};
