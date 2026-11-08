@@ -17,10 +17,10 @@
 	import { useSearchParams } from 'runed/kit';
 	import { getSchemaForRegType } from './schemas.js';
 
-	import { isMobile } from '$lib/globals/ui-states.svelte';
 	import DropdownRegFilters from './DropdownRegFilters.svelte';
 	import DropdownRegSorting from './DropdownRegSorting.svelte';
 	import type { TPartialRegEntry } from './[regSlug=regItem]/+page.server.js';
+	import { isBreakpointBelow } from '$lib/functions/ease_of_use/breakpoints.svelte.js';
 
 	type TProps = {
 		hasScrolledDeep?: boolean;
@@ -124,7 +124,6 @@
 		if (isRegListView) {
 			const nItems = filteredAndGroupedData.flat().length;
 			const minCols = Math.min(nCols, nItems);
-			console.log(minCols, nCols, nItems);
 			const rows = Math.max(minCols, Math.ceil(nItems / nCols));
 			return `
 			grid-template-rows: repeat(${rows}, 1fr);
@@ -213,7 +212,7 @@
 			<div class="flex flex-wrap gap-2">
 				<!-- Filters -->
 				{#if regDict && hasGroupControls}
-					{#if isMobile.value || hasScrolledDeep}
+					{#if isBreakpointBelow('sm') || hasScrolledDeep}
 						<DropdownRegFilters
 							{regDict}
 							bind:selectedFilter
@@ -258,7 +257,7 @@
 				<!-- Sort Controls -->
 				<div class="flex gap-5">
 					{#if hasSortControls}
-						{#if !isMobile.value && !hasScrolledDeep}
+						{#if !isBreakpointBelow('sm') && !hasScrolledDeep}
 							<div class={['grid w-full grid-cols-[auto_1fr] items-start gap-2']}>
 								<!-- <p class={['col-start-1 w-40 shrink-0 pt-1.25 text-sm font-bold']}>Gruppieren:</p> -->
 								<div class="col-start-2 flex w-full flex-wrap justify-start gap-2">
@@ -273,7 +272,7 @@
 			</div>
 		{/if}
 		<!-- Alphabet -->
-		{#if registerGroupItems.value && !isMobile.value}
+		{#if registerGroupItems.value && !isBreakpointBelow('sm')}
 			<div class="flex w-full flex-wrap items-center justify-start gap-2 text-base">
 				{#each groupLabels as posthum (posthum)}
 					{#if posthum}
@@ -374,8 +373,10 @@
 							data-sveltekit-preload-code="hover"
 							id={key}
 							class={[
-								'block w-full px-2 py-2 hover:bg-dark-10',
-								!isRegListView && key === regKey && 'bg-dark-10 font-bold text-background-contrast'
+								'block w-full px-2 py-2 hover:bg-background-hover',
+								!isRegListView &&
+									key === regKey &&
+									'bg-background-hover font-bold text-background-contrast'
 							]}
 							href={selectedFilter
 								? resolve(`/register/${key}?filter=${encodeURIComponent(selectedFilter)}`)
@@ -407,8 +408,10 @@
 					data-sveltekit-preload-code="hover"
 					id={key}
 					class={[
-						'block w-full py-2 hover:bg-dark-10',
-						!isRegListView && key === regKey && 'bg-dark-10 font-bold text-background-contrast'
+						'block w-full py-2 hover:bg-background-hover',
+						!isRegListView &&
+							key === regKey &&
+							'bg-background-hover font-bold text-background-contrast'
 					]}
 					href={resolve(`/register/${key}`)}
 				>

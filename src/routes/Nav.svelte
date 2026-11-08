@@ -120,7 +120,7 @@
 						'group inline-flex h-8 w-max items-center justify-center rounded-[7px] px-4 py-2 transition-colors',
 						'hover:bg-background hover:text-background-contrast',
 						'focus-visible:bg-muted focus-visible:text-dark-40 focus-visible:outline-hidden',
-						'data-[state=open]:bg-dark-10 data-[state=open]:shadow-mini',
+						'data-[state=open]:bg-dark-70 data-[state=open]:shadow-mini',
 						'disabled:pointer-events-none disabled:opacity-50'
 					]}
 					href={item.path}
@@ -147,7 +147,7 @@
 					'group mr-2 inline-flex h-8 w-8 items-center justify-center rounded-full px-2 py-2 transition-colors',
 					'hover:bg-background hover:text-background-contrast',
 					'focus-visible:bg-muted focus-visible:text-dark-40 focus-visible:outline-hidden',
-					'data-[state=open]:bg-dark-10 data-[state=open]:shadow-mini data-[state=open]:hover:text-background'
+					'data-[state=open]:bg-dark-70 data-[state=open]:shadow-mini data-[state=open]:hover:text-background'
 				]}
 			>
 				<i class="fa-solid fa-info text-xl"></i>

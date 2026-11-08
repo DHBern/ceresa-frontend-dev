@@ -550,9 +550,7 @@
 						data-sveltekit-preload-code="hover"
 						class="preset-btn-round"
 						onclick={() => {
-							console.log(params.seq, seqKey);
 							params.seq = seqKey;
-							console.log(params.seq, seqKey);
 							closeSeqPanel();
 						}}
 						>Sequenz auswählen

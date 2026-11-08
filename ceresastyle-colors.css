@@ -19,16 +19,13 @@
 	--border-button: hsla(240 6% 10%);
 	--border-button-hover: hsla(240 6% 10% / 1);
 	--border-card: hsla(240 6% 10% / 0.6);
-	--dark: hsl(240 6% 10%);
-	--dark-70: hsla(240 6% 10% / 0.6);
-	--dark-40: hsla(240 6% 10% / 0.4);
-	--dark-10: hsla(240 6% 10% / 0.1);
-	--dark-04: hsla(240 6% 10% / 0.04);
-	--light: hsl(0 0% 96%);
-	--light-40: hsla(0 0% 96% / 0.4);
-	--light-10: hsla(0 0% 96% / 0.1);
-	--light-04: hsla(0 0% 96% / 0.04);
-	--background-hover: var(--dark-04);
+	--dark: hsl(0, 0%, 0%);
+	--dark-90: hsl(0, 0%, 90%);
+	--dark-70: hsl(0, 0%, 70%);
+	--dark-40: hsl(0, 0%, 40%);
+	--dark-10: hsl(0, 0%, 10%);
+	--dark-04: hsl(0, 0%, 4%);
+	--background-hover: var(--dark-70);
 	--background-hover-safe: hsla(0 0% 96%); /* //! change this */
 	--foreground-hover: var(--light-10);
 	--foreground-hover-safe: rgb(54, 54, 55); /* //! change this */
@@ -87,16 +84,13 @@
 	--border-button: hsla(0 0% 96% / 0.17);
 	--border-button-hover: hsla(0 0% 96% / 0.4);
 	--border-card: hsla(0 0% 96% / 0.1);
-	--dark: hsl(0 0% 96%);
-	--dark-70: hsl(0 0% 96% / 0.7);
-	--dark-40: hsl(0 0% 96% / 0.4);
-	--dark-10: hsl(0 0% 96% / 0.1);
-	--dark-04: hsl(0 0% 96% / 0.04);
-	--light: hsl(240 6% 10%);
-	--light-40: hsla(240 6% 10% / 0.4);
-	--light-10: hsla(240 6% 10% / 0.1);
-	--light-04: hsla(240 6% 10% / 0.04);
-	--background-hover: var(--dark-04);
+	--dark: hsl(0, 0%, 80%);
+	--dark-90: hsl(0, 0%, 15%);
+	--dark-70: hsl(0, 0%, 30%);
+	--dark-40: hsl(0, 0%, 60%);
+	--dark-10: hsl(0, 0%, 90%);
+	--dark-04: hsl(0, 0%, 92%);
+	--background-hover: var(--dark-40);
 	--background-hover-safe: rgb(54, 54, 55); /* //! change this */
 	--foreground-hover: var(--light-04);
 	--foreground-hover-safe: hsla(0 0% 96% / 1); /* //! change this */
@@ -189,6 +183,7 @@
 	--color-border-button-hover: var(--border-button-hover);
 	--color-border-card: var(--border-card);
 	--color-dark: var(--dark);
+	--color-dark-90: var(--dark-90);
 	--color-dark-70: var(--dark-70);
 	--color-dark-40: var(--dark-40);
 	--color-dark-10: var(--dark-10);

@@ -1,41 +1,27 @@
-import { activeRegisterTab, selectedTextNode, showSide } from '$lib/globals/ui-states.svelte';
+import { DRAWER_SNAP_POINTS } from '$lib/globals/constants.svelte';
+import {
+	activeRegisterTab,
+	drawerSnapPoint,
+	drawerSnapPoint_DEFAULT,
+	selectedTextNode,
+	showDrawer
+} from '$lib/globals/ui-states.svelte';
 import { openRegisters } from '$lib/globals/ui-states.svelte';
 import type { TRegKeysFlat } from '$lib/types/register/TRegister';
+import { tick } from 'svelte';
 import { findRegTypeByRegKey } from '../ease_of_use/findRegTypeByRegKey';
+import { scrollContainerTo } from '../ease_of_use/scrollContainerTo';
 
 // -------------------------------------------------
 // Scroll
 // -------------------------------------------------
-function scrollContainer(elContainer: HTMLElement | null, elItem: HTMLElement | null) {
-	if (!elContainer || !elItem) return;
-	const containerRect = elContainer.getBoundingClientRect();
-	const refRect = elItem.getBoundingClientRect();
-	const targetTop = refRect.top - containerRect.top + elContainer.scrollTop;
-
-	elContainer.scrollTo({
-		top: targetTop,
-		behavior: 'smooth'
-	});
-
-	// DIAGNOSTICS
-	//! The problem is that scrollHeight === clientHeight
-
-	// const containerRect = elContainer.getBoundingClientRect();
-	// const refRect = elItem.getBoundingClientRect();
-	// const targetTop = refRect.top - containerRect.top + elContainer.scrollTop;
-
-	// console.log('scrollHeight:', elContainer.scrollHeight);
-	// console.log('clientHeight:', elContainer.clientHeight);
-	// console.log('can scroll:', elContainer.scrollHeight > elContainer.clientHeight);
-	// console.log('targetTop:', targetTop, 'current scrollTop:', elContainer.scrollTop);
-	// console.log(
-	// 	'target in range:',
-	// 	targetTop >= 0 && targetTop <= elContainer.scrollHeight - elContainer.clientHeight
-	// );
-
-	// if (elContainer.scrollHeight > elContainer.clientHeight) {
-	// 	elContainer.scrollTo({ top: targetTop });
-	// }
+function scrollRegister(elItem: HTMLElement) {
+	const elContainer = document.querySelector('[data-dom=containerRegister]');
+	scrollContainerTo(elContainer as HTMLElement, elItem);
+}
+function scrollNotes(elItem: HTMLElement) {
+	const elContainer = document.querySelector('[data-dom=containerAnnotations]');
+	scrollContainerTo(elContainer as HTMLElement, elItem);
 }
 function scrollWindow(
 	elItem: HTMLElement | null,
@@ -115,16 +101,22 @@ function activateNoteInText(key: string) {
 }
 
 // Open Sidebar
-function openRegisterSidebar(key: TRegKeysFlat) {
-	showSide.value = true;
+async function openRegDrawer(key: TRegKeysFlat) {
+	showDrawer.value = true;
+
+	//! HACK Opening the drawer directly on an intermediate snap point does not work, unless we first set drawerSnapPoint.value to another value and back.
+	drawerSnapPoint.value = DRAWER_SNAP_POINTS[0];
+	await tick();
+	drawerSnapPoint.value = drawerSnapPoint_DEFAULT;
+
 	activeRegisterTab.value = 'register';
 	const regType = findRegTypeByRegKey(key);
 	if (regType && !openRegisters.list.includes(regType)) {
 		openRegisters.list = [...openRegisters.list, regType];
 	}
 }
-function openNoteSidebar() {
-	showSide.value = true;
+function openNoteDrawer() {
+	showDrawer.value = true;
 	activeRegisterTab.value = 'notes';
 }
 
@@ -133,28 +125,8 @@ function scrollText(elItem: HTMLElement) {
 	const elContainer = document.querySelector('[data-textflow=fluid]');
 	scrollWindow(elItem, elContainer as HTMLElement, 200);
 }
-function scrollRegister(elItem: HTMLElement) {
-	const elContainer = document.querySelector('[data-dom=containerRegister]');
-	scrollContainer(elContainer as HTMLElement, elItem);
-}
-function scrollNotes(elItem: HTMLElement) {
-	const elContainer = document.querySelector('[data-dom=containerAnnotations]');
-	scrollContainer(elContainer as HTMLElement, elItem);
-}
 
-function resetRegister() {
-	const nodes = document.querySelectorAll('[data-dom=containerRegister] [data-active]');
-	nodes.forEach((el) => {
-		el.removeAttribute('data-active');
-	});
-}
-
-function activateRegister(regElement: HTMLElement) {
-	resetRegister();
-	regElement.setAttribute('data-active', 'active');
-}
-
-function findTextNodes(key: TRegKeysFlat | undefined | null): HTMLElement[] | undefined {
+export function findTextNodes(key: TRegKeysFlat | undefined | null): HTMLElement[] | undefined {
 	if (!key) return;
 	const candidates = document.querySelectorAll(
 		`[data-textflow=fluid] tei-text tei-rs[key="${key}"]`
@@ -172,13 +144,12 @@ export function clearAllHighlights() {
 	// selectedTextNode.el = null;
 	// selectedTextNode.els = null;
 	resetAllActiveNodesInText();
-	resetRegister();
 }
 
 export function handleRegisterClick(key: TRegKeysFlat | undefined | null) {
 	if (!key) return;
 	const regElement = document.querySelector(`[data-dom=containerRegister] [data-regkey=${key}]`);
-	activateRegister(regElement as HTMLElement);
+	(regElement as HTMLElement).focus();
 	selectedTextNode.key = key;
 	selectAllRsNodesInText(key);
 	const elSpans = findTextNodes(key);
@@ -193,7 +164,28 @@ export function handleRegisterClick(key: TRegKeysFlat | undefined | null) {
 	}
 }
 
-export function handleJumpToSibling(key: TRegKeysFlat, direction: 'next' | 'prev'): void {
+export function selectTextelement(el: HTMLElement | undefined | null): void {
+	if (!el) return;
+	scrollText(el);
+	resetAllActiveNodesInText();
+	el.classList.add('active');
+}
+
+export function selectFirstTextelement(key: TRegKeysFlat | undefined | null): void {
+	if (!key) return;
+	const elSpans = findTextNodes(key);
+	if (!elSpans || !selectedTextNode.el) return;
+	selectedTextNode.el = elSpans[0];
+	scrollText(selectedTextNode.el as HTMLElement);
+	resetAllActiveNodesInText();
+	selectedTextNode.el.classList.add('active');
+}
+
+export function handleJumpToSibling(
+	key: TRegKeysFlat | undefined | null,
+	direction: 'next' | 'prev'
+): void {
+	if (!key) return;
 	const elSpans = findTextNodes(key);
 	if (!elSpans || !selectedTextNode.el) return;
 
@@ -229,7 +221,7 @@ export function handleJumpToSibling(key: TRegKeysFlat, direction: 'next' | 'prev
 	selectedTextNode.el.classList.add('active');
 }
 
-export function handleAnnotationClick(noteId: string | undefined | null) {
+export function handleAnnotationClick(noteId: TRegKeysFlat | undefined | null) {
 	if (!noteId) return;
 	selectedTextNode.key = noteId;
 	activateNoteInText(noteId);
@@ -244,22 +236,24 @@ export function handleRefStringClick(elSpan: HTMLElement | undefined | null) {
 	if (!elSpan || !key) return;
 	selectedTextNode.key = key;
 	selectedTextNode.el = elSpan as HTMLElement;
-	const elSpans = findTextNodes(key);
-	selectedTextNode.els = elSpans;
+	selectedTextNode.els = findTextNodes(key);
 
 	// render active
 	resetAllActiveNodesInText();
 	elSpan.classList.add('active');
 
-	openRegisterSidebar(key);
+	openRegDrawer(key);
+
 	const regElement = document.querySelector(`[data-dom=containerRegister] [data-regkey=${key}]`);
-	scrollRegister(regElement as HTMLElement);
-	activateRegister(regElement as HTMLElement);
+	if (regElement) {
+		scrollRegister(regElement as HTMLElement);
+		(regElement as HTMLElement).focus();
+	}
 }
-export function handleFootnoteClick(key: string | undefined | null) {
+export function handleFootnoteClick(key: TRegKeysFlat | undefined | null) {
 	if (!key) return;
 	selectedTextNode.key = key;
-	openNoteSidebar();
+	openNoteDrawer();
 	activateNoteInText(key);
 	const annotElement = document.querySelector(
 		`[data-dom=containerAnnotations] li[data-noteid=${key}]`

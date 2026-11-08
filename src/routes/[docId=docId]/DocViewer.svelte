@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { activeRegisterTab, showSide as showSideGlobal } from '$lib/globals/ui-states.svelte';
+	import { showDrawer } from '$lib/globals/ui-states.svelte';
 	import IIIF_Viewer from './IIIF_Viewer.svelte';
 	import TextPaged from './TextPaged.svelte';
 	import type {
@@ -9,8 +9,6 @@
 	} from '$lib/types/documents/TDocuments';
 	import type { ProcessedTEI } from './processTEI';
 	import { Tabs } from 'bits-ui';
-	import Annotations from './Annotations.svelte';
-	import Register from './Register.svelte';
 	import type {
 		TResolvedPosthum,
 		TResolvedPublished,
@@ -19,6 +17,7 @@
 	import Gallery from './Gallery.svelte';
 	import { fade } from 'svelte/transition';
 	import TextFluid from './TextFluid.svelte';
+	import DrawerRegNotes from './DrawerRegNotes.svelte';
 
 	let {
 		docItem,
@@ -37,13 +36,10 @@
 	} = $props();
 
 	let showFac = $state(true);
-	let showSide = $derived(showSideGlobal.value);
 	let showMain = $state(true);
 	let showSecond = $state(true);
 	let nColsFit = $state(4);
-	let nColsVisible = $derived(
-		(showFac ? 1 : 0) + (showSide ? 1 : 0) + (showMain ? 1 : 0) + (showSecond ? 1 : 0)
-	);
+	let nColsVisible = $derived((showFac ? 1 : 0) + (showMain ? 1 : 0) + (showSecond ? 1 : 0));
 	let isFluid = $state(false);
 	let mode_main: string | null = $state('mode-lf');
 	let mode_secondary: string | null = $state('mode-lf');
@@ -53,15 +49,12 @@
 	let prioToFac = $state(true);
 
 	let widthFacsimileLg = '600px';
-	let widthFacsimileSm = '300px';
-	let facsimileWidth = $derived(showSide ? widthFacsimileSm : widthFacsimileLg);
-	let widthSidebar = $derived(showSide ? '600px' : '0px');
+	let facsimileWidth = $derived(widthFacsimileLg);
 
 	$effect(() => {
 		if (params.mode === 'LF') {
 			isFluid = true;
 			showFac = false;
-			showSideGlobal.value = true;
 			showMain = true;
 			showSecond = false;
 			mode_main = 'mode-lf';
@@ -69,7 +62,6 @@
 		} else if (params.mode === 'DF') {
 			isFluid = false;
 			showFac = true;
-			showSideGlobal.value = true;
 			showMain = true;
 			showSecond = false;
 			mode_main = 'mode-df';
@@ -77,7 +69,6 @@
 		} else if (params.mode === 'TRLF') {
 			isFluid = true;
 			showFac = false;
-			showSideGlobal.value = false;
 			showMain = true;
 			showSecond = true;
 			mode_main = 'mode-lf';
@@ -85,7 +76,6 @@
 		} else if (params.mode === 'FAC') {
 			isFluid = true;
 			showFac = true;
-			showSideGlobal.value = false;
 			showMain = false;
 			showSecond = false;
 			mode_main = null;
@@ -157,29 +147,9 @@
 			'sticky z-10 mx-10 h-max pb-[20vh] transition-all duration-300',
 			isFluid ? 'bg-background' : 'bg-background'
 		]}
-		style:--left={nColsVisible >= nColsFit
-			? prioToFac
-				? '10px'
-				: `calc(-1 * (${widthSidebar} - 0vw))`
-			: '0px'}
-		style:--width={nColsVisible >= nColsFit
-			? `calc(100% + ${widthSidebar} - 40px)`
-			: 'calc(100% - 40px)'}
+		style:--left={nColsVisible >= nColsFit ? (prioToFac ? '10px' : `-1`) : '0px'}
+		style:--width={'calc(100% - 40px)'}
 	>
-		<!-- Sidebar Toggle -->
-		<!-- <button
-			class={[
-				'sticky top-0 right-0 h-max w-max bg-foreground p-2 px-4 text-lg text-foreground-contrast'
-			]}
-			onclick={() => {
-				showSide = !showSide;
-				prioToFac = showSide ? false : true;
-			}}
-			aria-label="toggle sidebar"
-		>
-			{showSide ? 'Hide Register' : 'Show Register'}
-		</button> -->
-
 		<!-- Content -->
 		<div
 			in:fade={{ delay: DELAY }}
@@ -189,7 +159,6 @@
 			class:facsimile_view={!showMain && !showSecond}
 			style:--facsimile-width={!showFac ? '0px' : isFacsimileView ? '100%' : facsimileWidth}
 			style:--facsimile-width-lg={widthFacsimileLg}
-			style:--sidebar-width={showSide && !isFacsimileView ? widthSidebar : '0px'}
 			style:--df-visible={showMain ? '1' : '0'}
 			style:--lf-visible={showSecond ? '1' : '0'}
 			style:--duration={isFacsimileView ? '1000ms' : `${TRANSITION_LENGTH}ms`}
@@ -249,43 +218,12 @@
 					{@render Text(ceteiDataTranslation, showSecond, false, isFluid)}
 				</div>
 			</div>
-
-			<!-- Sidebar -->
-			<aside
-				class={[
-					'sticky flex-col gap-4 overflow-auto p-4 px-10 pt-6',
-					isFluid && isGallerySticky ? 'top-10' : 'top-5',
-					isGallerySticky ? 'h-[80vh]' : 'h-[90vh]'
-				]}
-			>
-				<!-- {#if showSide} -->
-				<div in:fade={{ delay: DELAY }} class="h-full">
-					<Tabs.Root bind:value={activeRegisterTab.value} class="flex h-full flex-col">
-						<Tabs.List class="preset-tabs-list --sm grid shrink-0 grid-cols-2">
-							<Tabs.Trigger value="notes" class="preset-tabs-trigger --left"
-								>Stellenkommentare</Tabs.Trigger
-							>
-							<Tabs.Trigger value="register" class="preset-tabs-trigger --right"
-								>Register</Tabs.Trigger
-							>
-						</Tabs.List>
-
-						<div class="relative min-h-0 flex-1">
-							<Tabs.Content value="notes" class="absolute inset-0 overflow-y-auto p-4">
-								<Annotations {ceteiData} />
-							</Tabs.Content>
-
-							<Tabs.Content value="register" class="absolute inset-0 ml-6 overflow-y-auto p-6">
-								<Register {docItem} />
-							</Tabs.Content>
-						</div>
-					</Tabs.Root>
-				</div>
-				<!-- {/if} -->
-			</aside>
 		</div>
 	</div>
 </div>
+
+<!-- Drawer -->
+<DrawerRegNotes {ceteiData} {docItem} />
 
 <style>
 	.containerCenter {
@@ -302,17 +240,15 @@
 		transition: all var(--duration) ease;
 		grid-template-columns:
 			var(--facsimile-width)
-			minmax(0, calc((100% - var(--facsimile-width) - var(--sidebar-width)) * var(--df-visible)))
-			minmax(0, calc((100% - var(--facsimile-width) - var(--sidebar-width)) * var(--lf-visible)))
-			var(--sidebar-width);
+			minmax(0, calc((100% - var(--facsimile-width)) * var(--df-visible)))
+			minmax(0, calc((100% - var(--facsimile-width)) * var(--lf-visible)));
 
 		&.isAll {
 			display: absolute;
 			grid-template-columns:
 				var(--facsimile-width-lg)
-				minmax(0, calc((100% - var(--facsimile-width) - var(--sidebar-width)) * var(--df-visible)))
-				minmax(0, calc((100% - var(--facsimile-width) - var(--sidebar-width)) * var(--lf-visible)))
-				var(--sidebar-width);
+				minmax(0, calc((100% - var(--facsimile-width)) * var(--df-visible)))
+				minmax(0, calc((100% - var(--facsimile-width)) * var(--lf-visible)));
 			/* background-color: aquamarine; */
 		}
 		/* &:not(.isFluid) {

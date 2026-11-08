@@ -48,8 +48,6 @@
 
 	function handleEscape(ev: KeyboardEvent) {
 		if (expanded) {
-			console.log(self);
-			console.log(document.activeElement);
 		}
 		if (ev.key === 'Escape' && expanded && self === document.activeElement) {
 			expanded = false;

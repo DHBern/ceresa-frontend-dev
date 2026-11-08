@@ -1,12 +1,6 @@
-export const selectedTextNode: {
-	key: string;
-	el: HTMLElement | undefined | null;
-	els: HTMLElement[] | undefined | null;
-} = $state({
-	key: '',
-	el: null,
-	els: null
-});
+import { DRAWER_SNAP_POINTS } from './constants.svelte';
+import type { TDocItemsAudio } from '$lib/types/documents/TDocuments';
+import { type TRegKeysFlat, type TRegTypes } from '$lib/types/register/TRegister';
 
 // sorting and grouping
 type TgalleryViewType = 'gallery' | 'list' | 'iconList';
@@ -15,14 +9,41 @@ export const galleryViewType: { value: TgalleryViewType } = $state({ value: 'ico
 export const registerSortBy = $state({ value: 'name' });
 export const registerGroupItems = $state({ value: true });
 
-import type { TDocItemsAudio } from '$lib/types/documents/TDocuments';
 // Register in Sidebar
-import { type TRegTypes } from '$lib/types/register/TRegister';
 export const openRegisters: { list: TRegTypes[] } = $state({ list: [] });
 
 // Sidebar Toggle
-export const showSide = $state({ value: true });
+export const showDrawer = $state({ value: false });
+export const drawerSnapPoint_DEFAULT = DRAWER_SNAP_POINTS[1];
+export const drawerSnapPoint: { value: string | number | null } = $state({
+	value: drawerSnapPoint_DEFAULT
+});
 export const activeRegisterTab: { value: 'register' | 'notes' } = $state({ value: 'notes' });
+export const activeRegType: { value: TRegTypes | undefined } = $state({ value: undefined });
+export const activeRegItem = $state({ value: '' });
+
+export const selectedTextNode: {
+	key: TRegKeysFlat | undefined | null;
+	el: HTMLElement | undefined | null;
+	els: HTMLElement[] | undefined | null;
+} = $state({
+	key: null,
+	el: null,
+	els: null
+});
+
+export function setDrawerSmall() {
+	showDrawer.value = true;
+	drawerSnapPoint.value = DRAWER_SNAP_POINTS[0];
+}
+export function setDrawerMedium() {
+	showDrawer.value = true;
+	drawerSnapPoint.value = DRAWER_SNAP_POINTS[1];
+}
+export function setDrawerLarge() {
+	showDrawer.value = true;
+	drawerSnapPoint.value = DRAWER_SNAP_POINTS[2];
+}
 
 // Sequence Toggles
 export const isOpenSeqPanel = $state({ state: false });
@@ -33,7 +54,6 @@ export const sequenceToggle = $state({
 });
 
 // UI
-export const isMobile = $state({ value: false });
 
 // Audio
 export const isAudioPlayerVisible = $state({ value: false });

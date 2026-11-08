@@ -44,8 +44,9 @@ export type TResolvedRegister =
 
 export function resolveReg(
 	object: Record<TRegTypes, any> | null,
-	regKey: TRegKeysFlat
+	regKey: TRegKeysFlat | undefined | null
 ): TResolvedRegister | null {
+	if (!regKey) return null;
 	if (regKey.includes('person_')) {
 		return {
 			regKey: regKey as TPeopleKeys,

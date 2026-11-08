@@ -72,7 +72,7 @@
 		<div
 			class={[
 				'flex w-max justify-start rounded-thumbbox',
-				isBeforeEmpty ? 'bg-transparent' : 'bg-dark-10'
+				isBeforeEmpty ? 'bg-transparent' : 'bg-dark-70'
 			]}
 		>
 			{@render childrenBefore()}
@@ -90,7 +90,7 @@
 		<div
 			class={[
 				'flex w-max justify-start rounded-thumbbox',
-				isAfterEmpty ? 'bg-transparent' : 'bg-dark-10'
+				isAfterEmpty ? 'bg-transparent' : 'bg-dark-70'
 			]}
 		>
 			{@render childrenAfter()}
@@ -123,7 +123,7 @@
 	</ScrollArea.Viewport>
 	<ScrollArea.Scrollbar
 		orientation="horizontal"
-		class="flex w-2.5 touch-none rounded-full border-l border-l-transparent bg-muted p-px transition-all duration-200 select-none hover:w-3 hover:bg-dark-10 data-[state=hidden]:animate-out data-[state=hidden]:fade-out-0 data-[state=visible]:animate-in data-[state=visible]:fade-in-0"
+		class="flex w-2.5 touch-none rounded-full border-l border-l-transparent bg-muted p-px transition-all duration-200 select-none hover:w-3 hover:bg-background-hover data-[state=hidden]:animate-out data-[state=hidden]:fade-out-0 data-[state=visible]:animate-in data-[state=visible]:fade-in-0"
 	>
 		<ScrollArea.Thumb class="flex-1 rounded-full bg-muted-foreground" />
 	</ScrollArea.Scrollbar>

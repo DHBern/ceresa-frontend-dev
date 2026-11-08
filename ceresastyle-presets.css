@@ -56,11 +56,8 @@
 			@apply border;
 		}
 		&.--square {
-			/* Does not work yet */
+			/* //! FIX Does not work yet */
 			@apply px-2 py-2;
-		}
-		&.--ghost {
-			@apply border-0;
 		}
 		&.--2xl {
 			@apply border-2 text-2xl dark:border-3;
@@ -78,6 +75,9 @@
 			@apply border text-xs;
 		}
 
+		&.--ghost {
+			@apply border-0;
+		}
 		&.--muted {
 			@apply pointer-events-none border-dark-40 text-muted-foreground;
 		}

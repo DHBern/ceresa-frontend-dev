@@ -18,7 +18,7 @@
 			aria-label="show as gallery"
 			class={[
 				'preset-btn-round rounded-xl border-none p-2',
-				galleryViewType.value === 'gallery' && 'bg-dark-10'
+				galleryViewType.value === 'gallery' && 'bg-background-hover'
 			]}
 			onclick={() => {
 				galleryViewType.value = 'gallery';
@@ -30,7 +30,7 @@
 			aria-label="show as list with previews"
 			class={[
 				'preset-btn-round rounded-xl border-none p-2',
-				galleryViewType.value === 'iconList' && 'bg-dark-10'
+				galleryViewType.value === 'iconList' && 'bg-background-hover'
 			]}
 			onclick={() => {
 				galleryViewType.value = 'iconList';
@@ -42,7 +42,7 @@
 			aria-label="show as plain list"
 			class={[
 				'preset-btn-round rounded-xl border-none p-2',
-				galleryViewType.value === 'list' && 'bg-dark-10'
+				galleryViewType.value === 'list' && 'bg-background-hover'
 			]}
 			onclick={() => {
 				galleryViewType.value = 'list';
@@ -59,7 +59,7 @@
 				{@const item = data.docs[docKey as TKeys]}
 				<a
 					href={resolve(`/${docKey as string}`) + `?seq=${data.seqSlug}`}
-					class="flex items-start justify-start gap-5 rounded-card p-5 hover:bg-dark-10 md:flex-col md:items-center md:justify-center"
+					class="flex items-start justify-start gap-5 rounded-card p-5 hover:bg-background-hover md:flex-col md:items-center md:justify-center"
 				>
 					{#if item}
 						<IIIF_Thumb
@@ -87,7 +87,7 @@
 			{#each seq?.docs as TKeys[] as docKey (docKey)}
 				{@const item = data.docs[docKey as TKeys]}
 				<a class="h-full w-full" href={resolve(`/${docKey as string}`) + `?seq=${data.seqSlug}`}>
-					<li class="border-b-2 py-4 pl-4 hover:bg-dark-10">
+					<li class="border-b-2 py-4 pl-4 hover:bg-background-hover">
 						{#if item}
 							<div class="flex gap-5">
 								<IIIF_Thumb
@@ -114,7 +114,7 @@
 			{#each seq?.docs as TKeys[] as docKey (docKey)}
 				{@const item = data.docs[docKey as TKeys]}
 				<a class="h-full w-full" href={resolve(`/${docKey as string}`) + `?seq=${data.seqSlug}`}>
-					<li class="border-b-2 py-4 hover:bg-dark-10">
+					<li class="border-b-2 py-4 hover:bg-background-hover">
 						{#if item}
 							<span>{item.name} <span>{printDateRange(item.date.from, item.date.to)}</span></span>
 						{:else}

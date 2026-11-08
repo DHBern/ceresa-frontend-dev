@@ -7,21 +7,21 @@
 	},
 	"dict_register": {
 		"people": {
-			"register_name": "Personenregister",
+			"register_name": "People Register",
 			"key_singular": "person",
-			"label_plural": "Personen",
+			"label_plural": "People",
 			"attributes": {
 				"name": { "label": "Name" },
-				"firstname": { "label": "Vorname" },
-				"lastname": { "label": "Nachname" },
-				"nameVariants": { "label": "Namensvarianten" },
-				"gndNumber": { "label": "GND-Nummer" },
-				"dateBirth": { "label": "Geburtsjahr" },
-				"dateDeath": { "label": "Todesjahr" },
-				"type": { "label": "Personenkategorie" },
-				"orgIds": { "label": "Verknüpfte Organisationen" },
-				"note": { "label": "Bemerkungen" },
-				"docs": { "label": "Verknüpfte Dokumente" }
+				"firstname": { "label": "Firstname" },
+				"lastname": { "label": "Lastname" },
+				"nameVariants": { "label": "Name variants" },
+				"gndNumber": { "label": "GND-Number" },
+				"dateBirth": { "label": "Year of birth" },
+				"dateDeath": { "label": "Year of death" },
+				"type": { "label": "Category" },
+				"orgIds": { "label": "Linked organisations" },
+				"note": { "label": "Comments" },
+				"docs": { "label": "Linked documents" }
 			},
 			"groups": {
 				"people_cat_1": {
@@ -51,20 +51,20 @@
 			}
 		},
 		"places": {
-			"register_name": "Ortsregister",
+			"register_name": "Places Register",
 			"key_singular": "place",
-			"label_plural": "Orte",
+			"label_plural": "Places",
 			"attributes": {
 				"name": { "label": "Name" },
-				"nameVariants": { "label": "Namensvarianten" },
-				"gndNumber": { "label": "GND-Nummer" },
+				"nameVariants": { "label": "Name variants" },
+				"gndNumber": { "label": "GND Number" },
 				"geoNamesID": { "label": "Geonames ID" },
 				"geoNamesLink": { "label": "Geonames Link" },
 				"type": { "label": "Ortskategorie" },
 				"coords": { "label": "Koordinaten" },
 				"country": { "label": "Land" },
-				"note": { "label": "Bemerkungen" },
-				"docs": { "label": "Verknüpfte Dokumente" }
+				"note": { "label": "Comments" },
+				"docs": { "label": "Linked documents" }
 			},
 			"groups": {
 				"places_cat_1": {
@@ -87,24 +87,24 @@
 			"label_plural": "Reisen und Aufenthalte",
 			"attributes": {
 				"name": { "label": "Name" },
-				"type": { "label": "Ortskategorie" },
-				"date": { "label": "Datum" },
-				"note": { "label": "Bemerkungen" },
-				"docs": { "label": "Verknüpfte Dokumente" }
+				"type": { "label": "Category" },
+				"date": { "label": "Date" },
+				"note": { "label": "Comments" },
+				"docs": { "label": "Linked documents" }
 			},
 			"groups": {}
 		},
 		"orgs": {
-			"register_name": "Organisationsregister",
+			"register_name": "Organisations Register",
 			"key_singular": "org",
-			"label_plural": "Organisationen",
+			"label_plural": "Organisations",
 			"attributes": {
 				"name": { "label": "Name" },
-				"nameVariants": { "label": "Namensvarianten" },
-				"gndNumber": { "label": "GND-Nummer" },
-				"type": { "label": "Organisationskategorie" },
-				"note": { "label": "Bemerkungen" },
-				"docs": { "label": "Verknüpfte Dokumente" }
+				"nameVariants": { "label": "Name variants" },
+				"gndNumber": { "label": "GND Number" },
+				"type": { "label": "Category" },
+				"note": { "label": "Comments" },
+				"docs": { "label": "Linked documents" }
 			},
 			"groups": {
 				"orgs_cat_1": {
@@ -118,30 +118,30 @@
 			}
 		},
 		"bibls": {
-			"register_name": "Bibliografieregister",
+			"register_name": "Bibliography Register",
 			"key_singular": "bibl",
-			"label_plural": "Bibliografie",
+			"label_plural": "Bibliography",
 			"attributes": {
 				"name": { "label": "Name" },
-				"type": { "label": "Dokumentkategorie" },
-				"authorIds": { "label": "Autor:innen" },
-				"pubDate": { "label": "Veröffentlichungsdatum" },
-				"gndNumber": { "label": "GND-Nummer" },
-				"note": { "label": "Bemerkungen" },
-				"docs": { "label": "Verknüpfte Dokumente" }
+				"type": { "label": "Category" },
+				"authorIds": { "label": "Authors" },
+				"pubDate": { "label": "Publication Date" },
+				"gndNumber": { "label": "GND Number" },
+				"note": { "label": "Comments" },
+				"docs": { "label": "Linked documents" }
 			},
 			"groups": {}
 		},
 		"keywords": {
-			"register_name": "Sachbegriffsregister",
+			"register_name": "Keywords Register",
 			"key_singular": "keyword",
-			"label_plural": "Sachbegriffe",
+			"label_plural": "Keywords",
 			"attributes": {
 				"name": { "label": "Name" },
-				"type": { "label": "Dokumentkategorie" },
-				"gndNumber": { "label": "GND-Nummer" },
-				"note": { "label": "Bemerkungen" },
-				"docs": { "label": "Verknüpfte Dokumente" }
+				"type": { "label": "Category" },
+				"gndNumber": { "label": "GND Number" },
+				"note": { "label": "Comments" },
+				"docs": { "label": "Linked documents" }
 			},
 			"groups": {}
 		}

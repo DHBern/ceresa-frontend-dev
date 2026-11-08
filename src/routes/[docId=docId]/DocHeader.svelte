@@ -102,7 +102,7 @@
 		{#each content ? content : [] as cont (cont)}
 			<a
 				href={resolve(`/${cont.docId as string}`)}
-				class="flex items-start justify-start gap-5 rounded-card p-5 hover:bg-dark-10 md:flex-col md:items-center md:justify-center"
+				class="flex items-start justify-start gap-5 rounded-card p-5 hover:bg-background-hover md:flex-col md:items-center md:justify-center"
 			>
 				{#if cont.item}
 					<IIIF_Thumb
@@ -135,7 +135,7 @@
 					<a href={resolve('/posthumous#piccolo_dizionario')}>Piccolo Dizionario</a>
 				{/if}
 			</h2>
-			<h1 class="font-serif text-8xl font-bold">
+			<h1 class="font-serif text-6xl font-bold">
 				{resDoc.item.name}
 				{#if resDoc.item.metadata?.dict_version}
 					<span class="text-[20px]">Version {resDoc.item.metadata?.dict_version}</span>

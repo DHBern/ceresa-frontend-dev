@@ -28,6 +28,7 @@
 			regAttributes={data.regAttributes}
 			crossRef={data.crossRef}
 			regMapPreviewPath={data.regMapPreviewPath}
+			openCrossRefsInNewTab={false}
 		/>
 	</div>
 </div>

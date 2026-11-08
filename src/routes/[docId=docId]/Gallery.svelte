@@ -136,7 +136,7 @@
 						{@const { item: resDoc } = resolveDoc(allDocs, tzgId) || { item: null }}
 						{@const items = collectGalleryItems()}
 						<div
-							class="my-0 ml-10 flex w-max items-center justify-start gap-5 overflow-x-auto rounded-card bg-dark-10 px-10 py-1"
+							class="my-0 ml-10 flex w-max items-center justify-start gap-5 overflow-x-auto rounded-card bg-dark-70 px-10 py-1"
 						>
 							<h6 class="w-50 font-sans text-sm">{resDoc?.name}</h6>
 							<!-- <h6 class="w-50 font-sans text-sm">

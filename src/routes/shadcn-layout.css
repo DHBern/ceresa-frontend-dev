@@ -1,10 +1,10 @@
-@import "tw-animate-css";
-@import "shadcn-svelte/tailwind.css";
-@import "@fontsource-variable/geist";
+@import 'tw-animate-css';
+@import 'shadcn-svelte/tailwind.css';
+@import '@fontsource-variable/geist';
 
 @layer base {
 	* {
-		@apply border-border outline-ring/50;
+		@apply outline-ring/50 border-border;
 	}
 	body {
 		@apply bg-background text-foreground;

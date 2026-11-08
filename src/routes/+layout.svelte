@@ -2,28 +2,17 @@
 	import '@fortawesome/fontawesome-free/css/solid.min.css';
 	import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 	import './layout.css';
-	import { TAILWINDBREAKPOINTS } from '$lib/globals/constants.svelte';
 	import favicon from '$lib/assets/favicon.svg';
 	import Nav from './Nav.svelte';
 	import { asset } from '$app/paths';
 	import { ModeWatcher } from 'mode-watcher';
-	import {
-		currentlyPlayingAudio,
-		isAudioPlayerVisible,
-		isMobile
-	} from '$lib/globals/ui-states.svelte';
-
-	function checkWindowSize() {
-		isMobile.value = window.innerWidth < TAILWINDBREAKPOINTS.sm;
-	}
+	import { currentlyPlayingAudio, isAudioPlayerVisible } from '$lib/globals/ui-states.svelte';
 
 	let { children } = $props();
 
 	import AudioPlayer from './AudioPlayer.svelte';
 	import { slide } from 'svelte/transition';
 </script>
-
-<svelte:window on:resize={checkWindowSize} />
 
 <ModeWatcher defaultMode="dark" />
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
@@ -46,7 +35,7 @@
 	</aside>
 {/if}
 <footer
-	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-10 p-20 text-background-contrast"
+	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-90 p-20 text-background-contrast"
 >
 	<p class="mb-5">Diese Webseite befindet sich in einer Alpha-Version.</p>
 	<p>

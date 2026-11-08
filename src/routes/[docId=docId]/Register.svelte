@@ -83,7 +83,7 @@
 									>
 										<p class="">{resolvedReg?.item?.name}</p>
 										<a
-											class="flex h-9 w-9 items-center justify-center rounded-button group-hover:flex group-[data-active]:flex hover:bg-light-10"
+											class="flex h-9 w-9 items-center justify-center rounded-button group-hover:flex group-[data-active]:flex hover:bg-background-hover"
 											href={resolve(`/register/${regKey as string}`)}
 											target="_blank"
 											aria-label="In Register öffnen"
@@ -91,7 +91,7 @@
 										>
 										{#if selectedTextNode.key === regKey}
 											<button
-												class="flex h-9 w-9 items-center justify-center rounded-button hover:bg-light-10 hover:text-background-contrast"
+												class="flex h-9 w-9 items-center justify-center rounded-button hover:bg-background-hover hover:text-background-contrast"
 												aria-label="select previous match"
 												onclick={(ev) => {
 													ev.stopPropagation();
@@ -99,7 +99,7 @@
 												}}><i class="fa-arrow-left-long fa-regular"></i></button
 											>
 											<button
-												class="flex h-9 w-9 items-center justify-center rounded-button hover:bg-light-10"
+												class="flex h-9 w-9 items-center justify-center rounded-button hover:bg-background-hover"
 												aria-label="select next match"
 												onclick={(ev) => {
 													ev.stopPropagation();
