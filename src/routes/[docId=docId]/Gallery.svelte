@@ -156,7 +156,7 @@
 										classes="max-h-[30px]"
 										imgClasses="max-h-[30px]"
 									/>
-									<span class="text-center text-xs">Seite {item.page} <br />({tzgId})</span>
+									<span class="text-center text-xs">Pag. {item.page} <br />({tzgId})</span>
 								</a>
 							{:else}
 								<a class="text-warning" href={resolve(`/${tzgId}`)}>Keine Faksimile gefunden</a>

@@ -174,7 +174,7 @@
 								classes="w-full"
 								imgClasses="w-full"
 							/>
-							<span class="text-sm">Seite {thumb.page}</span>
+							<span class="text-sm">Pag. {thumb.page}</span>
 						</div>
 					</button>
 				{/each}

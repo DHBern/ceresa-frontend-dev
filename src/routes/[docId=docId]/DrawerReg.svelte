@@ -10,11 +10,9 @@
 	} from '$lib/globals/ui-states.svelte';
 	import {
 		findTextNodes,
-		handleJumpToSibling,
 		selectFirstTextelement,
 		selectTextelement
 	} from '$lib/functions/interactive_edendum/handleInteractiveText';
-	import { fade, slide } from 'svelte/transition';
 	import type {
 		TDocItemsPosthum,
 		TDocItemsPublished,
@@ -124,8 +122,8 @@
 				}}
 				><i class="fa-magnifying-glass fa-solid"></i><span class="ml-2"
 					>{selectedTextNode.els?.length > 1
-						? `Find all ${selectedTextNode.els?.length} occurences`
-						: `Find 1 occurence`}</span
+						? `Trova tutte le ${selectedTextNode.els?.length} occorrenze`
+						: `Trova l'occorrenza`}</span
 				>
 			</button>
 
@@ -137,7 +135,7 @@
 				aria-label="In Register öffnen"
 				rel="noopener noreferrer"
 				><i class="fa-up-right-from-square fa-regular"></i><span class="ml-2 text-nowrap"
-					>Open in Register</span
+					>Apri nel registro</span
 				></a
 			>
 		</div>
@@ -160,10 +158,10 @@
 	>
 		{#if mobileShowList}
 			<i class="fa-solid fa-chevron-left"></i>
-			<span class="ml-2 text-nowrap">Back to entry</span>
+			<span class="ml-2 text-nowrap">Torna alla voce</span>
 		{:else}
 			<i class="fa-solid fa-bars-staggered"></i>
-			<span class="ml-2 text-nowrap">Show other entries</span>
+			<span class="ml-2 text-nowrap">Mostra altre voci</span>
 		{/if}
 	</button>
 {/snippet}

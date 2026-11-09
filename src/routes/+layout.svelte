@@ -35,9 +35,9 @@
 	</aside>
 {/if}
 <footer
-	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-90 p-20 text-background-contrast"
+	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-90 p-10 text-background-contrast"
 >
-	<p class="mb-5">Questo sito web è attualmente in versione alpha.</p>
+	<p class="font-serif text-lg font-bold">Questo sito web è attualmente in versione alpha.</p>
 	<p>
 		<a
 			class=" underline"

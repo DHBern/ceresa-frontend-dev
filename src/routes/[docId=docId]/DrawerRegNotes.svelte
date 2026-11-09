@@ -60,7 +60,7 @@
 							activeRegisterTab.value = 'register';
 						}}
 						><i class="fa-solid fa-arrow-up align-center"></i><span class="ml-2"
-							>Back to Register</span
+							>Torna al registro</span
 						></button
 					>
 				{/if}
@@ -121,7 +121,7 @@
 									}}><i class="fa-arrow-left-long fa-regular align-center"></i></button
 								>
 								<p>
-									Occurence {(selectedTextNode.els as HTMLElement[])?.findIndex((el) => {
+									Occorrenza {(selectedTextNode.els as HTMLElement[])?.findIndex((el) => {
 										return el === selectedTextNode.el;
 									}) + 1} of {selectedTextNode.els?.length}
 								</p>

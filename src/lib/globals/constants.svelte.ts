@@ -5,4 +5,4 @@ export const TYPESWITHSORTCONTROL = {
 	register: ['events']
 };
 
-export const DRAWER_SNAP_POINTS = ['200px', '496px', 1];
+export const DRAWER_SNAP_POINTS = ['200px', .5, 1];
