@@ -135,7 +135,7 @@
 					<a href={resolve('/posthumous#piccolo_dizionario')}>Piccolo Dizionario</a>
 				{/if}
 			</h2>
-			<h1 class="font-serif text-6xl font-bold">
+			<h1 class="font-serif text-2xl font-bold md:text-4xl lg:text-5xl xl:text-6xl">
 				{resDoc.item.name}
 				{#if resDoc.item.metadata?.dict_version}
 					<span class="text-[20px]">Version {resDoc.item.metadata?.dict_version}</span>

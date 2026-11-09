@@ -96,21 +96,6 @@
 	<div class="relative flex h-full w-full flex-col items-center gap-6">
 		<Tabs.Root class="sticky top-10 z-900 max-w-260 xl:static" bind:value={params.mode}>
 			{#if ceteiDataTranslation}
-				<Tabs.List class="preset-tabs-list --lg grid grid-cols-4">
-					<Tabs.Trigger value="LF" class="preset-tabs-trigger --left"
-						>Fluid Reading View</Tabs.Trigger
-					>
-					<Tabs.Trigger value="DF" class=" preset-tabs-trigger --center"
-						>Diplomatic View</Tabs.Trigger
-					>
-					<Tabs.Trigger value="TRLF" class=" preset-tabs-trigger --center"
-						>Translation View</Tabs.Trigger
-					>
-					<Tabs.Trigger value="FAC" class=" preset-tabs-trigger --right"
-						>Facsimile View</Tabs.Trigger
-					>
-				</Tabs.List>
-			{:else}
 				<Tabs.List class="preset-tabs-list --lg grid grid-cols-3">
 					<Tabs.Trigger value="LF" class="preset-tabs-trigger --left"
 						>Fluid Reading View</Tabs.Trigger
@@ -118,9 +103,24 @@
 					<Tabs.Trigger value="DF" class=" preset-tabs-trigger --center"
 						>Diplomatic View</Tabs.Trigger
 					>
-					<Tabs.Trigger value="FAC" class=" preset-tabs-trigger --right"
-						>Facsimile View</Tabs.Trigger
+					<Tabs.Trigger value="TRLF" class=" preset-tabs-trigger --right"
+						>Translation View</Tabs.Trigger
 					>
+					<!-- <Tabs.Trigger value="FAC" class=" preset-tabs-trigger --right"
+						>Facsimile View</Tabs.Trigger
+					> -->
+				</Tabs.List>
+			{:else}
+				<Tabs.List class="preset-tabs-list --lg grid grid-cols-2">
+					<Tabs.Trigger value="LF" class="preset-tabs-trigger --left"
+						>Fluid Reading View</Tabs.Trigger
+					>
+					<Tabs.Trigger value="DF" class=" preset-tabs-trigger --right"
+						>Diplomatic View</Tabs.Trigger
+					>
+					<!-- <Tabs.Trigger value="FAC" class=" preset-tabs-trigger --right"
+						>Facsimile View</Tabs.Trigger
+					> -->
 				</Tabs.List>
 			{/if}
 		</Tabs.Root>
@@ -207,11 +207,12 @@
 			<div
 				class={[
 					'overflow-auto',
-					'mx-10 my-10 ml-10 w-[calc(100%-10)] p-4 px-2 pr-5 pl-2',
-					showSecond && 'rounded-lg bg-mist-100 dark:bg-mist-800',
+					'mx-10 ml-10 w-[calc(100%-10)] px-2 pr-5 pl-2',
+					// showSecond && 'rounded-lg bg-mist-100 dark:bg-mist-800',
+					showSecond && 'border-l-2 pl-12',
 					'sticky',
 					isFluid && isGallerySticky ? 'top-10' : 'top-5',
-					isGallerySticky ? 'h-[80vh]' : 'h-[90vh]'
+					isGallerySticky ? 'h-[80vh]' : 'h-screen'
 				]}
 			>
 				<div class={[mode_secondary && mode_secondary]}>
