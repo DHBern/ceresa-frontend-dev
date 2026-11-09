@@ -94,4 +94,7 @@
 	.h6 {
 		@apply text-base sm:text-lg lg:text-xl;
 	}
+	p {
+		@apply mt-5;
+	}
 }

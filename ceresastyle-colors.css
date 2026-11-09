@@ -26,7 +26,7 @@
 	--dark-40: hsl(0, 0%, 40%);
 	--dark-10: hsl(0, 0%, 10%);
 	--dark-04: hsl(0, 0%, 4%);
-	--background-hover: var(--dark-70);
+	--background-hover: var(--dark-90);
 	--background-hover-safe: hsla(0 0% 96%); /* //! change this */
 	--foreground-hover: var(--light-10);
 	--foreground-hover-safe: rgb(54, 54, 55); /* //! change this */
@@ -92,7 +92,7 @@
 	--dark-40: hsl(0, 0%, 60%);
 	--dark-10: hsl(0, 0%, 90%);
 	--dark-04: hsl(0, 0%, 92%);
-	--background-hover: var(--dark-40);
+	--background-hover: var(--dark-90);
 	--background-hover-safe: rgb(54, 54, 55); /* //! change this */
 	--foreground-hover: var(--light-04);
 	--foreground-hover-safe: hsla(0 0% 96% / 1); /* //! change this */

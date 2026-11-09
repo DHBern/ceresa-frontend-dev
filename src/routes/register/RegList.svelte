@@ -233,8 +233,8 @@
 										tick();
 										window.scrollTo({ top: 0, behavior: 'auto' });
 									}}
-									class={['preset-btn-round --sm mr-0', !selectedFilter && '--active']}
-									><p>Alle Kategorien</p></button
+									class={['preset-btn-round --sm', !selectedFilter && '--active']}
+									>Alle Kategorien</button
 								>
 								{#each allGroupKeys as groupKey (groupKey)}
 									<!-- //! Fix this any type -->
@@ -247,7 +247,7 @@
 											window.scrollTo({ top: 0, behavior: 'auto' });
 										}}
 										class={['preset-btn-round --sm', groupKey === selectedFilter && '--active']}
-										><p>{groupLabel}</p></button
+										>{groupLabel}</button
 									>
 								{/each}
 							</div>
