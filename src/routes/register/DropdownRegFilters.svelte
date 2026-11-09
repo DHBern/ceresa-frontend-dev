@@ -23,15 +23,14 @@
 	<DropdownMenu.Trigger
 		class="flex w-max max-w-[80vw] items-center gap-2 truncate rounded-full border px-3 py-1 text-left"
 	>
-		Filtern nach: <span class="truncate font-bold"
-			>{(regDict.groups as any)[selectedFilter]?.label_plural || 'Alle Kategorien'}</span
+		Filtra per: <span class="truncate font-bold"
+			>{(regDict.groups as any)[selectedFilter]?.label_plural || 'Tutte le categorie'}</span
 		>
 		<i class="fa-solid fa-chevron-down"></i>
 	</DropdownMenu.Trigger>
 	<DropdownMenu.Portal>
 		<DropdownMenu.Content side="bottom" align="start" sideOffset={2} {...contentProps}>
 			<DropdownMenu.RadioGroup bind:value={selectedFilter}>
-				<!-- <DropdownMenu.GroupHeading>Filtern nach</DropdownMenu.GroupHeading> -->
 				<DropdownMenu.RadioItem value="">
 					{#snippet children({ checked })}
 						<div
@@ -42,7 +41,7 @@
 									: 'bg-background text-foreground hover:bg-background-hover-safe'
 							]}
 						>
-							Alle Kategorien
+							Tutte le categorie
 						</div>
 					{/snippet}
 				</DropdownMenu.RadioItem>

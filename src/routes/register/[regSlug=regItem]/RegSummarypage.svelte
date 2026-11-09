@@ -73,7 +73,7 @@
 								>{@render MetadataValue(attKey, regAttributes[attKey])}</td
 							>
 						{:else}
-							<td class="px-4 py-2 text-left text-muted-foreground">Keine Daten verfügbar</td>
+							<td class="px-4 py-2 text-left text-muted-foreground">Nessun dato disponibile</td>
 						{/if}
 					</tr>
 				</tbody>
@@ -96,7 +96,7 @@
 					href={resolve('/map')}
 					target={openCrossRefsInNewTab ? '_blank' : undefined}
 					rel={openCrossRefsInNewTab ? 'noopener noreferrer' : undefined}
-					>Zur Kartenansicht
+					>Vai alla mappa
 				</a>
 			</div>
 		</div>
@@ -149,7 +149,7 @@
 		{#each docs as doc (doc.docId)}
 			{@render LinkedItem(doc)}
 		{:else}
-			<p class="px-4 h-80 text-muted-foreground">Keine verlinkten Dokumente gefunden.</p>
+			<p class="px-4 h-80 text-muted-foreground">Non sono stati trovati documenti collegati.</p>
 		{/each}
 	</div>
 {/snippet}
@@ -251,27 +251,23 @@
 <!-- Linked documents -->
 {#if docType === 'people'}
 	<!-- //! These lists can later be toggled on/off depending on content -->
-	<h2 class="h4 sticky top-20 z-91 h-20 w-full bg-background py-5">
-		Korrespondenz mit Annemarie Schwarzenbach
-	</h2>
-	{@render LinkedItemsContainer([])}
 	<h2 class="h4 sticky top-20 z-91 h-10 w-full bg-background pt-1 pb-10 xl:pt-5 xl:pb-15">
-		Verknüpfte Dokumente
+		Documenti collegati
 	</h2>
 	{@render LinkedItemsContainer(crossRef?.linkedDocs)}
 	<h2 class="h4 sticky top-20 z-91 h-10 w-full bg-background pt-1 pb-10 xl:pt-5 xl:pb-15">
-		Verknüpfte Kommentare
+		Commenti collegati
 	</h2>
 	{@render LinkedItemsContainer([])}
 {:else}
 	<h2 class="h4 sticky top-20 z-91 h-10 w-full bg-background pt-1 pb-10 xl:pt-5 xl:pb-15">
-		Verknüpfte Dokumente
+		Documenti collegati
 	</h2>
 	<div class="min-h-[40vh]">
 		{@render LinkedItemsContainer(crossRef?.linkedDocs)}
 	</div>
 	<h2 class="h4 sticky top-20 z-91 h-10 w-full bg-background pt-1 pb-10 xl:pt-5 xl:pb-15">
-		Verknüpfte Kommentare
+		Commenti collegati
 	</h2>
 	{@render LinkedItemsContainer([])}
 {/if}

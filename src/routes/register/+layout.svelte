@@ -50,7 +50,7 @@
 				: 'h4 top-35 left-0 w-1 pl-10 text-center whitespace-nowrap transition-all duration-300 ease-in-out'
 	]}
 >
-	{data.regView === 'regView1' ? 'Register' : dictReg[data.regType as TRegTypes]?.register_name}
+	{data.regView === 'regView1' ? 'Registri' : dictReg[data.regType as TRegTypes]?.register_name}
 </h1>
 
 <!-- Navigation -->

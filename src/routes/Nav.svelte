@@ -15,8 +15,8 @@
 	// Menu
 	const mainMenuInfo = {
 		main1: {
-			nameShort: 'Testi e audio',
-			nameLong: 'Testi e audiolibri',
+			nameShort: 'Documenti',
+			nameLong: 'Documenti',
 			path: resolve('/texts_and_audio')
 		},
 		main3: { nameShort: 'Registri', nameLong: 'Registri', path: resolve('/register') },

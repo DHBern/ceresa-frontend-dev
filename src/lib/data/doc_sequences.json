@@ -35,8 +35,8 @@
 			"posthum_all": {
 				"type": "special",
 				"url_seq_overview": "/posthum_all",
-				"name": "All Posthumous Works",
-				"preamble": "All Posthumous Works",
+				"name": "Tutte le opere postume",
+				"preamble": "Tutte le opere postume",
 				"docs": [
 					"posthum_0001",
 					"posthum_0002",
@@ -190,8 +190,8 @@
 			"unpublished_all": {
 				"type": "special",
 				"url_seq_overview": "/unpublished_all",
-				"name": "All Unpublished Works",
-				"preamble": "All Unpublished Works",
+				"name": "Tutte le opere inedite",
+				"preamble": "Tutte le opere inedite",
 				"docs": ["unpublished_0001", "unpublished_0002", "unpublished_0003", "unpublished_0004"]
 			},
 			"unpublished_manuscripts": {
@@ -213,8 +213,8 @@
 			"published_all": {
 				"type": "special",
 				"url_seq_overview": "/published_all",
-				"name": "Alle Published Works",
-				"preamble": "Alle Published Works",
+				"name": "Tutte le opere edite",
+				"preamble": "Tutte le opere edite",
 				"docs": ["published_0001", "published_0002"]
 			},
 			"published_manuscripts": {

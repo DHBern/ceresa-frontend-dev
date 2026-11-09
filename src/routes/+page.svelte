@@ -13,7 +13,7 @@
 	</div>
 </div>
 <div class="mx-auto mt-13 w-full max-w-300">
-	<h2 class="h2">Documents for Prototype</h2>
+	<h2 class="h2">Documenti appartenenti al prototipo</h2>
 
 	<h4 class="h4 mt-10 tracking-wide text-neutral-500">Opere postume</h4>
 	<ul class="mt-2 divide-y divide-neutral-200">

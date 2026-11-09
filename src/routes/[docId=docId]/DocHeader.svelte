@@ -350,7 +350,7 @@
 								<tbody class="flex flex-col gap-2">
 									{@render metadataEntry(
 										'XML',
-										`<a href="https://dav.annemarie-schwarzenbach.ch/data/sources/tei/unpublished/02/${docId}.xml" target="_blank" rel="noopener noreferrer">Documento XML</a>`
+										`<a href="" target="_blank" rel="noopener noreferrer">Documento XML</a>`
 									)}
 								</tbody>
 							</table>
