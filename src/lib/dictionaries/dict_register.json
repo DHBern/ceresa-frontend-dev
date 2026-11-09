@@ -7,21 +7,21 @@
 	},
 	"dict_register": {
 		"people": {
-			"register_name": "People Register",
+			"register_name": "Registro delle persone",
 			"key_singular": "person",
-			"label_plural": "People",
+			"label_plural": "Persone",
 			"attributes": {
-				"name": { "label": "Name" },
-				"firstname": { "label": "Firstname" },
-				"lastname": { "label": "Lastname" },
-				"nameVariants": { "label": "Name variants" },
-				"gndNumber": { "label": "GND-Number" },
-				"dateBirth": { "label": "Year of birth" },
-				"dateDeath": { "label": "Year of death" },
-				"type": { "label": "Category" },
-				"orgIds": { "label": "Linked organisations" },
-				"note": { "label": "Comments" },
-				"docs": { "label": "Linked documents" }
+				"name": { "label": "Nome" },
+				"firstname": { "label": "Nome di battesimo" },
+				"lastname": { "label": "Cognome" },
+				"nameVariants": { "label": "Varianti del nome" },
+				"gndNumber": { "label": "Numero GND" },
+				"dateBirth": { "label": "Data di nascita" },
+				"dateDeath": { "label": "Data di morte" },
+				"type": { "label": "Categoria" },
+				"orgIds": { "label": "Organizzazioni collegate" },
+				"note": { "label": "Commenti" },
+				"docs": { "label": "Documenti collegati" }
 			},
 			"groups": {
 				"people_cat_1": {
@@ -45,26 +45,26 @@
 					"label_plural": "personaggi letterari"
 				},
 				"people_cat_6": {
-					"label_singular": "personaggo biblico",
+					"label_singular": "personaggio biblico",
 					"label_plural": "personaggi biblici"
 				}
 			}
 		},
 		"places": {
-			"register_name": "Places Register",
+			"register_name": "Registro dei luoghi",
 			"key_singular": "place",
-			"label_plural": "Places",
+			"label_plural": "Luoghi",
 			"attributes": {
-				"name": { "label": "Name" },
-				"nameVariants": { "label": "Name variants" },
-				"gndNumber": { "label": "GND Number" },
-				"geoNamesID": { "label": "Geonames ID" },
-				"geoNamesLink": { "label": "Geonames Link" },
-				"type": { "label": "Ortskategorie" },
-				"coords": { "label": "Koordinaten" },
-				"country": { "label": "Land" },
-				"note": { "label": "Comments" },
-				"docs": { "label": "Linked documents" }
+				"name": { "label": "Nome" },
+				"nameVariants": { "label": "Varianti del nome" },
+				"gndNumber": { "label": "Numero GND" },
+				"geoNamesID": { "label": "ID GeoNames" },
+				"geoNamesLink": { "label": "Link GeoNames" },
+				"type": { "label": "Categoria del luogo" },
+				"coords": { "label": "Coordinate" },
+				"country": { "label": "Paese" },
+				"note": { "label": "Commenti" },
+				"docs": { "label": "Documenti collegati" }
 			},
 			"groups": {
 				"places_cat_1": {
@@ -72,8 +72,8 @@
 					"label_plural": "Città"
 				},
 				"places_cat_2": {
-					"label_singular": "Commune",
-					"label_plural": "Commune"
+					"label_singular": "Comune",
+					"label_plural": "Comuni"
 				},
 				"places_cat_3": {
 					"label_singular": "Stato",
@@ -82,29 +82,29 @@
 			}
 		},
 		"events": {
-			"register_name": "Register der Reisen und Aufenthalte",
+			"register_name": "Registro dei viaggi e dei soggiorni",
 			"key_singular": "event",
-			"label_plural": "Reisen und Aufenthalte",
+			"label_plural": "Viaggi e soggiorni",
 			"attributes": {
-				"name": { "label": "Name" },
-				"type": { "label": "Category" },
-				"date": { "label": "Date" },
-				"note": { "label": "Comments" },
-				"docs": { "label": "Linked documents" }
+				"name": { "label": "Nome" },
+				"type": { "label": "Categoria" },
+				"date": { "label": "Data" },
+				"note": { "label": "Commenti" },
+				"docs": { "label": "Documenti collegati" }
 			},
 			"groups": {}
 		},
 		"orgs": {
-			"register_name": "Organisations Register",
+			"register_name": "Registro delle organizzazioni",
 			"key_singular": "org",
-			"label_plural": "Organisations",
+			"label_plural": "Organizzazioni",
 			"attributes": {
-				"name": { "label": "Name" },
-				"nameVariants": { "label": "Name variants" },
-				"gndNumber": { "label": "GND Number" },
-				"type": { "label": "Category" },
-				"note": { "label": "Comments" },
-				"docs": { "label": "Linked documents" }
+				"name": { "label": "Nome" },
+				"nameVariants": { "label": "Varianti del nome" },
+				"gndNumber": { "label": "Numero GND" },
+				"type": { "label": "Categoria" },
+				"note": { "label": "Commenti" },
+				"docs": { "label": "Documenti collegati" }
 			},
 			"groups": {
 				"orgs_cat_1": {
@@ -118,30 +118,30 @@
 			}
 		},
 		"bibls": {
-			"register_name": "Bibliography Register",
+			"register_name": "Registro bibliografico",
 			"key_singular": "bibl",
-			"label_plural": "Bibliography",
+			"label_plural": "Bibliografia",
 			"attributes": {
-				"name": { "label": "Name" },
-				"type": { "label": "Category" },
-				"authorIds": { "label": "Authors" },
-				"pubDate": { "label": "Publication Date" },
-				"gndNumber": { "label": "GND Number" },
-				"note": { "label": "Comments" },
-				"docs": { "label": "Linked documents" }
+				"name": { "label": "Nome" },
+				"type": { "label": "Categoria" },
+				"authorIds": { "label": "Autori" },
+				"pubDate": { "label": "Data di pubblicazione" },
+				"gndNumber": { "label": "Numero GND" },
+				"note": { "label": "Commenti" },
+				"docs": { "label": "Documenti collegati" }
 			},
 			"groups": {}
 		},
 		"keywords": {
-			"register_name": "Keywords Register",
+			"register_name": "Registro delle parole chiave",
 			"key_singular": "keyword",
-			"label_plural": "Keywords",
+			"label_plural": "Parole chiave",
 			"attributes": {
-				"name": { "label": "Name" },
-				"type": { "label": "Category" },
-				"gndNumber": { "label": "GND Number" },
-				"note": { "label": "Comments" },
-				"docs": { "label": "Linked documents" }
+				"name": { "label": "Nome" },
+				"type": { "label": "Categoria" },
+				"gndNumber": { "label": "Numero GND" },
+				"note": { "label": "Commenti" },
+				"docs": { "label": "Documenti collegati" }
 			},
 			"groups": {}
 		}

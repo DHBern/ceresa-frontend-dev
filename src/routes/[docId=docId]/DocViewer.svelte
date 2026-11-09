@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { showDrawer } from '$lib/globals/ui-states.svelte';
 	import IIIF_Viewer from './IIIF_Viewer.svelte';
 	import TextPaged from './TextPaged.svelte';
 	import type {
@@ -89,40 +88,46 @@
 	const TRANSITION_LENGTH = 100;
 	const DELAY = 200;
 	const isGallerySticky = false; //! temp
+
+	// View Toggle
+	type TabItem = { value: string; label: string };
+
+	const tabItems = $derived.by<TabItem[]>(() => {
+		const items: TabItem[] = [{ value: 'LF', label: 'Lettura scorrevole' }];
+		if (resolvedDoc.docType !== 'published') {
+			items.push({ value: 'DF', label: 'Vista diplomatica' });
+		}
+		if (ceteiDataTranslation) {
+			items.push({ value: 'TRLF', label: 'Vista tradotta' });
+		}
+		return items;
+	});
+
+	function positionClass(index: number, total: number): string {
+		if (total < 2) return '--single';
+		if (index === 0) return '--left';
+		if (index === total - 1) return '--right';
+		return '--center';
+	}
 </script>
 
 <div class={classesContainer}>
 	<!-- Toggle -->
 	<div class="relative flex h-full w-full flex-col items-center gap-6">
 		<Tabs.Root class="sticky top-10 z-900 max-w-260 xl:static" bind:value={params.mode}>
-			{#if ceteiDataTranslation}
-				<Tabs.List class="preset-tabs-list --lg grid grid-cols-3">
-					<Tabs.Trigger value="LF" class="preset-tabs-trigger --left"
-						>Fluid Reading View</Tabs.Trigger
+			<Tabs.List
+				class="preset-tabs-list --lg grid"
+				style={`grid-template-columns: repeat(${tabItems.length}, minmax(0, 1fr))`}
+			>
+				{#each tabItems as tab, i (tab.value)}
+					<Tabs.Trigger
+						value={tab.value}
+						class={`preset-tabs-trigger ${positionClass(i, tabItems.length)}`}
 					>
-					<Tabs.Trigger value="DF" class=" preset-tabs-trigger --center"
-						>Diplomatic View</Tabs.Trigger
-					>
-					<Tabs.Trigger value="TRLF" class=" preset-tabs-trigger --right"
-						>Translation View</Tabs.Trigger
-					>
-					<!-- <Tabs.Trigger value="FAC" class=" preset-tabs-trigger --right"
-						>Facsimile View</Tabs.Trigger
-					> -->
-				</Tabs.List>
-			{:else}
-				<Tabs.List class="preset-tabs-list --lg grid grid-cols-2">
-					<Tabs.Trigger value="LF" class="preset-tabs-trigger --left"
-						>Fluid Reading View</Tabs.Trigger
-					>
-					<Tabs.Trigger value="DF" class=" preset-tabs-trigger --right"
-						>Diplomatic View</Tabs.Trigger
-					>
-					<!-- <Tabs.Trigger value="FAC" class=" preset-tabs-trigger --right"
-						>Facsimile View</Tabs.Trigger
-					> -->
-				</Tabs.List>
-			{/if}
+						{tab.label}
+					</Tabs.Trigger>
+				{/each}
+			</Tabs.List>
 		</Tabs.Root>
 	</div>
 
@@ -219,6 +224,11 @@
 					isBreakpointBelow('lg') && 'h-[50vh]'
 				]}
 			>
+				<h3
+					class="mb-5 w-max border border-amber-100 bg-amber-100 p-2 text-xs font-bold text-accent-foreground"
+				>
+					Traduzione editoriale
+				</h3>
 				<div class={[mode_secondary && mode_secondary]}>
 					{@render Text(ceteiDataTranslation, showSecond, false, isFluid)}
 				</div>

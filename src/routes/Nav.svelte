@@ -15,24 +15,24 @@
 	// Menu
 	const mainMenuInfo = {
 		main1: {
-			nameShort: 'Texts & Audio',
-			nameLong: 'Texts and Audios',
+			nameShort: 'Testi e audio',
+			nameLong: 'Testi e audiolibri',
 			path: resolve('/texts_and_audio')
 		},
-		main3: { nameShort: 'Register', nameLong: 'Register', path: resolve('/register') },
+		main3: { nameShort: 'Registri', nameLong: 'Registri', path: resolve('/register') },
 		main4: {
 			nameShort: 'Ceresa',
-			nameLong: 'Über Ceresa',
+			nameLong: 'Su Ceresa',
 			path: resolve('/ceresa')
 		},
-		main5: { nameShort: 'Projekt', nameLong: 'Über das Projekt', path: resolve('/project') }
+		main5: { nameShort: 'Progetto', nameLong: 'Sul progetto', path: resolve('/project') }
 	};
 
 	const subMenuInfo = {
 		unpublished: {
-			name: 'Kleine Formen',
-			description: 'Kleine Formen',
-			content: 'Artikel, Zeitungsartikel, Sonderbeilagen, Rezensionen und weitere Kleine Formen',
+			name: 'Forme brevi',
+			description: 'Forme brevi',
+			content: 'Articoli, articoli di giornale, inserti speciali, recensioni e altre forme brevi',
 			path: resolve('/unpublished')
 		}
 	};
@@ -137,7 +137,7 @@
 		<!-- Search -->
 		<input
 			type="text"
-			placeholder="Suche..."
+			placeholder="Ricerca..."
 			class="mx-4 w-50 rounded-xl border-2 border-background px-2 duration-200 focus:w-70"
 		/>
 		<!-- Shortcuts Info -->
@@ -154,24 +154,24 @@
 			</NavigationMenu.Trigger>
 			<NavigationMenu.Content class=" absolute top-0 left-0 w-auto text-background-contrast">
 				<div class=" m-0 w-full list-none p-5">
-					<h5 class="h5 mb-5">Tastaturkürzel</h5>
+					<h5 class="h5 mb-5">Scorciatoie da tastiera</h5>
 					<table>
 						<tbody class="flex flex-col gap-2">
 							<tr class="mb-5 flex flex-col lg:mb-0 lg:block">
 								<td class="w-50 p-0 font-bold lg:py-2">S:</td>
-								<td class="p-0 text-left lg:py-2">Sequenz-Panel öffnen.</td>
+								<td class="p-0 text-left lg:py-2">Apre il pannello delle sequenze.</td>
 							</tr>
 							<tr class="mb-5 flex flex-col lg:mb-0 lg:block">
-								<td class="w-50 p-0 font-bold lg:py-2">Escape:</td>
-								<td class="p-0 text-left lg:py-2">Sequenz-Panel schliessen.</td>
+								<td class="w-50 p-0 font-bold lg:py-2">Esc:</td>
+								<td class="p-0 text-left lg:py-2">Chiude il pannello delle sequenze.</td>
 							</tr>
 							<tr class="mb-5 flex flex-col lg:mb-0 lg:block">
-								<td class="w-50 p-0 font-bold lg:py-2">Pfeiltaste Links:</td>
-								<td class="p-0 text-left lg:py-2">Zum vorherigen Dokument in Sequenz.</td>
+								<td class="w-50 p-0 font-bold lg:py-2">Freccia sinistra:</td>
+								<td class="p-0 text-left lg:py-2">Passa alla pagina precedente nella sequenza.</td>
 							</tr>
 							<tr class="mb-5 flex flex-col lg:mb-0 lg:block">
-								<td class="w-50 p-0 font-bold lg:py-2">Pfeiltaste Rechts:</td>
-								<td class="p-0 text-left lg:py-2">Zum nächsten Dokument in Sequenz.</td>
+								<td class="w-50 p-0 font-bold lg:py-2">Freccia destra:</td>
+								<td class="p-0 text-left lg:py-2">Passa alla pagina successive nella sequenza.</td>
 							</tr>
 						</tbody>
 					</table>

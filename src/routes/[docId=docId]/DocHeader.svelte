@@ -117,7 +117,7 @@
 				{:else}
 					<div class="flex h-[120px] w-[120px] flex-col items-center justify-center text-center">
 						<p>{cont.docId}</p>
-						<p class="text-muted-foreground">(noch keine Metadaten)</p>
+						<p class="text-muted-foreground">(no Metadata yet)</p>
 					</div>
 				{/if}
 			</a>
@@ -131,11 +131,11 @@
 			<!-- Title -->
 			<h2 class="font-serif text-2xl font-bold text-blue-500">
 				{#if resDoc.docType === 'posthum'}
-					<a href={resolve('/posthumous')}>Posthumous</a>:
+					<a href={resolve('/posthumous')}>Opera postuma</a>:
 				{:else if resDoc.docType === 'published'}
-					<a href={resolve('/published')}>Published</a>:
+					<a href={resolve('/published')}>Opera edita</a>:
 				{:else if resDoc.docType === 'unpublished'}
-					<a href={resolve('/unpublished')}>Unpublished</a>:
+					<a href={resolve('/unpublished')}>Opera inedita</a>:
 				{/if}
 				{#if dictDocIds.includes(resDoc.item.slug)}
 					<a href={resolve('/posthumous#piccolo_dizionario')}>Piccolo Dizionario</a>
@@ -205,38 +205,41 @@
 
 	<!-- Metadata -->
 	<div class="w-full">
-		<ResponsiveAccordion titleMeta="Metadaten">
+		<ResponsiveAccordion titleMeta="Metadati">
 			{#snippet metadataContent()}
 				<div class="h-full" data-dom="metadata">
 					<div class="preset-btn-list --spacing-sm">
-						{@render metadataButton('eckdaten', 'Eckdaten')}
-						{@render metadataButton('sources', 'Quellenangaben')}
-						{@render metadataButton('crossRefEntities', 'Referenzierung')}
-						{@render metadataButton('crossRefDocs', 'Querverweise')}
-						{@render metadataButton('citation', 'Zitierhinweise')}
-						{@render metadataButton('download', 'Download-Links')}
-						<!-- {@render metadataButton('all', 'Alles (Temporär)')} -->
+						{@render metadataButton('eckdaten', 'Dati principali')}
+						{@render metadataButton('sources', 'Indicazioni sulle fonti')}
+						{@render metadataButton('crossRefEntities', 'Riferimenti')}
+						{@render metadataButton('crossRefDocs', 'Riferimenti incrociati')}
+						{@render metadataButton('citation', 'Indicazioni per la citazione')}
+						{@render metadataButton('download', 'Link di download')}
+						<!-- {@render metadataButton('all', 'Tutto (temporaneo)')} -->
 					</div>
 
 					<div class={['@container mt-5 h-full w-full overflow-auto pt-5 pb-50']}>
 						{#if stateMetadata === 'eckdaten'}
 							<table>
 								<tbody class="flex flex-col items-start gap-2">
-									{@render metadataEntry('Voller Titel', resDoc.item!.metadata.title_full)}
-									{@render metadataEntry('Publikationsdatum', resDoc.item!.metadata.pubDate)}
+									{@render metadataEntry('Titolo completo', resDoc.item!.metadata.title_full)}
+									{@render metadataEntry('Data di pubblicazione', resDoc.item!.metadata.pubDate)}
 									{@render metadataEntry(
-										'Publikationsort',
+										'Luogo di pubblicazione',
 										'pubPlace' in resDoc.item!.metadata ? resDoc.item!.metadata.pubPlace : undefined
 									)}
-									{@render metadataEntry('Publikationsdetails', resDoc.item!.metadata.pubDetails)}
+									{@render metadataEntry(
+										'Dettagli della pubblicazione',
+										resDoc.item!.metadata.pubDetails
+									)}
 								</tbody>
 							</table>
 						{:else if stateMetadata === 'sources'}
 							<table>
 								<tbody class="flex flex-col gap-2">
-									{@render metadataEntry('Archivierungsort', resDoc.item!.metadata.archive)}
+									{@render metadataEntry('Luogo di archiviazione', resDoc.item!.metadata.archive)}
 									{@render metadataEntry(
-										'Archive Collation',
+										"Collocazione nell'archivio",
 										resDoc.item!.metadata.archiveCollation
 									)}
 								</tbody>
@@ -244,7 +247,7 @@
 						{:else if stateMetadata === 'crossRefEntities'}
 							{#if crossRef.citedEntities && Object.keys(crossRef.citedEntities).length}
 								<!-- //! replace Sachbegriffe with dict-entry (also below in h5)  -->
-								<h5 class="h5">Im Text enthaltene Referenzen</h5>
+								<h5 class="h5">Riferimenti presenti nel testo</h5>
 								<table>
 									<tbody class="flex flex-col gap-2" data-dom="crossRef">
 										{#each ['people', 'places', 'events', 'orgs', 'bibls', 'keywords'] as const as type (type)}
@@ -267,7 +270,7 @@
 											'mt-5 md:mt-20'
 									]}
 								>
-									Verlinkte Referenzen
+									Riferimenti collegati
 								</h5>
 								<table>
 									<tbody class="flex flex-col gap-2" data-dom="crossRef">
@@ -284,7 +287,7 @@
 							{/if}
 						{:else if stateMetadata === 'crossRefDocs'}
 							{#if crossRef.citedDocuments && Object.keys(crossRef.citedDocuments).length}
-								<h5 class="h5">Im Text enthaltene Querverweise</h5>
+								<h5 class="h5">Riferimenti incrociati presenti nel testo</h5>
 								<div>
 									{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
 										{#if crossRef.citedDocuments?.[type]?.length}
@@ -305,7 +308,7 @@
 											'mt-5 md:mt-20'
 									]}
 								>
-									Durch Editionsteam vergebene Querverweise
+									Riferimenti incrociati assegnati dal team editoriale
 								</h5>
 								<div>
 									{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
@@ -323,21 +326,21 @@
 								<tbody class="flex flex-col gap-2">
 									{#if resDoc.docType === 'posthum'}
 										{@render metadataEntry(
-											'Dieser Brief',
-											`AUTHOR et al. 2028 "Annemarie Schwarzenbach: Digitale Edition der Kleinen Formen und Briefe. Reisetexte, Intermedialität, Netzwerke", ${resDoc.item!.name} (${docId})`
+											'Questa lettera',
+											`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.name} (${docId})`
 										)}
 										{@render metadataEntry(
-											'Aktuell sichtbare Seite',
-											`AUTHOR et al. 2028 "Annemarie Schwarzenbach: Digitale Edition der Kleinen Formen und Briefe. Reisetexte, Intermedialität, Netzwerke", ${resDoc.item!.name} (${docId}),  Seite ${params.page}`
+											'Pagina attualmente visualizzata',
+											`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.name} (${docId}), Pagina ${params.page}`
 										)}
 									{:else}
 										{@render metadataEntry(
-											'Dieses Dokument',
-											`AUTHOR et al. 2028 "Annemarie Schwarzenbach: Digitale Edition der Kleinen Formen und Briefe. Reisetexte, Intermedialität, Netzwerke", ${resDoc.item!.metadata.title_full}`
+											'Questo documento',
+											`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.metadata.title_full}`
 										)}
 										{@render metadataEntry(
-											'Aktuell sichtbare Seite',
-											`AUTHOR et al. 2028 "Annemarie Schwarzenbach: Digitale Edition der Kleinen Formen und Briefe. Reisetexte, Intermedialität, Netzwerke", ${resDoc.item!.metadata.title_full},  Seite ${params.page}`
+											'Pagina attualmente visualizzata',
+											`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.metadata.title_full}, Pagina ${params.page}`
 										)}
 									{/if}
 								</tbody>
@@ -347,7 +350,7 @@
 								<tbody class="flex flex-col gap-2">
 									{@render metadataEntry(
 										'XML',
-										`<a href="https://dav.annemarie-schwarzenbach.ch/data/sources/tei/unpublished/02/${docId}.xml" target="_blank" rel="noopener noreferrer">XML-Dokument</a>`
+										`<a href="https://dav.annemarie-schwarzenbach.ch/data/sources/tei/unpublished/02/${docId}.xml" target="_blank" rel="noopener noreferrer">Documento XML</a>`
 									)}
 								</tbody>
 							</table>

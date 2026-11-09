@@ -2,58 +2,58 @@
 	"meta": {},
 	"dict_sequences": {
 		"prototype": {
-			"sequence_name": "Prototype",
+			"sequence_name": "Prototipo",
 			"key_singular": "prototype",
-			"label_plural": "Prototype",
-			"label_singular": "Prototype",
-			"label_seq_overview": "Zur [DEADEND]",
-			"label_next": "Next Document",
-			"label_prev": "Previous Document"
+			"label_plural": "Prototipo",
+			"label_singular": "Prototipo",
+			"label_seq_overview": "Vai a [DEADEND]",
+			"label_next": "Documento successivo",
+			"label_prev": "Documento precedente"
 		},
 		"textstufen": {
-			"sequence_name": "Textstufen",
+			"sequence_name": "Stati del testo",
 			"key_singular": "textstufe",
-			"label_plural": "Textstufen",
-			"label_singular": "Textstufe",
-			"label_seq_overview": "Zur [DEADEND]",
-			"label_next": "Next Document",
-			"label_prev": "Previous Document"
+			"label_plural": "Stati del testo",
+			"label_singular": "Stato del testo",
+			"label_seq_overview": "Vai a [DEADEND]",
+			"label_next": "Documento successivo",
+			"label_prev": "Documento precedente"
 		},
 		"posthum": {
-			"sequence_name": "Posthumous Works",
+			"sequence_name": "Opere postume",
 			"key_singular": "posthum",
-			"label_plural": "Posthumous Works",
-			"label_singular": "Posthumous Works",
-			"label_seq_overview": "See Gallery of all Posthumous Works",
-			"label_next": "Next Document",
-			"label_prev": "Previous Document"
+			"label_plural": "Opere postume",
+			"label_singular": "Opere postume",
+			"label_seq_overview": "Vedi la galleria di tutte le opere postume",
+			"label_next": "Documento successivo",
+			"label_prev": "Documento precedente"
 		},
 		"unpublished": {
-			"sequence_name": "Unpublished",
+			"sequence_name": "Inediti",
 			"key_singular": "unpublished",
-			"label_plural": "Unpublished",
-			"label_singular": "Unpublished",
-			"label_seq_overview": "See all Unpublished Works",
-			"label_next": "Next Document",
-			"label_prev": "Previous Document"
+			"label_plural": "Inediti",
+			"label_singular": "Inediti",
+			"label_seq_overview": "Vedi tutte le opere inedite",
+			"label_next": "Documento successivo",
+			"label_prev": "Documento precedente"
 		},
 		"published": {
-			"sequence_name": "Published",
+			"sequence_name": "Editi",
 			"key_singular": "published",
-			"label_plural": "Published",
-			"label_singular": "Published",
-			"label_seq_overview": "See all Published Works",
-			"label_next": "Next Document",
-			"label_prev": "Previous Document"
+			"label_plural": "Editi",
+			"label_singular": "Editi",
+			"label_seq_overview": "Vedi tutte le opere edite",
+			"label_next": "Documento successivo",
+			"label_prev": "Documento precedente"
 		},
 		"dictionaries": {
-			"sequence_name": "Dictionaries",
+			"sequence_name": "Dizionari",
 			"key_singular": "dict",
-			"label_plural": "Dictionaries",
-			"label_singular": "Dictionaries",
-			"label_seq_overview": "See all Dictionaries",
-			"label_next": "Next Entry",
-			"label_prev": "Previous Entry"
+			"label_plural": "Dizionari",
+			"label_singular": "Dizionari",
+			"label_seq_overview": "Vedi tutti i dizionari",
+			"label_next": "Voce successiva",
+			"label_prev": "Voce precedente"
 		}
 	}
 }

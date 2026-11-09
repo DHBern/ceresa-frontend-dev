@@ -2,121 +2,121 @@
 	"meta": {},
 	"dict_docs": {
 		"posthum": {
-			"name": "Posthumous Works",
+			"name": "Opere postume",
 			"url": "posthumous",
 			"key_singular": "posthum",
-			"label_plural": "Posthumous Works",
-			"label_singular": "Posthumous Work",
+			"label_plural": "Opere postume",
+			"label_singular": "Opera postuma",
 			"metadata": {
-				"title": { "label": "Label" },
-				"title_full": { "label": "Voller Titel" },
-				"title_short": { "label": "Kurztitel" },
-				"authors": { "label": "Autor:in(nen)" },
-				"pubDate": { "label": "Publikaitonsdatum" },
-				"pubPlace": { "label": "Publikationsort" },
-				"pubDetails": { "label": "Publikationsdetails" },
-				"textstufen_edited": { "label": "Textstufen (ediert)" },
-				"textzeugen_nonedited": { "label": "Textstufen (nicht ediert)" },
-				"archive": { "label": "Archiv" },
-				"archiveCollation": { "label": "Archivsammlung" },
-				"pubSecondary": { "label": "Sekundärliteratur" },
-				"note": { "label": "Notizen" }
+				"title": { "label": "Titolo" },
+				"title_full": { "label": "Titolo completo" },
+				"title_short": { "label": "Titolo breve" },
+				"authors": { "label": "Autor*e/i" },
+				"pubDate": { "label": "Data di pubblicazione" },
+				"pubPlace": { "label": "Luogo di pubblicazione" },
+				"pubDetails": { "label": "Dettagli della pubblicazione" },
+				"textstufen_edited": { "label": "Stati del testo (editi)" },
+				"textzeugen_nonedited": { "label": "Stati del testo (non editi)" },
+				"archive": { "label": "Archivio" },
+				"archiveCollation": { "label": "Collezione d'archivio" },
+				"pubSecondary": { "label": "Letteratura secondaria" },
+				"note": { "label": "Note" }
 			},
 			"crossReferences": {
-				"citedDocuments": { "label": "Zitierte Dokumente" },
-				"linkedDocuments": { "label": "Verknüpfte Dokumente" },
-				"citedEntities": { "label": "Zitierte Entitiäten" },
-				"linkedEntities": { "label": "Stichworte" }
+				"citedDocuments": { "label": "Documenti citati" },
+				"linkedDocuments": { "label": "Documenti collegati" },
+				"citedEntities": { "label": "Entità citate" },
+				"linkedEntities": { "label": "Parole chiave" }
 			},
 			"groups": {
 				"Typoskript": {
-					"label_singular": "Typoskript",
-					"label_plural": "Typoskripte",
+					"label_singular": "Dattiloscritto",
+					"label_plural": "Dattiloscritti",
 					"slug": null
 				},
 				"Manuskript": {
-					"label_singular": "Manuskript",
-					"label_plural": "Manuskripte",
+					"label_singular": "Manoscritto",
+					"label_plural": "Manoscritti",
 					"slug": null
 				}
 			}
 		},
 		"unpublished": {
-			"name": "Unpublished Works",
+			"name": "Opere inedite",
 			"url": "unpublished",
 			"key_singular": "unpublished",
-			"label_plural": "Unpublished Works",
-			"label_singular": "Unpublished Work",
+			"label_plural": "Opere inedite",
+			"label_singular": "Opera inedita",
 			"metadata": {
-				"title": { "label": "Label" },
-				"title_full": { "label": "Voller Titel" },
-				"title_short": { "label": "Kurztitel" },
-				"authors": { "label": "Autor:in(nen)" },
-				"pubDate": { "label": "Publikaitonsdatum" },
-				"pubPlace": { "label": "Publikationsort" },
-				"pubDetails": { "label": "Publikationsdetails" },
-				"textstufen_edited": { "label": "Textstufen (ediert)" },
-				"textzeugen_nonedited": { "label": "Textstufen (nicht ediert)" },
-				"archive": { "label": "Archiv" },
-				"archiveCollation": { "label": "Archivsammlung" },
-				"pubSecondary": { "label": "Sekundärliteratur" },
-				"note": { "label": "Notizen" }
+				"title": { "label": "Titolo" },
+				"title_full": { "label": "Titolo completo" },
+				"title_short": { "label": "Titolo breve" },
+				"authors": { "label": "Autor*e/i" },
+				"pubDate": { "label": "Data di pubblicazione" },
+				"pubPlace": { "label": "Luogo di pubblicazione" },
+				"pubDetails": { "label": "Dettagli della pubblicazione" },
+				"textstufen_edited": { "label": "Stati del testo (editi)" },
+				"textzeugen_nonedited": { "label": "Stati del testo (non editi)" },
+				"archive": { "label": "Archivio" },
+				"archiveCollation": { "label": "Collezione d'archivio" },
+				"pubSecondary": { "label": "Letteratura secondaria" },
+				"note": { "label": "Note" }
 			},
 			"crossReferences": {
-				"citedDocuments": { "label": "Zitierte Dokumente" },
-				"linkedDocuments": { "label": "Verknüpfte Dokumente" },
-				"citedEntities": { "label": "Zitierte Entitiäten" },
-				"linkedEntities": { "label": "Stichworte" }
+				"citedDocuments": { "label": "Documenti citati" },
+				"linkedDocuments": { "label": "Documenti collegati" },
+				"citedEntities": { "label": "Entità citate" },
+				"linkedEntities": { "label": "Parole chiave" }
 			},
 			"groups": {
 				"Typoskript": {
-					"label_singular": "Typoskript",
-					"label_plural": "Typoskripte",
+					"label_singular": "Dattiloscritto",
+					"label_plural": "Dattiloscritti",
 					"slug": null
 				},
 				"Manuskript": {
-					"label_singular": "Manuskript",
-					"label_plural": "Manuskripte",
+					"label_singular": "Manoscritto",
+					"label_plural": "Manoscritti",
 					"slug": null
 				}
 			}
 		},
 		"published": {
-			"name": "Published Works",
+			"name": "Opere edite",
 			"url": "published",
 			"key_singular": "published",
-			"label_plural": "Published Works",
-			"label_singular": "Published Work",
+			"label_plural": "Opere edite",
+			"label_singular": "Opera edita",
 			"metadata": {
-				"title": { "label": "Label" },
-				"title_full": { "label": "Voller Titel" },
-				"title_short": { "label": "Kurztitel" },
-				"authors": { "label": "Autor:in(nen)" },
-				"pubDate": { "label": "Publikaitonsdatum" },
-				"pubPlace": { "label": "Publikationsort" },
-				"pubDetails": { "label": "Publikationsdetails" },
-				"textstufen_edited": { "label": "Textstufen (ediert)" },
-				"textzeugen_nonedited": { "label": "Textstufen (nicht ediert)" },
-				"archive": { "label": "Archiv" },
-				"archiveCollation": { "label": "Archivsammlung" },
-				"pubSecondary": { "label": "Sekundärliteratur" },
-				"note": { "label": "Notizen" }
+				"title": { "label": "Titolo" },
+				"title_full": { "label": "Titolo completo" },
+				"title_short": { "label": "Titolo breve" },
+				"authors": { "label": "Autor*e/i" },
+				"pubDate": { "label": "Data di pubblicazione" },
+				"pubPlace": { "label": "Luogo di pubblicazione" },
+				"pubDetails": { "label": "Dettagli della pubblicazione" },
+				"textstufen_edited": { "label": "Stati del testo (editi)" },
+				"textzeugen_nonedited": { "label": "Stati del testo (non editi)" },
+				"archive": { "label": "Archivio" },
+				"archiveCollation": { "label": "Collezione d'archivio" },
+				"pubSecondary": { "label": "Letteratura secondaria" },
+				"note": { "label": "Note" }
 			},
 			"crossReferences": {
-				"citedDocuments": { "label": "Zitierte Dokumente" },
-				"linkedDocuments": { "label": "Verknüpfte Dokumente" },
-				"citedEntities": { "label": "Zitierte Entitiäten" },
-				"linkedEntities": { "label": "Stichworte" }
+				"citedDocuments": { "label": "Documenti citati" },
+				"linkedDocuments": { "label": "Documenti collegati" },
+				"citedEntities": { "label": "Entità citate" },
+				"linkedEntities": { "label": "Parole chiave" }
 			},
 			"groups": {
 				"Typoskript": {
-					"label_singular": "Typoskript",
-					"label_plural": "Typoskripte",
+					"label_singular": "Dattiloscritto",
+					"label_plural": "Dattiloscritti",
 					"slug": null
 				},
 				"Manuskript": {
-					"label_singular": "Manuskript",
-					"label_plural": "Manuskripte",
+					"label_singular": "Manoscritto",
+					"label_plural": "Manoscritti",
 					"slug": null
 				}
 			}

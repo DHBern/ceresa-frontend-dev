@@ -125,5 +125,8 @@
 		&.--right {
 			@apply rounded-r-full;
 		}
+		&.--single {
+			@apply rounded-full;
+		}
 	}
 }
