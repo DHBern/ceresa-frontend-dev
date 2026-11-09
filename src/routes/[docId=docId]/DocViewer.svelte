@@ -208,6 +208,7 @@
 			<!-- Secondary Text -->
 			<div
 				class={[
+					params.mode !== 'TRLF' && 'hidden',
 					'overflow-auto',
 					'mx-10 ml-10 w-[calc(100%-10)] px-2 pr-5 pl-2',
 					// showSecond && 'rounded-lg bg-mist-100 dark:bg-mist-800',
