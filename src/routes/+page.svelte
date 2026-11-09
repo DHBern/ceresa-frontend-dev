@@ -12,6 +12,36 @@
 		<p class="mt-5 text-4xl">Lavori in corso!</p>
 	</div>
 </div>
+
+<div class="mx-auto mt-13 flex w-full max-w-300 flex-col items-center justify-center">
+	<p>
+		Il progetto Arcipelago Ceresa intende realizzare un’edizione digitale degli scritti inediti,
+		dispersi e postumi della scrittrice italo-svizzera Alice Ceresa (1923-2001), sviluppando
+		contestualmente nuove indagini critiche sulla sua opera.
+	</p>
+	<p>
+		Figura di straordinaria originalità nel panorama letterario del Novecento, Alice Ceresa si
+		distingue per il suo plurilinguismo e per un’attività culturale che si dispiega in un orizzonte
+		transnazionale. Anticipatrice di temi centrali nel dibattito queer e gender, conduce una ricerca
+		formale instancabilmente sperimentale che la colloca tra le voci più innovative della sua
+		generazione. Il suo archivio custodisce numerosi testi inediti, mentre il corpus degli scritti
+		editi rimane ancora oggi in larga parte difficilmente accessibile al pubblico contemporaneo.
+	</p>
+	<p>
+		L’edizione digitale, realizzata in stretta collaborazione con il Data Science Lab (DSL)
+		dell’Università di Berna e l’Archivio svizzero di letteratura (ASL), renderà disponibile non
+		solo una ricca selezione di scritti inediti e dispersi, ma anche una nuova versione dei testi
+		postumi, includendo inoltre letture radiofoniche dell’epoca.
+	</p>
+	<p>
+		Il lavoro editoriale si accompagnerà a quattro progetti di ricerca dedicati ad aspetti ancora
+		poco esplorati della produzione ceresiana, ma di particolare rilievo per gli studi
+		contemporanei. I progetti indagheranno, da un lato, il plurilinguismo e la dimensione
+		transnazionale dell’autrice; dall’altro, la relazione che si istituisce nella sua scrittura tra
+		la decostruzione dei generi letterari e quella dei ruoli di genere.
+	</p>
+</div>
+
 <div class="mx-auto mt-13 w-full max-w-300">
 	<h2 class="h2">Documenti appartenenti al prototipo</h2>
 
