@@ -25,7 +25,7 @@
 			<Accordion.Content
 				class="overflow-hidden transition-all duration-300 ease-in-out data-[state=closed]:max-h-0 data-[state=open]:h-[80vh] data-[state=open]:max-h-[40vh]"
 			>
-				<div class="h-full overflow-hidden bg-dark-96 p-4">
+				<div class="h-full overflow-hidden bg-background p-4">
 					{@render metadataContent()}
 				</div>
 			</Accordion.Content>

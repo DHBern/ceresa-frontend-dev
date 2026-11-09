@@ -58,7 +58,7 @@
 
 {#snippet metadataButton(state: string, text: string)}
 	<button
-		class={['preset-btn-meta --xl', stateMetadata === state && '--active']}
+		class={['preset-btn-round --ghost --xl', stateMetadata === state && '--active']}
 		onclick={() => {
 			if (stateMetadata !== state) {
 				stateMetadata = state;
@@ -208,7 +208,7 @@
 		<ResponsiveAccordion titleMeta="Metadaten">
 			{#snippet metadataContent()}
 				<div class="h-full" data-dom="metadata">
-					<div class="preset-btn-list">
+					<div class="preset-btn-list --spacing-sm">
 						{@render metadataButton('eckdaten', 'Eckdaten')}
 						{@render metadataButton('sources', 'Quellenangaben')}
 						{@render metadataButton('crossRefEntities', 'Referenzierung')}
