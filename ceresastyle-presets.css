@@ -37,7 +37,7 @@
 		@apply flex w-max cursor-pointer items-center justify-center whitespace-nowrap text-background-contrast select-none hover:text-rs-doc;
 	}
 	.preset-btn-meta {
-		@apply flex w-max cursor-pointer items-center justify-center border-b-3 border-b-foreground px-4 py-1 whitespace-nowrap text-background-contrast select-none hover:bg-dark-04;
+		@apply flex w-max cursor-pointer items-center justify-center border-b-3 border-b-foreground px-4 py-1 whitespace-nowrap text-background-contrast select-none hover:bg-background-hover;
 		&.--active {
 			@apply border-b-accent;
 		}

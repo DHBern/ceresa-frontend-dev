@@ -126,11 +126,17 @@
 {/snippet}
 
 {#if resDoc?.item}
-	<div class="w-full grid-cols-[1fr_2fr] px-10 xl:grid">
+	<div class="w-full grid-cols-[1fr_2fr] px-10">
 		<div class="w-full">
 			<!-- Title -->
 			<h2 class="font-serif text-2xl font-bold text-blue-500">
-				<a href={resolve('/posthumous')}>Posthumous</a>:
+				{#if resDoc.docType === 'posthum'}
+					<a href={resolve('/posthumous')}>Posthumous</a>:
+				{:else if resDoc.docType === 'published'}
+					<a href={resolve('/published')}>Published</a>:
+				{:else if resDoc.docType === 'unpublished'}
+					<a href={resolve('/unpublished')}>Unpublished</a>:
+				{/if}
 				{#if dictDocIds.includes(resDoc.item.slug)}
 					<a href={resolve('/posthumous#piccolo_dizionario')}>Piccolo Dizionario</a>
 				{/if}
@@ -179,7 +185,7 @@
 			<div data-dom="global_comment" class="h-full overflow-auto pr-6 pb-20">
 				<!-- <h3 class="font-serif text-2xl font-bold">Comment</h3> -->
 				<!-- {@html globalComment} -->
-				<h3 class="font-serif text-2xl font-bold">Versions of this Document:</h3>
+				<!-- <h3 class="font-serif text-2xl font-bold">Versions of this Document:</h3> -->
 				<ul class="">
 					{#if crossRef.versions}
 						{#each Object.keys(crossRef.versions) as type (type)}
