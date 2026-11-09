@@ -161,7 +161,7 @@
 					<div style={`height: ${i === 0 ? '5' : thumb.top - thumbs[i - 1].top}px`}></div>
 
 					<button
-						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[50px] 2xl:max-w-[70px]"
+						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[80px] 2xl:max-w-[90px]"
 						onclick={() => {
 							params.mode = 'DF';
 							params.page = thumb.page;
@@ -170,7 +170,7 @@
 						<div class="w-full flex-col items-center justify-center">
 							<IIIF_Thumb
 								url={thumb.facs}
-								classesContainer="rounded-xs border border-muted-foreground shadow-2xl"
+								classesContainer="rounded-xs border border-muted-foreground"
 								classes="w-full"
 								imgClasses="w-full"
 							/>

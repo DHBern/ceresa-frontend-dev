@@ -18,6 +18,7 @@
 	import { fade } from 'svelte/transition';
 	import TextFluid from './TextFluid.svelte';
 	import DrawerRegNotes from './DrawerRegNotes.svelte';
+	import { isBreakpointBelow } from '$lib/functions/ease_of_use/breakpoints.svelte';
 
 	let {
 		docItem,
@@ -48,8 +49,8 @@
 
 	let prioToFac = $state(true);
 
-	let widthFacsimileLg = '600px';
-	let facsimileWidth = $derived(widthFacsimileLg);
+	let widthFacsimileLg = '1000px';
+	let facsimileWidth = '50vw';
 
 	$effect(() => {
 		if (params.mode === 'LF') {
@@ -85,8 +86,7 @@
 
 	let urls = $derived(docItem?.manuscript?.iiif_urls ?? []);
 	let url = $derived(urls[params.page - 1]);
-	const TRANSITION_LENGTH = 400;
-	// const DELAY = TRANSITION_LENGTH;
+	const TRANSITION_LENGTH = 100;
 	const DELAY = 200;
 	const isGallerySticky = false; //! temp
 </script>
@@ -155,25 +155,27 @@
 			in:fade={{ delay: DELAY }}
 			class={['layout grid pt-10']}
 			class:isAll={nColsVisible >= nColsFit}
+			//! Could be deleted
+			class:isSmall={isBreakpointBelow('lg')}
 			class:isFluid
 			class:facsimile_view={!showMain && !showSecond}
 			style:--facsimile-width={!showFac ? '0px' : isFacsimileView ? '100%' : facsimileWidth}
 			style:--facsimile-width-lg={widthFacsimileLg}
 			style:--df-visible={showMain ? '1' : '0'}
 			style:--lf-visible={showSecond ? '1' : '0'}
-			style:--duration={isFacsimileView ? '1000ms' : `${TRANSITION_LENGTH}ms`}
+			style:--duration={`${TRANSITION_LENGTH}ms`}
 		>
 			<!-- IIIF-Viewer -->
 			<aside
-				class="sticky block h-[70vh] w-full shrink flex-col gap-4 overflow-hidden rounded-xl px-5 transition-colors duration-300 hover:bg-muted-foreground/30"
-				style="top: 20vh"
+				class="sticky block h-[96vh] w-full shrink flex-col gap-4 overflow-hidden rounded-xl px-5 transition-colors duration-300 hover:bg-muted-foreground/30"
+				style="top: 2vh"
 			>
 				{#if showFac && urls.length}
 					<IIIF_Viewer {url} />
 				{/if}
 			</aside>
 
-			<!-- Texts-Snippet -->
+			<!-- Snippet: Text for Main and Secondary -->
 			{#snippet Text(
 				textData: ProcessedTEI,
 				showText: boolean,
@@ -197,7 +199,7 @@
 			{/snippet}
 
 			<!-- Main Text -->
-			<div class="mx-10">
+			<div class={['mx-10', isBreakpointBelow('lg') && 'h-[50vh]']}>
 				<div class={[mode_main && mode_main]}>
 					{@render Text(ceteiData, showMain, true, isFluid)}
 				</div>
@@ -212,7 +214,8 @@
 					showSecond && 'border-l-2 pl-12',
 					'sticky',
 					isFluid && isGallerySticky ? 'top-10' : 'top-5',
-					isGallerySticky ? 'h-[80vh]' : 'h-screen'
+					isGallerySticky ? 'h-[80vh]' : 'h-screen',
+					isBreakpointBelow('lg') && 'h-[50vh]'
 				]}
 			>
 				<div class={[mode_secondary && mode_secondary]}>
@@ -233,24 +236,20 @@
 	}
 	.layout {
 		/*
-		 * The first and last tracks have fixed widths.
+		 * The first track has fixed width.
 		 * The middle two tracks divide whatever space remains.
 		 */
 
-		/* transition: all 600ms ease; */
 		transition: all var(--duration) ease;
 		grid-template-columns:
 			var(--facsimile-width)
 			minmax(0, calc((100% - var(--facsimile-width)) * var(--df-visible)))
 			minmax(0, calc((100% - var(--facsimile-width)) * var(--lf-visible)));
-
-		&.isAll {
-			display: absolute;
+		&.isSmall {
 			grid-template-columns:
-				var(--facsimile-width-lg)
-				minmax(0, calc((100% - var(--facsimile-width)) * var(--df-visible)))
-				minmax(0, calc((100% - var(--facsimile-width)) * var(--lf-visible)));
-			/* background-color: aquamarine; */
+				var(--facsimile-width)
+				minmax(0, calc((100% - var(--facsimile-width))));
+			grid-template-rows: 1fr 1fr;
 		}
 		/* &:not(.isFluid) {
 			grid-template-rows: 200px 1fr;

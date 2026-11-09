@@ -2089,20 +2089,11 @@
 					"filename": "A-1-b_1-2"
 				},
 				"manuscript": {
-					"comment_lab": "spreadsheet only contians A-1-b_1-2_001.tif, A-1-b_1-2_002.tif, A-1-b_1-2_003.tif, A-1-b_1-2_004.tif",
 					"iiif_urls": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-1.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-2.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_004.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_005.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_006.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_007.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_008.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_009.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_010.tif"
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_001.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_002.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_003.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_004.tif"
 					]
 				}
 			},
@@ -2520,7 +2511,7 @@
 					"filename": "A-1-a_1-4"
 				},
 				"manuscript": {
-					"iiif_urls": [
+					"iiif_urls_only_filename": [
 						"A-1-a_1-4_001.tif",
 						"A-1-a_1-4_002.tif",
 						"A-1-a_1-4_003.tif",
@@ -2531,11 +2522,11 @@
 						"A-1-a_1-4_008.tif",
 						"A-1-a_1-4_009.tif"
 					],
-					"iiif_urls_old": [
+					"iiif_urls": [
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-1.,tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-2.,tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-1.tif",
+						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-2.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_004.tif",
 						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_005.tif",
