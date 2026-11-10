@@ -19,7 +19,7 @@
 	</div>
 
 	<div
-		class="mx-auto mt-10 flex w-max max-w-170 items-center rounded-xl bg-purple-100 px-10 py-8 text-center text-3xl font-bold uppercase"
+		class="mx-auto mt-10 flex w-max max-w-170 items-center rounded-xl border-5 border-purple-200 px-10 py-8 text-center text-3xl font-bold uppercase"
 	>
 		<i class="fa-solid fa-arrow-down mx-2"></i>
 		<span> Di seguito trovi i link ai documenti importanti relativi al prototipo </span>
