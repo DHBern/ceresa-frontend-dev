@@ -116,7 +116,7 @@
 	<div class="relative flex h-full w-full flex-col items-center gap-6">
 		<Tabs.Root class="sticky top-10 z-900 max-w-260 xl:static" bind:value={params.mode}>
 			<Tabs.List
-				class="preset-tabs-list --lg grid"
+				class="preset-tabs-list --lg grid text-sm"
 				style={`grid-template-columns: repeat(${tabItems.length}, minmax(0, 1fr))`}
 			>
 				{#each tabItems as tab, i (tab.value)}

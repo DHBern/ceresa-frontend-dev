@@ -58,7 +58,7 @@
 
 {#snippet metadataButton(state: string, text: string)}
 	<button
-		class={['preset-btn-round --ghost --xl', stateMetadata === state && '--active']}
+		class={['preset-btn-round --ghost font-bold', stateMetadata === state && '--active']}
 		onclick={() => {
 			if (stateMetadata !== state) {
 				stateMetadata = state;
@@ -218,7 +218,7 @@
 						<!-- {@render metadataButton('all', 'Tutto (temporaneo)')} -->
 					</div>
 
-					<div class={['@container mt-5 h-full w-full overflow-auto pt-5 pb-50']}>
+					<div class={['@container mt-5 h-full w-full overflow-auto pt-5 pb-20']}>
 						{#if stateMetadata === 'eckdaten'}
 							<table>
 								<tbody class="flex flex-col items-start gap-2">

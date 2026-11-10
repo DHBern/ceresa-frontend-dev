@@ -120,11 +120,11 @@
 										handleJumpToSibling(selectedTextNode.key, 'prev');
 									}}><i class="fa-arrow-left-long fa-regular align-center"></i></button
 								>
-								<p>
+								<span>
 									Occorrenza {(selectedTextNode.els as HTMLElement[])?.findIndex((el) => {
 										return el === selectedTextNode.el;
 									}) + 1} of {selectedTextNode.els?.length}
-								</p>
+								</span>
 								<button
 									class={[
 										'flex h-9 w-9 items-center justify-center rounded-button hover:bg-background-hover',
@@ -139,6 +139,16 @@
 									}}><i class="fa-arrow-right-long fa-regular align-center"></i></button
 								>
 							</div>
+							<button
+								class={['preset-btn-round --ghost']}
+								disabled={(selectedTextNode.els?.length || 0) <= 1}
+								aria-label="select next match"
+								onclick={(ev) => {
+									selectedTextNode.els?.forEach((el) => {
+										el.classList.add('active');
+									});
+								}}><i class="fa-solid fa-highlighter mr-2"></i>Highlight all</button
+							>
 						</div>
 					{/if}
 				</div>
