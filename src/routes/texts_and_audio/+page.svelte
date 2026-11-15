@@ -14,6 +14,18 @@
 		</p>
 	</div>
 
+	<div class="border-red rounded-xl border-2 p-5">
+		<h3 class="h3">NEW ACCESS</h3>
+		<ul>
+			<li>Racconti</li>
+			<li>Romanzi e altre prose</li>
+			<li>Dizionario</li>
+			<li>Saggi e interventi</li>
+			<li>Poesie</li>
+			<li>Testi teatrali</li>
+			<li>Traduzioni</li>
+		</ul>
+	</div>
 	<div class={['grid grid-cols-3 gap-10 py-5']}>
 		<!-- Posthumous -->
 		<div class="flex flex-col gap-7">

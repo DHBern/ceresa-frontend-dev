@@ -26,6 +26,20 @@ type TContentNotes = {
 	title?: string;
 	comment?: string;
 };
+
+type TLanguageKeys = 'it' | 'de' | 'fr';
+type TTypeEditoraleDocumento =
+	'in periodico' | 'in volume' | 'in giornale' | 'manoscritto' | 'dattiloscritto';
+type TTypeTestuale =
+	| 'Saggio o intervento'
+	| 'Altra prosa'
+	| 'Racconto'
+	| 'Traduzione'
+	| 'Dizionario'
+	| 'Poesia'
+	| 'Romanzo'
+	| 'Testo teatrale';
+
 type TCrossRefDocs = {
 	posthum?: TPosthumKeys[];
 	unpublished?: TUnpublishedKeys[];
@@ -67,6 +81,7 @@ export type TDocuments = {
 				type: TPosthumGroups | '?' | '';
 				metadata: {
 					title: string | null;
+					language: TLanguageKeys;
 					authors?: string[];
 					pubDate: string;
 					title_full: string;
@@ -77,6 +92,8 @@ export type TDocuments = {
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
+					type_editotraleDocumento: TTypeEditoraleDocumento;
+					type_testuale: TTypeTestuale;
 					note: string;
 				};
 				crossReferences?: {
@@ -118,6 +135,7 @@ export type TDocuments = {
 				type: TUnpublishedGroups | '?' | '';
 				metadata: {
 					title: string | null;
+					language: TLanguageKeys;
 					authors?: string[];
 					pubDate: string;
 					title_full: string;
@@ -128,6 +146,8 @@ export type TDocuments = {
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
+					type_editotraleDocumento: TTypeEditoraleDocumento;
+					type_testuale: TTypeTestuale;
 					note: string;
 				};
 				translation?: {
@@ -168,6 +188,7 @@ export type TDocuments = {
 				type: TPublishedGroups | '?' | '';
 				metadata: {
 					title: string | null;
+					language: TLanguageKeys;
 					authors?: string[];
 					pubDate: string;
 					title_full: string;
@@ -178,6 +199,8 @@ export type TDocuments = {
 					archive: string;
 					archiveCollation: string;
 					pubSecondary: string;
+					type_editotraleDocumento: TTypeEditoraleDocumento;
+					type_testuale: TTypeTestuale;
 					note: string;
 				};
 				translation?: {
@@ -218,6 +241,7 @@ export type TDocuments = {
 				type: TPublishedGroups | '?' | '';
 				metadata: {
 					title: string | null;
+					language: TLanguageKeys;
 					title_full: string;
 					title_short?: string;
 					authors?: string[];
@@ -226,6 +250,8 @@ export type TDocuments = {
 					pubDetails?: string;
 					archive: string;
 					archiveCollation: string;
+					type_editotraleDocumento: TTypeEditoraleDocumento;
+					type_testuale: TTypeTestuale;
 					note: string;
 				};
 				crossReferences?: {
@@ -282,6 +308,7 @@ export type TDocDict = {
 		posthum: DictEntity<TDocMetadataKeysPosthum, TPosthumGroups>;
 		unpublished: DictEntity<TDocMetadataKeysUnpublished, TUnpublishedGroups>;
 		published: DictEntity<TDocMetadataKeysPublished, TPublishedGroups>;
+		audio: DictEntity<TDocMetadataKeysAudio, TAudioGroups>;
 	};
 };
 
