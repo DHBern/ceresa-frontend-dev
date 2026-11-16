@@ -22,7 +22,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -54,7 +54,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -74,8 +74,8 @@
 				"slug": "posthum_0003",
 				"name": "Anima [1]",
 				"date": {
-					"from": "",
-					"to": ""
+					"from": "1999-02-05",
+					"to": "1999-02-05"
 				},
 				"metadata": {
 					"part_of_dict": true,
@@ -85,7 +85,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -112,7 +112,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {
 					"linkedDocuments": {
@@ -143,7 +143,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -170,7 +170,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -186,8 +186,8 @@
 				"slug": "posthum_0007",
 				"name": "Animus",
 				"date": {
-					"from": "",
-					"to": ""
+					"from": "1900-01-01",
+					"to": "1900-01-02"
 				},
 				"metadata": {
 					"part_of_dict": true,
@@ -197,7 +197,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -223,7 +223,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -249,7 +249,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -275,7 +275,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -301,7 +301,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -327,7 +327,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -353,7 +353,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -379,7 +379,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -405,7 +405,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -431,7 +431,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -457,7 +457,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -483,7 +483,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -509,7 +509,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -535,7 +535,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -561,7 +561,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -587,7 +587,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -613,7 +613,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -639,7 +639,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -665,7 +665,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -691,7 +691,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -717,7 +717,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -743,7 +743,7 @@
 					"pubPlace": "",
 					"language": "",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -769,7 +769,7 @@
 					"pubPlace": "",
 					"language": "",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -795,7 +795,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -821,7 +821,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -847,7 +847,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -873,7 +873,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -899,7 +899,7 @@
 					"pubPlace": "",
 					"language": "",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -925,7 +925,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -951,7 +951,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -977,7 +977,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1003,7 +1003,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1029,7 +1029,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1055,7 +1055,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1081,7 +1081,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1107,7 +1107,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1133,7 +1133,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1159,7 +1159,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1185,7 +1185,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1211,7 +1211,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1237,7 +1237,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1263,7 +1263,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1289,7 +1289,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1315,7 +1315,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1342,7 +1342,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1369,7 +1369,7 @@
 					"pubPlace": "",
 					"language": "",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1396,7 +1396,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1422,7 +1422,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1448,7 +1448,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1474,7 +1474,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1500,7 +1500,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1526,7 +1526,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1552,7 +1552,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1578,7 +1578,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1604,7 +1604,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1630,7 +1630,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1656,7 +1656,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1682,7 +1682,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1708,7 +1708,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1734,7 +1734,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1760,7 +1760,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1786,7 +1786,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1812,7 +1812,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1838,7 +1838,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editoriale": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1864,7 +1864,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {
 					"citedEntities": {
@@ -1898,7 +1898,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -1980,7 +1980,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2004,7 +2004,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2034,7 +2034,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2058,7 +2058,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2082,7 +2082,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2110,7 +2110,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2134,7 +2134,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2158,7 +2158,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2182,7 +2182,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2206,7 +2206,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2230,7 +2230,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2264,7 +2264,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2288,7 +2288,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2312,7 +2312,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2407,7 +2407,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {
 					"citedEntities": {
@@ -2454,7 +2454,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2478,7 +2478,7 @@
 					"pubPlace": "",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2504,7 +2504,7 @@
 					"pubPlace": "Svizzera italiana. Rivista mensile di cultura",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2551,7 +2551,7 @@
 					"pubPlace": "Svizzera italiana. Rivista mensile di cultura",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2583,7 +2583,7 @@
 					"pubPlace": "Roma o cara. Opere e testi",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2606,7 +2606,7 @@
 					"pubPlace": "Bollettino della Ghilda del libro",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2629,7 +2629,7 @@
 					"pubPlace": "Die Weltwoche",
 					"language": "de",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2652,7 +2652,7 @@
 					"pubPlace": "Die Weltwoche",
 					"language": "de",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2675,7 +2675,7 @@
 					"pubPlace": "Die Weltwoche",
 					"language": "de",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2698,7 +2698,7 @@
 					"pubPlace": "Die Weltwoche",
 					"language": "de",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2721,7 +2721,7 @@
 					"pubPlace": "Die Weltwoche",
 					"language": "de",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2744,7 +2744,7 @@
 					"pubPlace": "Die Weltwoche",
 					"language": "de",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2767,7 +2767,7 @@
 					"pubPlace": "Die Weltwoche",
 					"language": "de",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {
 					"citedEntities": {
@@ -2800,7 +2800,7 @@
 					"pubPlace": "Die Weltwoche",
 					"language": "de",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2823,7 +2823,7 @@
 					"pubPlace": "Basler Nachrichten",
 					"language": "de",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2846,7 +2846,7 @@
 					"pubPlace": "Les lettres nouvelles",
 					"language": "fr",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2875,7 +2875,7 @@
 					"pubPlace": "Uomini e libri",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2898,7 +2898,7 @@
 					"pubPlace": "Il Mondo",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2921,7 +2921,7 @@
 					"pubPlace": "Il Mondo",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2944,7 +2944,7 @@
 					"pubPlace": "Tuttestorie. Racconti letture trame di donne",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2967,7 +2967,7 @@
 					"pubPlace": "Tuttestorie. Racconti letture trame di donne",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -2990,7 +2990,7 @@
 					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3021,7 +3021,7 @@
 					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3051,7 +3051,7 @@
 					"pubPlace": "Botteghe Oscure",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3074,7 +3074,7 @@
 					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3097,7 +3097,7 @@
 					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3120,7 +3120,7 @@
 					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3143,7 +3143,7 @@
 					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3166,7 +3166,7 @@
 					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3189,7 +3189,7 @@
 					"pubPlace": "Realtà e problemi dell'educazione degli adulti. Quaderni bimestrali dell'UNLA",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3212,7 +3212,7 @@
 					"pubPlace": "XIII Kammersprechchor di Zurigo",
 					"language": "it",
 					"type_editotraleDocumento": "",
-					"type_testuale": ""
+					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {},
 				"tei": {
@@ -3239,7 +3239,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3275,7 +3275,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3311,7 +3311,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3347,7 +3347,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3383,7 +3383,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3419,7 +3419,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3455,7 +3455,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3493,7 +3493,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3529,7 +3529,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3565,7 +3565,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3600,7 +3600,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {
@@ -3635,7 +3635,7 @@
 					"archive": "",
 					"archiveCollation": "",
 					"type_editotraleDocumento": "",
-					"type_testuale": "",
+					"type_testuale": "Romanzo",
 					"note": ""
 				},
 				"crossReferences": {

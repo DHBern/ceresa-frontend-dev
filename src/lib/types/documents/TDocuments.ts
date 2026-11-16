@@ -19,6 +19,7 @@ import { type TOrgsKeys } from '../register/TOrgsKeys';
 import { type TBiblsKeys } from '../register/TBiblsKeys';
 import { type TKeywordsKeys } from '../register/TKeywordsKeys';
 import type { TRegKeysFlat, TRegTypes } from '../register/TRegister';
+import type { TSeqKeys } from '../TSequences';
 
 // --- Document -------------------------------------------------------
 type TContentNotes = {
@@ -28,9 +29,9 @@ type TContentNotes = {
 };
 
 type TLanguageKeys = 'it' | 'de' | 'fr';
-type TTypeEditoraleDocumento =
+type TDocEdtypeKeys =
 	'in periodico' | 'in volume' | 'in giornale' | 'manoscritto' | 'dattiloscritto';
-type TTypeTestuale =
+type TDocGenreKeys =
 	| 'Saggio o intervento'
 	| 'Altra prosa'
 	| 'Racconto'
@@ -65,6 +66,62 @@ export type TAudioChapters = {
 	chapName: string;
 	time: number;
 };
+
+type TTextDocuments = {
+	slug: string; //! NEW (@LLM: this is a redudant copy of the current TPosthumKeys, TPublishedKeys, TUnpublishedKeys)
+	metadata: {
+		type_genre: TDocGenreKeys;
+		type_editorial: TDocEdtypeKeys;
+		title_editorial: string;
+		date: { from: string; to: string }; //! new (@LLM: copy facsimile.date_author_normalised to "from" and "to")
+		language: TLanguageKeys;
+		keywords: TKeywordsKeys[];
+		observations: string;
+	};
+	archival: {
+		archive: string;
+		signature: string;
+		digitalisation_number: number;
+		url_helvetic_archives: string;
+		url_online_sources: string[];
+	};
+	document: {
+		type_material: string;
+		title_on_document: string;
+		date_and_place_author_as_on_document?: string;
+		date_author_normalised?: string;
+	};
+	iiif: {
+		urls_IIIF_images?: string[]; //! NEW (@LLM: extract this from "manuscript.iiif_urls" in documents_old.json)
+		url_IIIF_manifest: string;
+	};
+	tei: {
+		id: TPosthumKeys;
+		suffix_version?: string;
+		filename: TPosthumKeys; //! NEW (@LLM: this is identical to tei.id)
+	};
+	crossReferences: {
+		group_ids: TSeqKeys[];
+		citedDocuments?: TCrossRefDocs;
+		linkedDocuments?: TCrossRefDocs;
+		citedEntities?: TCrossRefEntities;
+		linkedEntities?: TCrossRefEntities;
+		versions?: TCrossRefDocs;
+	};
+	publication: {
+		pub_type: TDocTypes;
+		pub_date?: string;
+		pub_place?: string;
+		pub_info?: string;
+		other_editions?: string[];
+		other_translations: string[];
+	};
+	transcribus: {
+		tif_files_to_edit: string[];
+		filename_first_facsimile: string;
+		filename_last_facsimile: string;
+	};
+};
 export type TDocuments = {
 	meta: {
 		generated_by: string;
@@ -74,204 +131,25 @@ export type TDocuments = {
 	};
 	documents: {
 		posthum: {
-			[key in TPosthumKeys]: {
-				slug?: string; //! discuss whether this is identical to key
-				name: string;
-				date: { from: string | null; to: string | null };
-				type: TPosthumGroups | '?' | '';
-				metadata: {
-					title: string | null;
-					language: TLanguageKeys;
-					authors?: string[];
-					pubDate: string;
-					title_full: string;
-					title_short?: string;
-					pubPlace?: string;
-					pubDetails?: string;
-					textstufen: string[];
-					archive: string;
-					archiveCollation: string;
-					pubSecondary: string;
-					type_editotraleDocumento: TTypeEditoraleDocumento;
-					type_testuale: TTypeTestuale;
-					note: string;
-				};
-				crossReferences?: {
-					citedDocuments?: TCrossRefDocs;
-					linkedDocuments?: TCrossRefDocs;
-					citedEntities?: TCrossRefEntities;
-					linkedEntities?: TCrossRefEntities;
-					'dict-1'?: TCrossRefDocs;
-					'dict-2'?: TCrossRefDocs;
-					versions?: TCrossRefDocs;
-				};
-				editorialNotes: {
-					contentNotes?: TContentNotes[];
-				};
-				translation?: {
-					filename: string;
-				};
-				tei: {
-					id?: string;
-					path: string;
-					filename: string;
-					version_suffix: string;
-				};
-				manuscript: {
-					rendition?: TRendition | null;
-					iiif_urls: string[];
-				};
-				numPages: number | null;
-				edition: {
-					fullyEdited: boolean;
-				};
-			};
+			[key in TPosthumKeys]: TTextDocuments;
 		};
 		unpublished: {
-			[key in TUnpublishedKeys]: {
-				slug?: string; //! discuss whether this is identical to key
-				name: string;
-				date: { from: string | null; to: string | null };
-				type: TUnpublishedGroups | '?' | '';
-				metadata: {
-					title: string | null;
-					language: TLanguageKeys;
-					authors?: string[];
-					pubDate: string;
-					title_full: string;
-					title_short?: string;
-					pubPlace?: string;
-					pubDetails?: string;
-					textstufen: string[];
-					archive: string;
-					archiveCollation: string;
-					pubSecondary: string;
-					type_editotraleDocumento: TTypeEditoraleDocumento;
-					type_testuale: TTypeTestuale;
-					note: string;
-				};
-				translation?: {
-					filename: string;
-				};
-				crossReferences?: {
-					citedDocuments?: TCrossRefDocs;
-					linkedDocuments?: TCrossRefDocs;
-					citedEntities?: TCrossRefEntities;
-					linkedEntities?: TCrossRefEntities;
-					'dict-1'?: TCrossRefDocs;
-					'dict-2'?: TCrossRefDocs;
-					versions?: TCrossRefDocs;
-				};
-				editorialNotes: {
-					contentNotes?: TContentNotes[];
-				};
-				tei: {
-					path: string;
-					filename: string;
-					version_suffix: string;
-				};
-				manuscript: {
-					rendition?: TRendition | null;
-					iiif_urls: string[];
-				};
-				numPages: number | null;
-				edition: {
-					fullyEdited: boolean;
-				};
-			};
+			[key in TUnpublishedKeys]: TTextDocuments;
 		};
 		published: {
-			[key in TPublishedKeys]: {
-				slug?: string; //! discuss whether this is identical to key
-				name: string;
-				date: { from: string | null; to: string | null };
-				type: TPublishedGroups | '?' | '';
-				metadata: {
-					title: string | null;
-					language: TLanguageKeys;
-					authors?: string[];
-					pubDate: string;
-					title_full: string;
-					title_short?: string;
-					pubPlace?: string;
-					pubDetails?: string;
-					textstufen: string[];
-					archive: string;
-					archiveCollation: string;
-					pubSecondary: string;
-					type_editotraleDocumento: TTypeEditoraleDocumento;
-					type_testuale: TTypeTestuale;
-					note: string;
-				};
-				translation?: {
-					filename: string;
-				};
-				crossReferences?: {
-					citedDocuments?: TCrossRefDocs;
-					linkedDocuments?: TCrossRefDocs;
-					citedEntities?: TCrossRefEntities;
-					linkedEntities?: TCrossRefEntities;
-					'dict-1'?: TCrossRefDocs;
-					'dict-2'?: TCrossRefDocs;
-					versions?: TCrossRefDocs;
-				};
-				editorialNotes: {
-					contentNotes?: TContentNotes[];
-				};
-				tei: {
-					path: string;
-					filename: string;
-					version_suffix: string;
-				};
-				manuscript: {
-					rendition?: TRendition | null;
-					iiif_urls: string[];
-				};
-				numPages: number | null;
-				edition: {
-					fullyEdited: boolean;
-				};
-			};
+			[key in TPublishedKeys]: TTextDocuments;
 		};
 		audio: {
 			[key in TAudioKeys]: {
-				slug?: string; //! Currently in use as `currentFilesAudio.value?.slug && currentFilesAudio.value?.slug !== currentlyPlayingAudio.value?.slug`
-				name: string;
-				date: { from: string | null; to: string | null };
-				type: TPublishedGroups | '?' | '';
-				metadata: {
-					title: string | null;
-					language: TLanguageKeys;
-					title_full: string;
-					title_short?: string;
-					authors?: string[];
-					pubDate: string;
-					pubPlace?: string;
-					pubDetails?: string;
-					archive: string;
-					archiveCollation: string;
-					type_editotraleDocumento: TTypeEditoraleDocumento;
-					type_testuale: TTypeTestuale;
-					note: string;
-				};
-				crossReferences?: {
-					citedDocuments?: TCrossRefDocs;
-					linkedDocuments?: TCrossRefDocs;
-					citedEntities?: TCrossRefEntities;
-					linkedEntities?: TCrossRefEntities;
-					'dict-1'?: TCrossRefDocs;
-					'dict-2'?: TCrossRefDocs;
-					versions?: TCrossRefDocs;
-				};
+				slug: TTextDocuments['slug'];
+				metadata: TTextDocuments['metadata'];
+				archival: TTextDocuments['archival'];
+				document: TTextDocuments['document'];
+				publication: TTextDocuments['publication'];
 				audioMaterial: {
 					path: string;
 					filename: string;
-					metadata: {
-						chapters?: TAudioChapters[];
-					};
-				};
-				editorialNotes: {
-					contentNotes?: TContentNotes[];
+					chapters?: TAudioChapters[];
 				};
 			};
 		};
@@ -314,7 +192,8 @@ export type TDocDict = {
 
 // --- Sets -------------------------------------------------------
 export type TDocTypes = keyof TDocuments['documents'];
-export type TDocKeys = TPosthumKeys | TUnpublishedKeys | TPublishedKeys | TAudioKeys;
+export type TTextDocKeys = TPosthumKeys | TUnpublishedKeys | TPublishedKeys;
+export type TDocKeys = TTextDocKeys | TAudioKeys;
 export type TDocKeysMap = {
 	posthum: TPosthumKeys;
 	unpublished: TUnpublishedKeys;
