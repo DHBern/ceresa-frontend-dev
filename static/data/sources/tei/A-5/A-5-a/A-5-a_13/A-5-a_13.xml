@@ -65,10 +65,8 @@
                <lb xml:id="p001_r_4_tl_6" break="no"/>undzwanzig Jahren drei
                   aufsehenerregen<pc>-</pc>
                <lb xml:id="p001_r_4_tl_7" break="no"/>de Romane: <pc>"</pc><rs type="work"
-                  key="bibl_0004" xml:id="r3">The Heart is a <choice>
-                     <orig>l</orig>
-                     <reg>L</reg>
-                  </choice>onely Hun<pc>-</pc>
+                  key="bibl_0004" xml:id="r3">The Heart is a 
+                  <choice><orig>l</orig><reg>L</reg></choice>onely Hun<pc>-</pc>
                   <lb xml:id="p001_r_4_tl_8" break="no"/>ter</rs><pc>"</pc>, <pc>"</pc><rs
                   type="work" key="bibl_0005" xml:id="r4">Reflections in a <choice>
                      <orig>g</orig>

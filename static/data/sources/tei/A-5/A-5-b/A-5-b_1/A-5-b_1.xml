@@ -229,7 +229,7 @@
                   <del hand="#hw">l'<?oxy_comment_end?></del>inscription</add>: "La troisième
                édition d'un roman que la critique a défini <lb xml:id="p002_r_tl_38"/>un tournant
                dans la littérature narrative italienne."</p>
-            <p><lb xml:id="p002_r_tl_41"/>On pourrait <del hand="#hw">contester</del>
+         <lb xml:id="p002_r_tl_41"/>On pourrait <del hand="#hw">contester</del>
                <add place="above" hand="#hw">discuter</add> cette <del hand="#hw">écrite</del>
                <add place="above" hand="#hw">formule</add>, et <anchor xml:id="a5"/>contester<note
                   type="annotation" xml:id="n5" targetEnd="a5">L'autrice cassa il testo e,
@@ -240,13 +240,12 @@
                <add place="above" hand="#hw">la qualité</add> de "roman". Mais une chose est
                certaine: <del hand="#hw">que</del>
                <del>s</del><add place="over" hand="#hw">S</add>i le roman<add place="inline"
-                  hand="#hw">,</add></p>
+                  hand="#hw">,</add>
             <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_003.tif" n="3"/>
             <ab>
                <fw type="pageNum" place="topright">3.</fw>
             </ab>
-            <p>
-               <lb xml:id="p003_r_tl_1"/>en Italie, n'existait plus depuis longtemps, si la "prosa
+             <lb xml:id="p003_r_tl_1"/>en Italie, n'existait plus depuis longtemps, si la "prosa
                d'arte" <lb xml:id="p003_r_tl_3"/>était l'unique forme d'expression des écrivains –
                   <del hand="#hw">devenus,</del>
                <add place="above" hand="#hw">de</add>
@@ -287,7 +286,7 @@
                   >I</add>talie</rs> n'a <lb xml:id="p003_r_tl_23"/>plus eu d<del>es</del><add
                   place="over" hand="#hw">'</add><del> </del>écrivains-romanciers, mais
                   t<del>p</del><add place="over">o</add>ut simplement des écrivains<pc>-</pc>
-               <lb xml:id="p003_r_tl_24" break="no"/>poètes. </p>
+               <lb xml:id="p003_r_tl_24" break="no"/>poètes.
             <p><lb xml:id="p003_r_tl_25"/>Cette espèce de "pros<del>e</del><add place="over">a</add>
                narrativa", que nous appellerons la prose de <lb xml:id="p003_r_tl_26"/><rs
                   type="person" key="person_0020" xml:id="r29">Vittorini</rs>, pour la distinguer de
