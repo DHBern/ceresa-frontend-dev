@@ -17,8 +17,8 @@
 	import { useSearchParams } from 'runed/kit';
 	import { getSchemaForRegType } from './schemas.js';
 
-	import DropdownRegFilters from './DropdownRegFilters.svelte';
-	import DropdownRegSorting from './DropdownRegSorting.svelte';
+	import DropdownRegFilters from '$lib/components/ui/DropdownRegFilters.svelte';
+	import DropdownRegSorting from '$lib/components/ui/DropdownRegSorting.svelte';
 	import type { TPartialRegEntry } from './[regSlug=regItem]/+page.server.js';
 	import { isBreakpointBelow } from '$lib/functions/ease_of_use/breakpoints.svelte.js';
 

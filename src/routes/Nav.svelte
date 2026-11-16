@@ -17,7 +17,7 @@
 		main1: {
 			nameShort: 'Documenti',
 			nameLong: 'Documenti',
-			path: resolve('/texts_and_audio')
+			path: resolve('/documenti')
 		},
 		main3: { nameShort: 'Registri', nameLong: 'Registri', path: resolve('/register') },
 		main4: {

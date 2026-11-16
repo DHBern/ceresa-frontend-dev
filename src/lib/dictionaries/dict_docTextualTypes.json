@@ -1,0 +1,45 @@
+{
+	"meta": {
+		"generated_by": "",
+		"task": "",
+		"generated_on": "2026-11-15",
+		"description": ""
+	},
+	"textualTypes": {
+		"saggio-o-intervento": {
+			"slug": "saggio-o-intervento", "docTypeTestuale": "Saggio o intervento",
+			"label": "Saggi e interventi"
+		},
+		"altra-prosa": { "slug": "altra-prosa", "docTypeTestuale": "Altra prosa", "label": "Altra prosa" },
+		"racconto": { "slug": "racconto", "docTypeTestuale": "Racconto", "label": "Racconti" },
+		"traduzione": { "slug": "traduzione", "docTypeTestuale": "Traduzione", "label": "Traduzioni" },
+		"dizionario": { "slug": "dizionario", "docTypeTestuale": "Dizionario", "label": "Dizionari" },
+		"poesia": { "slug": "poesia", "docTypeTestuale": "Poesia", "label": "Poesie" },
+		"romanzo": { "slug": "romanzo", "docTypeTestuale": "Romanzo", "label": "Romanzi e altre prose" },
+		"testo-teatrale": { "slug": "testo-teatrale", "docTypeTestuale": "Testo teatrale", "label": "Testi teatrali" }
+	},
+	"labels": {
+		"sort": {
+			"name": "Alfabetico",
+			"date_asc": "Cronologico (asc)",
+			"date_desc": "Cronologico (desc)"
+		},
+		"filters": {
+			"docType": "Tipo documento",
+			"editoriale": "Tipo editoriale",
+			"language": "Lingua",
+			"pubPlace": "Luogo di pubblicazione",
+			"hasAudio": "Con audio"
+		},
+		"docTypes": { "posthum": "Postumi", "unpublished": "Inediti", "published": "Pubblicati" },
+		"languages": { "it": "Italiano", "de": "Tedesco", "fr": "Francese" },
+		"none_labels": {
+			"language": "senza lingua",
+			"pubPlace": "senza luogo di pubblicazione",
+			"editoriale": "senza tipo editoriale"
+		},
+		"row": { "noDate": "s.d." },
+		"empty": "Nessun documento trovato",
+		"all": "Tutti"
+	}
+}
