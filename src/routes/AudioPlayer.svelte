@@ -136,7 +136,7 @@
 		<p>
 			<strong>Linked Documents: </strong>
 			{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
-				{@const linkedDocs = currentlyPlayingAudio.value?.crossReferences?.linkedDocuments?.[type]}
+				{@const linkedDocs = currentlyPlayingAudio.value?.crossReferences?.linked_documents?.[type]}
 				{#each linkedDocs as linkedDoc (linkedDoc)}
 					<a href={resolve(linkedDoc)} class="mx-2">{linkedDoc}</a>
 				{/each}

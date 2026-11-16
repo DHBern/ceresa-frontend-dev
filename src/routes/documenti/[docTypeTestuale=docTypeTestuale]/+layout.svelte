@@ -33,7 +33,7 @@
 					language: meta.language ?? null,
 					pubPlace: meta.pubPlace ?? null,
 					typeEditoriale: meta.type_editotraleDocumento ?? null,
-					hasAudio: (item.crossReferences?.linkedDocuments?.audio?.length ?? 0) > 0,
+					hasAudio: (item.crossReferences?.linked_documents?.audio?.length ?? 0) > 0,
 					fullyEdited: item.edition?.fullyEdited ?? null
 				});
 			}

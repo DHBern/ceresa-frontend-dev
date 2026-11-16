@@ -40,10 +40,10 @@
 		ceteiData: any;
 		crossRef: Partial<
 			Record<
-				| 'citedDocuments'
-				| 'linkedDocuments'
-				| 'citedEntities'
-				| 'linkedEntities'
+				| 'cited_documents'
+				| 'linked_documents'
+				| 'cited_entities'
+				| 'linked_entities'
 				| 'dict-1'
 				| 'dict-2'
 				| 'versions',
@@ -245,28 +245,28 @@
 								</tbody>
 							</table>
 						{:else if stateMetadata === 'crossRefEntities'}
-							{#if crossRef.citedEntities && Object.keys(crossRef.citedEntities).length}
+							{#if crossRef.cited_entities && Object.keys(crossRef.cited_entities).length}
 								<!-- //! replace Sachbegriffe with dict-entry (also below in h5)  -->
 								<h5 class="h5">Riferimenti presenti nel testo</h5>
 								<table>
 									<tbody class="flex flex-col gap-2" data-dom="crossRef">
 										{#each ['people', 'places', 'events', 'orgs', 'bibls', 'keywords'] as const as type (type)}
-											{#if crossRef.citedEntities?.[type]?.length}
+											{#if crossRef.cited_entities?.[type]?.length}
 												{@render metadataEntryWithRegLink(
 													dictReg[type].label_plural,
-													crossRef.citedEntities?.[type]
+													crossRef.cited_entities?.[type]
 												)}
 											{/if}
 										{/each}
 									</tbody>
 								</table>
 							{/if}
-							{#if crossRef.linkedEntities && Object.keys(crossRef.linkedEntities).length}
+							{#if crossRef.linked_entities && Object.keys(crossRef.linked_entities).length}
 								<h5
 									class={[
 										'h5',
-										crossRef.citedEntities &&
-											Object.keys(crossRef.citedEntities).length &&
+										crossRef.cited_entities &&
+											Object.keys(crossRef.cited_entities).length &&
 											'mt-5 md:mt-20'
 									]}
 								>
@@ -275,10 +275,10 @@
 								<table>
 									<tbody class="flex flex-col gap-2" data-dom="crossRef">
 										{#each ['people', 'places', 'events', 'orgs', 'bibls', 'keywords'] as const as type (type)}
-											{#if crossRef.linkedEntities?.[type]?.length}
+											{#if crossRef.linked_entities?.[type]?.length}
 												{@render metadataEntryWithRegLink(
 													dictReg[type].label_plural,
-													crossRef.linkedEntities?.[type]
+													crossRef.linked_entities?.[type]
 												)}
 											{/if}
 										{/each}
@@ -286,25 +286,25 @@
 								</table>
 							{/if}
 						{:else if stateMetadata === 'crossRefDocs'}
-							{#if crossRef.citedDocuments && Object.keys(crossRef.citedDocuments).length}
+							{#if crossRef.cited_documents && Object.keys(crossRef.cited_documents).length}
 								<h5 class="h5">Riferimenti incrociati presenti nel testo</h5>
 								<div>
 									{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
-										{#if crossRef.citedDocuments?.[type]?.length}
+										{#if crossRef.cited_documents?.[type]?.length}
 											{@render metadataCrossRefDoc(
 												dictDocs[type].label_plural,
-												crossRef.citedDocuments?.[type]
+												crossRef.cited_documents?.[type]
 											)}
 										{/if}
 									{/each}
 								</div>
 							{/if}
-							{#if crossRef.linkedDocuments && Object.keys(crossRef.linkedDocuments).length}
+							{#if crossRef.linked_documents && Object.keys(crossRef.linked_documents).length}
 								<h5
 									class={[
 										'h5',
-										crossRef.citedDocuments &&
-											Object.keys(crossRef.citedDocuments).length &&
+										crossRef.cited_documents &&
+											Object.keys(crossRef.cited_documents).length &&
 											'mt-5 md:mt-20'
 									]}
 								>
@@ -312,10 +312,10 @@
 								</h5>
 								<div>
 									{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
-										{#if crossRef.linkedDocuments?.[type]?.length}
+										{#if crossRef.linked_documents?.[type]?.length}
 											{@render metadataCrossRefDoc(
 												dictDocs[type].label_plural,
-												crossRef.linkedDocuments?.[type]
+												crossRef.linked_documents?.[type]
 											)}
 										{/if}
 									{/each}

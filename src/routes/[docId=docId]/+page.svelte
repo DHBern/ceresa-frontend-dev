@@ -20,10 +20,10 @@
 
 	// Reset Audio Data
 	$effect(() => {
-		const audioId = data.resolvedDoc?.item?.crossReferences?.linkedDocuments?.audio?.[0]; //!FIX [0]-hack
+		const audioId = data.resolvedDoc?.item?.crossReferences?.linked_documents?.audio?.[0]; //!FIX [0]-hack
 		if (audioId) {
 			currentFilesAudio.value =
-				(data.crossRef.linkedDocuments?.audio?.filter((item) => {
+				(data.crossRef.linked_documents?.audio?.filter((item) => {
 					return item.docKey === audioId;
 				})[0].item as TDocItemsAudio) || null;
 		}

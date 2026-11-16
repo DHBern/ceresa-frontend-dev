@@ -23,10 +23,10 @@
 				"note": { "label": "Note" }
 			},
 			"crossReferences": {
-				"citedDocuments": { "label": "Documenti citati" },
-				"linkedDocuments": { "label": "Documenti collegati" },
-				"citedEntities": { "label": "Entità citate" },
-				"linkedEntities": { "label": "Parole chiave" }
+				"cited_documents": { "label": "Documenti citati" },
+				"linked_documents": { "label": "Documenti collegati" },
+				"cited_entities": { "label": "Entità citate" },
+				"linked_entities": { "label": "Parole chiave" }
 			},
 			"groups": {
 				"Typoskript": {
@@ -63,10 +63,10 @@
 				"note": { "label": "Note" }
 			},
 			"crossReferences": {
-				"citedDocuments": { "label": "Documenti citati" },
-				"linkedDocuments": { "label": "Documenti collegati" },
-				"citedEntities": { "label": "Entità citate" },
-				"linkedEntities": { "label": "Parole chiave" }
+				"cited_documents": { "label": "Documenti citati" },
+				"linked_documents": { "label": "Documenti collegati" },
+				"cited_entities": { "label": "Entità citate" },
+				"linked_entities": { "label": "Parole chiave" }
 			},
 			"groups": {
 				"Typoskript": {
@@ -103,10 +103,10 @@
 				"note": { "label": "Note" }
 			},
 			"crossReferences": {
-				"citedDocuments": { "label": "Documenti citati" },
-				"linkedDocuments": { "label": "Documenti collegati" },
-				"citedEntities": { "label": "Entità citate" },
-				"linkedEntities": { "label": "Parole chiave" }
+				"cited_documents": { "label": "Documenti citati" },
+				"linked_documents": { "label": "Documenti collegati" },
+				"cited_entities": { "label": "Entità citate" },
+				"linked_entities": { "label": "Parole chiave" }
 			},
 			"groups": {
 				"Typoskript": {

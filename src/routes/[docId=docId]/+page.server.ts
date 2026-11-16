@@ -44,10 +44,10 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 
 	// Resolve cross-register references
 	const crossRef: {
-		linkedEntities?: TCrossRefEntitiesExtended;
-		citedEntities?: TCrossRefEntitiesExtended;
-		linkedDocuments?: TCrossRefDocumentsExtended;
-		citedDocuments?: TCrossRefDocumentsExtended;
+		linked_entities?: TCrossRefEntitiesExtended;
+		cited_entities?: TCrossRefEntitiesExtended;
+		linked_documents?: TCrossRefDocumentsExtended;
+		cited_documents?: TCrossRefDocumentsExtended;
 		'dict-1'?: TCrossRefDocumentsExtended;
 		'dict-2'?: TCrossRefDocumentsExtended;
 		versions?: TCrossRefDocumentsExtended;
@@ -129,12 +129,12 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 
 	// Retrieve Data for Cross References
 	if (resolvedDoc?.item) {
-		// linkedEntities
-		if (resolvedDoc.item.crossReferences?.linkedEntities) {
-			crossRef.linkedEntities = {};
-			Object.keys(resolvedDoc.item.crossReferences.linkedEntities).forEach((type) => {
-				crossRef.linkedEntities![type as TRegTypes] =
-					resolvedDoc.item!.crossReferences?.linkedEntities?.[type as TRegTypes]?.map((key) => {
+		// linked_entities
+		if (resolvedDoc.item.crossReferences?.linked_entities) {
+			crossRef.linked_entities = {};
+			Object.keys(resolvedDoc.item.crossReferences.linked_entities).forEach((type) => {
+				crossRef.linked_entities![type as TRegTypes] =
+					resolvedDoc.item!.crossReferences?.linked_entities?.[type as TRegTypes]?.map((key) => {
 						const resolvedReg = resolveReg(reg, key as TRegKeysFlat);
 						const hasValidType = resolvedReg?.regType;
 						return {
@@ -145,12 +145,12 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 					}) ?? null;
 			});
 		}
-		// citedDocuments
-		if (resolvedDoc.item.crossReferences?.citedEntities) {
-			crossRef.citedEntities = {};
-			Object.keys(resolvedDoc.item.crossReferences.citedEntities).forEach((type) => {
-				crossRef.citedEntities![type as TRegTypes] =
-					resolvedDoc.item!.crossReferences?.citedEntities?.[type as TRegTypes]?.map((key) => {
+		// cited_documents
+		if (resolvedDoc.item.crossReferences?.cited_entities) {
+			crossRef.cited_entities = {};
+			Object.keys(resolvedDoc.item.crossReferences.cited_entities).forEach((type) => {
+				crossRef.cited_entities![type as TRegTypes] =
+					resolvedDoc.item!.crossReferences?.cited_entities?.[type as TRegTypes]?.map((key) => {
 						const resolvedReg = resolveReg(reg, key as TRegKeysFlat);
 						const hasValidType = resolvedReg?.regType;
 						return {
@@ -162,12 +162,12 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			});
 		}
 
-		// linkedDocuments
-		if (resolvedDoc.item.crossReferences?.linkedDocuments) {
-			crossRef.linkedDocuments = {};
-			Object.keys(resolvedDoc.item.crossReferences.linkedDocuments).forEach((type) => {
-				crossRef.linkedDocuments![type as TDocTypes] =
-					resolvedDoc.item!.crossReferences?.linkedDocuments?.[type as TDocTypes]?.map((key) => {
+		// linked_documents
+		if (resolvedDoc.item.crossReferences?.linked_documents) {
+			crossRef.linked_documents = {};
+			Object.keys(resolvedDoc.item.crossReferences.linked_documents).forEach((type) => {
+				crossRef.linked_documents![type as TDocTypes] =
+					resolvedDoc.item!.crossReferences?.linked_documents?.[type as TDocTypes]?.map((key) => {
 						const resolvedDoc = resolveDoc(allDocs, key as TDocKeys);
 						const hasValidType = resolvedDoc?.docType;
 						return {
@@ -178,12 +178,12 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 					}) ?? null;
 			});
 		}
-		// citedDocuments
-		if (resolvedDoc.item.crossReferences?.citedDocuments) {
-			crossRef.citedDocuments = {};
-			Object.keys(resolvedDoc.item.crossReferences.citedDocuments).forEach((type) => {
-				crossRef.citedDocuments![type as TDocTypes] =
-					resolvedDoc.item!.crossReferences?.citedDocuments?.[type as TDocTypes]?.map((key) => {
+		// cited_documents
+		if (resolvedDoc.item.crossReferences?.cited_documents) {
+			crossRef.cited_documents = {};
+			Object.keys(resolvedDoc.item.crossReferences.cited_documents).forEach((type) => {
+				crossRef.cited_documents![type as TDocTypes] =
+					resolvedDoc.item!.crossReferences?.cited_documents?.[type as TDocTypes]?.map((key) => {
 						const resolvedDoc = resolveDoc(allDocs, key as TDocKeys);
 						const hasValidType = resolvedDoc?.docType;
 						return {

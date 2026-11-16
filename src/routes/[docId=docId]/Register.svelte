@@ -26,7 +26,7 @@
 		docItem
 	}: { docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null } = $props();
 
-	let regEntries = $derived(docItem?.crossReferences?.citedEntities);
+	let regEntries = $derived(docItem?.crossReferences?.cited_entities);
 	const regTypes = Object.keys(reg) as Array<keyof typeof reg>;
 	const nonEmptyRegTypes = regTypes.reduce<TRegTypes[]>((acc, regType) => {
 		if ((regEntries && regEntries[regType]?.length) || 0 > 0) {

@@ -115,7 +115,7 @@
 					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {
-					"linkedDocuments": {
+					"linked_documents": {
 						"audio": ["audio_0001"]
 					}
 				},
@@ -1867,7 +1867,7 @@
 					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {
-					"citedEntities": {
+					"cited_entities": {
 						"people": ["person_0017"],
 						"places": ["place_0003"],
 						"bibls": ["bibl_0001"]
@@ -2410,7 +2410,7 @@
 					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {
-					"citedEntities": {
+					"cited_entities": {
 						"people": [
 							"person_0018",
 							"person_0019",
@@ -2770,7 +2770,7 @@
 					"type_testuale": "Romanzo"
 				},
 				"crossReferences": {
-					"citedEntities": {
+					"cited_entities": {
 						"people": ["person_0008", "person_0011", "person_0012"],
 						"places": ["place_0006", "place_0008"],
 						"orgs": [],
@@ -3243,10 +3243,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_1-la-morte-del-padre",
@@ -3279,10 +3279,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_1-la-morte-del-padre",
@@ -3315,10 +3315,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_1-la-morte-del-padre",
@@ -3351,10 +3351,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_1-la-morte-del-padre",
@@ -3387,10 +3387,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_1-la-morte-del-padre",
@@ -3423,10 +3423,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_1-la-morte-del-padre",
@@ -3459,12 +3459,12 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {
+					"cited_documents": {},
+					"linked_documents": {
 						"audio": ["audio_0007"]
 					},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_2-piccolo-dizionario",
@@ -3497,10 +3497,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_2-piccolo-dizionario",
@@ -3533,10 +3533,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_2-piccolo-dizionario",
@@ -3569,10 +3569,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_2-piccolo-dizionario",
@@ -3604,10 +3604,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_2-piccolo-dizionario",
@@ -3639,10 +3639,10 @@
 					"note": ""
 				},
 				"crossReferences": {
-					"citedDocuments": {},
-					"linkedDocuments": {},
-					"citedEntities": {},
-					"linkedEntities": {}
+					"cited_documents": {},
+					"linked_documents": {},
+					"cited_entities": {},
+					"linked_entities": {}
 				},
 				"audioMaterial": {
 					"path": "/audio/RSI_2-piccolo-dizionario",

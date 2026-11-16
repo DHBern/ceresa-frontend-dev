@@ -33,7 +33,7 @@
 		docItem
 	}: { docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null } = $props();
 
-	let regEntries = $derived(docItem?.crossReferences?.citedEntities);
+	let regEntries = $derived(docItem?.crossReferences?.cited_entities);
 	let localRegKey: TRegKeysFlat | null = $state(null);
 	let localRegResolved = $derived(resolveReg(reg, localRegKey));
 	const regTypes = Object.keys(reg) as Array<keyof typeof reg>;

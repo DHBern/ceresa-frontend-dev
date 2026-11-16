@@ -102,10 +102,10 @@ type TTextDocuments = {
 	};
 	crossReferences: {
 		group_ids: TSeqKeys[];
-		citedDocuments?: TCrossRefDocs;
-		linkedDocuments?: TCrossRefDocs;
-		citedEntities?: TCrossRefEntities;
-		linkedEntities?: TCrossRefEntities;
+		cited_documents?: TCrossRefDocs;
+		linked_documents?: TCrossRefDocs;
+		cited_entities?: TCrossRefEntities;
+		linked_entities?: TCrossRefEntities;
 		versions?: TCrossRefDocs;
 	};
 	publication: {
