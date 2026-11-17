@@ -1,3 +1,5 @@
+import { processMetamarks } from './metamark.js';
+
 /* ══════════════════════════════════════════════════════════════════
    Ceresa TEI Preview – CETEIcean Behaviours & App Logic
    Aligned with ceresa.framework / tei_ceresa.odd
@@ -10,7 +12,8 @@
      - del, add, subst → CSS display via mode
      - supplied, gap, unclear → CSS via mode
      - hi, rs, foreign → CSS
-     - fw, handShift, metamark → CSS
+     - fw → CSS
+   Metamark relocation is applied to the full converted document.
    ──────────────────────────────────────────────────────────────── */
 const teiBehaviors = {
 	tei: {
@@ -338,7 +341,7 @@ const teiBehaviors = {
 
 	/* ── Post-processing: endnotes/footnotes ───────────────────── */
 	function processNotes() {
-		const noteIdx = 0;
+		let noteIdx = 0;
 		container
 			.querySelectorAll('tei-note[type="endnote"], tei-note[type="footnote"]')
 			.forEach(function (note) {
@@ -399,6 +402,7 @@ const teiBehaviors = {
 			container.appendChild(data);
 			processNotes();
 			processHyphens();
+			processMetamarks(container);
 		});
 	}
 

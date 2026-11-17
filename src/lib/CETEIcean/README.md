@@ -3,3 +3,7 @@
 The contents in this directory are kept in sync with the `preview` directory on the WebDAV storage. See main [README](https://github.com/DHBern/ceresa-frontend/blob/main/README.md) for details.
 
 DO NOT edit files in `preview` directly on WebDAV!
+
+Deploy `oxy.html`, `behaviours.js`, `metamark.js`, and `styles.css` together when
+updating metamark rendering. The preview imports `metamark.js` as a module and
+resolves relocation pairs after CETEIcean has loaded the full TEI document.

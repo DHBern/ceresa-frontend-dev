@@ -457,10 +457,10 @@ metamark {
 		margin-left: 4px;
 	}
 	.metamark-marker-at-new-location::before {
-		content: '○ (' attr(id) ')';
+		content: '○ (' attr(data-metamark-id) ')';
 	}
 	.metamark-relocated-text-at-original-position::after {
-		content: '(' attr(id) ')';
+		content: '(' attr(data-metamark-id) ')';
 		color: #6d4aff;
 		font-weight: bold;
 		margin-left: 4px;
