@@ -1,4 +1,5 @@
 import { behaviors, wrapAnnotations } from '$lib/CETEIcean/behaviors';
+import { processMetamarks } from '$lib/CETEIcean/metamark.js';
 import CETEI from 'CETEIcean';
 import { JSDOM } from 'jsdom';
 
@@ -26,6 +27,7 @@ const processTEI = (xml: string): ProcessedTEI => {
 	const container = htmlDoc.createElement('div');
 	container.appendChild(domFragment);
 	wrapAnnotations(container);
+	processMetamarks(container);
 	const serialized = container.innerHTML;
 
 	return {
