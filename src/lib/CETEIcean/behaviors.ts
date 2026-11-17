@@ -1,3 +1,5 @@
+import { markAddition } from './addition.js';
+
 const NOTE_ID_PREFIX = 'note_';
 
 interface BehaviorContext {
@@ -8,6 +10,8 @@ interface BehaviorContext {
 export const behaviors = (dom: Document) => {
 	return {
 		tei: {
+			add: markAddition,
+
 			// Handle Line Breaks and Hyphenation
 			lb(this: BehaviorContext, el: HTMLElement): Text | undefined {
 				if (el.getAttribute('break') === 'no') {
