@@ -550,6 +550,16 @@ tei-gap[reason]::before {
 	tei-choice > tei-abbr {
 		display: none;
 	}
+	tei-choice > tei-corr,
+	tei-choice > tei-reg,
+	tei-choice > tei-expan {
+		&::before {
+			content: '[';
+		}
+		&::after {
+			content: ']';
+		}
+	}
 }
 
 .mode-df {
@@ -562,14 +572,6 @@ tei-gap[reason]::before {
 	tei-choice > tei-orig,
 	tei-choice > tei-abbr {
 		color: var(--color-muted);
-	}
-	tei-choice > tei-sic {
-		&::before {
-			content: '[';
-		}
-		&::after {
-			content: ']';
-		}
 	}
 	tei-choice > tei-orig {
 		&::before {
