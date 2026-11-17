@@ -5,6 +5,7 @@
 	import Lightswitch from './Lightswitch.svelte';
 	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
+	import { page } from '$app/state';
 
 	let openStateMenu = $state(false);
 
@@ -106,7 +107,7 @@
 		class="group flex w-screen list-none items-center justify-between gap-2 p-1 px-5"
 	>
 		<!-- Lead for Home Button -->
-		<div class="flex items-center">
+		<div class="mr-4 flex items-center">
 			<a class="flex items-center py-2 font-bold whitespace-nowrap" href={resolve('/')}
 				>Arcipelago Ceresa</a
 			>
@@ -121,7 +122,8 @@
 						'hover:bg-background hover:text-background-contrast',
 						'focus-visible:bg-muted focus-visible:text-dark-40 focus-visible:outline-hidden',
 						'data-[state=open]:bg-dark-70 data-[state=open]:shadow-mini',
-						'disabled:pointer-events-none disabled:opacity-50'
+						'disabled:pointer-events-none disabled:opacity-50',
+						page.url.href.includes(ii.path) && 'bg-dark-40' //! Change this ad-hoc match
 					]}
 					href={ii.path}
 				>
