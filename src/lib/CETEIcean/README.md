@@ -11,6 +11,7 @@ In diplomatic view, matching **Spostamento 1**, **Spostamento 2**, etc. labels c
 underlined passage to its destination. Reading view shows the relocated text
 without the labels.
 
-The shared stylesheet brackets additions inside deletions in diplomatic view
-(for example, `cha⌜q⌝ue` with a strikethrough). Reading view hides the entire
-deletion, including the addition.
+The shared `addition.js` behavior inserts selectable brackets around additions,
+including those inside deletions (for example, `cha⌜q⌝ue` with a strikethrough).
+Reading view hides the brackets and the entire deletion. Deploy `addition.js`
+alongside `behaviours.js` and `styles.css` for the preview.

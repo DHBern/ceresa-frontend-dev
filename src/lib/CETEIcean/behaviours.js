@@ -1,3 +1,4 @@
+import { markAddition } from './addition.js';
 import { processMetamarks } from './metamark.js';
 
 /* ══════════════════════════════════════════════════════════════════
@@ -9,7 +10,7 @@ import { processMetamarks } from './metamark.js';
    and styled purely via CSS. This includes:
      - choice (sic/corr, orig/reg, abbr/expan) → CSS toggle via mode
      - lb, pb, cb → CSS display via mode
-     - del, add, subst → CSS display via mode
+     - del, subst → CSS display via mode
      - supplied, gap, unclear → CSS via mode
      - hi, rs, foreign → CSS
      - fw → CSS
@@ -17,47 +18,7 @@ import { processMetamarks } from './metamark.js';
    ──────────────────────────────────────────────────────────────── */
 const teiBehaviors = {
 	tei: {
-		/* Additions */
-		add: function (elt) {
-			// The shared stylesheet marks deleted additions without replacing their TEI children.
-			if (elt.closest('tei-del')) return;
-
-			const place = elt.getAttribute('place');
-			const wrapper = document.createElement('span');
-			switch (place) {
-				case 'above':
-					wrapper.innerHTML =
-						"<span class='addition_wrapper'>⌜</span>" +
-						elt.textContent +
-						"<span class='addition_wrapper'>⌝</span>";
-					break;
-				case 'below':
-					wrapper.innerHTML =
-						"<span class='addition_wrapper'>⌞</span>" +
-						elt.textContent +
-						"<span class='addition_wrapper'>⌟</span>";
-					break;
-				case 'inline':
-					wrapper.innerHTML =
-						"<span class='addition_wrapper'>⌜</span>" +
-						elt.textContent +
-						"<span class='addition_wrapper'>⌟</span>";
-					break;
-				case 'over':
-					wrapper.innerHTML =
-						"<span class='addition_wrapper'>{</span>" +
-						elt.textContent +
-						"<span class='addition_wrapper'>}</span>";
-					break;
-				case 'margin':
-					wrapper.innerHTML =
-						"<span class='addition_wrapper'>‹</span>" +
-						elt.textContent +
-						"<span class='addition_wrapper'>›</span>";
-					break;
-			}
-			return wrapper;
-		},
+		add: markAddition,
 
 		/* Hand Shift */
 		handShift: function (elt) {
