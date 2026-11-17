@@ -134,7 +134,7 @@
 	{#each Object.entries(data.textualTypes) as [slug, t] (slug)}
 		{@const isCurrent = slug === data.docTypeTestualeSlug}
 		<a
-			href={resolve(`/documenti/${slug}`)}
+			href={resolve(`/edition/${slug}`)}
 			class={['preset-btn-round --sm', isCurrent && '--active']}
 			aria-current={isCurrent ? 'page' : undefined}
 		>

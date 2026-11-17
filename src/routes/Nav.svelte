@@ -15,9 +15,9 @@
 	// Menu
 	const mainMenuInfo = {
 		main1: {
-			nameShort: 'Documenti',
-			nameLong: 'Documenti',
-			path: resolve('/documenti')
+			nameShort: 'Edizione',
+			nameLong: 'Edizione',
+			path: resolve('/edition')
 		},
 		main3: { nameShort: 'Registri', nameLong: 'Registri', path: resolve('/register') },
 		main4: {
