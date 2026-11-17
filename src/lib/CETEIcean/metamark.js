@@ -20,7 +20,7 @@ export function processMetamarks(root) {
 		if (!destination || !origin.hasChildNodes()) continue;
 		if (destination.querySelector(':scope > .metamark-marker-at-new-location')) continue;
 
-		const label = `Move ${++moveNumber}`;
+		const label = `Spostamento ${++moveNumber}`;
 		origin.dataset.metamarkLabel = label;
 		destination.dataset.metamarkLabel = label;
 		const doc = origin.ownerDocument;

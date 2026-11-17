@@ -60,8 +60,8 @@ test('gives nearby relocation pairs matching, distinct labels in origin order', 
 	processMetamarks(document.body);
 
 	for (const [id, label] of [
-		['first-target', 'Move 1'],
-		['second-target', 'Move 2']
+		['first-target', 'Spostamento 1'],
+		['second-target', 'Spostamento 2']
 	]) {
 		const originMark = document.querySelector(`tei-metamark[target="#${id}"]`);
 		const destination = document.querySelector(`#${id}`);
