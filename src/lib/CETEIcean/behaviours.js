@@ -19,6 +19,9 @@ const teiBehaviors = {
 	tei: {
 		/* Additions */
 		add: function (elt) {
+			// The shared stylesheet marks deleted additions without replacing their TEI children.
+			if (elt.closest('tei-del')) return;
+
 			const place = elt.getAttribute('place');
 			const wrapper = document.createElement('span');
 			switch (place) {

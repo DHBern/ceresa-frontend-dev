@@ -381,7 +381,7 @@ tei-hi[rendition~='#g'] {
 	tei-add[hand*='#person']::after,
 	tei-del[hand*='#person']::after,
 	tei-p[hand*='#person']::after {
-		content: '✍ hand: (' attr(hand) ')';
+		content: var(--deleted-add-end, '') '✍ hand: (' attr(hand) ')';
 		color: black;
 		font-size: 0.7em;
 		font-family: monospace;
@@ -421,6 +421,30 @@ tei-hi[rendition~='#g'] {
 	}
 	tei-del {
 		text-decoration: line-through;
+
+		tei-add {
+			--deleted-add-start: '⌜';
+			--deleted-add-end: '⌝';
+
+			&[place='below'] {
+				--deleted-add-start: '⌞';
+				--deleted-add-end: '⌟';
+			}
+			&[place='over'] {
+				--deleted-add-start: '{';
+				--deleted-add-end: '}';
+			}
+			&[place='margin'] {
+				--deleted-add-start: '‹';
+				--deleted-add-end: '›';
+			}
+			&::before {
+				content: var(--deleted-add-start);
+			}
+			&::after {
+				content: var(--deleted-add-end);
+			}
+		}
 	}
 }
 

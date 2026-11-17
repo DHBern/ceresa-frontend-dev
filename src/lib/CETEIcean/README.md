@@ -10,3 +10,7 @@ resolves relocation pairs after CETEIcean has loaded the full TEI document.
 In diplomatic view, matching **Spostamento 1**, **Spostamento 2**, etc. labels connect each
 underlined passage to its destination. Reading view shows the relocated text
 without the labels.
+
+The shared stylesheet brackets additions inside deletions in diplomatic view
+(for example, `cha⌜q⌝ue` with a strikethrough). Reading view hides the entire
+deletion, including the addition.
