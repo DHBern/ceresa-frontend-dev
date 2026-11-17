@@ -449,10 +449,8 @@ metamark {
 .mode-df {
 	.metamark-relocated-text-at-original-position {
 		display: inline;
-		text-decoration-line: underline;
-		text-decoration-style: dashed;
-		text-decoration-thickness: 0.09em;
-		text-underline-offset: 0.2em;
+		border: 0.05em dashed black;
+		padding: 0.05rem;
 	}
 	.metamark-marker-at-new-location {
 		display: inline-block;
@@ -470,8 +468,9 @@ metamark {
 		white-space: nowrap;
 	}
 	.metamark-relocated-text-at-original-position::after {
-		content: attr(data-metamark-label);
+		content: attr(data-metamark-label) ' ⟶';
 		border-style: dashed;
+		margin-left: 10px;
 	}
 	.metamark-marker-at-new-location::before {
 		content: '↳ ' attr(data-metamark-label);
