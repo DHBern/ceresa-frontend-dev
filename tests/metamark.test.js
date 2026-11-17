@@ -47,3 +47,25 @@ test('leaves unpaired metamarks and their text intact', () => {
 
 	assert.equal(root.innerHTML, originalMarkup);
 });
+
+test('gives nearby relocation pairs matching, distinct labels in origin order', () => {
+	const { document } = new JSDOM(
+		`<tei-metamark id="second-target"></tei-metamark>
+		<tei-metamark target="#first-target">First passage</tei-metamark>
+		<tei-metamark target="#second-target">Second passage</tei-metamark>
+		<tei-metamark id="first-target"></tei-metamark>`
+	).window;
+
+	processMetamarks(document.body);
+	processMetamarks(document.body);
+
+	for (const [id, label] of [
+		['first-target', 'Move 1'],
+		['second-target', 'Move 2']
+	]) {
+		const origin = document.querySelector(`tei-metamark[target="#${id}"] > [data-metamark-label]`);
+		const marker = document.querySelector(`#${id} > .metamark-marker-at-new-location`);
+		assert.equal(origin?.getAttribute('data-metamark-label'), label);
+		assert.equal(marker?.getAttribute('data-metamark-label'), label);
+	}
+});

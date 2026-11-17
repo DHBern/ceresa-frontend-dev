@@ -11,6 +11,7 @@ export function processMetamarks(root) {
 		if (id && !destinations.has(id)) destinations.set(id, mark);
 	}
 
+	let moveNumber = root.querySelectorAll('.metamark-marker-at-new-location').length;
 	for (const origin of marks) {
 		if (origin.hasAttribute('xml:id') || origin.id) continue;
 		const id = origin.getAttribute('target')?.replace(/^#/, '');
@@ -19,10 +20,12 @@ export function processMetamarks(root) {
 		if (!destination || !origin.hasChildNodes()) continue;
 		if (destination.querySelector(':scope > .metamark-marker-at-new-location')) continue;
 
+		const label = `Move ${++moveNumber}`;
 		const doc = origin.ownerDocument;
 		const originalText = doc.createElement('span');
 		originalText.className = 'metamark-relocated-text-at-original-position';
 		originalText.dataset.metamarkId = id;
+		originalText.dataset.metamarkLabel = label;
 		originalText.append(...origin.childNodes);
 		origin.append(originalText);
 
@@ -37,6 +40,7 @@ export function processMetamarks(root) {
 		const marker = doc.createElement('span');
 		marker.className = 'metamark-marker-at-new-location';
 		marker.dataset.metamarkId = id;
+		marker.dataset.metamarkLabel = label;
 		const tooltip = explanation.textContent.trim();
 		if (tooltip) {
 			for (const element of [marker, originalText]) {

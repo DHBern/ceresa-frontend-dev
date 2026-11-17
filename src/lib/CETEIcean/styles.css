@@ -449,21 +449,33 @@ metamark {
 .mode-df {
 	.metamark-relocated-text-at-original-position {
 		display: inline;
+		text-decoration-line: underline;
+		text-decoration-style: dashed;
+		text-decoration-thickness: 0.09em;
+		text-underline-offset: 0.2em;
 	}
 	.metamark-marker-at-new-location {
 		display: inline-block;
-		color: #6d4aff;
-		font-weight: bold;
-		margin-left: 4px;
 	}
+	.metamark-relocated-text-at-original-position::after,
 	.metamark-marker-at-new-location::before {
-		content: '○ (' attr(data-metamark-id) ')';
+		display: inline-block;
+		margin-inline: 0.25em;
+		padding: 0.05em 0.4em;
+		border: 1px solid currentColor;
+		border-radius: 0.35em;
+		font:
+			600 0.7em / 1.3 system-ui,
+			sans-serif;
+		white-space: nowrap;
 	}
 	.metamark-relocated-text-at-original-position::after {
-		content: '(' attr(data-metamark-id) ')';
-		color: #6d4aff;
-		font-weight: bold;
-		margin-left: 4px;
+		content: attr(data-metamark-label);
+		border-style: dashed;
+	}
+	.metamark-marker-at-new-location::before {
+		content: '↳ ' attr(data-metamark-label);
+		background-color: color-mix(in srgb, currentColor 12%, transparent);
 	}
 	.metamark-relocated-text-at-new-location {
 		display: none;
