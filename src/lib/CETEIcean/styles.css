@@ -24,7 +24,6 @@
 	--color-fg: #1a1a1a;
 	--color-muted: #666;
 	--color-rule: #ccc;
-	--color-punctuation: #9622b3;
 	--color-link: #8b0000;
 	--color-link-hover: #b22222;
 	--color-note-bg: #f5f3ee;
@@ -299,11 +298,6 @@ tei-p {
 
 /* -------------------------------- */
 /* Punctuation */
-.mode-df {
-	tei-pc {
-		color: var(--color-punctuation);
-	}
-}
 .mode-lf {
 	tei-pc {
 		display: none;
@@ -318,10 +312,7 @@ tei-p {
 tei-quote::after {
   content: "»";
 }
-.mode-df tei-quote::before,
-.mode-df tei-quote::after {
-  color: var(--color-punctuation);
-} */
+*/
 
 /* -------------------------------- */
 /* Highlighting */
