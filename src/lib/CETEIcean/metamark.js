@@ -21,6 +21,8 @@ export function processMetamarks(root) {
 		if (destination.querySelector(':scope > .metamark-marker-at-new-location')) continue;
 
 		const label = `Move ${++moveNumber}`;
+		origin.dataset.metamarkLabel = label;
+		destination.dataset.metamarkLabel = label;
 		const doc = origin.ownerDocument;
 		const originalText = doc.createElement('span');
 		originalText.className = 'metamark-relocated-text-at-original-position';
