@@ -63,15 +63,15 @@
 				>
 					{#if item}
 						<IIIF_Thumb
-							url={item.manuscript?.iiif_urls[0]}
+							url={item.iiif.urls_IIIF_images[0]}
 							iiif_imageAPI_width={600}
 							classesContainer=""
 							classes="h-90"
 							imgClasses="h-90"
 						/>
 						<p class="flex flex-col gap-2 text-left md:text-center">
-							<span>{item.name}</span>
-							<span>{printDateRange(item.date.from, item.date.to)}</span>
+							<span>{item.metadata.title_editorial}</span>
+							<span>{printDateRange(item.metadata.date.from, item.metadata.date.to)}</span>
 						</p>
 					{:else}
 						<div class="flex h-50 w-50 flex-col items-center justify-center text-center">
@@ -91,15 +91,15 @@
 						{#if item}
 							<div class="flex gap-5">
 								<IIIF_Thumb
-									url={item.manuscript?.iiif_urls[0]}
+									url={item.iiif.urls_IIIF_images[0]}
 									iiif_imageAPI_width={100}
 									classesContainer=""
 									classes="h-40"
 									imgClasses="h-40"
 								/>
 								<div class="text-lg">
-									<p>{item.name}</p>
-									<p>{printDateRange(item.date.from, item.date.to)}</p>
+									<p>{item.metadata.title_editorial}</p>
+									<p>{printDateRange(item.metadata.date.from, item.metadata.date.to)}</p>
 								</div>
 							</div>
 						{:else}
@@ -116,7 +116,10 @@
 				<a class="h-full w-full" href={resolve(`/${docKey as string}`) + `?seq=${data.seqSlug}`}>
 					<li class="border-b-2 py-4 hover:bg-background-hover">
 						{#if item}
-							<span>{item.name} <span>{printDateRange(item.date.from, item.date.to)}</span></span>
+							<span
+								>{item.metadata.title_editorial}
+								<span>{printDateRange(item.metadata.date.from, item.metadata.date.to)}</span></span
+							>
 						{:else}
 							<span>{docKey}</span>
 						{/if}

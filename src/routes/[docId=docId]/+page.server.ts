@@ -130,7 +130,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 	// Retrieve Data for Cross References
 	if (resolvedDoc?.item) {
 		// linked_entities
-		if (resolvedDoc.item.crossReferences?.linked_entities) {
+		if (resolvedDoc.item.crossReferences.linked_entities) {
 			crossRef.linked_entities = {};
 			Object.keys(resolvedDoc.item.crossReferences.linked_entities).forEach((type) => {
 				crossRef.linked_entities![type as TRegTypes] =
@@ -146,7 +146,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			});
 		}
 		// cited_documents
-		if (resolvedDoc.item.crossReferences?.cited_entities) {
+		if (resolvedDoc.item.crossReferences.cited_entities) {
 			crossRef.cited_entities = {};
 			Object.keys(resolvedDoc.item.crossReferences.cited_entities).forEach((type) => {
 				crossRef.cited_entities![type as TRegTypes] =
@@ -163,7 +163,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 		}
 
 		// linked_documents
-		if (resolvedDoc.item.crossReferences?.linked_documents) {
+		if (resolvedDoc.item.crossReferences.linked_documents) {
 			crossRef.linked_documents = {};
 			Object.keys(resolvedDoc.item.crossReferences.linked_documents).forEach((type) => {
 				crossRef.linked_documents![type as TDocTypes] =
@@ -179,7 +179,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			});
 		}
 		// cited_documents
-		if (resolvedDoc.item.crossReferences?.cited_documents) {
+		if (resolvedDoc.item.crossReferences.cited_documents) {
 			crossRef.cited_documents = {};
 			Object.keys(resolvedDoc.item.crossReferences.cited_documents).forEach((type) => {
 				crossRef.cited_documents![type as TDocTypes] =
@@ -195,7 +195,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			});
 		}
 		// versions //! Still needed?
-		if (resolvedDoc.item.crossReferences?.versions) {
+		if (resolvedDoc.item.crossReferences.versions) {
 			crossRef.versions = {};
 			Object.keys(resolvedDoc.item.crossReferences.versions).forEach((type) => {
 				crossRef.versions![type as TDocTypes] =

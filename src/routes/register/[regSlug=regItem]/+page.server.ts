@@ -4,7 +4,7 @@ import { register as reg } from '$lib/data/register.json';
 import { documents as allDocsRaw } from '$lib/data/documents.json';
 import { map_previews } from '$lib/data/map_previews.json';
 import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
-import type { TDocKeys, TDocuments } from '$lib/types/documents/TDocuments';
+import type { TDocKeys, TDocuments, TTextDocKeys, TTextDocuments } from '$lib/types/documents/TDocuments';
 import type { TRegister, TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
 import type { TEventsKeys } from '$lib/types/register/TEventsKeys';
 import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
@@ -34,16 +34,16 @@ function resolveLinkedDocs(
 		const resolved = resolveDoc(allDocs, docId);
 		return {
 			docId: docId as string,
-			iiif_url: resolved?.item?.manuscript?.iiif_urls?.[0] ?? null,
+			iiif_url: (resolved?.item)?.iiif.urls_IIIF_images?.[0] ?? null,
 			title_full:
 				((resolved?.item?.metadata as { title_full?: string })?.title_full ||
-					resolved?.item?.name) ??
+					resolved?.item?.metadata.title_editorial) ??
 				null,
 			pubDate:
 				((resolved?.item?.metadata as { pubDate?: string })?.pubDate ||
 					(resolved?.item?.metadata as { date?: { from: string | null; to: string | null } })?.date
 						?.from ||
-					resolved?.item?.name) ??
+					resolved?.item?.metadata.title_editorial) ??
 				null
 		};
 	});

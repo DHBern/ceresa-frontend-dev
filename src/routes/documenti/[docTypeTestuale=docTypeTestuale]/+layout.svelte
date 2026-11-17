@@ -19,22 +19,20 @@
 	const rows = $derived.by(() => {
 		const out: TDocRow[] = [];
 		for (const section of SECTIONS) {
-			const sec = data.documents[section] as Record<string, any>;
+			const sec = data.documents[section];
 			for (const [key, item] of Object.entries(sec)) {
-				const meta = item.metadata;
-				if (meta.type_testuale !== data.typeTestuale) continue;
+				if (item.metadata.type_genre !== data.typeGenre) continue;
 				out.push({
 					docType: section,
 					key,
 					slug: item.slug ?? key, //! slug optional -> fallback to key
-					name: item.name,
-					title: meta.title ?? null,
-					dateFrom: item.date?.from ?? null,
-					language: meta.language ?? null,
-					pubPlace: meta.pubPlace ?? null,
-					typeEditoriale: meta.type_editotraleDocumento ?? null,
-					hasAudio: (item.crossReferences?.linked_documents?.audio?.length ?? 0) > 0,
-					fullyEdited: item.edition?.fullyEdited ?? null
+					name: item.metadata.title_editorial,
+					title: item.metadata.title_editorial ?? null,
+					dateFrom: item.metadata.date?.from ?? null,
+					language: item.metadata.language ?? null,
+					pubPlace: item.publication.pubPlace ?? null,
+					typeEditoriale: item.metadata.type_editorial ?? null,
+					hasAudio: (item.crossReferences.linked_documents?.audio?.length ?? 0) > 0
 				});
 			}
 		}
@@ -208,9 +206,6 @@
 							<span class="rounded-full border px-2 py-0.5 text-xs">
 								<i class="fa-solid fa-headphones mr-1"></i>{data.uiLabels.filters.hasAudio}
 							</span>
-						{/if}
-						{#if row.fullyEdited}
-							<span class="rounded-full border px-2 py-0.5 text-xs" title="Fully edited">✓</span>
 						{/if}
 					</span>
 				</a>

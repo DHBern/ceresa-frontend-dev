@@ -9,7 +9,7 @@
 	import { page } from '$app/state';
 	import { invalidateAll, goto } from '$app/navigation';
 	import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
-	import type { TResolvedDoc } from '$lib/functions/ease_of_use/resolveDoc';
+	import type { TResolvedTextDoc } from '$lib/functions/ease_of_use/resolveDoc';
 	import { documents as allDocsRaw } from '$lib/data/documents.json';
 	import { type TDocKeys, type TDocuments } from '$lib/types/documents/TDocuments';
 	import { tick } from 'svelte';
@@ -211,7 +211,7 @@
 		item: resDoc,
 		docId: resId,
 		docType: resType
-	} = (resolveDoc(allDocs, itemId) as TResolvedDoc) || { item: null }}
+	} = (resolveDoc(allDocs, itemId) as TResolvedTextDoc) || { item: null }}
 	<a
 		data-sveltekit-preload-data="tap"
 		data-sveltekit-preload-code="hover"
@@ -237,7 +237,7 @@
 			]}
 		>
 			<IIIF_Thumb
-				url={resDoc?.manuscript?.iiif_urls[0]}
+				url={resDoc?.iiif.urls_IIIF_images?.[0] ?? undefined}
 				iiif_imageAPI_width={200}
 				classesContainer=""
 				classes={`min-h-2  mx-2 my-1 flex justify-center items-center group-hover:grayscale-0!

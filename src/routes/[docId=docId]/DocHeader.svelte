@@ -5,7 +5,7 @@
 		TResolvedPosthum,
 		TResolvedUnpublished,
 		TResolvedPublished,
-		TResolvedDoc
+		TResolvedTextDoc
 	} from '$lib/functions/ease_of_use/resolveDoc';
 	import { dict_register as dictReg } from '$lib/dictionaries/dict_register.json';
 	import { dict_docs as dictDocs } from '$lib/dictionaries/dict_docs.json';
@@ -93,7 +93,7 @@
 		</td>
 	</tr>
 {/snippet}
-{#snippet metadataCrossRefDoc(label: string, content: TResolvedDoc[] | null | undefined)}
+{#snippet metadataCrossRefDoc(label: string, content: TResolvedTextDoc[] | null | undefined)}
 	<h4 class="h6">{label}</h4>
 	<div class="grid h-full grid-cols-1 gap-5 md:grid-cols-2 2xl:grid-cols-3">
 		<!-- <div
@@ -106,13 +106,13 @@
 			>
 				{#if cont.item}
 					<IIIF_Thumb
-						url={cont.item.manuscript?.iiif_urls[0]}
+						url={cont.item.iiif.urls_IIIF_images?.[0]}
 						iiif_imageAPI_width={400}
 						classesContainer=""
 						classes="h-[120px]"
 					/>
 					<p class="flex flex-col gap-2 text-left md:text-center">
-						<span>{cont.item.name}</span>
+						<span>{cont.item.metadata.title_editorial}</span>
 					</p>
 				{:else}
 					<div class="flex h-[120px] w-[120px] flex-col items-center justify-center text-center">
@@ -142,9 +142,9 @@
 				{/if}
 			</h2>
 			<h1 class="font-serif text-2xl font-bold md:text-4xl lg:text-5xl xl:text-6xl">
-				{resDoc.item.name}
-				{#if resDoc.item.metadata?.dict_version}
-					<span class="text-[20px]">Version {resDoc.item.metadata?.dict_version}</span>
+				{resDoc.item.metadata.title_editorial}
+				{#if resDoc.item.tei.suffix_version}
+					<span class="text-[20px]">Version {resDoc.item.tei.suffix_version}</span>
 				{/if}
 			</h1>
 			<!-- Audio -->
@@ -181,18 +181,16 @@
 		</div>
 
 		<!-- Versions -->
-		<div class="w-full">
+		<!-- //! REWRITE THIS FULL FEATURE -->
+		<!-- <div class="w-full">
 			<div data-dom="global_comment" class="h-full overflow-auto pr-6 pb-20">
-				<!-- <h3 class="font-serif text-2xl font-bold">Comment</h3> -->
-				<!-- {@html globalComment} -->
-				<!-- <h3 class="font-serif text-2xl font-bold">Versions of this Document:</h3> -->
 				<ul class="">
 					{#if crossRef.versions}
 						{#each Object.keys(crossRef.versions) as type (type)}
 							{#each crossRef.versions[type] as version (version)}
 								<li class="preset-btn-doc --sm">
 									<a href={resolve(`/${version.item.slug}`)}
-										>{version.item.name} ({version.item.metadata.dict_version})</a
+										>{version.item.metadata.title_editorial} ({version.item.tei.suffix_version})</a
 									>
 								</li>
 							{/each}
@@ -200,7 +198,7 @@
 					{/if}
 				</ul>
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 	<!-- Metadata -->
@@ -324,25 +322,14 @@
 						{:else if stateMetadata === 'citation'}
 							<table>
 								<tbody class="flex flex-col gap-2">
-									{#if resDoc.docType === 'posthum'}
-										{@render metadataEntry(
-											'Questa lettera',
-											`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.name} (${docId})`
-										)}
-										{@render metadataEntry(
-											'Pagina attualmente visualizzata',
-											`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.name} (${docId}), Pagina ${params.page}`
-										)}
-									{:else}
-										{@render metadataEntry(
-											'Questo documento',
-											`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.metadata.title_full}`
-										)}
-										{@render metadataEntry(
-											'Pagina attualmente visualizzata',
-											`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.metadata.title_full}, Pagina ${params.page}`
-										)}
-									{/if}
+									{@render metadataEntry(
+										'Questo documento',
+										`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.metadata.title_editorial}`
+									)}
+									{@render metadataEntry(
+										'Pagina attualmente visualizzata',
+										`AUTHOR et al. 2028 "Arcipelago Ceresa. Edizione digitale degli inediti, dispersi, postumi. Gender, plurilinguismo, transnazionalità", ${resDoc.item!.metadata.title_editorial}, Pagina ${params.page}`
+									)}
 								</tbody>
 							</table>
 						{:else if stateMetadata === 'download'}

@@ -1,0 +1,36 @@
+{
+	"meta": {},
+	"dict_docEdTypes": {
+		"in_periodico": {
+			"label_short_singular": "in periodico",
+			"label_long_singular": "documento pubblicato in periodico",
+			"label_long_plural": "documenti pubblicati in periodico"
+		},
+		"in_volume": {
+			"label_short_singular": "in volume",
+			"label_long_singular": "documento pubblicato in volume",
+			"label_long_plural": "documenti pubblicati in volume"
+		},
+		"in_giornale": {
+			"label_short_singular": "in giornale",
+			"label_long_singular": "documento pubblicato in giornale",
+			"label_long_plural": "documenti pubblicati in giornale"
+		},
+		"manoscritto": {
+			"label_short_singular": "manoscritto",
+			"label_long_singular": "manoscritto",
+			"label_long_plural": "manoscritti"
+		},
+		"dattiloscritto": {
+			"label_short_singular": "dattiloscritto",
+			"label_long_singular": "datiloscritto",
+			"label_long_plural": "dattiloscritti"
+		}
+	}
+}
+
+
+
+
+
+

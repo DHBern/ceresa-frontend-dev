@@ -83,7 +83,7 @@
 		}
 	});
 
-	let urls = $derived(docItem?.manuscript?.iiif_urls ?? []);
+	let urls = $derived(docItem?.iiif.urls_IIIF_images ?? []);
 	let url = $derived(urls[params.page - 1]);
 	const TRANSITION_LENGTH = 100;
 	const DELAY = 200;

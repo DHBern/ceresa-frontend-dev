@@ -23,8 +23,8 @@
 		const audioId = data.resolvedDoc?.item?.crossReferences?.linked_documents?.audio?.[0]; //!FIX [0]-hack
 		if (audioId) {
 			currentFilesAudio.value =
-				(data.crossRef.linked_documents?.audio?.filter((item) => {
-					return item.docKey === audioId;
+				(data.crossRef.linked_documents?.audio?.filter((entry) => {
+					return entry.docKey === audioId;
 				})[0].item as TDocItemsAudio) || null;
 		}
 	});

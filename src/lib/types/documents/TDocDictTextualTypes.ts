@@ -43,7 +43,6 @@ export type TDocRow = {
 	pubPlace: string | null;
 	typeEditoriale: string | null;
 	hasAudio: boolean;
-	fullyEdited: boolean | null;
 };
 
 export type TDocSortBy = 'name' | 'date-asc' | 'date-desc';

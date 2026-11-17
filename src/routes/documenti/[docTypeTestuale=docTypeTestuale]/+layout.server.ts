@@ -16,7 +16,7 @@ export const load = ({ params }) => {
 		textualTypes: dict.textualTypes,
 		uiLabels: dict.labels,
 		docTypeTestualeSlug: params.docTypeTestuale,
-		typeTestuale: entry.docTypeTestuale,
+		typeGenre: entry.docTypeTestuale,
 		typeTestualeLabel: entry.label
 	};
 };

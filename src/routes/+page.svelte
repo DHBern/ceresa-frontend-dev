@@ -63,50 +63,42 @@
 		<ul class="mt-2 divide-y divide-neutral-200">
 			<li>
 				<a
-					href={resolve('/posthum_0003')}
+					href={resolve('/posthum_A-1-b_6-2_AC001_a')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
-					Anima [1] (Piccolo dizionario) A-1-b_6-2_AC001a
+					Anima [1] (Piccolo dizionario)
 				</a>
 			</li>
 			<li>
 				<a
-					href={resolve('/posthum_0004')}
+					href={resolve('/unpublished_A-1-b_6-2_AC001_b')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
-					Anima [2] (Piccolo dizionario) A-1-b_6-2_AC001b
+					Anima [2] (Piccolo dizionario)
 				</a>
 			</li>
 			<li>
 				<a
-					href={resolve('/posthum_0055')}
+					href={resolve('/posthum_A-1-b_6-5_AC003_a')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
-					Anima [3] (Piccolo dizionario) A-1-b_6-5_AC006
+					Aborto [1] (Piccolo dizionario)
 				</a>
 			</li>
 			<li>
 				<a
-					href={resolve('/posthum_0050')}
+					href={resolve('/unpublished_A-1-b_6-5_AC003_b')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
-					Aborto [1] (Piccolo dizionario) A-1-b_6-5_AC003a
+					Aborto [2] (Piccolo dizionario)
 				</a>
 			</li>
 			<li>
 				<a
-					href={resolve('/posthum_0051')}
+					href={resolve('/unpublished_A-1-b_6-5_AC003_c')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
-					Aborto [2] (Piccolo dizionario) A-1-b_6-5_AC003b
-				</a>
-			</li>
-			<li>
-				<a
-					href={resolve('/posthum_0052')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
-				>
-					Aborto [3] (Piccolo dizionario) A-1-b_6-5_AC003c
+					Aborto [3] (Piccolo dizionario)
 				</a>
 			</li>
 		</ul>
@@ -115,7 +107,7 @@
 		<ul class="mt-2 divide-y divide-neutral-200">
 			<li>
 				<a
-					href={resolve('/published_0011')}
+					href={resolve('/published_A-5-a_13')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
 					Carson McCullers. Eine junge amerikanische Schriftstellerin setzt sich durch (A-5-a_13)
@@ -124,7 +116,7 @@
 			</li>
 			<li>
 				<a
-					href={resolve('/published_0001')}
+					href={resolve('/published_A-1-a_1-4')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
 					Gli altri, prima parte (A-1-a_1-4)
@@ -137,7 +129,7 @@
 		<ul class="mt-2 divide-y divide-neutral-200">
 			<li>
 				<a
-					href={resolve('/unpublished_0016')}
+					href={resolve('/unpublished_A-1-b_7-8')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
 					Eloise (ultime) (A-1-b_7-8) à 3ff. <span class="text-sm text-neutral-400"
@@ -147,7 +139,7 @@
 			</li>
 			<li>
 				<a
-					href={resolve('/unpublished_0001')}
+					href={resolve('/unpublished_A-1-a_1-1')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
 					Prefazione per "Gli altri" (A-1-a_1-1) à 2ff.
@@ -156,7 +148,7 @@
 			</li>
 			<li>
 				<a
-					href={resolve('/unpublished_0017')}
+					href={resolve('/unpublished_A-5-b_1')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
 					Vittorini et la nouvelle prose italienne (A-5-b_1) à 5ff.
@@ -165,7 +157,7 @@
 			</li>
 			<li>
 				<a
-					href={resolve('/unpublished_0007')}
+					href={resolve('/unpublished_A-1-b_1-2')}
 					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
 				>
 					La strega (A-1-b_1-2) à 4ff. <span class="text-sm text-neutral-400">(manuscript)</span>

@@ -331,8 +331,9 @@
 			{@const firstItem = block[0]?.[1]}
 			{@const autoCatLabel =
 				hasSortControls && sortBy === 'date'
-					? firstItem?.date?.from?.slice(0, 4)
-					: normalizeChars(firstItem?.[sortBy]?.[0]?.toUpperCase())}
+					? firstItem?.metadata.date?.from?.slice(0, 4)
+					: normalizeChars(firstItem?.[sortBy]?.[0]?.toUpperCase())} //! [sortBy] may fail after restructuring
+			register data
 
 			{#if autoCatLabel}
 				<!-- Header -->
@@ -383,7 +384,7 @@
 								: resolve(`/register/${key}`)}
 						>
 							<span class="overflow-hidden whitespace-normal">
-								{item.name}
+								{item.metadata.title_editorial}
 							</span>
 						</a>
 					{/each}
@@ -416,7 +417,7 @@
 					href={resolve(`/register/${key}`)}
 				>
 					<span class="overflow-hidden whitespace-normal">
-						{item.name ? `${item.name}` : '...'}
+						{item.metadata.title_editorial ? `${item.metadata.title_editorial}` : '...'}
 					</span>
 				</a>
 			{/each}

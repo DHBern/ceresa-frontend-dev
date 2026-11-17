@@ -1,125 +1,194 @@
 {
-	"meta": {},
+	"meta": {
+		"generated_by": "manual draft",
+		"task": "Human-readable labels for all fields of documents.json (type TDocuments)",
+		"generated_on": "2026-11-17",
+		"description": "Labels taken verbatim from the data.xlsx sheet headers. Columns marked [missing] in a sheet still appear here because the JSON records are uniform (missing values are null/TUnset). 'Audio' columns are ignored: documents.audio is left empty."
+	},
 	"dict_docs": {
 		"posthum": {
-			"name": "Opere postume",
-			"url": "posthumous",
-			"key_singular": "posthum",
-			"label_plural": "Opere postume",
-			"label_singular": "Opera postuma",
+			"name": "Testi postumi",
+			"key_singular": "Testo postumo",
+			"label_plural": "Testi postumi",
+			"slug": { "label": "Identifier postumi (+ suffix_version)" },
 			"metadata": {
-				"title": { "label": "Titolo" },
-				"title_full": { "label": "Titolo completo" },
-				"title_short": { "label": "Titolo breve" },
-				"authors": { "label": "Autor*e/i" },
-				"pubDate": { "label": "Data di pubblicazione" },
-				"pubPlace": { "label": "Luogo di pubblicazione" },
-				"pubDetails": { "label": "Dettagli della pubblicazione" },
-				"textstufen_edited": { "label": "Stati del testo (editi)" },
-				"textzeugen_nonedited": { "label": "Stati del testo (non editi)" },
-				"archive": { "label": "Archivio" },
-				"archiveCollation": { "label": "Collezione d'archivio" },
-				"pubSecondary": { "label": "Letteratura secondaria" },
-				"note": { "label": "Note" }
+				"type_genre": { "label": "Tipologia testuale" },
+				"type_editorial": { "label": "Tipologia del documento" },
+				"title_editorial": { "label": "Titolo editoriale" },
+				"date": { "label": "Datazione d'autrice normalizzata (aaaa-mm-dd)" },
+				"language": { "label": "Lingua" },
+				"keywords": { "label": "Parole chiave" },
+				"observations": { "label": "Osservazioni" }
+			},
+			"archival": {
+				"archive": { "label": "Fondo archivistico/biblioteca" },
+				"signature": { "label": "Segnatura" },
+				"digitalisation_number": { "label": "Numero digitalizzazioni" },
+				"url_helvetic_archives": { "label": "Link helveticarchives" },
+				"url_online_sources": { "label": "Link a risorse online" }
+			},
+			"document": {
+				"type_material": {
+					"label": "Informazioni materiali sul testimone (originale, fotocopia, copia carbone, ecc.; num. ff. ds/ms. recto e verso; ev. interventi ms.)"
+				},
+				"title_on_document": { "label": "Titolo presente sul documento" },
+				"date_and_place_author_as_on_document": { "label": "data e luogo d'autrice" },
+				"date_author_normalised": { "label": "Datazione d'autrice normalizzata (aaaa-mm-dd)" }
+			},
+			"iiif": {
+				"urls_IIIF_images": { "label": "IIIF-Bilder-URLs" },
+				"url_IIIF_manifest": { "label": "IIIF Manifest" }
+			},
+			"tei": {
+				"id": { "label": "Identifier postumi (+ suffix_version)" },
+				"suffix_version": { "label": "[missing] in 'Testi postumi'" },
+				"filename": { "label": "Identifier postumi (+ suffix_version)" }
 			},
 			"crossReferences": {
-				"cited_documents": { "label": "Documenti citati" },
-				"linked_documents": { "label": "Documenti collegati" },
-				"cited_entities": { "label": "Entità citate" },
-				"linked_entities": { "label": "Parole chiave" }
+				"group_ids": { "label": "Identifier gruppo" },
+				"linked_documents": { "label": "Documenti collegati (ID)" }
 			},
-			"groups": {
-				"Typoskript": {
-					"label_singular": "Dattiloscritto",
-					"label_plural": "Dattiloscritti",
-					"slug": null
-				},
-				"Manuskript": {
-					"label_singular": "Manoscritto",
-					"label_plural": "Manoscritti",
-					"slug": null
+			"publication": {
+				"pub_type": { "label": "Stato di pubblicazione (version)" },
+				"pub_date": { "label": "[missing] in 'Testi postumi'" },
+				"pub_place": { "label": "[missing] in 'Testi postumi'" },
+				"pub_info": { "label": "[missing] in 'Testi postumi'" },
+				"other_editions": { "label": "Edizioni del testo" },
+				"other_translations": {
+					"label": "Traduzioni: titolo, autore/autrice e lingua originale; ev. edizione di riferimento"
 				}
-			}
-		},
-		"unpublished": {
-			"name": "Opere inedite",
-			"url": "unpublished",
-			"key_singular": "unpublished",
-			"label_plural": "Opere inedite",
-			"label_singular": "Opera inedita",
-			"metadata": {
-				"title": { "label": "Titolo" },
-				"title_full": { "label": "Titolo completo" },
-				"title_short": { "label": "Titolo breve" },
-				"authors": { "label": "Autor*e/i" },
-				"pubDate": { "label": "Data di pubblicazione" },
-				"pubPlace": { "label": "Luogo di pubblicazione" },
-				"pubDetails": { "label": "Dettagli della pubblicazione" },
-				"textstufen_edited": { "label": "Stati del testo (editi)" },
-				"textzeugen_nonedited": { "label": "Stati del testo (non editi)" },
-				"archive": { "label": "Archivio" },
-				"archiveCollation": { "label": "Collezione d'archivio" },
-				"pubSecondary": { "label": "Letteratura secondaria" },
-				"note": { "label": "Note" }
 			},
-			"crossReferences": {
-				"cited_documents": { "label": "Documenti citati" },
-				"linked_documents": { "label": "Documenti collegati" },
-				"cited_entities": { "label": "Entità citate" },
-				"linked_entities": { "label": "Parole chiave" }
+			"transcribus": {
+				"tif_files_to_edit": { "label": "Files da editare" },
+				"filename_first_facsimile": { "label": "Filename primo facsimile" },
+				"filename_last_facsimile": { "label": "Filename ultimo facsimile" }
 			},
-			"groups": {
-				"Typoskript": {
-					"label_singular": "Dattiloscritto",
-					"label_plural": "Dattiloscritti",
-					"slug": null
-				},
-				"Manuskript": {
-					"label_singular": "Manoscritto",
-					"label_plural": "Manoscritti",
-					"slug": null
-				}
-			}
+			"groups": {}
 		},
 		"published": {
-			"name": "Opere edite",
-			"url": "published",
-			"key_singular": "published",
-			"label_plural": "Opere edite",
-			"label_singular": "Opera edita",
+			"name": "Testi editi",
+			"key_singular": "Testo edito",
+			"label_plural": "Testi editi",
+			"slug": { "label": "Identifier editi" },
 			"metadata": {
-				"title": { "label": "Titolo" },
-				"title_full": { "label": "Titolo completo" },
-				"title_short": { "label": "Titolo breve" },
-				"authors": { "label": "Autor*e/i" },
-				"pubDate": { "label": "Data di pubblicazione" },
-				"pubPlace": { "label": "Luogo di pubblicazione" },
-				"pubDetails": { "label": "Dettagli della pubblicazione" },
-				"textstufen_edited": { "label": "Stati del testo (editi)" },
-				"textzeugen_nonedited": { "label": "Stati del testo (non editi)" },
-				"archive": { "label": "Archivio" },
-				"archiveCollation": { "label": "Collezione d'archivio" },
-				"pubSecondary": { "label": "Letteratura secondaria" },
-				"note": { "label": "Note" }
+				"type_genre": { "label": "Tipologia testuale" },
+				"type_editorial": { "label": "Tipologia editoriale" },
+				"title_editorial": { "label": "Titolo editoriale" },
+				"date": { "label": "[missing] in 'Testi editi'" },
+				"language": { "label": "Lingua" },
+				"keywords": { "label": "Parole chiave" },
+				"observations": { "label": "Osservazioni" }
+			},
+			"archival": {
+				"archive": { "label": "Fondo archivistico/biblioteca" },
+				"signature": { "label": "Segnatura" },
+				"digitalisation_number": { "label": "Numero digitalizzazioni" },
+				"url_helvetic_archives": { "label": "Link helveticarchives" },
+				"url_online_sources": { "label": "Link a risorse online" }
+			},
+			"document": {
+				"type_material": {
+					"label": "Informazioni materiali sul testimone (originale/fotocopia, ev. corr. ms.)"
+				},
+				"title_on_document": { "label": "Titolo presente sul documento" },
+				"date_and_place_author_as_on_document": { "label": "[missing] in 'Testi editi'" },
+				"date_author_normalised": { "label": "[missing] in 'Testi editi'" }
+			},
+			"iiif": {
+				"urls_IIIF_images": { "label": "IIIF-Bilder-URLs" },
+				"url_IIIF_manifest": { "label": "IIIF Manifest" }
+			},
+			"tei": {
+				"id": { "label": "Identifier editi" },
+				"suffix_version": { "label": "[missing] in 'Testi editi'" },
+				"filename": { "label": "Identifier editi" }
 			},
 			"crossReferences": {
-				"cited_documents": { "label": "Documenti citati" },
-				"linked_documents": { "label": "Documenti collegati" },
-				"cited_entities": { "label": "Entità citate" },
-				"linked_entities": { "label": "Parole chiave" }
+				"group_ids": { "label": "Identifier gruppo" },
+				"linked_documents": { "label": "Documenti collegati (ID)" }
 			},
-			"groups": {
-				"Typoskript": {
-					"label_singular": "Dattiloscritto",
-					"label_plural": "Dattiloscritti",
-					"slug": null
+			"publication": {
+				"pub_type": { "label": "Stato di pubblicazione (version)" },
+				"pub_date": { "label": "Data di pubblicazione (aaaa-mm-dd)" },
+				"pub_place": { "label": "Sede di pubblicazione" },
+				"pub_info": {
+					"label": "Altre informazioni (ev. numero, annata, serie, rubrica, collana, pagine)"
 				},
-				"Manuskript": {
-					"label_singular": "Manoscritto",
-					"label_plural": "Manoscritti",
-					"slug": null
+				"other_editions": { "label": "Altre edizioni del testo" },
+				"other_translations": {
+					"label": "Traduzioni: titolo, autore/autrice e lingua originale; ev. edizione di riferimento"
 				}
-			}
+			},
+			"transcribus": {
+				"tif_files_to_edit": { "label": "Files da editare" },
+				"filename_first_facsimile": { "label": "Filename primo facsimile" },
+				"filename_last_facsimile": { "label": "Filename ultimo facsimile" }
+			},
+			"groups": {}
+		},
+		"unpublished": {
+			"name": "Testi inediti",
+			"key_singular": "Testo inedito",
+			"label_plural": "Testi inediti",
+			"slug": { "label": "Identifier inediti" },
+			"metadata": {
+				"type_genre": { "label": "Tipologia testuale" },
+				"type_editorial": { "label": "Tipologia del documento" },
+				"title_editorial": { "label": "Titolo editoriale" },
+				"date": { "label": "Datazione d'autrice normalizzata (aaaa-mm-dd)" },
+				"language": { "label": "Lingua" },
+				"keywords": { "label": "Parole chiave" },
+				"observations": { "label": "Osservazioni" }
+			},
+			"archival": {
+				"archive": { "label": "Fondo archivistico/biblioteca" },
+				"signature": { "label": "Segnatura" },
+				"digitalisation_number": { "label": "Numero digitalizzazioni" },
+				"url_helvetic_archives": { "label": "Link helveticarchives" },
+				"url_online_sources": { "label": "Link a risorse online" }
+			},
+			"document": {
+				"type_material": {
+					"label": "Informazioni materiali sul testimone (originale, fotocopia, copia carbone, ecc.; num. ff. ds/ms. recto e verso; con/senza interventi ms.)"
+				},
+				"title_on_document": { "label": "Titolo presente sul documento" },
+				"date_and_place_author_as_on_document": { "label": "Data e luogo d'autrice" },
+				"date_author_normalised": { "label": "Datazione d'autrice normalizzata (aaaa-mm-dd)" }
+			},
+			"iiif": {
+				"urls_IIIF_images": { "label": "IIIF-Bilder-URLs" },
+				"url_IIIF_manifest": { "label": "IIIF Manifest" }
+			},
+			"tei": {
+				"id": { "label": "Identifier inediti" },
+				"suffix_version": { "label": "[missing] in 'Testi inediti'" },
+				"filename": { "label": "Identifier inediti" }
+			},
+			"crossReferences": {
+				"group_ids": { "label": "Identifier gruppo" },
+				"linked_documents": { "label": "Documenti collegati (ID)" }
+			},
+			"publication": {
+				"pub_type": { "label": "Stato di pubblicazione (version)" },
+				"pub_date": { "label": "[missing] in 'Testi inediti'" },
+				"pub_place": { "label": "[missing] in 'Testi inediti'" },
+				"pub_info": { "label": "[missing] in 'Testi inediti'" },
+				"other_editions": { "label": "[missing] in 'Testi inediti'" },
+				"other_translations": {
+					"label": "Traduzioni: titolo, autore/autrice e lingua originale; ev. edizione di riferimento"
+				}
+			},
+			"transcribus": {
+				"tif_files_to_edit": { "label": "Files da editare" },
+				"filename_first_facsimile": { "label": "Filename primo facsimile" },
+				"filename_last_facsimile": { "label": "Filename ultimo facsimile" }
+			},
+			"groups": {}
+		},
+		"audio": {
+			"name": "Documento audio",
+			"key_singular": "Documento audio",
+			"label_plural": "Documenti audio"
 		}
 	}
 }

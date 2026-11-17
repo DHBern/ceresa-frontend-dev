@@ -30,16 +30,9 @@ type TContentNotes = {
 
 type TLanguageKeys = 'it' | 'de' | 'fr';
 type TDocEdtypeKeys =
-	'in periodico' | 'in volume' | 'in giornale' | 'manoscritto' | 'dattiloscritto';
+	'in_periodico' | 'in_volume' | 'in_giornale' | 'manoscritto' | 'dattiloscritto';
 type TDocGenreKeys =
-	| 'Saggio o intervento'
-	| 'Altra prosa'
-	| 'Racconto'
-	| 'Traduzione'
-	| 'Dizionario'
-	| 'Poesia'
-	| 'Romanzo'
-	| 'Testo teatrale';
+	'saggio' | 'prosa' | 'racconto' | 'traduzione' | 'dizionario' | 'poesia' | 'romanzo' | 'teatrale';
 
 type TCrossRefDocs = {
 	posthum?: TPosthumKeys[];
@@ -67,13 +60,13 @@ export type TAudioChapters = {
 	time: number;
 };
 
-type TTextDocuments = {
+export type TTextDocuments = {
 	slug: string; //! NEW (@LLM: this is a redudant copy of the current TPosthumKeys, TPublishedKeys, TUnpublishedKeys)
 	metadata: {
 		type_genre: TDocGenreKeys;
 		type_editorial: TDocEdtypeKeys;
 		title_editorial: string;
-		date: { from: string; to: string }; //! new (@LLM: copy facsimile.date_author_normalised to "from" and "to")
+		date: { from: string; to: string };
 		language: TLanguageKeys;
 		keywords: TKeywordsKeys[];
 		observations: string;
@@ -92,13 +85,13 @@ type TTextDocuments = {
 		date_author_normalised?: string;
 	};
 	iiif: {
-		urls_IIIF_images?: string[]; //! NEW (@LLM: extract this from "manuscript.iiif_urls" in documents_old.json)
+		urls_IIIF_images?: string[];
 		url_IIIF_manifest: string;
 	};
 	tei: {
-		id: TPosthumKeys;
+		version_id: TPosthumKeys;
 		suffix_version?: string;
-		filename: TPosthumKeys; //! NEW (@LLM: this is identical to tei.id)
+		filename: TPosthumKeys;
 	};
 	crossReferences: {
 		group_ids: TSeqKeys[];
@@ -120,6 +113,9 @@ type TTextDocuments = {
 		tif_files_to_edit: string[];
 		filename_first_facsimile: string;
 		filename_last_facsimile: string;
+	};
+	translation?: {
+		filename: string;
 	};
 };
 export type TDocuments = {

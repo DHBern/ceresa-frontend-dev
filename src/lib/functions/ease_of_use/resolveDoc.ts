@@ -29,8 +29,8 @@ export type TResolvedAudio = {
 	item: TDocuments['documents']['audio'][TAudioKeys] | null;
 };
 
-export type TResolvedDoc =
-	TResolvedPosthum | TResolvedUnpublished | TResolvedPublished | TResolvedAudio;
+export type TResolvedTextDoc = TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
+export type TResolvedDoc = TResolvedTextDoc | TResolvedAudio;
 
 export function resolveDoc(
 	object: Record<TDocTypes, any> | null,

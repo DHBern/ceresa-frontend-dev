@@ -89,7 +89,7 @@
 				// img.onerror = () => console.warn(`Failed to load: ${imgURL}`);
 			});
 		}
-		const allImageUrls = [...sampleDocuments.unpublished.map((item) => item.imgURL)];
+		const allImageUrls = [...sampleDocuments.unpublished.map((ii) => ii.imgURL)];
 		preloadImages(allImageUrls);
 	});
 </script>
@@ -113,7 +113,7 @@
 		</div>
 
 		<!-- Main Menu without Submenues -->
-		{#each mainMenuWithoutSub as item (item)}
+		{#each mainMenuWithoutSub as ii (ii)}
 			<NavigationMenu.Item>
 				<NavigationMenu.Link
 					class={[
@@ -123,10 +123,10 @@
 						'data-[state=open]:bg-dark-70 data-[state=open]:shadow-mini',
 						'disabled:pointer-events-none disabled:opacity-50'
 					]}
-					href={item.path}
+					href={ii.path}
 				>
-					<span class="hidden lg:inline"> {item.nameLong} </span>
-					<span class="inline lg:hidden"> {item.nameShort} </span>
+					<span class="hidden lg:inline"> {ii.nameLong} </span>
+					<span class="inline lg:hidden"> {ii.nameShort} </span>
 				</NavigationMenu.Link>
 			</NavigationMenu.Item>
 		{/each}
@@ -235,13 +235,13 @@
 						</div>
 						<nav class="p-10 pt-0">
 							<ul class="flex flex-col gap-6 overflow-auto">
-								{#each Object.values(mainMenuWithSub) as item (item)}
+								{#each Object.values(mainMenuWithSub) as ii (ii)}
 									<li>
 										<h1 class="h4">
-											{@html item.nameLong}
+											{@html ii.nameLong}
 										</h1>
 										<ul class="my-2 flex flex-col gap-2">
-											{#each item.idsSub as idSub (idSub)}
+											{#each ii.idsSub as idSub (idSub)}
 												<li>
 													<a
 														href={subMenuInfo[idSub as keyof typeof subMenuInfo].path}
@@ -258,15 +258,15 @@
 										</ul>
 									</li>
 								{/each}
-								{#each Object.values(mainMenuWithoutSub) as item (item)}
+								{#each Object.values(mainMenuWithoutSub) as ii (ii)}
 									<li>
 										<a
-											href={item.path}
+											href={ii.path}
 											onclick={() => {
 												openStateMenu = false; // close Menu
 											}}
 										>
-											<h1 class="h4">{@html item.nameLong}</h1>
+											<h1 class="h4">{@html ii.nameLong}</h1>
 										</a>
 									</li>
 								{/each}
