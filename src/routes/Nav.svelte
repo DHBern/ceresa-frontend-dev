@@ -21,11 +21,11 @@
 		},
 		main3: { nameShort: 'Registri', nameLong: 'Registri', path: resolve('/register') },
 		main4: {
-			nameShort: 'Ceresa',
-			nameLong: 'Su Ceresa',
+			nameShort: 'Alice Ceresa',
+			nameLong: 'Alice Ceresa',
 			path: resolve('/ceresa')
 		},
-		main5: { nameShort: 'Progetto', nameLong: 'Sul progetto', path: resolve('/project') }
+		main5: { nameShort: 'Progetto', nameLong: 'Progetto', path: resolve('/project') }
 	};
 
 	const subMenuInfo = {

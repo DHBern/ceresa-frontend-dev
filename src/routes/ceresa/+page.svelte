@@ -1,5 +1,5 @@
 <div class="mx-auto mt-13 flex w-full max-w-300 flex-col justify-center">
-	<h2 class="h2">Su Alice Ceresa...</h2>
+	<h2 class="h2">Alice Ceresa</h2>
 	<p>
 		Alice Ceresa (Basilea, 25 gennaio 1923 - Roma, 22 dicembre 2001) trascorre l’infanzia tra
 		Basilea e Bellinzona, dove, per volontà paterna, compie studi commerciali e, per passione,
