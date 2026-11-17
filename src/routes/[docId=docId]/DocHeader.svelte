@@ -248,7 +248,7 @@
 								<h5 class="h5">Riferimenti presenti nel testo</h5>
 								<table>
 									<tbody class="flex flex-col gap-2" data-dom="crossRef">
-										{#each ['people', 'places', 'events', 'orgs', 'bibls', 'keywords'] as const as type (type)}
+										{#each ['people', 'places', 'orgs', 'bibls'] as const as type (type)}
 											{#if crossRef.cited_entities?.[type]?.length}
 												{@render metadataEntryWithRegLink(
 													dictReg[type].label_plural,
@@ -272,7 +272,7 @@
 								</h5>
 								<table>
 									<tbody class="flex flex-col gap-2" data-dom="crossRef">
-										{#each ['people', 'places', 'events', 'orgs', 'bibls', 'keywords'] as const as type (type)}
+										{#each ['people', 'places', 'orgs', 'bibls'] as const as type (type)}
 											{#if crossRef.linked_entities?.[type]?.length}
 												{@render metadataEntryWithRegLink(
 													dictReg[type].label_plural,
@@ -376,9 +376,6 @@
 		:global([data-entitytype='places']) {
 			@apply bg-(--color-rs-place-20);
 		}
-		:global([data-entitytype='events']) {
-			@apply bg-(--color-rs-event-20);
-		}
 		:global([data-entitytype='orgs']) {
 			@apply bg-(--color-rs-org-20);
 		}
@@ -389,9 +386,6 @@
 		}
 		:global([data-entitytype='bibls']) {
 			@apply bg-(--color-rs-bibl-20);
-		}
-		:global([data-entitytype='keywords']) {
-			@apply bg-(--color-rs-keyword-20);
 		}
 	}
 </style>

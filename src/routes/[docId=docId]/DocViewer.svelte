@@ -93,12 +93,12 @@
 	type TabItem = { value: string; label: string };
 
 	const tabItems = $derived.by<TabItem[]>(() => {
-		const items: TabItem[] = [{ value: 'LF', label: 'Lettura scorrevole' }];
+		const items: TabItem[] = [{ value: 'LF', label: 'Modalità di lettura' }];
 		if (resolvedDoc.docType !== 'published') {
-			items.push({ value: 'DF', label: 'Vista diplomatica' });
+			items.push({ value: 'DF', label: 'Trascrizione diplomatica' });
 		}
 		if (ceteiDataTranslation) {
-			items.push({ value: 'TRLF', label: 'Vista tradotta' });
+			items.push({ value: 'TRLF', label: 'Traduzione' });
 		}
 		return items;
 	});

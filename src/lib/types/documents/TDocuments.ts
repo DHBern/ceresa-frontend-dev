@@ -14,10 +14,8 @@ import { type TAudioGroups } from './TAudioGroups';
 // From Register
 import { type TPeopleKeys } from '../register/TPeopleKeys';
 import { type TPlacesKeys } from '../register/TPlacesKeys';
-import { type TEventsKeys } from '../register/TEventsKeys';
 import { type TOrgsKeys } from '../register/TOrgsKeys';
 import { type TBiblsKeys } from '../register/TBiblsKeys';
-import { type TKeywordsKeys } from '../register/TKeywordsKeys';
 import type { TRegKeysFlat, TRegTypes } from '../register/TRegister';
 import type { TSeqKeys } from '../TSequences';
 
@@ -43,10 +41,8 @@ type TCrossRefDocs = {
 type TCrossRefEntities = {
 	people?: TPeopleKeys[];
 	places?: TPlacesKeys[];
-	events?: TEventsKeys[];
 	orgs?: TOrgsKeys[];
 	bibls?: TBiblsKeys[];
-	keywords?: TKeywordsKeys[];
 };
 
 type TRendition = {
@@ -68,7 +64,6 @@ export type TTextDocuments = {
 		title_editorial: string;
 		date: { from: string; to: string };
 		language: TLanguageKeys;
-		keywords: TKeywordsKeys[];
 		observations: string;
 	};
 	archival: {

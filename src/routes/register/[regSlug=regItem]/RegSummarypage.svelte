@@ -1,11 +1,9 @@
 <script lang="ts" generics="T extends TRegTypes">
 	import { asset, resolve } from '$app/paths';
-	import { printDateRange, printBirthRange } from '$lib/functions/ease_of_use/dateFunctions';
+	import { printBirthRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import type {
 		TRegAttrsBibls,
-		TRegAttrsEvents,
-		TRegAttrsKeywords,
 		TRegAttrsMap,
 		TRegAttrsOrgs,
 		TRegAttrsPeople,
@@ -116,8 +114,6 @@
 		<a class="hyperlink inline-block" href={value} target="_blank" rel="noopener noreferrer"
 			>{value}</a
 		>
-	{:else if attKey === 'date'}
-		{printDateRange(value.from, value.to)}
 	{:else if attKey === 'orgIds' && value}
 		<a
 			class="hyperlink inline-block"
@@ -226,15 +222,6 @@
 			regAttrsTyped.gndNumber && 'gndNumber',
 			'note'
 		])}
-	{:else if docType === 'keywords'}
-		{@const regAttrsTyped = regAttributes as Record<TRegAttrsKeywords, any>}
-		<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">{regAttrsTyped.name}</h1>
-		{@render MetadataTable(['type', regAttrsTyped.gndNumber && 'gndNumber', 'note'])}
-	{:else if docType === 'events'}
-		{@const regAttrsTyped = regAttributes as Record<TRegAttrsEvents, any>}
-		<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">{regAttrsTyped.name}</h1>
-		{@render MetadataTable([regAttrsTyped.date && 'date', 'note'])}
-		{@render MapPreview(regMapPreviewPath?.img_path)}
 	{:else if docType === 'bibls'}
 		{@const regAttrsTyped = regAttributes as Record<TRegAttrsBibls, any>}
 		<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">{regAttrsTyped.name}</h1>

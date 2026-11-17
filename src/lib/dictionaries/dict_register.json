@@ -12,7 +12,7 @@
 			"label_plural": "Persone",
 			"attributes": {
 				"name": { "label": "Nome" },
-				"firstname": { "label": "Nome di battesimo" },
+				"firstname": { "label": "Nome" },
 				"lastname": { "label": "Cognome" },
 				"nameVariants": { "label": "Varianti del nome" },
 				"gndNumber": { "label": "Numero GND" },
@@ -81,19 +81,6 @@
 				}
 			}
 		},
-		"events": {
-			"register_name": "Registro dei viaggi e dei soggiorni",
-			"key_singular": "event",
-			"label_plural": "Viaggi e soggiorni",
-			"attributes": {
-				"name": { "label": "Nome" },
-				"type": { "label": "Categoria" },
-				"date": { "label": "Data" },
-				"note": { "label": "Commenti" },
-				"docs": { "label": "Documenti collegati" }
-			},
-			"groups": {}
-		},
 		"orgs": {
 			"register_name": "Registro delle organizzazioni",
 			"key_singular": "org",
@@ -118,27 +105,14 @@
 			}
 		},
 		"bibls": {
-			"register_name": "Registro bibliografico",
+			"register_name": "Registro delle opere",
 			"key_singular": "bibl",
-			"label_plural": "Bibliografia",
+			"label_plural": "Opere",
 			"attributes": {
 				"name": { "label": "Nome" },
 				"type": { "label": "Categoria" },
 				"authorIds": { "label": "Autori" },
 				"pubDate": { "label": "Data di pubblicazione" },
-				"gndNumber": { "label": "Numero GND" },
-				"note": { "label": "Commenti" },
-				"docs": { "label": "Documenti collegati" }
-			},
-			"groups": {}
-		},
-		"keywords": {
-			"register_name": "Registro delle parole chiave",
-			"key_singular": "keyword",
-			"label_plural": "Parole chiave",
-			"attributes": {
-				"name": { "label": "Nome" },
-				"type": { "label": "Categoria" },
 				"gndNumber": { "label": "Numero GND" },
 				"note": { "label": "Commenti" },
 				"docs": { "label": "Documenti collegati" }

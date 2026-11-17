@@ -234,8 +234,9 @@
 										window.scrollTo({ top: 0, behavior: 'auto' });
 									}}
 									class={['preset-btn-round --sm', !selectedFilter && '--active']}
-									>Alle Kategorien</button
 								>
+									Tutte le categorie
+								</button>
 								{#each allGroupKeys as groupKey (groupKey)}
 									<!-- //! Fix this any type -->
 									{@const groupLabel = (regDict.groups as any)[groupKey]?.label_plural}
@@ -329,11 +330,11 @@
 	{#if registerGroupItems.value}
 		{#each filteredAndGroupedData as block, blockIdx (block)}
 			{@const firstItem = block[0]?.[1]}
+			<!-- //! [sortBy] may fail after restructuring register data -->
 			{@const autoCatLabel =
 				hasSortControls && sortBy === 'date'
 					? firstItem?.metadata.date?.from?.slice(0, 4)
-					: normalizeChars(firstItem?.[sortBy]?.[0]?.toUpperCase())} //! [sortBy] may fail after restructuring
-			register data
+					: normalizeChars(firstItem?.[sortBy]?.[0]?.toUpperCase())}
 
 			{#if autoCatLabel}
 				<!-- Header -->
@@ -384,7 +385,7 @@
 								: resolve(`/register/${key}`)}
 						>
 							<span class="overflow-hidden whitespace-normal">
-								{item.metadata.title_editorial}
+								{item.name}
 							</span>
 						</a>
 					{/each}

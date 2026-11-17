@@ -58,7 +58,7 @@
 	</div>
 
 	<div id="links_prototypes" class="mx-auto mt-13 w-full max-w-300">
-		<h2 class="h2">Documenti appartenenti al prototipo</h2>
+		<h2 class="h2">Prototipi</h2>
 
 		<h4 class="h4 mt-10 tracking-wide">Opere postume</h4>
 		<ul class="mt-2 divide-y divide-neutral-200">

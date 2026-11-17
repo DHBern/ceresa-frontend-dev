@@ -3,8 +3,6 @@
 // ------------------------------------------------------------
 
 import type { TBiblsKeys } from '$lib/types/register/TBiblsKeys';
-import type { TEventsKeys } from '$lib/types/register/TEventsKeys';
-import type { TKeywordsKeys } from '$lib/types/register/TKeywordsKeys';
 import type { TOrgsKeys } from '$lib/types/register/TOrgsKeys';
 import type { TPeopleKeys } from '$lib/types/register/TPeopleKeys';
 import type { TPlacesKeys } from '$lib/types/register/TPlacesKeys';
@@ -22,11 +20,6 @@ export type TResolvedRegister =
 			item: TRegister['register']['places'][TPlacesKeys] | null;
 	  }
 	| {
-			regKey: TEventsKeys;
-			regType: 'events';
-			item: TRegister['register']['events'][TEventsKeys] | null;
-	  }
-	| {
 			regKey: TOrgsKeys;
 			regType: 'orgs';
 			item: TRegister['register']['orgs'][TOrgsKeys] | null;
@@ -35,11 +28,6 @@ export type TResolvedRegister =
 			regKey: TBiblsKeys;
 			regType: 'bibls';
 			item: TRegister['register']['bibls'][TBiblsKeys] | null;
-	  }
-	| {
-			regKey: TKeywordsKeys;
-			regType: 'keywords';
-			item: TRegister['register']['keywords'][TKeywordsKeys] | null;
 	  };
 
 export function resolveReg(
@@ -59,24 +47,11 @@ export function resolveReg(
 			regType: 'places',
 			item: object?.places[regKey] || null
 		};
-	} else if (regKey.includes('event_')) {
-		return {
-			regKey: regKey as TEventsKeys,
-			regType: 'events',
-			item: object?.events[regKey] || null
-		};
 	} else if (regKey.includes('organisation_')) {
 		return {
 			regKey: regKey as TOrgsKeys,
 			regType: 'orgs',
 			item: object?.orgs[regKey] || null
-		};
-	} else if (regKey.includes('keyword_')) {
-		// String only contains numbers and "-"
-		return {
-			regKey: regKey as TKeywordsKeys,
-			regType: 'keywords',
-			item: object?.keywords[regKey] || null
 		};
 	} else if (regKey.includes('bibl_')) {
 		return {

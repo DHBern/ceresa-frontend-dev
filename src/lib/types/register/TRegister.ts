@@ -1,18 +1,14 @@
 // Keys
 import { type TPlacesKeys } from './TPlacesKeys';
 import { type TPeopleKeys } from './TPeopleKeys';
-import { type TEventsKeys } from './TEventsKeys';
-import { type TKeywordsKeys } from './TKeywordsKeys';
 import { type TOrgsKeys } from './TOrgsKeys';
 import { type TBiblsKeys } from './TBiblsKeys';
 
 // Types
 import { type TPeopleGroups } from './TPeopleGroups';
 import { type TPlacesGroups } from './TPlacesGroups';
-import { type TEventsGroups } from './TEventsGroups';
 import { type TOrgsGroups } from './TOrgsGroups';
 import { type TBiblsGroups } from './TBiblsGroups';
-import { type TKeywordsGroups } from './TKeywordsGroups';
 
 // From Documents
 import { type TUnpublishedKeys } from '$lib/types/documents/TUnpublishedKeys';
@@ -68,30 +64,12 @@ export type TRegister = {
 				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
 			};
 		};
-		events: {
-			[key in TEventsKeys]: {
-				name: string | null;
-				type: TEventsGroups | null;
-				date?: { from: string | null; to: string | null };
-				note: string | null;
-				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
-			};
-		};
 		bibls: {
 			[key in TBiblsKeys]: {
 				name: string | null;
 				type: TBiblsGroups | null;
 				authorIds: TPeopleKeys[] | null;
 				pubDate: string | null;
-				gndNumber?: string | null;
-				note?: string | null;
-				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
-			};
-		};
-		keywords: {
-			[key in TKeywordsKeys]: {
-				name: string | null;
-				type: TKeywordsGroups | null;
 				gndNumber?: string | null;
 				note?: string | null;
 				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
@@ -129,10 +107,8 @@ export type TRegDict = {
 	dict_register: {
 		people: RegEntity<TRegAttrsPeople, TPeopleGroups>;
 		places: RegEntity<TRegAttrsPlaces, TPlacesGroups>;
-		events: RegEntity<TRegAttrsEvents, TEventsGroups>;
 		orgs: RegEntity<TRegAttrsOrgs, TOrgsGroups>;
 		bibls: RegEntity<TRegAttrsBibls, TBiblsGroups>;
-		keywords: RegEntity<TRegAttrsKeywords, TKeywordsGroups>;
 	};
 };
 
@@ -142,51 +118,41 @@ export type TRegTypes = keyof TRegister['register'];
 
 // Key Set
 export type TRegKeysFlat =
-	TPeopleKeys | TPlacesKeys | TEventsKeys | TOrgsKeys | TBiblsKeys | TKeywordsKeys;
+	TPeopleKeys | TPlacesKeys | TOrgsKeys | TBiblsKeys;
 
 export type TRegKeysMap = {
 	people: TPeopleKeys;
 	places: TPlacesKeys;
-	events: TEventsKeys;
 	orgs: TOrgsKeys;
 	bibls: TBiblsKeys;
-	keywords: TKeywordsKeys;
 };
 
 // Attribute Sets
 export type TRegAttrsPeople = keyof TRegister['register']['people'][TPeopleKeys];
 export type TRegAttrsPlaces = keyof TRegister['register']['places'][TPlacesKeys];
-export type TRegAttrsEvents = keyof TRegister['register']['events'][TEventsKeys];
 export type TRegAttrsOrgs = keyof TRegister['register']['orgs'][TOrgsKeys];
 export type TRegAttrsBibls = keyof TRegister['register']['bibls'][TBiblsKeys];
-export type TRegAttrsKeywords = keyof TRegister['register']['keywords'][TKeywordsKeys];
 
 export type TRegAttrs =
 	| TRegAttrsPeople
 	| TRegAttrsPlaces
-	| TRegAttrsEvents
 	| TRegAttrsOrgs
 	| TRegAttrsBibls
-	| TRegAttrsKeywords;
 
 export type TRegAttrsMap = {
 	people: TRegAttrsPeople;
 	places: TRegAttrsPlaces;
-	events: TRegAttrsEvents;
 	orgs: TRegAttrsOrgs;
 	bibls: TRegAttrsBibls;
-	keywords: TRegAttrsKeywords;
 };
 
 // Group Set
 export type TRegGroupsFlat =
-	TPeopleGroups | TPlacesGroups | TEventsGroups | TOrgsGroups | TBiblsGroups | TKeywordsGroups;
+	TPeopleGroups | TPlacesGroups | TOrgsGroups | TBiblsGroups;
 
 export type TRegGroupsMap = {
 	people: TPeopleGroups;
 	places: TPlacesGroups;
-	events: TEventsGroups;
 	orgs: TOrgsGroups;
 	bibls: TBiblsGroups;
-	keywords: TKeywordsGroups;
 };

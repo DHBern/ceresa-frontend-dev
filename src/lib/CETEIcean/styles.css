@@ -701,14 +701,6 @@ tei-anchor {
 			background-color: var(--color-rs-bibl);
 			color: white;
 		}
-		&[type='event'] {
-			background-color: var(--color-rs-event);
-			color: white;
-		}
-		&[type='keyword'] {
-			background-color: var(--color-rs-keyword);
-			color: white;
-		}
 	}
 	tei-rs.active:focus {
 		border: none;
@@ -745,12 +737,6 @@ tei-anchor {
 		}
 		&[type='bibl'] {
 			border-bottom-color: var(--color-rs-bibl);
-		}
-		&[type='event'] {
-			border-bottom-color: var(--color-rs-event);
-		}
-		&[type='keyword'] {
-			border-bottom-color: var(--color-rs-keyword);
 		}
 	}
 }

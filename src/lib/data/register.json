@@ -440,7 +440,6 @@
 				"docs": null
 			}
 		},
-		"events": {},
 		"orgs": {
 			"organisation_0001": {
 				"name": "Longanesi",
@@ -608,14 +607,6 @@
 				"qid": "",
 				"note": "Nel \"Tesoretto\" del 1942",
 				"docs": null
-			}
-		},
-		"keywords": {
-			"keyword_0001": {
-				"name": "Aberglaube",
-				"type": [],
-				"gndNumber": "4000096-5",
-				"docs": ["unpublished_0130", "unpublished_0166"]
 			}
 		}
 	}

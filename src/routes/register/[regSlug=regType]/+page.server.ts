@@ -1,8 +1,7 @@
 import type { EntryGenerator } from './$types';
 import { register as reg } from '$lib/data/register.json';
-import type { TRegister, TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
+import type { TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
 import type { PageServerLoad } from './$types';
-import type { TEventsKeys } from '$lib/types/register/TEventsKeys';
 
 export const entries: EntryGenerator = () => {
 	const keys = Object.keys(reg).map((firstKey) => {
@@ -25,7 +24,6 @@ export const load: PageServerLoad = async ({ parent }) => {
 			name?: string;
 			lastname?: string;
 			type?: string;
-			date?: TRegister['register']['events'][TEventsKeys]['date'];
 		};
 
 		const allowedKeys: Array<keyof TPartialRegEntry> = ['name', 'lastname', 'type', 'date'];

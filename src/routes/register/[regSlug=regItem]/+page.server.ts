@@ -6,13 +6,11 @@ import { map_previews } from '$lib/data/map_previews.json';
 import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
 import type { TDocKeys, TDocuments, TTextDocKeys, TTextDocuments } from '$lib/types/documents/TDocuments';
 import type { TRegister, TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
-import type { TEventsKeys } from '$lib/types/register/TEventsKeys';
 import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
 import type { TPeopleKeys } from '$lib/types/register/TPeopleKeys';
 import type { TPlacesKeys } from '$lib/types/register/TPlacesKeys';
 import type { TOrgsKeys } from '$lib/types/register/TOrgsKeys';
 import type { TBiblsKeys } from '$lib/types/register/TBiblsKeys';
-import type { TKeywordsKeys } from '$lib/types/register/TKeywordsKeys';
 
 const allDocs = allDocsRaw as TDocuments['documents'];
 
@@ -54,7 +52,6 @@ export type TPartialRegEntry = {
 	name?: string;
 	lastname?: string;
 	type?: string;
-	date?: TRegister['register']['events'][TEventsKeys]['date'];
 };
 
 export const load: PageServerLoad = async ({ parent }) => {
@@ -65,10 +62,8 @@ export const load: PageServerLoad = async ({ parent }) => {
 		//! FIX: should be generalised
 		...(Object.keys(reg.people) as TPeopleKeys[]),
 		...(Object.keys(reg.places) as TPlacesKeys[]),
-		...(Object.keys(reg.events) as TEventsKeys[]),
 		...(Object.keys(reg.orgs) as TOrgsKeys[]),
-		...(Object.keys(reg.bibls) as TBiblsKeys[]),
-		...(Object.keys(reg.keywords) as TKeywordsKeys[])
+		...(Object.keys(reg.bibls) as TBiblsKeys[])
 	];
 	const resolvedReg = resolveReg(reg, regSlug as TRegKeysFlat);
 	const isValidKeySlug = regType && regSlug && regTypeIndex.includes(regSlug as any);
@@ -108,7 +103,7 @@ export const load: PageServerLoad = async ({ parent }) => {
 		const fullRegOfType = reg[regType];
 		if (!fullRegOfType) return {};
 
-		const allowedKeys: Array<keyof TPartialRegEntry> = ['name', 'lastname', 'type', 'date'];
+		const allowedKeys: Array<keyof TPartialRegEntry> = ['name', 'lastname', 'type'];
 
 		return Object.fromEntries(
 			Object.entries(fullRegOfType).map(([key, entry]) => [
