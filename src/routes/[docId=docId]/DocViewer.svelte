@@ -30,7 +30,7 @@
 	}: {
 		docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null;
 		ceteiData: ProcessedTEI;
-		ceteiDataTranslation: ProcessedTEI;
+		ceteiDataTranslation: ProcessedTEI | null;
 		resolvedDoc: TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
 		classesContainer: string;
 		params: any;
@@ -187,13 +187,13 @@
 
 			<!-- Snippet: Text for Main and Secondary -->
 			{#snippet Text(
-				textData: ProcessedTEI,
+				textData: ProcessedTEI | null,
 				showText: boolean,
 				showThumbs: boolean,
 				isFluid: boolean
 			)}
 				<div in:fade={{ delay: DELAY }} class="w-full">
-					{#if showText}
+					{#if showText && textData}
 						{#if isFluid}
 							<TextFluid
 								{textData}
