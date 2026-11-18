@@ -1,5 +1,6 @@
 <script lang="ts" generics="T extends TRegTypes">
 	import { asset, resolve } from '$app/paths';
+	import { docPath } from '$lib/functions/ease_of_use/docPath';
 	import { printBirthRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import type {
@@ -155,7 +156,7 @@
 	<a
 		data-sveltekit-preload-data="tap"
 		data-sveltekit-preload-code="hover"
-		href={resolve(`/${doc.docId}?mode=DF`)}
+		href={`${docPath(doc.docId)}?mode=DF`}
 		class="min-h-27 w-70 rounded-thumbbox p-1 hover:bg-background-hover"
 		target="blank"
 		rel="noopener noreferrer"

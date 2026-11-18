@@ -25,21 +25,25 @@ import { unpublished_keys } from '$lib/data/unpublished_keys.json';
 import { published_keys } from '$lib/data/published_keys.json';
 
 export const entries: EntryGenerator = () => {
-	const posthumKeyObjects = posthum_keys.map((key) => {
-		return { docId: key };
-	});
-	const unpublishedKeyObjects = unpublished_keys.map((key) => {
-		return { docId: key };
-	});
-	const publishedKeyObjects = published_keys.map((key) => {
-		return { docId: key };
-	});
+	const toEntry = (key: string) => ({ docId: encodeURIComponent(key) });
+	const posthumKeyObjects = posthum_keys.map(toEntry);
+	const unpublishedKeyObjects = unpublished_keys.map(toEntry);
+	const publishedKeyObjects = published_keys.map(toEntry);
 	return [...posthumKeyObjects, ...unpublishedKeyObjects, ...publishedKeyObjects];
 };
 
+const docIdByParam = new Map(
+	[...posthum_keys, ...unpublished_keys, ...published_keys].flatMap((key) => [
+		[key, key],
+		[encodeURIComponent(key), key],
+		[encodeURI(encodeURIComponent(key)), key]
+	])
+);
+
 export const load: PageServerLoad = async ({ params, fetch }) => {
 	// Resolve current document
-	const resolvedDoc = resolveDoc(allDocs, params.docId as TDocKeys) as
+	const docId = docIdByParam.get(params.docId) ?? params.docId;
+	const resolvedDoc = resolveDoc(allDocs, docId as TDocKeys) as
 		TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
 
 	// Resolve cross-register references
