@@ -3,6 +3,7 @@
 	import CETEI from 'CETEIcean';
 	import { behaviors, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
 	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
+	import { SEARCH_PARAMS_DEFAULTS } from './schemas';
 
 	let containerMaintext: HTMLElement;
 	let containerTEI: HTMLElement;
@@ -138,8 +139,7 @@
 					<button
 						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[80px] 2xl:max-w-[90px]"
 						onclick={() => {
-							params.mode = 'DF';
-							params.page = thumb.page;
+							params.update({ mode: 'DF', flow: SEARCH_PARAMS_DEFAULTS.flow, page: thumb.page });
 						}}
 					>
 						<div class="w-full flex-col items-center justify-center">

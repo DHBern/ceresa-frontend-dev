@@ -18,6 +18,8 @@
 	import TextFluid from './TextFluid.svelte';
 	import DrawerRegNotes from './DrawerRegNotes.svelte';
 	import { isBreakpointBelow } from '$lib/functions/ease_of_use/breakpoints.svelte';
+	import type { ReturnUseSearchParams } from 'runed/kit';
+	import { SEARCH_PARAMS_DEFAULTS, type schema } from './schemas';
 
 	let {
 		docItem,
@@ -32,14 +34,14 @@
 		ceteiDataTranslation: ProcessedTEI | null;
 		resolvedDoc: TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
 		classesContainer: string;
-		params: any;
+		params: ReturnUseSearchParams<typeof schema>;
 	} = $props();
 
 	let view = $derived.by(() => {
 		switch (params.mode) {
 			case 'DF':
 				return {
-					isFluid: false,
+					isFluid: params.flow === 'fluid',
 					showFac: true,
 					showMain: true,
 					showSecond: false,
@@ -67,7 +69,7 @@
 			case 'LF':
 			default:
 				return {
-					isFluid: true,
+					isFluid: params.flow !== 'paged',
 					showFac: false,
 					showMain: true,
 					showSecond: false,
@@ -76,6 +78,17 @@
 				};
 		}
 	});
+
+	let canToggleFlow = $derived(params.mode === 'LF' || params.mode === 'DF');
+	let flowLabel = $derived(
+		view.isFluid ? 'Passa alla visualizzazione per pagine' : 'Passa allo scorrimento continuo'
+	);
+
+	function toggleFlow() {
+		const nextFlow = view.isFluid ? 'paged' : 'fluid';
+		const defaultFlow = params.mode === 'DF' ? 'paged' : 'fluid';
+		params.update({ flow: nextFlow === defaultFlow ? SEARCH_PARAMS_DEFAULTS.flow : nextFlow });
+	}
 
 	let nColsFit = $state(4);
 	let nColsVisible = $derived(
@@ -95,13 +108,14 @@
 	let facsimileWidth = '50vw';
 
 	let urls = $derived(docItem?.iiif.urls_IIIF_images ?? []);
-	let url = $derived(urls[params.page - 1]);
+	let currentPage = $derived(params.page ?? 1);
+	let url = $derived(urls[currentPage - 1]);
 	const TRANSITION_LENGTH = 100;
 	const DELAY = 200;
 	const isGallerySticky = false; //! temp
 
 	// View Toggle
-	type TabItem = { value: string; label: string };
+	type TabItem = { value: typeof params.mode; label: string };
 
 	const tabItems = $derived.by<TabItem[]>(() => {
 		const items: TabItem[] = [{ value: 'LF', label: 'Modalità di lettura' }];
@@ -114,6 +128,13 @@
 		return items;
 	});
 
+	function changeMode(value: string) {
+		const tab = tabItems.find((item) => item.value === value);
+		if (tab && tab.value !== params.mode) {
+			params.update({ mode: tab.value, flow: SEARCH_PARAMS_DEFAULTS.flow });
+		}
+	}
+
 	function positionClass(index: number, total: number): string {
 		if (total < 2) return '--single';
 		if (index === 0) return '--left';
@@ -125,7 +146,11 @@
 <div class={classesContainer}>
 	<!-- Toggle -->
 	<div class="relative flex h-full w-full flex-col items-center gap-6">
-		<Tabs.Root class="sticky top-10 z-900 max-w-260 xl:static" bind:value={params.mode}>
+		<Tabs.Root
+			class="sticky top-10 z-900 max-w-260 xl:static"
+			value={params.mode}
+			onValueChange={changeMode}
+		>
 			<Tabs.List
 				class="preset-tabs-list --lg grid text-sm"
 				style={`grid-template-columns: repeat(${tabItems.length}, minmax(0, 1fr))`}
@@ -142,18 +167,30 @@
 		</Tabs.Root>
 	</div>
 
-	<!-- Gallery -->
+	<!-- Gallery and text layout control -->
 	<aside
 		class={[
-			'z-20 w-full overflow-hidden',
+			'z-20 flex w-full items-center gap-2 overflow-hidden',
 			isGallerySticky && 'sticky top-0',
-			view.isFluid ? 'h-0' : '200px'
+			view.isFluid && 'justify-end'
 		]}
 	>
 		{#if !view.isFluid}
-			<div in:fade={{ delay: DELAY }}>
+			<div class="min-w-0 flex-1" in:fade={{ delay: DELAY }}>
 				<Gallery docItem={resolvedDoc.item} {params} />
 			</div>
+		{/if}
+		{#if canToggleFlow}
+			<button
+				type="button"
+				class="preset-btn-round --square --ghost mx-2 shrink-0"
+				aria-label={flowLabel}
+				title={flowLabel}
+				onclick={toggleFlow}
+			>
+				<i class={['fa-solid', view.isFluid ? 'fa-page fa-file' : 'fa-scroll']} aria-hidden="true"
+				></i>
+			</button>
 		{/if}
 	</aside>
 
@@ -209,7 +246,7 @@
 								classes="mx-auto w-full max-w-300 md:max-w-[1300px]"
 							/>
 						{:else}
-							<TextPaged {textData} page={params.page} {openDrawer} />
+							<TextPaged {textData} page={currentPage} {openDrawer} />
 						{/if}
 					{/if}
 				</div>

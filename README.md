@@ -29,6 +29,8 @@ npm run dev
 npm run dev -- --open
 ```
 
+On document pages, `mode=LF` defaults to continuous scrolling and `mode=DF` defaults to a paged layout. The button next to the gallery toggles the layout without changing the selected tab. The URL stores non-default layouts as `flow=fluid` or `flow=paged`; changing tabs clears that override. Translation (`TRLF`) is always continuous.
+
 ## Building
 
 To create a production version of your app:
