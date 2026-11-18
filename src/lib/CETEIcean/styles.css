@@ -634,7 +634,7 @@ span.note-mark.active {
 }
 
 /* -------------------------------- */
-/* Footnotes */
+/* Comments */
 
 .mode-lf {
 	tei-text span.footnote {
@@ -672,7 +672,8 @@ span.note-mark.active {
 	}
 }
 
-/* Hide Hidden Notes */
+/* -------------------------------- */
+/* Hidden Notes */
 tei-note[type='hidden'] {
 	display: none;
 }
