@@ -117,14 +117,22 @@ export interface TEIPage {
 	facs: string | null;
 }
 
+export function getTextPageBreaks(container: ParentNode): HTMLElement[] {
+	return Array.from(container.querySelectorAll<HTMLElement>('tei-text tei-pb')).filter(
+		(el) => !el.closest('cetei-original')
+	);
+}
+
 export function collectPageMetadata(container: ParentNode): TEIPage[] {
-	return Array.from(container.querySelectorAll('tei-text tei-pb'))
-		.filter((el) => !el.closest('cetei-original'))
-		.map((el, index) => ({
-			page: index + 1,
-			n: el.getAttribute('n'),
-			facs: el.getAttribute('facs')?.replace(/\/info\.json$/, '') ?? null
-		}));
+	return getTextPageBreaks(container).map((el, index) => ({
+		page: index + 1,
+		n: el.getAttribute('n'),
+		facs:
+			el
+				.getAttribute('facs')
+				?.trim()
+				.replace(/\/info\.json$/, '') || null
+	}));
 }
 
 // Extract a single page from the serialized CETEI output by running page index.
@@ -137,7 +145,7 @@ export function extractPage(ceteiSerialized: string, pageIndex: number): string 
 	const doc = parser.parseFromString(ceteiSerialized, 'text/html');
 
 	// Collect all <tei-pb> elements in document order
-	const pageBreaks = Array.from(doc.querySelectorAll('tei-pb'));
+	const pageBreaks = getTextPageBreaks(doc);
 
 	if (!pageBreaks.length) {
 		console.warn('No <tei-pb> elements found. Returning full content.');

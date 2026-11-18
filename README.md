@@ -33,7 +33,7 @@ On document pages, `mode=LF` defaults to continuous scrolling and `mode=DF` defa
 
 Switching DF from paged to continuous scrolls to the current `page`. In continuous DF, clicking a small facsimile updates the large facsimile without changing the text's scroll position. In LF, a small facsimile still opens its page in paged DF.
 
-Thumbnail labels use the corresponding TEI `<pb n="...">` values cached during TEI processing, falling back to the running page number when no label is supplied. The `page` URL parameter remains a one-based running index, even for Roman numerals or repeated page labels.
+The document viewer uses TEI `<pb>` order for the text, gallery, and large facsimile. Thumbnail labels come from `@n` and images from `@facs`, both cached during TEI processing. A missing label falls back to the running page number; a missing image does not shift later pages or fall back to `documents.json`. The `page` URL parameter remains a one-based running index.
 
 ## Building
 

@@ -109,9 +109,8 @@
 	let widthFacsimileLg = '1000px';
 	let facsimileWidth = '50vw';
 
-	let urls = $derived(docItem?.iiif.urls_IIIF_images ?? []);
 	let currentPage = $derived(params.page ?? 1);
-	let url = $derived(urls[currentPage - 1]);
+	let url = $derived(ceteiData.pages[currentPage - 1]?.facs);
 	const TRANSITION_LENGTH = 100;
 	const DELAY = 200;
 	const isGallerySticky = false; //! temp
@@ -187,13 +186,14 @@
 	{/if}
 
 	<!-- Gallery -->
-	<aside class={['z-20 w-full overflow-hidden', isGallerySticky && 'sticky top-0']}>
-		{#if !view.isFluid}
-			<div in:fade={{ delay: DELAY }}>
-				<Gallery docItem={resolvedDoc.item} pages={ceteiData.pages} {params} />
-			</div>
-		{/if}
-	</aside>
+	{#if !view.isFluid && ceteiData.pages.length}
+		<aside
+			class={['z-20 w-full overflow-hidden', isGallerySticky && 'sticky top-0']}
+			in:fade={{ delay: DELAY }}
+		>
+			<Gallery pages={ceteiData.pages} {params} />
+		</aside>
+	{/if}
 
 	<div
 		class={[
@@ -224,7 +224,7 @@
 				class="sticky block h-[96vh] w-full shrink flex-col gap-4 overflow-hidden rounded-xl px-5 transition-colors duration-300 hover:bg-muted-foreground/30"
 				style="top: 2vh"
 			>
-				{#if view.showFac && urls.length}
+				{#if view.showFac && ceteiData.pages.length}
 					<IIIF_Viewer {url} />
 				{/if}
 			</aside>

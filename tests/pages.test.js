@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { JSDOM } from 'jsdom';
-import { collectPageMetadata } from '../src/lib/CETEIcean/behaviors.ts';
+import { collectPageMetadata, extractPage } from '../src/lib/CETEIcean/behaviors.ts';
 
 test('page metadata preserves TEI labels independently from running page indices', () => {
 	const { document } = new JSDOM(`
@@ -31,4 +31,27 @@ test('page metadata excludes non-text and CETEI original page breaks', () => {
 	`).window;
 
 	assert.deepEqual(collectPageMetadata(document), [{ page: 1, n: '3', facs: null }]);
+});
+
+test('a page with no facsimile keeps its place in the paged transcription', (t) => {
+	const { window } = new JSDOM();
+	const previousParser = Object.getOwnPropertyDescriptor(globalThis, 'DOMParser');
+	Object.defineProperty(globalThis, 'DOMParser', { configurable: true, value: window.DOMParser });
+	t.after(() => {
+		if (previousParser) Object.defineProperty(globalThis, 'DOMParser', previousParser);
+		else Reflect.deleteProperty(globalThis, 'DOMParser');
+	});
+	const html = `
+		<tei-teiheader><tei-pb n="header"></tei-pb></tei-teiheader>
+		<tei-text>
+			<tei-pb n="1" facs="https://example.test/first"></tei-pb><tei-p>First page</tei-p>
+			<tei-pb n="2" facs=" "></tei-pb><tei-p>Page without image</tei-p>
+			<tei-pb n="177" facs="https://example.test/third"></tei-pb><tei-p>Third page</tei-p>
+		</tei-text>`;
+
+	const pages = collectPageMetadata(new window.DOMParser().parseFromString(html, 'text/html'));
+	assert.equal(pages[1].facs, null);
+	assert.match(extractPage(html, pages[1].page), /Page without image/);
+	assert.equal(pages[2].n, '177');
+	assert.match(extractPage(html, pages[2].page), /Third page/);
 });

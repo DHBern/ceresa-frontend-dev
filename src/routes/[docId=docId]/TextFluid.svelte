@@ -1,7 +1,7 @@
 <script lang="ts">
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import CETEI from 'CETEIcean';
-	import { behaviors, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
+	import { behaviors, getTextPageBreaks, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
 	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
 	import { SEARCH_PARAMS_DEFAULTS, type schema } from './schemas';
 	import { onMount, tick } from 'svelte';
@@ -37,9 +37,7 @@
 			await document.fonts.ready;
 			await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
 			if (cancelled) return;
-			const pageBreak = Array.from(containerTEI.querySelectorAll('tei-pb')).filter(
-				(el) => !el.closest('cetei-original')
-			)[page - 1];
+			const pageBreak = getTextPageBreaks(containerTEI)[page - 1];
 			pageBreak?.scrollIntoView({ block: 'start', behavior: 'instant' });
 		})();
 		return () => {
@@ -63,9 +61,7 @@
 	let mutationObserver: MutationObserver;
 
 	function collectPagebreaks(el: HTMLElement) {
-		const nodes = Array.from(el.querySelectorAll<HTMLElement>('tei-pb')).filter(
-			(node) => !node.closest('cetei-original')
-		);
+		const nodes = getTextPageBreaks(el);
 
 		if (nodes.length) {
 			const newThumbs = nodes.map((el, i) => ({
