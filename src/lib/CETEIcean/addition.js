@@ -26,6 +26,13 @@ export function markAddition(addition) {
 		return marker;
 	});
 
-	addition.prepend(start);
+	const firstContent = Array.from(addition.childNodes).find(
+		(node) => node.nodeType === 1 || (node.nodeType === 3 && node.textContent?.trim())
+	);
+	if (place === 'margin' && firstContent?.nodeName.toLowerCase() === 'tei-lb') {
+		firstContent.after(start);
+	} else {
+		addition.prepend(start);
+	}
 	addition.append(end);
 }
