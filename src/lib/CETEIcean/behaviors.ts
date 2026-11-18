@@ -63,6 +63,8 @@ export const behaviors = (dom: Document) => {
 				const footnote = dom.createElement('span');
 				footnote.classList.add('footnote');
 				footnote.setAttribute('data-noteid', `${noteId}`);
+				const noteType = el.getAttribute('type');
+				if (noteType) footnote.setAttribute('data-note-type', noteType);
 				footnote.dataset.noteId = String(this.noteIndex);
 				footnote.innerHTML = String(this.noteIndex);
 
