@@ -1,13 +1,15 @@
 <script lang="ts">
 	import CETEI from 'CETEIcean';
 	import { behaviors, removeNotesFromMaintext, extractPage } from '$lib/CETEIcean/behaviors';
+	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
 
 	const c = new CETEI();
 	let { textData, page } = $props();
 
-	const setupCustomElements = () => {
+	const setupCustomElements = (element: HTMLElement) => {
 		c.addBehaviors(behaviors(document));
 		c.processPage();
+		attachTextInteractions(element);
 	};
 
 	// Extract the specific page based on xml:id, then remove notes

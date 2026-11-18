@@ -2,12 +2,7 @@
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import CETEI from 'CETEIcean';
 	import { behaviors, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
-	import {
-		clearAllHighlights,
-		handleFootnoteClick,
-		handleRefStringClick
-	} from '$lib/functions/interactive_edendum/handleInteractiveText';
-	import { type TRegKeysFlat } from '$lib/types/register/TRegister';
+	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
 
 	let containerMaintext: HTMLElement;
 	let containerTEI: HTMLElement;
@@ -122,27 +117,7 @@
 	const setupCustomElements = (element: HTMLElement) => {
 		c.addBehaviors(behaviors(document));
 		c.processPage();
-
-		element.querySelectorAll('tei-rs').forEach((el) => {
-			el.setAttribute('tabindex', '0');
-			el.addEventListener('click', (ev) => {
-				ev.stopPropagation();
-				handleRefStringClick(el as HTMLElement);
-			});
-			el.addEventListener('focusout', () => {
-				clearAllHighlights();
-			});
-		});
-		element.querySelectorAll('.footnote, .note-mark').forEach((el) => {
-			const key = el.closest('[data-noteid]')?.getAttribute('data-noteid') as TRegKeysFlat;
-			el.setAttribute('tabindex', '0');
-			el.addEventListener('click', () => {
-				handleFootnoteClick(key);
-			});
-			el.addEventListener('focusout', () => {
-				clearAllHighlights();
-			});
-		});
+		attachTextInteractions(element);
 	};
 </script>
 

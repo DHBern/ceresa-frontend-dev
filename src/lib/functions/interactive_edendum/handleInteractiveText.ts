@@ -97,7 +97,7 @@ function activateNoteInText(key: string) {
 	});
 
 	// focus first mark
-	(marksInText[0] as HTMLElement).focus();
+	(marksInText[0] as HTMLElement | undefined)?.focus();
 }
 
 // Open Sidebar
@@ -250,13 +250,34 @@ export function handleRefStringClick(elSpan: HTMLElement | undefined | null) {
 		(regElement as HTMLElement).focus();
 	}
 }
-export function handleFootnoteClick(key: TRegKeysFlat | undefined | null) {
+export async function handleFootnoteClick(key: TRegKeysFlat | undefined | null) {
 	if (!key) return;
 	selectedTextNode.key = key;
 	openNoteDrawer();
 	activateNoteInText(key);
+	await tick();
 	const annotElement = document.querySelector(
 		`[data-dom=containerAnnotations] li[data-noteid=${key}]`
 	);
 	scrollNotes(annotElement as HTMLElement);
+}
+
+export function attachTextInteractions(container: HTMLElement) {
+	container.querySelectorAll('tei-rs').forEach((el) => {
+		el.setAttribute('tabindex', '0');
+		el.addEventListener('click', (ev) => {
+			ev.stopPropagation();
+			handleRefStringClick(el as HTMLElement);
+		});
+		el.addEventListener('focusout', clearAllHighlights);
+	});
+
+	container.querySelectorAll('.footnote, .note-mark').forEach((el) => {
+		const key = el.closest('[data-noteid]')?.getAttribute('data-noteid') as TRegKeysFlat;
+		el.setAttribute('tabindex', '0');
+		el.addEventListener('click', () => {
+			void handleFootnoteClick(key);
+		});
+		el.addEventListener('focusout', clearAllHighlights);
+	});
 }
