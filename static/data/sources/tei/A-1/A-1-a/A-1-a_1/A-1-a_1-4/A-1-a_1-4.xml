@@ -52,13 +52,17 @@
             <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif"
                n="1"/>
             <p>
-               <lb xml:id="p001_l"/>{{SKIP Non trascritto intenzionalmente (motive: title
-               page)}}</p>
+               <lb xml:id="p001_l"/><note type="hidden">
+                  {{SKIP Non trascritto intenzionalmente (motive: title
+                  page)}}
+               </note></p>
             <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif"
                n="2"/>
             <p>
-               <lb xml:id="p002_l"/>{{SKIP Non trascritto intenzionalmente (motive: frontispice
-               page)}}</p>
+               <lb xml:id="p002_l"/><note type="hidden">
+                  {{SKIP Non trascritto intenzionalmente (motive: frontispice
+                  page)}}
+               </note></p>
             <pb xml:id="p006" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_004.tif"
                n="177"/>
             <head rendition="#c"><lb xml:id="p006_r_tl_1"/>Gli altri<lb xml:id="p006_r_tl_2"/>PRIMA
@@ -666,8 +670,10 @@
             <p><lb xml:id="p011_r_1_tl_30"/><hi rendition="#i">(Continua)</hi></p>
             <pb xml:id="p012" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_010.tif"/>
             <p>
-               <lb xml:id="p003_l"/>{{SKIP Non trascritto intenzionalmente (motive: last page of the
-               journal)}}</p>
+               <lb xml:id="p003_l"/><note type="hidden">
+                  {{SKIP Non trascritto intenzionalmente (motive: last page of the
+                  journal)}}
+               </note></p>
          </div>
       </body>
    </text>

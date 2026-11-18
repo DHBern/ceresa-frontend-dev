@@ -671,6 +671,11 @@ span.note-mark.active {
 		display: none;
 	}
 }
+
+/* Hide Hidden Notes */
+tei-note[type='hidden'] {
+	display: none;
+}
 /* -------------------------------- */
 /* Anchors */
 tei-anchor {
