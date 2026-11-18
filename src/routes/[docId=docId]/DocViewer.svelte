@@ -35,20 +35,59 @@
 		params: any;
 	} = $props();
 
-	let showFac = $derived(params.mode === 'DF' || params.mode === 'FAC');
-	let showMain = $derived(params.mode !== 'FAC');
-	let showSecond = $derived(params.mode === 'TRLF' && ceteiDataTranslation !== null);
+	let view = $derived.by(() => {
+		switch (params.mode) {
+			case 'DF':
+				return {
+					isFluid: false,
+					showFac: true,
+					showMain: true,
+					showSecond: false,
+					showTranslationPanel: false,
+					mainTextClass: 'mode-df'
+				};
+			case 'TRLF':
+				return {
+					isFluid: true,
+					showFac: false,
+					showMain: true,
+					showSecond: ceteiDataTranslation !== null,
+					showTranslationPanel: true,
+					mainTextClass: 'mode-lf'
+				};
+			case 'FAC':
+				return {
+					isFluid: true,
+					showFac: true,
+					showMain: false,
+					showSecond: false,
+					showTranslationPanel: false,
+					mainTextClass: null
+				};
+			case 'LF':
+			default:
+				return {
+					isFluid: true,
+					showFac: false,
+					showMain: true,
+					showSecond: false,
+					showTranslationPanel: false,
+					mainTextClass: 'mode-lf'
+				};
+		}
+	});
+
 	let nColsFit = $state(4);
-	let nColsVisible = $derived((showFac ? 1 : 0) + (showMain ? 1 : 0) + (showSecond ? 1 : 0));
-	let isFluid = $derived(params.mode !== 'DF');
-	let mode_main = $derived(showMain ? (isFluid ? 'mode-lf' : 'mode-df') : null);
+	let nColsVisible = $derived(
+		(view.showFac ? 1 : 0) + (view.showMain ? 1 : 0) + (view.showSecond ? 1 : 0)
+	);
 	let drawerOpen = $state(false);
 
 	function openDrawer() {
 		drawerOpen = true;
 	}
 
-	let isFacsimileView = $derived(!showMain && !showSecond);
+	let isFacsimileView = $derived(!view.showMain && !view.showSecond);
 
 	let prioToFac = $state(true);
 
@@ -108,10 +147,10 @@
 		class={[
 			'z-20 w-full overflow-hidden',
 			isGallerySticky && 'sticky top-0',
-			isFluid ? 'h-0' : '200px'
+			view.isFluid ? 'h-0' : '200px'
 		]}
 	>
-		{#if !isFluid}
+		{#if !view.isFluid}
 			<div in:fade={{ delay: DELAY }}>
 				<Gallery docItem={resolvedDoc.item} {params} />
 			</div>
@@ -122,7 +161,7 @@
 		class={[
 			'containerCenter',
 			'sticky z-10 mx-10 h-max pb-[20vh] transition-all duration-300',
-			isFluid ? 'bg-background' : 'bg-background'
+			'bg-background'
 		]}
 		style:--left={nColsVisible >= nColsFit ? (prioToFac ? '10px' : `-1`) : '0px'}
 		style:--width={'calc(100% - 40px)'}
@@ -134,12 +173,12 @@
 			class:isAll={nColsVisible >= nColsFit}
 			//! Could be deleted
 			class:isSmall={isBreakpointBelow('lg')}
-			class:isFluid
-			class:facsimile_view={!showMain && !showSecond}
-			style:--facsimile-width={!showFac ? '0px' : isFacsimileView ? '100%' : facsimileWidth}
+			class:isFluid={view.isFluid}
+			class:facsimile_view={isFacsimileView}
+			style:--facsimile-width={!view.showFac ? '0px' : isFacsimileView ? '100%' : facsimileWidth}
 			style:--facsimile-width-lg={widthFacsimileLg}
-			style:--df-visible={showMain ? '1' : '0'}
-			style:--lf-visible={showSecond ? '1' : '0'}
+			style:--df-visible={view.showMain ? '1' : '0'}
+			style:--lf-visible={view.showSecond ? '1' : '0'}
 			style:--duration={`${TRANSITION_LENGTH}ms`}
 		>
 			<!-- IIIF-Viewer -->
@@ -147,7 +186,7 @@
 				class="sticky block h-[96vh] w-full shrink flex-col gap-4 overflow-hidden rounded-xl px-5 transition-colors duration-300 hover:bg-muted-foreground/30"
 				style="top: 2vh"
 			>
-				{#if showFac && urls.length}
+				{#if view.showFac && urls.length}
 					<IIIF_Viewer {url} />
 				{/if}
 			</aside>
@@ -178,21 +217,21 @@
 
 			<!-- Main Text -->
 			<div class={['mx-10', isBreakpointBelow('lg') && 'h-[50vh]']}>
-				<div class={[mode_main && mode_main]}>
-					{@render Text(ceteiData, showMain, true, isFluid)}
+				<div class={[view.mainTextClass]}>
+					{@render Text(ceteiData, view.showMain, true, view.isFluid)}
 				</div>
 			</div>
 
 			<!-- Secondary Text -->
 			<div
 				class={[
-					params.mode !== 'TRLF' && 'hidden',
+					!view.showTranslationPanel && 'hidden',
 					'overflow-auto',
 					'mx-10 ml-10 w-[calc(100%-10)] px-2 pr-5 pl-2',
-					// showSecond && 'rounded-lg bg-mist-100 dark:bg-mist-800',
-					showSecond && 'border-l-2 pl-12',
+					// view.showSecond && 'rounded-lg bg-mist-100 dark:bg-mist-800',
+					view.showSecond && 'border-l-2 pl-12',
 					'sticky',
-					isFluid && isGallerySticky ? 'top-10' : 'top-5',
+					view.isFluid && isGallerySticky ? 'top-10' : 'top-5',
 					isGallerySticky ? 'h-[80vh]' : 'h-screen',
 					isBreakpointBelow('lg') && 'h-[50vh]'
 				]}
@@ -203,7 +242,7 @@
 					Traduzione editoriale
 				</h3>
 				<div class="mode-lf">
-					{@render Text(ceteiDataTranslation, showSecond, false, isFluid)}
+					{@render Text(ceteiDataTranslation, view.showSecond, false, view.isFluid)}
 				</div>
 			</div>
 		</div>
