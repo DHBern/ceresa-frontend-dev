@@ -47,7 +47,7 @@ export function resolveReg(
 			regType: 'places',
 			item: object?.places[regKey] || null
 		};
-	} else if (regKey.includes('organisation_')) {
+	} else if (regKey.includes('org_')) {
 		return {
 			regKey: regKey as TOrgsKeys,
 			regType: 'orgs',

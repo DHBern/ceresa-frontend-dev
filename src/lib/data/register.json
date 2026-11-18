@@ -441,7 +441,7 @@
 			}
 		},
 		"orgs": {
-			"organisation_0001": {
+			"org_0001": {
 				"name": "Longanesi",
 				"nameVariants": [],
 				"gndNumber": "810894-8",
@@ -450,7 +450,7 @@
 				"note": "",
 				"docs": null
 			},
-			"organisation_0002": {
+			"org_0002": {
 				"name": "Einaudi",
 				"nameVariants": [],
 				"gndNumber": "200216-4",
@@ -459,7 +459,7 @@
 				"note": "",
 				"docs": null
 			},
-			"organisation_0003": {
+			"org_0003": {
 				"name": "Arche",
 				"nameVariants": [],
 				"gndNumber": null,
@@ -468,7 +468,7 @@
 				"note": "",
 				"docs": null
 			},
-			"organisation_0004": {
+			"org_0004": {
 				"name": "Benzinger",
 				"nameVariants": [],
 				"gndNumber": null,
@@ -477,7 +477,7 @@
 				"note": "",
 				"docs": null
 			},
-			"organisation_0005": {
+			"org_0005": {
 				"name": "Stock",
 				"nameVariants": [],
 				"gndNumber": null,
