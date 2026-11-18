@@ -31,9 +31,9 @@ npm run dev -- --open
 
 On document pages, `mode=LF` defaults to continuous scrolling and `mode=DF` defaults to a paged layout. The button next to the gallery toggles the layout without changing the selected tab. The URL stores non-default layouts as `flow=fluid` or `flow=paged`; changing tabs clears that override. Translation (`TRLF`) is always continuous.
 
-Switching DF from paged to continuous scrolls to the current `page`. In continuous DF, clicking a small facsimile updates the large facsimile without changing the text's scroll position. In LF, a small facsimile still opens its page in paged DF.
+In LF and DF, clicking a facsimile beside the continuous text opens the selected page in paged layout without changing the reading mode. Switching back to continuous layout scrolls to the current `page`.
 
-The document viewer uses TEI `<pb>` order for the text, gallery, and large facsimile. Thumbnail labels come from `@n` and images from `@facs`, both cached during TEI processing. A missing label falls back to the running page number; a missing image does not shift later pages or fall back to `documents.json`. The `page` URL parameter remains a one-based running index.
+The document viewer uses TEI `<pb>` order for the text, gallery, and large facsimile. Thumbnail labels come from `@n` and images from `@facs`, both cached during TEI processing. Thumbnails without `@n` have no visible label. A missing image does not shift later pages or fall back to `documents.json`. The `page` URL parameter remains a one-based running index.
 
 ## Building
 

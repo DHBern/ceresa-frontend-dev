@@ -41,7 +41,9 @@
 			classes={`min-h-2 h-max mx-2 my-1 flex justify-center items-center ${isCurrent ? 'max-h-35' : 'max-h-20'}`}
 			imgClasses={`h-max border ${isCurrent ? 'max-h-30 max-w-30' : 'max-h-15 max-w-15'}`}
 		/>
-		<span class="mt-1 text-sm">{galleryItem.n || galleryItem.page}</span>
+		{#if galleryItem.n !== null}
+			<span class="mt-1 text-sm">{galleryItem.n}</span>
+		{/if}
 	</button>
 {/snippet}
 
