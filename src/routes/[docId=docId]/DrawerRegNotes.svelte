@@ -16,11 +16,11 @@
 	import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
 
 	let { ceteiData, docItem, open = $bindable(false) } = $props();
-	let drawerContent = $state<HTMLElement | null>(null);
+	const drawerId = $props.id();
 
 	function focusDrawer(event: Event) {
 		event.preventDefault();
-		drawerContent?.focus({ preventScroll: true });
+		document.getElementById(drawerId)?.focus({ preventScroll: true });
 	}
 
 	function closeAndResetDrawer() {
@@ -41,7 +41,7 @@
 	direction="bottom"
 >
 	<Drawer.Content
-		bind:ref={drawerContent}
+		id={drawerId}
 		tabindex={-1}
 		onOpenAutoFocus={focusDrawer}
 		onEscapeKeydown={(event) => {
