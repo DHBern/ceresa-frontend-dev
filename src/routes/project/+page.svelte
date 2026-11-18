@@ -56,17 +56,16 @@
 	<h3 class="h3 mt-10">Data Science Lab (DSL), Berna</h3>
 	<p>
 		Il progetto dell’edizione digitale verrà realizzato in stretta collaborazione con il Data
-		ScienceLab (DSL) dell’Università di Berna, e si avvarrà in particolare del supporto di Peter
+		Science Lab (DSL) dell’Università di Berna, e si avvarrà in particolare del supporto di Peter
 		Dängeli e Levyn Bürki.
 	</p>
 	<p>
-		Al DSL verranno affidati la gestione e conservazione del materiale digitalizzato tramite
-		serverIIIF, lo sviluppo di prototipi, il supporto per le fasi di trascrizione e di codifica dei
-		testi.Il DSL sarà inoltre responsabile della realizzazione delle componenti tecniche avanzate,
-		tra cuila configurazione del workflow, l’implementazione del modello dati TEI e la
-		trasformazioneautomatica dei testi OCR in formato TEI. Il laboratorio seguirà inoltre la
-		finalizzazionedell’infrastruttura tecnica in vista del rilascio ufficiale dell’edizione
-		digitale.
+		Al DSL verranno affidati la gestione e conservazione del materiale digitalizzato tramite server
+		IIIF, lo sviluppo di prototipi, il supporto per le fasi di trascrizione e di codifica dei testi.
+		Il DSL sarà inoltre responsabile della realizzazione delle componenti tecniche avanzate, tra
+		cuila configurazione del workflow, l’implementazione del modello dati TEI e la trasformazione
+		automatica dei testi OCR in formato TEI. Il laboratorio seguirà inoltre la finalizzazione
+		dell’infrastruttura tecnica in vista del rilascio ufficiale dell’edizione digitale.
 	</p>
 	<p>
 		Il DSL svolgerà anche un ruolo attivo nella progettazione dell’applicazione web, nello
@@ -77,7 +76,7 @@
 	<h3 class="h3 mt-10">Archivio svizzero di letteratura (ASL), Berna</h3>
 	<p>
 		L’Archivio svizzero di letteratura (ASL) della Biblioteca nazionale svizzera, con sede a Berna,
-		èpartner importante del progetto. Nel 2003 la Confederazione Svizzera ha infatti acquisito il <a
+		è partner importante del progetto. Nel 2003 la Confederazione Svizzera ha infatti acquisito il <a
 			href="https://ead.nb.admin.ch/html/ceresa.html">lascito di Alice Ceresa</a
 		>, di cui detieneinteramente i diritti dal 2024. Per questo motivo, gran parte del corpus
 		testuale che confluirànel progetto editoriale è stato selezionato dal patrimonio archivistico
@@ -87,11 +86,11 @@
 </div>
 <div class="mx-auto mt-25 flex w-full max-w-300 flex-col justify-center">
 	<h2 class="h2">Team</h2>
-	<div class="grid grid-cols-3 gap-5">
-		<p class="flex h-full flex-col justify-center text-sm">
+	<div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+		<p class="flex h-full flex-col text-sm">
 			<span class="font-bold">Prof. Dr. Giovanna Cordibella</span><br />
 			<span>Co-direttrice del progetto</span><br /> <span>Università di Berna</span><br />
-			<a class="underline" href="mailto:giovanna.cordibella@unibe.ch"
+			<a class="mt-2 underline" href="mailto:giovanna.cordibella@unibe.ch"
 				>giovanna.cordibella@unibe.ch</a
 			><br />
 			<a
@@ -100,81 +99,97 @@
 			>
 		</p>
 
-		<p class="flex h-full flex-col justify-center text-sm">
+		<p class="flex h-full flex-col text-sm">
 			<span class="font-bold">Prof. Dr. Tatiana Crivelli</span><br />
 			<span>Co-direttrice del progetto</span><br /> <span>Università di Zurigo</span><br />
-			<a class="underline" href="mailto:tatcriv@rom.uzh.ch">tatcriv@rom.uzh.ch</a><br />
+			<a class="mt-2 underline" href="mailto:tatcriv@rom.uzh.ch">tatcriv@rom.uzh.ch</a><br />
 			<a href="https://www.rose.uzh.ch/de/seminar/personen/crivelli.html" class="underline"
 				>Pagina professionale</a
 			>
 		</p>
 
-		<p class="flex h-full flex-col justify-center text-sm">
+		<p class="flex h-full flex-col text-sm">
 			<span class="font-bold">Dr. des. Alessandro Moro</span><br />
 			<span>Postdoc - Università di Berna</span><br />
-			<a class="underline" href="mailto:alessandro.moro@unibe.ch">alessandro.moro@unibe.ch</a><br />
+			<a class="mt-2 underline" href="mailto:alessandro.moro@unibe.ch">alessandro.moro@unibe.ch</a
+			><br />
 			<a
-				href="https://www.italiano.unibe.ch/team/personale/sezione_di_letteratura/persone/dr_des_moro_alessandro/index_ita.html"
+				href="https://www.italiano.unibe.ch/team/personale/sezione_di_letteratura/persone/dr_moro_alessandro/index_ita.html"
 				class="underline">Pagina professionale</a
 			>
 		</p>
 
-		<p class="flex h-full flex-col justify-center text-sm">
+		<p class="flex h-full flex-col text-sm">
 			<span class="font-bold">Dr. Eleonora Norcini</span><br />
 			<span>Postdoc - Università di Zurigo</span><br />
-			<a class="underline" href="mailto:eleonora.norcini@uzh.ch">eleonora.norcini@uzh.ch</a><br />
+			<a class="mt-2 underline" href="mailto:eleonora.norcini@uzh.ch">eleonora.norcini@uzh.ch</a><br
+			/>
 			<a
 				href="https://www.rose.uzh.ch/de/forschung/doktorat-post/postdoktorierende/norcini.html"
 				class="underline">Pagina professionale</a
 			>
 		</p>
 
-		<p class="flex h-full flex-col justify-center text-sm">
+		<p class="flex h-full flex-col text-sm">
 			<span class="font-bold">Luise Pappe</span><br />
 			<span>Dottoranda - Università di Berna</span><br />
-			<a class="underline" href="mailto:luise.pappe@unibe.ch">luise.pappe@unibe.ch</a><br />
+			<a class="mt-2 underline" href="mailto:luise.pappe@unibe.ch">luise.pappe@unibe.ch</a><br />
 			<a
 				href="https://www.italiano.unibe.ch/ueber_uns/team/literaturwissenschaft/persone/pappe_luise/index_ger.html"
 				class="underline">Pagina professionale</a
 			>
 		</p>
 
-		<p class="flex h-full flex-col justify-center text-sm">
+		<p class="flex h-full flex-col text-sm">
 			<span class="font-bold">Eva Vanacore</span><br />
 			<span>Dottoranda - Università di Zurigo</span><br />
-			<a class="underline" href="mailto:eva.vanacore@uzh.ch">eva.vanacore@uzh.ch</a><br />
+			<a class="mt-2 underline" href="mailto:eva.vanacore@uzh.ch">eva.vanacore@uzh.ch</a><br />
 			<a
 				href="https://www.rose.uzh.ch/de/forschung/doktorat-post/doktorierende/vanacore.html"
 				class="underline">Pagina professionale</a
 			>
 		</p>
 
-		<p class="flex h-full flex-col justify-center text-sm">
+		<p class="flex h-full flex-col text-sm">
 			<span class="font-bold">Tabatha Dattrino</span><br />
 			<span>Aiuto-assistente - Università di Berna</span><br />
 			<a
 				href="https://www.italiano.unibe.ch/team/personale/sezione_di_letteratura/persone/dattrino_tabatha/index_ita.html"
-				class="underline">Pagina professionale</a
+				class="mt-2 underline">Pagina professionale</a
 			>
 		</p>
 
-		<p class="flex h-full flex-col justify-center text-sm">
+		<p class="flex h-full flex-col text-sm">
 			<span class="font-bold">Levyn Bürki</span><br /> <span>Sviluppo e supporto tecnico</span><br
 			/>
 			<span>Data Science Lab - Università di Berna</span><br />
-			<a class="underline" href="mailto:levyn.buerki@unibe.ch">levyn.buerki@unibe.ch</a><br />
+			<a class="mt-2 underline" href="mailto:levyn.buerki@unibe.ch">levyn.buerki@unibe.ch</a><br />
 			<a
 				href="https://www.dh.unibe.ch/ueber_uns/personen/buerki_levyn/index_ger.html"
 				class="underline">Pagina professionale</a
 			>
 		</p>
 
-		<p class="flex h-full flex-col justify-center text-sm">
+		<p class="flex h-full flex-col text-sm">
 			<span class="font-bold">Peter Dängeli</span><br /> <span>Sviluppo e supporto tecnico</span><br
 			/> <span>Data Science Lab - Università di Berna</span><br />
-			<a class="underline" href="mailto:peter.daengeli@unibe.ch">peter.daengeli@unibe.ch</a><br />
+			<a class="mt-2 underline" href="mailto:peter.daengeli@unibe.ch">peter.daengeli@unibe.ch</a><br
+			/>
 			<a
 				href="https://www.dh.unibe.ch/ueber_uns/personen/daengeli_peter/index_ger.html"
+				class="underline">Pagina professionale</a
+			>
+		</p>
+
+		<p class="flex h-full flex-col text-sm">
+			<span class="font-bold">Christian Forney</span><br />
+			<span>Sviluppo e supporto tecnico</span><br />
+			<span>Data Science Lab - Università di Berna</span><br />
+			<a class="mt-2 underline" href="mailto:christian.forney2@unibe.ch"
+				>christian.forney2@unibe.ch</a
+			><br />
+			<a
+				href="https://www.dsl.unibe.ch/about/people_metadata/mas_forney_christian/"
 				class="underline">Pagina professionale</a
 			>
 		</p>
