@@ -78,9 +78,10 @@ export const behaviors = (dom: Document) => {
 // --> Run after processPage()
 export function wrapAnnotations(container: HTMLElement) {
 	const notes = container.querySelectorAll('tei-note[targetend]');
-	notes.forEach((note, runningId) => {
+	notes.forEach((note) => {
 		const targetId = note.getAttribute('targetend');
-		if (!targetId) return;
+		const noteId = note.querySelector(':scope > .footnote')?.getAttribute('data-noteid');
+		if (!targetId || !noteId) return;
 		const anchor = container.querySelector(`tei-anchor[id="${targetId}"]`);
 		if (!anchor) return;
 
@@ -91,12 +92,12 @@ export function wrapAnnotations(container: HTMLElement) {
 			nodes.push(current);
 			current = current.nextSibling;
 		}
-		if (!nodes.length) return;
+		if (current !== note || !nodes.length) return;
 
 		// Create mark (the wrapper around annotated text)
 		const wrapper = container.ownerDocument.createElement('span');
 		wrapper.classList.add('note-mark');
-		wrapper.setAttribute('data-noteid', `${NOTE_ID_PREFIX}${runningId + 1}`);
+		wrapper.setAttribute('data-noteid', noteId);
 		wrapper.dataset.noteTarget = targetId;
 
 		nodes[0].parentNode!.insertBefore(wrapper, nodes[0]);

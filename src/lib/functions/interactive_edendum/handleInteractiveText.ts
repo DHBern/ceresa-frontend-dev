@@ -269,8 +269,20 @@ export function attachTextInteractions(container: HTMLElement, openDrawer: () =>
 		el.addEventListener('focusout', clearAllHighlights);
 	});
 
-	container.querySelectorAll('.footnote, .note-mark').forEach((el) => {
+	const noteElements = new Map<string, Element[]>();
+	container.querySelectorAll('.footnote[data-noteid], .note-mark[data-noteid]').forEach((el) => {
 		const key = el.getAttribute('data-noteid');
+		if (!key) return;
+		const group = noteElements.get(key) ?? [];
+		group.push(el);
+		noteElements.set(key, group);
+
+		el.addEventListener('pointerenter', () => {
+			group.forEach((marker) => marker.classList.add('note-pair-hovered'));
+		});
+		el.addEventListener('pointerleave', () => {
+			group.forEach((marker) => marker.classList.remove('note-pair-hovered'));
+		});
 		el.setAttribute('tabindex', '0');
 		el.addEventListener('click', (ev) => {
 			ev.stopPropagation();

@@ -627,6 +627,7 @@ span.note-mark {
 }
 
 span.note-mark:hover,
+span.note-mark.note-pair-hovered,
 span.note-mark.active {
 	background-color: var(--color-note-active);
 	color: var(--color-note-active-foreground);
@@ -651,6 +652,7 @@ span.note-mark.active {
 	}
 
 	span.footnote:not([data-note-type='annotation']):hover,
+	span.footnote:not([data-note-type='annotation']).note-pair-hovered,
 	span.footnote:not([data-note-type='annotation']).active,
 	span.note-mark:hover,
 	span.note-mark.active {
@@ -687,6 +689,7 @@ span.note-mark.active {
 	}
 
 	span.footnote[data-note-type='annotation']:hover,
+	span.footnote[data-note-type='annotation'].note-pair-hovered,
 	span.footnote[data-note-type='annotation'].active {
 		background-color: var(--color-note-active);
 		color: var(--color-note-active-foreground);
