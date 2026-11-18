@@ -34,3 +34,37 @@ test('deleted addition brackets are selectable and preserve nested TEI', () => {
 	selection.addRange(range);
 	assert.equal(selection.toString(), 'cha⌜q⌝ue');
 });
+
+test('a leading line break precedes the opening margin bracket', () => {
+	const { document } = new JSDOM().window;
+	const xml = new JSDOM(
+		`<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><body><p>Before
+			<add place="margin">
+				<?oxy_comment_start author="luisepappe" comment="encode as a note?"?>
+				<lb xml:id="first"/>(Scritta al tempo in cui <rs>Moravia</rs>
+				<lb xml:id="second"/>un editore.)<?oxy_comment_end?>
+			</add>
+			<add place="margin">Text<lb xml:id="later"/>more</add>
+			<add place="above"><lb xml:id="above"/>note</add>
+		</p></body></text></TEI>`,
+		{ contentType: 'text/xml' }
+	);
+	const cetei = new CETEI({ documentObject: document });
+	cetei.addBehaviors({ tei: { add: markAddition } });
+	document.body.append(cetei.domToHTML5(xml.window.document));
+
+	const [margin, inline, above] = document.querySelectorAll('tei-add');
+	const first = margin.querySelector('#first');
+	const second = margin.querySelector('#second');
+	assert.ok(first && second);
+	assert.equal(first.nextElementSibling?.textContent, '‹');
+	assert.equal(first.nextElementSibling?.nextSibling?.textContent, '(Scritta al tempo in cui ');
+	assert.equal(second.nextSibling?.textContent, 'un editore.)');
+	assert.equal(margin.lastElementChild?.textContent, '›');
+	assert.equal(inline.firstElementChild?.textContent, '‹');
+	assert.equal(inline.querySelector('#later')?.nextSibling?.textContent, 'more');
+	assert.equal(above.firstElementChild?.textContent, '⌜');
+
+	markAddition(margin);
+	assert.equal(margin.querySelectorAll('.addition_wrapper').length, 2);
+});
