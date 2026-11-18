@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
 	import type { TSeqPublishedKeys } from '$lib/types/TSequences';
-	import { docPath } from '$lib/functions/ease_of_use/docPath';
+	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
 	import { dict_docs as dictDoc } from '$lib/dictionaries/dict_docs.json';
 	import DocumentsNav from '$lib/components/DocumentsNav.svelte';
 
@@ -12,7 +12,7 @@
 {#snippet keyList(keys: TSeqPublishedKeys[])}
 	<div class={['preset-btn-list items-center justify-center', '--spacing-sm']}>
 		{#each keys as key (key)}
-			<a class="preset-btn-round --normal" href={docPath(key)}
+			<a class="preset-btn-round --normal" href={resolveDocPath(key)}
 				>{seqData[key as TSeqPublishedKeys].name}</a
 			>
 		{/each}

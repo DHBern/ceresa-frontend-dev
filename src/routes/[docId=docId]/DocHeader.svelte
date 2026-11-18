@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { docPath } from '$lib/functions/ease_of_use/docPath';
+	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
 	import type { TCrossRefDocumentsExtended, TDocKeys } from '$lib/types/documents/TDocuments';
 	import type {
 		TResolvedPosthum,
@@ -102,7 +102,7 @@
 	> -->
 		{#each content ? content : [] as cont (cont)}
 			<a
-				href={docPath(cont.docId as string)}
+				href={resolveDocPath(cont.docId as string)}
 				class="flex items-start justify-start gap-5 rounded-card p-5 hover:bg-background-hover md:flex-col md:items-center md:justify-center"
 			>
 				{#if cont.item}
@@ -190,7 +190,7 @@
 						{#each Object.keys(crossRef.versions) as type (type)}
 							{#each crossRef.versions[type] as version (version)}
 								<li class="preset-btn-doc --sm">
-									<a href={docPath(version.item.slug)}
+									<a href={resolveDocPath(version.item.slug)}
 										>{version.item.metadata.title_editorial} ({version.item.tei.suffix_version})</a
 									>
 								</li>

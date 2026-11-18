@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { docPath } from '$lib/functions/ease_of_use/docPath';
+	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
 	import DocumentsNav from '$lib/components/DocumentsNav.svelte';
 	import { ScrollState } from 'runed';
 	import type { TSeqUnpublishedKeys } from '$lib/types/TSequences.js';
@@ -44,7 +44,7 @@
 			{:else}
 				<a
 					class={['preset-btn-round --sm duration-200', data.seqSlug === key && '--active']}
-					href={docPath(key as string)}>{data.sequences[key as TSeqUnpublishedKeys].name}</a
+					href={resolveDocPath(key as string)}>{data.sequences[key as TSeqUnpublishedKeys].name}</a
 				>
 			{/if}
 		{/each}

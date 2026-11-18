@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
 	import type { TSeqPosthumKeys } from '$lib/types/TSequences';
-	import { docPath } from '$lib/functions/ease_of_use/docPath';
+	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
 	import DocumentsNav from '$lib/components/DocumentsNav.svelte';
 	import { dictionaries } from '$lib/data/dictionaries.json';
 
@@ -12,7 +12,7 @@
 {#snippet keyList(keys: TSeqPosthumKeys[])}
 	<div class={['preset-btn-list items-center justify-center', '--spacing-sm']}>
 		{#each keys as key (key)}
-			<a class="preset-btn-round --normal" href={docPath(key)}
+			<a class="preset-btn-round --normal" href={resolveDocPath(key)}
 				>{seqData[key as TSeqPosthumKeys].name}</a
 			>
 		{/each}
@@ -43,7 +43,7 @@
 					<ul class="">
 						{#each dictionaries[dictId].documents as doc (doc.order)}
 							<li>
-								<a class={[doc.version && 'ml-5']} href={docPath(doc.docId)}
+								<a class={[doc.version && 'ml-5']} href={resolveDocPath(doc.docId)}
 									>{doc.name}
 									{#if doc.version}<em>({doc.version})</em>{/if}</a
 								>

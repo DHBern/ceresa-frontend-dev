@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { docPath } from '$lib/functions/ease_of_use/docPath';
+	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 
@@ -58,7 +58,7 @@
 			{#each seq?.docs as TKeys[] as docKey (docKey)}
 				{@const item = data.docs[docKey as TKeys]}
 				<a
-					href={docPath(docKey as string) + `?seq=${data.seqSlug}`}
+					href={resolveDocPath(docKey as string) + `?seq=${data.seqSlug}`}
 					class="flex items-start justify-start gap-5 rounded-card p-5 hover:bg-background-hover md:flex-col md:items-center md:justify-center"
 				>
 					{#if item}
@@ -86,7 +86,7 @@
 		<ul class="flex flex-col border-t-2">
 			{#each seq?.docs as TKeys[] as docKey (docKey)}
 				{@const item = data.docs[docKey as TKeys]}
-				<a class="h-full w-full" href={docPath(docKey as string) + `?seq=${data.seqSlug}`}>
+				<a class="h-full w-full" href={resolveDocPath(docKey as string) + `?seq=${data.seqSlug}`}>
 					<li class="border-b-2 py-4 pl-4 hover:bg-background-hover">
 						{#if item}
 							<div class="flex gap-5">
@@ -113,7 +113,7 @@
 		<ul class="flex flex-col border-t-2">
 			{#each seq?.docs as TKeys[] as docKey (docKey)}
 				{@const item = data.docs[docKey as TKeys]}
-				<a class="h-full w-full" href={docPath(docKey as string) + `?seq=${data.seqSlug}`}>
+				<a class="h-full w-full" href={resolveDocPath(docKey as string) + `?seq=${data.seqSlug}`}>
 					<li class="border-b-2 py-4 hover:bg-background-hover">
 						{#if item}
 							<span
