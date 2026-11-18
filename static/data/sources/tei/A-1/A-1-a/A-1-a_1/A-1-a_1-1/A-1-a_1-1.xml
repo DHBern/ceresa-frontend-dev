@@ -51,7 +51,6 @@
          <div>
             <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_001.tif"
                n="1"/>
-            <anchor xml:id="a1"/>
             <head><add place="margin"><hi rendition="#u">PREFAZIONE PER "<rs type="work"
                         key="work_0001" xml:id="r1">GLI ALTRI</rs>"</hi></add></head>
             <p rendition="#right"><add place="margin"
@@ -62,6 +61,7 @@
                      /><hi rendition="#u"><rs type="place" key="place_0003" xml:id="r3">ROMA</rs>
                      inverno 45/46</hi>
                </add></p>
+            <anchor xml:id="a1"/>
             <note type="annotation" xml:id="n1" targetEnd="a1">Il titolo e l'intestazione in
                questione sono aggiunti nel margine superiore in una fase successiva alla prima
                stesura del documento, come si evince dal cambio di penna e di ductus</note>
