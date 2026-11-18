@@ -170,11 +170,11 @@ tei-p {
 
 /* -------------------------------- */
 /* Forme work */
-/* .mode-lf {
+.mode-lf {
 	tei-ab {
 		display: none;
 	}
-} */
+}
 
 .mode-df,
 .mode-lf {
