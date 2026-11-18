@@ -3,13 +3,47 @@
 	import CETEI from 'CETEIcean';
 	import { behaviors, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
 	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
-	import { SEARCH_PARAMS_DEFAULTS } from './schemas';
+	import { SEARCH_PARAMS_DEFAULTS, type schema } from './schemas';
+	import { onMount, tick } from 'svelte';
+	import type { ProcessedTEI } from './processTEI';
+	import type { ReturnUseSearchParams } from 'runed/kit';
 
 	let containerMaintext: HTMLElement;
 	let containerTEI: HTMLElement;
-	let { textData, params, showThumbs = true, classes, openDrawer } = $props();
+	let {
+		textData,
+		params,
+		showThumbs = true,
+		classes,
+		openDrawer,
+		initialPage = null
+	}: {
+		textData: ProcessedTEI;
+		params: ReturnUseSearchParams<typeof schema>;
+		showThumbs?: boolean;
+		classes: string;
+		openDrawer: () => void;
+		initialPage?: number | null;
+	} = $props();
 
 	let serializedWithoutNotes = $derived(removeNotesFromMaintext(textData.serialized));
+
+	onMount(() => {
+		const page = initialPage;
+		if (page === null) return;
+		let cancelled = false;
+		void (async () => {
+			await tick();
+			await document.fonts.ready;
+			await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+			if (cancelled) return;
+			const pageBreak = containerTEI.querySelectorAll('tei-pb')[page - 1];
+			pageBreak?.scrollIntoView({ block: 'start', behavior: 'instant' });
+		})();
+		return () => {
+			cancelled = true;
+		};
+	});
 
 	// ---------------------------------------------
 	// Thumbnails
@@ -139,7 +173,11 @@
 					<button
 						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[80px] 2xl:max-w-[90px]"
 						onclick={() => {
-							params.update({ mode: 'DF', flow: SEARCH_PARAMS_DEFAULTS.flow, page: thumb.page });
+							if (params.mode === 'DF') {
+								params.update({ page: thumb.page });
+							} else {
+								params.update({ mode: 'DF', flow: SEARCH_PARAMS_DEFAULTS.flow, page: thumb.page });
+							}
 						}}
 					>
 						<div class="w-full flex-col items-center justify-center">

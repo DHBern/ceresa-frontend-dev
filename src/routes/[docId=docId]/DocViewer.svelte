@@ -83,10 +83,12 @@
 	let flowLabel = $derived(
 		view.isFluid ? 'Passa alla visualizzazione per pagine' : 'Passa allo scorrimento continuo'
 	);
+	let fluidPage: number | null = $state(null);
 
 	function toggleFlow() {
 		const nextFlow = view.isFluid ? 'paged' : 'fluid';
 		const defaultFlow = params.mode === 'DF' ? 'paged' : 'fluid';
+		fluidPage = params.mode === 'DF' && nextFlow === 'fluid' ? currentPage : null;
 		params.update({ flow: nextFlow === defaultFlow ? SEARCH_PARAMS_DEFAULTS.flow : nextFlow });
 	}
 
@@ -131,6 +133,7 @@
 	function changeMode(value: string) {
 		const tab = tabItems.find((item) => item.value === value);
 		if (tab && tab.value !== params.mode) {
+			fluidPage = null;
 			params.update({ mode: tab.value, flow: SEARCH_PARAMS_DEFAULTS.flow });
 		}
 	}
@@ -167,23 +170,12 @@
 		</Tabs.Root>
 	</div>
 
-	<!-- Gallery and text layout control -->
-	<aside
-		class={[
-			'z-20 flex w-full items-center gap-2 overflow-hidden',
-			isGallerySticky && 'sticky top-0',
-			view.isFluid && 'justify-end'
-		]}
-	>
-		{#if !view.isFluid}
-			<div class="min-w-0 flex-1" in:fade={{ delay: DELAY }}>
-				<Gallery docItem={resolvedDoc.item} {params} />
-			</div>
-		{/if}
-		{#if canToggleFlow}
+	<!-- Text layout control -->
+	{#if canToggleFlow}
+		<div class="flex w-full justify-center py-3">
 			<button
 				type="button"
-				class="preset-btn-round --square --ghost mx-2 shrink-0"
+				class="preset-btn-round --square --ghost h-12 w-12 text-xl"
 				aria-label={flowLabel}
 				title={flowLabel}
 				onclick={toggleFlow}
@@ -191,6 +183,15 @@
 				<i class={['fa-solid', view.isFluid ? 'fa-page fa-file' : 'fa-scroll']} aria-hidden="true"
 				></i>
 			</button>
+		</div>
+	{/if}
+
+	<!-- Gallery -->
+	<aside class={['z-20 w-full overflow-hidden', isGallerySticky && 'sticky top-0']}>
+		{#if !view.isFluid}
+			<div in:fade={{ delay: DELAY }}>
+				<Gallery docItem={resolvedDoc.item} {params} />
+			</div>
 		{/if}
 	</aside>
 
@@ -243,6 +244,7 @@
 								{params}
 								{showThumbs}
 								{openDrawer}
+								initialPage={showThumbs ? fluidPage : null}
 								classes="mx-auto w-full max-w-300 md:max-w-[1300px]"
 							/>
 						{:else}
