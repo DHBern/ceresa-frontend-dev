@@ -84,7 +84,7 @@ function selectAllRsNodesInText(key: TRegKeysFlat) {
 }
 
 // Notes (.note-mark, .footnote)
-function activateNoteInText(key: string) {
+function activateNoteInText(key: string, focusMark = false) {
 	resetAllActiveNodesInText(); // Remove old highlights
 	const footnotesInText = document.querySelectorAll(`tei-text .footnote[data-noteid=${key}]`);
 	const marksInText = document.querySelectorAll(`tei-text .note-mark[data-noteid=${key}]`);
@@ -95,8 +95,7 @@ function activateNoteInText(key: string) {
 		el.classList.add('active');
 	});
 
-	// focus first mark
-	(marksInText[0] as HTMLElement | undefined)?.focus();
+	if (focusMark) (marksInText[0] as HTMLElement | undefined)?.focus();
 }
 
 // Open Sidebar
@@ -212,7 +211,7 @@ export function handleJumpToSibling(
 export function handleAnnotationClick(noteId: TRegKeysFlat | undefined | null) {
 	if (!noteId) return;
 	selectedTextNode.key = noteId;
-	activateNoteInText(noteId);
+	activateNoteInText(noteId, true);
 	const escapedNoteId = CSS.escape(noteId);
 	const elSpan = document.querySelector<HTMLElement>(
 		`[data-textflow] tei-text :is(.note-mark, .footnote)[data-noteid="${escapedNoteId}"]`

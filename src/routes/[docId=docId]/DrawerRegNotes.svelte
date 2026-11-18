@@ -16,13 +16,11 @@
 	import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
 
 	let { ceteiData, docItem, open = $bindable(false) } = $props();
+	let drawerContent = $state<HTMLElement | null>(null);
 
-	async function handleEscape(ev: KeyboardEvent) {
-		if (ev.key === 'Escape' && !isDrawerSmall) {
-			ev.preventDefault();
-			ev.stopPropagation();
-			setDrawerSmall();
-		}
+	function focusDrawer(event: Event) {
+		event.preventDefault();
+		drawerContent?.focus({ preventScroll: true });
 	}
 
 	function closeAndResetDrawer() {
@@ -43,8 +41,14 @@
 	direction="bottom"
 >
 	<Drawer.Content
+		bind:ref={drawerContent}
+		tabindex={-1}
+		onOpenAutoFocus={focusDrawer}
+		onEscapeKeydown={(event) => {
+			event.preventDefault();
+			closeAndResetDrawer();
+		}}
 		class="z-99999999999991 mx-auto h-full w-[98vw] border border-foreground bg-background data-[vaul-drawer-direction=bottom]:max-h-[97%]"
-		onkeydown={handleEscape}
 	>
 		<div class="grid w-full grid-cols-[1fr_auto] px-5">
 			<!-- Header -->
