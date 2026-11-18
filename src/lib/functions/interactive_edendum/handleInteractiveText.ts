@@ -12,6 +12,8 @@ import { tick } from 'svelte';
 import { findRegTypeByRegKey } from '../ease_of_use/findRegTypeByRegKey';
 import { scrollContainerTo } from '../ease_of_use/scrollContainerTo';
 
+const attachedTextInteractions = new WeakSet<Element>();
+
 // -------------------------------------------------
 // Scroll
 // -------------------------------------------------
@@ -264,6 +266,8 @@ export async function handleFootnoteClick(key: TRegKeysFlat | undefined | null) 
 
 export function attachTextInteractions(container: HTMLElement) {
 	container.querySelectorAll('tei-rs').forEach((el) => {
+		if (attachedTextInteractions.has(el)) return;
+		attachedTextInteractions.add(el);
 		el.setAttribute('tabindex', '0');
 		el.addEventListener('click', (ev) => {
 			ev.stopPropagation();
@@ -273,6 +277,8 @@ export function attachTextInteractions(container: HTMLElement) {
 	});
 
 	container.querySelectorAll('.footnote, .note-mark').forEach((el) => {
+		if (attachedTextInteractions.has(el)) return;
+		attachedTextInteractions.add(el);
 		const key = el.closest('[data-noteid]')?.getAttribute('data-noteid') as TRegKeysFlat;
 		el.setAttribute('tabindex', '0');
 		el.addEventListener('click', () => {

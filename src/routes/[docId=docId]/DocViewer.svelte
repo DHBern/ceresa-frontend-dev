@@ -18,6 +18,7 @@
 	import TextFluid from './TextFluid.svelte';
 	import DrawerRegNotes from './DrawerRegNotes.svelte';
 	import { isBreakpointBelow } from '$lib/functions/ease_of_use/breakpoints.svelte';
+	import { showDrawer } from '$lib/globals/ui-states.svelte';
 
 	let {
 		docItem,
@@ -50,6 +51,10 @@
 
 	let widthFacsimileLg = '1000px';
 	let facsimileWidth = '50vw';
+
+	$effect(() => {
+		if (resolvedDoc.docId) showDrawer.value = false;
+	});
 
 	$effect(() => {
 		if (params.mode === 'LF') {

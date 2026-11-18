@@ -8,11 +8,23 @@
 
 	const setupCustomElements = (element: HTMLElement) => {
 		c.addBehaviors(behaviors(document));
-		c.processPage();
-		attachTextInteractions(element);
+
+		let processed = false;
+		const attachInteractions = () => {
+			if (!element.querySelector('tei-rs, .footnote, .note-mark')) return;
+			if (!processed) {
+				c.processPage();
+				processed = true;
+			}
+			attachTextInteractions(element);
+		};
+
+		const observer = new MutationObserver(attachInteractions);
+		observer.observe(element, { childList: true, subtree: true });
+		attachInteractions();
+		return () => observer.disconnect();
 	};
 
-	// Extract the specific page based on xml:id, then remove notes
 	let serializedWithoutNotes: string | null = $state(null);
 	$effect(() => {
 		// Run this in an effect to guarantee it only runs on mount.
