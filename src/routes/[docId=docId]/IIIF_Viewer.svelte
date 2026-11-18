@@ -5,8 +5,6 @@
 <script lang="ts">
 	import { asset } from '$app/paths';
 	const uuid = crypto.randomUUID();
-	let viewer: any;
-
 	let { url } = $props();
 
 	let showSpinner = $state(false);
@@ -14,9 +12,13 @@
 
 	const generateViewer = (node: HTMLElement, manifest: string) => {
 		let observer: ResizeObserver;
+		let viewer: any;
+		let destroyed = false;
+		let currentManifest = manifest;
 		const createViewer = () => {
+			if (destroyed) return;
 			viewer = new OpenSeadragon.Viewer({
-				id: node.id,
+				element: node,
 				prefixUrl: asset(`/openseadragon-svg-icons/`),
 				animationDuration: 0,
 				controlsFadeDelay: 300,
@@ -68,12 +70,10 @@
 			// resize observer
 			observer = new ResizeObserver(() => {
 				setTimeout(() => {
-					viewer.viewport.goHome(true);
+					if (!destroyed) viewer.viewport.goHome(true);
 				}, 50);
 			});
 			observer.observe(node);
-			if (!manifest) return;
-
 			viewer.addHandler('open', () => {
 				const item = viewer.world.getItemAt(0);
 
@@ -87,7 +87,7 @@
 				viewer.viewport.fitBounds(rect, true);
 			});
 
-			viewer.open(manifest);
+			viewer.open(currentManifest);
 		};
 		if (!OpenSeadragon) {
 			import('openseadragon').then((r) => {
@@ -100,10 +100,11 @@
 
 		return {
 			update(iiif: string) {
-				if (!viewer) return;
-				viewer.open($state.snapshot(iiif));
+				currentManifest = iiif;
+				viewer?.open(currentManifest);
 			},
 			destroy() {
+				destroyed = true;
 				if (viewer) {
 					viewer.destroy();
 				}
