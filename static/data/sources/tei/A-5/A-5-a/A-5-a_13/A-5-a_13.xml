@@ -57,7 +57,7 @@
                   </choice></rs><lb xml:id="p001_r_tl_2"/>Eine junge amerikanische Schriftstellerin
                setzt sich durch. </head>
             <p><lb/><rs type="person" key="person_0008" xml:id="r10">Carson McCullers</rs> ist heute
-                  bestimmt<lb xml:id="p001_r_4_tl_2"/>die meistgelesene und meistübersetzte <lb
+               bestimmt <lb xml:id="p001_r_4_tl_2"/>die meistgelesene und meistübersetzte <lb
                   xml:id="p001_r_4_tl_3"/>junge amerikanische Schriftstellerin. Im <lb
                   xml:id="p001_r_4_tl_4"/>Staate <rs type="place" key="place_0006" xml:id="r2"
                   >Georgia</rs> im Jahre 1917 geboren, <lb xml:id="p001_r_4_tl_5"/>schrieb sie
@@ -65,19 +65,21 @@
                <lb xml:id="p001_r_4_tl_6" break="no"/>undzwanzig Jahren drei
                   aufsehenerregen<pc>-</pc>
                <lb xml:id="p001_r_4_tl_7" break="no"/>de Romane: <pc>"</pc><rs type="work"
-                  key="bibl_0004" xml:id="r3">The Heart is a 
-                  <choice><orig>l</orig><reg>L</reg></choice>onely Hun<pc>-</pc>
+                  key="work_0004" xml:id="r3">The Heart is a <choice>
+                     <orig>l</orig>
+                     <reg>L</reg>
+                  </choice>onely Hun<pc>-</pc>
                   <lb xml:id="p001_r_4_tl_8" break="no"/>ter</rs><pc>"</pc>, <pc>"</pc><rs
-                  type="work" key="bibl_0005" xml:id="r4">Reflections in a <choice>
+                  type="work" key="work_0005" xml:id="r4">Reflections in a <choice>
                      <orig>g</orig>
                      <reg>G</reg>
                   </choice>olden Eye</rs><pc>"</pc> und <lb xml:id="p001_r_4_tl_9"
-                  /><pc>"</pc><rs type="work" key="bibl_0006" xml:id="r5">The Member of the
+                  /><pc>"</pc><rs type="work" key="work_0006" xml:id="r5">The Member of the
                   Wedding</rs><pc>"</pc>. Alle drei <lb xml:id="p001_r_4_tl_10"/>erschienen in der
                französischen <choice><orig>Ue</orig><reg>Ü</reg></choice>ber<pc>-</pc>
                <lb xml:id="p001_r_4_tl_11" break="no"/>setzung bei <rs type="org" key="org_0005"
                   xml:id="r6">Stock</rs> – und der letzte, unter <lb xml:id="p001_r_4_tl_12"/>dem
-                  Titel <pc>"</pc><rs type="work" key="bibl_0006" xml:id="r8">Frankie
+                  Titel <pc>"</pc><rs type="work" key="work_0013" xml:id="r8">Frankie
                   Addams</rs><pc>"</pc>, erst kürz<pc>-</pc>
                <lb xml:id="p001_r_4_tl_13" break="no"/>lich und fanden, man kann den Aus<pc>-</pc>
                <lb xml:id="p001_r_4_tl_14" break="no"/>druck wahrheitsgetreu benutzen, in <lb
@@ -118,10 +120,11 @@
                <lb xml:id="p001_r_2_tl_1" break="no"/>halts" suchen. <rs type="person"
                   key="person_0011" xml:id="r15">Cocteau</rs> sagte einmal: "<quote>Der <lb
                      xml:id="p001_r_2_tl_2"/>Stil, ist die Gangart des Geschriebenen</quote>"; <lb
-                  xml:id="p001_r_2_tl_3"/>demnach also wäre zu sagen, Carson <choice>
+                  xml:id="p001_r_2_tl_3"/>demnach also wäre zu sagen, <rs type="person"
+                  key="person_0008" xml:id="r29">Carson <choice>
                   <sic>Mc <lb xml:id="p001_r_2_tl_4"/>Cullers</sic>
                   <corr>McCullers</corr>
-               </choice> Stil sei grausam. Und somit wäre <lb
+               </choice></rs> Stil sei grausam. Und somit wäre <lb
                   xml:id="p001_r_2_tl_5"/>das Thema der Grausamkeit erschöpft, <lb
                   xml:id="p001_r_2_tl_6"/>wie auch das Thema "<rs type="person" key="person_0012"
                   xml:id="r16">Faulkner</rs>" in bezug <lb xml:id="p001_r_2_tl_7"/>auf <rs
@@ -141,7 +144,7 @@
                   aus<pc>-</pc>
                <lb xml:id="p001_r_2_tl_20" break="no"/>gewachsene Mädchen, schleicht sich in <lb
                   xml:id="p001_r_2_tl_21"/>den langen Sommerabenden jenen Häu<pc>-</pc>
-               <lb xml:id="p001_r_2_tl_22" break="no"/>sern entang, aus deren Fenster es Musik <lb
+               <lb xml:id="p001_r_2_tl_22" break="no"/>sern entlang, aus deren Fenster es Musik <lb
                   xml:id="p001_r_2_tl_23"/>ertönen hört, auf der Suche nach einer <lb
                   xml:id="p001_r_2_tl_24"/>Melodie, in der es sich selbst finden könn<pc>-</pc>
                <lb xml:id="p001_r_2_tl_25" break="no"/>te und die das Namenlose ausdrückt, das <lb
@@ -169,7 +172,7 @@
                   xml:id="p001_r_1_tl_2"/>allen näheren Problemen zu entspringen, <lb
                   xml:id="p001_r_1_tl_3"/>als die der ihr vorhergehenden Genera<pc>-</pc>
                <lb xml:id="p001_r_1_tl_4" break="no"/>tion. </p>
-            <p><lb xml:id="p001_r_1_tl_6"/><pc>"</pc><rs type="work" key="bibl_0005" xml:id="r19"
+            <p><lb xml:id="p001_r_1_tl_6"/><pc>"</pc><rs type="work" key="work_0005" xml:id="r19"
                   >Reflections in a Golden Eye</rs><pc>"</pc> scheint <lb xml:id="p001_r_1_tl_5"
                />ein viel mehr "literarisches" Werk zu <lb xml:id="p001_r_1_tl_7"/>sein; die
                Geschichte ist auf eine absicht<pc>-</pc>
@@ -181,28 +184,32 @@
                   xml:id="p001_r_1_tl_13"/>geführt. Trotzdem enthält und umfasst <lb
                   xml:id="p001_r_1_tl_14"/>gerade dieses "ausgeklügelte" Buch in <lb
                   xml:id="p001_r_1_tl_15"/>seinen wichtigsten Zügen die ganze Macht <lb
-                  xml:id="p001_r_1_tl_16"/>von Carson McCullers Erzählungskunst. <lb
-                  xml:id="p001_r_1_tl_17"/>Zusammenfassend und aufschlussgeben <lb
-                  xml:id="p001_r_1_tl_18"/>nicht nur über die Mittel und Zwecke sei<pc>-</pc>
+                  xml:id="p001_r_1_tl_16"/>von <rs type="person" key="person_0008" xml:id="r28"
+                  >Carson McCullers</rs> Erzählungskunst. <lb xml:id="p001_r_1_tl_17"
+               />Zusammenfassend und aufschlussgeben <lb xml:id="p001_r_1_tl_18"/>nicht nur über die
+               Mittel und Zwecke sei<pc>-</pc>
                <lb xml:id="p001_r_1_tl_19" break="no"/>ner Autorin, sondern auch und haupt<pc>-</pc>
                <lb xml:id="p001_r_1_tl_20" break="no"/>sächlich über eine Zeit und ihre
                   wichtig<pc>-</pc>
                <lb xml:id="p001_r_1_tl_21" break="no"/>sten moralischen und psychologischen <lb
                   xml:id="p001_r_1_tl_22"/>Gegebenheiten. Von <pc>"</pc><rs type="work"
-                  key="bibl_0006" xml:id="r20">The Member of the <lb xml:id="p001_r_1_tl_23"
-                  />Wedding</rs><pc>"</pc> wurde kürzlich in Manhattan <lb xml:id="p001_r_1_tl_24"
-                  /><rs type="work" key="bibl_0007" xml:id="r21">eine von der Autorin selbst
-                  verfasste <lb xml:id="p001_r_1_tl_25"/>Bühnenbearbeitung</rs> gegeben. Es geht
-               hier <lb xml:id="p001_r_1_tl_26"/>um die weltfremde, törichte, traurige <lb
-                  xml:id="p001_r_1_tl_27"/>Backfischjahrezeit. Mit welcher Sorgfalt, <lb
-                  xml:id="p001_r_1_tl_28"/>mit welcher Liebe zeichnet Carson <choice>
+                  key="work_0006" xml:id="r20">The Member of the <lb xml:id="p001_r_1_tl_23"
+                  />Wedding</rs><pc>"</pc> wurde kürzlich in <rs type="place" key="place_0007"
+                  xml:id="r31">Manhattan</rs>
+               <lb xml:id="p001_r_1_tl_24"/><rs type="work" key="work_0007" xml:id="r21">eine von
+                  der Autorin selbst verfasste <lb xml:id="p001_r_1_tl_25"/>Bühnenbearbeitung</rs>
+               gegeben. Es geht hier <lb xml:id="p001_r_1_tl_26"/>um die weltfremde, törichte,
+               traurige <lb xml:id="p001_r_1_tl_27"/>Backfischjahrezeit. Mit welcher Sorgfalt, <lb
+                  xml:id="p001_r_1_tl_28"/>mit welcher Liebe zeichnet <rs type="person"
+                  key="person_0008" xml:id="r30">Carson
+               <choice>
                   <sic>Mc<lb xml:id="p001_r_1_tl_29"/>Cullers</sic>
                   <corr>McCullers</corr>
-               </choice> die Welt und das Wesen der <lb xml:id="p001_r_1_tl_30"
+               </choice></rs> die Welt und das Wesen der <lb xml:id="p001_r_1_tl_30"
                />Frankie Jasmine Addams, dieses zu hoch <lb xml:id="p001_r_1_tl_31"/>gewachsenen
                zwölfjährigen Mädchens <lb xml:id="p001_r_1_tl_32"/>dessen Sehnsüchte um so inniger
                sind <lb xml:id="p001_r_1_tl_33"/>als sie zwecklos, sinnlos in Phantasiege<pc>-</pc>
-               <lb xml:id="p001_r_1_tl_40" break="no"/>bilden und Unmöglichem herumirren. </p>
+               <lb xml:id="p001_r_1_tl_34" break="no"/>bilden und Unmöglichem herumirren. </p>
             <p><lb xml:id="p001_r_1_tl_35"/>Tatsächlich, wenn <rs type="person" key="person_0008"
                   xml:id="r25">Carson <choice>
                      <sic>Mc Cullers</sic>
@@ -211,18 +218,21 @@
                Art, Schreiben und <lb xml:id="p001_r_1_tl_37"/>Leben aufzufassen, das "junge <rs
                   type="place" key="place_0008" xml:id="r23">Amerika</rs>" <lb
                   xml:id="p001_r_1_tl_38"/>vertreten, dann berührt uns dieses junge <lb
-                  xml:id="p001_r_1_tl_39"/><pc><rs type="place" key="place_0008" xml:id="r24"
-                  >Amerika</rs></pc> eindringlicher, als das von ge<pc>-</pc>
+                  xml:id="p001_r_1_tl_39"/><rs type="place" key="place_0008" xml:id="r24"
+                  >Amerika</rs> eindringlicher, als das von ge<pc>-</pc>
                <lb xml:id="p001_r_1_tl_40" break="no"/>stern. </p>
             <p><lb xml:id="p001_r_1_tl_41"/>Und den Schweizer Leser mag es be<pc>-</pc>
                <lb xml:id="p001_r_1_tl_42" break="no"/>rühren, dass die Originalfassung des <lb
-                  xml:id="p001_r_1_tl_43"/>Bandes <pc>"</pc><rs type="work" key="bibl_0005"
+                  xml:id="p001_r_1_tl_43"/>Bandes <pc>"</pc><rs type="work" key="work_0005"
                   xml:id="r26">Reflections in a <choice>
                      <orig>g</orig>
                      <reg>G</reg>
                   </choice>olden Eye</rs><pc>"</pc> die <lb
-                  xml:id="p001_r_1_tl_44"/>Widmung trägt: "To Annemarie Clarac-<lb/>Schwarzenbach." </p>
-            <p rendition="#right"><hi rendition="#i">Ceresa</hi></p>
+                  xml:id="p001_r_1_tl_44"/>Widmung trägt: "To <rs type="person" key="person_0013"
+                  xml:id="r27">Annemarie Clarac-<lb/>Schwarzenbach</rs>." </p>
+            <ab rendition="#right">
+               <fw type="sig" place="bottomright"><hi rendition="#i">Ceresa</hi></fw>
+            </ab>
          </div>
       </body>
    </text>

@@ -53,7 +53,7 @@
                n="1"/>
             <anchor xml:id="a1"/>
             <head><add place="margin"><hi rendition="#u">PREFAZIONE PER "<rs type="work"
-                        key="bibl_0001" xml:id="r1">GLI ALTRI</rs>"</hi></add></head>
+                        key="work_0001" xml:id="r1">GLI ALTRI</rs>"</hi></add></head>
             <p rendition="#right"><add place="margin"
                      ><?oxy_comment_start author="luisepappe" timestamp="20260831T140758+0200" comment="encode as a note?"?><lb
                      xml:id="p001_r_tl_2"/>(Scritta al tempo in cui <rs type="person"
@@ -65,11 +65,11 @@
             <note type="annotation" xml:id="n1" targetEnd="a1">Il titolo e l'intestazione in
                questione sono aggiunti nel margine superiore in una fase successiva alla prima
                stesura del documento, come si evince dal cambio di penna e di ductus</note>
-            <p><lb xml:id="p001_r_tl_5"/>Dò questo libr<del>o</del><add place="above">etto</add>
-               alla stampa, perché da quando <lb xml:id="p001_r_tl_6"/>ho compreso come ben poco la
-               letteratura <lb xml:id="p001_r_tl_7"/>italiana abbia abdicato dalla retorica <lb
-                  xml:id="p001_r_tl_8"/>malgrado la guerra, mi secca di tenerlo nel <lb
-                  xml:id="p001_r_tl_9"/>cassetto. </p>
+            <p><lb xml:id="p001_r_tl_5"/>Dò questo libr<del>o</del><add place="over">e</add><add
+                  place="above">tto</add> alla stampa, perché da quando <lb xml:id="p001_r_tl_6"/>ho
+               compreso come ben poco la letteratura <lb xml:id="p001_r_tl_7"/>italiana abbia
+               abdicato dalla retorica <lb xml:id="p001_r_tl_8"/>malgrado la guerra, mi secca di
+               tenerlo nel <lb xml:id="p001_r_tl_9"/>cassetto. </p>
             <p><lb xml:id="p001_r_tl_10"/>Voglio dire che queste pagine, scritte anni fa, <lb
                   xml:id="p001_r_tl_11"/>possono anche tener luogo di una polemica, <lb
                   xml:id="p001_r_tl_12"/>mossa ai letterati – proprio perché <del>le</del> si <lb
@@ -96,24 +96,24 @@
                cambiano con il passare di una <lb xml:id="p001_r_tl_28"/>moda. </p>
             <p><lb xml:id="p001_r_tl_29"/>Si tratta dell'altra riva, quella che si raggiunge <lb
                   xml:id="p001_r_tl_30"/>attraverso il ponte di <add place="above"
-               >un'</add>esperienza, e non di <lb xml:id="p001_r_tl_31"/>terra ferma su cui si
-               ricade immutati ed <lb xml:id="p001_r_tl_32"/>illesi dopo un allegro salto. </p>
+               >un'</add>esperienz<choice><sic>e</sic><corr>a</corr></choice>, e non di <lb
+                  xml:id="p001_r_tl_31"/>terra ferma su cui si ricade immutati ed <lb
+                  xml:id="p001_r_tl_32"/>illesi dopo un allegro salto. </p>
             <p><lb xml:id="p001_r_tl_33"/>Perciò, malgrado questo mio addio al presente <lb
                   xml:id="p001_r_tl_34"/>libretto, non mi rincresce di darlo alla stampa, <lb
                   xml:id="p001_r_tl_35"/>così com'è. Anche perché ha precorso, con <lb
                   xml:id="p001_r_tl_36"/>strana precisione, nei suoi avvenimenti logici <lb
                   xml:id="p001_r_tl_37"/>narrati, gli avvenimenti della mia vita <lb
-                  xml:id="p001_r_tl_38"
-               />pratica.<?oxy_comment_start author="luisepappe" timestamp="20260831T171356+0200" comment="how to indicate that the page break is also a paragraph break?"?></p><?oxy_comment_end?>
+                  xml:id="p001_r_tl_38"/>pratica.</p>
             <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_002.tif"
                n="2"/>
             <p>
                <lb xml:id="p002_r_tl_1"/>Ancora
                      <del><unclear><?oxy_comment_start author="luisepappe" timestamp="20260831T171458+0200" comment="what&apos;s wrong here?"?>sar<?oxy_comment_end?></unclear></del>
                è in auge la forma minore della <lb xml:id="p002_r_tl_2"/>biografia del passato –
-               perché non troverebbe <lb xml:id="p002_r_tl_3"/>un posticino nel bosco dei <del>dei
-                  fogli stam</del><lb xml:id="p002_r_tl_4"/>della carta stampata anche una piccola e
-                  <lb xml:id="p002_r_tl_5"/>nervosa biografia d'un avvenire. </p>
+               perché non troverebbe <lb xml:id="p002_r_tl_3"/>un posticino nel bosco <del>dei fogli
+                  stam</del><lb xml:id="p002_r_tl_4"/>della carta stampata anche una piccola e <lb
+                  xml:id="p002_r_tl_5"/>nervosa biografia d'un avvenire. </p>
             <p><lb xml:id="p002_r_tl_6"/>Sorpassato anch'esso, oggi. E liberato il <lb
                   xml:id="p002_r_tl_7"/>libretto da ogni valore personale, non ha <lb
                   xml:id="p002_r_tl_8"/>nulla per difendersi. </p>
@@ -135,11 +135,6 @@
             <ab rendition="#right">
                <fw type="sig" place="bottomright">ALICE CERESA</fw>
             </ab>
-            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_003.tif"
-               n="3"/>
-            <p>
-               <lb xml:id="p003_l"/>{{SKIP Non trascritto intenzionalmente (motive: copy of p.
-               1)}}</p>
          </div>
       </body>
    </text>

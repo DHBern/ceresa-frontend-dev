@@ -60,45 +60,45 @@
                   place="inline" hand="#hw">e</add>
                <del hand="#hw">a été</del>
                <add place="above" hand="#hw">est</add> un morceau intitulé: <lb xml:id="p001_r_tl_4"
-                  /><pc>"</pc><?oxy_comment_start author="luisepappe" timestamp="20260902T170508+0200" comment="bibl_0012 isn&apos;t indicated in the work list..."?>A
-               solo, la radio<?oxy_comment_end?><pc>"</pc>, paru dans un numéro maintenant déjà <del
-                  hand="#hw">vieux</del>
+                  /><pc>"</pc><rs type="work" key="work_0012" xml:id="r36">A solo, la
+                  radio</rs><pc>"</pc>, paru dans un numéro maintenant déjà <del hand="#hw"
+                  >vieux</del>
                <add place="above" hand="#hw">ancien</add> du <pc>"</pc><rs type="work"
-                  key="bibl_0008" xml:id="r15">Teso<pc>-</pc>
+                  key="work_0008" xml:id="r15">Teso<pc>-</pc>
                   <lb xml:id="p001_r_tl_5" break="no"/>retto</rs><pc>"</pc>. Dans le même almanach
                   littéraire<add place="inline" hand="#hw">,</add> j'ai trouvé une prose de <rs
                   type="person" key="person_0018" xml:id="r3">Cesare <lb xml:id="p001_r_tl_7"
-                  />Pavese</rs>, <pc>"</pc><rs type="work" key="bibl_0010" xml:id="r5">Il prato dei
+                  />Pavese</rs>, <pc>"</pc><rs type="work" key="work_0010" xml:id="r5">Il prato dei
                   morti</rs><pc>"</pc>. <del hand="#hw">Ce n'était pas,</del>
                <del hand="#hw">celui</del>
                <add place="above" hand="#hw">Le Vittorini</add> du <pc>"</pc><rs type="work"
-                  key="bibl_0008" xml:id="r16">Tesoretto</rs><pc>"</pc>
+                  key="work_0008" xml:id="r16">Tesoretto</rs><pc>"</pc>
                <del hand="#hw">, le</del><lb xml:id="p001_r_tl_9"/><add place="above" hand="#hw"
                   >n'était pas encore le</add>
                <rs type="person" key="person_0020" xml:id="r17">Vittorini</rs>
                <add place="above" hand="#hw">le</add> plus prononcé, <del hand="#hw">et</del>
                <add place="above" hand="#hw">ni</add>
                <del hand="#hw">ce n'était pas,</del> le <rs type="person" key="person_0018"
-                  xml:id="r18">Pavese</rs> du petit conte<choice><sic><del hand="#hw"><add place="inline" hand="#hw">,</add></del></sic><corr>,</corr></choice>
+                  xml:id="r18">Pavese</rs> du petit conte<del hand="#hw"><add place="inline" hand="#hw">,</add></del>
                <lb xml:id="p001_r_tl_10"/>celui qui <del hand="#hw">me</del> se révéla <add
                   hand="#hw" place="above">à moi</add> plus tard, à la lecture des <pc>"</pc><rs
-                  type="work" key="bibl_0009" xml:id="r6">Paesi tuoi</rs><pc>"</pc>. Je ne <lb
-                  xml:id="p001_r_tl_11"/>crois pas qu'il soit possible  de rapprocher <rs
+                  type="work" key="work_0009" xml:id="r6">Paesi tuoi</rs><pc>"</pc>. Je ne <lb
+                  xml:id="p001_r_tl_11"/>crois pas qu'il soit possible de rapprocher <rs
                   type="person" key="person_0020" xml:id="r19">Vittorini</rs> et <rs type="person"
                   key="person_0018" xml:id="r20">Pavese</rs> autrement <lb xml:id="p001_r_tl_12"
                />que de cette façon directe, <add place="above" hand="#hw">de</add> cette facon de
                lecteur; la Critique sui<pc>-</pc>
                <lb xml:id="p001_r_tl_13" break="no"/>vrait, sûrement, d'autres chemins. </p>
-            <p><lb xml:id="p001_r_tl_15"/><del hand="#hw">Si</del><add place="above" hand="#hw"
-                  >Quand</add> je dis que j'ai découvert <rs type="person" key="person_0020"
-                  xml:id="r21">Vittorini</rs> et <rs type="person" key="person_0018" xml:id="r22"
-                  >Pavese</rs> en même temps, ce n'est <lb xml:id="p001_r_tl_17"/>pas d'eux que je
-               me souciais, <del hand="#hw">c'était</del>
+            <p><lb xml:id="p001_r_tl_15"/><del hand="#hw">Si</del>
+               <add place="above" hand="#hw">Quand</add> je dis que j'ai découvert <rs type="person"
+                  key="person_0020" xml:id="r21">Vittorini</rs> et <rs type="person"
+                  key="person_0018" xml:id="r22">Pavese</rs> en même temps, ce n'est <lb
+                  xml:id="p001_r_tl_17"/>pas d'eux que je me souciais, <del hand="#hw">c'était</del>
                <add place="above" hand="#hw">mais</add> de leur façon de raconter, et, donc, <lb
                   xml:id="p001_r_tl_18"/>de leu<choice><sic>t</sic><corr>r</corr></choice> façon
                   d'écrir<del>r</del><add place="over">e</add>.</p>
             <p><lb xml:id="p001_r_tl_19"/>Il n'existent plus de romanciers en <rs type="place"
-                  key="place_0009" xml:id="r7">ltalie</rs>, mais en meme temps il <anchor
+                  key="place_0009" xml:id="r7">ltalie</rs>, mais en même temps il <anchor
                   xml:id="a2"/>semble<note type="annotation" xml:id="n2" targetEnd="a2">L'autrice
                   cassa il testo e, successivamente, ripristina la lezione originale mediante una
                   linea tratteggiata.</note>
@@ -127,55 +127,57 @@
                   key="person_0018" xml:id="r24">Pavese</rs>, s'est arrêtée là. Et si<add
                   place="inline" hand="#hw">,</add>
                <lb xml:id="p001_r_tl_33"/>plus tard, <del hand="#hw">en</del> lisant <pc>"</pc><rs
-                  type="work" key="bibl_0011" xml:id="r9">Conversazione in Sicilia</rs><pc>"</pc> et
-                  <pc>"</pc><rs type="work" key="bibl_0009" xml:id="r25">Paesi tuoi</rs><pc>"</pc>,
-               j'ai <lb xml:id="p001_r_tl_34"/>dû m'appercevoir qu'il fallait<del hand="#hw"
+                  type="work" key="work_0011" xml:id="r9">Conversazione in Sicilia</rs><pc>"</pc> et
+                  <pc>"</pc><rs type="work" key="work_0009" xml:id="r25">Paesi tuoi</rs><pc>"</pc>,
+               j'ai <lb xml:id="p001_r_tl_34"/>dû m'appercevoir qu'il fallait <del hand="#hw"
                   >faire</del>
                <choice><sic><add place="above" hand="#hw">o[?]</add></sic><corr/></choice>, à propos
                de ces deux écrivains, <lb xml:id="p001_r_tl_37"/><del hand="#hw">d'autres
                   considérations</del>
                <choice><sic>et</sic><corr/></choice>
                <add place="above" hand="#hw">faire valoir d'autres points de vue et</add> d'autres
-                  <del hand="#hw">différences</del><add place="above" hand="#hw">distinctions</add>,
+                  <del hand="#hw">différences</del> <add place="above" hand="#hw">distinctions</add>,
                je n'ai <del hand="#hw">pas</del>
                <del>s</del><add place="over" hand="#hw">p</add>u me dé<pc>-</pc>
-               <lb xml:id="p001_r_tl_40" break="no"/>cider à attribuer plus d'importance à<del
+               <lb xml:id="p001_r_tl_40" break="no"/>cider à attribuer plus d'importance à <del
                   hand="#hw">leur</del>
                <add hand="#hw" place="above">ce qu'ils ont de</add> differen<del>ce</del><add
-                  place="over" hand="#hw">t</add> qu'à <del hand="#hw">leur côté</del><add
+                  place="over" hand="#hw">t</add> qu'à <del hand="#hw">leur côté</del> <add
                   hand="#hw" place="above">ce qu'ils ont de</add>
                <lb xml:id="p001_r_tl_41"/>commun: <del hand="#hw">celui de</del> leur façon
                d'écrire, <del><del hand="#hw">celui de</del></del> leur <del>f<del>a</del>on</del>
-               façon de <lb xml:id="p001_r_tl_42"/>s'exprimer.</p>
-            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_002.tif" n="2"/>
-            <ab>
-               <fw type="pageNum" place="topright">2.</fw>
-            </ab>
-            <p><lb xml:id="p002_r_tl_3"/>Cela, parce que il y a déjà les critiques <del>qui</del>
-               <add place="above" hand="#hw">dont c'est le métier de</add> s'occupe<del>n</del><del
-                  hand="#hw">t</del><add place="over" hand="#hw">r</add> des différences <add
-                  place="above">entre écrivains</add>. <lb xml:id="p002_r_tl_5"/><del hand="#hw">Au
-                  côte</del>
-               <add hand="#hw" place="above">Seront[?] à ce qu'ils ont de</add> commun,
-                  <del>parcontre</del>
+               façon de <lb xml:id="p001_r_tl_42"/>s'exprimer. </p>
+           <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_002.tif"
+                  n="2"/>
+               <ab>
+                  <fw type="pageNum" place="topright">2.</fw>
+               </ab>
+               <p><lb xml:id="p002_r_tl_3"/>Cela, parce que il y a déjà les critiques <del
+                  hand="#hw">qui</del>
+               <add place="above" hand="#hw">dont c'est le métier de</add> s'occupe<del hand="#hw"
+                  >n</del><del hand="#hw">t</del><add place="over" hand="#hw">r</add> des
+               différences <add place="above">entre écrivains</add>. <lb xml:id="p002_r_tl_5"/><del
+                  hand="#hw">Au côte</del>
+               <add hand="#hw" place="above"><unclear>Seront</unclear> à ce qu'ils ont de</add>
+               commun, <del>parcontre</del>
                <add place="above" hand="#hw">ceux qui s'y intéressent, ce sont</add><choice><sic>,</sic><corr/></choice>
                <del hand="#hw">s'intéressent</del> plutôt les lecteurs et les <lb
-                  xml:id="p002_r_tl_7"/>écrivains<del hand="#hw"><add place="above" hand="#hw"> qui
-                     s'y intéressent.</add></del>. <anchor xml:id="a4"/>Je <del>ui</del>suis,<note
+                  xml:id="p002_r_tl_7"/>écrivains <del hand="#hw"><add place="above" hand="#hw">qui
+                     s'y intéressent.</add></del>. <anchor xml:id="a4"/>Je <del>ui</del> suis,<note
                   type="annotation" xml:id="n4" targetEnd="a4">L'autrice cassa il testo e,
                   successivamente, ripristina la lezione originale mediante una linea
                   tratteggiata.</note>
-               <choice><sic><unclear>Et</unclear></sic><corr/></choice> comme vous, de <anchor
-                  xml:id="a3"/>ces derniers<note type="annotation" xml:id="n3" targetEnd="a3"
-                  >L'autrice cassa il testo e, successivamente, ripristina la lezione originale
-                  mediante una linea tratteggiata.</note>. </p>
+               <?oxy_comment_start author="luisepappe" timestamp="20261113T092639+0100" comment="@Alessandro, non ricordo perché abbiamo deciso di mettere questo in un sic-corr-tag, non è semplicemente cassato? E poi mi chiedo se andrebbe messo prima di &quot;Je ui suis&quot;..."?><choice><sic><unclear>Et</unclear></sic><corr/></choice><?oxy_comment_end?>
+               comme vous, de <anchor xml:id="a3"/>ces derniers<note type="annotation" xml:id="n3"
+                  targetEnd="a3">L'autrice cassa il testo e, successivamente, ripristina la lezione
+                  originale mediante una linea tratteggiata.</note>. </p>
             <p><lb xml:id="p002_r_tl_8"/>Or, pour comprendre cette nouvelle prose italienne et son
                pourquoi, <del hand="#hw"><add place="above" hand="#hw">il</add></del>
                <del hand="#hw">m'</del><choice><sic>a</sic><corr/></choice>
                <lb xml:id="p002_r_tl_9"/><metamark target="#mm1"><add place="inline" hand="#hw"
                      >m'a</add> éte beaucoup plus utile</metamark> l'"incompréhensible" explication
                d'un jeune <lb xml:id="p002_r_tl_10"/>écrivain italien <metamark xml:id="mm1"
-               > </metamark>que de longues théories academiques. Il me disait que <lb
+               > </metamark>que de longues théories académiques. Il me disait que <lb
                   xml:id="p002_r_tl_11"/>ce qui liait les écrivains de cette nouvelle prose et les
                distinguait <lb xml:id="p002_r_tl_13"/>des autres<add place="inline" hand="#hw"
                   >,</add>
@@ -185,24 +187,26 @@
                de <lb xml:id="p002_r_tl_14"/>l'esthétique, une raison de <del hand="#hw"
                   >production.</del>
                <add place="inline" hand="#hw">"producteurs". </add></p>
-            <p><lb xml:id="p002_r_tl_15"/>"Les autres écrivent de la tête à la feuille de papier
-               qu'ils ont sur <lb xml:id="p002_r_tl_16"/>la table; ils ont donc, en un certain sens,
-               une relation de perspective <lb xml:id="p002_r_tl_17"/>avec ce qu'ils écrivent. Les
-               nouveaux, par<add place="inline" hand="#hw"> </add>contre, écrivent en ligne <lb
-                  xml:id="p002_r_tl_19"/>horizontale<del>,</del><add place="over" hand="#hw">;</add>
-               <del hand="#hw">c'est<add place="inline" hand="#hw">-</add>à<add place="inline"
-                     hand="#hw">-</add>dire</del>
-               <add place="above" hand="#hw">autrement dit,</add>
-               <del hand="#hw">qu'</del>
-               <add place="above" hand="#hw"><del hand="#hw"
-                     ><?oxy_comment_start author="luisepappe" timestamp="20260902T172511+0200" comment="this &quot;que&quot; isn&apos;t deleted in the preview..."?>que,</del><?oxy_comment_end?>
-                  d'eux-mêmes</add> à la feuille de papier qu'ils ont devant <add place="inline"
-                  hand="#hw">soi,</add>
-               <lb xml:id="p002_r_tl_21"/>passe en ligne directe ce qu'il y a <add place="above"
-                  hand="#hw">en eux</add> dans un "centre"<add place="inline" hand="#hw">.</add>
-               <del hand="#hw">de <add place="above" hand="#hw"><gap reason="illegible"/></add>
-                  nous.</del> Cela <lb xml:id="p002_r_tl_22"/>coule presque dans l'encre, ce n'est
-               pas "dicté" d'en haut, de la tête, <lb xml:id="p002_r_tl_23"/>à la plume." </p>
+            <p><lb xml:id="p002_r_tl_15"/><quote>"Les autres écrivent de la tête à la feuille de
+                  papier qu'ils ont sur <lb xml:id="p002_r_tl_16"/>la table; ils ont donc, en un
+                  certain sens, une relation de perspective <lb xml:id="p002_r_tl_17"/>avec ce
+                  qu'ils écrivent. Les nouveaux, par<add place="inline" hand="#hw"> </add>contre,
+                  écrivent en ligne <lb xml:id="p002_r_tl_19"/>horizontale<del>,</del><add
+                     place="over" hand="#hw">;</add>
+                  <del hand="#hw">c'est<add place="inline" hand="#hw">-</add>à<add place="inline"
+                        hand="#hw">-</add>dire</del>
+                  <add place="above" hand="#hw">autrement dit,</add>
+                  <del hand="#hw">qu'</del>
+                  <add place="above" hand="#hw"><del hand="#hw">que,</del> d'eux-mêmes</add> à la
+                  feuille de papier qu'ils ont devant <add place="inline" hand="#hw">soi,</add>
+                  <lb xml:id="p002_r_tl_21"/>passe en ligne directe ce qu'il y a <add place="above"
+                     hand="#hw">en eux</add> dans un "centre"<add place="inline" hand="#hw">.</add>
+                  <del hand="#hw">de <add place="above" hand="#hw"><unclear>à</unclear></add>
+                     nous.</del> Cela <lb xml:id="p002_r_tl_22"/>coule presque dans l'encre, ce
+                  n'est pas
+                  <?oxy_comment_start author="luisepappe" timestamp="20261113T094153+0100" comment="si tratta di virgolette all&apos;interno di una citazione -&gt; ev. facciamo orig-reg per renderle semplici e non doppie?"?>"dicté"<?oxy_comment_end?>
+                  d'en haut, de la tête, <lb xml:id="p002_r_tl_23"/>à la plume."</quote>
+            </p>
             <p><lb xml:id="p002_r_tl_24"/>La "prosa d'arte", le "chapitre", a été l'unique manière
                d'expression <lb xml:id="p002_r_tl_26"/>des écrivains italiens <del hand="#hw"
                   >des</del>
@@ -211,25 +215,25 @@
                faire une différence; car il y a eu la <lb xml:id="p002_r_tl_28"/>"prosa d'arte" d'un
                   <rs type="person" key="person_0021" xml:id="r10">Cecchi</rs>, d'un <rs
                   type="person" key="person_0022" xml:id="r11">Bontempelli</rs>, et il y a eu la
-               "prosa <lb xml:id="p002_r_tl_29"/>d'arte" des plus jeunes, celle justement d'un
-               Vittorini qui, dans sa <lb xml:id="p002_r_tl_31"/><pc>"</pc><rs type="work"
-                  key="bibl_0011" xml:id="r26">Conversazione in Sicilia</rs><pc>"</pc>, s'est <del
-                  hand="#hw">mis</del>
+               "prosa <lb xml:id="p002_r_tl_29"/>d'arte" des plus jeunes, celle justement d'un <rs
+                  type="person" key="person_0020" xml:id="r37">Vittorini</rs> qui, dans sa <lb
+                  xml:id="p002_r_tl_31"/><pc>"</pc><rs type="work" key="work_0011" xml:id="r26"
+                  >Conversazione in Sicilia</rs><pc>"</pc>, s'est <del hand="#hw">mis</del>
                <add place="above" hand="#hw">placé</add> sur la ligne la plus pure et la <lb
                   xml:id="p002_r_tl_32"/>plus directe de cette "écriture horizontale", de façon
                qu'elle paraissait <lb xml:id="p002_r_tl_33"/>être toute a lui<add place="inline"
                   hand="#hw">,</add> et seulement à lui dans cette possession parfaite. <lb
-                  xml:id="p002_r_tl_35"/>Je n'oublie pas la <del>manchette</del>
+                  xml:id="p002_r_tl_35"/>Je n'oublie pas la <del hand="#hw">manchette</del>
                <add place="above" hand="#hw">bande</add> rouge <del hand="#hw">qui fermait</del>
                <add place="above" hand="#hw">sur</add> le livre <choice><sic>en</sic><corr/></choice>
                <del hand="#hw">vitrine</del>
                <add place="above" hand="#hw">à l'étalage</add>, avec <lb xml:id="p002_r_tl_37"/><del
                   hand="#hw">l'écrite</del>
-               <add place="above" hand="#hw"><add place="inline" hand="#hw">cette</add><?oxy_comment_start author="luisepappe" timestamp="20260902T172644+0200" comment="this &quot;l&apos;&quot; isn&apos;t deleted in the preview"?>
-                  <del hand="#hw">l'<?oxy_comment_end?></del>inscription</add>: "La troisième
-               édition d'un roman que la critique a défini <lb xml:id="p002_r_tl_38"/>un tournant
-               dans la littérature narrative italienne."</p>
-         <lb xml:id="p002_r_tl_41"/>On pourrait <del hand="#hw">contester</del>
+               <add place="above" hand="#hw"><add place="inline" hand="#hw">cette</add>
+                  <del hand="#hw">l'</del>inscription</add>: <quote>"La troisième édition d'un roman
+                  que la critique a défini <lb xml:id="p002_r_tl_38"/>un tournant dans la
+                  littérature narrative italienne."</quote></p>
+            <p><lb xml:id="p002_r_tl_41"/>On pourrait <del hand="#hw">contester</del>
                <add place="above" hand="#hw">discuter</add> cette <del hand="#hw">écrite</del>
                <add place="above" hand="#hw">formule</add>, et <anchor xml:id="a5"/>contester<note
                   type="annotation" xml:id="n5" targetEnd="a5">L'autrice cassa il testo e,
@@ -241,18 +245,18 @@
                certaine: <del hand="#hw">que</del>
                <del>s</del><add place="over" hand="#hw">S</add>i le roman<add place="inline"
                   hand="#hw">,</add>
-            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_003.tif" n="3"/>
-            <ab>
+               <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_003.tif"
+                  n="3"/>
                <fw type="pageNum" place="topright">3.</fw>
-            </ab>
-             <lb xml:id="p003_r_tl_1"/>en Italie, n'existait plus depuis longtemps, si la "prosa
-               d'arte" <lb xml:id="p003_r_tl_3"/>était l'unique forme d'expression des écrivains –
-                  <del hand="#hw">devenus,</del>
+               <lb xml:id="p003_r_tl_1"/>en <rs type="place" key="place_0009" xml:id="r38"
+                  >Italie</rs>, n'existait plus depuis longtemps, si la "prosa d'arte" <lb
+                  xml:id="p003_r_tl_3"/>était l'unique forme d'expression des écrivains – <del
+                  hand="#hw">devenus,</del>
                <add place="above" hand="#hw">de</add>
-               <add place="above" hand="#hw"><gap reason="illegible" quantity="6"/></add>par des <lb
+               <del hand="#hw"><add place="above" hand="#hw">poètes</add></del> par des <lb
                   xml:id="p003_r_tl_6"/>néc<del hand="#hw">é</del><add place="over" hand="#hw"
                   >e</add>ssités peut-être plus urgentes que <del hand="#hw">celles
-                  </del><del>causées du man</del><del hand="#hw"> naissant</del>
+                 </del> <del>causées du man</del> <del hand="#hw">naissant</del>
                <add place="above" hand="#hw">toutes celles qui pouvaient découler de</add><lb
                   xml:id="p003_r_tl_8"/><del hand="#hw">du manque</del>
                <add place="above" hand="#hw">l'absence</add> d'une société bourgeoise <del
@@ -262,35 +266,37 @@
                   d<del>o</del><add place="over">i</add>sons "classique" –, il n'y avait qu'une
                manière de sortir <lb xml:id="p003_r_tl_11"/><?oxy_comment_start author="luisepappe" timestamp="20260901T215708+0200" comment="C&apos;è una croce nel margine -&gt; la visualizziamo in qualche modo?"?>d<?oxy_comment_end?><choice><sic>u</sic><corr>e</corr></choice>
                <del hand="#hw">champ clos</del>
-               <add place="above" hand="#hw"><del hand="#hw">de l'enclos </del>l'étroit enclos</add>
+               <add place="above" hand="#hw"><del hand="#hw">de l'enclos</del> l'étroit enclos</add>
                de cette <add place="above" hand="#hw">première</add> "prosa d'arte" cérebrale<add
                   place="inline" hand="#hw">.</add>
                <del hand="#hw">qu'a été la première, </del><lb xml:id="p003_r_tl_13"/><del
-                  hand="#hw">c'est à dire qu'il n'y avait <del>qu'une</del> que</del>
-               <add place="above" hand="#hw">La seule issue, <del hand="#hw">c'était</del><add
-                     place="over" hand="#hw">en effet</add>, c'était</add> cette '"écriture
-               horizontale" <lb xml:id="p003_r_tl_15"/><del>qui put</del> permett<del>re</del><add
-                  place="over" hand="#hw">ant</add> à un écrivain d'exprimer son <del hand="#hw"
-                  >monde</del>
+                  hand="#hw">c'est à dire qu'il n'y avait</del>
+               <del>qu'une</del>
+               <del hand="#hw">que</del>
+               <add place="above" hand="#hw">La seule issue, <del hand="#hw">c'était</del> <add
+                     place="over" hand="#hw">en effet</add>, c'était</add> cette "écriture
+               horizontale" <lb xml:id="p003_r_tl_15"/><del hand="#hw">qui put</del>
+                  permett<del>re</del><add place="over" hand="#hw">ant</add> à un écrivain
+               d'exprimer son <del hand="#hw">monde</del>
                <add place="above" hand="#hw">univers</add> d'une façon vi<pc>-</pc>
                <lb xml:id="p003_r_tl_17" break="no"/>vante, <del hand="#hw">bien</del>
                <add place="above" hand="#hw">tout</add>
                <choice><sic>qu'</sic><corr/></choice>en restant lié, par des forces majeures, à la
-               forme de <lb xml:id="p003_r_tl_18"/>la "prosa d'arte". Et ces "forces majeures" nous
-               les définirons <del>pet</del>
+               forme de <lb xml:id="p003_r_tl_18"/>la "prosa d'arte". Et ces "forces majeures"<add
+                  place="inline" hand="#hw">,</add> nous les définirons <del>pet</del>
                <lb xml:id="p003_r_tl_22"/>peut-être <add place="above" hand="#hw">avec <del
                      hand="#hw">le</del></add> le plus <del hand="#hw">clairement</del>
-               <add place="above" hand="#hw">de clarté</add> et <del hand="#hw">précisement</del>
+               <add place="above" hand="#hw">de clarté</add> et <del hand="#hw">précisément</del>
                <add place="above" hand="#hw">de précision possibles</add> en disant que l'<rs
                   type="place" key="place_0009" xml:id="r28"><del>i</del><add place="over"
                   >I</add>talie</rs> n'a <lb xml:id="p003_r_tl_23"/>plus eu d<del>es</del><add
                   place="over" hand="#hw">'</add><del> </del>écrivains-romanciers, mais
                   t<del>p</del><add place="over">o</add>ut simplement des écrivains<pc>-</pc>
-               <lb xml:id="p003_r_tl_24" break="no"/>poètes.
+               <lb xml:id="p003_r_tl_24" break="no"/>poètes. </p>
             <p><lb xml:id="p003_r_tl_25"/>Cette espèce de "pros<del>e</del><add place="over">a</add>
                narrativa", que nous appellerons la prose de <lb xml:id="p003_r_tl_26"/><rs
                   type="person" key="person_0020" xml:id="r29">Vittorini</rs>, pour la distinguer de
-               la "prosa d'arte" des "chapitres" <add place="inline" hand="#hw">, – ceux</add><lb
+               la "prosa d'arte" des "chapitres"<add place="inline" hand="#hw">, – ceux</add><lb
                   xml:id="p003_r_tl_29"/><del hand="#hw">justement</del>
                <add place="above" hand="#hw">précisément</add> d'un <rs type="person"
                   key="person_0021" xml:id="r30">Cecchi</rs> ou d'un <rs type="person"
@@ -314,12 +320,12 @@
                <lb xml:id="p003_r_tl_36" break="no"/>tuel. Et en l'exprimant en ligne directe, en
                ligne horizontale par <lb xml:id="p003_r_tl_39"/><del hand="#hw">respect</del>
                <add place="above" hand="#hw"><unclear>rapport</unclear></add> à la feuille de papier
-               qu'il a devant <add place="above" hand="#hw">soi</add>, ce monde même et <del
+               qu'il a devant <add place="above" hand="#hw">lui</add>, ce monde même et <del
                   hand="#hw">pas</del>
                <add place="above" hand="#hw">non</add> la <lb xml:id="p003_r_tl_40"/>tête dicte à
-               l'ecrivain la forme sévère et non librement choisie de <del>l</del><add place="over"
-                  hand="#hw">s</add>a <lb xml:id="p003_r_tl_42"/>prose<add place="inline" hand="#hw"
-                  >,</add>
+               l'<choice><sic>e</sic><corr>é</corr></choice>crivain la forme sévère et non librement
+               choisie de <del>l</del><add place="over" hand="#hw">s</add>a <lb
+                  xml:id="p003_r_tl_42"/>prose<add place="inline" hand="#hw">,</add>
                <add place="above" hand="#hw">celle</add> dont justement nous parlons<del hand="#hw"
                   >.</del>
                <add place="inline" hand="#hw">ici.</add></p>
@@ -337,18 +343,18 @@
                   key="person_0020" xml:id="r31">Vittorini</rs>: c'est une différence
                   d<del>u</del><add place="over" hand="#hw">e</add> monde à <lb xml:id="p004_r_tl_3"
                />exprimer. Et la preuve la plus simple de ce fait théorique est donnée, <lb
-                  xml:id="p004_r_tl_5"/><del hand="#hw">si voulez l'accepter</del>
+                  xml:id="p004_r_tl_5"/><del hand="#hw">si voulez l'accepter</del><choice><sic>,</sic><corr/></choice>
                <add place="above" hand="#hw">à mon avis</add>, par <rs type="person"
                   key="person_0020" xml:id="r32">Vittorini</rs> même, <del>w</del><add place="over"
                   >q</add>ui avait des préoccupation<add place="inline" hand="#hw">s</add>
                <lb xml:id="p004_r_tl_6"/>humaines<add place="inline" hand="#hw">,</add>
                <del hand="#hw">et</del> liées à ce qui se passait dans le monde<add place="inline"
                   hand="#hw">,</add> avant d'en avoir de <lb xml:id="p004_r_tl_7"/>littéraires.
-                  C'est<add place="inline" hand="#hw">-</add>à<add place="inline">-</add>dire que
-               son monde à lui, qui lui dictait sa forme <lb xml:id="p004_r_tl_9"/>d'expression,
-               était un monde humain<add place="inline" hand="#hw">,</add> et <add place="above"
-                  hand="#hw">non</add> pas le monde d'une élite qui se <lb xml:id="p004_r_tl_11"
-               />soucie de <del hand="#hw">sa façon</del>
+                  C'est<add place="inline" hand="#hw">-</add>à<add place="inline" hand="#hw"
+               >-</add>dire que son monde à lui, qui lui dictait sa forme <lb xml:id="p004_r_tl_9"
+               />d'expression, était un monde humain<add place="inline" hand="#hw">,</add> et <add
+                  place="above" hand="#hw">non</add> pas le monde d'une élite qui se <lb
+                  xml:id="p004_r_tl_11"/>soucie de <del hand="#hw">sa façon</del>
                <add place="above" hand="#hw">son mode</add> d'expression. </p>
             <p><lb xml:id="p004_r_tl_12"/>Si donc cette écriture est la nouvelle prose italienne,
                elle est la prose <lb xml:id="p004_r_tl_14"/>non de <rs type="person"
@@ -384,7 +390,10 @@
                   >dans</del>
                <del hand="#hw"><add place="above" hand="#hw">selon</add></del> une cadence<add
                   place="inline" hand="#hw">,</add>
-               <del hand="#hw">qui a</del> une couleur d'ambience et <del hand="#hw">dans une</del>
+               <del hand="#hw">qui a</del>
+               <?oxy_comment_start author="luisepappe" timestamp="20261113T101404+0100" comment="cassato?"?>une<?oxy_comment_end?>
+               couleur d'ambi<del>a</del><add place="inline">e</add>nce et <del hand="#hw">dans
+                  une</del>
                <add place="above" hand="#hw">les formes d'une </add><lb xml:id="p004_r_tl_30"
                />langue qui obéit aux lois sévères d'une vraie <del hand="#hw">et</del>
                <metamark target="#mm2">propre</metamark> poétique <metamark xml:id="mm2"/><del
@@ -395,8 +404,8 @@
             <p><lb/>Tout cela est contraire au roman d'invention, à l'intrigue conduite sous <lb
                   xml:id="p004_r_tl_36"/>la dictée et la surveillance du cerveau, et <del hand="#hw"
                   >elle</del>
-               <add place="above" hand="#hw"><unclear>celà</unclear> même
-                  <unclear>peu</unclear></add> est contraire aussi à <lb xml:id="p004_r_tl_38"
+               <add place="above" hand="#hw">cette même
+                  prose</add> est contraire aussi à <lb xml:id="p004_r_tl_38"
                />l'écriture <del hand="#hw">de</del>
                <add place="above" hand="#hw">en</add> p<del>r</del><add place="over"
                >e</add>rspective de la "pros<del>e</del><add place="over">a</add> d'arte" cérébrale.
@@ -420,15 +429,12 @@
                roman. </p>
             <p><lb xml:id="p004_r_tl_44"/>Mais l'autre prose, celle de <rs type="person"
                   key="person_0020" xml:id="r35">Vittorini</rs>, <del hand="#hw">elle</del> pourra
-               peut-être y aboutir,</p>
-            <pb xml:id="p005" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_005.tif" n="5"/>
-            <ab>
+               peut-être y aboutir, <pb xml:id="p005"
+                  facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_005.tif" n="5"/>
                <fw type="pageNum" place="topright">5.</fw>
-            </ab>
-            <p>
                <lb xml:id="p005_r_tl_1"/>même s'il ne dev<del hand="#hw">r</del>ait pas s'agir du
                roman selon les règles classiques, <lb xml:id="p005_r_tl_2"/>– mais qu'en
-               savons<?oxy_comment_start author="luisepappe" timestamp="20260902T173609+0200" comment="this should be a non-breakable hyphen"?>-<?oxy_comment_end?>nous?
+               savons<?oxy_comment_start author="luisepappe" timestamp="20260902T173609+0200" comment="this should be a non-breakable hyphen"?>-<?oxy_comment_end?><choice><sic> </sic><corr/></choice>nous?
                En tout cas, elle a sûrement <del hand="#hw">une</del>
                <add place="above" hand="#hw">des</add> possibilité<add place="inline" hand="#hw"
                   >s</add>
@@ -460,9 +466,8 @@
                <fw type="sig" place="bottomright">Alice Ceresa. </fw>
             </ab>
             <ab rendition="#right" hand="#hw">
-               <fw type="sig" place="bottomright"
-                  ><?oxy_comment_start author="luisepappe" timestamp="20260917T205321+0200" comment="this is not a signature, but a date, how can I indicate this?"?>Zurigo<?oxy_comment_end?>,
-                  1943</fw>
+               <?oxy_comment_start author="luisepappe" timestamp="20261112T144321+0100" comment="this is a date, not a catchword - how can I encode it?"?>
+               <fw type="catch" place="bottomright">Zurigo, 1943</fw><?oxy_comment_end?>
             </ab>
          </div>
       </body>

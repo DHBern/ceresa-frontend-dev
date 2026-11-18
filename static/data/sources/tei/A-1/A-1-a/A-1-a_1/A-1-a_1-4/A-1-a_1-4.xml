@@ -49,195 +49,18 @@
    <text>
       <body>
          <div>
-            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif"/>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif"
+               n="1"/>
             <p>
                <lb xml:id="p001_l"/>{{SKIP Non trascritto intenzionalmente (motive: title
                page)}}</p>
-            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif"/>
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif"
+               n="2"/>
             <p>
                <lb xml:id="p002_l"/>{{SKIP Non trascritto intenzionalmente (motive: frontispice
                page)}}</p>
-            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-1.tif"/>
-            <p>
-               <lb xml:id="p003_l"/>{{SKIP Non trascritto intenzionalmente (motive: inserted
-               article/recto)}}</p>
-            <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003-1-2.tif"/>
-            <p>
-               <?oxy_comment_start author="luisepappe" timestamp="20260909T113729+0200" comment="what does this error mean?"?><lb
-                  xml:id="p003_l"/><?oxy_comment_end?>{{SKIP Non trascritto intenzionalmente
-               (motive: inserted article/verso)}}</p>
-            <pb xml:id="p005" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_003.tif"
-               n="175"/>
-            <head rendition="#c">
-               <lb xml:id="p005_r_2_tl_1"/>Presentazione di una giovane scrittrice ticinese <lb
-                  xml:id="p005_r_2_tl_2"/>ALICE CERESA </head>
-            <p><lb xml:id="p005_r_2_tl_3"/>Pubblichiamo, in tre puntate, un lungo racconto GLI
-               ALTRI, di una <lb xml:id="p005_r_2_tl_4"/>giovane scrittrice ticinese, Alice Ceresa.
-               È il suo esordio nella vita letteraria, <lb xml:id="p005_r_2_tl_5"/>e non dubitiamo
-               ch'esso susciterà un vivo interesse e una certa sensazione. </p>
-            <p><lb xml:id="p005_r_2_tl_6"/>Una cosa subito colpisce alla lettura di questo racconto,
-               il clima letterario: <lb xml:id="p005_r_2_tl_7"/>clima della nuova generazione. Alice
-               Ceresa che ha seguito, nelle scuole supe<pc>-</pc>
-               <lb xml:id="p005_r_2_tl_8" break="no"/>riori, solo tre anni di Commerciale, e ha
-               dovuto poi, per qualche anno vivere <lb xml:id="p005_r_2_tl_9"/>oltre San Gottardo,
-               non è scrittrice di molte letture. Conosce gli autori che <lb xml:id="p005_r_2_tl_10"
-               />si leggono negli anni di scuola e, in più, alcuni scrittori americani. </p>
-            <p><lb xml:id="p005_r_2_tl_11"/>Ma aveva un suo tormento da esprimere, una sua dolorosa
-               esperienza da <lb xml:id="p005_r_2_tl_12"/>comunicare; e le fu possibile farlo
-               allorché venne ad imbattersi nei mezzi <lb xml:id="p005_r_2_tl_13"/>d'espressione
-               della "sua" generazione. Quando le capitò sotto gli occhi qualche <lb
-                  xml:id="p005_r_2_tl_14"/>breve racconto surrealista del Vittorini fu come se le
-               cadessero dagli occhi le <lb xml:id="p005_r_2_tl_15"/>scaglie che le impedivano di
-               vedere il solo modo a lei conveniente; riconobbe <lb xml:id="p005_r_2_tl_16"/>la via
-               da seguire per comunicare altrui, nelle forme dell'arte, il suo tormento. <lb
-                  xml:id="p005_r_2_tl_17"/>È un processo di trasposizione che essa qui impiega, un
-               processo che ha <lb xml:id="p005_l"/>per modello il sogno, l'incubo, l'allucinazione.
-               Poiché il tormento che la dominava <lb xml:id="p005_l_1"/>e l'annientava era proprio
-               come un incubo, esprimendolo, non poteva creare <lb xml:id="p005_r_2_tl_18"/>che
-               forme corrispondenti: forme di sogno e di allucinazione; tragiche, fanta<pc>-</pc>
-               <lb xml:id="p005_r_2_tl_19" break="no"/>stiche visioni. La trasposizione non è dunque
-               del sentimento, che resta identico; <lb xml:id="p005_r_2_tl_20"/>è solo dell'ambiente
-               e delle persone, che diventano fantastici, di sogno. </p>
-            <p><lb xml:id="p005_r_2_tl_21"/>È ammirevole il modo con cui così giovane e di così
-               breve esperienza <lb xml:id="p005_r_2_tl_22"/>letteraria ha saputo concretare in
-               forme tanto salde, e si direbbe definitive <lb xml:id="p005_r_2_tl_23"/>questo intimo
-               tormento. Siccome poi, così trasposto, il senso del racconto <lb
-                  xml:id="p005_r_2_tl_24"/>non risulta senz'altro chiaro e univoco, taluno dei
-               lettori si chiederà cosa signi<pc>-</pc>
-               <lb xml:id="p005_r_2_tl_25" break="no"/>fichi tutta questa fantasmagoria di visioni e
-               tremendi stati d'animo. È quel che <lb xml:id="p005_r_2_tl_26"/>vogliamo tentare di
-               esporre in questa presentazione, cercando noi pure di <lb xml:id="p005_r_2_tl_27"
-               />afferrare il sentimento che sta sotto le fantastiche avventure del racconto. </p>
-            <p><lb xml:id="p005_r_2_tl_28"/>La scrittrice ci mette lei stessa sulla buona via
-               allorché, all'inizio della <lb xml:id="p005_r_2_tl_29"/>seconda parte, spiega il suo
-               stato d'animo: "E allora mi dissero che era meglio <lb xml:id="p005_r_2_tl_30"
-               /><choice><orig>"</orig><reg/></choice>che me ne andassi. E io nemmeno replicai; più
-               silenziosa e più calma di quando <lb xml:id="p005_r_2_tl_31"
-               /><choice><orig>"</orig><reg/></choice>ero venuta partii, poiché nulla portavo più
-               con me, se non questa certezza: che <lb xml:id="p005_r_2_tl_32"
-               /><choice><orig>"</orig><reg/></choice>avevano visto in me qualcuno che era meglio
-               non avere d'intorno, forse anche</p>
             <pb xml:id="p006" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_004.tif"
-               n="176"/>
-            <p>
-               <lb xml:id="p006_r_1_tl_1"/><choice><orig>"</orig><reg/></choice>un pericolo per gli
-               altri che, le loro carte, le avevano in regola – ecco, io non <lb
-                  xml:id="p006_r_1_tl_2"/><choice><orig>"</orig><reg/></choice>avevo il diritto di
-               usufruire di nessuna ospitalità, come mai potevo pretendere <lb
-                  xml:id="p006_r_1_tl_3"/><choice><orig>"</orig><reg/></choice>una confidenza io,
-               che certo portavo scritto in viso come una condanna, ed <lb xml:id="p006_r_1_tl_4"
-               /><choice><orig>"</orig><reg/></choice>ognuno aveva il diritto di aggiungere la sua?
-               Forse avrei ancora potuto ribel<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_5" break="no"/><choice><orig>"</orig><reg/></choice>larmi,
-               forse avrei potuto tentare un'ultima volta di spiegare che non avevano <lb
-                  xml:id="p006_r_1_tl_6"/><choice><orig>"</orig><reg/></choice>ragione di sospettare
-               – ma tutto m'aveva convinto che essi avessero ragione, <lb xml:id="p006_r_1_tl_7"
-               /><choice><orig>"</orig><reg/></choice>anche se io non sapevo di che". </p>
-            <p><lb xml:id="p006_r_1_tl_8"/>È la psicologia, dunque, di un'esclusa dalla società, di
-               una che si sente <lb xml:id="p006_r_1_tl_9"/>reietta, schivata da tutti. E che non
-               giunge ad afferrare il perché di tale esclu<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_10" break="no"/>sione, in che consista la sua colpa. Eppure
-               si sforza di comprendere e domanda, <lb xml:id="p006_r_1_tl_11"/>ma invano. </p>
-            <p><lb xml:id="p006_r_1_tl_12"/>Quando si è afferrata questa fondamentale posizione,
-               tutti gli episodi del <lb xml:id="p006_r_1_tl_13"/>racconto acquistano un senso,
-               anche se, sia conseguenza di tale modo di tras<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_14" break="no"/>porre, sia una non ancora completa maturità
-               d'espressione, tale senso non è <lb xml:id="p006_r_1_tl_15"/>sempre chiaro. Ma anche
-               quando non si capisca tutto, non cessa per questo <lb xml:id="p006_r_1_tl_16"
-               />l'effetto suggestivo delle grandiose e strane fantasie, la partecipazione nostra
-                  <lb xml:id="p006_r_1_tl_17"/>all'intimo appassionato tormento raccontato in forma
-               velata, e si ammira lo <lb xml:id="p006_r_1_tl_18"/>sforzo e l'originalità di tale
-               tentativo. </p>
-            <p><lb xml:id="p006_r_1_tl_19"/>Si capisce allora, o meglio si intuisce, il significato
-               simbolico del giorna<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_20" break="no"/>laio che, nel primo episodio, dovrebbe dare
-               la soluzione che tormenta tanto la <lb xml:id="p006_r_1_tl_21"/>fanciulla; e non può,
-               poiché anche lui si trova nella stessa situazione, e tenta <lb
-                  xml:id="p006_r_1_tl_22"/>invano di ritrovare una misteriosa melodia che gli
-               sfugge. </p>
-            <p><lb xml:id="p006_r_1_tl_23"/>E si afferra, in seguito, anche il significato del
-               "portiere" che vorrebbe <lb xml:id="p006_r_1_tl_24"/>rifiutare l'ospitalità alla
-               fuggiasca, dopo averla tenuta come sotto un processo <lb xml:id="p006_r_1_tl_25"
-               />d'inquisizione; e che se le cede infine un posticino, lo fa per commiserazione; <lb
-                  xml:id="p006_r_1_tl_26"/>il significato dell'altro ospite pure isolato, anch'esso
-               incapace di esprimersi – <lb xml:id="p006_r_1_tl_27"/>il pianoforte che non dà suoni,
-               e le note toccate che vagano silenziose per <lb xml:id="p006_r_1_tl_28"/>l'aria – i
-               simbolici racconti che si scambiano (pagine di intensa forza lirica), <lb
-                  xml:id="p006_r_1_tl_29"/>nei quali si esprime il desiderio, sempre insoddisfatto,
-               di comunicare con gli <lb xml:id="p006_r_1_tl_30"/>altri e di poterli aiutare; poi il
-               tentativo di chieder aiuto, nella propria dispe<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_31" break="no"/>razione agli <hi rendition="#b">altri</hi>,
-               che invece non comprendono e restano muti; episodio che <lb xml:id="p006_r_1_tl_32"
-               />spiega il titolo del racconto. </p>
-            <p><lb xml:id="p006_r_1_tl_33"/>Segue il sogno che la fanciulla fa nella notte, strano
-               sogno, in cui la scrit<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_34" break="no"/>trice mette il suo pensiero più intimo e
-               profondo – l'impossibilità di compren<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_35" break="no"/>dere e di accettare il sentimento degli altri
-               senza sacrificare la propria perso<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_36" break="no"/>nalità – e infine il risveglio, e lo sguardo
-               dalla finestra verso l'uomo che passa <lb xml:id="p006_r_1_tl_37"/>e non vede il vano
-               gesto delle mani vuote, tristi di non attendere più alcun dono. </p>
-            <p><lb xml:id="p006_r_1_tl_38"/>Più limpida e salda, nei suoi significati simbolici
-               concatenati, è la seconda <lb xml:id="p006_r_1_tl_39"/>parte: l'incubo non si risolve
-               subito, anzi s'inacerbisce ed accresce, rivelando <lb xml:id="p006_r_1_tl_40"/>così
-               il suo intimo significato. La fuga nel treno notturno verso una città sco<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_41" break="no"/>nosciuta, fuga che si compie in un tremendo
-               stato di esaltazione, in un'osses<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_42" break="no"/>sione allucinante, rappresenta il punto più
-               alto e terribile del dramma. Qui la <lb xml:id="p006_r_1_tl_43"/>Ceresa rivela
-               caratteri di scrittrice veramente non comuni. </p>
-            <p><lb xml:id="p006_r_1_tl_44"/>Giunta la fanciulla nella città sconosciuta, ecco
-               l'assalto dei ricordi che <lb xml:id="p006_r_1_tl_45"/>sembrano staccarsi da lei e
-               localizzarsi in giro a lei, come per farle compagnia; <lb xml:id="p006_r_1_tl_46"
-               />poi si dissolvono. Ma non si dissolve il più acerbo di tutti, quello della
-               spaventosa <lb xml:id="p006_r_1_tl_47"/>notte in treno. </p>
-            <p><lb xml:id="p006_r_1_tl_48"/>In seguito, col tempo, la tregua, il calare del
-               tormento, nella tacita pro<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_49" break="no"/>gressiva rassegnazione di chi accetta il suo
-               destino. E, nella città sconosciuta, il <lb xml:id="p006_r_1_tl_50"/>partecipare, a
-               poco a poco, alla vita degli altri (una delle pagine più poetiche!), <lb
-                  xml:id="p006_r_1_tl_51"/>alla vita di coloro che le stanno in giro ma l'ignorano,
-               involando loro, cogli <lb xml:id="p006_r_1_tl_52"/>occhi, coll'udito,
-               coll'intuizione, un po' della loro esistenza, e portando tali bri<pc>-</pc>
-               <lb xml:id="p006_r_1_tl_53" break="no"/>ciole di gesti, sguardi e parole, su nella
-               propria camera, e intrattenendosi e <lb xml:id="p006_r_1_tl_54"/>distraendosi con
-               essi. </p>
-            <p><lb xml:id="p006_r_1_tl_55"/>Infine, la scoperta dolorosa, ma in qualche modo
-               confortante, che tutti <lb xml:id="p006_r_1_tl_56"/>hanno il loro tormento, tutti
-               hanno bisogno dell'aiuto reciproco, e che una <lb xml:id="p006_r_1_tl_57"/>certa
-               pace, un certo acquietamento non si può trovare che nel partecipare al <lb
-                  xml:id="p006_r_1_tl_58"/>dolore altrui, e sentire così l'anima del Tutto. E le
-               mani che vorrebbero aiutare <lb xml:id="p006_r_1_tl_59"/>e in fondo non possono,
-               sembrano ischeletrirsi. </p>
-            <p><lb xml:id="p006_r_1_tl_60"/>Storia di un profondo soffrire, dunque; e tanto più fa
-               meraviglia in quanto <lb xml:id="p006_r_1_tl_61"/>si pensa che è una scrittrice
-               giovanissima che l'ha immaginata ed elaborata in <lb xml:id="p006_r_1_tl_62"/>tutti i
-               particolari. La quale, certo, dovette passare per esperienze simili,
-                  c<?oxy_comment_start author="luisepappe" timestamp="20260901T155348+0200" comment="how to indicate a page break within the digitization?"?>hiarir<pc>-</pc>
-               <lb xml:id="p006_r_2_tl_1" break="no"/><?oxy_comment_end?>sele a poco a poco per
-               poterle superare. Superarle, conferendo loro forma d'arte; <lb xml:id="p006_r_2_tl_2"
-               />poiché, come dice il Pascoli, se il grido del dolore è acerbo, l'eco ne è dolce. </p>
-            <p><lb xml:id="p006_r_2_tl_3"/>Chi legge con attenzione questo racconto non tarda a
-               scoprire le meditate <lb xml:id="p006_r_2_tl_4"/>corrispondenze che esistono fra le
-               varie parti, corrispondenze che ne formano <lb xml:id="p006_r_2_tl_5"/>l'interna
-               ricchezza, e le straordinarie fantasie necessarie a dar corpo concreto <lb
-                  xml:id="p006_r_2_tl_6"/>ai simbolici stati d'animo, le quali ne sono la bellezza. </p>
-            <p><lb xml:id="p006_r_2_tl_7"/>Naturalmente non tutto è ugualmente perfetto. Certe
-               fantasie non appaiono <lb xml:id="p006_r_2_tl_8"/>chiare e non hanno sempre precise
-               corrispondenze; e la lingua, semplice ed effi<pc>-</pc>
-               <lb xml:id="p006_r_2_tl_9" break="no"/>cace, non mostra ancora tutte le scaltrezze
-               d'espressività a cui un più speri<pc>-</pc>
-               <lb xml:id="p006_r_2_tl_10" break="no"/>mentato scrittore potrebbe condurla. </p>
-            <p><lb xml:id="p006_r_2_tl_11"/>Sono le mende dello scrittore giovane: nella loro
-               ingenuità e inesperienza, <lb xml:id="p006_r_2_tl_12"/>non prive di attrattive.
-               Allorché Alice Ceresa possederà meglio l'istrumento <lb xml:id="p006_r_2_tl_13"
-               />dell'arte sua, questi difetti scompariranno; ma con essi, forse, la cordiale e <lb
-                  xml:id="p006_r_2_tl_14"/>commovente immediatezza. </p>
-            <p rendition="#right"
-                  ><?oxy_comment_start author="luisepappe" timestamp="20260909T112732+0200" comment="the introduction by A.J. (everything till here) shouldn&apos;t be included in the prototype"?><lb
-                  xml:id="p006_r_2_tl_15"/>A. J.<?oxy_comment_end?>
-            </p>
+               n="177"/>
             <head rendition="#c"><lb xml:id="p006_r_tl_1"/>Gli altri<lb xml:id="p006_r_tl_2"/>PRIMA
                   PARTE<lb xml:id="p006_r_tl_3"/>I. Notizie di morti</head>
             <p><lb xml:id="p006_r_tl_4"/>M'avevano lasciata sola, sulla riva del lago, e le loro
@@ -532,10 +355,9 @@
                potevo fare per salvarmi. Mi strappai con un grido <lb xml:id="p008_r_1_tl_51"/>da
                quella visione, e mi ritrovai con gli occhi fissi sul portiere, e dentro <lb
                   xml:id="p008_r_1_tl_52"/>di me c'era una grande vertigine, dalla quale lentamente
-               l'immagine</p>
+               l'immagine
             <pb xml:id="p009" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_007.tif"
                n="182"/>
-            <p>
                <lb xml:id="p009_r_tl_1"/>di me, così ritta davanti a lui, riprendeva contorno. E
                come mi passavo <lb xml:id="p009_r_tl_2"/>respirando profondamente una mano sulla
                fronte, il portiere tolse <lb xml:id="p009_r_tl_3"/>lentamente i piedi dal tavolo, e
@@ -784,10 +606,9 @@
                piena di pace. </p>
             <p><lb xml:id="p010_r_1_tl_47"/>E me ne andrei allora per questi vicoli, e guarderei
                quelle porte <lb xml:id="p010_r_1_tl_48"/>e tutte le studierei. Ed in quelli scuri,
-               pieni dello sbattere lontano</p>
+               pieni dello sbattere lontano
             <pb xml:id="p011" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_009.tif"
                n="186"/>
-            <p>
                <lb xml:id="p011_r_tl_1"/>raccolto in un rombo silenzioso e pieno di un vigore
                incosciente e <lb xml:id="p011_r_tl_2"/>triste, starei ad attendere nelle sere e
                nelle notti di vento e di brividi <lb xml:id="p011_r_tl_3"/>di pioggia. Non so bene

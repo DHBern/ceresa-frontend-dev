@@ -76,7 +76,7 @@
                   xml:id="p001_r_tl_26"/>di villette, e la gente, pur di serbarsi l'illusione <lb
                   xml:id="p001_r_tl_27"/>di vivere in campagna, rinunciava perfino al <lb
                   xml:id="p001_r_tl_29"/>pettegolezzo. </p>
-            <p><lb xml:id="p001_r_tl_30"/>Infatti quest'illusione coloriva di se[?] tutta l'aria <lb
+            <p><lb xml:id="p001_r_tl_30"/>Infatti quest'illusione coloriva di se tutta l'aria <lb
                   xml:id="p001_r_tl_33"/>del quartiere; ma risiedeva profondamente <lb
                   xml:id="p001_r_tl_36"/>proprio nella casetta del parco, nascosta alla <lb
                   xml:id="p001_r_tl_37"/>vista sin dall'entrata dai fitti rami spioventi <lb
@@ -93,7 +93,8 @@
             <p><lb xml:id="p002_r_tl_2"/>La strega abitava, sola, in quella casa fuori del mondo.
                   <lb xml:id="p002_r_tl_4"/>Era una donna di mezza età e di ancor grande <lb
                   xml:id="p002_r_tl_5"/>bellezza, a cui un passato <del>tempres</del> tempestoso
-               aveva <lb xml:id="p002_r_tl_7"/>abbandonato tracce ma non scorie lungo il cammino.
+               aveva <lb xml:id="p002_r_tl_7"/>abbandonato tracce ma non scorie lungo il
+               <?oxy_comment_start author="luisepappe" timestamp="20261116T092057+0100" comment="sic-corr &quot;cammino&quot;?"?>camino<?oxy_comment_end?>.
                   <lb xml:id="p002_r_tl_10"/>Essa viveva nell'unica e difficile compagnia di <lb
                   xml:id="p002_r_tl_12"/>queste tracce le sue giornate segrete. </p>
             <p><lb xml:id="p002_r_tl_13"/>L'unica cosa che essa avesse a conoscenza del mondo <lb
@@ -112,24 +113,22 @@
                   xml:id="p002_r_tl_27"/>sarebbe allora rapidamente spacciato da solo, <lb
                   xml:id="p002_r_tl_28"/>di propria iniziativa. Forse andando a languire <lb
                   xml:id="p002_r_tl_32"/>in una prigione o dandosi la morte per la <lb
-                  xml:id="p002_r_tl_33"/>propria mano. Poiché la strega, fra le altre <lb
-                  xml:id="p002_r_tl_34"/>cose che sapeva, sapeva anche questo: che <lb
+                  xml:id="p002_r_tl_33"/>propria mano. Perché la strega, fra le altre <lb
+                  xml:id="p002_r_tl_34"/>cose che sapeva, sapeva anche questa: che <lb
                   xml:id="p002_r_tl_36"/>nulla vive senza una giustificazione, e questa <lb
                   xml:id="p002_r_tl_37"/>giustificazione può essere sempre solo una <lb
                   xml:id="p002_r_tl_40"/>ragione positiva. <del>Essa si teneva quindi Claudio <lb
                      xml:id="p002_r_tl_43"/>con ogni tranquillità, e viveva la propria <lb
-                     xml:id="p002_r_tl_46"/>vita senza nessun rimorso lontano da lui e <lb
+                     xml:id="p002_r_tl_46"/>vita senza nessun rimorso lontana da lui e <lb
                      xml:id="p002_r_tl_48"/>senza il suo concorso. Inutile dire che a Claudio <lb
-                     xml:id="p002_l_1"/>stesso, di questo, non importava nulla.</del></p>
-            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_003.tif"
-               n="3"/>
-            <ab>
+                     xml:id="p002_l_1"/>stesso, di questo, non importava nulla.</del>
+               <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_003.tif"
+                  n="3"/>
                <fw type="pageNum" place="topright">3</fw>
-            </ab>
-            <p><lb xml:id="p003_r_tl_1"/>Sapeva anche che qualcuno può apparentemente <lb
+               <lb xml:id="p003_r_tl_1"/>Sapeva anche che qualcuno può apparentemente <lb
                   xml:id="p003_r_tl_2"/>continuare a vivere quando in verità è già morto <lb
                   xml:id="p003_r_tl_3"/>ed il suo spirito da lungo tempo abbia <add place="above"
-                  >lasciato</add><del> abbandonato</del>
+                  >lasciato</add> <del>abbandonato</del>
                <lb xml:id="p003_r_tl_5"/>un corpo abbandonato a sé stesso. E non è forse <lb
                   xml:id="p003_r_tl_6"/>questo essere morti: un corpo abbandonato a sé <lb
                   xml:id="p003_r_tl_7"/>stesso, cioè alle proprie leggi non rette più da <lb
