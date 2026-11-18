@@ -4961,7 +4961,7 @@
 					"cited_entities": {
 						"people": ["person_0008", "person_0011", "person_0012"],
 						"places": ["place_0006", "place_0008"],
-						"orgs": [],
+						"orgs": ["org_0005"],
 						"works": ["work_0004", "work_0005", "work_0006", "work_0007"]
 					}
 				},
