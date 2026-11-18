@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import { docPath } from '$lib/functions/ease_of_use/docPath';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import { findMatchingSequences } from '$lib/functions/sequences/findMatchingSequences';
 	import { doc_sequences as seqAllRaw } from '$lib/data/doc_sequences.json';
@@ -110,12 +111,12 @@
 		} else if (ev.key === 'ArrowLeft') {
 			if (prevId) {
 				resetParamsExcept(params, ['seq', 'mode']);
-				goto(resolve(`/${prevId}?${params.toURLSearchParams()}` as any));
+				goto(`${docPath(prevId)}?${params.toURLSearchParams()}`);
 			}
 		} else if (ev.key === 'ArrowRight') {
 			if (nextId) {
 				resetParamsExcept(params, ['seq', 'mode']);
-				goto(resolve(`/${nextId}?${params.toURLSearchParams()}` as any));
+				goto(`${docPath(nextId)}?${params.toURLSearchParams()}`);
 			}
 		} else if (ev.key === 's') {
 			// Only open if not typing in an input/textarea
@@ -215,7 +216,7 @@
 	<a
 		data-sveltekit-preload-data="tap"
 		data-sveltekit-preload-code="hover"
-		href={`${resId}?${updateSearchParams(page.url.searchParams, { seq: seqKey })}`}
+		href={`${docPath(resId)}?${updateSearchParams(page.url.searchParams, { seq: seqKey })}`}
 		class={[
 			'p-1',
 			isCurrent ? 'w-110' : 'w-85', //! note: width must be absolute values (e.g. w-80). Otherwise (e.g. with w-max or max-w-80) centerCurrentItemInGallery() won't work as expected since not all images have been loaded when it centers.
