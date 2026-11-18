@@ -70,7 +70,7 @@
 			default:
 				return {
 					isFluid: params.flow !== 'paged',
-					showFac: false,
+					showFac: params.flow === 'paged',
 					showMain: true,
 					showSecond: false,
 					showTranslationPanel: false,
