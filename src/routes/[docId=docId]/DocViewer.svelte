@@ -190,7 +190,7 @@
 	<aside class={['z-20 w-full overflow-hidden', isGallerySticky && 'sticky top-0']}>
 		{#if !view.isFluid}
 			<div in:fade={{ delay: DELAY }}>
-				<Gallery docItem={resolvedDoc.item} {params} />
+				<Gallery docItem={resolvedDoc.item} pages={ceteiData.pages} {params} />
 			</div>
 		{/if}
 	</aside>

@@ -71,7 +71,8 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 				</body>
 			</text>
 		</TEI>`,
-			elements: []
+			elements: [],
+			pages: []
 		};
 
 		if (!filename) {

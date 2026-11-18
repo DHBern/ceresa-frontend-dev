@@ -111,6 +111,22 @@ export function removeNotesFromMaintext(ceteiSerialized: string) {
 	return ceteiSerialized.replace(/<ol class="notes">.*?<\/ol>/s, '');
 }
 
+export interface TEIPage {
+	page: number;
+	n: string | null;
+	facs: string | null;
+}
+
+export function collectPageMetadata(container: ParentNode): TEIPage[] {
+	return Array.from(container.querySelectorAll('tei-text tei-pb'))
+		.filter((el) => !el.closest('cetei-original'))
+		.map((el, index) => ({
+			page: index + 1,
+			n: el.getAttribute('n'),
+			facs: el.getAttribute('facs')?.replace(/\/info\.json$/, '') ?? null
+		}));
+}
+
 // Extract a single page from the serialized CETEI output by running page index.
 // Linearizes the DOM into a flat node sequence, splitting at <tei-pb> boundaries.
 // At each page boundary, closes all currently-open ancestor tags and reopens

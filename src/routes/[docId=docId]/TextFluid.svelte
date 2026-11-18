@@ -37,7 +37,9 @@
 			await document.fonts.ready;
 			await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
 			if (cancelled) return;
-			const pageBreak = containerTEI.querySelectorAll('tei-pb')[page - 1];
+			const pageBreak = Array.from(containerTEI.querySelectorAll('tei-pb')).filter(
+				(el) => !el.closest('cetei-original')
+			)[page - 1];
 			pageBreak?.scrollIntoView({ block: 'start', behavior: 'instant' });
 		})();
 		return () => {
@@ -61,14 +63,16 @@
 	let mutationObserver: MutationObserver;
 
 	function collectPagebreaks(el: HTMLElement) {
-		const nodes = el.querySelectorAll('tei-pb');
+		const nodes = Array.from(el.querySelectorAll<HTMLElement>('tei-pb')).filter(
+			(node) => !node.closest('cetei-original')
+		);
 
 		if (nodes.length) {
-			const newThumbs = Array.from(nodes as NodeListOf<HTMLElement>).map((el, i) => ({
+			const newThumbs = nodes.map((el, i) => ({
 				id: i,
 				el: el,
-				facs: el.getAttribute('facs')?.replace('/info.json', '') || '',
-				n: el.getAttribute('n') || '',
+				facs: textData.pages[i]?.facs ?? '',
+				n: textData.pages[i]?.n ?? String(i + 1),
 				page: i + 1,
 				top: 0
 			}));
@@ -187,7 +191,7 @@
 								classes="w-full"
 								imgClasses="w-full"
 							/>
-							<span class="text-sm">Pag. {thumb.page}</span>
+							<span class="text-sm">Pag. {thumb.n}</span>
 						</div>
 					</button>
 				{/each}

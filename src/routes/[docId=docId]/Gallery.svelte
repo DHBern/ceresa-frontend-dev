@@ -4,8 +4,16 @@
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
 	import { documents as allDocsRaw } from '$lib/data/documents.json';
-	import type { TDocuments } from '$lib/types/documents/TDocuments';
+	import type {
+		TDocuments,
+		TDocItemsPosthum,
+		TDocItemsUnpublished,
+		TDocItemsPublished
+	} from '$lib/types/documents/TDocuments';
 	import ThumbList from './ThumbList.svelte';
+	import type { TEIPage } from '$lib/CETEIcean/behaviors';
+	import type { ReturnUseSearchParams } from 'runed/kit';
+	import type { schema } from './schemas';
 
 	const allDocs = allDocsRaw as TDocuments['documents'];
 
@@ -16,15 +24,33 @@
 		pagenum_running: number;
 		fac: string;
 		page: number;
+		label: string;
 	};
 
-	let { docItem, params } = $props();
+	let {
+		docItem,
+		params,
+		pages = []
+	}: {
+		docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null;
+		params: ReturnUseSearchParams<typeof schema>;
+		pages?: TEIPage[];
+	} = $props();
+	let currentPage = $derived(params.page ?? 1);
 
 	// Gallery Items
 	function collectGalleryItems() {
 		const galleryItems: TGalleryItem[] =
 			docItem?.iiif.urls_IIIF_images?.map((el: string, idx: number) => {
-				return { pagenum_running: idx + 1, fac: el, page: idx + 1 };
+				const metadata =
+					pages.find((item) => item.facs === el.replace(/\/info\.json$/, '')) ??
+					(!pages[idx]?.facs ? pages[idx] : undefined);
+				return {
+					pagenum_running: idx + 1,
+					fac: el,
+					page: idx + 1,
+					label: metadata?.n ?? String(idx + 1)
+				};
 			}) || [];
 		return galleryItems;
 	}
@@ -48,12 +74,12 @@
 	}
 
 	$effect(() => {
-		scrollGalleryToPage(params.page);
+		scrollGalleryToPage(currentPage);
 	});
 
-	let itemsBefore = $derived(collectGalleryItems()?.slice(0, params.page - 1));
-	let itemsCurrent = $derived(collectGalleryItems()[params.page - 1]);
-	let itemsAfter = $derived(collectGalleryItems()?.slice(params.page - 0));
+	let itemsBefore = $derived(collectGalleryItems()?.slice(0, currentPage - 1));
+	let itemsCurrent = $derived(collectGalleryItems()[currentPage - 1]);
+	let itemsAfter = $derived(collectGalleryItems()?.slice(currentPage));
 </script>
 
 {#snippet thumbItem(
@@ -80,7 +106,7 @@
 			classes={`min-h-2 h-max mx-2 my-1 flex justify-center items-center ${isCurrent ? 'max-h-35' : 'max-h-20'}`}
 			imgClasses={`h-max border ${isCurrent ? 'max-h-30 max-w-30' : 'max-h-15 max-w-15'}`}
 		/>
-		<span class="mt-1 text-sm">{galleryItem.page}</span>
+		<span class="mt-1 text-sm">{galleryItem.label}</span>
 	</button>
 {/snippet}
 
