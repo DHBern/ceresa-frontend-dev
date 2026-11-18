@@ -18,7 +18,6 @@
 	import TextFluid from './TextFluid.svelte';
 	import DrawerRegNotes from './DrawerRegNotes.svelte';
 	import { isBreakpointBelow } from '$lib/functions/ease_of_use/breakpoints.svelte';
-	import { showDrawer } from '$lib/globals/ui-states.svelte';
 
 	let {
 		docItem,
@@ -36,14 +35,18 @@
 		params: any;
 	} = $props();
 
-	let showFac = $state(true);
-	let showMain = $state(true);
-	let showSecond = $state(true);
+	let showFac = $derived(params.mode === 'DF' || params.mode === 'FAC');
+	let showMain = $derived(params.mode !== 'FAC');
+	let showSecond = $derived(params.mode === 'TRLF' && ceteiDataTranslation !== null);
 	let nColsFit = $state(4);
 	let nColsVisible = $derived((showFac ? 1 : 0) + (showMain ? 1 : 0) + (showSecond ? 1 : 0));
-	let isFluid = $state(false);
-	let mode_main: string | null = $state('mode-lf');
-	let mode_secondary: string | null = $state('mode-lf');
+	let isFluid = $derived(params.mode !== 'DF');
+	let mode_main = $derived(showMain ? (isFluid ? 'mode-lf' : 'mode-df') : null);
+	let drawerOpen = $state(false);
+
+	function openDrawer() {
+		drawerOpen = true;
+	}
 
 	let isFacsimileView = $derived(!showMain && !showSecond);
 
@@ -51,42 +54,6 @@
 
 	let widthFacsimileLg = '1000px';
 	let facsimileWidth = '50vw';
-
-	$effect(() => {
-		if (resolvedDoc.docId) showDrawer.value = false;
-	});
-
-	$effect(() => {
-		if (params.mode === 'LF') {
-			isFluid = true;
-			showFac = false;
-			showMain = true;
-			showSecond = false;
-			mode_main = 'mode-lf';
-			mode_secondary = null;
-		} else if (params.mode === 'DF') {
-			isFluid = false;
-			showFac = true;
-			showMain = true;
-			showSecond = false;
-			mode_main = 'mode-df';
-			mode_secondary = null;
-		} else if (params.mode === 'TRLF') {
-			isFluid = true;
-			showFac = false;
-			showMain = true;
-			showSecond = true;
-			mode_main = 'mode-lf';
-			mode_secondary = 'mode-lf';
-		} else if (params.mode === 'FAC') {
-			isFluid = true;
-			showFac = true;
-			showMain = false;
-			showSecond = false;
-			mode_main = null;
-			mode_secondary = null;
-		}
-	});
 
 	let urls = $derived(docItem?.iiif.urls_IIIF_images ?? []);
 	let url = $derived(urls[params.page - 1]);
@@ -199,10 +166,11 @@
 								{textData}
 								{params}
 								{showThumbs}
+								{openDrawer}
 								classes="mx-auto w-full max-w-300 md:max-w-[1300px]"
 							/>
 						{:else}
-							<TextPaged {textData} page={params.page} />
+							<TextPaged {textData} page={params.page} {openDrawer} />
 						{/if}
 					{/if}
 				</div>
@@ -234,7 +202,7 @@
 				>
 					Traduzione editoriale
 				</h3>
-				<div class={[mode_secondary && mode_secondary]}>
+				<div class="mode-lf">
 					{@render Text(ceteiDataTranslation, showSecond, false, isFluid)}
 				</div>
 			</div>
@@ -243,7 +211,7 @@
 </div>
 
 <!-- Drawer -->
-<DrawerRegNotes {ceteiData} {docItem} />
+<DrawerRegNotes {ceteiData} {docItem} bind:open={drawerOpen} />
 
 <style>
 	.containerCenter {

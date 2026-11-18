@@ -3,16 +3,13 @@ import {
 	activeRegisterTab,
 	drawerSnapPoint,
 	drawerSnapPoint_DEFAULT,
-	selectedTextNode,
-	showDrawer
+	selectedTextNode
 } from '$lib/globals/ui-states.svelte';
 import { openRegisters } from '$lib/globals/ui-states.svelte';
 import type { TRegKeysFlat } from '$lib/types/register/TRegister';
 import { tick } from 'svelte';
 import { findRegTypeByRegKey } from '../ease_of_use/findRegTypeByRegKey';
 import { scrollContainerTo } from '../ease_of_use/scrollContainerTo';
-
-const attachedTextInteractions = new WeakSet<Element>();
 
 // -------------------------------------------------
 // Scroll
@@ -103,35 +100,24 @@ function activateNoteInText(key: string) {
 }
 
 // Open Sidebar
-async function openRegDrawer(key: TRegKeysFlat) {
-	showDrawer.value = true;
-
+async function showTextDrawer(openDrawer: () => void) {
 	//! HACK Opening the drawer directly on an intermediate snap point does not work, unless we first set drawerSnapPoint.value to another value and back.
 	drawerSnapPoint.value = DRAWER_SNAP_POINTS[0];
+	openDrawer();
 	await tick();
 	drawerSnapPoint.value = drawerSnapPoint_DEFAULT;
-
-	activeRegisterTab.value = 'register';
-	const regType = findRegTypeByRegKey(key);
-	if (regType && !openRegisters.list.includes(regType)) {
-		openRegisters.list = [...openRegisters.list, regType];
-	}
-}
-function openNoteDrawer() {
-	showDrawer.value = true;
-	activeRegisterTab.value = 'notes';
 }
 
 // Scroll Text and Sidebar
-function scrollText(elItem: HTMLElement) {
-	const elContainer = document.querySelector('[data-textflow=fluid]');
-	scrollWindow(elItem, elContainer as HTMLElement, 200);
+function scrollText(elItem: HTMLElement | null) {
+	const elContainer = elItem?.closest<HTMLElement>('[data-textflow]');
+	if (elContainer) scrollWindow(elItem, elContainer, 200);
 }
 
 export function findTextNodes(key: TRegKeysFlat | undefined | null): HTMLElement[] | undefined {
 	if (!key) return;
 	const candidates = document.querySelectorAll(
-		`[data-textflow=fluid] tei-text tei-rs[key="${key}"]`
+		`[data-textflow] tei-text tei-rs[key="${CSS.escape(key)}"]`
 	);
 	const nodeList = Array.from(candidates).filter((el): el is HTMLElement => {
 		// Return true ONLY if there is NO cetei-original ancestor
@@ -160,7 +146,7 @@ export function handleRegisterClick(key: TRegKeysFlat | undefined | null) {
 	selectedTextNode.els = elSpans;
 
 	// focus first element and scroll
-	if (elSpans) {
+	if (elSpans?.length) {
 		elSpans[0].focus();
 		scrollText(elSpans[0] as HTMLElement);
 	}
@@ -227,13 +213,14 @@ export function handleAnnotationClick(noteId: TRegKeysFlat | undefined | null) {
 	if (!noteId) return;
 	selectedTextNode.key = noteId;
 	activateNoteInText(noteId);
-	const elSpan = document.querySelector(
-		`[data-textflow=fluid] tei-text span.note-mark[data-noteid=${noteId}]`
+	const escapedNoteId = CSS.escape(noteId);
+	const elSpan = document.querySelector<HTMLElement>(
+		`[data-textflow] tei-text :is(.note-mark, .footnote)[data-noteid="${escapedNoteId}"]`
 	);
-	scrollText(elSpan as HTMLElement);
+	scrollText(elSpan);
 }
 
-export function handleRefStringClick(elSpan: HTMLElement | undefined | null) {
+async function handleRefStringClick(elSpan: HTMLElement, openDrawer: () => void) {
 	const key = elSpan?.getAttribute('key') as TRegKeysFlat;
 	if (!elSpan || !key) return;
 	selectedTextNode.key = key;
@@ -244,7 +231,13 @@ export function handleRefStringClick(elSpan: HTMLElement | undefined | null) {
 	resetAllActiveNodesInText();
 	elSpan.classList.add('active');
 
-	openRegDrawer(key);
+	activeRegisterTab.value = 'register';
+	const regType = findRegTypeByRegKey(key);
+	if (regType && !openRegisters.list.includes(regType)) {
+		openRegisters.list = [...openRegisters.list, regType];
+	}
+	await showTextDrawer(openDrawer);
+	await tick();
 
 	const regElement = document.querySelector(`[data-dom=containerRegister] [data-regkey=${key}]`);
 	if (regElement) {
@@ -252,37 +245,37 @@ export function handleRefStringClick(elSpan: HTMLElement | undefined | null) {
 		(regElement as HTMLElement).focus();
 	}
 }
-export async function handleFootnoteClick(key: TRegKeysFlat | undefined | null) {
+async function handleFootnoteClick(key: string | null, openDrawer: () => void) {
 	if (!key) return;
-	selectedTextNode.key = key;
-	openNoteDrawer();
-	activateNoteInText(key);
+	selectedTextNode.key = null;
+	selectedTextNode.el = null;
+	selectedTextNode.els = null;
+	activeRegisterTab.value = 'notes';
+	await showTextDrawer(openDrawer);
 	await tick();
+	activateNoteInText(key);
 	const annotElement = document.querySelector(
 		`[data-dom=containerAnnotations] li[data-noteid=${key}]`
 	);
 	scrollNotes(annotElement as HTMLElement);
 }
 
-export function attachTextInteractions(container: HTMLElement) {
+export function attachTextInteractions(container: HTMLElement, openDrawer: () => void) {
 	container.querySelectorAll('tei-rs').forEach((el) => {
-		if (attachedTextInteractions.has(el)) return;
-		attachedTextInteractions.add(el);
 		el.setAttribute('tabindex', '0');
 		el.addEventListener('click', (ev) => {
 			ev.stopPropagation();
-			handleRefStringClick(el as HTMLElement);
+			void handleRefStringClick(el as HTMLElement, openDrawer);
 		});
 		el.addEventListener('focusout', clearAllHighlights);
 	});
 
 	container.querySelectorAll('.footnote, .note-mark').forEach((el) => {
-		if (attachedTextInteractions.has(el)) return;
-		attachedTextInteractions.add(el);
-		const key = el.closest('[data-noteid]')?.getAttribute('data-noteid') as TRegKeysFlat;
+		const key = el.getAttribute('data-noteid');
 		el.setAttribute('tabindex', '0');
-		el.addEventListener('click', () => {
-			void handleFootnoteClick(key);
+		el.addEventListener('click', (ev) => {
+			ev.stopPropagation();
+			void handleFootnoteClick(key, openDrawer);
 		});
 		el.addEventListener('focusout', clearAllHighlights);
 	});

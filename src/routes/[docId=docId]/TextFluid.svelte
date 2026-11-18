@@ -6,7 +6,7 @@
 
 	let containerMaintext: HTMLElement;
 	let containerTEI: HTMLElement;
-	let { textData, params, showThumbs = true, classes } = $props();
+	let { textData, params, showThumbs = true, classes, openDrawer } = $props();
 
 	let serializedWithoutNotes = $derived(removeNotesFromMaintext(textData.serialized));
 
@@ -117,7 +117,7 @@
 	const setupCustomElements = (element: HTMLElement) => {
 		c.addBehaviors(behaviors(document));
 		c.processPage();
-		attachTextInteractions(element);
+		attachTextInteractions(element, openDrawer);
 	};
 </script>
 

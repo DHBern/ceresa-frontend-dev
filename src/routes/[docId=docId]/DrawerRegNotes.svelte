@@ -6,9 +6,7 @@
 		setDrawerSmall,
 		setDrawerMedium,
 		setDrawerLarge,
-		selectedTextNode,
-		showDrawer as showDrawer,
-		drawerSnapPoint_DEFAULT
+		selectedTextNode
 	} from '$lib/globals/ui-states.svelte';
 	import * as Drawer from '$lib/components/shadcn-ui/drawer/index.js';
 	import DrawerReg from './DrawerReg.svelte';
@@ -17,7 +15,7 @@
 	import { handleJumpToSibling } from '$lib/functions/interactive_edendum/handleInteractiveText';
 	import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
 
-	let { ceteiData, docItem } = $props();
+	let { ceteiData, docItem, open = $bindable(false) } = $props();
 
 	async function handleEscape(ev: KeyboardEvent) {
 		if (ev.key === 'Escape' && !isDrawerSmall) {
@@ -28,7 +26,7 @@
 	}
 
 	function closeAndResetDrawer() {
-		showDrawer.value = false;
+		open = false;
 	}
 
 	let isDrawerSmall = $derived(drawerSnapPoint.value === DRAWER_SNAP_POINTS[0]);
@@ -39,7 +37,7 @@
 <Drawer.Root
 	snapPoints={DRAWER_SNAP_POINTS}
 	bind:activeSnapPoint={drawerSnapPoint.value}
-	bind:open={showDrawer.value}
+	bind:open
 	modal={false}
 	dismissible={isDrawerSmall}
 	direction="bottom"

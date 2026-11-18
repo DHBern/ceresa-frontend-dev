@@ -13,7 +13,6 @@ export const registerGroupItems = $state({ value: true });
 export const openRegisters: { list: TRegTypes[] } = $state({ list: [] });
 
 // Sidebar Toggle
-export const showDrawer = $state({ value: false });
 export const drawerSnapPoint_DEFAULT = DRAWER_SNAP_POINTS[1];
 export const drawerSnapPoint: { value: string | number | null } = $state({
 	value: drawerSnapPoint_DEFAULT
@@ -33,15 +32,12 @@ export const selectedTextNode: {
 });
 
 export function setDrawerSmall() {
-	showDrawer.value = true;
 	drawerSnapPoint.value = DRAWER_SNAP_POINTS[0];
 }
 export function setDrawerMedium() {
-	showDrawer.value = true;
 	drawerSnapPoint.value = DRAWER_SNAP_POINTS[1];
 }
 export function setDrawerLarge() {
-	showDrawer.value = true;
 	drawerSnapPoint.value = DRAWER_SNAP_POINTS[2];
 }
 

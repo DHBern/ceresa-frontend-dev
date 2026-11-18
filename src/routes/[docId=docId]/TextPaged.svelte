@@ -2,40 +2,35 @@
 	import CETEI from 'CETEIcean';
 	import { behaviors, removeNotesFromMaintext, extractPage } from '$lib/CETEIcean/behaviors';
 	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
+	import { browser } from '$app/environment';
+	import type { ProcessedTEI } from './processTEI';
 
 	const c = new CETEI();
-	let { textData, page } = $props();
+	let {
+		textData,
+		page,
+		openDrawer
+	}: { textData: ProcessedTEI | null; page: number; openDrawer: () => void } = $props();
 
 	const setupCustomElements = (element: HTMLElement) => {
 		c.addBehaviors(behaviors(document));
-
-		let processed = false;
-		const attachInteractions = () => {
-			if (!element.querySelector('tei-rs, .footnote, .note-mark')) return;
-			if (!processed) {
-				c.processPage();
-				processed = true;
-			}
-			attachTextInteractions(element);
-		};
-
-		const observer = new MutationObserver(attachInteractions);
-		observer.observe(element, { childList: true, subtree: true });
-		attachInteractions();
-		return () => observer.disconnect();
+		c.processPage();
+		attachTextInteractions(element, openDrawer);
 	};
 
-	let serializedWithoutNotes: string | null = $state(null);
-	$effect(() => {
-		// Run this in an effect to guarantee it only runs on mount.
-		serializedWithoutNotes = removeNotesFromMaintext(extractPage(textData.serialized, page));
-	});
+	let serializedWithoutNotes = $derived(
+		browser && textData ? removeNotesFromMaintext(extractPage(textData.serialized, page)) : null
+	);
 </script>
 
-<div
-	data-textflow="diplomatic"
-	class="relative mx-auto max-w-200 overflow-y-auto pl-5"
-	{@attach setupCustomElements}
->
-	{@html serializedWithoutNotes}
-</div>
+{#if serializedWithoutNotes !== null}
+	{#key serializedWithoutNotes}
+		<div
+			data-textflow="diplomatic"
+			class="relative mx-auto max-w-200 overflow-y-auto pl-5"
+			{@attach setupCustomElements}
+		>
+			{@html serializedWithoutNotes}
+		</div>
+	{/key}
+{/if}
