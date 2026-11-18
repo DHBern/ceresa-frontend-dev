@@ -7,7 +7,7 @@ const REG_TYPE_SCHEMAS = {
 	people: z.object({ filter: z.enum(Object.keys(dictReg.people.groups) as any).default('') }),
 	places: z.object({ filter: z.enum(Object.keys(dictReg.places.groups) as any).default('') }),
 	orgs: z.object({ filter: z.enum(Object.keys(dictReg.orgs.groups) as any).default('') }),
-	bibls: z.object({ filter: z.enum(Object.keys(dictReg.bibls.groups) as any).default('') })
+	works: z.object({ filter: z.enum(Object.keys(dictReg.works.groups) as any).default('') })
 } as const satisfies Record<TRegTypes, z.ZodObject<{ filter: z.ZodDefault<any> }>>;
 
 // Export type union for the filter value

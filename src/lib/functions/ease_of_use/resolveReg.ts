@@ -2,7 +2,7 @@
 // Resolver Function for Register-Object (using simple heuristic)
 // ------------------------------------------------------------
 
-import type { TBiblsKeys } from '$lib/types/register/TBiblsKeys';
+import type { TWorksKeys } from '$lib/types/register/TWorksKeys';
 import type { TOrgsKeys } from '$lib/types/register/TOrgsKeys';
 import type { TPeopleKeys } from '$lib/types/register/TPeopleKeys';
 import type { TPlacesKeys } from '$lib/types/register/TPlacesKeys';
@@ -25,9 +25,9 @@ export type TResolvedRegister =
 			item: TRegister['register']['orgs'][TOrgsKeys] | null;
 	  }
 	| {
-			regKey: TBiblsKeys;
-			regType: 'bibls';
-			item: TRegister['register']['bibls'][TBiblsKeys] | null;
+			regKey: TWorksKeys;
+			regType: 'works';
+			item: TRegister['register']['works'][TWorksKeys] | null;
 	  };
 
 export function resolveReg(
@@ -53,11 +53,11 @@ export function resolveReg(
 			regType: 'orgs',
 			item: object?.orgs[regKey] || null
 		};
-	} else if (regKey.includes('bibl_')) {
+	} else if (regKey.includes('work_')) {
 		return {
-			regKey: regKey as TBiblsKeys,
-			regType: 'bibls',
-			item: object?.bibls[regKey] || null
+			regKey: regKey as TWorksKeys,
+			regType: 'works',
+			item: object?.works[regKey] || null
 		};
 	} else {
 		return null;

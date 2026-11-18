@@ -2,13 +2,13 @@
 import { type TPlacesKeys } from './TPlacesKeys';
 import { type TPeopleKeys } from './TPeopleKeys';
 import { type TOrgsKeys } from './TOrgsKeys';
-import { type TBiblsKeys } from './TBiblsKeys';
+import { type TWorksKeys } from './TWorksKeys';
 
 // Types
 import { type TPeopleGroups } from './TPeopleGroups';
 import { type TPlacesGroups } from './TPlacesGroups';
 import { type TOrgsGroups } from './TOrgsGroups';
-import { type TBiblsGroups } from './TBiblsGroups';
+import { type TWorksGroups } from './TWorksGroups';
 
 // From Documents
 import { type TUnpublishedKeys } from '$lib/types/documents/TUnpublishedKeys';
@@ -64,10 +64,10 @@ export type TRegister = {
 				docs?: (TUnpublishedKeys | TPosthumKeys | TPublishedKeys)[];
 			};
 		};
-		bibls: {
-			[key in TBiblsKeys]: {
+		works: {
+			[key in TWorksKeys]: {
 				name: string | null;
-				type: TBiblsGroups | null;
+				type: TWorksGroups | null;
 				authorIds: TPeopleKeys[] | null;
 				pubDate: string | null;
 				gndNumber?: string | null;
@@ -108,7 +108,7 @@ export type TRegDict = {
 		people: RegEntity<TRegAttrsPeople, TPeopleGroups>;
 		places: RegEntity<TRegAttrsPlaces, TPlacesGroups>;
 		orgs: RegEntity<TRegAttrsOrgs, TOrgsGroups>;
-		bibls: RegEntity<TRegAttrsBibls, TBiblsGroups>;
+		works: RegEntity<TRegAttrsWorks, TWorksGroups>;
 	};
 };
 
@@ -118,41 +118,41 @@ export type TRegTypes = keyof TRegister['register'];
 
 // Key Set
 export type TRegKeysFlat =
-	TPeopleKeys | TPlacesKeys | TOrgsKeys | TBiblsKeys;
+	TPeopleKeys | TPlacesKeys | TOrgsKeys | TWorksKeys;
 
 export type TRegKeysMap = {
 	people: TPeopleKeys;
 	places: TPlacesKeys;
 	orgs: TOrgsKeys;
-	bibls: TBiblsKeys;
+	works: TWorksKeys;
 };
 
 // Attribute Sets
 export type TRegAttrsPeople = keyof TRegister['register']['people'][TPeopleKeys];
 export type TRegAttrsPlaces = keyof TRegister['register']['places'][TPlacesKeys];
 export type TRegAttrsOrgs = keyof TRegister['register']['orgs'][TOrgsKeys];
-export type TRegAttrsBibls = keyof TRegister['register']['bibls'][TBiblsKeys];
+export type TRegAttrsWorks = keyof TRegister['register']['works'][TWorksKeys];
 
 export type TRegAttrs =
 	| TRegAttrsPeople
 	| TRegAttrsPlaces
 	| TRegAttrsOrgs
-	| TRegAttrsBibls
+	| TRegAttrsWorks
 
 export type TRegAttrsMap = {
 	people: TRegAttrsPeople;
 	places: TRegAttrsPlaces;
 	orgs: TRegAttrsOrgs;
-	bibls: TRegAttrsBibls;
+	works: TRegAttrsWorks;
 };
 
 // Group Set
 export type TRegGroupsFlat =
-	TPeopleGroups | TPlacesGroups | TOrgsGroups | TBiblsGroups;
+	TPeopleGroups | TPlacesGroups | TOrgsGroups | TWorksGroups;
 
 export type TRegGroupsMap = {
 	people: TPeopleGroups;
 	places: TPlacesGroups;
 	orgs: TOrgsGroups;
-	bibls: TBiblsGroups;
+	works: TWorksGroups;
 };

@@ -104,9 +104,9 @@
 				}
 			}
 		},
-		"bibls": {
+		"works": {
 			"register_name": "Registro delle opere",
-			"key_singular": "bibl",
+			"key_singular": "work",
 			"label_plural": "Opere",
 			"attributes": {
 				"name": { "label": "Nome" },

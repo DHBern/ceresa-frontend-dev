@@ -3,7 +3,7 @@
 	import { printBirthRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import type {
-		TRegAttrsBibls,
+		TRegAttrsWorks,
 		TRegAttrsMap,
 		TRegAttrsOrgs,
 		TRegAttrsPeople,
@@ -222,8 +222,8 @@
 			regAttrsTyped.gndNumber && 'gndNumber',
 			'note'
 		])}
-	{:else if docType === 'bibls'}
-		{@const regAttrsTyped = regAttributes as Record<TRegAttrsBibls, any>}
+	{:else if docType === 'works'}
+		{@const regAttrsTyped = regAttributes as Record<TRegAttrsWorks, any>}
 		<h1 class="h1 sticky top-0 z-90 w-full bg-background pt-5 pb-10">{regAttrsTyped.name}</h1>
 		{@render MetadataTable([
 			'type',

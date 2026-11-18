@@ -709,8 +709,8 @@ tei-anchor {
 			background-color: var(--color-rs-work);
 			color: white;
 		}
-		&[type='bibl'] {
-			background-color: var(--color-rs-bibl);
+		&[type='work'] {
+			background-color: var(--color-rs-work);
 			color: white;
 		}
 	}
@@ -747,8 +747,8 @@ tei-anchor {
 		&[type='work'] {
 			border-bottom-color: var(--color-rs-work);
 		}
-		&[type='bibl'] {
-			border-bottom-color: var(--color-rs-bibl);
+		&[type='work'] {
+			border-bottom-color: var(--color-rs-work);
 		}
 	}
 }

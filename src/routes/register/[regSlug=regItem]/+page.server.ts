@@ -10,7 +10,7 @@ import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
 import type { TPeopleKeys } from '$lib/types/register/TPeopleKeys';
 import type { TPlacesKeys } from '$lib/types/register/TPlacesKeys';
 import type { TOrgsKeys } from '$lib/types/register/TOrgsKeys';
-import type { TBiblsKeys } from '$lib/types/register/TBiblsKeys';
+import type { TWorksKeys } from '$lib/types/register/TWorksKeys';
 
 const allDocs = allDocsRaw as TDocuments['documents'];
 
@@ -63,7 +63,7 @@ export const load: PageServerLoad = async ({ parent }) => {
 		...(Object.keys(reg.people) as TPeopleKeys[]),
 		...(Object.keys(reg.places) as TPlacesKeys[]),
 		...(Object.keys(reg.orgs) as TOrgsKeys[]),
-		...(Object.keys(reg.bibls) as TBiblsKeys[])
+		...(Object.keys(reg.works) as TWorksKeys[])
 	];
 	const resolvedReg = resolveReg(reg, regSlug as TRegKeysFlat);
 	const isValidKeySlug = regType && regSlug && regTypeIndex.includes(regSlug as any);

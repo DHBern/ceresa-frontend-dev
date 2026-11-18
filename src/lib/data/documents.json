@@ -2835,7 +2835,7 @@
 					"cited_entities": {
 						"people": ["person_0017"],
 						"places": ["place_0003"],
-						"bibls": ["bibl_0001"]
+						"works": ["work_0001"]
 					}
 				},
 				"publication": {
@@ -3947,7 +3947,7 @@
 						],
 						"places": ["place_0009"],
 						"orgs": [],
-						"bibls": ["bibl_0008", "bibl_0009", "bibl_0010", "bibl_0011", "bibl_0012"]
+						"works": ["work_0008", "work_0009", "work_0010", "work_0011", "work_0012"]
 					}
 				},
 				"publication": {
@@ -4962,7 +4962,7 @@
 						"people": ["person_0008", "person_0011", "person_0012"],
 						"places": ["place_0006", "place_0008"],
 						"orgs": [],
-						"bibls": ["bibl_0004", "bibl_0005", "bibl_0006", "bibl_0007"]
+						"works": ["work_0004", "work_0005", "work_0006", "work_0007"]
 					}
 				},
 				"publication": {

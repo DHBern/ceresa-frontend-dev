@@ -5,7 +5,7 @@
 
 	let { data, children } = $props();
 
-	const regKeysForButtons = ['people', 'places', 'orgs', 'bibls'] as const;
+	const regKeysForButtons = ['people', 'places', 'orgs', 'works'] as const;
 </script>
 
 <!-- Snippet for Navigation -->

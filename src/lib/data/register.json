@@ -487,8 +487,8 @@
 				"docs": null
 			}
 		},
-		"bibls": {
-			"bibl_0001": {
+		"works": {
+			"work_0001": {
 				"name": "Gli altri",
 				"type": "Opere di Ceresa",
 				"authorIds": ["person_0001"],
@@ -498,7 +498,7 @@
 				"note": "",
 				"docs": ["published_0001"]
 			},
-			"bibl_0002": {
+			"work_0002": {
 				"name": "La figlia prodiga",
 				"type": "Opere di Ceresa",
 				"authorIds": ["person_0001"],
@@ -508,7 +508,7 @@
 				"note": "",
 				"docs": null
 			},
-			"bibl_0003": {
+			"work_0003": {
 				"name": "La morte del padre",
 				"type": "Opere di Ceresa",
 				"authorIds": ["person_0001"],
@@ -518,7 +518,7 @@
 				"note": "",
 				"docs": null
 			},
-			"bibl_0004": {
+			"work_0004": {
 				"name": "The Heart Is a Lonely Hunter",
 				"type": "Opere altrui",
 				"authorIds": ["person_0008"],
@@ -528,7 +528,7 @@
 				"note": "",
 				"docs": null
 			},
-			"bibl_0005": {
+			"work_0005": {
 				"name": "Reflections in a Golden Eye",
 				"type": "Opere altrui",
 				"authorIds": ["person_0008"],
@@ -538,7 +538,7 @@
 				"note": "",
 				"docs": null
 			},
-			"bibl_0006": {
+			"work_0006": {
 				"name": "The Member of the Wedding",
 				"type": "Opere altrui",
 				"authorIds": ["person_0008"],
@@ -548,7 +548,7 @@
 				"note": "",
 				"docs": null
 			},
-			"bibl_0007": {
+			"work_0007": {
 				"name": "The Member of the Wedding (play)",
 				"type": "Opere altrui",
 				"authorIds": ["person_0008"],
@@ -558,7 +558,7 @@
 				"note": "",
 				"docs": null
 			},
-			"bibl_0008": {
+			"work_0008": {
 				"name": "Il Tesoretto. Almanacco dello \"Specchio\"",
 				"type": "Numeri di riviste",
 				"authorIds": null,
@@ -568,7 +568,7 @@
 				"note": "Cfr. https://www.lfb.it/fff/editoria/test/t/tesoretto_1942.htm",
 				"docs": null
 			},
-			"bibl_0009": {
+			"work_0009": {
 				"name": "Paesi tuoi",
 				"type": "Opere altrui",
 				"authorIds": ["person_0018"],
@@ -578,7 +578,7 @@
 				"note": "",
 				"docs": null
 			},
-			"bibl_0010": {
+			"work_0010": {
 				"name": "Il prato dei morti",
 				"type": "Opere altrui",
 				"authorIds": ["person_0018"],
@@ -588,7 +588,7 @@
 				"note": "Nel \"Tesoretto\" del 1942",
 				"docs": null
 			},
-			"bibl_0011": {
+			"work_0011": {
 				"name": "Conversazione in Sicilia",
 				"type": "Opere altrui",
 				"authorIds": ["person_0020"],
@@ -598,7 +598,7 @@
 				"note": "",
 				"docs": null
 			},
-			"bibl_0012": {
+			"work_0012": {
 				"name": "A solo, la radio",
 				"type": "Opere altrui",
 				"authorIds": ["person_0020"],

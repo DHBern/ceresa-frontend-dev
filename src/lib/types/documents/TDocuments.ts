@@ -15,7 +15,7 @@ import { type TAudioGroups } from './TAudioGroups';
 import { type TPeopleKeys } from '../register/TPeopleKeys';
 import { type TPlacesKeys } from '../register/TPlacesKeys';
 import { type TOrgsKeys } from '../register/TOrgsKeys';
-import { type TBiblsKeys } from '../register/TBiblsKeys';
+import { type TWorksKeys } from '../register/TWorksKeys';
 import type { TRegKeysFlat, TRegTypes } from '../register/TRegister';
 import type { TSeqKeys } from '../TSequences';
 
@@ -42,7 +42,7 @@ type TCrossRefEntities = {
 	people?: TPeopleKeys[];
 	places?: TPlacesKeys[];
 	orgs?: TOrgsKeys[];
-	bibls?: TBiblsKeys[];
+	works?: TWorksKeys[];
 };
 
 type TRendition = {

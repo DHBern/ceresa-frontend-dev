@@ -248,7 +248,7 @@
 								<h5 class="h5">Riferimenti presenti nel testo</h5>
 								<table>
 									<tbody class="flex flex-col gap-2" data-dom="crossRef">
-										{#each ['people', 'places', 'orgs', 'bibls'] as const as type (type)}
+										{#each ['people', 'places', 'orgs', 'works'] as const as type (type)}
 											{#if crossRef.cited_entities?.[type]?.length}
 												{@render metadataEntryWithRegLink(
 													dictReg[type].label_plural,
@@ -272,7 +272,7 @@
 								</h5>
 								<table>
 									<tbody class="flex flex-col gap-2" data-dom="crossRef">
-										{#each ['people', 'places', 'orgs', 'bibls'] as const as type (type)}
+										{#each ['people', 'places', 'orgs', 'works'] as const as type (type)}
 											{#if crossRef.linked_entities?.[type]?.length}
 												{@render metadataEntryWithRegLink(
 													dictReg[type].label_plural,
@@ -384,8 +384,8 @@
 		:global([data-entitytype='posthum']) {
 			@apply bg-(--color-rs-doc-20);
 		}
-		:global([data-entitytype='bibls']) {
-			@apply bg-(--color-rs-bibl-20);
+		:global([data-entitytype='works']) {
+			@apply bg-(--color-rs-work-20);
 		}
 	}
 </style>

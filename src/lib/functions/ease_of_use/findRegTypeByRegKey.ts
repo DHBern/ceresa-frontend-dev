@@ -4,6 +4,6 @@ export function findRegTypeByRegKey(regKey: TRegKeysFlat) {
 	if (regKey.includes('person')) return 'people';
 	else if (regKey.includes('place')) return 'places';
 	else if (regKey.includes('org')) return 'orgs';
-	else if (regKey.includes('bibl')) return 'bibls';
+	else if (regKey.includes('work')) return 'works';
 	else return null;
 }
