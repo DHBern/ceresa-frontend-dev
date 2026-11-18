@@ -10,6 +10,7 @@ test('page metadata preserves TEI labels independently from running page indices
 			<tei-pb n="12r" facs="https://example.test/second"></tei-pb>
 			<tei-pb n="12r"></tei-pb>
 			<tei-pb></tei-pb>
+			<tei-pb n=" "></tei-pb>
 		</tei-text>
 	`).window;
 
@@ -17,7 +18,8 @@ test('page metadata preserves TEI labels independently from running page indices
 		{ page: 1, n: 'iv', facs: 'https://example.test/first' },
 		{ page: 2, n: '12r', facs: 'https://example.test/second' },
 		{ page: 3, n: '12r', facs: null },
-		{ page: 4, n: null, facs: null }
+		{ page: 4, n: null, facs: null },
+		{ page: 5, n: null, facs: null }
 	]);
 });
 

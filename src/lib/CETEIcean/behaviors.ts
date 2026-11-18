@@ -126,7 +126,7 @@ export function getTextPageBreaks(container: ParentNode): HTMLElement[] {
 export function collectPageMetadata(container: ParentNode): TEIPage[] {
 	return getTextPageBreaks(container).map((el, index) => ({
 		page: index + 1,
-		n: el.getAttribute('n'),
+		n: el.getAttribute('n')?.trim() || null,
 		facs:
 			el
 				.getAttribute('facs')

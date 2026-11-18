@@ -3,7 +3,7 @@
 	import CETEI from 'CETEIcean';
 	import { behaviors, getTextPageBreaks, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
 	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
-	import { SEARCH_PARAMS_DEFAULTS, type schema } from './schemas';
+	import type { schema } from './schemas';
 	import { onMount, tick } from 'svelte';
 	import type { ProcessedTEI } from './processTEI';
 	import type { ReturnUseSearchParams } from 'runed/kit';
@@ -51,7 +51,7 @@
 		id: number;
 		el: HTMLElement;
 		facs: string;
-		n: string;
+		n: string | null;
 		page: number;
 		top: number;
 	};
@@ -68,7 +68,7 @@
 				id: i,
 				el: el,
 				facs: textData.pages[i]?.facs ?? '',
-				n: textData.pages[i]?.n ?? String(i + 1),
+				n: textData.pages[i]?.n ?? null,
 				page: i + 1,
 				top: 0
 			}));
@@ -183,7 +183,9 @@
 								classes="w-full"
 								imgClasses="w-full"
 							/>
-							<span class="text-sm">Pag. {thumb.n}</span>
+							{#if thumb.n !== null}
+								<span class="text-sm">Pag. {thumb.n}</span>
+							{/if}
 						</div>
 					</button>
 				{/each}
