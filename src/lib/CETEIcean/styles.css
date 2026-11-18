@@ -120,6 +120,12 @@ tei-p {
 	margin-top: 1em;
 	margin-bottom: 0.2em;
 	text-align: left;
+	&[rendition='#c'] {
+		text-align: center;
+	}
+	&[rendition='#right'] {
+		text-align: right;
+	}
 }
 
 .mode-lf tei-p {
@@ -164,13 +170,14 @@ tei-p {
 
 /* -------------------------------- */
 /* Forme work */
-.mode-lf {
+/* .mode-lf {
 	tei-ab {
 		display: none;
 	}
-}
+} */
 
-.mode-df {
+.mode-df,
+.mode-lf {
 	tei-ab {
 		position: relative;
 		height: 1em;
