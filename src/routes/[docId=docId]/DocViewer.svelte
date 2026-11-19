@@ -113,6 +113,7 @@
 	let url = $derived(ceteiData.pages[currentPage - 1]?.facs);
 	const TRANSITION_LENGTH = 100;
 	const DELAY = 200;
+	const DELAY_GALLERY = 50;
 	const isGallerySticky = false; //! temp
 
 	// View Toggle
@@ -146,35 +147,36 @@
 </script>
 
 <div class={classesContainer}>
-	<!-- Toggle -->
-	<div class="relative flex h-full w-full flex-col items-center gap-6">
-		<Tabs.Root
-			class="sticky top-10 z-900 max-w-260 xl:static"
-			value={params.mode}
-			onValueChange={changeMode}
-		>
-			<Tabs.List
-				class="preset-tabs-list --lg grid text-sm"
-				style={`grid-template-columns: repeat(${tabItems.length}, minmax(0, 1fr))`}
+	<!-- Sticky Navigation Panel -->
+	<div class="pointer-events-none sticky top-0 right-2 z-10000 flex w-full justify-end px-5 py-3">
+		<!-- Mode Toggle -->
+		<div class="relative flex h-full w-full flex-col items-center gap-6">
+			<Tabs.Root
+				class="pointer-events-auto sticky top-10 max-w-260 xl:static"
+				value={params.mode}
+				onValueChange={changeMode}
 			>
-				{#each tabItems as tab, i (tab.value)}
-					<Tabs.Trigger
-						value={tab.value}
-						class={`preset-tabs-trigger ${positionClass(i, tabItems.length)}`}
-					>
-						{tab.label}
-					</Tabs.Trigger>
-				{/each}
-			</Tabs.List>
-		</Tabs.Root>
-	</div>
+				<Tabs.List
+					class="preset-tabs-list --lg grid text-sm"
+					style={`grid-template-columns: repeat(${tabItems.length}, minmax(0, 1fr))`}
+				>
+					{#each tabItems as tab, i (tab.value)}
+						<Tabs.Trigger
+							value={tab.value}
+							class={`preset-tabs-trigger ${positionClass(i, tabItems.length)}`}
+						>
+							{tab.label}
+						</Tabs.Trigger>
+					{/each}
+				</Tabs.List>
+			</Tabs.Root>
+		</div>
 
-	<!-- Text layout control -->
-	{#if canToggleFlow}
-		<div class="pointer-events-none sticky top-0 z-10000 flex w-full justify-center py-3">
+		<!-- Flow control -->
+		{#if canToggleFlow}
 			<button
 				type="button"
-				class="preset-btn-round --square pointer-events-auto h-20 w-20 text-xl"
+				class="preset-btn-round --square pointer-events-auto h-16 w-16 text-xl"
 				aria-label={flowLabel}
 				title={flowLabel}
 				onclick={toggleFlow}
@@ -182,14 +184,14 @@
 				<i class={['fa-solid', view.isFluid ? 'fa-page fa-file' : 'fa-scroll']} aria-hidden="true"
 				></i>
 			</button>
-		</div>
-	{/if}
+		{/if}
+	</div>
 
 	<!-- Gallery -->
 	{#if !view.isFluid && ceteiData.pages.length}
 		<aside
 			class={['z-20 w-full overflow-hidden', isGallerySticky && 'sticky top-0']}
-			in:fade={{ delay: DELAY }}
+			in:fade={{ delay: DELAY_GALLERY }}
 		>
 			<Gallery pages={ceteiData.pages} {params} />
 		</aside>
