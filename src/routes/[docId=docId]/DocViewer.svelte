@@ -146,10 +146,11 @@
 	type TabItem = { value: typeof params.mode; label: string };
 
 	const tabItems = $derived.by<TabItem[]>(() => {
-		const items: TabItem[] = [{ value: 'LF', label: 'Modalità di lettura' }];
+		const items: TabItem[] = [];
 		if (resolvedDoc.docType !== 'published') {
 			items.push({ value: 'DF', label: 'Trascrizione diplomatica' });
 		}
+		items.push({ value: 'LF', label: 'Modalità di lettura' });
 		if (ceteiDataTranslation) {
 			items.push({ value: 'TRLF', label: 'Traduzione' });
 		}
