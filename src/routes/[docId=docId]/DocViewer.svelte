@@ -88,7 +88,7 @@
 	function toggleFlow() {
 		const nextFlow = view.isFluid ? 'paged' : 'fluid';
 		const defaultFlow = params.mode === 'DF' ? 'paged' : 'fluid';
-		fluidPage = nextFlow === 'fluid' ? currentPage : null;
+		fluidPage = nextFlow === 'fluid' && currentPage > 1 ? currentPage : null;
 		params.update({ flow: nextFlow === defaultFlow ? SEARCH_PARAMS_DEFAULTS.flow : nextFlow });
 	}
 
