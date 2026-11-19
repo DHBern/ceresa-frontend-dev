@@ -3,23 +3,21 @@
 	import CETEI from 'CETEIcean';
 	import { behaviors, getTextPageBreaks, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
 	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
-	import type { schema } from './schemas';
 	import { tick } from 'svelte';
 	import type { ProcessedTEI } from './processTEI';
-	import type { ReturnUseSearchParams } from 'runed/kit';
 
 	let containerMaintext: HTMLElement;
 	let containerTEI: HTMLElement;
 	let {
 		textData,
-		params,
+		selectFacsimile,
 		showThumbs = true,
 		classes,
 		openDrawer,
 		scrollPage = null
 	}: {
 		textData: ProcessedTEI;
-		params: ReturnUseSearchParams<typeof schema>;
+		selectFacsimile: (page: number) => void;
 		showThumbs?: boolean;
 		classes: string;
 		openDrawer: () => void;
@@ -180,13 +178,7 @@
 
 					<button
 						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[80px] 2xl:max-w-[90px]"
-						onclick={() => {
-							if (params.mode === 'DF') {
-								params.update({ page: thumb.page, flow: 'fluid' });
-							} else {
-								params.update({ page: thumb.page, flow: 'paged' });
-							}
-						}}
+						onclick={() => selectFacsimile(thumb.page)}
 					>
 						<div class="w-full flex-col items-center justify-center">
 							<IIIF_Thumb

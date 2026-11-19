@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { tick } from 'svelte';
 	import IIIF_Viewer from './IIIF_Viewer.svelte';
 	import TextPaged from './TextPaged.svelte';
 	import type {
@@ -103,6 +104,22 @@
 	}
 
 	let isFacsimileView = $derived(!view.showMain && !view.showSecond);
+	let stickyMenu: HTMLDivElement | undefined = $state();
+	let gallery: HTMLElement | undefined = $state();
+
+	async function selectFacsimile(page: number) {
+		const scrollToGallery = params.mode === 'LF';
+		params.update({ page, flow: params.mode === 'DF' ? 'fluid' : 'paged' });
+		if (!scrollToGallery) return;
+
+		await tick();
+		if (!gallery || !stickyMenu) return;
+		window.scrollBy({
+			top: gallery.getBoundingClientRect().top - stickyMenu.offsetHeight - 12,
+			behavior: 'instant'
+		});
+	}
+
 
 	let prioToFac = $state(true);
 
@@ -148,7 +165,10 @@
 
 <div class={classesContainer}>
 	<!-- Sticky Navigation Panel -->
-	<div class="pointer-events-none sticky top-0 right-2 z-10000 flex w-full justify-end px-5 py-3">
+	<div
+		bind:this={stickyMenu}
+		class="pointer-events-none sticky top-0 right-2 z-10000 flex w-full justify-end px-5 py-3"
+	>
 		<!-- Mode Toggle -->
 		<div class="relative flex h-full w-full flex-col items-center gap-6">
 			<Tabs.Root
@@ -237,13 +257,14 @@
 				showText: boolean,
 				showThumbs: boolean,
 				isFluid: boolean
+			bind:this={gallery}
 			)}
 				<div in:fade={{ delay: DELAY }} class="w-full">
 					{#if showText && textData}
 						{#if isFluid}
 							<TextFluid
 								{textData}
-								{params}
+								{selectFacsimile}
 								{showThumbs}
 								{openDrawer}
 								scrollPage={showThumbs
