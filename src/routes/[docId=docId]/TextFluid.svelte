@@ -178,17 +178,19 @@
 					<div style={`height: ${i === 0 ? '5' : thumb.top - thumbs[i - 1].top}px`}></div>
 
 					<button
-						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[80px] 2xl:max-w-[90px]"
+						class="sticky top-18 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[80px] 2xl:max-w-[90px]"
 						onclick={() => selectFacsimile(thumb.page)}
 					>
-						<div class="w-full flex-col items-center justify-center">
+						<div
+							class="w-full flex-col items-center justify-center gap-30 text-[16px]"
+						>
 							<IIIF_Thumb
 								url={thumb.facs}
 								classesContainer="rounded-xs border border-muted-foreground"
 								classes="w-full"
 								imgClasses="w-full"
 							/>
-							<span class="">{formatPageLabel(thumb.n, thumb.page, true)}</span>
+							<span>{formatPageLabel(thumb.n, thumb.page, true)}</span>
 						</div>
 					</button>
 				{/each}
