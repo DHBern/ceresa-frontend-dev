@@ -213,17 +213,17 @@
 						>
 							<button
 								type="button"
-								class="preset-tabs-trigger --left w-12 disabled:cursor-not-allowed disabled:opacity-40"
+								class="preset-tabs-trigger --left w-12 items-center justify-center flex disabled:cursor-not-allowed disabled:opacity-40"
 								aria-label="Riduci la dimensione del testo"
 								title="Riduci la dimensione del testo"
 								disabled={fontSize <= FONT_SIZE_MIN}
 								onclick={() => changeFontSize(-1)}
 							>
-								<i class="fa-solid fa-t text-sm" aria-hidden="true"></i>
+								<i class="fa-solid fa-t text-[16px]" aria-hidden="true"></i>
 							</button>
 							<button
 								type="button"
-								class="preset-tabs-trigger --right w-12 border-l border-dark-40 disabled:cursor-not-allowed disabled:opacity-40"
+								class="preset-tabs-trigger --right w-12 items-center justify-center flex border-l border-dark-40 disabled:cursor-not-allowed disabled:opacity-40"
 								aria-label="Aumenta la dimensione del testo"
 								title="Aumenta la dimensione del testo"
 								disabled={fontSize >= FONT_SIZE_MAX}
