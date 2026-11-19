@@ -81,13 +81,11 @@
 	});
 
 	let canToggleFlow = $derived(params.mode === 'LF' || params.mode === 'DF');
-	let flowLabel = $derived(
-		view.isFluid ? 'Passa alla visualizzazione per pagine' : 'Passa allo scorrimento continuo'
-	);
+	let currentFlow = $derived(view.isFluid ? 'fluid' : 'paged');
 	let fluidPage: number | null = $state(null);
 
-	function toggleFlow() {
-		const nextFlow = view.isFluid ? 'paged' : 'fluid';
+	function changeFlow(nextFlow: string) {
+		if ((nextFlow !== 'fluid' && nextFlow !== 'paged') || nextFlow === currentFlow) return;
 		const defaultFlow = params.mode === 'DF' ? 'paged' : 'fluid';
 		fluidPage = nextFlow === 'fluid' && currentPage > 1 ? currentPage : null;
 		params.update({ flow: nextFlow === defaultFlow ? SEARCH_PARAMS_DEFAULTS.flow : nextFlow });
@@ -194,22 +192,37 @@
 
 		<!-- Flow control -->
 		{#if canToggleFlow}
-			<button
-				type="button"
-				class="preset-btn-round --square pointer-events-auto h-16 w-16 text-xl"
-				aria-label={flowLabel}
-				title={flowLabel}
-				onclick={toggleFlow}
+			<Tabs.Root
+				class="pointer-events-auto shrink-0"
+				value={currentFlow}
+				onValueChange={changeFlow}
 			>
-				<i class={['fa-solid', view.isFluid ? 'fa-page fa-file' : 'fa-scroll']} aria-hidden="true"
-				></i>
-			</button>
+				<Tabs.List class="preset-tabs-list flex h-10" aria-label="Visualizzazione del testo">
+					<Tabs.Trigger
+						value="fluid"
+						class="preset-tabs-trigger --left w-12"
+						aria-label="Scorrimento continuo"
+						title="Scorrimento continuo"
+					>
+						<i class="fa-solid fa-scroll" aria-hidden="true"></i>
+					</Tabs.Trigger>
+					<Tabs.Trigger
+						value="paged"
+						class="preset-tabs-trigger --right w-12"
+						aria-label="Visualizzazione per pagine"
+						title="Visualizzazione per pagine"
+					>
+						<i class="fa-solid fa-file" aria-hidden="true"></i>
+					</Tabs.Trigger>
+				</Tabs.List>
+			</Tabs.Root>
 		{/if}
 	</div>
 
 	<!-- Gallery -->
 	{#if !view.isFluid && ceteiData.pages.length}
 		<aside
+			bind:this={gallery}
 			class={['z-20 w-full overflow-hidden', isGallerySticky && 'sticky top-0']}
 			in:fade={{ delay: DELAY_GALLERY }}
 		>
@@ -257,7 +270,6 @@
 				showText: boolean,
 				showThumbs: boolean,
 				isFluid: boolean
-			bind:this={gallery}
 			)}
 				<div in:fade={{ delay: DELAY }} class="w-full">
 					{#if showText && textData}
