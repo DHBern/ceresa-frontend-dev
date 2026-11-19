@@ -83,6 +83,17 @@
 	let canToggleFlow = $derived(params.mode === 'LF' || params.mode === 'DF');
 	let currentFlow = $derived(view.isFluid ? 'fluid' : 'paged');
 	let fluidPage: number | null = $state(null);
+	const FONT_SIZE_MIN = 70;
+	const FONT_SIZE_MAX = 160;
+	const FONT_SIZE_STEP = 10;
+	let fontSize = $state(100);
+
+	function changeFontSize(direction: -1 | 1) {
+		fontSize = Math.min(
+			FONT_SIZE_MAX,
+			Math.max(FONT_SIZE_MIN, fontSize + direction * FONT_SIZE_STEP)
+		);
+	}
 
 	function changeFlow(nextFlow: string) {
 		if ((nextFlow !== 'fluid' && nextFlow !== 'paged') || nextFlow === currentFlow) return;
@@ -190,6 +201,42 @@
 			</Tabs.Root>
 		</div>
 
+		{#if view.showMain || view.showSecond}
+			<Tabs.Root class="pointer-events-auto shrink-0">
+				<Tabs.List>
+					{#snippet child({ props })}
+						<div
+							{...props}
+							role="toolbar"
+							aria-label="Dimensione del testo"
+							class="preset-tabs-list flex h-10"
+						>
+							<button
+								type="button"
+								class="preset-tabs-trigger --left w-12 disabled:cursor-not-allowed disabled:opacity-40"
+								aria-label="Riduci la dimensione del testo"
+								title="Riduci la dimensione del testo"
+								disabled={fontSize <= FONT_SIZE_MIN}
+								onclick={() => changeFontSize(-1)}
+							>
+								<i class="fa-solid fa-t text-sm" aria-hidden="true"></i>
+							</button>
+							<button
+								type="button"
+								class="preset-tabs-trigger --right w-12 border-l border-dark-40 disabled:cursor-not-allowed disabled:opacity-40"
+								aria-label="Aumenta la dimensione del testo"
+								title="Aumenta la dimensione del testo"
+								disabled={fontSize >= FONT_SIZE_MAX}
+								onclick={() => changeFontSize(1)}
+							>
+								<i class="fa-solid fa-t text-xl" aria-hidden="true"></i>
+							</button>
+						</div>
+					{/snippet}
+				</Tabs.List>
+			</Tabs.Root>
+		{/if}
+
 		<!-- Flow control -->
 		{#if canToggleFlow}
 			<Tabs.Root
@@ -271,7 +318,7 @@
 				showThumbs: boolean,
 				isFluid: boolean
 			)}
-				<div in:fade={{ delay: DELAY }} class="w-full">
+				<div in:fade={{ delay: DELAY }} class="w-full" style:font-size={`${fontSize}%`}>
 					{#if showText && textData}
 						{#if isFluid}
 							<TextFluid
