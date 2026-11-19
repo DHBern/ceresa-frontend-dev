@@ -201,9 +201,7 @@
 			</Tabs.Root>
 		</div>
 
-		<div
-			class="pointer-events-none flex flex-wrap justify-center gap-y-2"
-		>
+		<div class="pointer-events-none flex flex-wrap justify-center gap-y-2">
 			<!-- Flow control -->
 			{#if canToggleFlow}
 				<Tabs.Root
@@ -345,7 +343,7 @@
 			{/snippet}
 
 			<!-- Main Text -->
-			<div class={['mx-10', isBreakpointBelow('lg') && 'h-[50vh]']}>
+			<div class="mx-10">
 				<div class={[view.mainTextClass]}>
 					{@render Text(ceteiData, view.showMain, true, view.isFluid)}
 				</div>
@@ -355,14 +353,13 @@
 			<div
 				class={[
 					!view.showTranslationPanel && 'hidden',
-					'overflow-auto',
+					'col-span-full lg:col-span-1 lg:overflow-auto',
 					'mx-10 ml-10 w-[calc(100%-10)] px-2 pr-5 pl-2',
 					// view.showSecond && 'rounded-lg bg-mist-100 dark:bg-mist-800',
 					view.showSecond && 'border-l-2 pl-12',
-					'sticky',
+					'lg:sticky',
 					view.isFluid && isGallerySticky ? 'top-10' : 'top-5',
-					isGallerySticky ? 'h-[80vh]' : 'h-screen',
-					isBreakpointBelow('lg') && 'h-[50vh]'
+					isGallerySticky ? 'lg:h-[80vh]' : 'lg:h-screen'
 				]}
 			>
 				<h3
@@ -401,7 +398,7 @@
 			grid-template-columns:
 				var(--facsimile-width)
 				minmax(0, calc((100% - var(--facsimile-width))));
-			grid-template-rows: 1fr 1fr;
+			grid-template-rows: auto;
 		}
 		/* &:not(.isFluid) {
 			grid-template-rows: 200px 1fr;

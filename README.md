@@ -33,6 +33,8 @@ On document pages, `mode=LF` defaults to continuous scrolling and `mode=DF` defa
 
 The small and large T buttons immediately left of the flow toggle decrease and increase the edited text size in 10% steps, from 70% to 160% of its default size. They affect both the main text and translation in continuous and paged layouts, without resizing the toolbar or facsimiles. The size is kept while switching viewer modes but is not saved across reloads.
 
+On narrow screens, text panels grow with their content in every mode and flow, keeping the footer below the full text. The translation appears below the main text; on desktop it retains its independently scrolling panel.
+
 In LF, clicking a facsimile beside the continuous text opens the selected page in paged layout and scrolls to the gallery without hiding it under the sticky menu. In continuous DF, clicking a facsimile selects the page without switching layouts. Switching back to continuous layout scrolls to the current `page` when it is after the first running page.
 
 The document viewer uses TEI `<pb>` order for the text, gallery, and large facsimile. Thumbnail labels come from `@n` and images from `@facs`, both cached during TEI processing. Thumbnails without `@n` have no visible label. A missing image does not shift later pages or fall back to `documents.json`. The `page` URL parameter remains a one-based running index.
