@@ -4,6 +4,7 @@
 	import type { TEIPage } from '$lib/CETEIcean/behaviors';
 	import type { ReturnUseSearchParams } from 'runed/kit';
 	import type { schema } from './schemas';
+	import { formatPageLabel } from '$lib/functions/ease_of_use/formatPageLabel';
 
 	let {
 		params,
@@ -41,9 +42,7 @@
 			classes={`min-h-2 h-max mx-2 my-1 flex justify-center items-center ${isCurrent ? 'max-h-35' : 'max-h-20'}`}
 			imgClasses={`h-max border ${isCurrent ? 'max-h-30 max-w-30' : 'max-h-15 max-w-15'}`}
 		/>
-		{#if galleryItem.n !== null}
-			<span class="mt-1 text-sm">{galleryItem.n}</span>
-		{/if}
+		<span class="mt-1 text-sm">{formatPageLabel(galleryItem.n, galleryItem.page, false)}</span>
 	</button>
 {/snippet}
 

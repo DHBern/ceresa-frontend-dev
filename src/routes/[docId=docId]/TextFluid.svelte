@@ -3,6 +3,7 @@
 	import CETEI from 'CETEIcean';
 	import { behaviors, getTextPageBreaks, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
 	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
+	import { formatPageLabel } from '$lib/functions/ease_of_use/formatPageLabel';
 	import { tick } from 'svelte';
 	import type { ProcessedTEI } from './processTEI';
 
@@ -187,9 +188,7 @@
 								classes="w-full"
 								imgClasses="w-full"
 							/>
-							{#if thumb.n !== null}
-								<span class="text-sm">Pag. {thumb.n}</span>
-							{/if}
+							<span class="">{formatPageLabel(thumb.n, thumb.page, true)}</span>
 						</div>
 					</button>
 				{/each}
