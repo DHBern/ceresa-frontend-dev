@@ -129,7 +129,6 @@
 		});
 	}
 
-
 	let prioToFac = $state(true);
 
 	let widthFacsimileLg = '1000px';
@@ -177,10 +176,10 @@
 	<!-- Sticky Navigation Panel -->
 	<div
 		bind:this={stickyMenu}
-		class="pointer-events-none sticky top-0 right-2 z-10000 flex w-full justify-end px-5 py-3"
+		class="pointer-events-none sticky top-0 right-2 z-10000 flex w-full flex-wrap justify-center gap-y-2 px-5 py-3"
 	>
 		<!-- Mode Toggle -->
-		<div class="relative flex h-full w-full flex-col items-center gap-6">
+		<div class="relative flex h-full flex-col items-center gap-6">
 			<Tabs.Root
 				class="pointer-events-auto sticky top-10 max-w-260 xl:static"
 				value={params.mode}
@@ -202,69 +201,73 @@
 			</Tabs.Root>
 		</div>
 
-		{#if view.showMain || view.showSecond}
-			<Tabs.Root class="pointer-events-auto shrink-0">
-				<Tabs.List>
-					{#snippet child({ props })}
-						<div
-							{...props}
-							role="toolbar"
-							aria-label="Dimensione del testo"
-							class="preset-tabs-list flex h-10"
+		<div
+			class="pointer-events-none flex flex-wrap justify-center gap-y-2"
+		>
+			<!-- Flow control -->
+			{#if canToggleFlow}
+				<Tabs.Root
+					class="pointer-events-auto shrink-0"
+					value={currentFlow}
+					onValueChange={changeFlow}
+				>
+					<Tabs.List class="preset-tabs-list flex h-10" aria-label="Visualizzazione del testo">
+						<Tabs.Trigger
+							value="fluid"
+							class="preset-tabs-trigger --left w-12"
+							aria-label="Scorrimento continuo"
+							title="Scorrimento continuo"
 						>
-							<button
-								type="button"
-								class="preset-tabs-trigger --left w-12 items-center justify-center flex disabled:cursor-not-allowed disabled:opacity-40"
-								aria-label="Riduci la dimensione del testo"
-								title="Riduci la dimensione del testo"
-								disabled={fontSize <= FONT_SIZE_MIN}
-								onclick={() => changeFontSize(-1)}
-							>
-								<i class="fa-solid fa-t text-[16px]" aria-hidden="true"></i>
-							</button>
-							<button
-								type="button"
-								class="preset-tabs-trigger --right w-12 items-center justify-center flex border-l border-dark-40 disabled:cursor-not-allowed disabled:opacity-40"
-								aria-label="Aumenta la dimensione del testo"
-								title="Aumenta la dimensione del testo"
-								disabled={fontSize >= FONT_SIZE_MAX}
-								onclick={() => changeFontSize(1)}
-							>
-								<i class="fa-solid fa-t text-xl" aria-hidden="true"></i>
-							</button>
-						</div>
-					{/snippet}
-				</Tabs.List>
-			</Tabs.Root>
-		{/if}
+							<i class="fa-solid fa-scroll" aria-hidden="true"></i>
+						</Tabs.Trigger>
+						<Tabs.Trigger
+							value="paged"
+							class="preset-tabs-trigger --right w-12"
+							aria-label="Visualizzazione per pagine"
+							title="Visualizzazione per pagine"
+						>
+							<i class="fa-solid fa-file" aria-hidden="true"></i>
+						</Tabs.Trigger>
+					</Tabs.List>
+				</Tabs.Root>
+			{/if}
 
-		<!-- Flow control -->
-		{#if canToggleFlow}
-			<Tabs.Root
-				class="pointer-events-auto shrink-0"
-				value={currentFlow}
-				onValueChange={changeFlow}
-			>
-				<Tabs.List class="preset-tabs-list flex h-10" aria-label="Visualizzazione del testo">
-					<Tabs.Trigger
-						value="fluid"
-						class="preset-tabs-trigger --left w-12"
-						aria-label="Scorrimento continuo"
-						title="Scorrimento continuo"
-					>
-						<i class="fa-solid fa-scroll" aria-hidden="true"></i>
-					</Tabs.Trigger>
-					<Tabs.Trigger
-						value="paged"
-						class="preset-tabs-trigger --right w-12"
-						aria-label="Visualizzazione per pagine"
-						title="Visualizzazione per pagine"
-					>
-						<i class="fa-solid fa-file" aria-hidden="true"></i>
-					</Tabs.Trigger>
-				</Tabs.List>
-			</Tabs.Root>
-		{/if}
+			{#if view.showMain || view.showSecond}
+				<Tabs.Root class="pointer-events-auto shrink-0">
+					<Tabs.List>
+						{#snippet child({ props })}
+							<div
+								{...props}
+								role="toolbar"
+								aria-label="Dimensione del testo"
+								class="preset-tabs-list flex h-10"
+							>
+								<button
+									type="button"
+									class="preset-tabs-trigger --left flex w-12 items-center justify-center disabled:cursor-not-allowed disabled:opacity-40"
+									aria-label="Riduci la dimensione del testo"
+									title="Riduci la dimensione del testo"
+									disabled={fontSize <= FONT_SIZE_MIN}
+									onclick={() => changeFontSize(-1)}
+								>
+									<i class="fa-solid fa-t text-[16px]" aria-hidden="true"></i>
+								</button>
+								<button
+									type="button"
+									class="preset-tabs-trigger --right flex w-12 items-center justify-center border-l border-dark-40 disabled:cursor-not-allowed disabled:opacity-40"
+									aria-label="Aumenta la dimensione del testo"
+									title="Aumenta la dimensione del testo"
+									disabled={fontSize >= FONT_SIZE_MAX}
+									onclick={() => changeFontSize(1)}
+								>
+									<i class="fa-solid fa-t text-xl" aria-hidden="true"></i>
+								</button>
+							</div>
+						{/snippet}
+					</Tabs.List>
+				</Tabs.Root>
+			{/if}
+		</div>
 	</div>
 
 	<!-- Gallery -->
