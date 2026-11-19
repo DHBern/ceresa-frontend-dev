@@ -1,4 +1,9 @@
-import { behaviors, wrapAnnotations } from '$lib/CETEIcean/behaviors';
+import {
+	behaviors,
+	collectPageMetadata,
+	wrapAnnotations,
+	type TEIPage
+} from '$lib/CETEIcean/behaviors';
 import { processMetamarks } from '$lib/CETEIcean/metamark.js';
 import CETEI from 'CETEIcean';
 import { JSDOM } from 'jsdom';
@@ -8,6 +13,7 @@ export interface ProcessedTEI {
 	//   ceteicean: typeof CETEI;
 	serialized: string;
 	elements: string[];
+	pages: TEIPage[];
 }
 
 const processTEI = (xml: string): ProcessedTEI => {
@@ -32,7 +38,8 @@ const processTEI = (xml: string): ProcessedTEI => {
 
 	return {
 		serialized,
-		elements: Array.from(ceteicean.els) as string[]
+		elements: Array.from(ceteicean.els) as string[],
+		pages: collectPageMetadata(container)
 	};
 };
 

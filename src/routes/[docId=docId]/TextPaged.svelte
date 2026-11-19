@@ -1,27 +1,36 @@
 <script lang="ts">
 	import CETEI from 'CETEIcean';
 	import { behaviors, removeNotesFromMaintext, extractPage } from '$lib/CETEIcean/behaviors';
+	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
+	import { browser } from '$app/environment';
+	import type { ProcessedTEI } from './processTEI';
 
 	const c = new CETEI();
-	let { textData, page } = $props();
+	let {
+		textData,
+		page,
+		openDrawer
+	}: { textData: ProcessedTEI | null; page: number; openDrawer: () => void } = $props();
 
-	const setupCustomElements = () => {
+	const setupCustomElements = (element: HTMLElement) => {
 		c.addBehaviors(behaviors(document));
 		c.processPage();
+		attachTextInteractions(element, openDrawer);
 	};
 
-	// Extract the specific page based on xml:id, then remove notes
-	let serializedWithoutNotes: string | null = $state(null);
-	$effect(() => {
-		// Run this in an effect to guarantee it only runs on mount.
-		serializedWithoutNotes = removeNotesFromMaintext(extractPage(textData.serialized, page));
-	});
+	let serializedWithoutNotes = $derived(
+		browser && textData ? removeNotesFromMaintext(extractPage(textData.serialized, page)) : null
+	);
 </script>
 
-<div
-	data-textflow="diplomatic"
-	class="relative mx-auto max-w-200 overflow-y-auto pl-5"
-	{@attach setupCustomElements}
->
-	{@html serializedWithoutNotes}
-</div>
+{#if serializedWithoutNotes !== null}
+	{#key serializedWithoutNotes}
+		<div
+			data-textflow="diplomatic"
+			class="relative mx-auto max-w-200 overflow-y-auto pl-5"
+			{@attach setupCustomElements}
+		>
+			{@html serializedWithoutNotes}
+		</div>
+	{/key}
+{/if}

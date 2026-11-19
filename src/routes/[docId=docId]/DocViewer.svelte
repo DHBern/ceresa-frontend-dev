@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { tick } from 'svelte';
 	import IIIF_Viewer from './IIIF_Viewer.svelte';
 	import TextPaged from './TextPaged.svelte';
 	import type {
@@ -18,6 +19,8 @@
 	import TextFluid from './TextFluid.svelte';
 	import DrawerRegNotes from './DrawerRegNotes.svelte';
 	import { isBreakpointBelow } from '$lib/functions/ease_of_use/breakpoints.svelte';
+	import type { ReturnUseSearchParams } from 'runed/kit';
+	import { SEARCH_PARAMS_DEFAULTS, type schema } from './schemas';
 
 	let {
 		docItem,
@@ -29,68 +32,118 @@
 	}: {
 		docItem: TDocItemsPosthum | TDocItemsUnpublished | TDocItemsPublished | null;
 		ceteiData: ProcessedTEI;
-		ceteiDataTranslation: ProcessedTEI;
+		ceteiDataTranslation: ProcessedTEI | null;
 		resolvedDoc: TResolvedPosthum | TResolvedUnpublished | TResolvedPublished;
 		classesContainer: string;
-		params: any;
+		params: ReturnUseSearchParams<typeof schema>;
 	} = $props();
 
-	let showFac = $state(true);
-	let showMain = $state(true);
-	let showSecond = $state(true);
-	let nColsFit = $state(4);
-	let nColsVisible = $derived((showFac ? 1 : 0) + (showMain ? 1 : 0) + (showSecond ? 1 : 0));
-	let isFluid = $state(false);
-	let mode_main: string | null = $state('mode-lf');
-	let mode_secondary: string | null = $state('mode-lf');
+	let view = $derived.by(() => {
+		switch (params.mode) {
+			case 'DF':
+				return {
+					isFluid: params.flow === 'fluid',
+					showFac: true,
+					showMain: true,
+					showSecond: false,
+					showTranslationPanel: false,
+					mainTextClass: 'mode-df'
+				};
+			case 'TRLF':
+				return {
+					isFluid: true,
+					showFac: false,
+					showMain: true,
+					showSecond: ceteiDataTranslation !== null,
+					showTranslationPanel: true,
+					mainTextClass: 'mode-lf'
+				};
+			case 'FAC':
+				return {
+					isFluid: true,
+					showFac: true,
+					showMain: false,
+					showSecond: false,
+					showTranslationPanel: false,
+					mainTextClass: null
+				};
+			case 'LF':
+			default:
+				return {
+					isFluid: params.flow !== 'paged',
+					showFac: params.flow === 'paged',
+					showMain: true,
+					showSecond: false,
+					showTranslationPanel: false,
+					mainTextClass: 'mode-lf'
+				};
+		}
+	});
 
-	let isFacsimileView = $derived(!showMain && !showSecond);
+	let canToggleFlow = $derived(params.mode === 'LF' || params.mode === 'DF');
+	let currentFlow = $derived(view.isFluid ? 'fluid' : 'paged');
+	let fluidPage: number | null = $state(null);
+	const FONT_SIZE_MIN = 70;
+	const FONT_SIZE_MAX = 160;
+	const FONT_SIZE_STEP = 10;
+	let fontSize = $state(100);
+
+	function changeFontSize(direction: -1 | 1) {
+		fontSize = Math.min(
+			FONT_SIZE_MAX,
+			Math.max(FONT_SIZE_MIN, fontSize + direction * FONT_SIZE_STEP)
+		);
+	}
+
+	function changeFlow(nextFlow: string) {
+		if ((nextFlow !== 'fluid' && nextFlow !== 'paged') || nextFlow === currentFlow) return;
+		const defaultFlow = params.mode === 'DF' ? 'paged' : 'fluid';
+		fluidPage = nextFlow === 'fluid' && currentPage > 1 ? currentPage : null;
+		params.update({ flow: nextFlow === defaultFlow ? SEARCH_PARAMS_DEFAULTS.flow : nextFlow });
+	}
+
+	let nColsFit = $state(4);
+	let nColsVisible = $derived(
+		(view.showFac ? 1 : 0) + (view.showMain ? 1 : 0) + (view.showSecond ? 1 : 0)
+	);
+	let drawerOpen = $state(false);
+
+	function openDrawer() {
+		drawerOpen = true;
+	}
+
+	let isFacsimileView = $derived(!view.showMain && !view.showSecond);
+	let stickyMenu: HTMLDivElement | undefined = $state();
+	let gallery: HTMLElement | undefined = $state();
+
+	async function selectFacsimile(page: number) {
+		const scrollToGallery = params.mode === 'LF';
+		params.update({ page, flow: params.mode === 'DF' ? 'fluid' : 'paged' });
+		if (!scrollToGallery) return;
+
+		await tick();
+		if (!gallery || !stickyMenu) return;
+		window.scrollBy({
+			top: gallery.getBoundingClientRect().top - stickyMenu.offsetHeight - 12,
+			behavior: 'instant'
+		});
+	}
+
 
 	let prioToFac = $state(true);
 
 	let widthFacsimileLg = '1000px';
 	let facsimileWidth = '50vw';
 
-	$effect(() => {
-		if (params.mode === 'LF') {
-			isFluid = true;
-			showFac = false;
-			showMain = true;
-			showSecond = false;
-			mode_main = 'mode-lf';
-			mode_secondary = null;
-		} else if (params.mode === 'DF') {
-			isFluid = false;
-			showFac = true;
-			showMain = true;
-			showSecond = false;
-			mode_main = 'mode-df';
-			mode_secondary = null;
-		} else if (params.mode === 'TRLF') {
-			isFluid = true;
-			showFac = false;
-			showMain = true;
-			showSecond = true;
-			mode_main = 'mode-lf';
-			mode_secondary = 'mode-lf';
-		} else if (params.mode === 'FAC') {
-			isFluid = true;
-			showFac = true;
-			showMain = false;
-			showSecond = false;
-			mode_main = null;
-			mode_secondary = null;
-		}
-	});
-
-	let urls = $derived(docItem?.iiif.urls_IIIF_images ?? []);
-	let url = $derived(urls[params.page - 1]);
+	let currentPage = $derived(params.page ?? 1);
+	let url = $derived(ceteiData.pages[currentPage - 1]?.facs);
 	const TRANSITION_LENGTH = 100;
 	const DELAY = 200;
+	const DELAY_GALLERY = 50;
 	const isGallerySticky = false; //! temp
 
 	// View Toggle
-	type TabItem = { value: string; label: string };
+	type TabItem = { value: typeof params.mode; label: string };
 
 	const tabItems = $derived.by<TabItem[]>(() => {
 		const items: TabItem[] = [{ value: 'LF', label: 'Modalità di lettura' }];
@@ -103,6 +156,14 @@
 		return items;
 	});
 
+	function changeMode(value: string) {
+		const tab = tabItems.find((item) => item.value === value);
+		if (tab && tab.value !== params.mode) {
+			fluidPage = null;
+			params.update({ mode: tab.value, flow: SEARCH_PARAMS_DEFAULTS.flow });
+		}
+	}
+
 	function positionClass(index: number, total: number): string {
 		if (total < 2) return '--single';
 		if (index === 0) return '--left';
@@ -112,45 +173,115 @@
 </script>
 
 <div class={classesContainer}>
-	<!-- Toggle -->
-	<div class="relative flex h-full w-full flex-col items-center gap-6">
-		<Tabs.Root class="sticky top-10 z-900 max-w-260 xl:static" bind:value={params.mode}>
-			<Tabs.List
-				class="preset-tabs-list --lg grid text-sm"
-				style={`grid-template-columns: repeat(${tabItems.length}, minmax(0, 1fr))`}
+	<!-- Sticky Navigation Panel -->
+	<div
+		bind:this={stickyMenu}
+		class="pointer-events-none sticky top-0 right-2 z-10000 flex w-full justify-end px-5 py-3"
+	>
+		<!-- Mode Toggle -->
+		<div class="relative flex h-full w-full flex-col items-center gap-6">
+			<Tabs.Root
+				class="pointer-events-auto sticky top-10 max-w-260 xl:static"
+				value={params.mode}
+				onValueChange={changeMode}
 			>
-				{#each tabItems as tab, i (tab.value)}
+				<Tabs.List
+					class="preset-tabs-list --lg grid text-sm"
+					style={`grid-template-columns: repeat(${tabItems.length}, minmax(0, 1fr))`}
+				>
+					{#each tabItems as tab, i (tab.value)}
+						<Tabs.Trigger
+							value={tab.value}
+							class={`preset-tabs-trigger ${positionClass(i, tabItems.length)}`}
+						>
+							{tab.label}
+						</Tabs.Trigger>
+					{/each}
+				</Tabs.List>
+			</Tabs.Root>
+		</div>
+
+		{#if view.showMain || view.showSecond}
+			<Tabs.Root class="pointer-events-auto shrink-0">
+				<Tabs.List>
+					{#snippet child({ props })}
+						<div
+							{...props}
+							role="toolbar"
+							aria-label="Dimensione del testo"
+							class="preset-tabs-list flex h-10"
+						>
+							<button
+								type="button"
+								class="preset-tabs-trigger --left w-12 disabled:cursor-not-allowed disabled:opacity-40"
+								aria-label="Riduci la dimensione del testo"
+								title="Riduci la dimensione del testo"
+								disabled={fontSize <= FONT_SIZE_MIN}
+								onclick={() => changeFontSize(-1)}
+							>
+								<i class="fa-solid fa-t text-sm" aria-hidden="true"></i>
+							</button>
+							<button
+								type="button"
+								class="preset-tabs-trigger --right w-12 border-l border-dark-40 disabled:cursor-not-allowed disabled:opacity-40"
+								aria-label="Aumenta la dimensione del testo"
+								title="Aumenta la dimensione del testo"
+								disabled={fontSize >= FONT_SIZE_MAX}
+								onclick={() => changeFontSize(1)}
+							>
+								<i class="fa-solid fa-t text-xl" aria-hidden="true"></i>
+							</button>
+						</div>
+					{/snippet}
+				</Tabs.List>
+			</Tabs.Root>
+		{/if}
+
+		<!-- Flow control -->
+		{#if canToggleFlow}
+			<Tabs.Root
+				class="pointer-events-auto shrink-0"
+				value={currentFlow}
+				onValueChange={changeFlow}
+			>
+				<Tabs.List class="preset-tabs-list flex h-10" aria-label="Visualizzazione del testo">
 					<Tabs.Trigger
-						value={tab.value}
-						class={`preset-tabs-trigger ${positionClass(i, tabItems.length)}`}
+						value="fluid"
+						class="preset-tabs-trigger --left w-12"
+						aria-label="Scorrimento continuo"
+						title="Scorrimento continuo"
 					>
-						{tab.label}
+						<i class="fa-solid fa-scroll" aria-hidden="true"></i>
 					</Tabs.Trigger>
-				{/each}
-			</Tabs.List>
-		</Tabs.Root>
+					<Tabs.Trigger
+						value="paged"
+						class="preset-tabs-trigger --right w-12"
+						aria-label="Visualizzazione per pagine"
+						title="Visualizzazione per pagine"
+					>
+						<i class="fa-solid fa-file" aria-hidden="true"></i>
+					</Tabs.Trigger>
+				</Tabs.List>
+			</Tabs.Root>
+		{/if}
 	</div>
 
 	<!-- Gallery -->
-	<aside
-		class={[
-			'z-20 w-full overflow-hidden',
-			isGallerySticky && 'sticky top-0',
-			isFluid ? 'h-0' : '200px'
-		]}
-	>
-		{#if !isFluid}
-			<div in:fade={{ delay: DELAY }}>
-				<Gallery docItem={resolvedDoc.item} {params} />
-			</div>
-		{/if}
-	</aside>
+	{#if !view.isFluid && ceteiData.pages.length}
+		<aside
+			bind:this={gallery}
+			class={['z-20 w-full overflow-hidden', isGallerySticky && 'sticky top-0']}
+			in:fade={{ delay: DELAY_GALLERY }}
+		>
+			<Gallery pages={ceteiData.pages} {params} />
+		</aside>
+	{/if}
 
 	<div
 		class={[
 			'containerCenter',
 			'sticky z-10 mx-10 h-max pb-[20vh] transition-all duration-300',
-			isFluid ? 'bg-background' : 'bg-background'
+			'bg-background'
 		]}
 		style:--left={nColsVisible >= nColsFit ? (prioToFac ? '10px' : `-1`) : '0px'}
 		style:--width={'calc(100% - 40px)'}
@@ -162,12 +293,12 @@
 			class:isAll={nColsVisible >= nColsFit}
 			//! Could be deleted
 			class:isSmall={isBreakpointBelow('lg')}
-			class:isFluid
-			class:facsimile_view={!showMain && !showSecond}
-			style:--facsimile-width={!showFac ? '0px' : isFacsimileView ? '100%' : facsimileWidth}
+			class:isFluid={view.isFluid}
+			class:facsimile_view={isFacsimileView}
+			style:--facsimile-width={!view.showFac ? '0px' : isFacsimileView ? '100%' : facsimileWidth}
 			style:--facsimile-width-lg={widthFacsimileLg}
-			style:--df-visible={showMain ? '1' : '0'}
-			style:--lf-visible={showSecond ? '1' : '0'}
+			style:--df-visible={view.showMain ? '1' : '0'}
+			style:--lf-visible={view.showSecond ? '1' : '0'}
 			style:--duration={`${TRANSITION_LENGTH}ms`}
 		>
 			<!-- IIIF-Viewer -->
@@ -175,29 +306,35 @@
 				class="sticky block h-[96vh] w-full shrink flex-col gap-4 overflow-hidden rounded-xl px-5 transition-colors duration-300 hover:bg-muted-foreground/30"
 				style="top: 2vh"
 			>
-				{#if showFac && urls.length}
+				{#if view.showFac && ceteiData.pages.length}
 					<IIIF_Viewer {url} />
 				{/if}
 			</aside>
 
 			<!-- Snippet: Text for Main and Secondary -->
 			{#snippet Text(
-				textData: ProcessedTEI,
+				textData: ProcessedTEI | null,
 				showText: boolean,
 				showThumbs: boolean,
 				isFluid: boolean
 			)}
-				<div in:fade={{ delay: DELAY }} class="w-full">
-					{#if showText}
+				<div in:fade={{ delay: DELAY }} class="w-full" style:font-size={`${fontSize}%`}>
+					{#if showText && textData}
 						{#if isFluid}
 							<TextFluid
 								{textData}
-								{params}
+								{selectFacsimile}
 								{showThumbs}
+								{openDrawer}
+								scrollPage={showThumbs
+									? params.mode === 'LF' && currentPage > 1
+										? currentPage
+										: fluidPage
+									: null}
 								classes="mx-auto w-full max-w-300 md:max-w-[1300px]"
 							/>
 						{:else}
-							<TextPaged {textData} page={params.page} />
+							<TextPaged {textData} page={currentPage} {openDrawer} />
 						{/if}
 					{/if}
 				</div>
@@ -205,21 +342,21 @@
 
 			<!-- Main Text -->
 			<div class={['mx-10', isBreakpointBelow('lg') && 'h-[50vh]']}>
-				<div class={[mode_main && mode_main]}>
-					{@render Text(ceteiData, showMain, true, isFluid)}
+				<div class={[view.mainTextClass]}>
+					{@render Text(ceteiData, view.showMain, true, view.isFluid)}
 				</div>
 			</div>
 
 			<!-- Secondary Text -->
 			<div
 				class={[
-					params.mode !== 'TRLF' && 'hidden',
+					!view.showTranslationPanel && 'hidden',
 					'overflow-auto',
 					'mx-10 ml-10 w-[calc(100%-10)] px-2 pr-5 pl-2',
-					// showSecond && 'rounded-lg bg-mist-100 dark:bg-mist-800',
-					showSecond && 'border-l-2 pl-12',
+					// view.showSecond && 'rounded-lg bg-mist-100 dark:bg-mist-800',
+					view.showSecond && 'border-l-2 pl-12',
 					'sticky',
-					isFluid && isGallerySticky ? 'top-10' : 'top-5',
+					view.isFluid && isGallerySticky ? 'top-10' : 'top-5',
 					isGallerySticky ? 'h-[80vh]' : 'h-screen',
 					isBreakpointBelow('lg') && 'h-[50vh]'
 				]}
@@ -229,8 +366,8 @@
 				>
 					Traduzione editoriale
 				</h3>
-				<div class={[mode_secondary && mode_secondary]}>
-					{@render Text(ceteiDataTranslation, showSecond, false, isFluid)}
+				<div class="mode-lf">
+					{@render Text(ceteiDataTranslation, view.showSecond, false, view.isFluid)}
 				</div>
 			</div>
 		</div>
@@ -238,7 +375,7 @@
 </div>
 
 <!-- Drawer -->
-<DrawerRegNotes {ceteiData} {docItem} />
+<DrawerRegNotes {ceteiData} {docItem} bind:open={drawerOpen} />
 
 <style>
 	.containerCenter {

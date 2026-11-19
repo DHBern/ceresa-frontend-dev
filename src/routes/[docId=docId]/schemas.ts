@@ -10,6 +10,7 @@ export const SEARCH_PARAMS_DEFAULTS = {
 	seq: '',
 	page: 1,
 	mode: 'LF' as const,
+	flow: null,
 	comment: '',
 	line: 1
 };
@@ -18,6 +19,8 @@ export const schema = z.object({
 	seq: z.string().default(SEARCH_PARAMS_DEFAULTS.seq).optional(),
 	page: z.number().default(SEARCH_PARAMS_DEFAULTS.page).optional(),
 	mode: z.enum(['LF', 'DF', 'TRLF', 'FAC']).default(SEARCH_PARAMS_DEFAULTS.mode),
+	// Runed discovers search parameters from the schema's defaults.
+	flow: z.enum(['fluid', 'paged']).nullable().default(SEARCH_PARAMS_DEFAULTS.flow),
 	comment: z.string().default(SEARCH_PARAMS_DEFAULTS.comment).optional(),
 	line: z.coerce.number().default(SEARCH_PARAMS_DEFAULTS.line).optional()
 });

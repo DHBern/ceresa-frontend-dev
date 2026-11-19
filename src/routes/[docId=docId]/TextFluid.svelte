@@ -1,19 +1,55 @@
 <script lang="ts">
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import CETEI from 'CETEIcean';
-	import { behaviors, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
-	import {
-		clearAllHighlights,
-		handleFootnoteClick,
-		handleRefStringClick
-	} from '$lib/functions/interactive_edendum/handleInteractiveText';
-	import { type TRegKeysFlat } from '$lib/types/register/TRegister';
+	import { behaviors, getTextPageBreaks, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
+	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
+	import { tick } from 'svelte';
+	import type { ProcessedTEI } from './processTEI';
 
 	let containerMaintext: HTMLElement;
 	let containerTEI: HTMLElement;
-	let { textData, params, showThumbs = true, classes } = $props();
+	let {
+		textData,
+		selectFacsimile,
+		showThumbs = true,
+		classes,
+		openDrawer,
+		scrollPage = null
+	}: {
+		textData: ProcessedTEI;
+		selectFacsimile: (page: number) => void;
+		showThumbs?: boolean;
+		classes: string;
+		openDrawer: () => void;
+		scrollPage?: number | null;
+	} = $props();
 
 	let serializedWithoutNotes = $derived(removeNotesFromMaintext(textData.serialized));
+
+	$effect(() => {
+		const page = scrollPage;
+		const container = containerTEI;
+		if (page === null || !container) return;
+		let cancelled = false;
+		void (async () => {
+			await tick();
+			await document.fonts.ready;
+			await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+			// Layout transitions may reflow the text after the first frame.
+			await Promise.allSettled(
+				document
+					.getAnimations()
+					.filter((animation) => animation instanceof CSSTransition)
+					.map((animation) => animation.finished)
+			);
+			if (cancelled) return;
+			const pageBreak = getTextPageBreaks(container)[page - 1];
+			pageBreak?.scrollIntoView({ block: 'start', behavior: 'instant' });
+		})();
+		return () => {
+			cancelled = true;
+		};
+	});
 
 	// ---------------------------------------------
 	// Thumbnails
@@ -21,7 +57,7 @@
 		id: number;
 		el: HTMLElement;
 		facs: string;
-		n: string;
+		n: string | null;
 		page: number;
 		top: number;
 	};
@@ -31,14 +67,14 @@
 	let mutationObserver: MutationObserver;
 
 	function collectPagebreaks(el: HTMLElement) {
-		const nodes = el.querySelectorAll('tei-pb');
+		const nodes = getTextPageBreaks(el);
 
 		if (nodes.length) {
-			const newThumbs = Array.from(nodes as NodeListOf<HTMLElement>).map((el, i) => ({
+			const newThumbs = nodes.map((el, i) => ({
 				id: i,
 				el: el,
-				facs: el.getAttribute('facs')?.replace('/info.json', '') || '',
-				n: el.getAttribute('n') || '',
+				facs: textData.pages[i]?.facs ?? '',
+				n: textData.pages[i]?.n ?? null,
 				page: i + 1,
 				top: 0
 			}));
@@ -122,27 +158,7 @@
 	const setupCustomElements = (element: HTMLElement) => {
 		c.addBehaviors(behaviors(document));
 		c.processPage();
-
-		element.querySelectorAll('tei-rs').forEach((el) => {
-			el.setAttribute('tabindex', '0');
-			el.addEventListener('click', (ev) => {
-				ev.stopPropagation();
-				handleRefStringClick(el as HTMLElement);
-			});
-			el.addEventListener('focusout', () => {
-				clearAllHighlights();
-			});
-		});
-		element.querySelectorAll('.footnote, .note-mark').forEach((el) => {
-			const key = el.closest('[data-noteid]')?.getAttribute('data-noteid') as TRegKeysFlat;
-			el.setAttribute('tabindex', '0');
-			el.addEventListener('click', () => {
-				handleFootnoteClick(key);
-			});
-			el.addEventListener('focusout', () => {
-				clearAllHighlights();
-			});
-		});
+		attachTextInteractions(element, openDrawer);
 	};
 </script>
 
@@ -162,10 +178,7 @@
 
 					<button
 						class="sticky top-0 float-right ml-2 flex w-full translate-y-3 flex-col items-end justify-center gap-1 rounded bg-background p-[2px] xl:max-w-[80px] 2xl:max-w-[90px]"
-						onclick={() => {
-							params.mode = 'DF';
-							params.page = thumb.page;
-						}}
+						onclick={() => selectFacsimile(thumb.page)}
 					>
 						<div class="w-full flex-col items-center justify-center">
 							<IIIF_Thumb
@@ -174,7 +187,9 @@
 								classes="w-full"
 								imgClasses="w-full"
 							/>
-							<span class="text-sm">Pag. {thumb.page}</span>
+							{#if thumb.n !== null}
+								<span class="text-sm">Pag. {thumb.n}</span>
+							{/if}
 						</div>
 					</button>
 				{/each}

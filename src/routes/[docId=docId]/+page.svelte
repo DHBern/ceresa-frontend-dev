@@ -42,12 +42,14 @@
 	/>
 
 	<!-- Content -->
-	<DocViewer
-		docItem={data.resolvedDoc?.item}
-		ceteiData={data.ceteiData}
-		ceteiDataTranslation={data.ceteiDataTranslation}
-		resolvedDoc={data.resolvedDoc}
-		classesContainer="w-full grow"
-		{params}
-	/>
+	{#key page.params.docId}
+		<DocViewer
+			docItem={data.resolvedDoc?.item}
+			ceteiData={data.ceteiData}
+			ceteiDataTranslation={data.ceteiDataTranslation}
+			resolvedDoc={data.resolvedDoc}
+			classesContainer="w-full grow"
+			{params}
+		/>
+	{/key}
 </div>

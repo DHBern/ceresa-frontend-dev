@@ -1,93 +1,56 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
-	import { page } from '$app/state';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
-	import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
-	import { documents as allDocsRaw } from '$lib/data/documents.json';
-	import type { TDocuments } from '$lib/types/documents/TDocuments';
 	import ThumbList from './ThumbList.svelte';
+	import type { TEIPage } from '$lib/CETEIcean/behaviors';
+	import type { ReturnUseSearchParams } from 'runed/kit';
+	import type { schema } from './schemas';
 
-	const allDocs = allDocsRaw as TDocuments['documents'];
+	let {
+		params,
+		pages
+	}: {
+		params: ReturnUseSearchParams<typeof schema>;
+		pages: TEIPage[];
+	} = $props();
+	let currentPage = $derived(params.page ?? 1);
 
-	let buttonRefs: HTMLButtonElement[] = [];
-	let containerRef: HTMLDivElement;
-
-	type TGalleryItem = {
-		pagenum_running: number;
-		fac: string;
-		page: number;
-	};
-
-	let { docItem, params } = $props();
-
-	// Gallery Items
-	function collectGalleryItems() {
-		const galleryItems: TGalleryItem[] =
-			docItem?.iiif.urls_IIIF_images?.map((el: string, idx: number) => {
-				return { pagenum_running: idx + 1, fac: el, page: idx + 1 };
-			}) || [];
-		return galleryItems;
-	}
-
-	// Scroll Gallery
-	function scrollGalleryToPage(currentPage: number) {
-		const btn = buttonRefs[currentPage - 1];
-		if (btn && containerRef) {
-			const btnLeft = btn.offsetLeft;
-			const btnWidth = btn.offsetWidth;
-			const containerWidth = containerRef.offsetWidth;
-
-			// Center button in the container
-			const scrollPos = btnLeft - (containerWidth - btnWidth) / 2;
-			containerRef.scrollTo({ left: scrollPos, behavior: 'smooth' });
-		}
-	}
-
-	function handleSelectPage(newPage: number) {
-		params.page = newPage;
-	}
-
-	$effect(() => {
-		scrollGalleryToPage(params.page);
-	});
-
-	let itemsBefore = $derived(collectGalleryItems()?.slice(0, params.page - 1));
-	let itemsCurrent = $derived(collectGalleryItems()[params.page - 1]);
-	let itemsAfter = $derived(collectGalleryItems()?.slice(params.page - 0));
+	let itemsBefore = $derived(pages.slice(0, currentPage - 1));
+	let itemsCurrent = $derived(pages[currentPage - 1]);
+	let itemsAfter = $derived(pages.slice(currentPage));
 </script>
 
 {#snippet thumbItem(
-	galleryItem: TGalleryItem,
+	galleryItem: TEIPage,
 	isFirst: boolean = false,
 	isLast: boolean = false,
 	isCurrent: boolean = false
 )}
 	<button
+		type="button"
+		aria-current={isCurrent ? 'page' : undefined}
 		class={[
-			`group flex flex-col items-center justify-between px-3 py-3 hover:bg-hover`,
+			'group flex min-w-20 flex-col items-center justify-between px-3 py-3 hover:bg-hover',
 			isFirst && 'rounded-l-thumbbox',
 			isLast && 'rounded-r-thumbbox'
-			// isCurrent ? 'mx-10' : 'mx-2'
 		]}
-		onclick={(e) => {
-			e.preventDefault();
-			handleSelectPage(galleryItem.pagenum_running);
-		}}
+		onclick={() => (params.page = galleryItem.page)}
 	>
 		<IIIF_Thumb
-			url={galleryItem.fac}
+			url={galleryItem.facs}
 			classesContainer=""
 			classes={`min-h-2 h-max mx-2 my-1 flex justify-center items-center ${isCurrent ? 'max-h-35' : 'max-h-20'}`}
 			imgClasses={`h-max border ${isCurrent ? 'max-h-30 max-w-30' : 'max-h-15 max-w-15'}`}
 		/>
-		<span class="mt-1 text-sm">{galleryItem.page}</span>
+		{#if galleryItem.n !== null}
+			<span class="mt-1 text-sm">{galleryItem.n}</span>
+		{/if}
 	</button>
 {/snippet}
 
 <div
 	class="sticky top-0 z-20 flex w-full flex-col gap-5 overflow-x-auto bg-background px-0 py-5 transition-all duration-200"
 >
-	<div bind:this={containerRef} class="my-2 h-max">
+	<div class="my-2 h-max">
 		<ThumbList
 			reCenterOn={params.page}
 			classesContainer="items-center"
@@ -100,10 +63,7 @@
 		>
 			{#snippet childrenBefore()}
 				{#each itemsBefore as galleryItem, index (galleryItem.page)}
-					{#if galleryItem}
-						{@render thumbItem(galleryItem, index === 0, index === itemsBefore.length - 1, false)}
-					{:else}<p class="text-warning">MISSING DATA</p>
-					{/if}
+					{@render thumbItem(galleryItem, index === 0, index === itemsBefore.length - 1)}
 				{/each}
 			{/snippet}
 			{#snippet childrenCurrent()}
@@ -114,10 +74,7 @@
 			{/snippet}
 			{#snippet childrenAfter()}
 				{#each itemsAfter as galleryItem, index (galleryItem.page)}
-					{#if galleryItem}
-						{@render thumbItem(galleryItem, index === 0, index === itemsAfter.length - 1, false)}
-					{:else}<p class="text-warning">MISSING DATA</p>
-					{/if}
+					{@render thumbItem(galleryItem, index === 0, index === itemsAfter.length - 1)}
 				{/each}
 			{/snippet}
 		</ThumbList>

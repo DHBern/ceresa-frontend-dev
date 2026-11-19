@@ -63,6 +63,8 @@ export const behaviors = (dom: Document) => {
 				const footnote = dom.createElement('span');
 				footnote.classList.add('footnote');
 				footnote.setAttribute('data-noteid', `${noteId}`);
+				const noteType = el.getAttribute('type');
+				if (noteType) footnote.setAttribute('data-note-type', noteType);
 				footnote.dataset.noteId = String(this.noteIndex);
 				footnote.innerHTML = String(this.noteIndex);
 
@@ -76,9 +78,10 @@ export const behaviors = (dom: Document) => {
 // --> Run after processPage()
 export function wrapAnnotations(container: HTMLElement) {
 	const notes = container.querySelectorAll('tei-note[targetend]');
-	notes.forEach((note, runningId) => {
+	notes.forEach((note) => {
 		const targetId = note.getAttribute('targetend');
-		if (!targetId) return;
+		const noteId = note.querySelector(':scope > .footnote')?.getAttribute('data-noteid');
+		if (!targetId || !noteId) return;
 		const anchor = container.querySelector(`tei-anchor[id="${targetId}"]`);
 		if (!anchor) return;
 
@@ -89,12 +92,12 @@ export function wrapAnnotations(container: HTMLElement) {
 			nodes.push(current);
 			current = current.nextSibling;
 		}
-		if (!nodes.length) return;
+		if (current !== note || !nodes.length) return;
 
 		// Create mark (the wrapper around annotated text)
 		const wrapper = container.ownerDocument.createElement('span');
 		wrapper.classList.add('note-mark');
-		wrapper.setAttribute('data-noteid', `${NOTE_ID_PREFIX}${runningId + 1}`);
+		wrapper.setAttribute('data-noteid', noteId);
 		wrapper.dataset.noteTarget = targetId;
 
 		nodes[0].parentNode!.insertBefore(wrapper, nodes[0]);
@@ -108,17 +111,38 @@ export function removeNotesFromMaintext(ceteiSerialized: string) {
 	return ceteiSerialized.replace(/<ol class="notes">.*?<\/ol>/s, '');
 }
 
+export interface TEIPage {
+	page: number;
+	n: string | null;
+	facs: string | null;
+}
+
+export function getTextPageBreaks(container: ParentNode): HTMLElement[] {
+	return Array.from(container.querySelectorAll<HTMLElement>('tei-text tei-pb')).filter(
+		(el) => !el.closest('cetei-original')
+	);
+}
+
+export function collectPageMetadata(container: ParentNode): TEIPage[] {
+	return getTextPageBreaks(container).map((el, index) => ({
+		page: index + 1,
+		n: el.getAttribute('n')?.trim() || null,
+		facs:
+			el
+				.getAttribute('facs')
+				?.trim()
+				.replace(/\/info\.json$/, '') || null
+	}));
+}
+
 // Extract a single page from the serialized CETEI output by running page index.
-// Linearizes the DOM into a flat node sequence, splitting at <tei-pb> boundaries.
-// At each page boundary, closes all currently-open ancestor tags and reopens
-// them at the start of the next page. This correctly handles <pb> appearing
-// in the middle of <p>, <div>, <body>, etc.
+// Preserve the DOM structure when a page break splits a paragraph or division.
 export function extractPage(ceteiSerialized: string, pageIndex: number): string {
 	const parser = new DOMParser();
 	const doc = parser.parseFromString(ceteiSerialized, 'text/html');
 
 	// Collect all <tei-pb> elements in document order
-	const pageBreaks = Array.from(doc.querySelectorAll('tei-pb'));
+	const pageBreaks = getTextPageBreaks(doc);
 
 	if (!pageBreaks.length) {
 		console.warn('No <tei-pb> elements found. Returning full content.');
@@ -136,172 +160,27 @@ export function extractPage(ceteiSerialized: string, pageIndex: number): string 
 	const targetPb = pageBreaks[targetIndex];
 	const nextPb = targetIndex + 1 < pageBreaks.length ? pageBreaks[targetIndex + 1] : null;
 
-	// Collect ancestors of the target <tei-pb> (these are the "open tags" we need to reopen)
-	// We skip document-level elements (html, head, body)
-	const skipTags = new Set(['html', 'head', 'body']);
-	const ancestors: Element[] = [];
-	let ancestor = targetPb.parentElement;
-	while (ancestor && !skipTags.has(ancestor.tagName.toLowerCase())) {
-		ancestors.push(ancestor);
-		ancestor = ancestor.parentElement;
-	}
-	ancestors.reverse(); // Outermost first
+	const range = doc.createRange();
+	range.setStartAfter(targetPb);
+	if (nextPb) range.setEndBefore(nextPb);
+	else range.setEnd(doc.body, doc.body.childNodes.length);
 
-	// Helper: serialize an element's attributes to a string
-	function serializeAttrs(el: Element): string {
-		return Array.from(el.attributes)
-			.map((a) => ` ${a.name}="${a.value.replace(/"/g, '&quot;')}"`)
-			.join('');
-	}
+	const fragment = range.cloneContents();
+	fragment.querySelectorAll('tei-pb').forEach((pb) => pb.remove());
 
-	// Build opening tags for ancestors
-	const openTags = ancestors
-		.map((el) => `<${el.tagName.toLowerCase()}${serializeAttrs(el)}>`)
-		.join('');
-
-	// Build closing tags for ancestors (reversed order)
-	const closeTags = ancestors
-		.slice()
-		.reverse()
-		.map((el) => `</${el.tagName.toLowerCase()}>`)
-		.join('');
-
-	// Collect all nodes between targetPb (exclusive) and nextPb (exclusive),
-	// traversing the full subtree using a recursive tree walker.
-	const collectedNodes: string[] = [];
-
-	function collectFromNode(node: Node) {
-		if (node === nextPb) return false; // Stop signal
-
-		// Text node
-		if (node.nodeType === 3) {
-			collectedNodes.push(node.textContent || '');
-			return true;
-		}
-
-		// Comment node
-		if (node.nodeType === 8) {
-			collectedNodes.push(`<!--${node.textContent}-->`);
-			return true;
-		}
-
-		// Element node
-		if (node.nodeType === 1) {
-			const el = node as Element;
-			const tag = el.tagName.toLowerCase();
-
-			// Don't re-emit the <tei-pb> page breaks themselves
-			if (tag === 'tei-pb') {
-				return true; // Skip but continue
-			}
-
-			const attrs = serializeAttrs(el);
-			const innerParts: string[] = [];
-
-			// Recurse into children
-			for (const child of Array.from(el.childNodes)) {
-				if (!collectFromNode(child)) {
-					// If a child returned false, we hit nextPb inside this subtree
-					// Serialize what we have and emit a closing tag
-					collectedNodes.push(`<${tag}${attrs}>${innerParts.join('')}</${tag}>`);
-					return false; // Propagate stop signal
-				}
-			}
-
-			// Normal completion: serialize the full element
-			collectedNodes.push(`<${tag}${attrs}>${innerParts.join('')}</${tag}>`);
-			return true;
-		}
-
-		return true;
+	// The range clones partial children, but not their shared ancestors.
+	let content: Node = fragment;
+	for (
+		let ancestor = range.commonAncestorContainer;
+		ancestor !== doc.body && ancestor.parentNode;
+		ancestor = ancestor.parentNode
+	) {
+		const wrapper = ancestor.cloneNode(false);
+		wrapper.appendChild(content);
+		content = wrapper;
 	}
 
-	// Start collecting from the first sibling after targetPb.
-	// But first — handle the tricky case: if targetPb is inside a <p>,
-	// the remaining siblings of targetPb are the "tail" of that <p>.
-	// We need to collect those, then move up to the parent's next siblings, etc.
-
-	function collectFromSiblings(startNode: Node | null): boolean {
-		let current = startNode;
-
-		// Inner: collect remaining siblings within the same parent
-		while (current) {
-			if (current === nextPb) return false;
-			if (!collectFromNode(current)) return false;
-			current = current.nextSibling;
-		}
-
-		// Move up: if the parent has a next sibling, continue there.
-		// This handles the case where <pb> is nested deep inside elements.
-		// We need to close the current ancestor and continue at the parent level.
-		return true;
-	}
-
-	// Step 1: Collect the "tail" — remaining siblings after targetPb within its parent
-	// These are the nodes that come after <pb> inside the same element (e.g., the rest of a <p>)
-	const tailParts: string[] = [];
-	function collectTail(node: Node | null): boolean {
-		let current = node;
-		while (current) {
-			if (current === nextPb) return false;
-			if (!collectNodeFlat(current, tailParts)) return false;
-			current = current.nextSibling;
-		}
-		return true;
-	}
-
-	// Flat serialization of a node: emit its outerHTML but skip <tei-pb>
-	function collectNodeFlat(node: Node, out: string[]): boolean {
-		if (node === nextPb) return false;
-
-		if (node.nodeType === 3) {
-			out.push(node.textContent || '');
-			return true;
-		}
-		if (node.nodeType === 8) {
-			out.push(`<!--${node.textContent}-->`);
-			return true;
-		}
-		if (node.nodeType === 1) {
-			const el = node as Element;
-			if (el.tagName.toLowerCase() === 'tei-pb') {
-				return true; // Skip page breaks
-			}
-			// Serialize this element (including children) — but we must stop if nextPb is inside
-			const tag = el.tagName.toLowerCase();
-			const attrs = serializeAttrs(el);
-			const innerParts: string[] = [];
-			for (const child of Array.from(el.childNodes)) {
-				if (!collectNodeFlat(child, innerParts)) {
-					out.push(`<${tag}${attrs}>${innerParts.join('')}</${tag}>`);
-					return false;
-				}
-			}
-			out.push(`<${tag}${attrs}>${innerParts.join('')}</${tag}>`);
-			return true;
-		}
-		return true;
-	}
-
-	// Collect from the sibling after targetPb to the end of its parent's children
-	collectTail(targetPb.nextSibling);
-
-	// Then collect from the ancestors' following siblings, outermost to innermost
-	// Actually — we need to collect from each ancestor level going upward:
-	// After collecting the tail at the deepest level, move to the parent's next sibling.
-	const allParts: string[] = [...tailParts];
-
-	let climbNode: Node | null = targetPb.parentElement;
-	while (climbNode && climbNode !== doc.body) {
-		let sibling = climbNode.nextSibling;
-		while (sibling) {
-			if (sibling === nextPb) break;
-			if (!collectNodeFlat(sibling, allParts)) break;
-			sibling = sibling.nextSibling;
-		}
-		if (sibling === nextPb) break;
-		climbNode = climbNode.parentElement;
-	}
-
-	return openTags + allParts.join('') + closeTags;
+	const container = doc.createElement('div');
+	container.appendChild(content);
+	return container.innerHTML;
 }

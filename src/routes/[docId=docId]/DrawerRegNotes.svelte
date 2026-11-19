@@ -6,9 +6,7 @@
 		setDrawerSmall,
 		setDrawerMedium,
 		setDrawerLarge,
-		selectedTextNode,
-		showDrawer as showDrawer,
-		drawerSnapPoint_DEFAULT
+		selectedTextNode
 	} from '$lib/globals/ui-states.svelte';
 	import * as Drawer from '$lib/components/shadcn-ui/drawer/index.js';
 	import DrawerReg from './DrawerReg.svelte';
@@ -17,18 +15,16 @@
 	import { handleJumpToSibling } from '$lib/functions/interactive_edendum/handleInteractiveText';
 	import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
 
-	let { ceteiData, docItem } = $props();
+	let { ceteiData, docItem, open = $bindable(false) } = $props();
+	const drawerId = $props.id();
 
-	async function handleEscape(ev: KeyboardEvent) {
-		if (ev.key === 'Escape' && !isDrawerSmall) {
-			ev.preventDefault();
-			ev.stopPropagation();
-			setDrawerSmall();
-		}
+	function focusDrawer(event: Event) {
+		event.preventDefault();
+		document.getElementById(drawerId)?.focus({ preventScroll: true });
 	}
 
 	function closeAndResetDrawer() {
-		showDrawer.value = false;
+		open = false;
 	}
 
 	let isDrawerSmall = $derived(drawerSnapPoint.value === DRAWER_SNAP_POINTS[0]);
@@ -39,14 +35,20 @@
 <Drawer.Root
 	snapPoints={DRAWER_SNAP_POINTS}
 	bind:activeSnapPoint={drawerSnapPoint.value}
-	bind:open={showDrawer.value}
+	bind:open
 	modal={false}
 	dismissible={isDrawerSmall}
 	direction="bottom"
 >
 	<Drawer.Content
+		id={drawerId}
+		tabindex={-1}
+		onOpenAutoFocus={focusDrawer}
+		onEscapeKeydown={(event) => {
+			event.preventDefault();
+			closeAndResetDrawer();
+		}}
 		class="z-99999999999991 mx-auto h-full w-[98vw] border border-foreground bg-background data-[vaul-drawer-direction=bottom]:max-h-[97%]"
-		onkeydown={handleEscape}
 	>
 		<div class="grid w-full grid-cols-[1fr_auto] px-5">
 			<!-- Header -->

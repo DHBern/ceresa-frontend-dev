@@ -627,6 +627,7 @@ span.note-mark {
 }
 
 span.note-mark:hover,
+span.note-mark.note-pair-hovered,
 span.note-mark.active {
 	background-color: var(--color-note-active);
 	color: var(--color-note-active-foreground);
@@ -646,29 +647,57 @@ span.note-mark.active {
 		font-size: 1.1rem;
 	}
 
-	span.footnote:hover,
-	span.footnote.active,
+	tei-text span.footnote[data-note-type='annotation'] {
+		display: none;
+	}
+
+	span.footnote:not([data-note-type='annotation']):hover,
+	span.footnote:not([data-note-type='annotation']).note-pair-hovered,
+	span.footnote:not([data-note-type='annotation']).active,
 	span.note-mark:hover,
 	span.note-mark.active {
 		background-color: var(--color-note-active);
 		color: var(--color-note-active-foreground);
 	}
 
-	span.footnote:active,
+	span.footnote:not([data-note-type='annotation']):active,
 	span.note-mark:active {
 		background-color: var(--color-dark-40);
 		box-shadow: none;
 	}
-	span.footnote.active:focus,
+	span.footnote:not([data-note-type='annotation']).active:focus,
 	span.note-mark.active:focus {
 		border: none;
 		box-shadow: none;
 	}
 }
 
-.mode-df {
+.mode-lf {
 	tei-note[type='annotation'] {
 		display: none;
+	}
+}
+
+.mode-df {
+	tei-text span.footnote[data-note-type='annotation'] {
+		cursor: pointer;
+		border: 1px solid var(--color-footnote-circle);
+		margin-right: 5px;
+		padding: 2px 7px;
+		border-radius: 100%;
+		font-size: 1.1rem;
+	}
+
+	span.footnote[data-note-type='annotation']:hover,
+	span.footnote[data-note-type='annotation'].note-pair-hovered,
+	span.footnote[data-note-type='annotation'].active {
+		background-color: var(--color-note-active);
+		color: var(--color-note-active-foreground);
+	}
+
+	span.footnote[data-note-type='annotation']:active {
+		background-color: var(--color-dark-40);
+		box-shadow: none;
 	}
 }
 
@@ -691,7 +720,8 @@ tei-anchor {
 /* Referencing Strings */
 
 [data-textflow='fluid'],
-.mode-lf {
+.mode-lf,
+.mode-df {
 	/* Hover and Active */
 	tei-rs:hover,
 	tei-rs.active,
@@ -728,7 +758,8 @@ tei-anchor {
 
 /* Types */
 [data-textflow='fluid'],
-.mode-lf {
+.mode-lf,
+.mode-df {
 	tei-rs {
 		cursor: pointer;
 		border-bottom-width: 3px;

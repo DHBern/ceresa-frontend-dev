@@ -23,7 +23,7 @@
 			</Accordion.Trigger>
 
 			<Accordion.Content
-				class="overflow-hidden transition-all duration-300 ease-in-out data-[state=closed]:max-h-0 data-[state=open]:h-[80vh] data-[state=open]:max-h-[40vh]"
+				class="max-h-[40vh] overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
 			>
 				<div class="h-full overflow-hidden bg-background p-4">
 					{@render metadataContent()}
