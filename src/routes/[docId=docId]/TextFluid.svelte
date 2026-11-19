@@ -36,6 +36,13 @@
 			await tick();
 			await document.fonts.ready;
 			await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+			// Layout transitions may reflow the text after the first frame.
+			await Promise.allSettled(
+				document
+					.getAnimations()
+					.filter((animation) => animation instanceof CSSTransition)
+					.map((animation) => animation.finished)
+			);
 			if (cancelled) return;
 			const pageBreak = getTextPageBreaks(containerTEI)[page - 1];
 			pageBreak?.scrollIntoView({ block: 'start', behavior: 'instant' });
