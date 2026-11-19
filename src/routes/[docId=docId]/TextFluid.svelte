@@ -4,7 +4,7 @@
 	import { behaviors, getTextPageBreaks, removeNotesFromMaintext } from '$lib/CETEIcean/behaviors';
 	import { attachTextInteractions } from '$lib/functions/interactive_edendum/handleInteractiveText';
 	import type { schema } from './schemas';
-	import { onMount, tick } from 'svelte';
+	import { tick } from 'svelte';
 	import type { ProcessedTEI } from './processTEI';
 	import type { ReturnUseSearchParams } from 'runed/kit';
 
@@ -16,21 +16,22 @@
 		showThumbs = true,
 		classes,
 		openDrawer,
-		initialPage = null
+		scrollPage = null
 	}: {
 		textData: ProcessedTEI;
 		params: ReturnUseSearchParams<typeof schema>;
 		showThumbs?: boolean;
 		classes: string;
 		openDrawer: () => void;
-		initialPage?: number | null;
+		scrollPage?: number | null;
 	} = $props();
 
 	let serializedWithoutNotes = $derived(removeNotesFromMaintext(textData.serialized));
 
-	onMount(() => {
-		const page = initialPage;
-		if (page === null) return;
+	$effect(() => {
+		const page = scrollPage;
+		const container = containerTEI;
+		if (page === null || !container) return;
 		let cancelled = false;
 		void (async () => {
 			await tick();
@@ -44,7 +45,7 @@
 					.map((animation) => animation.finished)
 			);
 			if (cancelled) return;
-			const pageBreak = getTextPageBreaks(containerTEI)[page - 1];
+			const pageBreak = getTextPageBreaks(container)[page - 1];
 			pageBreak?.scrollIntoView({ block: 'start', behavior: 'instant' });
 		})();
 		return () => {

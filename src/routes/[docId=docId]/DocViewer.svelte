@@ -246,7 +246,11 @@
 								{params}
 								{showThumbs}
 								{openDrawer}
-								initialPage={showThumbs ? fluidPage : null}
+								scrollPage={showThumbs
+									? params.mode === 'LF' && currentPage > 1
+										? currentPage
+										: fluidPage
+									: null}
 								classes="mx-auto w-full max-w-300 md:max-w-[1300px]"
 							/>
 						{:else}
