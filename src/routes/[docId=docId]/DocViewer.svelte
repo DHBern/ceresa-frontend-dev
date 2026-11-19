@@ -171,10 +171,10 @@
 
 	<!-- Text layout control -->
 	{#if canToggleFlow}
-		<div class="sticky z-10000 flex w-full justify-center py-3">
+		<div class="pointer-events-none sticky top-0 z-10000 flex w-full justify-center py-3">
 			<button
 				type="button"
-				class="preset-btn-round --square h-20 w-20 text-xl"
+				class="preset-btn-round --square pointer-events-auto h-20 w-20 text-xl"
 				aria-label={flowLabel}
 				title={flowLabel}
 				onclick={toggleFlow}
