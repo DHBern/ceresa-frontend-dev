@@ -65,17 +65,17 @@
 			<li>
 				<a
 					href={resolve('/posthum_A-1-b_6-2_AC001_a')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
-					Anima [1] (Piccolo dizionario) <span class="text-neutral-400">(dattiloscritto)</span>
+					Anima [1] (Piccolo dizionario) <span class="text-muted-foreground">(dattiloscritto)</span>
 				</a>
 			</li>
 			<li>
 				<a
 					href={resolve('/unpublished_A-1-b_6-2_AC001_b')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
-					Anima [2] (Piccolo dizionario) <span class="text-neutral-400"
+					Anima [2] (Piccolo dizionario) <span class="text-muted-foreground"
 						>(dattiloscritto + audio)</span
 					>
 				</a>
@@ -83,17 +83,17 @@
 			<li>
 				<a
 					href={resolve('/posthum_A-1-b_6-5_AC003_a')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
-					Aborto [1] (Piccolo dizionario) <span class="text-neutral-400">(manoscritto)</span>
+					Aborto [1] (Piccolo dizionario) <span class="text-muted-foreground">(manoscritto)</span>
 				</a>
 			</li>
 			<li>
 				<a
 					href={resolve('/unpublished_A-1-b_6-5_AC003_b')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
-					Aborto [2] (Piccolo dizionario) <span class="text-neutral-400"
+					Aborto [2] (Piccolo dizionario) <span class="text-muted-foreground"
 						>(dattiloscritto + audio)</span
 					>
 				</a>
@@ -101,9 +101,9 @@
 			<li>
 				<a
 					href={resolve('/unpublished_A-1-b_6-5_AC003_c')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
-					Aborto [3] (Piccolo dizionario) <span class="text-neutral-400">(manoscritto)</span>
+					Aborto [3] (Piccolo dizionario) <span class="text-muted-foreground">(manoscritto)</span>
 				</a>
 			</li>
 		</ul>
@@ -113,19 +113,19 @@
 			<li>
 				<a
 					href={resolve('/published_A-5-a_13')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
 					Carson McCullers. Eine junge amerikanische Schriftstellerin setzt sich durch
-					<span class="text-neutral-400">(testo a stampa + traduzione editoriale)</span>
+					<span class="text-muted-foreground">(testo a stampa + traduzione editoriale)</span>
 				</a>
 			</li>
 			<li>
 				<a
 					href={resolve('/published_A-1-a_1-4')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
 					Gli altri, prima parte
-					<span class="text-neutral-400">(testo a stampa)</span>
+					<span class="text-muted-foreground">(testo a stampa)</span>
 				</a>
 			</li>
 		</ul>
@@ -135,35 +135,35 @@
 			<li>
 				<a
 					href={resolve('/unpublished_A-1-b_7-8')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
-					Eloise (ultime) <span class="text-neutral-400">(dattiloscritto)</span>
+					Eloise (ultime) <span class="text-muted-foreground">(dattiloscritto)</span>
 				</a>
 			</li>
 			<li>
 				<a
 					href={resolve('/unpublished_A-1-a_1-1')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
 					Prefazione per "Gli altri"
-					<span class="text-neutral-400">(manoscritto)</span>
+					<span class="text-muted-foreground">(manoscritto)</span>
 				</a>
 			</li>
 			<li>
 				<a
 					href={resolve('/unpublished_A-5-b_1')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
 					Vittorini et la nouvelle prose italienne
-					<span class="text-neutral-400">(dattiloscritto + traduzione editoriale)</span>
+					<span class="text-muted-foreground">(dattiloscritto + traduzione editoriale)</span>
 				</a>
 			</li>
 			<li>
 				<a
 					href={resolve('/unpublished_A-1-b_1-2')}
-					class="hover:text-primary block py-2 text-neutral-700 transition-colors"
+					class="hover:text-primary block py-2 text-foreground transition-colors"
 				>
-					La strega <span class="text-sm text-neutral-400">(manoscritto)</span>
+					La strega <span class="text-sm text-muted-foreground">(manoscritto)</span>
 				</a>
 			</li>
 		</ul>
