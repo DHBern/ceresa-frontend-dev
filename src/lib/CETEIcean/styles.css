@@ -34,6 +34,7 @@
 	/* Editorial colours */
 	--color-add: #2d8a2d;
 	--color-del: #b91c1c;
+	--color-correction: #3574f1;
 	--color-hw: #3868c9;
 	--color-tw: #b138c9;
 	--color-subst-bg: #fffbe6;
@@ -70,6 +71,7 @@
 .dark {
 	--color-note-active: var(--color-dark-40);
 	--color-note-active-foreground: var(--color-background-contrast);
+	--color-correction: #779eec;
 }
 
 /* -------------------------------- */
@@ -375,13 +377,6 @@ tei-hi[rendition~='#g'] {
 
 /* Hand */
 .mode-df {
-	[hand*='#hw'] {
-		color: var(--color-hw);
-	}
-	[hand*='#tw'] {
-		color: var(--color-tw);
-	}
-
 	[hand*='#person'] {
 		color: var(--color-tw);
 	}
@@ -403,13 +398,6 @@ tei-hi[rendition~='#g'] {
 		display: inline;
 	}
 
-	span[data-name='handShift'][data-hand*='#hw'] {
-		color: var(--color-hw);
-	}
-
-	span[data-name='handShift'][data-hand*='#tw'] {
-		color: var(--color-tw);
-	}
 	span[data-name='handShift'][data-hand*='#person']::before {
 		content: '✍ change of hand: (' attr(data-hand) ')';
 		color: black;
@@ -418,16 +406,16 @@ tei-hi[rendition~='#g'] {
 	}
 }
 
+/* -------------------------------- */
 /* Additions and Deletions */
 .mode-df {
-	/* tei-add[place='above'] {
-		vertical-align: super;
-	} */
-	/* tei-add[place='below'] {
-		vertical-align: sub;
-	} */
 	tei-del {
 		text-decoration: line-through;
+		text-decoration-color: var(--color-correction);
+		text-decoration-thickness: 0.2rem;
+	}
+	tei-add {
+		color: var(--color-correction);
 	}
 }
 
