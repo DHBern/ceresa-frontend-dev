@@ -464,12 +464,13 @@ metamark {
 		white-space: nowrap;
 	}
 	.metamark-relocated-text-at-original-position::after {
-		content: attr(data-metamark-label) ' ⟶';
-		border-style: dashed;
+		content: attr(data-metamark-label);
 		margin-left: 0.4em;
+		translate: 0px -0.1rem;
+		background-color: color-mix(in srgb, currentColor 12%, transparent);
 	}
 	.metamark-marker-at-new-location::before {
-		content: '↳ ' attr(data-metamark-label);
+		content: attr(data-metamark-label) ' ↳';
 		background-color: color-mix(in srgb, currentColor 12%, transparent);
 	}
 	.metamark-relocated-text-at-new-location {
