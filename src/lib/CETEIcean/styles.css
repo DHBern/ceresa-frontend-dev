@@ -420,12 +420,12 @@ tei-hi[rendition~='#g'] {
 
 /* Additions and Deletions */
 .mode-df {
-	tei-add[place='above'] {
+	/* tei-add[place='above'] {
 		vertical-align: super;
-	}
-	tei-add[place='below'] {
+	} */
+	/* tei-add[place='below'] {
 		vertical-align: sub;
-	}
+	} */
 	tei-del {
 		text-decoration: line-through;
 	}
