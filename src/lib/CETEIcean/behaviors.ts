@@ -12,6 +12,12 @@ export const behaviors = (dom: Document) => {
 		tei: {
 			add: markAddition,
 
+			gap(this: BehaviorContext, el: HTMLElement): Text {	
+				const quantity = Number.parseInt(el.getAttribute('quantity') ?? '0', 10);
+				const count = Number.isFinite(quantity) ? Math.max(0, quantity) : 0;
+				return dom.createTextNode('x'.repeat(count));
+			},
+
 			// Handle Line Breaks and Hyphenation
 			lb(this: BehaviorContext, el: HTMLElement): Text | undefined {
 				if (el.getAttribute('break') === 'no') {

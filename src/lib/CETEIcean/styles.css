@@ -526,19 +526,12 @@ tei-supplied {
 }
 
 /* -------------------------------- */
-/* Gap */
+/* Gaps */
 
 tei-gap {
 	color: var(--color-muted);
-	font-style: italic;
-}
-
-tei-gap::before {
-	content: '[…]';
-}
-
-tei-gap[reason]::before {
-	content: '[' attr(reason) ': gap of ~' attr(quantity) ' characters]';
+	/* font-style: italic; */
+	font-family: monospace;
 }
 
 /* -------------------------------- */
