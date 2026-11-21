@@ -6,10 +6,10 @@ export const TYPESWITHSORTCONTROL = {
 };
 
 export const DOC_EDTYPE_STYLES: Record<string, string> = {
-	in_periodico: 'bg-blue-100 text-blue-900',
-	in_volume: 'bg-violet-100 text-violet-900',
+	in_periodico: 'bg-yellow-100 text-yellow-900',
+	in_volume: 'bg-orange-100 text-orange-900',
 	in_giornale: 'bg-amber-100 text-amber-900',
-	manoscritto: 'bg-emerald-100 text-emerald-900',
+	manoscritto: 'bg-red-100 text-red-900',
 	dattiloscritto: 'bg-rose-100 text-rose-900'
 };
 
@@ -24,7 +24,7 @@ export const DOC_GENRETYPE_STYLES: Record<string, string> = {
 };
 
 export const DOCTYPE_STYLES: Record<string, string> = {
-	published: 'bg-violet-100 text-violet-900',
+	published: 'bg-teal-100 text-teal-900',
 	unpublished: 'bg-blue-100 text-blue-900',
 	posthum: 'bg-green-100 text-green-900',
 };
