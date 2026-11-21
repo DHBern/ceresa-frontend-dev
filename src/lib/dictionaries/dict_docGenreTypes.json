@@ -5,7 +5,7 @@
 		"generated_on": "2026-11-15",
 		"description": ""
 	},
-	"dict_docTypesGenre": {
+	"dict_docGenreTypes": {
 		"saggi": {
 			"slug": "saggi",
 			"id_singular": "saggio",
@@ -34,7 +34,7 @@
 			"slug": "dizionario",
 			"id_singular": "dizionario",
 			"label_singular": "Dizionario",
-			"label_plural": "Dizionari"
+			"label_plural": "Dizionario"
 		},
 		"poesie": {
 			"slug": "poesie",

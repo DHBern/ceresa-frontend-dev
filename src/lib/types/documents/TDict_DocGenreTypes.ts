@@ -7,16 +7,16 @@ type TMeta = {
 	description: string;
 };
 
-type TDocTypeGenreEntry = {
+type TDocGenreTypeEntry = {
 	slug: string;
 	id_singular: TDocGenreKeys;
 	label_singular: string;
 	label_plural: string;
 };
 
-export type TDict_DocTypesGenre = {
+export type TDict_DocGenreTypes = {
 	meta: TMeta;
-	dict_docTypesGenre: Record<string, TDocTypeGenreEntry>;
+	dict_docGenreTypes: Record<string, TDocGenreTypeEntry>;
 	labels: {
 		sort: { name: string; date_asc: string; date_desc: string };
 		filters: {

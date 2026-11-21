@@ -6,7 +6,7 @@
 		DOC_LIST_NONE,
 		type TDocRow,
 		type TDocSortBy
-	} from '$lib/types/documents/TDict_DocTypesGenre';
+	} from '$lib/types/documents/TDict_DocGenreTypes';
 	import type { PageData } from './$types';
 	import { resolve } from '$app/paths';
 
@@ -20,7 +20,7 @@
 		for (const section of SECTIONS) {
 			const sec = data.documents[section];
 			for (const [key, item] of Object.entries(sec)) {
-				if (item.metadata.type_genre !== data.typeGenre) continue;
+				if (item.metadata.type_genre !== data.genreType) continue;
 				out.push({
 					docType: section,
 					key,
@@ -49,7 +49,7 @@
 
 	// Reset filters when navigating between genre routes (layout persists)
 	$effect(() => {
-		void data.docTypeGenreSlug;
+		void data.docGenreTypeSlug;
 		selDocTypes = [];
 		selEditoriale = [];
 		selLanguages = [];
@@ -128,8 +128,8 @@
 
 <!-- Genre navigation -->
 <nav class="flex flex-wrap gap-2" aria-label="Generi testuali">
-	{#each Object.values(data.typesGenre) as type (type.slug)}
-		{@const isCurrent = type.slug === data.docTypeGenreSlug}
+	{#each Object.values(data.genreTypes) as type (type.slug)}
+		{@const isCurrent = type.slug === data.docGenreTypeSlug}
 		<a
 			href={resolve(`/edition/${type.slug}`)}
 			class={['preset-btn-round --sm', isCurrent && '--active']}
@@ -140,7 +140,7 @@
 	{/each}
 </nav>
 
-<h1 class="h1 my-4">{data.typeGenreLabel}</h1>
+<h1 class="h1 my-4">{data.genreTypeLabel}</h1>
 <!-- Filter + sorting panel -->
 <section class="mt-4 flex flex-wrap items-center gap-2" aria-label="Filtri e ordinamento">
 	<DropdownRegFilters
