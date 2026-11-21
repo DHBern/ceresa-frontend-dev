@@ -63,9 +63,9 @@
 	});
 
 	const columns =
-		'grid-cols-[minmax(9rem,1fr)_minmax(13rem,2fr)_minmax(9rem,1fr)_6rem_minmax(10rem,1fr)_9rem_6rem]';
+		'grid-cols-[8rem_minmax(18rem,3fr)_minmax(10rem,1fr)_minmax(8rem,1fr)_minmax(12rem,1fr)_8rem_minmax(12rem,1fr)]';
 	const iconColumns =
-		'grid-cols-[minmax(9rem,1fr)_5rem_minmax(13rem,2fr)_minmax(9rem,1fr)_6rem_minmax(10rem,1fr)_9rem_6rem]';
+		'grid-cols-[8rem_7rem_minmax(18rem,3fr)_minmax(10rem,1fr)_minmax(8rem,1fr)_minmax(12rem,1fr)_8rem_minmax(12rem,1fr)]';
 
 	function editorialLabel(value: string | null): string {
 		return value
@@ -103,7 +103,7 @@
 {/snippet}
 
 {#snippet listValues(row: TDocRow)}
-	<span class={['font-medium', !row.title && 'text-muted-foreground']}>{row.name}</span>
+	<span class={['font-bold', !row.title && 'text-muted-foreground']}>{row.name}</span>
 	<span class="tabular-nums">{displayDate(row.dateFrom, row.dateTo)}</span>
 	<span
 		>{row.language
@@ -122,7 +122,8 @@
 <div class={[containerClasses, 'relative pt-30']}>
 	<div class="absolute top-0 right-0 flex gap-2">
 		<button
-			aria-label="show as gallery"
+			aria-label="Mostra come galleria"
+			title="Mostra come galleria"
 			class={[
 				'preset-btn-round rounded-xl border-none p-2',
 				galleryViewType.value === 'gallery' && 'bg-background-hover'
@@ -131,7 +132,8 @@
 			><i class="fa-solid fa-table-cells-large text-4xl"></i></button
 		>
 		<button
-			aria-label="show as list with previews"
+			aria-label="Mostra come elenco con anteprime"
+			title="Mostra come elenco con anteprime"
 			class={[
 				'preset-btn-round rounded-xl border-none p-2',
 				galleryViewType.value === 'iconList' && 'bg-background-hover'
@@ -140,7 +142,8 @@
 			><i class="fa-solid fa-list text-4xl"></i></button
 		>
 		<button
-			aria-label="show as plain list"
+			aria-label="Mostra come elenco semplice"
+			title="Mostra come elenco semplice"
 			class={[
 				'preset-btn-round rounded-xl border-none p-2',
 				galleryViewType.value === 'list' && 'bg-background-hover'
@@ -164,13 +167,13 @@
 						url={row.imageUrl}
 						iiif_imageAPI_width={600}
 						classesContainer="shrink-0"
-						classes="h-60 w-32"
-						imgClasses="h-60 w-32"
+						classes="h-60 w-50"
+						imgClasses="h-60 w-50"
 					/>
 					<div class="flex min-w-0 flex-col gap-2">
-						{@render edTypeLabel(row)}
 						{@render docTypeLabel(row)}
-						<span class={['font-medium', !row.title && 'text-muted-foreground']}>{row.name}</span>
+						{@render edTypeLabel(row)}
+						<span class={['font-bold text-lg', !row.title && 'text-muted-foreground']}>{row.name}</span>
 						<dl class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
 							<dt>Data</dt>
 							<dd>{displayDate(row.dateFrom, row.dateTo)}</dd>
@@ -198,21 +201,25 @@
 		</div>
 	{:else}
 		<div class="overflow-x-auto">
-			<div class="min-w-[70rem]">
+			<div
+				class={galleryViewType.value === 'iconList' ? 'min-w-[92rem]' : 'min-w-[84rem]'}
+			>
 				<div
 					class={[
 						'grid items-center gap-4 border-b-2 px-4 py-2 text-sm font-semibold',
 						galleryViewType.value === 'iconList' ? iconColumns : columns
 					]}
 				>
-					{#if galleryViewType.value === 'iconList'}<span>Anteprima</span>{/if}
-					<span>{genreDictionary.labels.filters.editoriale}</span>
 					<span>{genreDictionary.labels.filters.docType}</span>
+					{#if galleryViewType.value === 'iconList'}
+						<span>Anteprima</span>
+					{/if}
 					<span>Titolo</span>
 					<span>Data</span>
 					<span>{genreDictionary.labels.filters.language}</span>
 					<span>{genreDictionary.labels.filters.pubPlace}</span>
 					<span>Audio</span>
+					<span>{genreDictionary.labels.filters.editoriale}</span>
 				</div>
 				<ul>
 					{#each entries as row (row.docType + '/' + row.key)}
@@ -225,8 +232,9 @@
 									galleryViewType.value === 'iconList' ? iconColumns : columns
 								]}
 							>
+								{@render docTypeLabel(row)}
 								{#if galleryViewType.value === 'iconList'}
-								<IIIF_Thumb
+									<IIIF_Thumb
 										url={row.imageUrl}
 										iiif_imageAPI_width={100}
 										classesContainer=""
@@ -234,9 +242,8 @@
 										imgClasses="h-24 w-20"
 									/>
 								{/if}
-								{@render edTypeLabel(row)}
-								{@render docTypeLabel(row)}
 								{@render listValues(row)}
+								{@render edTypeLabel(row)}
 							</a>
 						</li>
 					{/each}
