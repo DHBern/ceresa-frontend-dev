@@ -39,6 +39,10 @@ In LF, clicking a facsimile beside the continuous text opens the selected page i
 
 The document viewer uses TEI `<pb>` order for the text, gallery, and large facsimile. Thumbnail labels come from `@n` and images from `@facs`, both cached during TEI processing. Thumbnails without `@n` have no visible label. A missing image does not shift later pages or fall back to `documents.json`. The `page` URL parameter remains a one-based running index.
 
+Edition genre galleries show labeled, inline multi-select filters. Values within a filter are combined with OR; different filters are combined with AND. `Tutti` clears that filter. In either list view, each column header opens its sorting menu and, where applicable, a multi-select filter with a clear action. Selections and sorting are retained when switching views; filters reset when changing genre.
+
+Edition genre pages are centered within a 108rem maximum width. Gallery cards use at most three columns, with a 36rem minimum column width where space permits; image and text stack on small screens. From 1280px, filters duplicate the metadata accordion styling in a full-window container, with padded content aligned to the page and options aligned beneath their titles. Below 1280px, compact filter menus wrap. Gallery sorting is right-aligned, with direction controls inside its dropdown. List views expand to the window width only when they would otherwise require horizontal scrolling inside the padded page.
+
 ## Building
 
 To create a production version of your app:

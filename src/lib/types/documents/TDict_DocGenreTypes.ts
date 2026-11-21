@@ -52,4 +52,6 @@ export type TDocRow = {
 };
 
 export type TDocSortBy = 'name' | 'date-asc' | 'date-desc';
+export type TDocColumn =
+	'docType' | 'name' | 'date' | 'language' | 'pubPlace' | 'hasAudio' | 'typeEditoriale';
 export const DOC_LIST_NONE = '__none__';

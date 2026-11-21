@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
 	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
@@ -7,7 +8,7 @@
 	import edTypes from '$lib/dictionaries/dict_docEdTypes.json';
 	import docsDictionary from '$lib/dictionaries/dict_docs.json';
 	import genreDictionary from '$lib/dictionaries/dict_docGenreTypes.json';
-	import type { TDocRow } from '$lib/types/documents/TDict_DocGenreTypes';
+	import type { TDocColumn, TDocRow } from '$lib/types/documents/TDict_DocGenreTypes';
 
 	type SequenceDocument = {
 		slug?: string | null;
@@ -27,12 +28,16 @@
 		containerClasses = '',
 		seq,
 		data,
-		rows
+		rows,
+		header,
+		galleryControls
 	}: {
 		containerClasses?: string;
 		seq?: { docs: string[] | null } | null;
 		data?: { docs: Record<string, SequenceDocument>; seqSlug: string | null };
 		rows?: TDocRow[];
+		header?: Snippet<[TDocColumn, string]>;
+		galleryControls?: Snippet;
 	} = $props();
 
 	const entries = $derived.by(() => {
@@ -83,6 +88,14 @@
 	}
 </script>
 
+{#snippet columnHeader(column: TDocColumn, label: string)}
+	{#if header}
+		{@render header(column, label)}
+	{:else}
+		<span>{label}</span>
+	{/if}
+{/snippet}
+
 {#snippet edTypeLabel(row: TDocRow)}
 	<span
 		class={[
@@ -93,12 +106,8 @@
 {/snippet}
 
 {#snippet docTypeLabel(row: TDocRow)}
-	<span
-		class={[
-			'w-fit rounded-full px-2 py-1 text-xs',
-			row.docType && DOCTYPE_STYLES[row.docType]
-		]}>{docsDictionary.dict_docs[row.docType].label_singular}</span
-	
+	<span class={['w-fit rounded-full px-2 py-1 text-xs', row.docType && DOCTYPE_STYLES[row.docType]]}
+		>{docsDictionary.dict_docs[row.docType].label_singular}</span
 	>
 {/snippet}
 
@@ -119,49 +128,55 @@
 	>
 {/snippet}
 
-<div class={[containerClasses, 'relative pt-30']}>
-	<div class="absolute top-0 right-0 flex gap-2">
-		<button
-			aria-label="Mostra come galleria"
-			title="Mostra come galleria"
-			class={[
-				'preset-btn-round rounded-xl border-none p-2',
-				galleryViewType.value === 'gallery' && 'bg-background-hover'
-			]}
-			onclick={() => (galleryViewType.value = 'gallery')}
-			><i class="fa-solid fa-table-cells-large text-4xl"></i></button
-		>
-		<button
-			aria-label="Mostra come elenco con anteprime"
-			title="Mostra come elenco con anteprime"
-			class={[
-				'preset-btn-round rounded-xl border-none p-2',
-				galleryViewType.value === 'iconList' && 'bg-background-hover'
-			]}
-			onclick={() => (galleryViewType.value = 'iconList')}
-			><i class="fa-solid fa-list text-4xl"></i></button
-		>
-		<button
-			aria-label="Mostra come elenco semplice"
-			title="Mostra come elenco semplice"
-			class={[
-				'preset-btn-round rounded-xl border-none p-2',
-				galleryViewType.value === 'list' && 'bg-background-hover'
-			]}
-			onclick={() => (galleryViewType.value = 'list')}
-			><i class="fa-solid fa-bars text-4xl"></i></button
-		>
+<div class={containerClasses}>
+	<div class="mb-6 flex justify-center">
+		<div class="preset-tabs-list flex h-10" role="group" aria-label="Visualizzazione dei documenti">
+			<button
+				type="button"
+				aria-label="Mostra come galleria"
+				title="Mostra come galleria"
+				aria-pressed={galleryViewType.value === 'gallery'}
+				data-state={galleryViewType.value === 'gallery' ? 'active' : 'inactive'}
+				class="preset-tabs-trigger --left flex w-12 items-center justify-center"
+				onclick={() => (galleryViewType.value = 'gallery')}
+				><i class="fa-solid fa-table-cells-large" aria-hidden="true"></i></button
+			>
+			<button
+				type="button"
+				aria-label="Mostra come elenco con anteprime"
+				title="Mostra come elenco con anteprime"
+				aria-pressed={galleryViewType.value === 'iconList'}
+				data-state={galleryViewType.value === 'iconList' ? 'active' : 'inactive'}
+				class="preset-tabs-trigger --center flex w-12 items-center justify-center border-l border-dark-40"
+				onclick={() => (galleryViewType.value = 'iconList')}
+				><i class="fa-solid fa-list" aria-hidden="true"></i></button
+			>
+			<button
+				type="button"
+				aria-label="Mostra come elenco semplice"
+				title="Mostra come elenco semplice"
+				aria-pressed={galleryViewType.value === 'list'}
+				data-state={galleryViewType.value === 'list' ? 'active' : 'inactive'}
+				class="preset-tabs-trigger --right flex w-12 items-center justify-center border-l border-dark-40"
+				onclick={() => (galleryViewType.value = 'list')}
+				><i class="fa-solid fa-bars" aria-hidden="true"></i></button
+			>
+		</div>
 	</div>
 
-	{#if entries.length === 0}
+	{#if galleryViewType.value === 'gallery' && galleryControls}
+		{@render galleryControls()}
+	{/if}
+
+	{#if entries.length === 0 && galleryViewType.value === 'gallery'}
 		<p class="p-3 opacity-60">{genreDictionary.labels.empty}</p>
 	{:else if galleryViewType.value === 'gallery'}
-		<div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+		<div class="gallery-grid grid gap-5">
 			{#each entries as row (row.docType + '/' + row.key)}
 				<a
 					href={resolveDocPath(row.slug) +
 						(data?.seqSlug ? `?seq=${encodeURIComponent(data.seqSlug)}` : '')}
-					class="flex items-start gap-5 rounded-card p-5 hover:bg-background-hover"
+					class="flex min-w-0 flex-col items-start gap-5 rounded-card p-5 hover:bg-background-hover sm:flex-row"
 				>
 					<IIIF_Thumb
 						url={row.imageUrl}
@@ -170,11 +185,15 @@
 						classes="h-60 w-50"
 						imgClasses="h-60 w-50"
 					/>
-					<div class="flex min-w-0 flex-col gap-2">
-						{@render docTypeLabel(row)}
-						{@render edTypeLabel(row)}
-						<span class={['font-bold text-lg', !row.title && 'text-muted-foreground']}>{row.name}</span>
-						<dl class="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-sm">
+					<div class="flex min-w-0 flex-1 flex-col gap-2">
+						<div class="flex items-start gap-2">
+							{@render docTypeLabel(row)}
+							{@render edTypeLabel(row)}
+						</div>
+						<span class={['text-lg font-bold break-words', !row.title && 'text-muted-foreground']}
+							>{row.name}</span
+						>
+						<dl class="grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-1 text-sm break-words">
 							<dt>Data</dt>
 							<dd>{displayDate(row.dateFrom, row.dateTo)}</dd>
 							<dt>{genreDictionary.labels.filters.language}</dt>
@@ -200,27 +219,34 @@
 			{/each}
 		</div>
 	{:else}
-		<div class="overflow-x-auto">
-			<div
-				class={galleryViewType.value === 'iconList' ? 'min-w-[92rem]' : 'min-w-[84rem]'}
-			>
+		<div
+			class={[
+				'doc-table overflow-x-auto',
+				galleryViewType.value === 'iconList' ? 'doc-table--icons' : 'doc-table--list'
+			]}
+		>
+			<div class={galleryViewType.value === 'iconList' ? 'min-w-[100rem]' : 'min-w-[92rem]'}>
 				<div
 					class={[
-						'grid items-center gap-4 border-b-2 px-4 py-2 text-sm font-semibold',
+						'grid items-center gap-x-8 gap-y-4 border-b-2 px-4 py-2 text-sm font-semibold',
 						galleryViewType.value === 'iconList' ? iconColumns : columns
 					]}
 				>
-					<span>{genreDictionary.labels.filters.docType}</span>
+					{@render columnHeader('docType', genreDictionary.labels.filters.docType)}
 					{#if galleryViewType.value === 'iconList'}
 						<span>Anteprima</span>
 					{/if}
-					<span>Titolo</span>
-					<span>Data</span>
-					<span>{genreDictionary.labels.filters.language}</span>
-					<span>{genreDictionary.labels.filters.pubPlace}</span>
-					<span>Audio</span>
-					<span>{genreDictionary.labels.filters.editoriale}</span>
+					{@render columnHeader('name', 'Titolo')}
+					{@render columnHeader('date', 'Data')}
+					{@render columnHeader('language', genreDictionary.labels.filters.language)}
+					{@render columnHeader('pubPlace', genreDictionary.labels.filters.pubPlace)}
+					{@render columnHeader('hasAudio', 'Audio')}
+					{@render columnHeader('typeEditoriale', genreDictionary.labels.filters.editoriale)}
 				</div>
+
+				{#if entries.length === 0}
+					<p class="p-3 opacity-60">{genreDictionary.labels.empty}</p>
+				{/if}
 				<ul>
 					{#each entries as row (row.docType + '/' + row.key)}
 						<li class="border-b-2">
@@ -228,7 +254,7 @@
 								href={resolveDocPath(row.slug) +
 									(data?.seqSlug ? `?seq=${encodeURIComponent(data.seqSlug)}` : '')}
 								class={[
-									'grid items-center gap-4 px-4 py-4 text-sm hover:bg-background-hover',
+									'grid items-center gap-x-8 gap-y-4 px-4 py-4 text-sm hover:bg-background-hover',
 									galleryViewType.value === 'iconList' ? iconColumns : columns
 								]}
 							>
@@ -252,3 +278,27 @@
 		</div>
 	{/if}
 </div>
+
+<style>
+	.gallery-grid {
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(min(100%, max(36rem, calc((100% - 2.5rem) / 3))), 1fr)
+		);
+	}
+
+	/* The table minima plus the edition layout's desktop padding. */
+	@container edition-page (width < 96rem) {
+		.doc-table--list {
+			width: 100cqw;
+			margin-inline: calc((100% - 100cqw) / 2);
+		}
+	}
+
+	@container edition-page (width < 104rem) {
+		.doc-table--icons {
+			width: 100cqw;
+			margin-inline: calc((100% - 100cqw) / 2);
+		}
+	}
+</style>
