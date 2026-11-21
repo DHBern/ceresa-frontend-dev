@@ -8,7 +8,7 @@
 	} from '$lib/types/documents/TDict_DocGenreTypes';
 	import type { PageData } from './$types';
 	import { resolve } from '$app/paths';
-	import DocListGallery from '../../DocListGallery.svelte';
+	import DocListGallery from './DocListGallery.svelte';
 	import SortDirectionMenu from '$lib/components/SortDirectionMenu.svelte';
 	import edTypes from '$lib/dictionaries/dict_docEdTypes.json';
 
@@ -224,6 +224,36 @@
 	});
 </script>
 
+{#snippet clearFilter(filter: Filter, inMenu = false)}
+	{#if filter.selected.length}
+		{#if inMenu}
+			<DropdownMenu.Item
+				class="w-fit text-left text-sm underline select-none cursor-pointer"
+				closeOnSelect={false}
+				onSelect={() => setSelection(filter.column, [])}>Cancella filtro</DropdownMenu.Item
+			>
+		{:else}
+			<button
+				type="button"
+				class="w-fit text-left text-sm underline select-none cursor-pointer"
+				onclick={() => setSelection(filter.column, [])}>Cancella filtro</button
+			>
+		{/if}
+	{:else}
+		<span class="text-sm pointer-events-none">Tutti</span>
+	{/if}
+{/snippet}
+
+{#snippet checkboxIcon(checked: boolean)}
+	<i
+		class={[
+			'shrink-0 text-foreground',
+			checked ? 'fa-regular fa-square-check' : 'fa-regular fa-square'
+		]}
+		aria-hidden="true"
+	></i>
+{/snippet}
+
 {#snippet header(column: TDocColumn, label: string)}
 	{@const filter = filters.find((item) => item.column === column)}
 	<DropdownMenu.Root>
@@ -231,8 +261,8 @@
 			class="flex w-full items-center justify-between gap-2 rounded px-2 py-1 text-left hover:bg-background-hover"
 			aria-label={`${label}: ordina e filtra`}
 		>
-			<span>{label}</span>
-			<span class="flex items-center gap-1">
+			<span class="whitespace-nowrap">{label}</span>
+			<span class="flex shrink-0 items-center gap-1 text-xs">
 				{#if sortColumn === column}
 					<i
 						class={sortDirection === 'asc' ? 'fa-solid fa-arrow-up' : 'fa-solid fa-arrow-down'}
@@ -262,12 +292,9 @@
 						<DropdownMenu.GroupHeading class="px-2 py-1 font-semibold"
 							>Filtra per {label.toLocaleLowerCase('it')}</DropdownMenu.GroupHeading
 						>
-						<DropdownMenu.Item
-							class="cursor-pointer rounded px-2 py-2 data-highlighted:bg-background-hover"
-							closeOnSelect={false}
-							onSelect={() => setSelection(filter.column, [])}
-							>{data.uiLabels.all} / Cancella filtro</DropdownMenu.Item
-						>
+						<div class="px-2 py-2">
+							{@render clearFilter(filter, true)}
+						</div>
 						<DropdownMenu.CheckboxGroup
 							value={filter.selected}
 							onValueChange={(values) => setSelection(filter.column, values)}
@@ -280,10 +307,7 @@
 									class="flex cursor-pointer items-center gap-2 rounded px-2 py-2 data-highlighted:bg-background-hover"
 								>
 									{#snippet children({ checked })}
-										<i
-											class={checked ? 'fa-regular fa-square-check' : 'fa-regular fa-square'}
-											aria-hidden="true"
-										></i>
+										{@render checkboxIcon(checked)}
 										<span class="block first-letter:uppercase">{option.label}</span>
 									{/snippet}
 								</DropdownMenu.CheckboxItem>
@@ -348,28 +372,28 @@
 										role="group"
 										aria-labelledby={`filter-${filter.column}`}
 									>
-										<h2 id={`filter-${filter.column}`} class="text-left h5 font-bold">
+										<h2 id={`filter-${filter.column}`} class="h5 text-left font-bold">
 											{filter.label}
 											{#if filter.selected.length}
-												<i class="fa-solid fa-filter" aria-hidden="true"></i>
+												<i class="fa-solid fa-filter h6" aria-hidden="true"></i>
 												<span class="sr-only">{filter.selected.length} filtri attivi</span>
 											{/if}
 										</h2>
 										<div class="flex flex-col gap-1">
-											<button
-												type="button"
-												class="w-fit text-left text-sm underline disabled:no-underline disabled:opacity-60"
-												disabled={!filter.selected.length}
-												onclick={() => setSelection(filter.column, [])}>{data.uiLabels.all}</button
-											>
+											<div class="mb-2">{@render clearFilter(filter)}</div>
 											{#each filter.options as option (option.value)}
 												<label class="flex cursor-pointer items-start gap-2 text-sm">
 													<input
 														type="checkbox"
-														class="mt-1 shrink-0 accent-foreground"
+														class="peer sr-only"
 														checked={filter.selected.includes(option.value)}
 														onchange={() => toggleFilter(filter, option.value)}
 													/>
+													<span
+														class="mt-1 flex shrink-0 rounded-xs peer-focus-visible:ring-2 peer-focus-visible:ring-foreground"
+													>
+														{@render checkboxIcon(filter.selected.includes(option.value))}
+													</span>
 													<span class="block first-letter:uppercase">{option.label}</span>
 												</label>
 											{/each}
@@ -383,7 +407,7 @@
 			</Accordion.Root>
 		</div>
 	</section>
-	<section class="mt-4 mb-4 flex flex-wrap items-center justify-end gap-2" aria-label="Ordinamento">
+	<section class="my-8 flex flex-wrap items-center justify-end gap-2" aria-label="Ordinamento">
 		<DropdownMenu.Root>
 			<DropdownMenu.Trigger
 				class="flex w-max items-center gap-2 rounded-full border px-3 py-1 text-left"
@@ -454,7 +478,10 @@
 				</a>
 			{/each}
 		</nav>
-		<h1 class="h1 my-4">{data.genreTypeLabel}</h1>
+		<div class="my-15">
+			<h1 class="h1">{data.genreTypeLabel}</h1>
+			<p>{data.genreTypeDescription}</p>
+		</div>
 		<main class="mt-4">
 			<DocListGallery rows={sortedRows} {header} {galleryControls} />
 		</main>

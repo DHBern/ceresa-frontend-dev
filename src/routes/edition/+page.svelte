@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import { dict_docGenreTypes } from '$lib/dictionaries/dict_docGenreTypes.json';
 </script>
 
 <div class={['z-100 mx-auto flex max-w-300 flex-col gap-10 bg-background px-10']}>
@@ -14,84 +15,18 @@
 		</p>
 	</div>
 
-	<div class="border-red rounded-xl border-2 p-5">
-		<h3 class="h3">NEW ACCESS</h3>
-		<ul>
-			<li><a href={resolve('/edition/racconti')}>Racconti</a></li>
-			<li><a href={resolve('/edition/romanzi')}>Romanzi e altre prose</a></li>
-			<li><a href={resolve('/edition/dizionario')}>Dizionario</a></li>
-			<li><a href={resolve('/edition/saggi')}>Saggi e interventi</a></li>
-			<li><a href={resolve('/edition/poesie')}>Poesie</a></li>
-			<li><a href={resolve('/edition/testi-teatrali')}>Testi teatrali</a></li>
-			<li><a href={resolve('/edition/traduzioni')}>Traduzioni</a></li>
-		</ul>
-	</div>
-	<div class={['grid grid-cols-3 gap-10 py-5']}>
+	<div class={['grid grid-cols-1 md:grid-cols-2 gap-10 py-5']}>
 		<!-- Posthumous -->
-		<div class="flex flex-col gap-7">
-			<h2 class="h2 text-center">Opere postume</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-			<div class="flex flex-wrap justify-center gap-2">
-				<a class="preset-btn-round --normal" href={resolve('/posthumous')}>Opere postume</a>
+		{#each Object.keys(dict_docGenreTypes) as genreKey}
+			<div class="flex flex-col gap-7">
+				<h2 class="h2">{dict_docGenreTypes[genreKey].label_plural}</h2>
+				<p class="clamp-5">{dict_docGenreTypes[genreKey].description}</p>
+				<div class="flex flex-wrap justify-start gap-2">
+					<a class="preset-btn-round --normal" href={resolve(`/edition/${dict_docGenreTypes[genreKey].slug}`)}>
+						<i class="fa-arrow-right fa-solid mr-4" aria-hidden="true"></i>See documents</a>
+				</div>
 			</div>
-		</div>
+		{/each}
 
-		<!-- Unpublished -->
-		<div class="flex flex-col gap-7">
-			<h2 class="h2 text-center">Opere inedite</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-			<div class="flex flex-wrap justify-center gap-2">
-				<a class="preset-btn-round --normal" href={resolve('/unpublished')}>Opere inedite</a>
-			</div>
-		</div>
-
-		<!-- Published -->
-		<div class="flex flex-col gap-7">
-			<h2 class="h2 text-center">Opere edite</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-			<div class="flex flex-wrap justify-center gap-2">
-				<a class="preset-btn-round --normal" href={resolve('/published')}>Opere edite</a>
-			</div>
-		</div>
-
-		<!-- Piccolo Dizionario -->
-		<div class="flex flex-col gap-7">
-			<h2 class="h2 text-center">Piccolo Dizionario</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-			<div class="flex flex-wrap justify-center gap-2">
-				<a class="preset-btn-round --normal" href={resolve('/piccolo_dizionario')}
-					>Piccolo Dizionario</a
-				>
-			</div>
-		</div>
-
-		<!-- Audio Documents -->
-		<div class="flex flex-col gap-7">
-			<h2 class="h2 text-center">Documenti sonori</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-				laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-			<div class="flex flex-wrap justify-center gap-2">
-				<a class="preset-btn-round --normal" href={resolve('/audio_documents')}>Documenti sonori</a>
-			</div>
-		</div>
 	</div>
 </div>

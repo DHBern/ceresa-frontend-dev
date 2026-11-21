@@ -12,6 +12,7 @@ type TDocGenreTypeEntry = {
 	id_singular: TDocGenreKeys;
 	label_singular: string;
 	label_plural: string;
+	description: string;
 };
 
 export type TDict_DocGenreTypes = {

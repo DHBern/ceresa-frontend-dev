@@ -5,7 +5,7 @@
 	import { ScrollState } from 'runed';
 	import type { TSeqPublishedKeys } from '$lib/types/TSequences.js';
 	import { doc_sequences as seqAll } from '$lib/data/doc_sequences.json';
-	import DocListGallery from '../DocListGallery.svelte';
+	import DocListGallery from './DocListGallery.svelte';
 
 	let { data } = $props();
 

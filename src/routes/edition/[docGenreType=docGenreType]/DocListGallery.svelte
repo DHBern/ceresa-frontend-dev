@@ -67,12 +67,10 @@
 		});
 	});
 
-	const columns =
-		'grid-cols-[8rem_minmax(18rem,3fr)_minmax(10rem,1fr)_minmax(8rem,1fr)_minmax(12rem,1fr)_8rem_minmax(12rem,1fr)]';
-	const iconColumns =
-		'grid-cols-[8rem_7rem_minmax(18rem,3fr)_minmax(10rem,1fr)_minmax(8rem,1fr)_minmax(12rem,1fr)_8rem_minmax(12rem,1fr)]';
+	const columns = 'grid-cols-[16rem_minmax(18rem,1fr)_12rem_10rem_19rem_9rem_14rem]';
+	const iconColumns = 'grid-cols-[16rem_7rem_minmax(18rem,1fr)_12rem_10rem_19rem_9rem_14rem]';
 	const tableWidth = $derived(
-		galleryViewType.value === 'iconList' ? 'min-w-[100rem]' : 'min-w-[92rem]'
+		galleryViewType.value === 'iconList' ? 'min-w-[114rem]' : 'min-w-[106rem]'
 	);
 	let tableHeader = $state<HTMLDivElement>();
 	let tableBody = $state<HTMLDivElement>();
@@ -241,7 +239,7 @@
 			>
 				<div
 					class={[
-						'grid items-center gap-x-8 gap-y-4 border-b-2 px-4 py-2 text-sm font-semibold',
+						'grid items-center gap-x-4 gap-y-4 border-b-2 px-4 py-2 text-sm font-semibold',
 						tableWidth,
 						galleryViewType.value === 'iconList' ? iconColumns : columns
 					]}
@@ -274,7 +272,7 @@
 									href={resolveDocPath(row.slug) +
 										(data?.seqSlug ? `?seq=${encodeURIComponent(data.seqSlug)}` : '')}
 									class={[
-										'grid items-center gap-x-8 gap-y-4 px-4 py-4 text-sm hover:bg-background-hover',
+										'grid items-center gap-x-4 gap-y-4 px-4 py-4 text-sm hover:bg-background-hover',
 										galleryViewType.value === 'iconList' ? iconColumns : columns
 									]}
 								>
@@ -317,18 +315,19 @@
 		);
 	}
 
-	/* The table minima plus the edition layout's desktop padding. */
-	@container edition-page (width < 96rem) {
+	@container edition-page (width > 0px) {
 		.doc-table--list {
-			width: 100cqw;
-			margin-inline: calc((100% - 100cqw) / 2);
+			--doc-table-min-width: 106rem;
 		}
-	}
 
-	@container edition-page (width < 104rem) {
 		.doc-table--icons {
-			width: 100cqw;
-			margin-inline: calc((100% - 100cqw) / 2);
+			--doc-table-min-width: 114rem;
+		}
+
+		.doc-table {
+			--doc-table-width: max(100%, min(var(--doc-table-min-width), 100cqw));
+			width: var(--doc-table-width);
+			margin-inline: calc((100% - var(--doc-table-width)) / 2);
 		}
 	}
 </style>
