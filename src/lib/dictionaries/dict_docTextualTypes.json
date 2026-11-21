@@ -6,17 +6,48 @@
 		"description": ""
 	},
 	"textualTypes": {
-		"saggio-o-intervento": {
-			"slug": "saggio-o-intervento", "docTypeTestuale": "Saggio o intervento",
-			"label": "Saggi e interventi"
+		"saggi": {
+			"slug": "saggi",
+			"id_singular": "saggio",
+			"label_singular": "saggio",
+			"label_plural": "Saggi e interventi"
 		},
-		"altra-prosa": { "slug": "altra-prosa", "docTypeTestuale": "Altra prosa", "label": "Altra prosa" },
-		"racconto": { "slug": "racconto", "docTypeTestuale": "Racconto", "label": "Racconti" },
-		"traduzione": { "slug": "traduzione", "docTypeTestuale": "Traduzione", "label": "Traduzioni" },
-		"dizionario": { "slug": "dizionario", "docTypeTestuale": "Dizionario", "label": "Dizionari" },
-		"poesia": { "slug": "poesia", "docTypeTestuale": "Poesia", "label": "Poesie" },
-		"romanzo": { "slug": "romanzo", "docTypeTestuale": "Romanzo", "label": "Romanzi e altre prose" },
-		"testo-teatrale": { "slug": "testo-teatrale", "docTypeTestuale": "Testo teatrale", "label": "Testi teatrali" }
+		"romanzi": {
+			"slug": "romanzi",
+			"id_singular": "Romanzo",
+			"label_singular": "Romanzo",
+			"label_plural": "Romanzi e altre prose"
+		},
+		"racconti": {
+			"slug": "racconti",
+			"id_singular": "Racconto",
+			"label_singular": "Racconto",
+			"label_plural": "Racconti"
+		},
+		"traduzioni": {
+			"slug": "traduzioni",
+			"id_singular": "Traduzione",
+			"label_singular": "Traduzione",
+			"label_plural": "Traduzioni"
+		},
+		"dizionario": {
+			"slug": "dizionario",
+			"id_singular": "Dizionario",
+			"label_singular": "Dizionario",
+			"label_plural": "Dizionari"
+		},
+		"poesie": {
+			"slug": "poesie",
+			"id_singular": "Poesia",
+			"label_singular": "Poesia",
+			"label_plural": "Poesie"
+		},
+		"testi-teatrali": {
+			"slug": "testi-teatrali",
+			"id_singular": "Testo teatrale",
+			"label_singular": "Testo teatrale",
+			"label_plural": "Testi teatrali"
+		}
 	},
 	"labels": {
 		"sort": {

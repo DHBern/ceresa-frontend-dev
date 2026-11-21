@@ -17,13 +17,13 @@
 	<div class="border-red rounded-xl border-2 p-5">
 		<h3 class="h3">NEW ACCESS</h3>
 		<ul>
-			<li><a href={resolve('/edition/racconto')}>Racconti</a></li>
-			<li><a href={resolve('/edition/romanzo')}>Romanzi e altre prose</a></li>
+			<li><a href={resolve('/edition/racconti')}>Racconti</a></li>
+			<li><a href={resolve('/edition/romanzi')}>Romanzi e altre prose</a></li>
 			<li><a href={resolve('/edition/dizionario')}>Dizionario</a></li>
-			<li><a href={resolve('/edition/saggio-o-intervento')}>Saggi e interventi</a></li>
-			<li><a href={resolve('/edition/poesia')}>Poesie</a></li>
-			<li><a href={resolve('/edition/testo-teatrale')}>Testi teatrali</a></li>
-			<li><a href={resolve('/edition/traduzione')}>Traduzioni</a></li>
+			<li><a href={resolve('/edition/saggi')}>Saggi e interventi</a></li>
+			<li><a href={resolve('/edition/poesie')}>Poesie</a></li>
+			<li><a href={resolve('/edition/testi-teatrali')}>Testi teatrali</a></li>
+			<li><a href={resolve('/edition/traduzioni')}>Traduzioni</a></li>
 		</ul>
 	</div>
 	<div class={['grid grid-cols-3 gap-10 py-5']}>
