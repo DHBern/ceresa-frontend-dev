@@ -9,6 +9,8 @@
 	} from '$lib/types/documents/TDict_DocGenreTypes';
 	import type { PageData } from './$types';
 	import { resolve } from '$app/paths';
+	import DocListGallery from '../../DocListGallery.svelte';
+	import edTypes from '$lib/dictionaries/dict_docEdTypes.json';
 
 	let { data, children }: { data: PageData; children: Snippet } = $props();
 
@@ -25,13 +27,15 @@
 					docType: section,
 					key,
 					slug: item.slug ?? key, //! slug optional -> fallback to key
-					name: item.metadata.title_editorial ?? item.slug ?? key,
+					name: item.metadata.title_editorial || item.archival.signature || key,
 					title: item.metadata.title_editorial ?? null,
 					dateFrom: item.metadata.date?.from ?? null,
+					dateTo: item.metadata.date?.to ?? null,
 					language: item.metadata.language ?? null,
-					pubPlace: item.publication.pubPlace ?? null,
+					pubPlace: item.publication.pub_place ?? null,
 					typeEditoriale: item.metadata.type_editorial ?? null,
-					hasAudio: (item.crossReferences.linked_documents?.audio?.length ?? 0) > 0
+					hasAudio: (item.crossReferences.linked_documents?.audio?.length ?? 0) > 0,
+					imageUrl: item.iiif.urls_IIIF_images?.[0] ?? null
 				});
 			}
 		}
@@ -74,7 +78,12 @@
 	}
 
 	const editorialeOptions = $derived(
-		buildOptions((r) => r.typeEditoriale, data.uiLabels.none_labels.editoriale)
+		buildOptions((r) => r.typeEditoriale, data.uiLabels.none_labels.editoriale).map((option) => ({
+			...option,
+			label:
+				edTypes.dict_docEdTypes[option.value as keyof typeof edTypes.dict_docEdTypes]
+					?.label_short_singular ?? option.label
+		}))
 	);
 	const languageOptions = $derived.by(() =>
 		buildOptions((r) => r.language, data.uiLabels.none_labels.language).map((o) => ({
@@ -177,38 +186,6 @@
 </section>
 
 <main class="mt-4">
-	<ul class="divide-y">
-		{#each sortedRows as row (row.docType + '/' + row.key)}
-			<li>
-				<a
-					href="/{row.slug}"
-					class="grid grid-cols-[1fr_auto] items-baseline gap-x-4 gap-y-1 p-3 hover:bg-amber-100 md:grid-cols-[minmax(12rem,2fr)_6rem_5rem_repeat(2,minmax(8rem,1fr))_auto]"
-				>
-					<span class="font-medium">
-						{row.name}
-						{#if row.title}<span class="ml-1 text-sm opacity-70">({row.title})</span>{/if}
-					</span>
-					<span class="text-sm tabular-nums">{row.dateFrom ?? data.uiLabels.row.noDate}</span>
-					<span class="text-sm"
-						>{row.language ? (data.uiLabels.languages[row.language] ?? row.language) : '–'}</span
-					>
-					<span class="text-sm">{row.typeEditoriale ?? '–'}</span>
-					<span class="text-sm">{row.pubPlace ?? '–'}</span>
-					<span class="flex items-center gap-2 text-sm">
-						<span class="rounded-full border px-2 py-0.5 text-xs"
-							>{data.uiLabels.docTypes[row.docType]}</span
-						>
-						{#if row.hasAudio}
-							<span class="rounded-full border px-2 py-0.5 text-xs">
-								<i class="fa-solid fa-headphones mr-1"></i>{data.uiLabels.filters.hasAudio}
-							</span>
-						{/if}
-					</span>
-				</a>
-			</li>
-		{:else}
-			<li class="p-3 opacity-60">{data.uiLabels.empty}</li>
-		{/each}
-	</ul>
+	<DocListGallery rows={sortedRows} />
 </main>
 {@render children()}

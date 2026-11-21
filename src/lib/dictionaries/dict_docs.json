@@ -9,6 +9,7 @@
 		"posthum": {
 			"name": "Testi postumi",
 			"key_singular": "Testo postumo",
+			"label_singular": "Testo postumo",
 			"label_plural": "Testi postumi",
 			"slug": { "label": "Identifier postumi (+ suffix_version)" },
 			"metadata": {
@@ -68,6 +69,7 @@
 		"published": {
 			"name": "Testi editi",
 			"key_singular": "Testo edito",
+			"label_singular": "Testo edito",
 			"label_plural": "Testi editi",
 			"slug": { "label": "Identifier editi" },
 			"metadata": {
@@ -129,6 +131,7 @@
 		"unpublished": {
 			"name": "Testi inediti",
 			"key_singular": "Testo inedito",
+			"label_singular": "Testo inedito",
 			"label_plural": "Testi inediti",
 			"slug": { "label": "Identifier inediti" },
 			"metadata": {
@@ -188,6 +191,7 @@
 		"audio": {
 			"name": "Documento audio",
 			"key_singular": "Documento audio",
+			"label_singular": "Documento audio",
 			"label_plural": "Documenti audio"
 		}
 	}

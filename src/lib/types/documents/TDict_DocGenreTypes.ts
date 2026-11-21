@@ -43,10 +43,12 @@ export type TDocRow = {
 	name: string;
 	title: string | null;
 	dateFrom: string | null;
+	dateTo: string | null;
 	language: string | null;
 	pubPlace: string | null;
 	typeEditoriale: string | null;
 	hasAudio: boolean;
+	imageUrl: string | null;
 };
 
 export type TDocSortBy = 'name' | 'date-asc' | 'date-desc';

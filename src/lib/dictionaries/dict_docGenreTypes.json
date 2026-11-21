@@ -42,7 +42,7 @@
 			"label_singular": "Poesia",
 			"label_plural": "Poesie"
 		},
-		"testi-teatrali": {
+		"testi_teatrali": {
 			"slug": "testi-teatrali",
 			"id_singular": "teatrale",
 			"label_singular": "Testo teatrale",
