@@ -3777,7 +3777,7 @@
 				"metadata": {
 					"type_genre": "romanzo",
 					"type_editorial": "dattiloscritto",
-					"title_editorial": "Eloise (ultime 2001)??",
+					"title_editorial": "[Eloise]",
 					"language": "it",
 					"keywords": null,
 					"observations": "Cartella verde intitolata \"Eloise ultime in corso 2001\" che contiene più testi: A-1-b/7-8 (1): 9 ff ds. con correzioni ms; A-1-b/7-8 (2): 3 ff. numerati (10-11-12); A-1-b/7-8 (3): 3 ff.ds; A-1-b/7-8: (3 ms non numerati solo recto, 7 ds. non numerati solo recto, 5 ff. ds numerati; titolo Grammatica 4 ds numerati, 3 ds numerati, 1 f sciolto); foglietti manoscritti. considerarlo come unico documento ??",
@@ -3795,7 +3795,7 @@
 				},
 				"document": {
 					"type_material": "originale, 70 ff. ms e ds, solo recto",
-					"title_on_document": null,
+					"title_on_document": "Eloise (ultime era in corso 2001)",
 					"date_and_place_author_as_on_document": "2001??",
 					"date_author_normalised": null
 				},

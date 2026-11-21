@@ -35,48 +35,51 @@
 	</aside>
 {/if}
 <footer
-	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-90 p-10 text-background-contrast"
+	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-90 py-10 text-background-contrast"
 >
-	<p class="font-serif text-lg font-bold">Questo sito web è attualmente in versione alpha.</p>
-	<p>
-		<a
-			class=" underline"
-			href="https://arcipelago-ceresa.digitaleditions.ch/"
-			target="blank"
-			rel="noopener noreferrer">arcipelago-ceresa.digitaleditions.ch</a
-		>
+	<p class="w-full rotate-1 bg-green-500 text-center font-serif text-lg font-bold text-white">
+		Questo sito web è attualmente in versione alpha.
 	</p>
-
-	<div class="mt-10 flex w-full justify-around gap-10">
-		<a href="https://data.snf.ch/grants/grant/10000500">
-			<img class="h-16 object-contain" src={asset('/logos/logo-snf.png')} alt="logo" />
-		</a>
-		<a href="https://www.roma.unibe.ch/">
-			<img
-				class="h-16 object-contain"
-				width="100px;"
-				src={asset('/logos/logo-unibe.svg')}
-				alt="logo"
-			/>
-		</a>
-		<a href="https://www.ds.uzh.ch">
-			<img class="h-16 object-contain" src={asset('/logos/logo-uzh.png')} alt="logo" />
-		</a>
-		<a href="https://dh.unibe.ch">
-			<img
-				class="h-16 object-contain"
-				width="100px;"
-				src={asset('/logos/logo-dh-unibe.png')}
-				alt="logo"
-			/>
-		</a>
-		<a href="https://dsl.unibe.ch">
-			<img
-				class="h-16 object-contain"
-				width="100px;"
-				src={asset('/logos/logo-dsl.png')}
-				alt="logo"
-			/>
-		</a>
+	<div class="px-10">
+		<p>
+			<a
+				class=" underline"
+				href="https://arcipelago-ceresa.digitaleditions.ch/"
+				target="blank"
+				rel="noopener noreferrer">arcipelago-ceresa.digitaleditions.ch</a
+			>
+		</p>
+		<div class="mt-10 flex w-full justify-around gap-10">
+			<a href="https://data.snf.ch/grants/grant/10000500">
+				<img class="h-16 object-contain" src={asset('/logos/logo-snf.png')} alt="logo" />
+			</a>
+			<a href="https://www.roma.unibe.ch/">
+				<img
+					class="h-16 object-contain"
+					width="100px;"
+					src={asset('/logos/logo-unibe.svg')}
+					alt="logo"
+				/>
+			</a>
+			<a href="https://www.ds.uzh.ch">
+				<img class="h-16 object-contain" src={asset('/logos/logo-uzh.png')} alt="logo" />
+			</a>
+			<a href="https://dh.unibe.ch">
+				<img
+					class="h-16 object-contain"
+					width="100px;"
+					src={asset('/logos/logo-dh-unibe.png')}
+					alt="logo"
+				/>
+			</a>
+			<a href="https://dsl.unibe.ch">
+				<img
+					class="h-16 object-contain"
+					width="100px;"
+					src={asset('/logos/logo-dsl.png')}
+					alt="logo"
+				/>
+			</a>
+		</div>
 	</div>
 </footer>

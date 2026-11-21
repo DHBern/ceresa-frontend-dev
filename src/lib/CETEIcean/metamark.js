@@ -20,14 +20,15 @@ export function processMetamarks(root) {
 		if (!destination || !origin.hasChildNodes()) continue;
 		if (destination.querySelector(':scope > .metamark-marker-at-new-location')) continue;
 
-		const label = `Spostamento ${++moveNumber}`;
-		origin.dataset.metamarkLabel = label;
-		destination.dataset.metamarkLabel = label;
+		const label_origin = `Testo riposizionato ${++moveNumber}`;
+		const label_destination = `${moveNumber}`;
+		origin.dataset.metamarkLabel = label_origin;
+		destination.dataset.metamarkLabel = label_destination;
 		const doc = origin.ownerDocument;
 		const originalText = doc.createElement('span');
 		originalText.className = 'metamark-relocated-text-at-original-position';
 		originalText.dataset.metamarkId = id;
-		originalText.dataset.metamarkLabel = label;
+		originalText.dataset.metamarkLabel = label_origin;
 		originalText.append(...origin.childNodes);
 		origin.append(originalText);
 
@@ -42,7 +43,7 @@ export function processMetamarks(root) {
 		const marker = doc.createElement('span');
 		marker.className = 'metamark-marker-at-new-location';
 		marker.dataset.metamarkId = id;
-		marker.dataset.metamarkLabel = label;
+		marker.dataset.metamarkLabel = label_destination;
 		const tooltip = explanation.textContent.trim();
 		if (tooltip) {
 			for (const element of [marker, originalText]) {
