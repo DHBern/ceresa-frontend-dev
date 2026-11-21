@@ -43,6 +43,8 @@ Edition genre galleries show labeled, inline multi-select filters. Values within
 
 Edition genre pages are centered within a 108rem maximum width. Gallery cards use at most three columns, with a 36rem minimum column width where space permits; image and text stack on small screens. From 1280px, filters duplicate the metadata accordion styling in a full-window container, with padded content aligned to the page and options aligned beneath their titles. Below 1280px, compact filter menus wrap. Gallery sorting is right-aligned, with direction controls inside its dropdown. List views expand to the window width only when they would otherwise require horizontal scrolling inside the padded page.
 
+In both list views, column headers stick to the top while the table is on screen and leave with its last row. Horizontal scrolling keeps headers aligned with the rows. Sorting and filter dropdowns share ascending/descending controls with arrows and a tick marking the active column's direction.
+
 ## Building
 
 To create a production version of your app:

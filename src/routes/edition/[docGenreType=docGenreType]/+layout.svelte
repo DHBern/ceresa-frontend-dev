@@ -9,6 +9,7 @@
 	import type { PageData } from './$types';
 	import { resolve } from '$app/paths';
 	import DocListGallery from '../../DocListGallery.svelte';
+	import SortDirectionMenu from '$lib/components/SortDirectionMenu.svelte';
 	import edTypes from '$lib/dictionaries/dict_docEdTypes.json';
 
 	let { data, children }: { data: PageData; children: Snippet } = $props();
@@ -259,7 +260,7 @@
 				{#if filter}
 					<DropdownMenu.Group>
 						<DropdownMenu.GroupHeading class="px-2 py-1 font-semibold"
-							>Filtra* per {label.toLocaleLowerCase('it')}</DropdownMenu.GroupHeading
+							>Filtra per {label.toLocaleLowerCase('it')}</DropdownMenu.GroupHeading
 						>
 						<DropdownMenu.Item
 							class="cursor-pointer rounded px-2 py-2 data-highlighted:bg-background-hover"
@@ -292,19 +293,13 @@
 					<DropdownMenu.Separator class="my-2 border-t" />
 				{/if}
 				<!-- Sorting -->
-				<DropdownMenu.Group>
-					{#each ['asc', 'desc'] as direction (direction)}
-						<DropdownMenu.Item
-							class="cursor-pointer rounded px-2 py-2 data-highlighted:bg-background-hover"
-							onSelect={() => {
-								sortColumn = column;
-								sortDirection = direction === 'asc' ? 'asc' : 'desc';
-							}}
-						>
-							{direction === 'asc' ? 'Crescente' : 'Decrescente'}
-						</DropdownMenu.Item>
-					{/each}
-				</DropdownMenu.Group>
+				<SortDirectionMenu
+					value={sortColumn === column ? sortDirection : undefined}
+					onSelect={(direction) => {
+						sortColumn = column;
+						sortDirection = direction;
+					}}
+				/>
 			</DropdownMenu.Content>
 		</DropdownMenu.Portal>
 	</DropdownMenu.Root>
@@ -334,10 +329,13 @@
 							<i class="fa-solid fa-filter" aria-hidden="true"></i>
 							<span class="sr-only">Filtri attivi</span>
 						{/if}
-						<i
-							class={filtersAccordionValue === 'filters' ? 'fa-solid fa-minus' : 'fa-solid fa-plus'}
-							aria-hidden="true"
-						></i>
+						<span class="duration-100 group-data-[state=open]:rotate-180">
+							{#if filtersAccordionValue === 'filters'}
+								<i class={['fa-solid fa-minus']} aria-hidden="true"></i>
+							{:else}
+								<i class={['fa-solid fa-plus']} aria-hidden="true"></i>
+							{/if}
+						</span>
 					</Accordion.Trigger>
 					<Accordion.Content
 						class="overflow-hidden bg-background data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
@@ -350,7 +348,7 @@
 										role="group"
 										aria-labelledby={`filter-${filter.column}`}
 									>
-										<h2 id={`filter-${filter.column}`} class="text-left text-lg font-bold">
+										<h2 id={`filter-${filter.column}`} class="text-left h5 font-bold">
 											{filter.label}
 											{#if filter.selected.length}
 												<i class="fa-solid fa-filter" aria-hidden="true"></i>
@@ -430,28 +428,12 @@
 						{/each}
 					</DropdownMenu.RadioGroup>
 					<DropdownMenu.Separator class="my-2 border-t" />
-					<DropdownMenu.RadioGroup
+					<SortDirectionMenu
 						value={sortDirection}
-						onValueChange={(value) => {
-							if (value === 'asc' || value === 'desc') sortDirection = value;
+						onSelect={(direction) => {
+							sortDirection = direction;
 						}}
-					>
-						{#each ['asc', 'desc'] as direction (direction)}
-							<DropdownMenu.RadioItem
-								value={direction}
-								class="flex cursor-pointer items-center gap-2 rounded px-2 py-2 data-highlighted:bg-background-hover"
-							>
-								{#snippet children({ checked })}
-									<i
-										class={direction === 'asc' ? 'fa-solid fa-arrow-up' : 'fa-solid fa-arrow-down'}
-										aria-hidden="true"
-									></i>
-									<span>{direction === 'asc' ? 'Crescente' : 'Decrescente'}</span>
-									{#if checked}<i class="fa-solid fa-check ml-auto" aria-hidden="true"></i>{/if}
-								{/snippet}
-							</DropdownMenu.RadioItem>
-						{/each}
-					</DropdownMenu.RadioGroup>
+					/>
 				</DropdownMenu.Content>
 			</DropdownMenu.Portal>
 		</DropdownMenu.Root>

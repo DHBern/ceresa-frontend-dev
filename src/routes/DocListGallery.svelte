@@ -71,6 +71,15 @@
 		'grid-cols-[8rem_minmax(18rem,3fr)_minmax(10rem,1fr)_minmax(8rem,1fr)_minmax(12rem,1fr)_8rem_minmax(12rem,1fr)]';
 	const iconColumns =
 		'grid-cols-[8rem_7rem_minmax(18rem,3fr)_minmax(10rem,1fr)_minmax(8rem,1fr)_minmax(12rem,1fr)_8rem_minmax(12rem,1fr)]';
+	const tableWidth = $derived(
+		galleryViewType.value === 'iconList' ? 'min-w-[100rem]' : 'min-w-[92rem]'
+	);
+	let tableHeader = $state<HTMLDivElement>();
+	let tableBody = $state<HTMLDivElement>();
+
+	function syncHorizontalScroll(source: HTMLDivElement, target: HTMLDivElement | undefined) {
+		if (target && target.scrollLeft !== source.scrollLeft) target.scrollLeft = source.scrollLeft;
+	}
 
 	function editorialLabel(value: string | null): string {
 		return value
@@ -221,14 +230,19 @@
 	{:else}
 		<div
 			class={[
-				'doc-table overflow-x-auto',
+				'doc-table',
 				galleryViewType.value === 'iconList' ? 'doc-table--icons' : 'doc-table--list'
 			]}
 		>
-			<div class={galleryViewType.value === 'iconList' ? 'min-w-[100rem]' : 'min-w-[92rem]'}>
+			<div
+				bind:this={tableHeader}
+				onscroll={(event) => syncHorizontalScroll(event.currentTarget, tableBody)}
+				class="doc-table-header sticky top-0 z-20 overflow-x-auto bg-background"
+			>
 				<div
 					class={[
 						'grid items-center gap-x-8 gap-y-4 border-b-2 px-4 py-2 text-sm font-semibold',
+						tableWidth,
 						galleryViewType.value === 'iconList' ? iconColumns : columns
 					]}
 				>
@@ -243,43 +257,59 @@
 					{@render columnHeader('hasAudio', 'Audio')}
 					{@render columnHeader('typeEditoriale', genreDictionary.labels.filters.editoriale)}
 				</div>
-
-				{#if entries.length === 0}
-					<p class="p-3 opacity-60">{genreDictionary.labels.empty}</p>
-				{/if}
-				<ul>
-					{#each entries as row (row.docType + '/' + row.key)}
-						<li class="border-b-2">
-							<a
-								href={resolveDocPath(row.slug) +
-									(data?.seqSlug ? `?seq=${encodeURIComponent(data.seqSlug)}` : '')}
-								class={[
-									'grid items-center gap-x-8 gap-y-4 px-4 py-4 text-sm hover:bg-background-hover',
-									galleryViewType.value === 'iconList' ? iconColumns : columns
-								]}
-							>
-								{@render docTypeLabel(row)}
-								{#if galleryViewType.value === 'iconList'}
-									<IIIF_Thumb
-										url={row.imageUrl}
-										iiif_imageAPI_width={100}
-										classesContainer=""
-										classes="h-24 w-20"
-										imgClasses="h-24 w-20"
-									/>
-								{/if}
-								{@render listValues(row)}
-								{@render edTypeLabel(row)}
-							</a>
-						</li>
-					{/each}
-				</ul>
+			</div>
+			<div
+				bind:this={tableBody}
+				onscroll={(event) => syncHorizontalScroll(event.currentTarget, tableHeader)}
+				class="overflow-x-auto"
+			>
+				<div class={tableWidth}>
+					{#if entries.length === 0}
+						<p class="p-3 opacity-60">{genreDictionary.labels.empty}</p>
+					{/if}
+					<ul>
+						{#each entries as row (row.docType + '/' + row.key)}
+							<li class="border-b-2">
+								<a
+									href={resolveDocPath(row.slug) +
+										(data?.seqSlug ? `?seq=${encodeURIComponent(data.seqSlug)}` : '')}
+									class={[
+										'grid items-center gap-x-8 gap-y-4 px-4 py-4 text-sm hover:bg-background-hover',
+										galleryViewType.value === 'iconList' ? iconColumns : columns
+									]}
+								>
+									{@render docTypeLabel(row)}
+									{#if galleryViewType.value === 'iconList'}
+										<IIIF_Thumb
+											url={row.imageUrl}
+											iiif_imageAPI_width={100}
+											classesContainer=""
+											classes="h-24 w-20"
+											imgClasses="h-24 w-20"
+										/>
+									{/if}
+									{@render listValues(row)}
+									{@render edTypeLabel(row)}
+								</a>
+							</li>
+						{/each}
+					</ul>
+				</div>
 			</div>
 		</div>
 	{/if}
 </div>
 
 <style>
+	/* Keep horizontal scrolling without making the table a vertical sticky scroll container. */
+	.doc-table-header {
+		scrollbar-width: none;
+	}
+
+	.doc-table-header::-webkit-scrollbar {
+		display: none;
+	}
+
 	.gallery-grid {
 		grid-template-columns: repeat(
 			auto-fit,
