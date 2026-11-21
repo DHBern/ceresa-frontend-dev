@@ -29,7 +29,7 @@ type TContentNotes = {
 type TLanguageKeys = 'it' | 'de' | 'fr';
 type TDocEdtypeKeys =
 	'in_periodico' | 'in_volume' | 'in_giornale' | 'manoscritto' | 'dattiloscritto';
-type TDocGenreKeys =
+export type TDocGenreKeys =
 	'saggio' | 'prosa' | 'racconto' | 'traduzione' | 'dizionario' | 'poesia' | 'romanzo' | 'teatrale';
 
 type TCrossRefDocs = {

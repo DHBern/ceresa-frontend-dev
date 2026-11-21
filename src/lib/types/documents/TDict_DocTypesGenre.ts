@@ -1,3 +1,5 @@
+import type { TDocGenreKeys } from './TDocuments';
+
 type TMeta = {
 	generated_by: string;
 	task: string;
@@ -5,14 +7,16 @@ type TMeta = {
 	description: string;
 };
 
-type TTextualTypeEntry = {
-	docTypeTestuale: string;
-	label: string;
+type TDocTypeGenreEntry = {
+	slug: string;
+	id_singular: TDocGenreKeys;
+	label_singular: string;
+	label_plural: string;
 };
 
-export type TDocDictTextualTypes = {
+export type TDict_DocTypesGenre = {
 	meta: TMeta;
-	textualTypes: Record<string, TTextualTypeEntry>;
+	dict_docTypesGenre: Record<string, TDocTypeGenreEntry>;
 	labels: {
 		sort: { name: string; date_asc: string; date_desc: string };
 		filters: {
@@ -31,7 +35,7 @@ export type TDocDictTextualTypes = {
 	};
 };
 
-// Row model shared between +layout.svelte and [docTypeTestuale]/+page.svelte
+// Row model shared between +layout.svelte and the genre route.
 export type TDocRow = {
 	docType: 'posthum' | 'unpublished' | 'published';
 	key: string;

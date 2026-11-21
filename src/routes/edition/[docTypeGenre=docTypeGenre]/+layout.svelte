@@ -6,12 +6,11 @@
 		DOC_LIST_NONE,
 		type TDocRow,
 		type TDocSortBy
-	} from '$lib/types/documents/TDocDictTextualTypes';
+	} from '$lib/types/documents/TDict_DocTypesGenre';
 	import type { PageData } from './$types';
 	import { resolve } from '$app/paths';
-	import DocListGallery from '../../DocListGallery.svelte';
 
-	let { data, children }: { data: PageData; children: Snippet<[TDocRow[]]> } = $props();
+	let { data, children }: { data: PageData; children: Snippet } = $props();
 
 	const SECTIONS = ['posthum', 'unpublished', 'published'] as const;
 	const NONE = DOC_LIST_NONE;
@@ -26,7 +25,7 @@
 					docType: section,
 					key,
 					slug: item.slug ?? key, //! slug optional -> fallback to key
-					name: item.metadata.title_editorial,
+					name: item.metadata.title_editorial ?? item.slug ?? key,
 					title: item.metadata.title_editorial ?? null,
 					dateFrom: item.metadata.date?.from ?? null,
 					language: item.metadata.language ?? null,
@@ -48,9 +47,9 @@
 	let sortBy = $state<TDocSortBy>('name');
 	let groupItems = $state(false); //! kept for the shared component API, ignored here
 
-	// Reset filters when navigating between type_testuale routes (layout persists)
+	// Reset filters when navigating between genre routes (layout persists)
 	$effect(() => {
-		void data.docTypeTestualeSlug;
+		void data.docTypeGenreSlug;
 		selDocTypes = [];
 		selEditoriale = [];
 		selLanguages = [];
@@ -59,11 +58,11 @@
 	});
 
 	// ----- Dynamically derived options (+ "senza ..." pseudo-values) -----
-	const docTypeOptions = [
+	const docTypeOptions = $derived([
 		{ value: 'posthum', label: data.uiLabels.docTypes.posthum },
 		{ value: 'unpublished', label: data.uiLabels.docTypes.unpublished },
 		{ value: 'published', label: data.uiLabels.docTypes.published }
-	];
+	]);
 
 	function buildOptions(get: (r: TDocRow) => string | null, noneLabel: string) {
 		const set = new Set<string>();
@@ -94,7 +93,6 @@
 		return selected.includes(itemValue);
 	}
 
-	console.log(rows);
 	const filteredRows = $derived(
 		rows.filter(
 			(r) =>
@@ -126,24 +124,23 @@
 		});
 		return arr;
 	});
-	console.log(rows, filteredRows, sortedRows);
 </script>
 
-<!-- type_testuale anchor panel -->
-<nav class="flex flex-wrap gap-2" aria-label="Tipi testuali">
-	{#each Object.entries(data.textualTypes) as [slug, t] (slug)}
-		{@const isCurrent = slug === data.docTypeTestualeSlug}
+<!-- Genre navigation -->
+<nav class="flex flex-wrap gap-2" aria-label="Generi testuali">
+	{#each Object.values(data.typesGenre) as type (type.slug)}
+		{@const isCurrent = type.slug === data.docTypeGenreSlug}
 		<a
-			href={resolve(`/edition/${slug}`)}
+			href={resolve(`/edition/${type.slug}`)}
 			class={['preset-btn-round --sm', isCurrent && '--active']}
 			aria-current={isCurrent ? 'page' : undefined}
 		>
-			{t.label}
+			{type.label_plural}
 		</a>
 	{/each}
 </nav>
 
-<h1 class="h1 my-4">{data.typeTestualeLabel}</h1>
+<h1 class="h1 my-4">{data.typeGenreLabel}</h1>
 <!-- Filter + sorting panel -->
 <section class="mt-4 flex flex-wrap items-center gap-2" aria-label="Filtri e ordinamento">
 	<DropdownRegFilters
@@ -179,7 +176,6 @@
 	<DropdownRegSorting bind:registerSortBy={sortBy} bind:registerGroupItems={groupItems} />
 </section>
 
-<!-- <DocListGallery containerClasses="h-full" {data} {sortedRows}></DocListGallery> -->
 <main class="mt-4">
 	<ul class="divide-y">
 		{#each sortedRows as row (row.docType + '/' + row.key)}
@@ -215,3 +211,4 @@
 		{/each}
 	</ul>
 </main>
+{@render children()}

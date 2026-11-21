@@ -5,7 +5,7 @@
 		"generated_on": "2026-11-15",
 		"description": ""
 	},
-	"textualTypes": {
+	"dict_docTypesGenre": {
 		"saggi": {
 			"slug": "saggi",
 			"id_singular": "saggio",
@@ -14,37 +14,37 @@
 		},
 		"romanzi": {
 			"slug": "romanzi",
-			"id_singular": "Romanzo",
+			"id_singular": "romanzo",
 			"label_singular": "Romanzo",
 			"label_plural": "Romanzi e altre prose"
 		},
 		"racconti": {
 			"slug": "racconti",
-			"id_singular": "Racconto",
+			"id_singular": "racconto",
 			"label_singular": "Racconto",
 			"label_plural": "Racconti"
 		},
 		"traduzioni": {
 			"slug": "traduzioni",
-			"id_singular": "Traduzione",
+			"id_singular": "traduzione",
 			"label_singular": "Traduzione",
 			"label_plural": "Traduzioni"
 		},
 		"dizionario": {
 			"slug": "dizionario",
-			"id_singular": "Dizionario",
+			"id_singular": "dizionario",
 			"label_singular": "Dizionario",
 			"label_plural": "Dizionari"
 		},
 		"poesie": {
 			"slug": "poesie",
-			"id_singular": "Poesia",
+			"id_singular": "poesia",
 			"label_singular": "Poesia",
 			"label_plural": "Poesie"
 		},
 		"testi-teatrali": {
 			"slug": "testi-teatrali",
-			"id_singular": "Testo teatrale",
+			"id_singular": "teatrale",
 			"label_singular": "Testo teatrale",
 			"label_plural": "Testi teatrali"
 		}

@@ -3,9 +3,9 @@
 	import type { TRegDict, TRegTypes } from '$lib/types/register/TRegister';
 
 	type Props = DropdownMenu.RootProps & {
-		regDict: TRegDict['dict_register'][TRegTypes];
+		regDict?: TRegDict['dict_register'][TRegTypes];
 		items: string[];
-		selectedFilter: string;
+		selectedFilter?: string;
 		contentProps?: WithoutChild<DropdownMenu.ContentProps>;
 		mode?: 'single' | 'multi';
 		selectedFilterMulti?: string[];
@@ -16,7 +16,7 @@
 		open = $bindable(false),
 		regDict,
 		items,
-		selectedFilter = $bindable(),
+		selectedFilter = $bindable(''),
 		contentProps,
 		mode = 'single',
 		selectedFilterMulti = $bindable([]),
@@ -26,14 +26,14 @@
 
 	// label resolution incl. multi-mode trigger label
 	const labelFor = (value: string): string =>
-		getLabel ? getLabel(value) : ((regDict.groups as any)[value]?.label_plural ?? value);
+		getLabel ? getLabel(value) : ((regDict?.groups as any)?.[value]?.label_plural ?? value);
 
 	const triggerLabel = $derived.by(() => {
 		if (mode === 'multi') {
 			if (!selectedFilterMulti.length) return 'Tutti';
 			return selectedFilterMulti.map(labelFor).join(', ');
 		}
-		return (regDict.groups as any)[selectedFilter]?.label_plural || 'Tutte le categorie';
+		return (regDict?.groups as any)?.[selectedFilter]?.label_plural || 'Tutte le categorie';
 	});
 </script>
 
@@ -92,7 +92,7 @@
 											: 'bg-background text-foreground hover:bg-background-hover-safe'
 									]}
 								>
-									{(regDict.groups as any)[value]?.label_plural}
+									{labelFor(value)}
 								</div>
 							{/snippet}
 						</DropdownMenu.RadioItem>
