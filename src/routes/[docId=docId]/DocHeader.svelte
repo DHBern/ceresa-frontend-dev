@@ -19,13 +19,13 @@
 		currentlyPlayingAudio,
 		isAudioPlayerVisible
 	} from '$lib/globals/ui-states.svelte';
-	import { dictionaries } from '$lib/data/dictionaries.json';
+	import { doc_sequences } from '$lib/data/doc_sequences.json';
 
-	const dictDocIds1 = dictionaries['dict-1'].documents.map((doc) => {
-		return doc.docId;
+	const dictDocIds1 = doc_sequences.dictionaries['piccolo'].docs.map((doc) => {
+		return doc;
 	});
-	const dictDocIds2 = dictionaries['dict-1'].documents.map((doc) => {
-		return doc.docId;
+	const dictDocIds2 = doc_sequences.dictionaries['eliminabile'].docs.map((doc) => {
+		return doc;
 	});
 	const dictDocIds = [...dictDocIds1, ...dictDocIds2];
 

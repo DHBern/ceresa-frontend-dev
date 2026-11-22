@@ -50,6 +50,7 @@ export type TDocRow = {
 	typeEditoriale: string | null;
 	hasAudio: boolean;
 	imageUrl: string | null;
+	dict: string | null;
 };
 
 export type TDocSortBy = 'name' | 'date-asc' | 'date-desc';

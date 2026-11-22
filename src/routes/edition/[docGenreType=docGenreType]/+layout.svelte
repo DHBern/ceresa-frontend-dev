@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import { Accordion, DropdownMenu } from 'bits-ui';
+	import { Accordion, DropdownMenu, Tabs } from 'bits-ui';
 	import {
 		DOC_LIST_NONE,
 		type TDocRow,
@@ -11,8 +11,22 @@
 	import DocListGallery from './DocListGallery.svelte';
 	import SortDirectionMenu from '$lib/components/SortDirectionMenu.svelte';
 	import edTypes from '$lib/dictionaries/dict_docEdTypes.json';
+	import { doc_sequences } from '$lib/data/doc_sequences.json';
+
+	import { useSearchParams } from 'runed/kit';
+	import { schema, validDictKeys } from './schemas';
+	const params = useSearchParams(schema, { noScroll: true });
 
 	let { data, children }: { data: PageData; children: Snippet } = $props();
+
+	const dictItems = [
+		{ id: 'piccolo', label: doc_sequences.dictionaries.piccolo.label_long },
+		{ id: 'eliminabile', label: doc_sequences.dictionaries.eliminabile.label_long },
+		{ id: 'all', label: 'Tutti' }
+	];
+	function changeDict(value: string) {
+		params.update({ dict: dictItems.find((item) => item.id === value)?.id });
+	}
 
 	const SECTIONS = ['posthum', 'unpublished', 'published'] as const;
 	const NONE = DOC_LIST_NONE;
@@ -35,7 +49,12 @@
 					pubPlace: item.publication.pub_place ?? null,
 					typeEditoriale: item.metadata.type_editorial ?? null,
 					hasAudio: (item.crossReferences.linked_documents?.audio?.length ?? 0) > 0,
-					imageUrl: item.iiif.urls_IIIF_images?.[0] ?? null
+					imageUrl: item.iiif.urls_IIIF_images?.[0] ?? null,
+					dict: doc_sequences.dictionaries['piccolo'].docs.includes(item.slug)
+						? 'piccolo'
+						: doc_sequences.dictionaries['eliminabile'].docs.includes(item.slug)
+							? 'eliminabile'
+							: null
 				});
 			}
 		}
@@ -69,11 +88,14 @@
 		{ value: 'published', label: data.uiLabels.docTypes.published }
 	]);
 
+	// Unicode-aware collation that ignores punctuation (e.g. "(Dio)" sorts like "Dio")
+	const collator = new Intl.Collator('it', { ignorePunctuation: true });
+
 	function buildOptions(get: (r: TDocRow) => string | null, noneLabel: string) {
 		const set = new Set<string>();
 		for (const r of rows) if (get(r)) set.add(get(r)!);
 		return [...set]
-			.sort((a, b) => a.localeCompare(b, 'it'))
+			.sort((a, b) => collator.compare(a, b))
 			.map((v) => ({ value: v, label: v }))
 			.concat([{ value: NONE, label: noneLabel }]);
 	}
@@ -198,19 +220,20 @@
 				matchesMulti(r.typeEditoriale, selEditoriale) &&
 				matchesMulti(r.language, selLanguages) &&
 				matchesMulti(r.pubPlace, selPubPlace) &&
-				(!hasAudioOnly || r.hasAudio)
+				(!hasAudioOnly || r.hasAudio) &&
+				(params.dict !== 'all' ? r.dict === params.dict : true)
 		)
 	);
 
 	// ----- Sorting (implicit secondary sorts, null dates last) -----
 	const sortedRows = $derived.by(() => {
 		const arr = [...filteredRows];
-		const cmpName = (a: TDocRow, b: TDocRow) => a.name.localeCompare(b.name, 'it');
+		const cmpName = (a: TDocRow, b: TDocRow) => collator.compare(a.name, b.name);
 		const compare = (a: string | null, b: string | null, direction = 1) => {
 			if (!a && !b) return 0;
 			if (!a) return 1;
 			if (!b) return -1;
-			return a.localeCompare(b, 'it') * direction;
+			return collator.compare(a, b) * direction;
 		};
 		arr.sort((a, b) => {
 			const direction = sortDirection === 'asc' ? 1 : -1;
@@ -228,19 +251,19 @@
 	{#if filter.selected.length}
 		{#if inMenu}
 			<DropdownMenu.Item
-				class="w-fit text-left text-sm underline select-none cursor-pointer"
+				class="w-fit cursor-pointer text-left text-sm underline select-none"
 				closeOnSelect={false}
 				onSelect={() => setSelection(filter.column, [])}>Cancella filtro</DropdownMenu.Item
 			>
 		{:else}
 			<button
 				type="button"
-				class="w-fit text-left text-sm underline select-none cursor-pointer"
+				class="w-fit cursor-pointer text-left text-sm underline select-none"
 				onclick={() => setSelection(filter.column, [])}>Cancella filtro</button
 			>
 		{/if}
 	{:else}
-		<span class="text-sm pointer-events-none">Tutti</span>
+		<span class="pointer-events-none text-sm">Tutti</span>
 	{/if}
 {/snippet}
 
@@ -482,6 +505,28 @@
 			<h1 class="h1">{data.genreTypeLabel}</h1>
 			<p class="max-w-prose">{data.genreTypeDescription}</p>
 		</div>
+
+		<!-- Tabs for dictionary selection -->
+		{#if data.genreType === 'dizionario'}
+			<div class="max-w-160">
+				<Tabs.Root
+					class="pointer-events-auto sticky top-10 max-w-260 xl:static"
+					value={params.dict}
+					onValueChange={changeDict}
+				>
+					<Tabs.List
+						class="preset-btn-list --spacing-normal"
+						style={`grid-template-columns: repeat(${dictItems.length}, minmax(0, 1fr))`}
+					>
+						{#each validDictKeys as tab, i (tab)}
+							<Tabs.Trigger value={tab} class={`preset-btn-round --active-state`}>
+								{dictItems.find((item) => item.id === tab)?.label}
+							</Tabs.Trigger>
+						{/each}
+					</Tabs.List>
+				</Tabs.Root>
+			</div>
+		{/if}
 		<main class="mt-4">
 			<DocListGallery rows={sortedRows} {header} {galleryControls} />
 		</main>

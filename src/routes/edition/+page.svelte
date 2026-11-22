@@ -5,8 +5,8 @@
 
 <div class={['z-100 mx-auto flex max-w-300 flex-col bg-background px-10']}>
 	<!-- Title and Intro -->
-	<h1 class={['h1 text-center whitespace-nowrap transition-all duration-200']}>Edizione</h1>
-	<p class="mx-auto max-w-prose">
+	<h1 class={['h1 whitespace-nowrap transition-all duration-200']}>Edizione</h1>
+	<p class="max-w-prose">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 		laboris nisi ut aliquip ex ea commodo consequat.

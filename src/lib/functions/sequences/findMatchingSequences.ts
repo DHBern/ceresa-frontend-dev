@@ -5,8 +5,8 @@ export type TDocSequences = {
 	[groupId: string]: {
 		[sequenceId: string]: {
 			name?: string;
-			preamble?: string;
-			url_seq_overview?: string | null;
+			label_long?: string;
+			url_overview?: string | null;
 			docs: TDocKeys[];
 		};
 	};

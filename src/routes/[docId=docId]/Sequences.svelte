@@ -346,11 +346,11 @@
 					<a
 						class="hover:hyperlink"
 						href={resolve(
-							`/${seqAll[currentSeqType || '']?.[params.seq]?.url_seq_overview ? seqAll[currentSeqType || '']?.[params.seq]?.url_seq_overview : currentSeqType}` as any
+							`/${seqAll[currentSeqType || '']?.[params.seq]?.url_overview ? seqAll[currentSeqType || '']?.[params.seq]?.url_overview : currentSeqType}` as any
 						)}
 						target="_blank"
 						rel="noopener noreferrer"
-						>{@html seqAll[currentSeqType || '']?.[params.seq]?.preamble}
+						>{@html seqAll[currentSeqType || '']?.[params.seq]?.label_long}
 					</a>
 				</h6>
 			</div>
@@ -557,12 +557,12 @@
 						>Sequenz auswählen
 					</button>
 					<!-- Sequenzansicht -->
-					{#if seqAll[seqType!]?.[seqKey]?.url_seq_overview}
+					{#if seqAll[seqType!]?.[seqKey]?.url_overview}
 						<a
 							data-sveltekit-preload-data="tap"
 							data-sveltekit-preload-code="hover"
 							class="preset-btn-round gap-2"
-							href={resolve(seqAll[seqType!][seqKey].url_seq_overview as any)}
+							href={resolve(seqAll[seqType!][seqKey].url_overview as any)}
 							target="_blank"
 							rel="noopener noreferrer"
 						>

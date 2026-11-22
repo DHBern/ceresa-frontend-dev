@@ -7,18 +7,18 @@
 	},
 	"doc_topics": {
 		"topic_0001": {
-			"url_seq_overview": "/gender",
-			"preamble": "Dokumente zum Thema Gender",
+			"url_overview": "/gender",
+			"label_long": "Dokumente zum Thema Gender",
 			"docs": ["unpublished_0002", "unpublished_0044", "unpublished_0231", "unpublished_0232"]
 		},
 		"topic_0002": {
-			"url_seq_overview": "/intermediality",
-			"preamble": "Dokumente zum Thema Intermedialität",
+			"url_overview": "/intermediality",
+			"label_long": "Dokumente zum Thema Intermedialität",
 			"docs": ["unpublished_0231", "unpublished_0232"]
 		},
 		"topic_0003": {
-			"url_seq_overview": "/family",
-			"preamble": "Dokumente zum Thema Familie",
+			"url_overview": "/family",
+			"label_long": "Dokumente zum Thema Familie",
 			"docs": ["posthum_0001", "unpublished_0044"]
 		}
 	}
