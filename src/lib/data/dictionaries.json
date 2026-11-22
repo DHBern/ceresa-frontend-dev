@@ -3,9 +3,9 @@
 		"dict-1": {
 			"name": "Piccolo Dizionario",
 			"documents": [
-				{ "docId": "posthum_0101", "order": 1, "basename": "Anima", "name": "Anima", "version": 1 },
-				{ "docId": "posthum_0102", "order": 2, "basename": "Anima", "name": "Anima", "version": 2 },
-				{ "docId": "posthum_0103", "order": 3, "name": "Animale" },
+				{ "docId": "unpublished_A-1-b_6-5_AC003_a", "order": 1, "basename": "Anima", "name": "Anima", "version": 1 },
+				{ "docId": "unpublished_A-1-b_6-5_AC003_b", "order": 2, "basename": "Anima", "name": "Anima", "version": 2 },
+				{ "docId": "unpublished_A-1-b_6-5_AC003_c", "order": 3, "name": "Animale" },
 				{ "docId": "posthum_0104", "order": 4, "name": "Animali (esseri)" },
 				{ "docId": "posthum_0105", "order": 5, "name": "Animus" },
 				{ "docId": "posthum_0106", "order": 6, "name": "Apparenza" },
