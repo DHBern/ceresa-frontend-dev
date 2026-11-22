@@ -2,8 +2,8 @@
 	import { resolve } from '$app/paths';
 </script>
 
-<div class="overflow-hidden">
-	<div class="mx-auto mt-13 flex w-full max-w-300 flex-col items-center justify-center">
+<div class="overflow-hidden px-5">
+	<div class="mx-auto max-w-300 mt-13 flex w-full flex-col items-center justify-center">
 		<h1 class="font-bold font-serif">
 			<span class="h1 text-green-500">Arcipelago Ceresa. </span><br>
 				<span class="h2">
@@ -21,8 +21,8 @@
 		</div>
 	</div>
 
-	<div class="w-max flex mx-auto flex-wrap gap-5 mt-20">
-		<div class="flex gap-5">
+	<div class="max-w-max flex-wrap justify-center max-w-full flex mx-auto flex-wrap gap-5 mt-20">
+		<div class="flex flex-wrap items-center gap-5">
 			<a
 				href={resolve("/edition")}
 				class="mx-auto flex w-max max-w-170 items-center rounded-xl border-6 border-green-500 px-10 py-8 text-center text-2xl font-bold uppercase"
