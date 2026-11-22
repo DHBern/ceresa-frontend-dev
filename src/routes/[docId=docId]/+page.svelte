@@ -38,6 +38,7 @@
 		resDoc={data.resolvedDoc}
 		ceteiData={data.ceteiData}
 		crossRef={data.crossRef}
+		versions={data.versions}
 		{params}
 	/>
 

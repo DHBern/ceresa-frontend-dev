@@ -3,7 +3,10 @@ import processTEI from './processTEI';
 import type { ProcessedTEI } from './processTEI';
 import type { PageServerLoad } from './$types';
 import { asset } from '$app/paths';
+import { error } from '@sveltejs/kit';
 import { documents as allDocs } from '$lib/data/documents.json';
+import { doc_sequences } from '$lib/data/doc_sequences.json';
+import { TEIVersionError } from '$lib/CETEIcean/selectVersion';
 import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
 import type {
 	TResolvedPosthum,
@@ -55,7 +58,10 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 	} = {};
 
 	// CETEI Data
-	async function loadText(filename: string | null | undefined): Promise<ProcessedTEI> {
+	async function loadText(
+		filename: string | null | undefined,
+		versionId?: string
+	): Promise<ProcessedTEI> {
 		const defaultBody = {
 			serialized: `
 	<?xml version="1.0" encoding="UTF-8"?>
@@ -107,13 +113,18 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 
 			// (3) Apply CETEIcean's processTEI()
 			try {
-				const ceteiData = processTEI(xmlString);
+				const ceteiData = processTEI(xmlString, versionId);
 				return ceteiData;
 			} catch (parseErr) {
+				if (parseErr instanceof TEIVersionError) throw parseErr;
 				console.error('TEI parse error:', parseErr);
 				return defaultBody;
 			}
 		} catch (err) {
+			if (err instanceof TEIVersionError) {
+				console.error(`TEI version mismatch in ${filename}:`, err);
+				error(500, `TEI version mismatch in ${filename}: ${err.message}`);
+			}
 			// catch any other errors
 			console.error('Failed to load XML:', err);
 			return defaultBody;
@@ -121,7 +132,30 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 	}
 
 	// Load main text
-	const ceteiData = await loadText(resolvedDoc.item?.tei.filename);
+	let versionId: string | undefined;
+	if (resolvedDoc.item?.tei.suffix_version) {
+		const prefix = `${resolvedDoc.docType}_`;
+		if (!docId.startsWith(prefix) || docId.length === prefix.length) {
+			error(500, `Invalid document key for TEI version: ${docId}`);
+		}
+		versionId = docId.slice(prefix.length);
+	}
+	const ceteiData = await loadText(resolvedDoc.item?.tei.filename, versionId);
+
+	const versionKeys = new Set(
+		Object.values(doc_sequences.variants)
+			.filter((group) => group.docs.includes(docId))
+			.flatMap((group) => group.docs)
+			.filter((key) => key !== docId)
+	);
+	const versions = [...versionKeys].flatMap((key) => {
+		const version = resolveDoc(allDocs, key as TDocKeys);
+		if (!version?.item || version.docType === 'audio') {
+			console.error(`Invalid document key "${key}" in version sequence for "${docId}".`);
+			return [];
+		}
+		return [version];
+	});
 
 	// Load translation
 	let ceteiDataTranslation: ProcessedTEI | null = null;
@@ -202,6 +236,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 		ceteiData,
 		ceteiDataTranslation,
 		resolvedDoc,
-		crossRef
+		crossRef,
+		versions
 	};
 };

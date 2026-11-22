@@ -37,7 +37,11 @@ On narrow screens, text panels grow with their content in every mode and flow, k
 
 In LF, clicking a facsimile beside the continuous text opens the selected page in paged layout and scrolls to the gallery without hiding it under the sticky menu. In continuous DF, clicking a facsimile selects the page without switching layouts. Switching back to continuous layout scrolls to the current `page` when it is after the first running page.
 
-The document viewer uses TEI `<pb>` order for the text, gallery, and large facsimile. Thumbnail labels come from `@n` and images from `@facs`, both cached during TEI processing. Thumbnails without `@n` have no visible label. A missing image does not shift later pages or fall back to `documents.json`. The `page` URL parameter remains a one-based running index.
+The document viewer uses TEI `<pb>` order for the text, gallery, and large facsimile. Labels show the running page number followed by the printed `@n` in parentheses, for example `Pag. 1 (2)`, even when the numbers match. When `@n` is missing, the original number is shown as `?`. Images come from `@facs`. A missing image does not shift later pages or fall back to `documents.json`. The `page` URL parameter remains a one-based running index.
+
+For a document with `tei.suffix_version`, the TEI division's `xml:id` must match its document key without the category prefix, e.g. `posthum_A-1-b_6-2_AC001_a` selects `A-1-b_6-2_AC001_a`. Selection happens before CETEIcean behaviors; missing or duplicate divisions are reported as errors. If a version starts mid-page, the preceding `<pb>` supplies its initial facsimile and page metadata without changing the source XML. The running page counter starts at one for each version.
+
+Add related document keys to a `doc_sequences.variants` group to show version shortcuts in the document header. Members may come from different TEI files and document categories. Run `node --test tests/tei-version.test.js` to check version selection and pagination.
 
 Edition genre galleries show labeled, inline multi-select filters. Values within a filter are combined with OR; different filters are combined with AND. `Tutti` clears that filter. In either list view, each column header opens its sorting menu and, where applicable, a multi-select filter with a clear action. Selections and sorting are retained when switching views; filters reset when changing genre.
 

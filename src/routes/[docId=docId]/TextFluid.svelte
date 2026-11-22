@@ -190,7 +190,9 @@
 								classes="w-full"
 								imgClasses="w-full"
 							/>
-							<span>{formatPageLabel(thumb.n, thumb.page, true)}</span>
+							<span class="block text-center text-nowrap"
+								>{formatPageLabel(thumb.n, thumb.page, true)}</span
+							>
 						</div>
 					</button>
 				{/each}

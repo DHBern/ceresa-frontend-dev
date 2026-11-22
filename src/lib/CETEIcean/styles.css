@@ -150,6 +150,16 @@ tei-p {
 	tei-pb[n]::before {
 		content: '[ p.\00a0' attr(n) ' ]';
 	}
+
+	tei-pb[data-version-page-start] {
+		margin: 0;
+		border: 0;
+		padding: 0;
+	}
+
+	tei-pb[data-version-page-start]::before {
+		content: none;
+	}
 }
 
 /* -------------------------------- */

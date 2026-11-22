@@ -26,11 +26,13 @@
 		resDoc,
 		ceteiData,
 		crossRef,
+		versions,
 		params
 	}: {
 		docId: TDocKeys | undefined;
 		resDoc: TResolvedPosthum | TResolvedUnpublished | TResolvedPublished | null;
 		ceteiData: any;
+		versions: TResolvedTextDoc[];
 		crossRef: Partial<
 			Record<
 				| 'cited_documents'
@@ -149,10 +151,22 @@
 			<!-- Document Title -->
 			<h1 class="font-serif text-2xl font-bold md:text-4xl lg:text-5xl xl:text-6xl">
 				{resDoc.item.metadata.title_editorial}
-				{#if resDoc.item.tei.suffix_version}
-					<span class="text-[20px]">Version {resDoc.item.tei.suffix_version}</span>
-				{/if}
 			</h1>
+
+			{#if versions.length}
+				<div class="mt-15 items-center gap-3" aria-label="Altre versioni">
+					<span class="font-bold">Altre versioni:</span>
+					<ul class="gap-3">
+						{#each versions as version (version.docId)}
+							<li class="mt-3">
+								<a class="preset-btn-round --ghost --linkarrow" href={resolveDocPath(version.docId)}>
+									{version.item?.metadata.title_editorial}
+								</a>
+							</li>
+						{/each}
+					</ul>
+				</div>
+			{/if}
 
 			<!-- Audio -->
 			{#if currentFilesAudio.value?.slug}

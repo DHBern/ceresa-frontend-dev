@@ -9,9 +9,19 @@
 		"variants": {
 			"variants_anima": {
 				"url_overview": null,
-				"name": "dict-anima",
-				"label_long": "Textstufen Gruppe TEST",
-				"docs": []
+				"name": "Anima",
+				"label_long": "Versioni di Anima",
+				"docs": ["posthum_A-1-b_6-2_AC001_a", "unpublished_A-1-b_6-2_AC001_b"]
+			},
+			"variants_aborto": {
+				"url_overview": null,
+				"name": "Aborto",
+				"label_long": "Versioni di Aborto",
+				"docs": [
+					"posthum_A-1-b_6-5_AC003_a",
+					"unpublished_A-1-b_6-5_AC003_b",
+					"unpublished_A-1-b_6-5_AC003_c"
+				]
 			}
 		},
 		"dictionaries": {

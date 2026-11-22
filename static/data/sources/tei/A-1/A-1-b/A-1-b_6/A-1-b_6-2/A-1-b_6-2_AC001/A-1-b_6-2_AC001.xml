@@ -108,7 +108,7 @@
             
             
             <div xml:id="A-1-b_6-2_AC001_b">
-            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif"/>    <ab>
+            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif" n="2"/>    <ab>
                <fw place="topright" type="pageNum"><lb xml:id="p003_tr_3_tl_1"/>2</fw>
             </ab>
               
