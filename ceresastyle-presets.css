@@ -83,6 +83,10 @@
 			content: '↗\fe0e';
 			padding-right: --spacing(2);
 		}
+
+		&.--active-state {
+			@apply data-[state=active]:pointer-events-none data-[state=active]:bg-foreground data-[state=active]:text-background
+		}
 	}
 
 	.preset-btn-list {
