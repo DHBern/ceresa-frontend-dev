@@ -52,9 +52,6 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 		cited_entities?: TCrossRefEntitiesExtended;
 		linked_documents?: TCrossRefDocumentsExtended;
 		cited_documents?: TCrossRefDocumentsExtended;
-		'dict-1'?: TCrossRefDocumentsExtended;
-		'dict-2'?: TCrossRefDocumentsExtended;
-		versions?: TCrossRefDocumentsExtended;
 	} = {};
 
 	// CETEI Data
@@ -189,22 +186,6 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			Object.keys(resolvedDoc.item.crossReferences.cited_documents).forEach((type) => {
 				crossRef.cited_documents![type as TDocTypes] =
 					resolvedDoc.item!.crossReferences?.cited_documents?.[type as TDocTypes]?.map((key) => {
-						const resolvedDoc = resolveDoc(allDocs, key as TDocKeys);
-						const hasValidType = resolvedDoc?.docType;
-						return {
-							item: hasValidType ? resolvedDoc?.item : null,
-							docType: hasValidType ? resolvedDoc?.docType : null,
-							docKey: key
-						};
-					}) ?? null;
-			});
-		}
-		// versions //! Still needed?
-		if (resolvedDoc.item.crossReferences.versions) {
-			crossRef.versions = {};
-			Object.keys(resolvedDoc.item.crossReferences.versions).forEach((type) => {
-				crossRef.versions![type as TDocTypes] =
-					resolvedDoc.item!.crossReferences?.versions?.[type as TDocTypes]?.map((key) => {
 						const resolvedDoc = resolveDoc(allDocs, key as TDocKeys);
 						const hasValidType = resolvedDoc?.docType;
 						return {

@@ -179,26 +179,6 @@
 				</button>
 			{/if}
 		</div>
-
-		<!-- Versions -->
-		<!-- //! REWRITE THIS FULL FEATURE -->
-		<!-- <div class="w-full">
-			<div data-dom="global_comment" class="h-full overflow-auto pr-6 pb-20">
-				<ul class="">
-					{#if crossRef.versions}
-						{#each Object.keys(crossRef.versions) as type (type)}
-							{#each crossRef.versions[type] as version (version)}
-								<li class="preset-btn-doc --sm">
-									<a href={resolveDocPath(version.item.slug)}
-										>{version.item.metadata.title_editorial} ({version.item.tei.suffix_version})</a
-									>
-								</li>
-							{/each}
-						{/each}
-					{/if}
-				</ul>
-			</div>
-		</div> -->
 	</div>
 
 	<!-- Metadata -->
