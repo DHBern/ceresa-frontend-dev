@@ -37,16 +37,16 @@
 <footer
 	class="flex min-h-30 flex-col items-center justify-center gap-5 bg-dark-90 py-10 text-background-contrast"
 >
-	<p class="w-full rotate-1 bg-green-500 text-center font-serif text-lg font-bold text-white">
+	<p class="w-full rotate-[.5deg] bg-green-500 text-center font-serif text-lg font-bold text-white">
 		Questo sito web è attualmente in versione alpha.
 	</p>
 	<div class="px-10">
 		<p>
 			<a
-				class=" underline"
+				class="w-max mx-auto  block underline"
 				href="https://arcipelago-ceresa.digitaleditions.ch/"
 				target="blank"
-				rel="noopener noreferrer">arcipelago-ceresa.digitaleditions.ch</a
+				rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square mr-2" aria-hidden="true"></i>arcipelago-ceresa.digitaleditions.ch</a
 			>
 		</p>
 		<div class="mt-10 flex w-full justify-around gap-10">

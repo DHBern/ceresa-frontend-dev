@@ -4,11 +4,14 @@
 
 <div class="overflow-hidden">
 	<div class="mx-auto mt-13 flex w-full max-w-300 flex-col items-center justify-center">
-		<h1 class="h1">
-			<strong>Arcipelago Ceresa:</strong> Edizione digitale degli inediti, dispersi, postumi. Gender,
-			plurilinguismo, transnazionalità
+		<h1 class="font-bold font-serif">
+			<span class="h1 text-green-500">Arcipelago Ceresa. </span><br>
+				<span class="h2">
+					Edizione digitale degli inediti, dispersi, postumi. Gender,
+					plurilinguismo, transnazionalità
+				</span>
 		</h1>
-		<div class="mt-0 -rotate-3 bg-green-500 px-915 py-3 text-center font-bold text-white">
+		<div class="mt-1 -rotate-3 bg-green-500 px-915 py-3 text-center font-bold text-white">
 			<h2 class="text-6xl">
 				Versione&nbsp;Alpha&nbsp;&nbsp;Versione&nbsp;Alpha&nbsp;&nbsp;Versione&nbsp;Alpha&nbsp;&nbsp;Versione&nbsp;Alpha&nbsp;&nbsp;Versione&nbsp;Alpha&nbsp;&nbsp;
 			</h2>
@@ -18,19 +21,37 @@
 		</div>
 	</div>
 
-	<a
-		href="#links_prototypes"
-		class="mx-auto mt-10 flex w-max max-w-170 items-center rounded-xl border-4 border-purple-200 px-10 py-8 text-center text-2xl font-bold uppercase"
-	>
-		<i class="fa-solid fa-arrow-down mx-4"></i>
-		<span> Link ai prototipi </span>
-		<i class="fa-solid fa-arrow-down mx-4"></i>
-	</a>
+	<div class="w-max flex mx-auto flex-wrap gap-5 mt-20">
+		<div class="flex gap-5">
+			<a
+				href={resolve("/edition")}
+				class="mx-auto flex w-max max-w-170 items-center rounded-xl border-6 border-green-500 px-10 py-8 text-center text-2xl font-bold uppercase"
+			>
+				<i class="fa-solid fa-arrow-right mr-4"></i>
+				<span> Edizione </span>
+			</a>
+			<a
+				href={resolve("/register")}
+				class="mx-auto flex w-max max-w-170 items-center rounded-xl border-6 border-green-500 px-10 py-8 text-center text-2xl font-bold uppercase"
+			>
+				<i class="fa-solid fa-arrow-right mr-4"></i>
+				<span> Registri </span>
+			</a>
+		</div>
+		<a
+			href="#links_prototypes"
+			class="mx-auto flex w-max max-w-170 items-center rounded-xl border-6 border-green-500 px-10 py-8 text-center text-2xl font-bold uppercase"
+		>
+			<i class="fa-solid fa-arrow-down mx-4"></i>
+			<span> Link ai prototipi </span>
+			<i class="fa-solid fa-arrow-down mx-4"></i>
+		</a>
+	</div>
 
-	<div class="mx-auto mt-13 flex w-full max-w-300 flex-col items-center justify-center">
+	<div class="mx-auto mt-13 text-base flex w-full max-w-300 flex-col items-center justify-center">
 		<p>
 			Il progetto Arcipelago Ceresa intende realizzare un’edizione digitale degli scritti inediti,
-			dispersi e postumi della scrittrice italo-svizzera Alice Ceresa (1923-2001), sviluppando
+			dispersi e postumi della scrittrice italo-svizzera Alice Ceresa (1923&ndash;2001), sviluppando
 			contestualmente nuove indagini critiche sulla sua opera.
 		</p>
 		<p>
