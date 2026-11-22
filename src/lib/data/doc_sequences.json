@@ -27,7 +27,7 @@
 		"dictionaries": {
 			"piccolo": {
 				"type": "dictionary",
-				"url_overview": "/edition/dizionario?dict=piccolo-dizionario",
+				"url_overview": "/edition/dizionario?dict=piccolo",
 				"name": "Piccolo Dizionario",
 				"label_long": "Piccolo dizionario",
 				"docs": [
@@ -80,7 +80,7 @@
 			},
 			"eliminabile": {
 				"type": "dictionary",
-				"url_overview": "/edition/dizionario?dict=dizionario-eliminabile",
+				"url_overview": "/edition/dizionario?dict=eliminabile",
 				"name": "Dizionario eliminabile",
 				"label_long": "Dizionario eliminabile",
 				"docs": [

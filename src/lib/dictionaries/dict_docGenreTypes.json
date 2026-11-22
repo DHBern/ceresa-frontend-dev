@@ -66,14 +66,14 @@
 			"docType": "Tipo documento",
 			"editoriale": "Tipo editoriale",
 			"language": "Lingua",
-			"pubPlace": "Luogo di pubblicazione",
+			"pubPlace": "Sede di pubblicazione",
 			"hasAudio": "Con audio"
 		},
 		"docTypes": { "posthum": "Postumi", "unpublished": "Inediti", "published": "Pubblicati" },
 		"languages": { "it": "Italiano", "de": "Tedesco", "fr": "Francese" },
 		"none_labels": {
 			"language": "senza lingua",
-			"pubPlace": "senza luogo di pubblicazione",
+			"pubPlace": "senza sede di pubblicazione",
 			"editoriale": "senza tipo editoriale"
 		},
 		"row": { "noDate": "s.d." },

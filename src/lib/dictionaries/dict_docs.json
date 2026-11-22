@@ -2,8 +2,7 @@
 	"meta": {
 		"generated_by": "manual draft",
 		"task": "Human-readable labels for all fields of documents.json (type TDocuments)",
-		"generated_on": "2026-11-17",
-		"description": "Labels taken verbatim from the data.xlsx sheet headers. Columns marked [missing] in a sheet still appear here because the JSON records are uniform (missing values are null/TUnset). 'Audio' columns are ignored: documents.audio is left empty."
+		"generated_on": "2026-11-17"
 	},
 	"dict_docs": {
 		"posthum": {
@@ -16,7 +15,7 @@
 				"type_genre": { "label": "Tipologia testuale" },
 				"type_editorial": { "label": "Tipologia del documento" },
 				"title_editorial": { "label": "Titolo editoriale" },
-				"date": { "label": "Datazione d'autrice normalizzata (aaaa-mm-dd)" },
+				"date": { "label": "Datazione d'autrice normalizzata" },
 				"language": { "label": "Lingua" },
 				"keywords": { "label": "Parole chiave" },
 				"observations": { "label": "Osservazioni" }
@@ -34,15 +33,14 @@
 				},
 				"title_on_document": { "label": "Titolo presente sul documento" },
 				"date_and_place_author_as_on_document": { "label": "data e luogo d'autrice" },
-				"date_author_normalised": { "label": "Datazione d'autrice normalizzata (aaaa-mm-dd)" }
+				"date_author_normalised": { "label": "Datazione d'autrice normalizzata" }
 			},
 			"iiif": {
 				"urls_IIIF_images": { "label": "IIIF-Bilder-URLs" },
-				"url_IIIF_manifest": { "label": "IIIF Manifest" }
+				"url_IIIF_manifest": { "label": "Manifesto IIIF" }
 			},
 			"tei": {
 				"id": { "label": "Identifier postumi (+ suffix_version)" },
-				"suffix_version": { "label": "[missing] in 'Testi postumi'" },
 				"filename": { "label": "Identifier postumi (+ suffix_version)" }
 			},
 			"crossReferences": {
@@ -51,9 +49,6 @@
 			},
 			"publication": {
 				"pub_type": { "label": "Stato di pubblicazione (version)" },
-				"pub_date": { "label": "[missing] in 'Testi postumi'" },
-				"pub_place": { "label": "[missing] in 'Testi postumi'" },
-				"pub_info": { "label": "[missing] in 'Testi postumi'" },
 				"other_editions": { "label": "Edizioni del testo" },
 				"other_translations": {
 					"label": "Traduzioni: titolo, autore/autrice e lingua originale; ev. edizione di riferimento"
@@ -76,7 +71,6 @@
 				"type_genre": { "label": "Tipologia testuale" },
 				"type_editorial": { "label": "Tipologia editoriale" },
 				"title_editorial": { "label": "Titolo editoriale" },
-				"date": { "label": "[missing] in 'Testi editi'" },
 				"language": { "label": "Lingua" },
 				"keywords": { "label": "Parole chiave" },
 				"observations": { "label": "Osservazioni" }
@@ -92,17 +86,14 @@
 				"type_material": {
 					"label": "Informazioni materiali sul testimone (originale/fotocopia, ev. corr. ms.)"
 				},
-				"title_on_document": { "label": "Titolo presente sul documento" },
-				"date_and_place_author_as_on_document": { "label": "[missing] in 'Testi editi'" },
-				"date_author_normalised": { "label": "[missing] in 'Testi editi'" }
+				"title_on_document": { "label": "Titolo presente sul documento" }
 			},
 			"iiif": {
 				"urls_IIIF_images": { "label": "IIIF-Bilder-URLs" },
-				"url_IIIF_manifest": { "label": "IIIF Manifest" }
+				"url_IIIF_manifest": { "label": "Manifesto IIIF" }
 			},
 			"tei": {
 				"id": { "label": "Identifier editi" },
-				"suffix_version": { "label": "[missing] in 'Testi editi'" },
 				"filename": { "label": "Identifier editi" }
 			},
 			"crossReferences": {
@@ -111,7 +102,7 @@
 			},
 			"publication": {
 				"pub_type": { "label": "Stato di pubblicazione (version)" },
-				"pub_date": { "label": "Data di pubblicazione (aaaa-mm-dd)" },
+				"pub_date": { "label": "Data di pubblicazione" },
 				"pub_place": { "label": "Sede di pubblicazione" },
 				"pub_info": {
 					"label": "Altre informazioni (ev. numero, annata, serie, rubrica, collana, pagine)"
@@ -138,7 +129,7 @@
 				"type_genre": { "label": "Tipologia testuale" },
 				"type_editorial": { "label": "Tipologia del documento" },
 				"title_editorial": { "label": "Titolo editoriale" },
-				"date": { "label": "Datazione d'autrice normalizzata (aaaa-mm-dd)" },
+				"date": { "label": "Datazione d'autrice normalizzata" },
 				"language": { "label": "Lingua" },
 				"keywords": { "label": "Parole chiave" },
 				"observations": { "label": "Osservazioni" }
@@ -156,15 +147,14 @@
 				},
 				"title_on_document": { "label": "Titolo presente sul documento" },
 				"date_and_place_author_as_on_document": { "label": "Data e luogo d'autrice" },
-				"date_author_normalised": { "label": "Datazione d'autrice normalizzata (aaaa-mm-dd)" }
+				"date_author_normalised": { "label": "Datazione d'autrice normalizzata" }
 			},
 			"iiif": {
 				"urls_IIIF_images": { "label": "IIIF-Bilder-URLs" },
-				"url_IIIF_manifest": { "label": "IIIF Manifest" }
+				"url_IIIF_manifest": { "label": "Manifesto IIIF" }
 			},
 			"tei": {
 				"id": { "label": "Identifier inediti" },
-				"suffix_version": { "label": "[missing] in 'Testi inediti'" },
 				"filename": { "label": "Identifier inediti" }
 			},
 			"crossReferences": {
@@ -173,10 +163,6 @@
 			},
 			"publication": {
 				"pub_type": { "label": "Stato di pubblicazione (version)" },
-				"pub_date": { "label": "[missing] in 'Testi inediti'" },
-				"pub_place": { "label": "[missing] in 'Testi inediti'" },
-				"pub_info": { "label": "[missing] in 'Testi inediti'" },
-				"other_editions": { "label": "[missing] in 'Testi inediti'" },
 				"other_translations": {
 					"label": "Traduzioni: titolo, autore/autrice e lingua originale; ev. edizione di riferimento"
 				}
