@@ -106,14 +106,14 @@
 {#snippet edTypeLabel(row: TDocRow)}
 	<span
 		class={[
-			'w-fit rounded-full px-2 py-1 text-xs',
+			'w-fit rounded-sm px-2 py-1 font-bold text-[13px]',
 			row.typeEditoriale && DOC_EDTYPE_STYLES[row.typeEditoriale]
 		]}>{editorialLabel(row.typeEditoriale)}</span
 	>
 {/snippet}
 
 {#snippet docTypeLabel(row: TDocRow)}
-	<span class={['w-fit rounded-full px-2 py-1 text-xs', row.docType && DOCTYPE_STYLES[row.docType]]}
+	<span class={['w-fit rounded-sm px-2 py-1 font-bold text-[13px]', row.docType && DOCTYPE_STYLES[row.docType]]}
 		>{docsDictionary.dict_docs[row.docType].label_singular}</span
 	>
 {/snippet}

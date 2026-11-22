@@ -50,7 +50,7 @@
 	let hasAudioOnly = $state(false);
 	let sortColumn = $state<TDocColumn>('name');
 	let sortDirection = $state<'asc' | 'desc'>('asc');
-	let filtersAccordionValue = $state('filters');
+	let filtersAccordionValue = $state(undefined);
 
 	// Reset filters when navigating between genre routes (layout persists)
 	$effect(() => {
@@ -478,9 +478,9 @@
 				</a>
 			{/each}
 		</nav>
-		<div class="my-15">
+		<div class="my-10 mt-5">
 			<h1 class="h1">{data.genreTypeLabel}</h1>
-			<p>{data.genreTypeDescription}</p>
+			<p class="max-w-prose">{data.genreTypeDescription}</p>
 		</div>
 		<main class="mt-4">
 			<DocListGallery rows={sortedRows} {header} {galleryControls} />
