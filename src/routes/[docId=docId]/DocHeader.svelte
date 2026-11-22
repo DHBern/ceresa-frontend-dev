@@ -10,6 +10,7 @@
 	} from '$lib/functions/ease_of_use/resolveDoc';
 	import { dict_register as dictReg } from '$lib/dictionaries/dict_register.json';
 	import { dict_docs as dictDocs } from '$lib/dictionaries/dict_docs.json';
+	import { dict_docGenreTypes } from '$lib/dictionaries/dict_docGenreTypes.json';
 	import ResponsiveAccordion from './ResponsiveAccordion.svelte';
 	import type { TResolvedRegister } from '$lib/functions/ease_of_use/resolveReg';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
@@ -20,14 +21,13 @@
 	} from '$lib/globals/ui-states.svelte';
 	import { dictionaries } from '$lib/data/dictionaries.json';
 
-	const dictDocIds = [
-		...dictionaries['dict-1'].documents.map((doc) => {
-			return doc.docId;
-		}),
-		...dictionaries['dict-1'].documents.map((doc) => {
-			return doc.docId;
-		})
-	];
+	const dictDocIds1 = dictionaries['dict-1'].documents.map((doc) => {
+		return doc.docId;
+	});
+	const dictDocIds2 = dictionaries['dict-1'].documents.map((doc) => {
+		return doc.docId;
+	});
+	const dictDocIds = [...dictDocIds1, ...dictDocIds2];
 
 	let {
 		docId,
@@ -55,6 +55,9 @@
 	} = $props();
 
 	let stateMetadata = $state<string | null>('eckdaten');
+	const dictGenre_current = Object.values(dict_docGenreTypes).find(
+		(a) => a.id_singular === resDoc?.item?.metadata.type_genre
+	);
 </script>
 
 {#snippet metadataButton(state: string, text: string)}
@@ -129,55 +132,62 @@
 {#if resDoc?.item}
 	<div class="w-full grid-cols-[1fr_2fr] px-10">
 		<div class="w-full">
-			<!-- Title -->
+			<!-- Category Backlinks -->
 			<h2 class="font-serif text-2xl font-bold text-blue-500">
-				{#if resDoc.docType === 'posthum'}
-					<a href={resolve('/posthumous')}>Opera postuma</a>:
-				{:else if resDoc.docType === 'published'}
-					<a href={resolve('/published')}>Opera edita</a>:
-				{:else if resDoc.docType === 'unpublished'}
-					<a href={resolve('/unpublished')}>Opera inedita</a>:
+				<!-- Genre -->
+				{#if dictDocIds1.includes(resDoc.item.slug)}
+					<a
+						class="underline"
+						href={`/edition/${dictGenre_current?.slug}?dictionary=piccolo_dizionario`}
+						>Piccolo Dizionario</a
+					>
+				{:else if dictDocIds2.includes(resDoc.item.slug)}
+					<a
+						class="underline"
+						href={`/edition/${dictGenre_current?.slug}?dictionary=dizionario_eliminabile`}
+						>Dizionario Eliminabile</a
+					>
+				{:else}
+					<a class="underline" href={`/edition/${dictGenre_current?.slug}`}
+						>{dictGenre_current?.label_singular}</a
+					>
 				{/if}
-				{#if dictDocIds.includes(resDoc.item.slug)}
-					<a href={resolve('/posthumous#piccolo_dizionario')}>Piccolo Dizionario</a>
-				{/if}
+				<span class="mx-2"> | </span>
+				<!-- DocType -->
+				<span>{dictDocs[resDoc.docType]?.label_singular}</span>
 			</h2>
+
+			<!-- Document Title -->
 			<h1 class="font-serif text-2xl font-bold md:text-4xl lg:text-5xl xl:text-6xl">
 				{resDoc.item.metadata.title_editorial}
 				{#if resDoc.item.tei.suffix_version}
 					<span class="text-[20px]">Version {resDoc.item.tei.suffix_version}</span>
 				{/if}
 			</h1>
+
 			<!-- Audio -->
 			{#if currentFilesAudio.value?.slug}
-				<div
-					class="my-10 grid h-max w-max max-w-110 grid-cols-[auto_1fr] items-center justify-center gap-10 rounded-lg border border-foreground p-5"
+				<button
+					class="group hover:bg-mute my-10 grid h-max w-max max-w-110 grid-cols-[auto_1fr] items-center justify-center gap-10 rounded-lg border border-foreground p-5"
+					aria-label="play audio"
+					onclick={() => {
+						currentlyPlayingAudio.value = currentFilesAudio.value;
+						isAudioPlayerVisible.value = true;
+					}}
 				>
-					{#if isAudioPlayerVisible.value && currentlyPlayingAudio.value?.slug === currentFilesAudio.value.slug}
-						<button
-							aria-label="stop audio"
-							onclick={() => {
-								currentlyPlayingAudio.value = null;
-								isAudioPlayerVisible.value = false;
-							}}
-							class="flex h-12 w-12 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
-						>
-							<i class="fa-solid fa-stop text-lg"></i>
-						</button>
-					{:else}
-						<button
-							aria-label="play audio"
-							onclick={() => {
-								currentlyPlayingAudio.value = currentFilesAudio.value;
-								isAudioPlayerVisible.value = true;
-							}}
-							class="flex h-12 w-12 items-center justify-center rounded-full bg-foreground p-1 text-xs text-background hover:bg-purple-200"
-						>
-							<i class="fa-solid fa-play text-lg"></i>
-						</button>
-					{/if}
+					<div
+						class={[
+							'flex h-12 w-12 items-center justify-center rounded-full p-1 text-4xl text-foreground group-hover:text-5xl',
+							isAudioPlayerVisible.value &&
+							currentlyPlayingAudio.value?.slug === currentFilesAudio.value.slug
+								? 'text-5xl'
+								: ''
+						]}
+					>
+						<i class="fa-solid fa-headphones"></i>
+					</div>
 					<p class="text-sm">Listen to the Audio Document linked to this document.</p>
-				</div>
+				</button>
 			{/if}
 		</div>
 

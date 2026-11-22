@@ -114,7 +114,7 @@
 
 <!-- Close button -->
 <button
-	class="absolute top-3 right-3 z-99999999999 bg-foreground text-lg text-black"
+	class="absolute top-3 right-3 z-99999999999 bg-foreground text-lg text-foreground"
 	aria-label="close audio player"
 	onclick={() => {
 		isAudioPlayerVisible.value = false;
