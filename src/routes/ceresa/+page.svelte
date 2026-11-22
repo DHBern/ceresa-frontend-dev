@@ -1,5 +1,5 @@
-<div class="mx-auto mt-13 flex w-full max-w-300 flex-col justify-center">
-	<h2 class="h2">Alice Ceresa</h2>
+<main class="mx-auto max-w-prose mt-10">
+	<h1 class="h1">Alice Ceresa</h1>
 	<p>
 		Alice Ceresa (Basilea, 25 gennaio 1923 - Roma, 22 dicembre 2001) trascorre l’infanzia tra
 		Basilea e Bellinzona, dove, per volontà paterna, compie studi commerciali e, per passione,
@@ -37,4 +37,4 @@
 		Tradotti in francese e in tedesco, i suoi scritti principali conoscono negli ultimi anni nuove
 		edizioni e un rinnovato interesse critico.
 	</p>
-</div>
+</main>

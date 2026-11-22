@@ -21,14 +21,6 @@
 	} from '$lib/globals/ui-states.svelte';
 	import { doc_sequences } from '$lib/data/doc_sequences.json';
 
-	const dictDocIds1 = doc_sequences.dictionaries['piccolo'].docs.map((doc) => {
-		return doc;
-	});
-	const dictDocIds2 = doc_sequences.dictionaries['eliminabile'].docs.map((doc) => {
-		return doc;
-	});
-	const dictDocIds = [...dictDocIds1, ...dictDocIds2];
-
 	let {
 		docId,
 		resDoc,
@@ -100,9 +92,6 @@
 {#snippet metadataCrossRefDoc(label: string, content: TResolvedTextDoc[] | null | undefined)}
 	<h4 class="h6">{label}</h4>
 	<div class="grid h-full grid-cols-1 gap-5 md:grid-cols-2 2xl:grid-cols-3">
-		<!-- <div
-		class="grid h-full grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
-	> -->
 		{#each content ? content : [] as cont (cont)}
 			<a
 				href={resolveDocPath(cont.docId as string)}
@@ -133,22 +122,22 @@
 	<div class="w-full grid-cols-[1fr_2fr] px-10">
 		<div class="w-full">
 			<!-- Category Backlinks -->
-			<h2 class="font-serif text-2xl font-bold text-blue-500">
+			<h2 class="font-sans text-xl mb-2 font-bold text-blue-500">
 				<!-- Genre -->
-				{#if dictDocIds1.includes(resDoc.item.slug)}
+				{#if doc_sequences.dictionaries['piccolo'].docs.includes(resDoc.item.slug)}
 					<a
-						class="underline"
+						class=""
 						href={`/edition/${dictGenre_current?.slug}?dictionary=piccolo_dizionario`}
 						>Piccolo Dizionario</a
 					>
-				{:else if dictDocIds2.includes(resDoc.item.slug)}
+				{:else if doc_sequences.dictionaries['eliminabile'].docs.includes(resDoc.item.slug)}
 					<a
-						class="underline"
+						class=""
 						href={`/edition/${dictGenre_current?.slug}?dictionary=dizionario_eliminabile`}
 						>Dizionario Eliminabile</a
 					>
 				{:else}
-					<a class="underline" href={`/edition/${dictGenre_current?.slug}`}
+					<a class="" href={`/edition/${dictGenre_current?.slug}`}
 						>{dictGenre_current?.label_singular}</a
 					>
 				{/if}

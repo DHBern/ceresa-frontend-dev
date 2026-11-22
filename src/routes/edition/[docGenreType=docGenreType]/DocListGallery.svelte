@@ -171,9 +171,13 @@
 		</div>
 	</div>
 
+	<!-- Controls for gallery-mode -->
 	{#if galleryViewType.value === 'gallery' && galleryControls}
-		{@render galleryControls()}
+	{@render galleryControls()}
 	{/if}
+
+	<!-- Entry count -->
+	<p class="mb-6 text-right">{entries.length} {entries.length === 1 ? 'entry' : 'entries'}</p>
 
 	{#if entries.length === 0 && galleryViewType.value === 'gallery'}
 		<p class="p-3 opacity-60">{genreDictionary.labels.empty}</p>
