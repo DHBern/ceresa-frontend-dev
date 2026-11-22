@@ -54,7 +54,7 @@
                <lb xml:id="p001_l"/><note type="hidden">{{SKIP Non trascritto intenzionalmente (motive: not to be edited )}}</note></p>
             
             
-            <div xml:id="A-1-b_6-2_AC001a">
+            <div xml:id="A-1-b_6-2_AC001_a">
             <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_002.tif"
                   n="1"/>
             <head><lb xml:id="p002_r_tl_1"/>ANIMA</head><ab>
@@ -107,8 +107,8 @@
             
             
             
-            <div xml:id="A-1-b_6-2_AC001b">
-            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif"/>    <ab>
+            <div xml:id="A-1-b_6-2_AC001_b">
+            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_003.tif" n="2"/>    <ab>
                <fw place="topright" type="pageNum"><lb xml:id="p003_tr_3_tl_1"/>2</fw>
             </ab>
               

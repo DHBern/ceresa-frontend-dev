@@ -49,7 +49,7 @@
    <text>
       <body>
          <div>
-            <div xml:id="A-1-b_6-5_AC003a">
+            <div xml:id="A-1-b_6-5_AC003_a">
             <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_003.tif"
                   n="1"/><head>aborto</head>
              <ab>
@@ -104,7 +104,7 @@
             </div>
             
             
-            <div xml:id="A-1-b_6-5_AC003b">
+            <div xml:id="A-1-b_6-5_AC003_b">
                <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_009.tif"
                   n="1"/>
                <head>ABORTO (Liberalizzazione del)</head>
@@ -174,7 +174,7 @@
                   dell'<?oxy_comment_start author="luisepappe" timestamp="20261111T150008+0100" comment="cfr. commento sopra"?>ABORTO<?oxy_comment_end?>".</p>
             </div>
             
-            <div xml:id="A-1-b_6-5_AC003c">
+            <div xml:id="A-1-b_6-5_AC003_c">
                <pb xml:id="p008" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_015-1.tif"
                   n="1"/>
                <head>ABORTO</head>

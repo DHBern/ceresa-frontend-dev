@@ -20,6 +20,7 @@ export const load: LayoutServerLoad = ({ params }) => {
 		uiLabels: dict.labels,
 		docGenreTypeSlug: params.docGenreType,
 		genreType: entry.id_singular,
-		genreTypeLabel: entry.label_plural
+		genreTypeLabel: entry.label_plural,
+		genreTypeDescription: entry.description
 	};
 };

@@ -6,10 +6,10 @@ import type { TPeopleKeys } from './register/TPeopleKeys';
 export type TSeq = typeof seqAll;
 export type TSeqAttrs = {
 	type?: string | null;
-	url_seq_overview: string | null;
+	url_overview: string | null;
 	name: string | null;
 	intro?: string | null;
-	preamble: string | null;
+	label_long: string | null;
 	personId?: TPeopleKeys | null;
 	docs: TDocKeys[] | null;
 };

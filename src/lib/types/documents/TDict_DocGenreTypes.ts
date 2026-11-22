@@ -12,6 +12,7 @@ type TDocGenreTypeEntry = {
 	id_singular: TDocGenreKeys;
 	label_singular: string;
 	label_plural: string;
+	description: string;
 };
 
 export type TDict_DocGenreTypes = {
@@ -43,11 +44,16 @@ export type TDocRow = {
 	name: string;
 	title: string | null;
 	dateFrom: string | null;
+	dateTo: string | null;
 	language: string | null;
 	pubPlace: string | null;
 	typeEditoriale: string | null;
 	hasAudio: boolean;
+	imageUrl: string | null;
+	dict: string | null;
 };
 
 export type TDocSortBy = 'name' | 'date-asc' | 'date-desc';
+export type TDocColumn =
+	'docType' | 'name' | 'date' | 'language' | 'pubPlace' | 'hasAudio' | 'typeEditoriale';
 export const DOC_LIST_NONE = '__none__';

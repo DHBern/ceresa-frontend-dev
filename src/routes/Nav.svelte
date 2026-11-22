@@ -205,7 +205,8 @@
 <div
 	class="relative z-9999999999999 flex h-max w-full justify-between gap-5 border-b-2 bg-foreground text-background"
 >
-	<div class="group flex w-screen list-none items-center justify-end gap-2 p-1 px-5 lg:hidden">
+	<div class="group flex w-screen list-none items-center justify-between gap-2 p-1 px-5 lg:hidden">
+		<a href={resolve("/")} class="font-bold">Archipelago Ceresa</a>
 		<div class="mr-4">
 			<Dialog.Root bind:open={openStateMenu}>
 				<!-- Trigger aligned right on small screens -->

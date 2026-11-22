@@ -9,44 +9,51 @@
 		"saggi": {
 			"slug": "saggi",
 			"id_singular": "saggio",
-			"label_singular": "saggio",
-			"label_plural": "Saggi e interventi"
+			"label_singular": "Saggio o intervento",
+			"label_plural": "Saggi e interventi",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		"romanzi": {
 			"slug": "romanzi",
 			"id_singular": "romanzo",
-			"label_singular": "Romanzo",
-			"label_plural": "Romanzi e altre prose"
+			"label_singular": "Romanzo o altra prosa",
+			"label_plural": "Romanzi e altre prose",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		"racconti": {
 			"slug": "racconti",
 			"id_singular": "racconto",
 			"label_singular": "Racconto",
-			"label_plural": "Racconti"
+			"label_plural": "Racconti",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		"traduzioni": {
 			"slug": "traduzioni",
 			"id_singular": "traduzione",
 			"label_singular": "Traduzione",
-			"label_plural": "Traduzioni"
+			"label_plural": "Traduzioni",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		"dizionario": {
 			"slug": "dizionario",
 			"id_singular": "dizionario",
 			"label_singular": "Dizionario",
-			"label_plural": "Dizionario"
+			"label_plural": "Dizionario",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
 		"poesie": {
 			"slug": "poesie",
 			"id_singular": "poesia",
 			"label_singular": "Poesia",
-			"label_plural": "Poesie"
+			"label_plural": "Poesie",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		},
-		"testi-teatrali": {
+		"testi_teatrali": {
 			"slug": "testi-teatrali",
 			"id_singular": "teatrale",
 			"label_singular": "Testo teatrale",
-			"label_plural": "Testi teatrali"
+			"label_plural": "Testi teatrali",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 		}
 	},
 	"labels": {
@@ -59,18 +66,17 @@
 			"docType": "Tipo documento",
 			"editoriale": "Tipo editoriale",
 			"language": "Lingua",
-			"pubPlace": "Luogo di pubblicazione",
+			"pubPlace": "Sede di pubblicazione",
 			"hasAudio": "Con audio"
 		},
 		"docTypes": { "posthum": "Postumi", "unpublished": "Inediti", "published": "Pubblicati" },
 		"languages": { "it": "Italiano", "de": "Tedesco", "fr": "Francese" },
 		"none_labels": {
 			"language": "senza lingua",
-			"pubPlace": "senza luogo di pubblicazione",
+			"pubPlace": "senza sede di pubblicazione",
 			"editoriale": "senza tipo editoriale"
 		},
 		"row": { "noDate": "s.d." },
-		"empty": "Nessun documento trovato",
-		"all": "Tutti"
+		"empty": "Nessun documento trovato"
 	}
 }

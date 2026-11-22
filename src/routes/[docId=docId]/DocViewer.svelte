@@ -333,7 +333,7 @@
 										? currentPage
 										: fluidPage
 									: null}
-								classes="mx-auto w-full max-w-300 md:max-w-[1300px]"
+								classes="mx-auto w-full md:max-w-300"
 							/>
 						{:else}
 							<TextPaged {textData} page={currentPage} {openDrawer} />
