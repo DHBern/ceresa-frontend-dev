@@ -6,6 +6,8 @@
 	} from '$lib/globals/ui-states.svelte';
 	import { Slider } from 'bits-ui';
 	import { resolve } from '$app/paths';
+	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
+	import { documents } from '$lib/data/documents.json';
 
 	// Props
 	let audioSrc = $derived(
@@ -28,6 +30,21 @@
 
 	// Derived
 	let currentChapter = $derived(chapters?.[currentChapterIndex] ?? null);
+	let referringDocuments = $derived(
+		(['posthum', 'unpublished', 'published'] as const).flatMap((type) =>
+			Object.values(documents[type]).filter((doc) => {
+				const references = doc.crossReferences;
+				return (
+					('linked_documents' in references &&
+						references.linked_documents?.audio?.includes(
+							currentlyPlayingAudio.value?.slug ?? ''
+						)) ||
+					('cited_documents' in references &&
+						references.cited_documents?.audio?.includes(currentlyPlayingAudio.value?.slug ?? ''))
+				);
+			})
+		)
+	);
 
 	function formatTime(seconds: number) {
 		const mins = Math.floor(seconds / 60);
@@ -112,135 +129,154 @@
 	});
 </script>
 
-<!-- Close button -->
-<button
-	class="absolute top-3 right-3 z-99999999999 bg-foreground text-lg text-foreground"
-	aria-label="close audio player"
-	onclick={() => {
-		isAudioPlayerVisible.value = false;
-	}}><i class="fa-solid fa-xmark"></i></button
->
-
-<div class="relative w-full px-5 pt-2 [--heightOfButton:35px]">
+<div class="mx-auto w-full max-w-7xl px-5 py-4">
+	<div class="flex items-start justify-between gap-4">
+		<div class="min-w-0 text-sm">
+			<p class="mt-0 font-bold">{currentlyPlayingAudio.value?.metadata.title}</p>
+			<p class="mt-1 text-xs break-words">
+				<strong>Linked Documents: </strong>
+				{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
+					{@const linkedDocs =
+						currentlyPlayingAudio.value?.crossReferences?.linked_documents?.[type]}
+					{#each linkedDocs as linkedDoc (linkedDoc)}
+						<a href={resolve(linkedDoc)} class="mr-2 underline">{linkedDoc}</a>
+					{/each}
+				{/each}
+				{#each referringDocuments as doc (doc.slug)}
+					<a href={resolveDocPath(doc.slug)} class="mr-2 underline"
+						>{doc.metadata.title_editorial}</a
+					>
+				{/each}
+			</p>
+		</div>
+		<button
+			class="preset-btn-circle --color-light shrink-0 border border-foreground"
+			aria-label="close audio player"
+			onclick={() => {
+				isAudioPlayerVisible.value = false;
+			}}><i class="fa-solid fa-xmark" aria-hidden="true"></i></button
+		>
+	</div>
 	{#if currentFilesAudio.value?.slug && currentFilesAudio.value?.slug !== currentlyPlayingAudio.value?.slug}
 		<button
-			class="absolute -top-[calc(var(--heightOfButton)*3/4)] left-[50%] z-1 mx-auto h-(--heightOfButton) w-max translate-x-[-50%] rounded-t-xl bg-foreground px-10 text-center text-sm text-black underline"
-			aria-label="close audio player"
+			class="preset-btn-round --sm mt-3 max-w-full text-center whitespace-normal"
 			onclick={() => {
 				currentlyPlayingAudio.value = currentFilesAudio.value;
 			}}>Switch to visible document's audio</button
 		>
 	{/if}
-	<div class="z-5 text-xs text-background">
-		<p><strong>{currentlyPlayingAudio.value?.metadata.title}</strong></p>
-		<p>
-			<strong>Linked Documents: </strong>
-			{#each ['posthum', 'unpublished', 'published', 'audio'] as const as type (type)}
-				{@const linkedDocs = currentlyPlayingAudio.value?.crossReferences?.linked_documents?.[type]}
-				{#each linkedDocs as linkedDoc (linkedDoc)}
-					<a href={resolve(linkedDoc)} class="mx-2">{linkedDoc}</a>
-				{/each}
-			{/each}
-		</p>
-	</div>
-	<div class="relative flex w-full items-center justify-between space-y-3 rounded-lg p-2">
+	<div class="mt-4 flex w-full flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
 		<!-- Control buttons -->
-		<div class="flex items-center justify-center gap-3">
+		<div class="flex shrink-0 items-center gap-2">
 			<button
 				onclick={() => {
 					if (isPlaying) pauseAudio();
 					else playAudio();
 				}}
-				class="rounded-full bg-purple-600 p-5 text-2xl text-white transition-colors hover:bg-purple-500"
+				class="preset-btn-circle --color-dark"
 				title={isPlaying ? 'Pause' : 'Play'}
+				aria-label={isPlaying ? 'Pause' : 'Play'}
 			>
 				{#if isPlaying}
-					<i class="fa-solid fa-pause text-foreground"></i>
+					<i class="fa-solid fa-pause" aria-hidden="true"></i>
 				{:else}
-					<i class="fa-solid fa-play text-foreground"></i>
+					<i class="fa-solid fa-play" aria-hidden="true"></i>
 				{/if}
 			</button>
 			<button
 				onclick={prevChapter}
 				disabled={currentChapterIndex === 0}
-				class="rounded-full bg-gray-400 p-2 transition-colors not-disabled:hover:bg-purple-200 disabled:cursor-default disabled:opacity-50"
+				class="preset-btn-circle --color-light border border-foreground disabled:cursor-default disabled:opacity-40"
 				title="Previous Chapter"
+				aria-label="Previous Chapter"
 			>
-				<i class="fa-solid fa-backward text-foreground"></i></button
+				<i class="fa-solid fa-turn-up -rotate-90" aria-hidden="true"></i></button
 			>
 
 			<button
 				onclick={nextChapter}
 				disabled={currentChapterIndex >= chapters.length - 1}
-				class="rounded-full bg-gray-400 p-2 transition-colors not-disabled:hover:bg-purple-200 disabled:cursor-default disabled:opacity-50"
+				class="preset-btn-circle --color-light border border-foreground disabled:cursor-default disabled:opacity-40"
 				title="Next Chapter"
+				aria-label="Next Chapter"
 			>
-				<i class="fa-solid fa-forward text-foreground"></i>
+				<i class="fa-solid fa-turn-down -rotate-90" aria-hidden="true"></i>
 			</button>
 		</div>
 
 		<!-- Position Indicator and Chapters -->
-		<div class="flex w-full justify-center">
-			<div class="mx-10 w-full max-w-200">
+		<div class="min-w-0 flex-1">
+			<div class="w-full">
 				<!-- Header: chapter name + time -->
-				<div class="flex w-full items-center justify-between">
-					<span class="truncate text-sm font-medium">
+				<div class="flex w-full items-center justify-between gap-3">
+					<span class="min-w-0 truncate text-sm font-medium">
 						{currentChapter?.chapName ?? 'No chapter'}
 					</span>
-					<span class="text-xs text-gray-400">
+					<span class="shrink-0 text-xs tabular-nums">
 						{formatTime(sliderValue)} / {formatTime(duration)}
 					</span>
 				</div>
 				<!-- Slider with chapter markers -->
-				<div class="pb-4">
-					<Slider.Root
-						type="single"
-						bind:value={sliderValue}
-						max={duration || 1}
-						step={0.1}
-						onpointerdown={() => (isDragging = true)}
-						onValueCommit={(v) => {
-							isDragging = false;
-							seekTo(v);
-						}}
-						class="relative flex w-full touch-none items-center select-none"
-					>
-						<!-- {#snippet children()} -->
-						<span
-							class="relative h-2 w-full grow cursor-pointer overflow-hidden rounded-full bg-gray-300"
+				<div class="mt-2">
+					<div class="relative">
+						<Slider.Root
+							type="single"
+							bind:value={sliderValue}
+							max={duration || 1}
+							step={0.1}
+							onpointerdown={() => (isDragging = true)}
+							onValueCommit={(v) => {
+								isDragging = false;
+								seekTo(v);
+							}}
+							class="relative flex w-full touch-none items-center select-none"
 						>
-							<Slider.Range class="absolute h-full bg-purple-600" />
-						</span>
-						<Slider.Thumb
-							index={0}
-							class="block size-[18px] cursor-pointer rounded-full border border-gray-400 bg-white shadow-sm transition-colors hover:border-purple-600 focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2 focus-visible:outline-hidden"
-						/>
-						<!-- {/snippet} -->
-					</Slider.Root>
-					<!-- Chapter markers: clickable, positioned proportionally along the track -->
-					<div class="relative mt-2 h-4 w-full">
-						{#if duration > 0}
-							{#each chapters as chapter, i (chapter.id)}
-								{#if chapter.time <= duration}
-									{@const pct = (chapter.time / duration) * 100}
-									<!-- clamp so edge labels don't overflow the container -->
-									{@const clamped = Math.min(Math.max(pct, 3), 97)}
-									<button
-										class={[
-											'absolute -translate-x-1/2  rounded px-1 text-xs font-semibold whitespace-nowrap transition-colors',
-											currentChapterIndex === i
-												? 'text-purple-600'
-												: 'text-gray-500  hover:text-gray-800'
-										]}
-										style={`left: ${clamped}%`}
-										onclick={() => seekTo(chapter.time)}
-										title="Jump to {chapter.chapName}"
-									>
-										{chapter.chapName}
-									</button>
-								{/if}
-							{/each}
-						{/if}
+							<span
+								class="relative h-2 w-full grow cursor-pointer overflow-hidden rounded-full bg-foreground/20"
+							>
+								<Slider.Range class="absolute h-full bg-foreground" />
+							</span>
+							<Slider.Thumb
+								index={0}
+								aria-label="Audio position"
+								class="z-20 block size-[18px] cursor-pointer rounded-full border-2 border-foreground bg-background focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2 focus-visible:outline-hidden"
+							/>
+						</Slider.Root>
+						<div class="pointer-events-none absolute inset-x-[9px] top-1/2 z-10 h-0">
+							{#if duration > 0}
+								{#each chapters as chapter (chapter.id)}
+									{#if chapter.chapName && chapter.time >= 0 && chapter.time <= duration}
+										<button
+											class="pointer-events-auto absolute flex size-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full"
+											style={`left: ${(chapter.time / duration) * 100}%`}
+											onclick={() => seekTo(chapter.time)}
+											aria-label="Jump to {chapter.chapName} on timeline"
+											title="Jump to {chapter.chapName}"
+										>
+											<span class="size-2 rounded-full border border-foreground bg-background"
+											></span>
+										</button>
+									{/if}
+								{/each}
+							{/if}
+						</div>
+					</div>
+					<div class="mt-2 flex max-w-full gap-2 overflow-x-auto pb-1" aria-label="Chapters">
+						{#each chapters as chapter, i (chapter.id)}
+							{#if chapter.chapName && duration > 0 && chapter.time >= 0 && chapter.time <= duration}
+								<button
+									class={[
+										'preset-btn-round --xs shrink-0',
+										currentChapterIndex === i && '--active'
+									]}
+									onclick={() => seekTo(chapter.time)}
+									title="Jump to {chapter.chapName}"
+									aria-label="Jump to {chapter.chapName}"
+								>
+									{chapter.chapName}
+								</button>
+							{/if}
+						{/each}
 					</div>
 				</div>
 			</div>

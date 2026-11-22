@@ -171,7 +171,13 @@
 			<!-- Audio -->
 			{#if currentFilesAudio.value?.slug}
 				<button
-					class="group hover:bg-mute my-10 grid h-max w-max max-w-110 grid-cols-[auto_1fr] items-center justify-center gap-10 rounded-lg border border-foreground p-5"
+					class={[
+						'group hover:bg-mute my-10 grid h-max w-max max-w-[80vw] grid-cols-[auto_1fr] items-center justify-center gap-10 rounded-lg border border-foreground p-5 md:max-w-110',
+						isAudioPlayerVisible.value &&
+						currentlyPlayingAudio.value?.slug === currentFilesAudio.value.slug
+							? 'pointer-events-none bg-muted'
+							: ''
+					]}
 					aria-label="play audio"
 					onclick={() => {
 						currentlyPlayingAudio.value = currentFilesAudio.value;
@@ -189,7 +195,7 @@
 					>
 						<i class="fa-solid fa-headphones"></i>
 					</div>
-					<p class="text-sm">Listen to the Audio Document linked to this document.</p>
+					<p class="text-left text-sm">Listen to the Audio Document linked to this document.</p>
 				</button>
 			{/if}
 		</div>

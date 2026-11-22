@@ -21,12 +21,14 @@
 	// Reset Audio Data
 	$effect(() => {
 		const audioId = data.resolvedDoc?.item?.crossReferences?.linked_documents?.audio?.[0]; //!FIX [0]-hack
-		if (audioId) {
-			currentFilesAudio.value =
-				(data.crossRef.linked_documents?.audio?.filter((entry) => {
-					return entry.docKey === audioId;
-				})[0].item as TDocItemsAudio) || null;
-		}
+		currentFilesAudio.value = audioId
+			? ((data.crossRef.linked_documents?.audio?.find((entry) => entry.docKey === audioId)?.item as
+					TDocItemsAudio | null | undefined) ?? null)
+			: null;
+
+		return () => {
+			currentFilesAudio.value = null;
+		};
 	});
 </script>
 

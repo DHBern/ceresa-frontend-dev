@@ -27,7 +27,7 @@
 	<aside
 		in:slide={{ duration: 300 }}
 		out:slide={{ duration: 300 }}
-		class="fixed bottom-0 z-9999999999 w-screen bg-foreground"
+		class="fixed bottom-0 z-499999999 max-h-[80vh] w-full overflow-y-auto border-t border-foreground bg-background text-foreground shadow-lg"
 	>
 		{#if currentlyPlayingAudio.value}
 			<AudioPlayer />
