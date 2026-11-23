@@ -493,7 +493,8 @@
 					"filename_or_url_preview": "A-1-b_6-2_012.tif"
 				},
 				"crossReferences": {
-					"group_ids": ["group_011"]
+					"group_ids": ["group_011"],
+					"linked_documents": { "audio": ["audio_0008"] }
 				},
 				"publication": {
 					"pub_type": "postumo",
@@ -1648,7 +1649,8 @@
 					"filename_or_url_preview": "A-1-b_6-3_031.tif"
 				},
 				"crossReferences": {
-					"group_ids": ["group_011"]
+					"group_ids": ["group_011"],
+					"linked_documents": { "audio": ["audio_0011"] }
 				},
 				"publication": {
 					"pub_type": "postumo",
@@ -1703,7 +1705,8 @@
 					"filename_or_url_preview": "A-1-b_6-3_035.tif"
 				},
 				"crossReferences": {
-					"group_ids": ["group_011"]
+					"group_ids": ["group_011"],
+					"linked_documents": { "audio": ["audio_0009"] }
 				},
 				"publication": {
 					"pub_type": "postumo",
@@ -1758,7 +1761,8 @@
 					"filename_or_url_preview": "A-1-b_6-3_040-1.tif"
 				},
 				"crossReferences": {
-					"group_ids": ["group_011"]
+					"group_ids": ["group_011"],
+					"linked_documents": { "audio": ["audio_0012"] }
 				},
 				"publication": {
 					"pub_type": "postumo",
@@ -3995,7 +3999,7 @@
 				"crossReferences": {
 					"group_ids": ["group_011"],
 					"linked_documents": {
-						"audio": ["audio_0001"]
+						"audio": ["audio_0010"]
 					}
 				},
 				"publication": {

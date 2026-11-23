@@ -27,7 +27,7 @@
 	<aside
 		in:slide={{ duration: 300 }}
 		out:slide={{ duration: 300 }}
-		class="fixed bottom-0 z-499999999 max-h-[80vh] w-full overflow-y-auto border-t border-foreground bg-background text-foreground shadow-lg"
+		class="fixed bottom-0 z-499999999 max-h-[80vh] w-full overflow-y-auto border-t border-foreground bg-green-50 text-foreground shadow-lg"
 	>
 		{#if currentlyPlayingAudio.value}
 			<AudioPlayer />
@@ -43,10 +43,12 @@
 	<div class="px-10">
 		<p>
 			<a
-				class="w-max mx-auto  block underline"
+				class="mx-auto block w-max underline"
 				href="https://arcipelago-ceresa.digitaleditions.ch/"
 				target="blank"
-				rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square mr-2" aria-hidden="true"></i>arcipelago-ceresa.digitaleditions.ch</a
+				rel="noopener noreferrer"
+				><i class="fa-solid fa-arrow-up-right-from-square mr-2" aria-hidden="true"
+				></i>arcipelago-ceresa.digitaleditions.ch</a
 			>
 		</p>
 		<div class="mt-10 flex w-full justify-around gap-10">
