@@ -27,6 +27,7 @@
 	} from '$lib/globals/ui-states.svelte';
 	import { doc_sequences } from '$lib/data/doc_sequences.json';
 	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
+	import { DOCTYPE_STYLES } from '$lib/globals/constants.svelte';
 
 	let {
 		docId,
@@ -116,7 +117,7 @@
 
 	function getFirstIIIFImage(item: unknown): string | undefined {
 		const url = getProperty(getProperty(item, 'iiif'), 'filename_or_url_preview');
-		return typeof url === 'string' ? resolveIIIFUrl(url) ?? undefined : undefined;
+		return typeof url === 'string' ? (resolveIIIFUrl(url) ?? undefined) : undefined;
 	}
 
 	function getCrossRefTitle(item: unknown, fallback: string): string {
@@ -296,24 +297,31 @@
 	<div class="w-full grid-cols-[1fr_2fr] px-10">
 		<div class="w-full">
 			<!-- Category Backlinks -->
-			<h2 class="mb-2 font-sans text-xl font-bold text-blue-500">
-				<!-- Genre -->
-				{#if doc_sequences.dictionaries['piccolo'].docs.includes(resDoc.item.slug)}
-					<a class="" href={resolve(doc_sequences.dictionaries['piccolo'].url_overview)}
-						>Piccolo Dizionario</a
-					>
-				{:else if doc_sequences.dictionaries['eliminabile'].docs.includes(resDoc.item.slug)}
-					<a class="" href={resolve(doc_sequences.dictionaries['eliminabile'].url_overview)}
-						>Dizionario Eliminabile</a
-					>
-				{:else}
-					<a class="" href={resolve(`/edition/${dictGenre_current?.slug}`)}
-						>{dictGenre_current?.label_singular}</a
-					>
-				{/if}
-				<span class="mx-2"> | </span>
+			<h2 class={['mb-2 font-sans text-xl font-bold']}>
 				<!-- DocType -->
-				<span>{dictDocs[resDoc.docType]?.label_singular}</span>
+				<span
+					class={[
+						'mb-2 w-max rounded-sm px-3 py-1 font-sans text-xl font-bold',
+						DOCTYPE_STYLES[resDoc?.docType]
+					]}
+					>{dictDocs[resDoc.docType]?.label_singular}
+					<span class="mx-2">|</span>
+					<!-- Separator -->
+					<!-- Genre -->
+					{#if doc_sequences.dictionaries['piccolo'].docs.includes(resDoc.item.slug)}
+						<a class="" href={resolve(doc_sequences.dictionaries['piccolo'].url_overview)}
+							>Piccolo Dizionario</a
+						>
+					{:else if doc_sequences.dictionaries['eliminabile'].docs.includes(resDoc.item.slug)}
+						<a class="" href={resolve(doc_sequences.dictionaries['eliminabile'].url_overview)}
+							>Dizionario Eliminabile</a
+						>
+					{:else}
+						<a class="" href={resolve(`/edition/${dictGenre_current?.slug}`)}
+							>{dictGenre_current?.label_singular}</a
+						>
+					{/if}
+				</span>
 			</h2>
 
 			<!-- Document Title -->

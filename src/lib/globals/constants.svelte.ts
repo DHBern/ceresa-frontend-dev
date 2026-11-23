@@ -26,7 +26,7 @@ export const DOC_GENRETYPE_STYLES: Record<string, string> = {
 };
 
 export const DOCTYPE_STYLES: Record<string, string> = {
-	published: 'bg-teal-100 text-teal-900',
+	published: 'bg-violet-100 text-violet-900',
 	unpublished: 'bg-blue-100 text-blue-900',
 	posthum: 'bg-green-100 text-green-900',
 };
