@@ -53,32 +53,47 @@
             <ab>
                <fw type="pageNum" place="topright">1.</fw>
             </ab>
-            <head><lb xml:id="p001_r_tl_1"/>Vittorini e la nuova prosa italiana</head>
-            <p><lb xml:id="p001_r_tl_2"/>La prima cosa di Vittorini che ho letto è un brano
-               intitolato: A solo, la radio, apparso in un numero ormai piuttosto vecchio del
-               «Tesoretto». Nello stesso almanacco letterario ho trovato una prosa di Cesare Pavese,
-               Il prato dei morti. Il Vittorini del «Tesoretto» non era ancora il Vittorini più
-               maturo, né il Pavese del racconto breve, quello che mi si rivelò più tardi, leggendo
-               Paesi tuoi. Non credo sia possibile avvicinare Vittorini e Pavese se non in questo
-               modo diretto, da lettore; la critica troverebbe, sicuramente, altre vie.</p>
-            <p><lb xml:id="p001_r_tl_15"/>Quando dico di aver scoperto Vittorini e Pavese
-               contemporaneamente, non erano loro che mi interessavano, ma il loro modo di
-               raccontare e, quindi, il loro modo di scrivere.</p>
-            <p><lb xml:id="p001_r_tl_19"/>In Italia non esistono più romanzieri, ma allo stesso
-               tempo sembra altamente improbabile che nessuno degli scrittori italiani moderni non
-               abbia provato almeno una volta a scrivere un romanzo, non abbia abbozzato almeno un
-               progetto di romanzo. Ciò si nota, se non nei loro capitoli di prosa, almeno negli
-               argomenti che hanno scelto per i loro racconti. E forse è superfluo soffermarsi sul
-               fatto che ogni giovane autore italiano abbia scritto, sotto forma di biografia o di
-               racconto, i propri ricordi d’infanzia – influenza di Proust? –; occorre invece dare
-               importanza a quest’altro fatto che il giovane autore italiano è sempre un poeta,
-               anche quando scrive in prosa. </p>
-            <p><lb xml:id="p001_r_tl_32"/>La mia scoperta, leggendo Vittorini e Pavese, si è fermata
-               lì. E se, più tardi, leggendo Conversazione in Sicilia e Paesi tuoi, ho dovuto
-               rendermi conto che, riguardo a questi due scrittori, bisognava tenere conto di altri
-               punti di vista e di altre distinzioni, non sono riuscito a decidermi a attribuire
-               maggiore importanza a ciò che li differenzia piuttosto che a ciò che li accomuna: il
-               loro modo di scrivere, il loro modo di esprimersi.</p>
+            <head><lb xml:id="p001_r_tl_1"/><rs type="person" key="person_0020" xml:id="r1"
+                  >Vittorini</rs> e la nuova prosa italiana</head>
+            <p><lb xml:id="p001_r_tl_2"/>La prima cosa di <rs type="person" key="person_0020"
+                  xml:id="r2">Vittorini</rs> che ho letto è un brano intitolato: A solo, la radio,
+               apparso in un numero ormai piuttosto vecchio del <rs type="work" key="work_0008"
+                  xml:id="r3">Tesoretto</rs>. Nello stesso almanacco letterario ho trovato una prosa
+               di <rs type="person" key="person_0018" xml:id="r4">Cesare Pavese</rs>, <rs
+                  type="work" key="work_0010" xml:id="r5">Il prato dei morti</rs>. Il <rs
+                  type="person" key="person_0020" xml:id="r6">Vittorini</rs> del <rs type="work"
+                  key="work_0008" xml:id="r7">Tesoretto</rs> non era ancora il <rs type="person"
+                  key="person_0020" xml:id="r8">Vittorini</rs> più maturo, né il <rs type="person"
+                  key="person_0018" xml:id="r9">Pavese</rs> del racconto breve, quello che mi si
+               rivelò più tardi, leggendo <rs type="work" key="work_0009" xml:id="r10">Paesi
+                  tuoi</rs>. Non credo sia possibile avvicinare <rs type="person" key="person_0020"
+                  xml:id="r11">Vittorini</rs> e <rs type="person" key="person_0018" xml:id="r12"
+                  >Pavese</rs> se non in questo modo diretto, da lettore; la critica troverebbe,
+               sicuramente, altre vie.</p>
+            <p><lb xml:id="p001_r_tl_15"/>Quando dico di aver scoperto <rs type="person"
+                  key="person_0020" xml:id="r13">Vittorini</rs> e <rs type="person"
+                  key="person_0018" xml:id="r14">Pavese</rs> contemporaneamente, non erano loro che
+               mi interessavano, ma il loro modo di raccontare e, quindi, il loro modo di
+               scrivere.</p>
+            <p><lb xml:id="p001_r_tl_19"/>In <rs type="place" key="place_0009" xml:id="r15"
+                  >Italia</rs> non esistono più romanzieri, ma allo stesso tempo sembra altamente
+               improbabile che nessuno degli scrittori italiani moderni non abbia provato almeno una
+               volta a scrivere un romanzo, non abbia abbozzato almeno un progetto di romanzo. Ciò
+               si nota, se non nei loro capitoli di prosa, almeno negli argomenti che hanno scelto
+               per i loro racconti. E forse è superfluo soffermarsi sul fatto che ogni giovane
+               autore italiano abbia scritto, sotto forma di biografia o di racconto, i propri
+               ricordi d’infanzia – influenza di <rs type="person" key="person_0019" xml:id="r16"
+                  >Proust</rs>? –; occorre invece dare importanza a quest’altro fatto che il giovane
+               autore italiano è sempre un poeta, anche quando scrive in prosa. </p>
+            <p><lb xml:id="p001_r_tl_32"/>La mia scoperta, leggendo <rs type="person"
+                  key="person_0020" xml:id="r17">Vittorini</rs> e <rs type="person"
+                  key="person_0018" xml:id="r18">Pavese</rs>, si è fermata lì. E se, più tardi,
+               leggendo <rs type="work" key="work_0011" xml:id="r19">Conversazione in Sicilia</rs> e
+                  <rs type="work" key="work_0009" xml:id="r20">Paesi tuoi</rs>, ho dovuto rendermi
+               conto che, riguardo a questi due scrittori, bisognava tenere conto di altri punti di
+               vista e di altre distinzioni, non sono riuscito a decidermi a attribuire maggiore
+               importanza a ciò che li differenzia piuttosto che a ciò che li accomuna: il loro modo
+               di scrivere, il loro modo di esprimersi.</p>
             <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_002.tif" n="2"/>
             <ab>
                <fw type="pageNum" place="topright">2.</fw>
@@ -100,19 +115,23 @@
                dalla testa, alla penna.»</p>
             <p><lb xml:id="p002_r_tl_24"/>La “prosa d’arte”, il “capitolo”, è stata l’unica forma
                espressiva degli scrittori italiani degli ultimi decenni – ma è proprio qui che
-               occorre fare una distinzione; perché c’è stata la «prosa d’arte» di un Cecchi, di un
-               Bontempelli, e c’è stata la “prosa d’arte” dei più giovani, appunto quella di un
-               Vittorini che, nella sua Conversazione in Sicilia, si è collocato sulla linea più
-               pura e diretta di questa “scrittura orizzontale”, in modo tale che sembrasse essere
-               tutta sua, e solo sua in quel possesso perfetto. Non dimentico la fascia rossa sul
-               libro in vetrina, con questa iscrizione: «La terza edizione di un romanzo che la
-               critica ha definito una svolta nella letteratura narrativa italiana».</p>
+               occorre fare una distinzione; perché c’è stata la «prosa d’arte» di un <rs
+                  type="person" key="person_0021" xml:id="r21">Cecchi</rs>, di un <rs type="person"
+                  key="person_0022" xml:id="r22">Bontempelli</rs>, e c’è stata la “prosa d’arte” dei
+               più giovani, appunto quella di un <rs type="person" key="person_0020" xml:id="r23"
+                  >Vittorini</rs> che, nella sua <rs type="work" key="work_0011" xml:id="r24"
+                  >Conversazione in Sicilia</rs>, si è collocato sulla linea più pura e diretta di
+               questa “scrittura orizzontale”, in modo tale che sembrasse essere tutta sua, e solo
+               sua in quel possesso perfetto. Non dimentico la fascia rossa sul libro in vetrina,
+               con questa iscrizione: «La terza edizione di un romanzo che la critica ha definito
+               una svolta nella letteratura narrativa italiana».</p>
             <p><lb xml:id="p002_r_tl_41"/>Si potrebbe discutere questa formula e contestare al libro
-               di Vittorini la qualifica di “romanzo”. Ma una cosa è certa: se il romanzo, in
-               Italia, non esistesse più da tempo, se la “prosa d’arte” fosse l’unica forma di
-               espressione degli scrittori – per necessità forse più urgenti di tutte quelle che
-               potevano derivare dall’assenza di una società borghese favorevole alla nascita del
-               “romanzo”, </p>
+               di <rs type="person" key="person_0020" xml:id="r26">Vittorini</rs> la qualifica di
+               “romanzo”. Ma una cosa è certa: se il romanzo, in <rs type="place" key="place_0009"
+                  xml:id="r25">Italia</rs>, non esistesse più da tempo, se la “prosa d’arte” fosse
+               l’unica forma di espressione degli scrittori – per necessità forse più urgenti di
+               tutte quelle che potevano derivare dall’assenza di una società borghese favorevole
+               alla nascita del “romanzo”, </p>
             <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_003.tif" n="3"/>
             <ab>
                <fw type="pageNum" place="topright">3.</fw>
@@ -123,19 +142,22 @@
                infatti, era proprio questa «scrittura orizzontale» che permetteva a uno scrittore di
                esprimere il proprio universo in modo vivace, pur rimanendo legato, per forze
                maggiori, alla forma della «prosa d’arte». E queste “forze maggiori” le definiremo
-               forse con la massima chiarezza e precisione possibile affermando che l’Italia non ha
-               più avuto scrittori-romanzieri, ma semplicemente scrittori-poeti.</p>
+               forse con la massima chiarezza e precisione possibile affermando che l’<rs
+                  type="place" key="place_0009" xml:id="r27">Italia</rs> non ha più avuto
+               scrittori-romanzieri, ma semplicemente scrittori-poeti.</p>
             <p><lb xml:id="p003_r_tl_25"/>Questa sorta di «prosa narrativa», che chiameremo la prosa
-               di Vittorini, per distinguerla dalla “prosa d’arte” dei “capitoli”, – proprio quelli
-               di un Cecchi o di un Bilenchi –, da quella prosa cerebrale che poteva avere solo un
-               mondo del tutto personale e intellettuale da esprimere –, corrisponde al modo di
-               espressione più efficace e diretto del mondo che lo scrittore, legato alla vita e
-               agli eventi di questa vita, ha da esprimere. È un mondo che si trova effettivamente
-               in un “centro” di noi, come diceva il giovane “incomprensibile”, non è un mondo
-               intellettuale. Ed esprimendolo in linea diretta, in linea orizzontale rispetto al
-               foglio di carta che ha davanti a sé, è proprio quel mondo – e non la mente – a
-               dettare allo scrittore la forma austera e non liberamente scelta della sua prosa,
-               quella di cui appunto stiamo parlando qui.</p>
+               di <rs type="person" key="person_0020" xml:id="r28">Vittorini</rs>, per distinguerla
+               dalla “prosa d’arte” dei “capitoli”, – proprio quelli di un <rs type="person"
+                  key="person_0021" xml:id="r29">Cecchi</rs> o di un <rs type="person"
+                  key="person_0023" xml:id="r30">Bilenchi</rs> –, da quella prosa cerebrale che
+               poteva avere solo un mondo del tutto personale e intellettuale da esprimere –,
+               corrisponde al modo di espressione più efficace e diretto del mondo che lo scrittore,
+               legato alla vita e agli eventi di questa vita, ha da esprimere. È un mondo che si
+               trova effettivamente in un “centro” di noi, come diceva il giovane “incomprensibile”,
+               non è un mondo intellettuale. Ed esprimendolo in linea diretta, in linea orizzontale
+               rispetto al foglio di carta che ha davanti a sé, è proprio quel mondo – e non la
+               mente – a dettare allo scrittore la forma austera e non liberamente scelta della sua
+               prosa, quella di cui appunto stiamo parlando qui.</p>
             <p><lb xml:id="p003_r_tl_43"/>Il suo mondo può realizzarsi, in questa “prosa narrativa”
                diretta e nemica del romanzo di fantasia, solo nella scrittura orizzontale.</p>
             <pb xml:id="p004" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_004.tif" n="4"/>
@@ -143,32 +165,36 @@
                <fw type="pageNum" place="topright">4.</fw>
             </ab>
             <p><lb xml:id="p004_r_tl_1"/>Ed ecco, ora, l’importante differenza tra la “prosa d’arte”
-               cerebrale e quella di un Vittorini: è una differenza di mondo da esprimere. E la
-               prova più semplice di questo fatto teorico è fornita, a mio avviso, dallo stesso
-               Vittorini, che aveva preoccupazioni umane, legate a ciò che accadeva nel mondo, prima
-               ancora di averne di letterarie. Vale a dire che il suo mondo, che gli dettava la
-               forma espressiva, era un mondo umano, e non il mondo di un’élite preoccupata del
-               proprio modo di esprimersi. </p>
-            <p>Se dunque questa scrittura è la nuova prosa italiana, non è la prosa di Vittorini, ma
-               quella che lui, Vittorini, risulta padroneggiare al meglio. Non è né per imitazione
-               né per moda che essa è al tempo stesso la prosa dei giovani scrittori italiani.</p>
+               cerebrale e quella di un <rs type="person" key="person_0020" xml:id="r31"
+                  >Vittorini</rs>: è una differenza di mondo da esprimere. E la prova più semplice
+               di questo fatto teorico è fornita, a mio avviso, dallo stesso <rs type="person"
+                  key="person_0020" xml:id="r32">Vittorini</rs>, che aveva preoccupazioni umane,
+               legate a ciò che accadeva nel mondo, prima ancora di averne di letterarie. Vale a
+               dire che il suo mondo, che gli dettava la forma espressiva, era un mondo umano, e non
+               il mondo di un’élite preoccupata del proprio modo di esprimersi. </p>
+            <p>Se dunque questa scrittura è la nuova prosa italiana, non è la prosa di <rs
+                  type="person" key="person_0020" xml:id="r34">Vittorini</rs>, ma quella che lui,
+                  <rs type="person" key="person_0020" xml:id="r33">Vittorini</rs>, risulta
+               padroneggiare al meglio. Non è né per imitazione né per moda che essa è al tempo
+               stesso la prosa dei giovani scrittori italiani.</p>
             <p><lb xml:id="p004_r_tl_18"/>Prima che esista una “letteratura narrativa” uniforme, c’è
                un mondo che si vuole esprimere, comune a tutta la generazione. È proprio quel mondo
-               che oggi chiede di essere espresso direttamente; è lui a dettare la forma e il modo
-               di espressione. È lui che, passando orizzontalmente dallo scrittore al foglio di
-               carta, imprime alle frasi stesse una cadenza, un colore d’atmosfera e le forme di un
-               linguaggio che obbedisce alle severe leggi di una vera e propria poetica propria
-               della prosa.</p>
+               che oggi chiede <hi rendition="#u">di essere espresso direttamente</hi>; è lui a
+               dettare la forma e il modo di espressione. È lui che, passando orizzontalmente dallo
+               scrittore al foglio di carta, imprime alle frasi stesse una cadenza, un colore
+               d’atmosfera e le forme di un linguaggio che obbedisce alle severe leggi di una vera e
+               propria poetica propria della prosa.</p>
             <p><lb xml:id="p004_r_tl_32"/>Si tratta di una “prosa narrativa”, se volete, di
                ispirazione e non di libera scelta.</p>
-            <p><lb/>Tutto ciò è in contrasto con il romanzo di invenzione, con la trama condotta
-               sotto il dettato e la sorveglianza del cervello, e questo anche poco è contrario
-               anche alla scrittura in prospettiva della «prosa d’arte» cerebrale [questo passo
-               sarebbe da capire meglio]. E i pochi racconti di questa prosa d’arte cerebrale,
-               scritti con la gioia di inventare una trama, di «creare» un mondo sociale
-               pseudo-reale, ci hanno dimostrato che non potevano sfociare nel romanzo.</p>
-            <p><lb xml:id="p004_r_tl_44"/>Ma l’altra prosa, quella di Vittorini, potrebbe forse
-               riuscirci,</p>
+            <p><lb/><?oxy_comment_start author="luisepappe" timestamp="20261112T170404+0100" comment="[questo passo sarebbe da capire meglio]"?>Tutto
+               ciò è in contrasto con il romanzo di invenzione, con la trama condotta sotto il
+               dettato e la sorveglianza del cervello, e questo anche poco è contrario anche alla
+               scrittura in prospettiva della «prosa d’arte» cerebrale<?oxy_comment_end?>. E i pochi
+               racconti di questa prosa d’arte cerebrale, scritti con la gioia di inventare una
+               trama, di «creare» un mondo sociale pseudo-reale, ci hanno dimostrato che non
+               potevano sfociare nel romanzo.</p>
+            <p><lb xml:id="p004_r_tl_44"/>Ma l’altra prosa, quella di <rs type="person"
+                  key="person_0020" xml:id="r35">Vittorini</rs>, potrebbe forse riuscirci,</p>
             <pb xml:id="p005" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_005.tif" n="5"/>
             <ab>
                <fw type="pageNum" place="topright">5.</fw>
