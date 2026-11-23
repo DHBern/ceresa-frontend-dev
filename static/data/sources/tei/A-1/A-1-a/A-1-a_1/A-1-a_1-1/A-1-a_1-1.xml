@@ -51,6 +51,7 @@
          <div>
             <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_001.tif"
                n="1"/>
+            <anchor xml:id="a1"/>
             <head><add place="margin"><hi rendition="#u">PREFAZIONE PER "<rs type="work"
                         key="work_0001" xml:id="r1">GLI ALTRI</rs>"</hi></add></head>
             <p rendition="#right"><add place="margin"
@@ -61,7 +62,6 @@
                      /><hi rendition="#u"><rs type="place" key="place_0003" xml:id="r3">ROMA</rs>
                      inverno 45/46</hi>
                </add></p>
-            <anchor xml:id="a1"/>
             <note type="annotation" xml:id="n1" targetEnd="a1">Il titolo e l'intestazione in
                questione sono aggiunti nel margine superiore in una fase successiva alla prima
                stesura del documento, come si evince dal cambio di penna e di ductus</note>
@@ -129,7 +129,7 @@
                   /><del>Ma voi avete scritto così, voi, ieri?</del>
                <lb xml:id="p002_r_tl_21"/>Ma per voi, che differenza c'è fra quel che <lb
                   xml:id="p002_r_tl_22"/><del>scriveste </del><del><add place="above"
-                  >voi</add></del><del>ieri,</del>
+                  >voi</add></del> <del>ieri,</del>
                <del>ALICE CERESA</del><lb xml:id="p002_r_tl_23"/>scriveste voi ieri e quel che <lb
                   xml:id="p002_r_tl_24"/>scrivete oggi? </p>
             <ab rendition="#right">

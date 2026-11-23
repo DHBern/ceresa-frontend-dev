@@ -57,8 +57,10 @@
                   <fw type="catch" place="topright">A-</fw>
                </ab>
             <p>
-                  <lb xml:id="p001_l_2"/>→ usasi indifferentemente sia per significare interruzione
-                  di <lb xml:id="p001_r_2_tl_2"/> →<ref type="noteAnchor" target="#n1"
+                  <lb xml:id="p001_l_2"/>
+                  <choice><orig>→</orig><reg/></choice>usasi indifferentemente sia per significare
+                  interruzione di <lb xml:id="p001_r_2_tl_2"/>
+                  <choice><orig>→</orig><reg/></choice><ref type="noteAnchor" target="#n1"
                      >gravidanza</ref>
                   <note type="annotation" xml:id="n1"> La freccia sembra rinviare alla voce
                      gravidanza, che però non avrà alcuna elaborazione nel dizionario.</note> sia
@@ -66,8 +68,8 @@
                   aborto). Correttissima è qui l'estensione dal <lb xml:id="p001_r_2_tl_4"/>senso
                   stretto <del>al senso lato</del> (interruzione di gravidanza) <lb
                      xml:id="p001_r_2_tl_5"/>al senso lato (mostro o mostruosità), l'azione di
-                     inter<pc>-</pc><lb xml:id="p001_r_2_tl_6" break="no"/>ruzione di gravidanza essendo infatti
-                  considerata <del><gap reason="illegible" quantity="1"/></del><lb
+                     inter<pc>-</pc><lb xml:id="p001_r_2_tl_6" break="no"/>ruzione di gravidanza
+                  essendo infatti considerata <del><gap reason="illegible" quantity="1"/></del><lb
                      xml:id="p001_r_2_tl_7"/> una mostruosità, e mostro essendo considerato chi la
                      <lb xml:id="p001_r_2_tl_8"/>intraprende. Effettivamente esiste anche una terza
                      <lb xml:id="p001_r_2_tl_9"/>correttissima estensione, questa più che altro
@@ -80,8 +82,9 @@
                   conglomerato di cellule <lb xml:id="p001_r_2_tl_14"/>definibile, quanto
                   all'aspetto, mostro o mostruoso. <lb xml:id="p001_r_2_tl_15"/>Strana potrebbe
                   apparire a questa luce la protervia <lb xml:id="p001_r_2_tl_16"/>con cui chiesa
-                  cattolica e legislazione civile recla<pc>-</pc><lb xml:id="p001_r_2_tl_17" break="no"/>mano tali mostri o mostruosità gli uni per
-                  il <lb xml:id="p001_r_2_tl_18"/>censimento delle anime, gli altri per quello
+                  cattolica e legislazione civile recla<pc>-</pc><lb xml:id="p001_r_2_tl_17"
+                     break="no"/>mano tali mostri o mostruosità gli uni per il <lb
+                     xml:id="p001_r_2_tl_18"/>censimento delle anime, gli altri per quello
                      <del>civile</del>
                   <lb xml:id="p001_r_2_tl_19"/>amministrativo, ostinandosi ad annoverarli fra <lb
                      xml:id="p001_r_2_tl_20"/>la specie superiore che sarebbe l'umanità; non deve
@@ -91,12 +94,14 @@
                      <?oxy_comment_start author="luisepappe" timestamp="20261111T102850+0100" comment="ev. bisogna indicare con un commento editoriale che l&apos;aggiunta era prima inserita dopo &quot;notoriamente&quot;?"?><add
                      place="margin" hand="#hw"
                      ><?oxy_comment_start author="eva" timestamp="20261113T161101+0100" comment="riflettere insieme come agire in questi casi"?>anzitutto<?oxy_comment_end?>
-                     <?oxy_comment_end?></add> notoria<pc>-</pc><lb xml:id="p001_r_2_tl_24" break="no"/>mente su basi statistiche e <del>non</del>
-                  quindi nume<pc>-</pc><lb xml:id="p001_r_2_tl_25" break="no"/>riche e non più selettive; e
+                     <?oxy_comment_end?></add> notoria<pc>-</pc><lb xml:id="p001_r_2_tl_24"
+                     break="no"/>mente su basi statistiche e <del>non</del> quindi nume<pc>-</pc><lb
+                     xml:id="p001_r_2_tl_25" break="no"/>riche e non più selettive; e
                   secondariamente <lb xml:id="p001_r_2_tl_27"/>non essendo essi legati né in alcun
                   modo <lb xml:id="p001_r_2_tl_29"/>condizionati <del>dalla</del>
                   <add place="above">nemmeno dalle</add> correttezze grammaticali <lb
-                     xml:id="p001_r_2_tl_31"/>di termini e signif<del>a</del><add place="over">i</add>cati sia pure <del><gap quantity="4" reason="illegible"/></del><lb
+                     xml:id="p001_r_2_tl_31"/>di termini e signif<del>a</del><add place="over"
+                     >i</add>cati sia pure <del><gap quantity="4" reason="illegible"/></del><lb
                      xml:id="p001_r_2_tl_32"/><del><gap quantity="4" reason="illegible"/></del> di
                   conio istituzionale e di uso <lb xml:id="p001_r_2_tl_33"/>volontariamente
                      <del>promiscuo</del> contemporaneamente <lb xml:id="p001_r_2_tl_34"/><del><del>
@@ -111,18 +116,22 @@
                <p>
                   <lb xml:id="p002_tr_3_tl_2"/>Attiene alla particolare prassi riproduttiva dei
                   mammiferi la quale, <lb xml:id="p002_tr_3_tl_3"/>com'è noto, discende dalla
-                  copulazione di due diversi organismi bio<pc>-</pc><lb xml:id="p002_tr_3_tl_4" break="no"/>logici, uno femminile e l'altro maschile,
-                  o perlomeno così denomina<pc>-</pc><lb xml:id="p002_tr_3_tl_5" break="no"/>ti. Quali che siano le modalità di questa
-                  copulazione, l'embrione <lb xml:id="p002_tr_3_tl_6"/>mammifero si sviluppa
-                  uterinamente, vale a dire all'interno dell'or<pc>-</pc><lb xml:id="p002_tr_3_tl_7" break="no"/>gano fisiologico femminile attrezzato per
-                  questa bisogna, e l'organi<pc>-</pc><lb xml:id="p002_tr_3_tl_8" break="no"/>smo femminile ne detiene quindi la
-                  proprietà di fatto. L'interruzione <lb xml:id="p002_tr_3_tl_9"/>dello sviluppo
-                  dell'embrione viene appunto chiamat<del>i</del><add place="over">a</add>
-                  <choice><orig>ABORTO</orig><reg rend="italic">aborto</reg></choice>.</p>
+                  copulazione di due diversi organismi bio<pc>-</pc><lb xml:id="p002_tr_3_tl_4"
+                     break="no"/>logici, uno femminile e l'altro maschile, o perlomeno così
+                     denomina<pc>-</pc><lb xml:id="p002_tr_3_tl_5" break="no"/>ti. Quali che siano
+                  le modalità di questa copulazione, l'embrione <lb xml:id="p002_tr_3_tl_6"
+                  />mammifero si sviluppa uterinamente, vale a dire all'interno dell'or<pc>-</pc><lb
+                     xml:id="p002_tr_3_tl_7" break="no"/>gano fisiologico femminile attrezzato per
+                  questa bisogna, e l'organi<pc>-</pc><lb xml:id="p002_tr_3_tl_8" break="no"/>smo
+                  femminile ne detiene quindi la proprietà di fatto. L'interruzione <lb
+                     xml:id="p002_tr_3_tl_9"/>dello sviluppo dell'embrione viene appunto
+                     chiamat<del>i</del><add place="over">a</add>
+                  <choice><orig>ABORTO</orig><reg><hi rendition="#i">aborto</hi></reg></choice>.</p>
                <p><lb xml:id="p002_tr_3_tl_10"/>Molti mammiferi dispongono di un naturale controllo
                   delle nascite in <lb xml:id="p002_tr_3_tl_11"/>quanto la ricettività fisiologica
                   femminile avviene ciclicamente a <lb xml:id="p002_tr_3_tl_12"/>intervalli
-                  notevolmente distanziati, e in quanto l'organismo biologi<pc>-</pc><lb xml:id="p002_tr_3_tl_13" break="no"/>co femminile esercita il richiamo del
+                  notevolmente distanziati, e in quanto l'organismo biologi<pc>-</pc><lb xml:id="p002_tr_3_tl_13" break="no"/>co
+                  femminile esercita il richiamo del
                   partner della copulazione sol<pc>-</pc><lb xml:id="p002_tr_3_tl_14" break="no"/>tanto nel periodo della ricettività. Nei
                   mammiferi umani non esiste <lb xml:id="p002_tr_3_tl_15"/>invece alcun controllo
                   naturale delle nascite e richiami e ricettivi<pc>-</pc><lb xml:id="p002_tr_3_tl_16" break="no"/>tà si esercitano indiscriminatamente,
@@ -142,14 +151,14 @@
                   è per semplicità risaliti <lb xml:id="p002_tr_3_tl_29"/>anche a monte ponendo
                   limitazioni alla permissività della copulazio<pc>-</pc><lb xml:id="p002_tr_3_tl_30" break="no"/>ne femminile perlomeno nella prassi,
                   nonché discesi a valle per <lb xml:id="p002_tr_3_tl_31"/>quanto appunto riguarda
-                     l'<choice><orig>ABORTO</orig><reg rend="italic">aborto</reg></choice>.
+                  l'<choice><orig>ABORTO</orig><reg><hi rendition="#i">aborto</hi></reg></choice>.
                   L'amministratività ha sempre bada<pc>-</pc><lb xml:id="p002_tr_3_tl_32" break="no"/>to al sodo, non competendole compiti di
                   maggiore sottigliezza.</p>
                <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-5_010.tif"
                   n="2"/>
                <?oxy_comment_start author="rose_user" timestamp="20261006T141727+0200" comment="essendo solo una indicazione di continuum testuale forse va indicata come elemento extratestuale da non visualizzare nella LS?"?>
                <ab>
-                  <fw type="pageNum" place="topcenter">2</fw>
+                  <fw type="pageNum" place="topleft">2</fw>
                   <fw type="catch" place="topcenter">(aborto)</fw>
                </ab><?oxy_comment_end?>
                <p>
@@ -171,7 +180,7 @@
                   <add place="above">irrilevante,</add> fa oggi l'og<pc>-</pc><lb xml:id="p003_r_tl_14" break="no"/>getto di una vertenza sindacale avanzata dal
                   contraente amministrato, <lb xml:id="p003_r_tl_15"/>vertenza nota con il timido e
                   alquanto improprio nome di "liberali<pc>-</pc><lb xml:id="p003_r_tl_16" break="no"/>zazione
-                  dell'<?oxy_comment_start author="luisepappe" timestamp="20261111T150008+0100" comment="cfr. commento sopra"?>ABORTO<?oxy_comment_end?>".</p>
+                  dell'<choice><orig>ABORTO</orig><reg><hi rendition="#i">aborto</hi></reg></choice>".</p>
             </div>
             
             <div xml:id="A-1-b_6-5_AC003_c">
@@ -237,8 +246,8 @@
                   anche <lb xml:id="p008_r_2_tl_39"/>dal secondo contraente della concezione, per
                   esempio nel <lb xml:id="p008_r_2_tl_40"/>senso di non disperdere ai quattro venti
                   quella che pure, in <lb xml:id="p008_r_2_tl_41"
-                     /><del><unclear>altr</unclear></del> altri contesti, vie\ne considerata un
-                  superprezioso <del><unclear>seme</unclear></del>
+                     /><del><unclear>altr</unclear></del> altri contesti, viene considerato un
+                        superprezioso <del><unclear>seme</unclear></del>
                   <lb xml:id="p008_r_2_tl_42"/>bene della categoria degli individui di sesso
                   maschile. </p>
                <p><lb xml:id="p008_r_2_tl_43"/>Grande e pertanto inspiegabile risulta allo stato
