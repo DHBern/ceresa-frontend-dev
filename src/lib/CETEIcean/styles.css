@@ -59,7 +59,7 @@
 	--color-note-figure-bg: #02c346;
 	--color-note-figure-border: #16a34a;
 
-	--color-note-active: var(--color-dark-10);
+	--color-note-active: var(--color-dark-90);
 	--color-note-active-foreground: var(--color-background-contrast);
 	--color-footnote-circle: var(--color-dark-40);
 
@@ -69,7 +69,7 @@
 }
 
 .dark {
-	--color-note-active: var(--color-dark-40);
+	--color-note-active: var(--color-dark-70);
 	--color-note-active-foreground: var(--color-background-contrast);
 	--color-correction: #779eec;
 }
