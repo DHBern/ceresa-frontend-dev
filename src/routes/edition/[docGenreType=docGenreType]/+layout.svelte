@@ -8,6 +8,7 @@
 	} from '$lib/types/documents/TDict_DocGenreTypes';
 	import type { PageData } from './$types';
 	import { resolve } from '$app/paths';
+	import { resolveIIIFUrl } from '$lib/functions/ease_of_use/resolveIIIFUrl';
 	import DocListGallery from './DocListGallery.svelte';
 	import SortDirectionMenu from '$lib/components/SortDirectionMenu.svelte';
 	import edTypes from '$lib/dictionaries/dict_docEdTypes.json';
@@ -49,7 +50,7 @@
 					pubPlace: item.publication.pub_place ?? null,
 					typeEditoriale: item.metadata.type_editorial ?? null,
 					hasAudio: (item.crossReferences.linked_documents?.audio?.length ?? 0) > 0,
-					imageUrl: item.iiif.urls_IIIF_images?.[0] ?? null,
+					imageUrl: resolveIIIFUrl(item.iiif.filename_or_url_preview),
 					dict: doc_sequences.dictionaries['piccolo'].docs.includes(item.slug)
 						? 'piccolo'
 						: doc_sequences.dictionaries['eliminabile'].docs.includes(item.slug)

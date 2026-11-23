@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
+	import { resolveIIIFUrl } from '$lib/functions/ease_of_use/resolveIIIFUrl';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
 	import { findMatchingSequences } from '$lib/functions/sequences/findMatchingSequences';
 	import { doc_sequences as seqAllRaw } from '$lib/data/doc_sequences.json';
@@ -238,7 +239,7 @@
 			]}
 		>
 			<IIIF_Thumb
-				url={resDoc?.iiif.urls_IIIF_images?.[0] ?? undefined}
+				url={resolveIIIFUrl(resDoc?.iiif.filename_or_url_preview)}
 				iiif_imageAPI_width={200}
 				classesContainer=""
 				classes={`min-h-2  mx-2 my-1 flex justify-center items-center group-hover:grayscale-0!

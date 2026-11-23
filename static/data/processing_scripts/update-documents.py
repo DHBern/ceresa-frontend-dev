@@ -541,13 +541,17 @@ class Converter:
                     f"'Datazione d'autrice normalizzata' -> metadata.date set to TUnset.")
 
             urls = self.iiif_for(ident, key)
-            if urls is None:
+            preview = (urls[0] if urls and urls[0]
+                       else rec.get("transcribus.filename_first_facsimile"))
+            if preview and not re.match(r"^https?://", preview, re.IGNORECASE) \
+                    and not preview.lower().endswith(".tif"):
+                preview += ".tif"
+            rec["iiif.filename_or_url_preview"] = preview
+            if preview is None:
                 self.warn(
-                    f"Sheet '{sheet_name}' row {rno} (identifier '{ident}'): no entry "
-                    f"found in old_documents.json via tei.filename (tried '{key}' "
-                    f"and '{ident}') -> iiif.urls_IIIF_images set to TUnset.")
-            else:
-                rec["iiif.urls_IIIF_images"] = urls
+                    f"Sheet '{sheet_name}' row {rno} (identifier '{ident}'): no first "
+                    f"facsimile in old_documents.json or Transcribus -> "
+                    f"iiif.filename_or_url_preview set to TUnset.")
 
             cited = self.cited_entities_for(ident, key)
             if cited is not None:
@@ -632,7 +636,8 @@ class Converter:
             "description": (
                 f"Sources: spreadsheet '{self.xlsx_path.name}' "
                 f"(sheets: {', '.join(SHEET_CONFIG)}); "
-                f"IIIF image URLs, crossReferences.cited_entities and "
+                f"First facsimiles from '{self.old_path.name}' or the spreadsheet; "
+                f"crossReferences.cited_entities and "
                 f"crossReferences.linked_entities from '{self.old_path.name}' "
                 f"(matched via tei.filename). Only rows with 'Included in final "
                 f"version' = sì/si/TRUE were converted. Run on "

@@ -2,6 +2,7 @@
 	import type { Snippet } from 'svelte';
 	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
 	import IIIF_Thumb from '$lib/components/IIIF_Thumb.svelte';
+	import { resolveIIIFUrl } from '$lib/functions/ease_of_use/resolveIIIFUrl';
 	import { printDateRange } from '$lib/functions/ease_of_use/dateFunctions';
 	import { DOC_EDTYPE_STYLES, DOCTYPE_STYLES } from '$lib/globals/constants.svelte';
 	import { galleryViewType } from '$lib/globals/ui-states.svelte';
@@ -20,7 +21,7 @@
 		};
 		archival: { signature: string | null };
 		publication: { pub_place?: string | null };
-		iiif: { urls_IIIF_images?: string[] | null };
+		iiif: { filename_or_url_preview?: string | null };
 		crossReferences: { linked_documents?: { audio?: string[] } | null };
 	};
 
@@ -62,7 +63,7 @@
 				pubPlace: item?.publication.pub_place ?? null,
 				typeEditoriale: item?.metadata.type_editorial ?? null,
 				hasAudio: (item?.crossReferences.linked_documents?.audio?.length ?? 0) > 0,
-				imageUrl: item?.iiif.urls_IIIF_images?.[0] ?? null
+				imageUrl: resolveIIIFUrl(item?.iiif.filename_or_url_preview)
 			};
 		});
 	});

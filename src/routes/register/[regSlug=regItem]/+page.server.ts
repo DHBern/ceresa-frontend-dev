@@ -4,6 +4,7 @@ import { register as reg } from '$lib/data/register.json';
 import { documents as allDocsRaw } from '$lib/data/documents.json';
 import { map_previews } from '$lib/data/map_previews.json';
 import { resolveDoc } from '$lib/functions/ease_of_use/resolveDoc';
+import { resolveIIIFUrl } from '$lib/functions/ease_of_use/resolveIIIFUrl';
 import type { TDocKeys, TDocuments, TTextDocKeys, TTextDocuments } from '$lib/types/documents/TDocuments';
 import type { TRegister, TRegKeysFlat, TRegTypes } from '$lib/types/register/TRegister';
 import { resolveReg } from '$lib/functions/ease_of_use/resolveReg';
@@ -32,7 +33,11 @@ function resolveLinkedDocs(
 		const resolved = resolveDoc(allDocs, docId);
 		return {
 			docId: docId as string,
-			iiif_url: (resolved?.item)?.iiif.urls_IIIF_images?.[0] ?? null,
+			iiif_url: resolveIIIFUrl(
+				resolved?.item && 'iiif' in resolved.item
+					? resolved.item.iiif.filename_or_url_preview
+					: undefined
+			),
 			title_full:
 				((resolved?.item?.metadata as { title_full?: string })?.title_full ||
 					resolved?.item?.metadata.title_editorial) ??

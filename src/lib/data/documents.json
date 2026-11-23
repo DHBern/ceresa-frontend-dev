@@ -3,7 +3,7 @@
 		"generated_by": "convert_spreadsheet.py",
 		"task": "Convert data.xlsx (4 sheets) + old_documents.json into documents.json (type TDocuments); audio left empty.",
 		"generated_on": "2026-11-17T19:25:43Z",
-		"description": "Sources: spreadsheet 'data.xlsx' (sheets: Testi editi, Testi postumi, Testi inediti, Testi dizionario); IIIF image URLs, crossReferences.cited_entities and crossReferences.linked_entities from 'old_documents.json' (matched via tei.filename). Only rows with 'Included in final version' = sì/si/TRUE were converted. Run on 2026-11-17. All document keys and slugs are prefixed with their section (posthum_/unpublished_/published_); tei.version_id and tei.filename are the unprefixed identifier (no section prefix, no suffix). Missing data is null (TUnset)."
+		"description": "Sources: spreadsheet 'data.xlsx' (sheets: Testi editi, Testi postumi, Testi inediti, Testi dizionario); first facsimiles from 'old_documents.json' or the spreadsheet; crossReferences.cited_entities and crossReferences.linked_entities from 'old_documents.json' (matched via tei.filename). Only rows with 'Included in final version' = sì/si/TRUE were converted. Run on 2026-11-17. All document keys and slugs are prefixed with their section (posthum_/unpublished_/published_); tei.version_id and tei.filename are the unprefixed identifier (no section prefix, no suffix). Missing data is null (TUnset)."
 	},
 	"documents": {
 		"posthum": {
@@ -35,13 +35,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_11_AC001.json",
-					"urls_IIIF_images": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_004.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_005.tif"
-					]
+					"filename_or_url_preview": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null,
@@ -105,12 +99,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_11_AC002.json",
-					"urls_IIIF_images": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_011.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_012.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_013.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_014.tif"
-					]
+					"filename_or_url_preview": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_11_011.tif"
 				},
 				"crossReferences": {
 					"group_ids": null,
@@ -170,7 +159,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC001.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC001.json",
+					"filename_or_url_preview": "A-1-b_6-2_002.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -224,7 +214,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC002.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC002.json",
+					"filename_or_url_preview": "A-1-b_6-2_006.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -278,7 +269,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-2_008.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -332,7 +324,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC003.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC003.json",
+					"filename_or_url_preview": "A-1-b_6-2_009.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -386,7 +379,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC004.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC004.json",
+					"filename_or_url_preview": "A-1-b_6-2_010.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -440,7 +434,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC005.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC005.json",
+					"filename_or_url_preview": "A-1-b_6-2_011.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -494,7 +489,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-2_012.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -548,7 +544,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC007.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC007.json",
+					"filename_or_url_preview": "A-1-b_6-2_041.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -602,7 +599,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC008.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC008.json",
+					"filename_or_url_preview": "A-1-b_6-2_043.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -656,7 +654,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC009.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC009.json",
+					"filename_or_url_preview": "A-1-b_6-2_047.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -710,7 +709,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC010.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC010.json",
+					"filename_or_url_preview": "A-1-b_6-2_051.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -764,7 +764,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC011.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC011.json",
+					"filename_or_url_preview": "A-1-b_6-2_052.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -818,7 +819,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC012.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC012.json",
+					"filename_or_url_preview": "A-1-b_6-2_053.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -872,7 +874,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC013.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC013.json",
+					"filename_or_url_preview": "A-1-b_6-2_055.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -926,7 +929,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC014.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC014.json",
+					"filename_or_url_preview": "A-1-b_6-2_057.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -980,7 +984,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC016.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC016.json",
+					"filename_or_url_preview": "A-1-b_6-2_058.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1034,7 +1039,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-2_062.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1088,7 +1094,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-2_064.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1142,7 +1149,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-2_065.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1196,7 +1204,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC015.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC015.json",
+					"filename_or_url_preview": "A-1-b_6-2_058.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1250,7 +1259,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC019.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-2_AC019.json",
+					"filename_or_url_preview": "A-1-b_6-2_066.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1304,7 +1314,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC001.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC001.json",
+					"filename_or_url_preview": "A-1-b_6-3_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1358,7 +1369,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC002.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC002.json",
+					"filename_or_url_preview": "A-1-b_6-3_002.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1412,7 +1424,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC003.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC003.json",
+					"filename_or_url_preview": "A-1-b_6-3_004.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1466,7 +1479,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-3_016.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1520,7 +1534,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-3_015.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1574,7 +1589,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC004.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC004.json",
+					"filename_or_url_preview": "A-1-b_6-3_029-1.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1628,7 +1644,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC005.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC005.json",
+					"filename_or_url_preview": "A-1-b_6-3_031.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1682,7 +1699,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC006.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC006.json",
+					"filename_or_url_preview": "A-1-b_6-3_035.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1736,7 +1754,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC007.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC007.json",
+					"filename_or_url_preview": "A-1-b_6-3_040-1.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1790,7 +1809,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-3_046.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1844,7 +1864,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-3_046.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1898,7 +1919,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC008.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC008.json",
+					"filename_or_url_preview": "A-1-b_6-3_048.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -1952,7 +1974,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC010.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC010.json",
+					"filename_or_url_preview": "A-1-b_6-3_050.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -2006,7 +2029,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC011.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC011.json",
+					"filename_or_url_preview": "A-1-b_6-3_051.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -2060,7 +2084,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC011.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC011.json",
+					"filename_or_url_preview": "A-1-b_6-3_053.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -2114,7 +2139,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC012.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC012.json",
+					"filename_or_url_preview": "A-1-b_6-3_054.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -2168,7 +2194,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC013.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC013.json",
+					"filename_or_url_preview": "A-1-b_6-3_055.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -2222,7 +2249,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC013.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC013.json",
+					"filename_or_url_preview": "A-1-b_6-3_057.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -2276,7 +2304,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC014.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC014.json",
+					"filename_or_url_preview": "A-1-b_6-3_058.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -2330,7 +2359,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC016.json\""
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-3_AC016.json\"",
+					"filename_or_url_preview": "A-1-b_6-3_061.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -2384,7 +2414,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-4.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-4.json",
+					"filename_or_url_preview": "A-1-b_6-4_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -2443,7 +2474,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC003.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC003.json",
+					"filename_or_url_preview": "A-1-b_6-5_003.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_012"]
@@ -2497,7 +2529,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC004.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC004.json",
+					"filename_or_url_preview": "A-1-b_6-5_004-1.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_012"]
@@ -2551,7 +2584,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC005.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC005.json",
+					"filename_or_url_preview": "A-1-b_6-5_005.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_012"]
@@ -2605,7 +2639,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC010.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC010.json",
+					"filename_or_url_preview": "A-1-b_6-5_033.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_012"]
@@ -2659,7 +2694,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC017.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC017.json",
+					"filename_or_url_preview": "A-1-b_6-5_043.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_012"]
@@ -2713,7 +2749,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC018.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC018.json",
+					"filename_or_url_preview": "A-1-b_6-5_044.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_012"]
@@ -2767,7 +2804,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC020.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC020.json",
+					"filename_or_url_preview": "A-1-b_6-5_046.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_012"]
@@ -2824,10 +2862,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-a_1-1.json",
-					"urls_IIIF_images": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_002.tif"
-					]
+					"filename_or_url_preview": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-1_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null,
@@ -2885,65 +2920,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-a_1-2.json",
-					"urls_IIIF_images": [
-						"A-1-a_1-2_001.tif",
-						"A-1-a_1-2_002.tif",
-						"A-1-a_1-2_003.tif",
-						"A-1-a_1-2_004.tif",
-						"A-1-a_1-2_005.tif",
-						"A-1-a_1-2_006.tif",
-						"A-1-a_1-2_007.tif",
-						"A-1-a_1-2_008.tif",
-						"A-1-a_1-2_009.tif",
-						"A-1-a_1-2_010.tif",
-						"A-1-a_1-2_011.tif",
-						"A-1-a_1-2_012.tif",
-						"A-1-a_1-2_013.tif",
-						"A-1-a_1-2_014.tif",
-						"A-1-a_1-2_015.tif",
-						"A-1-a_1-2_016.tif",
-						"A-1-a_1-2_017.tif",
-						"A-1-a_1-2_018.tif",
-						"A-1-a_1-2_019.tif",
-						"A-1-a_1-2_020.tif",
-						"A-1-a_1-2_021.tif",
-						"A-1-a_1-2_022.tif",
-						"A-1-a_1-2_023.tif",
-						"A-1-a_1-2_024.tif",
-						"A-1-a_1-2_025.tif",
-						"A-1-a_1-2_026.tif",
-						"A-1-a_1-2_027.tif",
-						"A-1-a_1-2_028.tif",
-						"A-1-a_1-2_029.tif",
-						"A-1-a_1-2_030.tif",
-						"A-1-a_1-2_031.tif",
-						"A-1-a_1-2_032.tif",
-						"A-1-a_1-2_033.tif",
-						"A-1-a_1-2_034.tif",
-						"A-1-a_1-2_035.tif",
-						"A-1-a_1-2_036.tif",
-						"A-1-a_1-2_037.tif",
-						"A-1-a_1-2_038.tif",
-						"A-1-a_1-2_039.tif",
-						"A-1-a_1-2_040.tif",
-						"A-1-a_1-2_041.tif",
-						"A-1-a_1-2_042.tif",
-						"A-1-a_1-2_043.tif",
-						"A-1-a_1-2_044.tif",
-						"A-1-a_1-2_045.tif",
-						"A-1-a_1-2_046.tif",
-						"A-1-a_1-2_047.tif",
-						"A-1-a_1-2_048.tif",
-						"A-1-a_1-2_049.tif",
-						"A-1-a_1-2_050.tif",
-						"A-1-a_1-2_051.tif",
-						"A-1-a_1-2_052.tif",
-						"A-1-a_1-2_053.tif",
-						"A-1-a_1-2_054.tif",
-						"A-1-a_1-2_055.tif",
-						"A-1-a_1-2_056.tif",
-						"A-1-a_1-2_057.tif"
-					]
+					"filename_or_url_preview": "A-1-a_1-2_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3054,7 +3031,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_1-1.json",
-					"urls_IIIF_images": ["A-1-b_1-1_001.tif"]
+					"filename_or_url_preview": "A-1-b_1-1_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3107,13 +3084,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_1-4.json",
-					"urls_IIIF_images": [
-						"A-1-b_1-4_001.tif",
-						"A-1-b_1-4_002.tif",
-						"A-1-b_1-4_003.tif",
-						"A-1-b_1-4_004.tif",
-						"A-1-b_1-4_005.tif"
-					]
+					"filename_or_url_preview": "A-1-b_1-4_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null,
@@ -3175,7 +3146,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_1-4.json",
-					"urls_IIIF_images": ["A-1-b_1-4_006.tif", "A-1-b_1-4_007.tif"]
+					"filename_or_url_preview": "A-1-b_1-4_006.tif"
 				},
 				"crossReferences": {
 					"group_ids": null,
@@ -3231,12 +3202,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_1.json",
-					"urls_IIIF_images": [
-						"A-1-b_1_001.tif",
-						"A-1-b_1_002.tif",
-						"A-1-b_1_003.tif",
-						"A-1-b_1_004.tif"
-					]
+					"filename_or_url_preview": "A-1-b_1_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3294,12 +3260,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_1-2.json",
-					"urls_IIIF_images": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_004.tif"
-					]
+					"filename_or_url_preview": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_1-2_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3357,7 +3318,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_1-3.json",
-					"urls_IIIF_images": ["A-1-b_1-3_001-1.tif", "A-1-b_1-3_001-2.tif"]
+					"filename_or_url_preview": "A-1-b_1-3_001-1.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3410,7 +3371,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_1-10.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "??.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3463,7 +3424,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_1-9.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "??.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3516,7 +3477,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_3-1.json",
-					"urls_IIIF_images": ["A-1-b_3-1_001.tif"]
+					"filename_or_url_preview": "A-1-b_3-1_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3569,7 +3530,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-2-a_2.json",
-					"urls_IIIF_images": ["A-2-a_2_001.tif"]
+					"filename_or_url_preview": "A-2-a_2_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3622,17 +3583,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_3-2.json",
-					"urls_IIIF_images": [
-						"A-1-b_3-2_001.tif",
-						"A-1-b_3-2_002.tif",
-						"A-1-b_3-2_003.tif",
-						"A-1-b_3-2_004.tif",
-						"A-1-b_3-2_005.tif",
-						"A-1-b_3-2_006.tif",
-						"A-1-b_3-2_007.tif",
-						"A-1-b_3-2_008.tif",
-						"A-1-b_3-2_009.tif"
-					]
+					"filename_or_url_preview": "A-1-b_3-2_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3695,7 +3646,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_3-3.json",
-					"urls_IIIF_images": ["A-1-b_3-3_001.tif"]
+					"filename_or_url_preview": "A-1-b_3-3_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3748,7 +3699,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "??",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "A-1-b_5-2_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3801,78 +3752,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "??",
-					"urls_IIIF_images": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_004.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_005.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_006.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_007.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_008.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_009.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_010.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_011.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_012.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_013.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_014.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_015.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_016.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_017.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_018.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_019.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_020.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_021.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_022.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_023.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_024.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_025.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_026.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_027.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_028.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_029.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_030.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_031.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_032.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_033.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_034.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_035.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_036.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_037.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_038.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_039.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_040.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_041.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_042.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_043.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_044.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_045.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_046.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_047.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_048.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_049.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_050.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_051.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_052.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_053.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_054.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_055.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_056.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_057.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_058.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_059.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_060.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_061.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_062.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_063.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_064.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_065.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_066.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_067.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_068.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_069.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_070.tif"
-					]
+					"filename_or_url_preview": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_7-8_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -3925,13 +3805,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_1.json",
-					"urls_IIIF_images": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_003.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_004.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_005.tif"
-					]
+					"filename_or_url_preview": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-b_1_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null,
@@ -4006,7 +3880,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_3.json",
-					"urls_IIIF_images": ["A-5-b_3_001.tif", "A-5-b_3_002.tif"]
+					"filename_or_url_preview": "A-5-b_3_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4061,7 +3935,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-6-c.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "A-6-c_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4115,11 +3989,14 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "??"
+					"url_IIIF_manifest": "??",
+					"filename_or_url_preview": "A-1-b_6-2_003.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"],
-					"linked_documents": { "audio": ["audio_0001"] }
+					"linked_documents": {
+						"audio": ["audio_0001"]
+					}
 				},
 				"publication": {
 					"pub_type": "inedito",
@@ -4168,7 +4045,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-3_027.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -4220,7 +4098,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-3_028.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"]
@@ -4272,7 +4151,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC003.json"
+					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-b_6-5_AC003.json",
+					"filename_or_url_preview": "A-1-b_6-5_003.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_012"]
@@ -4324,7 +4204,8 @@
 					"date_author_normalised": null
 				},
 				"iiif": {
-					"url_IIIF_manifest": null
+					"url_IIIF_manifest": null,
+					"filename_or_url_preview": "A-1-b_6-5_015-1.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_012"]
@@ -4379,17 +4260,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-a_1-4.json",
-					"urls_IIIF_images": [
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_002.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_004.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_005.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_006.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_007.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_008.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_009.tif",
-						"https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_010.tif"
-					]
+					"filename_or_url_preview": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_002"]
@@ -4452,16 +4323,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_1.json",
-					"urls_IIIF_images": [
-						"D-3-a_1_001.tif",
-						"D-3-a_1_002.tif",
-						"D-3-a_1_003.tif",
-						"D-3-a_1_004.tif",
-						"D-3-a_1_005.tif",
-						"D-3-a_1_006.tif",
-						"D-3-a_1_007.tif",
-						"D-3-a_1_008.tif"
-					]
+					"filename_or_url_preview": "D-3-a_1_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": ["group_002"]
@@ -4523,7 +4385,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_15.json",
-					"urls_IIIF_images": ["D-3-a_15_001.tif", "D-3-a_15_002.tif", "D-3-a_15_003.tif"]
+					"filename_or_url_preview": "D-3-a_15_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4576,7 +4438,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-1-a_2-1.json",
-					"urls_IIIF_images": ["A-1-a_2-1_001-2.tif", "A-1-a_2-1_002-1.tif", "A-1-a_2-1_002-2.tif"]
+					"filename_or_url_preview": "A-1-a_2-1_001-2.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4633,7 +4495,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-a_3.json",
-					"urls_IIIF_images": ["A-5-a_3_001.tif"]
+					"filename_or_url_preview": "A-5-a_3_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4686,7 +4548,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-a_5.json",
-					"urls_IIIF_images": ["A-5-a_5_001.tif"]
+					"filename_or_url_preview": "A-5-a_5_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4739,7 +4601,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-a_6.json",
-					"urls_IIIF_images": ["A-5-a_6_001.tif"]
+					"filename_or_url_preview": "A-5-a_6_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4792,7 +4654,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-a_7.json",
-					"urls_IIIF_images": ["A-5-a_7_001.tif"]
+					"filename_or_url_preview": "A-5-a_7_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4845,7 +4707,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-a_11.json",
-					"urls_IIIF_images": ["A-5-a_11_001.tif"]
+					"filename_or_url_preview": "A-5-a_11_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4898,7 +4760,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-a_12.json",
-					"urls_IIIF_images": ["A-5-a_12_001.tif"]
+					"filename_or_url_preview": "A-5-a_12_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -4951,7 +4813,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-a_13.json",
-					"urls_IIIF_images": ["https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-a_13_001.tif"]
+					"filename_or_url_preview": "https://iiif.ub.unibe.ch/image/v3/ceresa/A-5-a_13_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null,
@@ -5013,7 +4875,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-a_14.json",
-					"urls_IIIF_images": ["A-5-a_14_001.tif"]
+					"filename_or_url_preview": "A-5-a_14_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5066,7 +4928,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_2.json",
-					"urls_IIIF_images": ["A-5-b_2_001.tif"]
+					"filename_or_url_preview": "A-5-b_2_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5119,13 +4981,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_4.json",
-					"urls_IIIF_images": [
-						"A-5-b_4_001.tif",
-						"A-5-b_4_002.tif",
-						"A-5-b_4_003.tif",
-						"A-5-b_4_004.tif",
-						"A-5-b_4_005.tif"
-					]
+					"filename_or_url_preview": "A-5-b_4_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5184,7 +5040,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_5.json",
-					"urls_IIIF_images": ["A-5-b_5_001.tif", "A-5-b_5_002.tif", "A-5-b_5_003.tif"]
+					"filename_or_url_preview": "A-5-b_5_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5237,7 +5093,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_8.json",
-					"urls_IIIF_images": ["A-5-b_8_001.tif"]
+					"filename_or_url_preview": "A-5-b_8_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5290,7 +5146,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_9.json",
-					"urls_IIIF_images": ["A-5-b_9_001.tif"]
+					"filename_or_url_preview": "A-5-b_9_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5343,7 +5199,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_15.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "A-5-b_15_001??.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5396,7 +5252,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-5-b_18.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "A-5-b_18_001??.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5449,15 +5305,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_21.json",
-					"urls_IIIF_images": [
-						"D-3-a_21_001.tif",
-						"D-3-a_21_002.tif",
-						"D-3-a_21_003.tif",
-						"D-3-a_21_004.tif",
-						"D-3-a_21_005.tif",
-						"D-3-a_21_006.tif",
-						"D-3-a_21_007.tif"
-					]
+					"filename_or_url_preview": "D-3-a_21_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5518,14 +5366,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_24.json",
-					"urls_IIIF_images": [
-						"D-3-a_24_002.tif",
-						"D-3-a_24_003.tif",
-						"D-3-a_24_004.tif",
-						"D-3-a_24_005.tif",
-						"D-3-a_24_006.tif",
-						"D-3-a_24_007.tif"
-					]
+					"filename_or_url_preview": "D-3-a_24_002.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5585,7 +5426,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_25.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "D-3-a_25_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5638,7 +5479,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_18-1.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "D-3-a_18-1_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5691,7 +5532,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_18-2.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "D-3-a_18-2_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5744,7 +5585,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_18-3.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "D-3-a_18-3_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5797,7 +5638,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_18-4.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "D-3-a_18-4_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5850,7 +5691,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_19-1.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "D-3-a_19-1_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5903,7 +5744,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/D-3-a_19-2.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "D-3-a_19-2_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -5956,7 +5797,7 @@
 				},
 				"iiif": {
 					"url_IIIF_manifest": "https://iiif.arcipelago-ceresa.digitaleditions.ch/presentation/A-6-a_1.json",
-					"urls_IIIF_images": [""]
+					"filename_or_url_preview": "A-6-a_1_001.tif"
 				},
 				"crossReferences": {
 					"group_ids": null
@@ -6012,8 +5853,16 @@
 					"filename": "1798215-la-morte-del-padre-1.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 0 },
-							{ "id": "2", "chapName": "fine", "time": 180 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 0
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 180
+							}
 						]
 					}
 				},
@@ -6048,8 +5897,16 @@
 					"filename": "1798212-la-morte-del-padre-2.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 0 },
-							{ "id": "2", "chapName": "fine", "time": 180 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 0
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 180
+							}
 						]
 					}
 				},
@@ -6084,8 +5941,16 @@
 					"filename": "1798209-la-morte-del-padre-3.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 0 },
-							{ "id": "2", "chapName": "fine", "time": 180 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 0
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 180
+							}
 						]
 					}
 				},
@@ -6120,8 +5985,16 @@
 					"filename": "1798206-la-morte-del-padre-4.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 0 },
-							{ "id": "2", "chapName": "fine", "time": 180 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 0
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 180
+							}
 						]
 					}
 				},
@@ -6156,8 +6029,16 @@
 					"filename": "1798203-la-morte-del-padre-5.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 0 },
-							{ "id": "2", "chapName": "fine", "time": 180 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 0
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 180
+							}
 						]
 					}
 				},
@@ -6192,8 +6073,16 @@
 					"filename": "1798200-la-morte-del-padre-6.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 0 },
-							{ "id": "2", "chapName": "fine", "time": 180 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 0
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 180
+							}
 						]
 					}
 				},
@@ -6230,8 +6119,16 @@
 					"filename": "1799073_Liberalizzazione dell aborto.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 108 },
-							{ "id": "2", "chapName": "fine", "time": 312 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 108
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 312
+							}
 						]
 					}
 				},
@@ -6266,8 +6163,16 @@
 					"filename": "1799067_Le differenze biologiche.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 57 },
-							{ "id": "2", "chapName": "fine", "time": 449 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 57
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 449
+							}
 						]
 					}
 				},
@@ -6302,8 +6207,16 @@
 					"filename": "1799064_Moda femminile.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 47 },
-							{ "id": "2", "chapName": "fine", "time": 279 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 47
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 279
+							}
 						]
 					}
 				},
@@ -6338,8 +6251,16 @@
 					"filename": "1798382_Anima Maschile Morale.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 63 },
-							{ "id": "2", "chapName": "fine", "time": 172 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 63
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 172
+							}
 						]
 					}
 				}
@@ -6373,8 +6294,16 @@
 					"filename": "1798382_Anima Maschile Morale.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 343 },
-							{ "id": "2", "chapName": "fine", "time": 522 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 343
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 522
+							}
 						]
 					}
 				}
@@ -6408,8 +6337,16 @@
 					"filename": "1798382_Anima Maschile Morale.mp3",
 					"metadata": {
 						"chapters": [
-							{ "id": "1", "chapName": "inizio", "time": 755 },
-							{ "id": "2", "chapName": "fine", "time": 908 }
+							{
+								"id": "1",
+								"chapName": "inizio",
+								"time": 755
+							},
+							{
+								"id": "2",
+								"chapName": "fine",
+								"time": 908
+							}
 						]
 					}
 				},

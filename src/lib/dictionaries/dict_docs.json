@@ -36,7 +36,7 @@
 				"date_author_normalised": { "label": "Datazione d'autrice normalizzata" }
 			},
 			"iiif": {
-				"urls_IIIF_images": { "label": "IIIF-Bilder-URLs" },
+				"filename_or_url_preview": { "label": "Filename o URL dell'anteprima" },
 				"url_IIIF_manifest": { "label": "Manifesto IIIF" }
 			},
 			"tei": {
@@ -89,7 +89,7 @@
 				"title_on_document": { "label": "Titolo presente sul documento" }
 			},
 			"iiif": {
-				"urls_IIIF_images": { "label": "IIIF-Bilder-URLs" },
+				"filename_or_url_preview": { "label": "Filename o URL dell'anteprima" },
 				"url_IIIF_manifest": { "label": "Manifesto IIIF" }
 			},
 			"tei": {
@@ -150,7 +150,7 @@
 				"date_author_normalised": { "label": "Datazione d'autrice normalizzata" }
 			},
 			"iiif": {
-				"urls_IIIF_images": { "label": "IIIF-Bilder-URLs" },
+				"filename_or_url_preview": { "label": "Filename o URL dell'anteprima" },
 				"url_IIIF_manifest": { "label": "Manifesto IIIF" }
 			},
 			"tei": {

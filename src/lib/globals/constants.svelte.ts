@@ -1,3 +1,5 @@
+export const FALLBACK_IIIF_PATH = 'https://iiif.ub.unibe.ch/image/v3/ceresa/';
+
 export const TYPESWITHGROUPCONTROL = {
 	register: ['people', 'places', 'orgs']
 };

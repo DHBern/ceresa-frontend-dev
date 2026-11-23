@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { resolveDocPath } from '$lib/functions/ease_of_use/resolveDocPath';
+	import { resolveIIIFUrl } from '$lib/functions/ease_of_use/resolveIIIFUrl';
 	import type {
 		TCrossRefDocumentsExtended,
 		TCrossRefEntitiesExtended,
@@ -114,8 +115,8 @@
 	}
 
 	function getFirstIIIFImage(item: unknown): string | undefined {
-		const urls = getProperty(getProperty(item, 'iiif'), 'urls_IIIF_images');
-		return Array.isArray(urls) && typeof urls[0] === 'string' ? urls[0] : undefined;
+		const url = getProperty(getProperty(item, 'iiif'), 'filename_or_url_preview');
+		return typeof url === 'string' ? resolveIIIFUrl(url) ?? undefined : undefined;
 	}
 
 	function getCrossRefTitle(item: unknown, fallback: string): string {

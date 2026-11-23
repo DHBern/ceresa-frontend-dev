@@ -80,7 +80,7 @@ export type TTextDocuments = {
 		date_author_normalised?: string;
 	};
 	iiif: {
-		urls_IIIF_images?: string[];
+		filename_or_url_preview?: string | null;
 		url_IIIF_manifest: string;
 	};
 	tei: {
