@@ -8,10 +8,10 @@ DO NOT edit files in `preview` directly on WebDAV!
 copies of the behavior and version-selection logic from `behaviors.ts` and
 `selectVersion.ts`. Keep those inline copies in sync with the app modules. It
 loads TEI presentation rules from `styles.css` and preview controls from
-`live-preview-ui-styles.css`. Both views use fluid text flow. CETEIcean 1.9.5
+`ui-styles.css`. Both views use fluid text flow. CETEIcean 1.9.5
 and fonts are loaded from their public CDNs.
 
-Deploy `oxy.html`, `styles.css`, and `live-preview-ui-styles.css` together to
+Deploy `oxy.html`, `styles.css`, and `ui-styles.css` together to
 WebDAV. No companion behavior JavaScript file is required. Add
 `&version=<xml:id>` alongside `url` to render only the matching TEI division
 (for example, `oxy.html?url=<encoded-TEI-URL>&version=A-1-b_6-2_AC001_a`);
