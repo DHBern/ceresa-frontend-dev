@@ -35,11 +35,9 @@ jobs:
           fi
 
       - name: Install rclone
-        if: steps.changes.outputs.changed == 'true'
         run: curl https://rclone.org/install.sh | sudo bash
 
       - name: Configure rclone (WebDAV)
-        if: steps.changes.outputs.changed == 'true'
         run: |
           mkdir -p ~/.config/rclone
           cat <<EOF > ~/.config/rclone/rclone.conf
@@ -52,7 +50,6 @@ jobs:
           EOF
 
       - name: Create deployment log entry
-        if: steps.changes.outputs.changed == 'true'
         run: |
           DEPLOY_DIR="src/lib/CETEIcean"
           LOG_DIR="$DEPLOY_DIR/logs"
@@ -79,7 +76,6 @@ jobs:
           cat "$LOG_DIR/$FILENAME"
 
       - name: Sync CETEIcean to WebDAV
-        if: steps.changes.outputs.changed == 'true'
         run: |
           ls src/lib/CETEIcean/logs
 
