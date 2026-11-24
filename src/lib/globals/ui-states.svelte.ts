@@ -41,6 +41,10 @@ export function setDrawerLarge() {
 	drawerSnapPoint.value = DRAWER_SNAP_POINTS[2];
 }
 
+// Comments and semantic annotations
+export const showComments = $state({state: true});
+export const showAnnotations = $state({state: true});
+
 // Sequence Toggles
 export const isOpenSeqPanel = $state({ state: false });
 export const sequenceToggle = $state({

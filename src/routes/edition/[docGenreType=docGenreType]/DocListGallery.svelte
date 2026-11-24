@@ -146,7 +146,11 @@
 
 <div class={containerClasses}>
 	<div class="mb-6 flex justify-center">
-		<div class="preset-tabs-list flex h-10" role="group" aria-label="Visualizzazione dei documenti">
+		<div
+			class="preset-tabs-list mx-2 flex h-10"
+			role="group"
+			aria-label="Visualizzazione dei documenti"
+		>
 			<button
 				type="button"
 				aria-label="Mostra come galleria"

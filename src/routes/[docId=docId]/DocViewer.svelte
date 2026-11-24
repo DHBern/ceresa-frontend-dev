@@ -21,6 +21,7 @@
 	import { isBreakpointBelow } from '$lib/functions/ease_of_use/breakpoints.svelte';
 	import type { ReturnUseSearchParams } from 'runed/kit';
 	import { SEARCH_PARAMS_DEFAULTS, type schema } from './schemas';
+	import { showAnnotations, showComments } from '$lib/globals/ui-states.svelte';
 
 	let {
 		docItem,
@@ -176,7 +177,7 @@
 	<!-- Sticky Navigation Panel -->
 	<div
 		bind:this={stickyMenu}
-		class="pointer-events-none sticky top-0 right-2 z-10000 flex w-full flex-wrap justify-center gap-y-2 px-5 py-3"
+		class="pointer-events-none sticky top-0 right-2 z-10000 flex w-full flex-wrap justify-center gap-x-2 gap-y-2 px-5 py-3"
 	>
 		<!-- Mode Toggle -->
 		<div class="relative flex h-full flex-col items-center gap-6">
@@ -201,7 +202,7 @@
 			</Tabs.Root>
 		</div>
 
-		<div class="pointer-events-none flex flex-wrap justify-center gap-y-2">
+		<div class="pointer-events-none flex flex-wrap justify-center gap-x-2 gap-y-2">
 			<!-- Flow control -->
 			{#if canToggleFlow}
 				<Tabs.Root
@@ -230,6 +231,7 @@
 				</Tabs.Root>
 			{/if}
 
+			<!-- Text-size control -->
 			{#if view.showMain || view.showSecond}
 				<Tabs.Root class="pointer-events-auto shrink-0">
 					<Tabs.List>
@@ -264,6 +266,48 @@
 						{/snippet}
 					</Tabs.List>
 				</Tabs.Root>
+			{/if}
+		</div>
+		<div class="pointer-events-none flex flex-wrap justify-center gap-x-2 gap-y-2">
+			<!-- Comments control -->
+			{#if params.mode === 'DF' && (ceteiData.serialized.match(/<ol class="notes">(.*?)<\/ol>/s) || []).length}
+				<button
+					class={[
+						'preset-btn-round pointer-events-auto font-bold',
+						showComments.state && '--active-state--manual'
+					]}
+					onclick={() => {
+						showComments.state = !showComments.state;
+						console.log(showComments.state);
+					}}
+				>
+					{#if showComments.state}
+						<i class="fa-regular fa-square-check mr-2"></i>
+					{:else}
+						<i class="fa-regular fa-square mr-2"></i>
+					{/if}
+					Commentario
+				</button>
+			{/if}
+			<!-- Annotations control -->
+			{#if Object.keys(docItem?.crossReferences.cited_entities || {}).length > 0}
+				<button
+					class={[
+						'preset-btn-round pointer-events-auto font-bold',
+						showAnnotations.state && '--active-state--manual'
+					]}
+					onclick={() => {
+						showAnnotations.state = !showAnnotations.state;
+						console.log(showAnnotations.state);
+					}}
+				>
+					{#if showAnnotations.state}
+						<i class="fa-regular fa-square-check mr-2"></i>
+					{:else}
+						<i class="fa-regular fa-square mr-2"></i>
+					{/if}
+					Annotazioni
+				</button>
 			{/if}
 		</div>
 	</div>
@@ -343,7 +387,13 @@
 			{/snippet}
 
 			<!-- Main Text -->
-			<div class="mx-10">
+			<div
+				class={[
+					'mx-10',
+					showComments.state ? 'show-comments' : 'hide-comments',
+					showAnnotations.state ? 'show-annotations' : 'hide-annotations'
+				]}
+			>
 				<div class={[view.mainTextClass]}>
 					{@render Text(ceteiData, view.showMain, true, view.isFluid)}
 				</div>
@@ -359,11 +409,13 @@
 					view.showSecond && 'border-l-2 pl-12',
 					'lg:sticky',
 					view.isFluid && isGallerySticky ? 'top-10' : 'top-5',
-					isGallerySticky ? 'lg:h-[80vh]' : 'lg:h-screen'
+					isGallerySticky ? 'lg:h-[80vh]' : 'lg:h-screen',
+					showComments.state ? 'show-comments' : 'hide-comments',
+					showAnnotations.state ? 'show-annotations' : 'hide-annotations'
 				]}
 			>
 				<h3
-					class="mb-5 w-max border border-amber-100 bg-amber-100 p-2 text-xs font-bold text-accent-foreground"
+					class="mb-5 w-max rounded-sm border border-amber-100 bg-amber-100 p-2 text-sm font-bold text-accent-foreground"
 				>
 					Traduzione editoriale
 				</h3>

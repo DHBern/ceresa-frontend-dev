@@ -85,7 +85,10 @@
 		}
 
 		&.--active-state {
-			@apply data-[state=active]:pointer-events-none data-[state=active]:bg-foreground data-[state=active]:text-background
+			@apply data-[state=active]:pointer-events-none data-[state=active]:bg-foreground data-[state=active]:text-background;
+		}
+		&.--active-state--manual {
+			@apply pointer-events-none bg-foreground text-background;
 		}
 	}
 
@@ -105,7 +108,7 @@
 
 	/* Tabs */
 	.preset-tabs-list {
-		@apply mx-2 rounded-full select-none;
+		@apply rounded-full select-none;
 		@apply text-base leading-[0.01em] font-semibold;
 		@apply border-[1.5px] border-dark-40;
 		@apply bg-background text-foreground;
