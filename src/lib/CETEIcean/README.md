@@ -4,14 +4,15 @@ The contents in this directory are kept in sync with the `preview` directory on 
 
 DO NOT edit files in `preview` directly on WebDAV!
 
-Deploy `oxy.html`, `behaviours.js`, `metamark.js`, and `styles.css` together when
-updating metamark rendering. The preview imports `metamark.js` as a module and
-resolves relocation pairs after CETEIcean has loaded the full TEI document.
-In diplomatic view, matching **Spostamento 1**, **Spostamento 2**, etc. labels connect each
-underlined passage to its destination. Reading view shows the relocated text
-without the labels.
+`oxy.html` contains the standalone preview logic, including plain JavaScript
+copies of the behavior and version-selection logic from `behaviors.ts` and
+`selectVersion.ts`. Keep those inline copies in sync with the app modules. It
+loads TEI presentation rules from `styles.css` and preview controls from
+`live-preview-ui-styles.css`. Both views use fluid text flow. CETEIcean 1.9.5
+and fonts are loaded from their public CDNs.
 
-The shared `addition.js` behavior inserts selectable brackets around additions,
-including those inside deletions (for example, `cha⌜q⌝ue` with a strikethrough).
-Reading view hides the brackets and the entire deletion. Deploy `addition.js`
-alongside `behaviours.js` and `styles.css` for the preview.
+Deploy `oxy.html`, `styles.css`, and `live-preview-ui-styles.css` together to
+WebDAV. No companion behavior JavaScript file is required. Add
+`&version=<xml:id>` alongside `url` to render only the matching TEI division
+(for example, `oxy.html?url=<encoded-TEI-URL>&version=A-1-b_6-2_AC001_a`);
+without it, the full document is shown.
