@@ -82,7 +82,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			console.warn(`Nullish filename`);
 			return defaultBody;
 		}
-
+		
 		try {
 			// (0) Resolve full path
 			const path_from_map = documents_path_map_xml[filename]; //! FIX THIS
@@ -140,7 +140,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 		}
 		versionId = docId.slice(prefix.length);
 	}
-	const ceteiData = await loadText(resolvedDoc.item?.tei.filename, versionId);
+	const ceteiData = await loadText(`${resolvedDoc.item?.tei.filename}`, versionId);
 
 	const versionKeys = new Set(
 		Object.values(doc_sequences.variants)

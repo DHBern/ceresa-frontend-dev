@@ -494,7 +494,9 @@
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"],
-					"linked_documents": { "audio": ["audio_0008"] }
+					"linked_documents": {
+						"audio": ["audio_0008"]
+					}
 				},
 				"publication": {
 					"pub_type": "postumo",
@@ -1072,7 +1074,7 @@
 				"metadata": {
 					"type_genre": "dizionario",
 					"type_document": "dattiloscritto",
-					"title_editorial": "Femminilità  [1]",
+					"title_editorial": "Femminilità [1]",
 					"language": "it",
 					"keywords": null,
 					"observations": null,
@@ -1127,7 +1129,7 @@
 				"metadata": {
 					"type_genre": "dizionario",
 					"type_document": "dattiloscritto",
-					"title_editorial": "Femminilità  [2]",
+					"title_editorial": "Femminilità [2]",
 					"language": "it",
 					"keywords": null,
 					"observations": null,
@@ -1457,7 +1459,7 @@
 				"metadata": {
 					"type_genre": "dizionario",
 					"title_editorial": "Letterario (personaggio femminile il)",
-					"language": null,
+					"language": "it",
 					"keywords": null,
 					"observations": null,
 					"date": {
@@ -1511,7 +1513,7 @@
 				"metadata": {
 					"type_genre": "dizionario",
 					"title_editorial": "Letterario (personaggio il)",
-					"language": null,
+					"language": "it",
 					"keywords": null,
 					"observations": null,
 					"date": {
@@ -1648,7 +1650,9 @@
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"],
-					"linked_documents": { "audio": ["audio_0011"] }
+					"linked_documents": {
+						"audio": ["audio_0011"]
+					}
 				},
 				"publication": {
 					"pub_type": "postumo",
@@ -1704,7 +1708,9 @@
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"],
-					"linked_documents": { "audio": ["audio_0009"] }
+					"linked_documents": {
+						"audio": ["audio_0009"]
+					}
 				},
 				"publication": {
 					"pub_type": "postumo",
@@ -1760,7 +1766,9 @@
 				},
 				"crossReferences": {
 					"group_ids": ["group_011"],
-					"linked_documents": { "audio": ["audio_0012"] }
+					"linked_documents": {
+						"audio": ["audio_0012"]
+					}
 				},
 				"publication": {
 					"pub_type": "postumo",
@@ -2858,7 +2866,7 @@
 				},
 				"document": {
 					"type_material": "originale; 2ff. ms. solo recto",
-					"title_on_document": "Prefazione per Gli altri",
+					"title_on_document": "Prefazione per \"Gli altri\"",
 					"date_and_place_author_as_on_document": "ROMA inverno 45/46",
 					"date_author_normalised": "1945/1946"
 				},
@@ -2898,7 +2906,7 @@
 				"metadata": {
 					"type_genre": "racconto",
 					"type_document": "dattiloscritto",
-					"title_editorial": null,
+					"title_editorial": "Fondo di me",
 					"language": "it",
 					"keywords": null,
 					"observations": null,
@@ -3009,7 +3017,7 @@
 				"metadata": {
 					"type_genre": "racconto",
 					"type_document": "dattiloscritto",
-					"title_editorial": null,
+					"title_editorial": "Caino",
 					"language": "it",
 					"keywords": null,
 					"observations": null,
@@ -3238,7 +3246,7 @@
 				"metadata": {
 					"type_genre": "racconto",
 					"type_document": "manoscritto",
-					"title_editorial": null,
+					"title_editorial": "La strega",
 					"language": "it",
 					"keywords": null,
 					"observations": "datazione Helveticarchives: ca. 1940",
@@ -3296,7 +3304,7 @@
 				"metadata": {
 					"type_genre": "racconto",
 					"type_document": "manoscritto",
-					"title_editorial": null,
+					"title_editorial": "La macchina psicoanalitica",
 					"language": "it",
 					"keywords": null,
 					"observations": "il verso è stato ruotato di 180°",
@@ -3348,7 +3356,7 @@
 			"unpublished_A-1-b_1-10": {
 				"metadata": {
 					"type_genre": "racconto",
-					"title_editorial": null,
+					"title_editorial": "Il monologo",
 					"language": "it",
 					"keywords": null,
 					"observations": "stesura 1: ms. di 3 ff. solo recto (formato piccolo); stesura 2: ms. di 20 ff. solo recto, num. prog. da 1 a 17 ma con inseriti ulteriori ff. non num.; stesura 3: ds. di 7 ff. solo recto (ciascun foglio presente in più copie; copia carbone, ecc.). Qualcosa non torna: la prima pagina presenta «Il Monologo / I», la seconda, numerata in arabo sul margine alto («2») sembra proseguire con testo diverso; stesura 4: ms. di 11 ff. sul solo recto (ma in realtà sono 4 ff., di ciascuno presenti più copie). Anche qui: c’è una discontinuità tra il f. 1 («Monologo / I») e il secondo.",
@@ -3401,7 +3409,7 @@
 				"metadata": {
 					"type_genre": "racconto",
 					"type_document": "dattiloscritto",
-					"title_editorial": null,
+					"title_editorial": "Aridità",
 					"language": "it",
 					"keywords": null,
 					"observations": "Nella copia sembrano trasposte le stesse corr. manoscritte dell’originale.",
@@ -3560,7 +3568,7 @@
 				"metadata": {
 					"type_genre": "teatrale",
 					"type_document": "manoscritto",
-					"title_editorial": null,
+					"title_editorial": "Messina. Dramma in tre atti",
 					"language": "it",
 					"keywords": null,
 					"observations": "Contiene 3 scene, ma della quarta c’è solo il titolo. Niente secondo e terzo atto.",
@@ -3676,7 +3684,7 @@
 				"metadata": {
 					"type_genre": "romanzo",
 					"type_document": "dattiloscritto",
-					"title_editorial": null,
+					"title_editorial": "Stratificazione",
 					"language": "it",
 					"keywords": null,
 					"observations": "Pagine numerate da 1 a 99.",
@@ -3844,7 +3852,7 @@
 					"filename_last_facsimile": "A-5-b_1_005"
 				},
 				"translation": {
-					"filename": "A-5-b_1-translation"
+					"filename": "A-5-b_1_Translation"
 				},
 				"slug": "unpublished_A-5-b_1",
 				"tei": {
@@ -3857,7 +3865,7 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_document": "dattiloscritto",
-					"title_editorial": null,
+					"title_editorial": "Per un catalogo di Afro",
 					"language": "it",
 					"keywords": null,
 					"observations": "ev. ne esiste un edito?",
@@ -3910,7 +3918,7 @@
 				"metadata": {
 					"type_genre": "traduzione",
 					"type_document": "dattiloscritto",
-					"title_editorial": null,
+					"title_editorial": "Da: \"Sisterhood Is Powerful\" di Susan Brownmiller, 1970",
 					"language": "it",
 					"keywords": null,
 					"observations": "ed. originale: cfr. Martina Della Casa, Alice Ceresa e l'universo anglofono, in Alice Ceresa, tradotta e traduttrice, a cura di Tatiana Crivelli e Tania Collani, Firenze, Società Editrice Fiorentina, 2025, pp. 191-209: 202. (link risorse online: indicato da Della Casa per l'ed. originale, ma ev. non funziona più?); c'è un ultimo foglio con appunti di Ceresa, non lo editiamo, vero?",
@@ -4183,7 +4191,7 @@
 					"type_genre": "dizionario",
 					"type_document": "manoscritto",
 					"title_editorial": "Aborto [2]",
-					"language": null,
+					"language": "it",
 					"keywords": null,
 					"observations": null,
 					"date": {
@@ -4237,13 +4245,13 @@
 				"metadata": {
 					"type_genre": "racconto",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Gli altri. Prima parte",
 					"language": "it",
 					"keywords": null,
 					"observations": "Con frontespizio e indice. Nel volumetto è presente una foto di Moravia inserita a p. 175. Non ne abbiamo richiesta la riproduzione, ma ci è arrivata (dig. 003-1-1 e 003-1-2); inserirla?? Inserire l'ultima pagina??",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1943-04-30",
+						"to": "1943-04-30"
 					}
 				},
 				"archival": {
@@ -4300,13 +4308,13 @@
 				"metadata": {
 					"type_genre": "racconto",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Gli altri. Terza parte",
 					"language": "it",
 					"keywords": null,
 					"observations": "Includere il frontespizio? è pubblicata come \"Seconda parte\"; c'è una correzione ms. che indica che si tratta della terza parte.",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1943-07-25",
+						"to": "1943-07-25"
 					}
 				},
 				"archival": {
@@ -4362,13 +4370,13 @@
 				"metadata": {
 					"type_genre": "racconto",
 					"type_editorial": "in_volume",
-					"title_editorial": null,
+					"title_editorial": "Complicazioni",
 					"language": "it",
 					"keywords": null,
 					"observations": "indice richiesto, andrà inserito! è \"in volume\", vero??",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1994",
+						"to": "1994"
 					}
 				},
 				"archival": {
@@ -4415,13 +4423,13 @@
 				"metadata": {
 					"type_genre": null,
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "[lettera al] signor P. [+] Preambolo [al Ratto delle Sabine]",
 					"language": "it",
 					"keywords": null,
 					"observations": "il frontespizio non c'è all'ASL. In realtà sono due testi -> ev. da separare e farne due identifier (dipende da come verranno editi)?? ; genere testuale??; è corretto il n. 7 e il mese??",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1946-07",
+						"to": "1946-07"
 					}
 				},
 				"archival": {
@@ -4472,13 +4480,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Vom Danebendenken",
 					"language": "de",
 					"keywords": null,
 					"observations": "con un'illustrazione",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1944-05-19",
+						"to": "1944-05-19"
 					}
 				},
 				"archival": {
@@ -4525,13 +4533,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Es gibt in jedem Leben so etwas wie eine Leiter...",
 					"language": "de",
 					"keywords": null,
 					"observations": "con un'illustrazione",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1945-01-05",
+						"to": "1945-01-05"
 					}
 				},
 				"archival": {
@@ -4578,13 +4586,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Von der Phantasielosigkeit",
 					"language": "de",
 					"keywords": null,
 					"observations": "con un'illustrazione",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1945-04-06",
+						"to": "1945-04-06"
 					}
 				},
 				"archival": {
@@ -4631,13 +4639,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Ein Tag beim Schweizerischen Arbeiterhilfswerk in Mailand",
 					"language": "de",
 					"keywords": null,
 					"observations": "con una foto (fatta da Ceresa?)",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1945-12-28",
+						"to": "1945-12-28"
 					}
 				},
 				"archival": {
@@ -4684,13 +4692,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Portrait einer jungen Schriftstellerin",
 					"language": "de",
 					"keywords": null,
 					"observations": "con una foto (fatta da Ceresa?)",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1949-11-04",
+						"to": "1949-11-04"
 					}
 				},
 				"archival": {
@@ -4737,13 +4745,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Eine seltsame Familienchronik. Elsa Morante: Menzogna e sortilegio. Ed. Einaudi",
 					"language": "de",
 					"keywords": null,
 					"observations": null,
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1949-12-30",
+						"to": "1949-12-30"
 					}
 				},
 				"archival": {
@@ -4795,8 +4803,8 @@
 					"keywords": null,
 					"observations": null,
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1950-06-30",
+						"to": "1950-06-30"
 					}
 				},
 				"archival": {
@@ -4839,7 +4847,7 @@
 					"filename_last_facsimile": "A-5-a_13_001"
 				},
 				"translation": {
-					"filename": "A-5-a_13-translation"
+					"filename": "A-5-a_13_Translation"
 				},
 				"slug": "published_A-5-a_13",
 				"tei": {
@@ -4852,13 +4860,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Der Moralist ohne Moral. Alberto Moravia: Il Conformista – Bompiani, Mailand",
 					"language": "de",
 					"keywords": null,
 					"observations": "con una foto",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1951-09-21",
+						"to": "1951-09-21"
 					}
 				},
 				"archival": {
@@ -4905,13 +4913,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_giornale",
-					"title_editorial": null,
+					"title_editorial": "Amerikana. Amerikanische und europäische Tradition in der jungen amerikanischen Literatur. Carson McCullers und Truman Capote",
 					"language": "de",
 					"keywords": null,
 					"observations": "il titolo \"Amerikana\" comprende non solo l'articolo di Ceresa (intitolato Amerikanische und europäische Tradition[...]), ma anche un altro articolo, con un (sotto)titolo diverso e non di Ceresa.",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1950-08-04",
+						"to": "1950-08-04"
 					}
 				},
 				"archival": {
@@ -4958,13 +4966,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Petit tableau d'une polémique",
 					"language": "fr",
 					"keywords": null,
 					"observations": "includere il frontespizio?",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1964",
+						"to": "1964"
 					}
 				},
 				"archival": {
@@ -5017,13 +5025,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Assenteismo e confusione della \"cultura operante\"",
 					"language": "it",
 					"keywords": null,
 					"observations": "Attenzione: nell'archivio digitale è la segnatura A-5-b_6! Il link helveticarchives si riferisce a questa entrata. -> ??",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1968-04",
+						"to": "1968-04"
 					}
 				},
 				"archival": {
@@ -5070,13 +5078,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_giornale",
-					"title_editorial": null,
+					"title_editorial": "Nuovo Lorenz",
 					"language": "it",
 					"keywords": null,
 					"observations": "È nella scatola n. SF1, con A-5-b/9 (formato più grande). La mappetta bianca ha una segnatura sbagliata (A-5-a/18)",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1973-11-22",
+						"to": "1973-11-22"
 					}
 				},
 				"archival": {
@@ -5123,13 +5131,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_giornale",
-					"title_editorial": null,
+					"title_editorial": "Uscito il \"Diario di lavoro\". Brogliaccio di Brecht",
 					"language": "it",
 					"keywords": null,
 					"observations": "È nella scatola n. SF1, con A-5-b/8 (formato più grande). La mappetta bianca ha una segnatura sbagliata (A-5-a/17)",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1974-04-04",
+						"to": "1974-04-04"
 					}
 				},
 				"archival": {
@@ -5176,13 +5184,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Nascere già emigrata",
 					"language": "it",
 					"keywords": null,
 					"observations": "titolo del numero (?): Rosa dei venti",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1994-11",
+						"to": "1994-11"
 					}
 				},
 				"archival": {
@@ -5229,13 +5237,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Due teorie",
 					"language": "it",
 					"keywords": null,
 					"observations": "indice richiesto; titolo del numero (?): Scrivere di sé; escludiamo la dig. A-5-b_18_002??",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1999",
+						"to": "1999"
 					}
 				},
 				"archival": {
@@ -5282,13 +5290,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Biblioteche popolari, problemi e esperienze",
 					"language": "it",
 					"keywords": null,
 					"observations": "includere il frontespizio? ; il titolo non è integralmente leggibile sulla digitalizzazione",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1967",
+						"to": "1967"
 					}
 				},
 				"archival": {
@@ -5343,13 +5351,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Relazione di lavoro del settore biblioteca per i Centri di cultura popolare al 1° gennaio 1970",
 					"language": "it",
 					"keywords": null,
 					"observations": "Ev. non è molto rilevante per l’edizione (da valutare) - ??",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1970",
+						"to": "1970"
 					}
 				},
 				"archival": {
@@ -5403,13 +5411,13 @@
 				"metadata": {
 					"type_genre": "prosa",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Sabina e il fantasma",
 					"language": "it",
 					"keywords": null,
 					"observations": "tipologia testuale??",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1952",
+						"to": "1952"
 					}
 				},
 				"archival": {
@@ -5456,13 +5464,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "L'emigrante. Situazioni e condizioni di partenza",
 					"language": "it",
 					"keywords": null,
 					"observations": "I numeri del 1964 sono rilegati e non hanno segnature diverse nel lascito",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1964",
+						"to": "1964"
 					}
 				},
 				"archival": {
@@ -5509,13 +5517,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Libro o lettura",
 					"language": "it",
 					"keywords": null,
 					"observations": "I numeri del 1964 sono rilegati e non hanno segnature diverse nel lascito",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1964",
+						"to": "1964"
 					}
 				},
 				"archival": {
@@ -5562,13 +5570,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Introduzione all'arte figurativa moderna",
 					"language": "it",
 					"keywords": null,
 					"observations": "I numeri del 1964 sono rilegati e non hanno segnature diverse nel lascito",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1964",
+						"to": "1964"
 					}
 				},
 				"archival": {
@@ -5615,13 +5623,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Esame critico delle schede di lettura",
 					"language": "it",
 					"keywords": null,
 					"observations": "I numeri del 1964 sono rilegati e non hanno segnature diverse nel lascito",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1964",
+						"to": "1964"
 					}
 				},
 				"archival": {
@@ -5668,13 +5676,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Il Jazz",
 					"language": "it",
 					"keywords": null,
 					"observations": "I numeri del 1965 sono rilegati e non hanno segnature diverse nel lascito",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1965",
+						"to": "1965"
 					}
 				},
 				"archival": {
@@ -5721,13 +5729,13 @@
 				"metadata": {
 					"type_genre": "saggio",
 					"type_editorial": "in_periodico",
-					"title_editorial": null,
+					"title_editorial": "Letteratura come cultura o come estetismo?",
 					"language": "it",
 					"keywords": null,
 					"observations": "I numeri del 1965 sono rilegati e non hanno segnature diverse nel lascito",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1965",
+						"to": "1965"
 					}
 				},
 				"archival": {
@@ -5778,8 +5786,8 @@
 					"keywords": null,
 					"observations": "la data è quella del concerto > ??",
 					"date": {
-						"from": null,
-						"to": null
+						"from": "1961-02-02",
+						"to": "1961-02-02"
 					}
 				},
 				"archival": {

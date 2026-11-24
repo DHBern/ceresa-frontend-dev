@@ -57,8 +57,9 @@
                n="2"/><?oxy_comment_end?>
             <pb xml:id="p006" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-a_1-4_004.tif"
                n="177"/>
-            <head rendition="#c"><lb xml:id="p006_r_tl_1"/>Gli altri<lb xml:id="p006_r_tl_2"/>PRIMA
-                  PARTE<lb xml:id="p006_r_tl_3"/>I. Notizie di morti</head>
+            <head rendition="#c"><lb xml:id="p006_r_tl_1"/>Gli altri</head>
+            <head rendition="#c"><lb xml:id="p006_r_tl_2"/>PRIMA PARTE</head>
+            <head rendition="#c"><lb xml:id="p006_r_tl_3"/>I. Notizie di morti</head>
             <p><lb xml:id="p006_r_tl_4"/>M'avevano lasciata sola, sulla riva del lago, e le loro
                voci s'erano <lb xml:id="p006_r_tl_5"/>allontanate, irrimediabilmente. </p>
             <p><lb xml:id="p006_r_tl_6"/>Forse era solamente perché i colori così pallidi sapevano
