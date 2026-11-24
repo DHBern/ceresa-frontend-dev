@@ -1460,7 +1460,7 @@
 					"type_genre": "dizionario",
 					"type_editorial": null,
 					"title_editorial": "Letterario (personaggio femminile il)",
-					"language": null,
+					"language": "it",
 					"keywords": null,
 					"observations": null,
 					"date": {
@@ -1515,7 +1515,7 @@
 					"type_genre": "dizionario",
 					"type_editorial": null,
 					"title_editorial": "Letterario (personaggio il)",
-					"language": null,
+					"language": "it",
 					"keywords": null,
 					"observations": null,
 					"date": {
@@ -4194,7 +4194,7 @@
 					"type_genre": "dizionario",
 					"type_editorial": "manoscritto",
 					"title_editorial": "Aborto [2]",
-					"language": null,
+					"language": "it",
 					"keywords": null,
 					"observations": null,
 					"date": {
