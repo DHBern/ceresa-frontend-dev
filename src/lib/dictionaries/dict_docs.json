@@ -15,7 +15,7 @@
 				"type_genre": { "label": "Tipologia testuale" },
 				"type_editorial": { "label": "Tipologia del documento" },
 				"title_editorial": { "label": "Titolo editoriale" },
-				"date": { "label": "Datazione d'autrice normalizzata" },
+				"date": { "label": "Datazione d'autrice" },
 				"language": { "label": "Lingua" },
 				"keywords": { "label": "Parole chiave" },
 				"observations": { "label": "Osservazioni" }
@@ -33,7 +33,7 @@
 				},
 				"title_on_document": { "label": "Titolo presente sul documento" },
 				"date_and_place_author_as_on_document": { "label": "data e luogo d'autrice" },
-				"date_author_normalised": { "label": "Datazione d'autrice normalizzata" }
+				"date_author_normalised": { "label": "Datazione d'autrice" }
 			},
 			"iiif": {
 				"filename_or_url_preview": { "label": "Filename o URL dell'anteprima" },
@@ -129,7 +129,7 @@
 				"type_genre": { "label": "Tipologia testuale" },
 				"type_editorial": { "label": "Tipologia del documento" },
 				"title_editorial": { "label": "Titolo editoriale" },
-				"date": { "label": "Datazione d'autrice normalizzata" },
+				"date": { "label": "Datazione d'autrice" },
 				"language": { "label": "Lingua" },
 				"keywords": { "label": "Parole chiave" },
 				"observations": { "label": "Osservazioni" }
@@ -147,7 +147,7 @@
 				},
 				"title_on_document": { "label": "Titolo presente sul documento" },
 				"date_and_place_author_as_on_document": { "label": "Data e luogo d'autrice" },
-				"date_author_normalised": { "label": "Datazione d'autrice normalizzata" }
+				"date_author_normalised": { "label": "Datazione d'autrice" }
 			},
 			"iiif": {
 				"filename_or_url_preview": { "label": "Filename o URL dell'anteprima" },

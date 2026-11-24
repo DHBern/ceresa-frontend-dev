@@ -63,20 +63,20 @@
 			"date_desc": "Cronologico (desc)"
 		},
 		"filters": {
-			"docType": "Tipo documento",
-			"editoriale": "Tipo editoriale",
+			"docType": "Tipologia documenti",
+			"editoriale": "Tipologia editoriale",
 			"language": "Lingua",
 			"pubPlace": "Sede di pubblicazione",
 			"hasAudio": "Con audio"
 		},
-		"docTypes": { "posthum": "Postumi", "unpublished": "Inediti", "published": "Pubblicati" },
+		"docTypes": { "posthum": "Postumi", "unpublished": "Inediti", "published": "Eiti" },
 		"languages": { "it": "Italiano", "de": "Tedesco", "fr": "Francese" },
 		"none_labels": {
-			"language": "senza lingua",
+			"language": "-",
 			"pubPlace": "senza sede di pubblicazione",
-			"editoriale": "senza tipo editoriale"
+			"editoriale": "-"
 		},
-		"row": { "noDate": "s.d." },
+		"row": { "noDate": "-" },
 		"empty": "Nessun documento trovato"
 	}
 }
