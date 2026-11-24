@@ -80,11 +80,11 @@
 		if (target && target.scrollLeft !== source.scrollLeft) target.scrollLeft = source.scrollLeft;
 	}
 
-	function editorialLabel(value: string | null): string {
+	function editorialLabel(value: string | null): string | null {
 		return value
 			? (edTypes.dict_docEdTypes[value as keyof typeof edTypes.dict_docEdTypes]
 					?.label_short_singular ?? value)
-			: '–';
+			: null;
 	}
 
 	function displayDate(from: string | null, to: string | null): string {
@@ -104,18 +104,26 @@
 	{/if}
 {/snippet}
 
-{#snippet edTypeLabel(row: TDocRow)}
-	<span
-		class={[
-			'w-fit rounded-sm px-2 py-1 font-bold text-[13px]',
-			row.typeEditoriale && DOC_EDTYPE_STYLES[row.typeEditoriale]
-		]}>{editorialLabel(row.typeEditoriale)}</span
-	>
+{#snippet edTypeLabel(row: TDocRow, fallbackString = '')}
+	{@const label = editorialLabel(row.typeEditoriale)}
+	{#if label}
+		<span
+			class={[
+				'w-fit rounded-sm px-2 py-1 text-[13px] font-bold',
+				row.typeEditoriale && DOC_EDTYPE_STYLES[row.typeEditoriale]
+			]}>{label}</span
+		>
+	{:else if fallbackString}
+		<span>{fallbackString}</span>
+	{/if}
 {/snippet}
 
 {#snippet docTypeLabel(row: TDocRow)}
-	<span class={['w-fit rounded-sm px-2 py-1 font-bold text-[13px]', row.docType && DOCTYPE_STYLES[row.docType]]}
-		>{docsDictionary.dict_docs[row.docType].label_singular}</span
+	<span
+		class={[
+			'w-fit rounded-sm px-2 py-1 text-[13px] font-bold',
+			row.docType && DOCTYPE_STYLES[row.docType]
+		]}>{docsDictionary.dict_docs[row.docType].label_singular}</span
 	>
 {/snippet}
 
@@ -174,7 +182,7 @@
 
 	<!-- Controls for gallery-mode -->
 	{#if galleryViewType.value === 'gallery' && galleryControls}
-	{@render galleryControls()}
+		{@render galleryControls()}
 	{/if}
 
 	<!-- Entry count -->
@@ -292,7 +300,7 @@
 										/>
 									{/if}
 									{@render listValues(row)}
-									{@render edTypeLabel(row)}
+									{@render edTypeLabel(row, '-')}
 								</a>
 							</li>
 						{/each}

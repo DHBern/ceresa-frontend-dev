@@ -13,7 +13,7 @@
 			"slug": { "label": "Identifier postumi (+ suffix_version)" },
 			"metadata": {
 				"type_genre": { "label": "Tipologia testuale" },
-				"type_editorial": { "label": "Tipologia del documento" },
+				"type_document": { "label": "Tipologia del documento" },
 				"title_editorial": { "label": "Titolo editoriale" },
 				"date": { "label": "Datazione d'autrice" },
 				"language": { "label": "Lingua" },
@@ -127,7 +127,7 @@
 			"slug": { "label": "Identifier inediti" },
 			"metadata": {
 				"type_genre": { "label": "Tipologia testuale" },
-				"type_editorial": { "label": "Tipologia del documento" },
+				"type_document": { "label": "Tipologia del documento" },
 				"title_editorial": { "label": "Titolo editoriale" },
 				"date": { "label": "Datazione d'autrice" },
 				"language": { "label": "Lingua" },

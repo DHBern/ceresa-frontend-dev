@@ -10,7 +10,7 @@
 			"posthum_A-5-b_11_AC001": {
 				"metadata": {
 					"type_genre": "saggio",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "[Emily Brontë]",
 					"language": "it",
 					"keywords": null,
@@ -74,7 +74,7 @@
 			"posthum_A-5-b_11_AC002": {
 				"metadata": {
 					"type_genre": "saggio",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "[Intervento all'Istituto Svizzero]",
 					"language": "it",
 					"keywords": null,
@@ -135,7 +135,7 @@
 			"posthum_A-1-b_6-2_AC001_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Anima [1]",
 					"language": "it",
 					"keywords": null,
@@ -190,7 +190,7 @@
 			"posthum_A-1-b_6-2_AC002_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Animale",
 					"language": "it",
 					"keywords": null,
@@ -245,7 +245,7 @@
 			"posthum_A-1-b_6-2_AC002_b": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Animali (esseri)",
 					"language": "it",
 					"keywords": null,
@@ -300,7 +300,7 @@
 			"posthum_A-1-b_6-2_AC003": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Animus",
 					"language": "it",
 					"keywords": null,
@@ -355,7 +355,7 @@
 			"posthum_A-1-b_6-2_AC004": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Apparenza",
 					"language": "it",
 					"keywords": null,
@@ -410,7 +410,7 @@
 			"posthum_A-1-b_6-2_AC005": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Bellezza",
 					"language": "it",
 					"keywords": null,
@@ -465,7 +465,7 @@
 			"posthum_A-1-b_6-2_AC006": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Biologia - Differenze biologiche",
 					"language": "it",
 					"keywords": null,
@@ -521,7 +521,7 @@
 			"posthum_A-1-b_6-2_AC007": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Cattolica (chiesa la)",
 					"language": "it",
 					"keywords": null,
@@ -576,7 +576,7 @@
 			"posthum_A-1-b_6-2_AC008_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Coscienza [1]",
 					"language": "it",
 					"keywords": null,
@@ -631,7 +631,7 @@
 			"posthum_A-1-b_6-2_AC009_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Cultura [1]",
 					"language": "it",
 					"keywords": null,
@@ -686,7 +686,7 @@
 			"posthum_A-1-b_6-2_AC010": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Democristiano/a",
 					"language": "it",
 					"keywords": null,
@@ -741,7 +741,7 @@
 			"posthum_A-1-b_6-2_AC011": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "(Dio)",
 					"language": "it",
 					"keywords": null,
@@ -796,7 +796,7 @@
 			"posthum_A-1-b_6-2_AC012": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Donna",
 					"language": "it",
 					"keywords": null,
@@ -851,7 +851,7 @@
 			"posthum_A-1-b_6-2_AC013": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Etologia",
 					"language": "it",
 					"keywords": null,
@@ -906,7 +906,7 @@
 			"posthum_A-1-b_6-2_AC014": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Eva",
 					"language": "it",
 					"keywords": null,
@@ -961,7 +961,7 @@
 			"posthum_A-1-b_6-2_AC016": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Famiglia",
 					"language": "it",
 					"keywords": null,
@@ -1016,7 +1016,7 @@
 			"posthum_A-1-b_6-2_AC017": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Femminile. Femmina. Femminismo",
 					"language": "it",
 					"keywords": null,
@@ -1071,7 +1071,7 @@
 			"posthum_A-1-b_6-2_AC018_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Femminilità  [1]",
 					"language": "it",
 					"keywords": null,
@@ -1126,7 +1126,7 @@
 			"posthum_A-1-b_6-2_AC018_b": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Femminilità  [2]",
 					"language": "it",
 					"keywords": null,
@@ -1181,7 +1181,7 @@
 			"posthum_A-1-b_6-2_AC015": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Figli",
 					"language": "it",
 					"keywords": null,
@@ -1236,7 +1236,7 @@
 			"posthum_A-1-b_6-2_AC019": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Grammatica",
 					"language": "it",
 					"keywords": null,
@@ -1291,7 +1291,7 @@
 			"posthum_A-1-b_6-3_AC001": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Lavoro",
 					"language": "it",
 					"keywords": null,
@@ -1346,7 +1346,7 @@
 			"posthum_A-1-b_6-3_AC002": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Legge",
 					"language": "it",
 					"keywords": null,
@@ -1401,7 +1401,7 @@
 			"posthum_A-1-b_6-3_AC003_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Letteratura",
 					"language": "it",
 					"keywords": null,
@@ -1456,7 +1456,6 @@
 			"posthum_A-1-b_6-3_AC003_b": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": null,
 					"title_editorial": "Letterario (personaggio femminile il)",
 					"language": null,
 					"keywords": null,
@@ -1511,7 +1510,6 @@
 			"posthum_A-1-b_6-3_AC003_c": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": null,
 					"title_editorial": "Letterario (personaggio il)",
 					"language": null,
 					"keywords": null,
@@ -1566,7 +1564,7 @@
 			"posthum_A-1-b_6-3_AC004": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Madre",
 					"language": "it",
 					"keywords": null,
@@ -1621,7 +1619,7 @@
 			"posthum_A-1-b_6-3_AC005": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Maschile",
 					"language": "it",
 					"keywords": null,
@@ -1677,7 +1675,7 @@
 			"posthum_A-1-b_6-3_AC006": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Moda femminile",
 					"language": "it",
 					"keywords": null,
@@ -1733,7 +1731,7 @@
 			"posthum_A-1-b_6-3_AC007_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Morale. Moralità",
 					"language": "it",
 					"keywords": null,
@@ -1789,7 +1787,7 @@
 			"posthum_A-1-b_6-3_AC007???": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Natura. Naturale",
 					"language": "it",
 					"keywords": null,
@@ -1844,7 +1842,7 @@
 			"posthum_A-1-b_6-3_AC007??": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Norma. Normalità",
 					"language": "it",
 					"keywords": null,
@@ -1899,7 +1897,7 @@
 			"posthum_A-1-b_6-3_AC008": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Ovvio",
 					"language": "it",
 					"keywords": null,
@@ -1954,7 +1952,7 @@
 			"posthum_A-1-b_6-3_AC010": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Pornografia",
 					"language": "it",
 					"keywords": null,
@@ -2009,7 +2007,7 @@
 			"posthum_A-1-b_6-3_AC011_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Psicologia [1]",
 					"language": "it",
 					"keywords": null,
@@ -2064,7 +2062,7 @@
 			"posthum_A-1-b_6-3_AC011_b": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Psicologia [2]",
 					"language": "it",
 					"keywords": null,
@@ -2119,7 +2117,7 @@
 			"posthum_A-1-b_6-3_AC012": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Ragione. Ragionare",
 					"language": "it",
 					"keywords": null,
@@ -2174,7 +2172,7 @@
 			"posthum_A-1-b_6-3_AC013_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Sessi (guerra dei)",
 					"language": "it",
 					"keywords": null,
@@ -2229,7 +2227,7 @@
 			"posthum_A-1-b_6-3_AC013_b": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Sesso",
 					"language": "it",
 					"keywords": null,
@@ -2284,7 +2282,7 @@
 			"posthum_A-1-b_6-3_AC014": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Scrittore. Scrittrice",
 					"language": "it",
 					"keywords": null,
@@ -2339,7 +2337,7 @@
 			"posthum_A-1-b_6-3_AC016": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Vita",
 					"language": "it",
 					"keywords": null,
@@ -2394,7 +2392,7 @@
 			"posthum_A-1-b_6-4": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Svizzera (la)",
 					"language": "it",
 					"keywords": null,
@@ -2454,7 +2452,7 @@
 			"posthum_A-1-b_6-5_AC003_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Aborto (liberalizzazione del)",
 					"language": "it",
 					"keywords": null,
@@ -2509,7 +2507,7 @@
 			"posthum_A-1-b_6-5_AC004": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Adamo",
 					"language": "it",
 					"keywords": null,
@@ -2564,7 +2562,7 @@
 			"posthum_A-1-b_6-5_AC005": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Amore",
 					"language": "it",
 					"keywords": null,
@@ -2619,7 +2617,7 @@
 			"posthum_A-1-b_6-5_AC010": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Deserto",
 					"language": "it",
 					"keywords": null,
@@ -2674,7 +2672,7 @@
 			"posthum_A-1-b_6-5_AC017": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Prossimo",
 					"language": "it",
 					"keywords": null,
@@ -2729,7 +2727,7 @@
 			"posthum_A-1-b_6-5_AC018": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Religione",
 					"language": "it",
 					"keywords": null,
@@ -2784,7 +2782,7 @@
 			"posthum_A-1-b_6-5_AC020_a": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Uomo",
 					"language": "it",
 					"keywords": null,
@@ -2841,7 +2839,7 @@
 			"unpublished_A-1-a_1-1": {
 				"metadata": {
 					"type_genre": "saggio",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Prefazione per Gli altri",
 					"language": "it",
 					"keywords": null,
@@ -2899,7 +2897,7 @@
 			"unpublished_A-1-a_1-2": {
 				"metadata": {
 					"type_genre": "racconto",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3010,7 +3008,7 @@
 			"unpublished_A-1-b_1-1": {
 				"metadata": {
 					"type_genre": "racconto",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3063,7 +3061,7 @@
 			"unpublished_A-1-b_1-4_AC001": {
 				"metadata": {
 					"type_genre": "racconto",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Autobiografie / II. Io cannibale",
 					"language": "it",
 					"keywords": null,
@@ -3125,7 +3123,7 @@
 			"unpublished_A-1-b_1-4_AC002": {
 				"metadata": {
 					"type_genre": "racconto",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Autobiografie (IV)",
 					"language": "it",
 					"keywords": null,
@@ -3181,7 +3179,7 @@
 			"unpublished_A-1-b_1": {
 				"metadata": {
 					"type_genre": "racconto",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Autobiografie (III)",
 					"language": "it",
 					"keywords": null,
@@ -3239,7 +3237,7 @@
 			"unpublished_A-1-b_1-2": {
 				"metadata": {
 					"type_genre": "racconto",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3297,7 +3295,7 @@
 			"unpublished_A-1-b_1-3": {
 				"metadata": {
 					"type_genre": "racconto",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3350,7 +3348,6 @@
 			"unpublished_A-1-b_1-10": {
 				"metadata": {
 					"type_genre": "racconto",
-					"type_editorial": null,
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3403,7 +3400,7 @@
 			"unpublished_A-1-b_1-9": {
 				"metadata": {
 					"type_genre": "racconto",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3456,7 +3453,7 @@
 			"unpublished_A-1-b_3-1": {
 				"metadata": {
 					"type_genre": "poesia",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "[Oh Messina oh mia cara dal fondo dei tempi vani]",
 					"language": "it",
 					"keywords": null,
@@ -3509,7 +3506,7 @@
 			"unpublished_A-2-a_2": {
 				"metadata": {
 					"type_genre": "poesia",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "[Può darsi che la nostra insensibilità]",
 					"language": "it",
 					"keywords": null,
@@ -3562,7 +3559,7 @@
 			"unpublished_A-1-b_3-2": {
 				"metadata": {
 					"type_genre": "teatrale",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3625,7 +3622,7 @@
 			"unpublished_A-1-b_3-3": {
 				"metadata": {
 					"type_genre": "teatrale",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "[piantina Messina]",
 					"language": "it",
 					"keywords": null,
@@ -3678,7 +3675,7 @@
 			"unpublished_A-1-b_5-2": {
 				"metadata": {
 					"type_genre": "romanzo",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3731,7 +3728,7 @@
 			"unpublished_A-1-b_7-8": {
 				"metadata": {
 					"type_genre": "romanzo",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "[Eloise]",
 					"language": "it",
 					"keywords": null,
@@ -3784,7 +3781,7 @@
 			"unpublished_A-5-b_1": {
 				"metadata": {
 					"type_genre": "saggio",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Vittorini et la nouvelle prose italienne",
 					"language": "it",
 					"keywords": null,
@@ -3859,7 +3856,7 @@
 			"unpublished_A-5-b_3": {
 				"metadata": {
 					"type_genre": "saggio",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3912,7 +3909,7 @@
 			"unpublished_A-6-c": {
 				"metadata": {
 					"type_genre": "traduzione",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": null,
 					"language": "it",
 					"keywords": null,
@@ -3969,7 +3966,7 @@
 			"unpublished_A-1-b_6-2_AC001_b": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Anima [2]",
 					"language": "it",
 					"keywords": null,
@@ -4025,7 +4022,7 @@
 			"unpublished_A-1-b_6-3_AC003_d": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Personaggio femminile",
 					"language": "it",
 					"keywords": null,
@@ -4078,7 +4075,7 @@
 			"unpublished_A-1-b_6-3_AC003_e": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Personaggio maschile",
 					"language": "it",
 					"keywords": null,
@@ -4131,7 +4128,7 @@
 			"unpublished_A-1-b_6-5_AC003_b": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "dattiloscritto",
+					"type_document": "dattiloscritto",
 					"title_editorial": "Aborto [1]",
 					"language": "it",
 					"keywords": null,
@@ -4184,7 +4181,7 @@
 			"unpublished_A-1-b_6-5_AC003_c": {
 				"metadata": {
 					"type_genre": "dizionario",
-					"type_editorial": "manoscritto",
+					"type_document": "manoscritto",
 					"title_editorial": "Aborto [2]",
 					"language": null,
 					"keywords": null,
@@ -5776,7 +5773,6 @@
 			"published_A-6-a_1": {
 				"metadata": {
 					"type_genre": "traduzione",
-					"type_editorial": null,
 					"title_editorial": "[Hans Arp, Poesie]",
 					"language": "it",
 					"keywords": null,
@@ -5842,7 +5838,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -5886,7 +5881,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -5930,7 +5924,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -5974,7 +5967,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -6018,7 +6010,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -6062,7 +6053,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -6106,7 +6096,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -6152,7 +6141,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -6196,7 +6184,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -6240,7 +6227,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -6283,7 +6269,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},
@@ -6326,7 +6311,6 @@
 					"pubPlace": "",
 					"archive": "",
 					"archiveCollation": "",
-					"type_editotraleDocumento": "",
 					"type_testuale": "Romanzo",
 					"note": ""
 				},

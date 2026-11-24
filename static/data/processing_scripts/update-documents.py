@@ -17,8 +17,9 @@ Conventions:
       documents.posthum = { "posthum_<identifier>[_<suffix>]": {...} };
       the same prefixed key is used for slug;
       tei.version_id and tei.filename are the unprefixed identifier (no section prefix, no suffix)
-    - metadata.type_genre     in 'in_periodico'|'in_volume'|'in_giornale'|'manoscritto'|'dattiloscritto'
-    - metadata.type_editorial in 'saggio'|'prosa'|'racconto'|'traduzione'|'dizionario'|'poesia'|'romanzo'|'teatrale'
+    - metadata.type_genre     in 'saggio'|'prosa'|'racconto'|'traduzione'|'dizionario'|'poesia'|'romanzo'|'teatrale'
+    - metadata.type_editorial in 'in_periodico'|'in_volume'|'in_giornale'
+    - metadata.type_documento in 'manoscritto'|'dattiloscritto'
     - missing data (missing column, empty cell, "-") is written as null (= TUnset), never ""
 
 Also produced:

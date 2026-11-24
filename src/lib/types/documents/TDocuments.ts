@@ -27,8 +27,8 @@ type TContentNotes = {
 };
 
 type TLanguageKeys = 'it' | 'de' | 'fr';
-type TDocEdtypeKeys =
-	'in_periodico' | 'in_volume' | 'in_giornale' | 'manoscritto' | 'dattiloscritto';
+type TDocEdtypeKeys = 'in_periodico' | 'in_volume' | 'in_giornale';
+type TDocScripttypeKeys = 'manoscritto' | 'dattiloscritto';
 export type TDocGenreKeys =
 	'saggio' | 'prosa' | 'racconto' | 'traduzione' | 'dizionario' | 'poesia' | 'romanzo' | 'teatrale';
 
@@ -60,7 +60,8 @@ export type TTextDocuments = {
 	slug: string; //! NEW (@LLM: this is a redudant copy of the current TPosthumKeys, TPublishedKeys, TUnpublishedKeys)
 	metadata: {
 		type_genre: TDocGenreKeys;
-		type_editorial: TDocEdtypeKeys;
+		type_editorial?: TDocEdtypeKeys;
+		type_document?: TDocScripttypeKeys | null;
 		title_editorial: string;
 		date: { from: string; to: string };
 		language: TLanguageKeys;

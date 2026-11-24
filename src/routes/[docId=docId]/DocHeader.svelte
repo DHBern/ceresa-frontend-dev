@@ -586,13 +586,6 @@
 										)
 									)}
 									{@render metadataEntry(
-										'Tipologia editoriale',
-										getProperty(
-											getProperty(currentFilesAudio.value, 'metadata'),
-											'type_editotraleDocumento'
-										)
-									)}
-									{@render metadataEntry(
 										'Tipologia testuale',
 										getProperty(getProperty(currentFilesAudio.value, 'metadata'), 'type_testuale')
 									)}
