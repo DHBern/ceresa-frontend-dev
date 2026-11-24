@@ -75,12 +75,14 @@ jobs:
 
           cat "$LOG_DIR/$FILENAME"
 
-      - name: Sync CETEIcean to WebDAV
+      - name: Sync CETEIcean to WebDAV Step 1
         run: |
           ls src/lib/CETEIcean/logs
 
           # 1. sync everything EXCEPT logs
           rclone sync src/lib/CETEIcean webdav:preview --delete-during --exclude "logs/**"
 
+      - name: Sync CETEIcean to WebDAV Step 2
+        run: |
           # 2. separately sync logs WITHOUT deletion
           rclone copy src/lib/CETEIcean/logs webdav:preview/logs
