@@ -34,9 +34,10 @@
 	/* Editorial colours */
 	--color-add: #2d8a2d;
 	--color-del: #b91c1c;
-	--color-correction: #3574f1;
-	--color-hw: #3868c9;
-	--color-tw: #b138c9;
+	--color-correction-hw: #3574f1;
+	--color-correction-tw: #d235f1;
+	--color-hw: #3574f1;
+	--color-tw: #d235f1;
 	--color-subst-bg: #fffbe6;
 	--color-supplied-bg: #eeeeee;
 	--color-unclear-border: #92400e;
@@ -421,11 +422,21 @@ tei-hi[rendition~='#g'] {
 .mode-df {
 	tei-del {
 		text-decoration: line-through;
-		text-decoration-color: var(--color-correction);
 		text-decoration-thickness: 0.2rem;
+		&[hand='#hw'] {
+			text-decoration-color: var(--color-correction-hw);
+		}
+		&[hand='#tw'] {
+			text-decoration-color: var(--color-correction-tw);
+		}
 	}
 	tei-add {
-		color: var(--color-correction);
+		&[hand='#hw'] {
+			color: var(--color-correction-hw);
+		}
+		&[hand='#tw'] {
+			color: var(--color-correction-tw);
+		}
 	}
 }
 
@@ -582,7 +593,7 @@ tei-gap {
 	tei-choice > tei-sic,
 	tei-choice > tei-orig,
 	tei-choice > tei-abbr {
-		color: var(--color-muted);
+		
 	}
 	tei-choice > tei-orig {
 		&::before {
