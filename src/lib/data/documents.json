@@ -3847,7 +3847,7 @@
 					"filename_last_facsimile": "A-5-b_1_005"
 				},
 				"translation": {
-					"filename": "A-5-b_1-translation"
+					"filename": "A-5-b_1_Translation"
 				},
 				"slug": "unpublished_A-5-b_1",
 				"tei": {
@@ -4842,7 +4842,7 @@
 					"filename_last_facsimile": "A-5-a_13_001"
 				},
 				"translation": {
-					"filename": "A-5-a_13-translation"
+					"filename": "A-5-a_13_Translation"
 				},
 				"slug": "published_A-5-a_13",
 				"tei": {
