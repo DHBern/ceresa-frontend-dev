@@ -63,6 +63,16 @@
 	--color-note-active: var(--color-dark-90);
 	--color-note-active-foreground: var(--color-background-contrast);
 	--color-footnote-circle: var(--color-dark-40);
+	/* Fall back to the app theme colors when the global theme is not loaded. */
+	--color-background-contrast: var(--background-contrast, hsl(0 0% 0%));
+	--color-dark-90: var(--dark-90, hsl(0 0% 90%));
+	--color-dark-70: var(--dark-70, hsl(0 0% 70%));
+	--color-dark-40: var(--dark-40, hsl(0 0% 40%));
+	--color-rs-doc: var(--rs-doc, hsla(0, 50%, 50%));
+	--color-rs-person: var(--rs-person, hsla(262, 83%, 58%));
+	--color-rs-place: var(--rs-place, hsla(26, 90%, 37%));
+	--color-rs-work: var(--rs-work, hsla(55, 54%, 66%));
+	--color-rs-org: var(--rs-org, hsla(243, 72%, 29%));
 
 	/* Space */
 	--space-unit-v: 3em;
