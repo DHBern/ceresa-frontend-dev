@@ -433,20 +433,23 @@ tei-hi[rendition~='#g'] {
 	tei-del {
 		text-decoration: line-through;
 		text-decoration-thickness: 0.2rem;
-		&[hand='#hw'] {
-			text-decoration-color: var(--color-correction-hw);
-		}
-		&[hand='#tw'] {
-			text-decoration-color: var(--color-correction-tw);
-		}
 	}
-	tei-add {
-		&[hand='#hw'] {
-			color: var(--color-correction-hw);
-		}
-		&[hand='#tw'] {
-			color: var(--color-correction-tw);
-		}
+
+	tei-del[hand='#hw'],
+	tei-text[data-default-hand='#hw'] tei-del:not([hand]) {
+		text-decoration-color: var(--color-correction-hw);
+	}
+	tei-del[hand='#tw'],
+	tei-text[data-default-hand='#tw'] tei-del:not([hand]) {
+		text-decoration-color: var(--color-correction-tw);
+	}
+	tei-add[hand='#hw'],
+	tei-text[data-default-hand='#hw'] tei-add:not([hand]) {
+		color: var(--color-correction-hw);
+	}
+	tei-add[hand='#tw'],
+	tei-text[data-default-hand='#tw'] tei-add:not([hand]) {
+		color: var(--color-correction-tw);
 	}
 }
 

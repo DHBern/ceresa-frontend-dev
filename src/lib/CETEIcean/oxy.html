@@ -59,6 +59,22 @@
 			const XML_NS = 'http://www.w3.org/XML/1998/namespace';
 			const NOTE_ID_PREFIX = 'note_';
 
+			function applyDefaultHand(xmlDocument, container) {
+				const header = xmlDocument.getElementsByTagNameNS(TEI_NS, 'teiHeader')[0];
+				if (!header) return;
+				const hands = Array.from(header.getElementsByTagNameNS(TEI_NS, 'handNote')).filter(
+					(note) =>
+						note.parentElement?.localName === 'handDesc' &&
+						note.getAttribute('scope') === 'major' &&
+						['hw', 'tw'].includes(note.getAttributeNS(XML_NS, 'id') ?? '')
+				);
+				if (hands.length > 1) throw new Error('Multiple default TEI hands are declared.');
+				if (!hands.length) return;
+				const text = container.querySelector('tei-text');
+				if (!text) throw new Error('Cannot apply the default hand: rendered TEI text not found.');
+				text.setAttribute('data-default-hand', `#${hands[0].getAttributeNS(XML_NS, 'id')}`);
+			}
+
 			function selectTEIVersion(doc, id) {
 				const matches = Array.from(doc.getElementsByTagNameNS(TEI_NS, 'div')).filter(
 					(division) => division.getAttributeNS(XML_NS, 'id') === id
@@ -339,6 +355,7 @@
 				cetei.addBehaviors(behaviors(document));
 				const view = currentMode === 'df' ? diplomaticView : readingView;
 				view.replaceChildren(cetei.domToHTML5(xmlDocument));
+				applyDefaultHand(xmlDocument, view);
 				cetei.processPage();
 				if (version) {
 					const pageBreaks = getTextPageBreaks(view);
