@@ -1,4 +1,5 @@
 import {
+	applyDefaultHand,
 	behaviors,
 	collectPageMetadata,
 	getTextPageBreaks,
@@ -35,6 +36,7 @@ const processTEI = (xml: string, versionId?: string): ProcessedTEI => {
 	const domFragment = ceteicean.domToHTML5(xmlDoc);
 	const container = htmlDoc.createElement('div');
 	container.appendChild(domFragment);
+	applyDefaultHand(xmlDoc, container);
 	if (version) {
 		const pageBreaks = getTextPageBreaks(container);
 		if (pageBreaks.length !== version.pageBreakCount) {
