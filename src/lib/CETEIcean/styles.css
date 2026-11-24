@@ -200,26 +200,26 @@ tei-p {
 		font-style: italic;
 		margin: 0.5em 0;
 		padding: 0;
-
-		tei-fw {
-			position: absolute;
-			display: inline-block;
-			&[place='topleft'],
-			&[place='bottomleft'] {
-				left: 0;
-				text-align: left;
-			}
-			&[place='topcenter'],
-			&[place='bottomcenter'] {
-				left: 50%;
-				transform: translateX(-50%);
-				text-align: center;
-			}
-			&[place='topright'],
-			&[place='bottomright'] {
-				right: 0;
-				text-align: right;
-			}
+	}
+	tei-ab > tei-fw,
+	tei-p > tei-fw {
+		position: absolute;
+		display: inline-block;
+		&[place='topleft'],
+		&[place='bottomleft'] {
+			left: 0;
+			text-align: left;
+		}
+		&[place='topcenter'],
+		&[place='bottomcenter'] {
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+		}
+		&[place='topright'],
+		&[place='bottomright'] {
+			right: 0;
+			text-align: right;
 		}
 	}
 }
@@ -593,7 +593,6 @@ tei-gap {
 	tei-choice > tei-sic,
 	tei-choice > tei-orig,
 	tei-choice > tei-abbr {
-		
 	}
 	tei-choice > tei-orig {
 		&::before {
