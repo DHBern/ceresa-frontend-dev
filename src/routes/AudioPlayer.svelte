@@ -121,13 +121,21 @@
 		if (currentChapterIndex < chapters.length - 1) seekTo(chapters[currentChapterIndex + 1].time);
 	}
 
-	// --- effects ---
 	// Play if audioFile changed
 	$effect(() => {
 		const _listen = currentlyPlayingAudio.value?.slug; // listen to changes here
 		playAudio();
 	});
+
+	function handleEscape(ev: KeyboardEvent) {
+		if (ev.key === 'Escape' && isAudioPlayerVisible.value) {
+			isPlaying = false;
+			isAudioPlayerVisible.value = false;
+		}
+	}
 </script>
+
+<!-- <svelte:document onkeydown={handleEscape} /> -->
 
 <div class="mx-auto w-full max-w-7xl px-5 py-4">
 	<div class="flex items-start justify-between gap-4">
@@ -209,9 +217,6 @@
 			<div class="w-full">
 				<!-- Header: chapter name + time -->
 				<div class="flex w-full items-center justify-between gap-3">
-					<span class="min-w-0 truncate text-sm font-medium">
-						{currentChapter?.chapName ?? 'No chapter'}
-					</span>
 					<span class="shrink-0 text-xs tabular-nums">
 						{formatTime(sliderValue)} / {formatTime(duration)}
 					</span>
