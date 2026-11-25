@@ -94,7 +94,7 @@ jobs:
           curl -sv --max-time 15 \
             -H "Authorization: Basic $AUTH" \
             -X PROPFIND -H "Depth: 0" \
-            https://dav.arcipelago-***.digitaleditions.ch/preview/ \
+            https://dav.arcipelago-ceresa.digitaleditions.ch/preview/ \
             -o /dev/null
           echo "--- rclone with header dump ---"
           rclone lsd webdav: -vv --dump headers 2>&1 | head -120
