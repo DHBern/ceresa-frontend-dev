@@ -79,29 +79,19 @@ jobs:
         run: |
           ls src/lib/CETEIcean/logs
 
-      - name: Debug WebDAV endpoint
-        env:
-          WEBDAV_URL: ${{ secrets.WEBDAV_URL }}
+      - name: Debug preview collection
         run: |
-          echo "URL: ${WEBDAV_URL%/}"
-          curl -sSI --max-time 10 "${WEBDAV_URL%/}/preview/" || true
-
-      - name: Debug WebDAV 2
-        run: |
-          echo "--- proxy env ---"
-          env | grep -i proxy || echo "none"
-          echo "--- rclone version ---"
-          rclone version
-          echo "--- PROPFIND as rclone would send it ---"
-          AUTH=$(printf '%s:%s' "$WEBDAV_USER" "$WEBDAV_PASS" | base64)
+          echo "--- PROPFIND /preview/ with real creds ---"
+          AUTH=$(printf '%s' "$WEBDAV_USER:$WEBDAV_PASS" | base64)
           curl -sv --max-time 15 \
             -H "Authorization: Basic $AUTH" \
             -X PROPFIND -H "Depth: 0" \
-            https://dav.arcipelago-ceresa.digitaleditions.ch/preview/ \
-            -o /dev/null
-          echo "--- rclone with header dump ---"
-          rclone lsd webdav: -vv --dump headers 2>&1 | head -120
+            "${WEBDAV_URL%/}/preview/" -o /dev/null 2>&1 | sed 's/Basic .*/Basic ***/'
+          echo "--- rclone on the failing path ---"
+          rclone lsd webdav:preview -vv --dump headers 2>&1 \
+            | sed 's/Basic .*/Basic ***/' | head -150
         env:
+          WEBDAV_URL: ${{ secrets.WEBDAV_URL }}
           WEBDAV_USER: ${{ secrets.WEBDAV_USER }}
           WEBDAV_PASS: ${{ secrets.WEBDAV_PASS }}
 
