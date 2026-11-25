@@ -79,6 +79,29 @@ jobs:
         run: |
           ls src/lib/CETEIcean/logs
 
+      - name: Debug WebDAV endpoint
+        run: |
+          curl -sSI --max-time 10 "${secrets.WEBDAV_URL%/}/preview/" || true
+
+      - name: Debug WebDAV 2
+        run: |
+          echo "--- proxy env ---"
+          env | grep -i proxy || echo "none"
+          echo "--- rclone version ---"
+          rclone version
+          echo "--- PROPFIND as rclone would send it ---"
+          AUTH=$(printf '%s:%s' "$WEBDAV_USER" "$WEBDAV_PASS" | base64)
+          curl -sv --max-time 15 \
+            -H "Authorization: Basic $AUTH" \
+            -X PROPFIND -H "Depth: 0" \
+            https://dav.arcipelago-***.digitaleditions.ch/preview/ \
+            -o /dev/null
+          echo "--- rclone with header dump ---"
+          rclone lsd webdav: -vv --dump headers 2>&1 | head -120
+        env:
+          WEBDAV_USER: ${{ secrets.WEBDAV_USER }}
+          WEBDAV_PASS: ${{ secrets.WEBDAV_PASS }}
+
       - name: Sync CETEIcean to WebDAV Step 2
         run: |
           # 1. sync everything EXCEPT logs
