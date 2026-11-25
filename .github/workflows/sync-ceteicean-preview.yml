@@ -75,6 +75,11 @@ jobs:
 
           cat "$LOG_DIR/$FILENAME"
 
+      - name: Guard against slashless WebDAV paths
+        run: |
+          grep -nE 'webdav:[^ ]+' .github/workflows/*.yml | grep -v '/' && {
+            echo "::error::Found webdav: remote path without trailing slash"; exit 1; } || true
+
       - name: Sync CETEIcean to WebDAV (with trailing slashes)
         run: |
           ls src/lib/CETEIcean/logs
