@@ -270,7 +270,7 @@
 		</div>
 		<div class="pointer-events-none flex flex-wrap justify-center gap-x-2 gap-y-2">
 			<!-- Comments control -->
-			{#if params.mode === 'DF' && (ceteiData.serialized.match(/<ol class="notes">(.*?)<\/ol>/s) || []).length}
+			<!-- {#if params.mode === 'DF' && (ceteiData.serialized.match(/<ol class="notes">(.*?)<\/ol>/s) || []).length}
 				<button
 					class={[
 						'preset-btn-round pointer-events-auto font-bold',
@@ -288,7 +288,7 @@
 					{/if}
 					Commentario
 				</button>
-			{/if}
+			{/if} -->
 			<!-- Annotations control -->
 			{#if Object.keys(docItem?.crossReferences.cited_entities || {}).length > 0}
 				<button
