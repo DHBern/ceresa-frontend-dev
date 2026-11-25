@@ -95,10 +95,13 @@ jobs:
           WEBDAV_USER: ${{ secrets.WEBDAV_USER }}
           WEBDAV_PASS: ${{ secrets.WEBDAV_PASS }}
 
+      - name: Test trailing slash
+        run: rclone lsd "webdav:preview/" -vv --dump headers 2>&1 | sed 's/Basic .*/Basic ***/' | head -60
+
       - name: Sync CETEIcean to WebDAV Step 2
         run: |
           # 1. sync everything EXCEPT logs
-          rclone sync src/lib/CETEIcean webdav:preview --delete-during --exclude "logs/**"
+          rclone sync src/lib/CETEIcean "webdav:preview/" --delete-during --exclude "logs/**"
 
       - name: Sync CETEIcean to WebDAV Step 3
         run: |
