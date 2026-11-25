@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_6-2" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_6-2_AC007#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A-1-b_6-2_AC007</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-b/6-2/AC007</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="it"></language>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC007/A-1-b_6-2_AC007_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_041.tif"/>
+            <ab><fw type="pageNum" place="topright">1</fw></ab>
+               <head>C<del>TO</del><add place="over" hand="#hw">A</add><del>O</del><add place="over" hand="#hw">T</add>OLICA (CHIESA LA)</head>  
+               <p>
+                  <lb xml:id="p001_l"/>È l'amministratrice del peccato originale <del>è</del> e ciò ne spiega 
+                  <lb xml:id="p001_l_1"/>sia <del>l'</del><add place="above">la pretesa di</add> universalità che la misoginia,
+                  <add place="above">di fatto</add> dato che tale peccato è, 
+               <lb xml:id="p001_l_2"/>universalmente diffuso e che [cassato_ds[ne è istigatrice la donna. la]] [intsup[alloggia nella donna. Quest'ultima]] 
+               <lb xml:id="p001_l_3"/>[cassato_ds[verità assoluta al suo proposito afferma che ne sia istigatri-]] [intsup[affermazione costituisce in effetti la verità assoluta della]] 
+               <lb xml:id="p001_r_1_tl_19"/>[cassato_ds[ce la donna.]] [intsup[chisa cattolica,] correttamente dogmatica come a una verità 
+               <lb xml:id="p001_r_1_tl_20"/>assoluta si conviene, né possono esservi dubbi sulla sua uni<pc>-</pc><lb xml:id="p001_r_1_tl_21" break="no"/>versalità non soltanto perché vi sono donne in ogni angolo del<pc>-</pc><lb xml:id="p001_r_1_tl_22" break="no"/>la terra ma anche perché malauguratamente dal peccato original 
+               <lb xml:id="p001_r_1_tl_23"/>prende origine la continuazione della specie, perlomeno per 
+               <lb xml:id="p001_r_1_tl_24"/>quanto riguarda il genere umano poiché la sessualità de[cassato_ds[g]][sscr[l]]le 
+               <lb xml:id="p001_l_5"/>altre speci viventi, vegetali e animali, non costinuiscono pec<pc>-</pc><lb xml:id="p001_l_6" break="no"/>cato nè originale nè altro. [cassato_ds[Tale discriminazione appare corret-]] [intsup[L'assenza del peccato originale]] 
+               <lb xml:id="p001_l_7"/>[cassato_ds[ta quando si consideri che nel mondo animale extra-umano e in]] [intsup[nel mondo animale extra-umano e in quello vegetale appare ol-]] 
+               <lb xml:id="p001_l_8"/>[cassato_ds[quello vegestale]] [intsup[tremodo corretta e confermata] dalla [cassato_ds[prassi]] scienza, in quanto 
+               <lb xml:id="p001_r_1_tl_37"/>maschi e femmine animali e vegetali praticano una sessualità 
+               <lb xml:id="p001_r_1_tl_38"/>equamente distribuita fra gli uni e gli altri e pare anzi che 
+               <lb xml:id="p001_r_1_tl_39"/>le femmine siano al riguardo piuttosto ottuse. Non così la 
+               <lb xml:id="p001_r_1_tl_40"/>smaliziata femmina dell'uomo, la donna, la quale approfitta 
+               <lb xml:id="p001_r_1_tl_41"/>del senso civico dell'uomo riguardo alla continuazione della 
+               <lb xml:id="p001_r_1_tl_42"/>specie per costringerlo sua malgrado appunto al peccato origi<pc>-</pc><lb xml:id="p001_r_1_tl_43" break="no"/>nale [cassato_ds[.]][sscr[,]] la sessualità dell'uomo essendo naturalmente [cassato_ds[inesisten-]] 
+               <lb xml:id="p001_r_1_tl_45"/>[cassato_ds[te, se non es]] se non inesistente però assopita. 
+               <lb xml:id="p001_r_1_tl_46"/>Si capisce da questo fatto la necessità [intsup[dell'esistenza] della C.C. e la [cassato_ds[i]][sscr[d]]iffi<pc>-</pc><lb xml:id="p001_r_1_tl_47" break="no"/>coltà del suo calvario amministrativo, toccandole permettere 
+               <lb xml:id="p001_r_1_tl_48"/>il peccato originale ai fini della continuazione della specie<pc>-</pc><lb xml:id="p001_r_1_tl_49" break="no"/>e dovendolo dall'altro lato biasimare e sanzionare anzitutto 
+               <lb xml:id="p001_r_1_tl_50"/>in quanto peccato e secondariamente in quanto in sè sgradevole 
+               <lb xml:id="p001_r_1_tl_51"/>dovere imposto all'uomo dal suo alto senso di responsabilità 
+               <lb xml:id="p001_r_1_tl_52"/>nei confronti dell'umanità. Non essendo infatti la C.C. una 
+               <lb xml:id="p001_r_1_tl_53"/>organizzazione secolare e potendo essa quindi distribuire s[cassato_ds[i]][sscr[o]]l<pc>-</pc><lb xml:id="p001_r_1_tl_54" break="no"/>tanto sanzioni morali ovverosia eterne per gli eccessi sessua<pc>-</pc><lb xml:id="p001_r_1_tl_55" break="no"/>li e la sessualità sterile, e non potendo essa con assoluta 
+               <lb xml:id="p001_r_1_tl_56"/>certezza confidare in un al di là [cassato_ds[riparat]] eterno e riparatore 
+               <lb xml:id="p001_r_1_tl_57"/>di cui nulla si sa ma soltanto molto si spera, la C.C. ha do<pc>-</pc><lb xml:id="p001_r_1_tl_58" break="no"/>vuto necessariamente operare una discriminazione terrena di 
+               <lb xml:id="p001_r_1_tl_59"/>principio delle colpe e dei [cassato_ds[colpev[cassato_ds[l]][sscr[v]]oli]] colpevoli sulla base 
+               <lb xml:id="p001_r_1_tl_60"/>appunto della genesi del peccato originale, il quale vede im<pc>-</pc><lb xml:id="p001_r_1_tl_61" break="no"/>plicati [cassato_ms[uomni e donne, ma digià con diversa fondamentale par-]] 
+               <lb xml:id="p001_r_1_tl_62"/>[cassato_ms[tecipazione]] [cassato_ds[. Se infatti la fornicazione è peccato ove non ser-]] 
+               <lb xml:id="p001_r_1_tl_63"/>[cassato_ds[va alla produzione della specie]] [cassato_ms[fra]] fornicatrici abituali e 
+               <lb xml:id="p001_r_1_tl_64"/>fornicatori d'ufficio [cassato_ms[.]][inrigo_ms[.]]</p>
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_042.tif"/>
+            <p>
+               <lb xml:id="p002_l_21"/>2
+               <lb xml:id="p002_l_1"/>Questo spiega per quale ragione la C.C. abbia dovuto essere 
+               <lb xml:id="p002_l_2"/>inventata e messa in funzione nei noti termini, e perché [cassato_ds[in]] 
+               <lb xml:id="p002_l_3"/>[intsup[l'esercizio della]] sua amministrazione non possa essere estesa alle donne, le 
+               <lb xml:id="p002_l_4"/>quali invece ne sono diventate le principali amministrate. 
+               <lb xml:id="p002_l_5"/>Che di ciò vi sia stato grande bisogno affinché l'intera uma<pc>-</pc><lb xml:id="p002_l_6" break="no"/>nità non si corrompesse, [cassato_ds[andando in rovi]] mandando in [cassato_ds[orvina]] [intsup[rovina]] 
+               <lb xml:id="p002_l_7"/>il genere maschile secondo la tecnica delle mele sane e delle 
+               <lb xml:id="p002_l_8"/>mele marce contenute nello stesso cesto, ove mai si verifica 
+               <lb xml:id="p002_l_9"/>il risanamento delle marce per opera di quelle sane ma sempre 
+               <lb xml:id="p002_l_10"/>invece il marcimento delle sane in seno alla presenza di [cassato_ds[a]][sscr[u]]na 
+               <lb xml:id="p002_l_11"/>sola di quelle marce, si vede [cassato_ds[tanto più chiaramente oggi, do-]] 
+               <lb xml:id="p002_l_12"/>[cassato_ds[po quasi duemila anni di rigoroso esercizio cattolico]] nella 
+               <lb xml:id="p002_l_13"/>natura stessa del funzionamento fornicante dove l'uomo sempre 
+               <lb xml:id="p002_l_14"/>e fedelmente alla sua missione civica generosamente ingravida 
+               <lb xml:id="p002_l_15"/>la donna mentre costei è anche in grado di fare i salti mor<pc>-</pc><lb xml:id="p002_l_16" break="no"/>tali pur di non rimanere ingravidata, perlomeno nel quotidia<pc>-</pc><lb xml:id="p002_l_17" break="no"/>no esercizio fornicante cui costringe l'uomo, il quale com'è 
+               <lb xml:id="p002_l_18"/>noto perlomeno alla C.C. ne farebbe volentieri e sempre a me<pc>-</pc><lb xml:id="p002_l_19" break="no"/>no.</p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-11-19T10:23:03.734135374Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.1 from Saxonica.-->
+</TEI>

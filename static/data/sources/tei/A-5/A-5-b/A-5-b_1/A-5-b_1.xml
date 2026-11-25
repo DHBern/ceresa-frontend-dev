@@ -27,12 +27,6 @@
                   <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
                   <idno type="ASL">A-5-b/1</idno>
                </msIdentifier>
-               <physDesc>
-                  <handDesc>
-                     <handNote xml:id="hw" medium="handwritten">Manoscritto di Alice Ceresa</handNote>
-                     <handNote xml:id="tw" medium="typewritten" scope="major">Dattiloscritto di Alice Ceresa</handNote>
-                  </handDesc>
-               </physDesc>
             </msDesc>
          </sourceDesc>
       </fileDesc>
@@ -70,21 +64,24 @@
                   radio</rs><pc>"</pc>, paru dans un numéro maintenant déjà <del hand="#hw"
                   >vieux</del>
                <add place="above" hand="#hw">ancien</add> du <pc>"</pc><rs type="work"
-                  key="work_0008" xml:id="r15">Teso<pc>-</pc><lb xml:id="p001_r_tl_5" break="no"/>retto</rs><pc>"</pc>. Dans le même almanach
-                  littéraire<add place="inline" hand="#hw">,</add> j'ai trouvé une prose de <rs
-                  type="person" key="person_0018" xml:id="r3">Cesare <lb xml:id="p001_r_tl_7"
-                  />Pavese</rs>, <pc>"</pc><rs type="work" key="work_0010" xml:id="r5">Il prato dei
-                  morti</rs><pc>"</pc>. <del hand="#hw">Ce n'était pas,</del>
+                  key="work_0008" xml:id="r15">Teso<pc>-</pc><lb xml:id="p001_r_tl_5" break="no"
+                  />retto</rs><pc>"</pc>. Dans le même almanach littéraire<add place="inline"
+                  hand="#hw">,</add> j'ai trouvé une prose de <rs type="person" key="person_0018"
+                  xml:id="r3">Cesare <lb xml:id="p001_r_tl_7"/>Pavese</rs>, <pc>"</pc><rs
+                  type="work" key="work_0010" xml:id="r5">Il prato dei morti</rs><pc>"</pc>. <del
+                  hand="#hw">Ce n'était pas,</del>
                <del hand="#hw">celui</del>
-               <add place="above" hand="#hw">Le Vittorini</add> du <pc>"</pc><rs type="work"
-                  key="work_0008" xml:id="r16">Tesoretto</rs><pc>"</pc>
+               <add place="above" hand="#hw">Le <rs type="person" key="person_0020" xml:id="r39"
+                     >Vittorini</rs></add> du <pc>"</pc><rs type="work" key="work_0008" xml:id="r16"
+                  >Tesoretto</rs><pc>"</pc>
                <del hand="#hw">, le</del><lb xml:id="p001_r_tl_9"/><add place="above" hand="#hw"
                   >n'était pas encore le</add>
                <rs type="person" key="person_0020" xml:id="r17">Vittorini</rs>
                <add place="above" hand="#hw">le</add> plus prononcé, <del hand="#hw">et</del>
                <add place="above" hand="#hw">ni</add>
                <del hand="#hw">ce n'était pas,</del> le <rs type="person" key="person_0018"
-                  xml:id="r18">Pavese</rs> du petit conte<del hand="#hw"><add place="inline" hand="#hw">,</add></del>
+                  xml:id="r18">Pavese</rs> du petit conte<del hand="#hw"><add place="inline"
+                     hand="#hw">,</add></del>
                <lb xml:id="p001_r_tl_10"/>celui qui <del hand="#hw">me</del> se révéla <add
                   hand="#hw" place="above">à moi</add> plus tard, à la lecture des <pc>"</pc><rs
                   type="work" key="work_0009" xml:id="r6">Paesi tuoi</rs><pc>"</pc>. Je ne <lb
@@ -92,7 +89,8 @@
                   type="person" key="person_0020" xml:id="r19">Vittorini</rs> et <rs type="person"
                   key="person_0018" xml:id="r20">Pavese</rs> autrement <lb xml:id="p001_r_tl_12"
                />que de cette façon directe, <add place="above" hand="#hw">de</add> cette facon de
-               lecteur; la Critique sui<pc>-</pc><lb xml:id="p001_r_tl_13" break="no"/>vrait, sûrement, d'autres chemins. </p>
+               lecteur; la Critique sui<pc>-</pc><lb xml:id="p001_r_tl_13" break="no"/>vrait,
+               sûrement, d'autres chemins. </p>
             <p><lb xml:id="p001_r_tl_15"/><del hand="#hw">Si</del>
                <add place="above" hand="#hw">Quand</add> je dis que j'ai découvert <rs type="person"
                   key="person_0020" xml:id="r21">Vittorini</rs> et <rs type="person"

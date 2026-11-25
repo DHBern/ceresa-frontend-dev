@@ -27,12 +27,6 @@
                   <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
                   <idno type="ASL">A-1-b/1-2</idno>
                </msIdentifier>
-               <physDesc>
-                  <handDesc>
-                     <handNote xml:id="hw" medium="handwritten" scope="major">Manoscritto di Alice Ceresa</handNote>
-                     <handNote xml:id="tw" medium="typewritten">Dattiloscritto di Alice Ceresa</handNote>
-                  </handDesc>
-               </physDesc>
             </msDesc>
          </sourceDesc>
       </fileDesc>

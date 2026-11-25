@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_6-2_AC012" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_6-2_AC012#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A-1-b_6-2_AC012</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-b/6-2/AC012</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC012/A-1-b_6-2_AC012_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_053.tif"/>
+            <p>
+               <lb xml:id="p001_l"/>1
+               <lb xml:id="p001_tr_3_tl_1"/>DONNA 
+               <lb xml:id="p001_tr_3_tl_2"/>Termine arcaico che definisce la femmina [cassato_ds[della società umana]] biolo<pc>-</pc><lb xml:id="p001_tr_3_tl_3" break="no"/>gica nella società umana. La donna infatti è una invenzione antichis<pc>-</pc><lb xml:id="p001_tr_3_tl_6" break="no"/>sima e ad essa sono tuttora propri significati [intsup[contenuti]] e [cassato_ds[usi]][intsup[significati] che risalgono 
+               <lb xml:id="p001_tr_3_tl_8"/>direttamente, con [cassato_ds[moder]] modificazioni nel tempo e modernizzazioni 
+               <lb xml:id="p001_tr_3_tl_9"/>del tutto trascurabili quando non controproducenti, ai primordi di 
+               <lb xml:id="p001_tr_3_tl_10"/>ogni qualsivoglia società nemmeno necessariamente civile[cassato_ds[.]] o detta 
+               <lb xml:id="p001_tr_3_tl_11"/>tale. L'archeologia ne rintraccia le origini nella storia dei miti 
+               <lb xml:id="p001_tr_3_tl_12"/>e delle religioni, la storia delle civiltà ce ne narra impiego e de<pc>-</pc><lb xml:id="p001_tr_3_tl_13" break="no"/>stinazione, e l'etnologia moderna ne controlla gli usi nelle cosid<pc>-</pc><lb xml:id="p001_tr_3_tl_14" break="no"/>dette società primitive. Nelle nostre società occidentali, la donna 
+               <lb xml:id="p001_tr_3_tl_15"/>ha seguito esaltazioni e oscurantismi dei tempi, e benché oggi le sia 
+               <lb xml:id="p001_tr_3_tl_16"/>concessa quell'ANIMA, ancora poco fa negata, che la rende per l'uo<pc>-</pc><lb xml:id="p001_tr_3_tl_17" break="no"/>mo una degna [cassato_ds[compagna e quindi implicitamente anche una degna]] madre 
+               <lb xml:id="p001_tr_3_tl_18"/>dei figli di costui che spesso sono maschi e possono quindi preten<pc>-</pc><lb xml:id="p001_tr_3_tl_19" break="no"/>dere a origini per quattro quarti correttamente umane, essa è tutta<pc>-</pc><lb xml:id="p001_tr_3_tl_20" break="no"/>via considerata complementare del signore e padrone del creato che, 
+               <lb xml:id="p001_tr_3_tl_21"/>contrariamente a quanto si potrebbe credere, non è dio bensi l'esse<pc>-</pc><lb xml:id="p001_tr_3_tl_22" break="no"/>re umano maschile. Tale teoria viene elementarmente dimostrata dalla 
+               <lb xml:id="p001_tr_3_tl_23"/>costola di Adamo[cassato_ds[.]] e giunge a noi ancora relativamente fresca. 
+               <lb xml:id="p001_l_1"/>[cassato_ds[In tutte le accezioni del termine, tuttavia, non si deve tuttavia con]][intsup[Non si devono tuttavia]] 
+               <lb xml:id="p001_tr_3_tl_28"/>confondere questo possesso dell'anima e questa complementarità con 
+               <lb xml:id="p001_tr_3_tl_29"/>una sua identificazione biologica di fatto, in quanto femmina della 
+               <lb xml:id="p001_tr_3_tl_30"/>specie, con la sua controparte maschile, come accade nel regno degli 
+               <lb xml:id="p001_tr_3_tl_31"/>animali inferiori, dove gli esemplari si differenziano soltanto sul 
+               <lb xml:id="p001_tr_3_tl_32"/>piano della riproduzione: nel genere umano, e proprio per il fatto 
+               <lb xml:id="p001_tr_3_tl_33"/>di essere assurta a donna invece di restare semplice femmina della 
+               <lb xml:id="p001_tr_3_tl_34"/>specie, la DONNA non si identifica [cassato_ms[con i suoi compiti biologici ben<pc>-</pc><lb xml:id="p001_tr_3_tl_36" break="no"/>sì con [cassato_ds[ruçli]] ruoli extra-biologici[intsup[del tutto teoriche]] per lei tracciati non da divina 
+               <lb xml:id="p001_tr_3_tl_37"/>ma da umana provvidenza]] 
+               <lb xml:id="p001_tr_3_tl_38"/>con i compiti biologici della femmina bensì [cassato_ms[con le destinazioni so¬]]</p>
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_054.tif"/>
+            <p>
+               <lb xml:id="p002_l"/>2
+               <lb xml:id="p002_tr_2_tl_1"/>con una serie di destinazioni sociali introdotte dalla suprema facol<pc>-</pc><lb xml:id="p002_tr_2_tl_2" break="no"/>tà umana di non vivere secondo natura ma in base al [cassato_ds[personale]] libero 
+               <lb xml:id="p002_tr_2_tl_3"/>arbitrio introdotto dalla facoltà di pensiero che appunto distingue 
+               <lb xml:id="p002_tr_2_tl_4"/>l'uomo dalla bestia. Una donna non è quindi una femmina ma un prodot<pc>-</pc><lb xml:id="p002_tr_2_tl_5" break="no"/>to culturale. Nessuno sa come e che cosa sarebbe la femmina umana se 
+               <lb xml:id="p002_tr_2_tl_6"/>non avesse dovuto già in tempi lontani abbandonare [cassato_ds[l'identificazione 
+               <lb xml:id="p002_tr_2_tl_7"/>biologica]] la naturale identificazione biologica per l'innaturale 
+               <lb xml:id="p002_tr_2_tl_8"/>assunzione di un vuoto involucro concettuale quale è appunto il termi 
+               <lb xml:id="p002_tr_2_tl_9"/>ne di DONNA. </p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-11-19T10:18:11.659889838Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.1 from Saxonica.-->
+</TEI>

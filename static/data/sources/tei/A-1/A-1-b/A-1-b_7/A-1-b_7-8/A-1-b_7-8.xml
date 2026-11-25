@@ -28,12 +28,6 @@
                      Ceresa</repository>
                   <idno type="ASL">A-1-b/7-8</idno>
                </msIdentifier>
-               <physDesc>
-                  <handDesc>
-                     <handNote xml:id="hw" medium="handwritten">Manoscritto di Alice Ceresa</handNote>
-                     <handNote xml:id="tw" medium="typewritten" scope="major">Dattiloscritto di Alice Ceresa</handNote>
-                  </handDesc>
-               </physDesc>
             </msDesc>
          </sourceDesc>
       </fileDesc>

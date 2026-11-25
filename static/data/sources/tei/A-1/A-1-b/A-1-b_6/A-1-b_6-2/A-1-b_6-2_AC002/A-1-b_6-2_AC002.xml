@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/tei_ceresa.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://dhbern.github.io/ceresa-oxygen-framework/ceresa.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="A-1-b_6-2_AC002" type="ceresa" xml:base="https://arcipelago-ceresa.digitaleditions.ch/A-1-b_6-2_AC002#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A-1-b_6-2_AC002</title>
+            <respStmt>
+               <resp>Text encoding</resp>
+               <name/>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher/>
+            <date/>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</licence>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note type="global_comment">
+               <p/>
+            </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Archivio svizzero di letteratura (ASL): Lascito Alice Ceresa</repository>
+                  <idno type="ASL">A-1-b/6-2/AC002</idno>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language/>
+         </langUsage>
+         <textClass>
+            <keywords ana="keywords">
+               <list>
+                  <item/>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="https://dav.arcipelago-ceresa.digitaleditions.ch/data/sources/facs/A-1/A-1-b/A-1-b_6/A-1-b_6-2/A-1-b_6-2_AC002/A-1-b_6-2_AC002_facs.xml">
+      <xi:fallback/>
+   </xi:include>
+   <text>
+      <body>
+         <div>
+            <pb xml:id="p001" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_006.tif"/>
+            <p>
+               <lb xml:id="p001_l"/>1
+               <lb xml:id="p001_tr_3_tl_1"/>ANIMALE 
+               <lb xml:id="p001_tr_3_tl_2"/>Pur essendo apparentemente imparentato con l'[cassato[anima]][sscr[ANIMA]], non ha in 
+               <lb xml:id="p001_tr_3_tl_3"/>realtà nulla a che fare con essa [cassato_ds[e anzi nettamente se ne 
+               <lb xml:id="p001_tr_3_tl_4"/>distingue]] se non per nettamente distinguersene. 
+               <lb xml:id="p001_tr_3_tl_5"/>L' ANIMALE infatti, 1[cassato_ms[benchè possa riallacciarsi talvolta al 
+               <lb xml:id="p001_tr_3_tl_6"/>principio della vita dall'ANIMA contemplato]] [ripos1[in quanto perti<pc>-</pc><lb xml:id="p001_tr_3_tl_7" break="no"/>nente alla vita come fenomeno, [margine_ms[può talvolta riallacciarsi al principio della vita appunto contemplato dall'anima, e,] e benché sia sempre relativo 
+               <lb xml:id="p001_tr_3_tl_8"/>agli esseri animati in quanto corp[cassato_ms[o][sscr[i]] vivent[cassato_ms[e][sscr[i]] e funzionant[cassato_ms[e][sscr[i]] 
+               <lb xml:id="p001_tr_3_tl_9"/>ovvero dotat[cassato_ms[o][sscr[i]] di moto e di sensi, rappresenta [intsup_ms[però]] l'esatto con<pc>-</pc><lb xml:id="p001_tr_3_tl_10" break="no"/>trario dell'ANIMA per quanto concerne l'uomo, di cui indica<pc>-</pc><lb xml:id="p001_tr_3_tl_11" break="no"/> [cassato[la bestialità]] la sola e esclusiva bestialità (quest'uomo è 
+               <lb xml:id="p001_tr_3_tl_12"/>un animale, comportamento animalesco ecc.), e rappresenta 
+               <lb xml:id="p001_tr_3_tl_14"/>degnamente se stesso soltanto in assenza di ANIMa, [cassato[negli orga<pc>-</pc><lb xml:id="p001_tr_3_tl_15" break="no"/>nismi infatti considerati inferiori]] e pertanto negli organismi 
+               <lb xml:id="p001_tr_3_tl_16"/>bensì viventi ma appunto inferiori. 
+               <lb xml:id="p001_tr_3_tl_17"/>Anche l'ANIMALE, come l'ANIMA, si lamenta invano e inudibil<pc>-</pc><lb xml:id="p001_tr_3_tl_19" break="no"/>mente del[cassato_ms[la]] propri[cassato_ms[a][sscr_ms[o]] [cassato_ms[definizione][intsup_ms[insensato apparentamento,], e questa è probabilmente 
+               <lb xml:id="p001_tr_3_tl_20"/>l'unica [cassato[contiguità]] giustificazione della loro forzata [cassato[conti<pc>-</pc><lb xml:id="p001_tr_3_tl_21" break="no"/>guità] per quanto apparente contiguità. 
+               <lb xml:id="p001_tr_3_tl_22"/>(&lt;add place="margin"&gt;, ms) può talvolta riallacciarsi al principio della vita appunto 
+               <lb xml:id="p001_tr_3_tl_23"/>contemplato dall'ANIMA,e,</p>
+            <pb xml:id="p002" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_007.tif"/>
+            <pb xml:id="p003" facs="https://iiif.ub.unibe.ch/image/v3/ceresa/A-1-b_6-2_008.tif"/>
+            <p>
+               <lb xml:id="p003_l_1"/>3
+               <lb xml:id="p003_l"/>ANIMALI (ESSERI) 
+               <lb xml:id="p003_l_2"/>Esseri viventi dotati di sensi e di movimento spontaneo, a differenza 
+               <lb xml:id="p003_l_3"/>de vegetali, pure viventi ma non semoventi e probabilmente nemmeno 
+               <lb xml:id="p003_l_4"/>provvisti di sensi. Animale non deriva da anima in quanto come si 
+               <lb xml:id="p003_l_5"/>è visto l'unico animale dotato di anima è quello umano, oggi in ambedue 
+               <lb xml:id="p003_l_6"/>i sessi. 
+               <lb xml:id="p003_l_7"/>Si dovrà tornare su questa faccenda dei sensi e dei sessi relegati 
+               <lb xml:id="p003_l_8"/>per esigenze alfabetiche in fondo al dizionario, insieme alla semovenza, 
+               <lb xml:id="p003_l_9"/>benché appunto facciano parte integrante dell'animale.</p>
+         </div>
+      </body>
+   </text>
+   <!--Generated on 2026-11-19T09:54:55.427991814Z by https://github.com/dhbern/ceresa-data using SAXON HE 13.1 from Saxonica.-->
+</TEI>
