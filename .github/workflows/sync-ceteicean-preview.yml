@@ -80,8 +80,11 @@ jobs:
           ls src/lib/CETEIcean/logs
 
       - name: Debug WebDAV endpoint
+        env:
+          WEBDAV_URL: ${{ secrets.WEBDAV_URL }}
         run: |
-          curl -sSI --max-time 10 "${secrets.WEBDAV_URL%/}/preview/" || true
+          echo "URL: ${WEBDAV_URL%/}"
+          curl -sSI --max-time 10 "${WEBDAV_URL%/}/preview/" || true
 
       - name: Debug WebDAV 2
         run: |
